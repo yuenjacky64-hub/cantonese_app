@@ -1,0 +1,16 @@
+
+node_modules/
+dist/
+coverage/
+cypress/
+videos4/
+videos3/
+videos/
+verify_cuj.py
+verify_cuj2.py
+verify_cuj3.py
+verify_cuj4.py
+verify_cuj6.py
+verification4.png
+update_lessons_to_cantonese.js
+verify_frontend.py
