@@ -1,0 +1,168 @@
+/**
+ * Unit tests for SRS (Spaced Repetition System) utility functions
+ */
+import { describe, it, expect, beforeEach, vi } from 'vitest';
+
+// Mock localStorage before importing srs module
+const localStorageMock = (() => {
+    let store: Record<string, string> = {};
+    return {
+        getItem: vi.fn((key: string) => store[key] || null),
+        setItem: vi.fn((key: string, value: string) => { store[key] = value; }),
+        clear: vi.fn(() => { store = {}; }),
+        removeItem: vi.fn((key: string) => { delete store[key]; }),
+    };
+})();
+
+Object.defineProperty(global, 'localStorage', { value: localStorageMock });
+
+// Import after mocking
+import { loadSRS, saveSRS, updateCardSRS, SRSData, _resetCache, getSRSStats } from '../srs';
+
+describe('SRS Utility Functions', () => {
+    beforeEach(() => {
+        localStorageMock.clear();
+        vi.clearAllMocks();
+        _resetCache();
+    });
+
+    describe('loadSRS', () => {
+        it('should return empty object when no data exists', () => {
+            const result = loadSRS();
+            expect(result).toEqual({});
+        });
+
+        it('should return parsed data from localStorage', () => {
+            const mockData: SRSData = {
+                'card-1': { nextReview: 1000, level: 2 },
+            };
+            localStorageMock.getItem.mockReturnValueOnce(JSON.stringify(mockData));
+
+            const result = loadSRS();
+            expect(result).toEqual(mockData);
+        });
+
+        it('should return empty object on parse error', () => {
+            const consoleSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
+            localStorageMock.getItem.mockReturnValueOnce('invalid json{');
+
+            const result = loadSRS();
+            expect(result).toEqual({});
+            expect(consoleSpy).toHaveBeenCalled();
+            consoleSpy.mockRestore();
+        });
+    });
+
+    describe('saveSRS', () => {
+        it('should save data to localStorage', () => {
+            vi.useFakeTimers();
+            const data: SRSData = {
+                'card-1': { nextReview: 1000, level: 1 },
+            };
+
+            saveSRS(data);
+
+            // Trigger debounce
+            vi.advanceTimersByTime(2000);
+
+            expect(localStorageMock.setItem).toHaveBeenCalledWith(
+                'srs-data',
+                JSON.stringify(data)
+            );
+            vi.useRealTimers();
+        });
+    });
+
+    describe('updateCardSRS', () => {
+        beforeEach(() => {
+            vi.useFakeTimers();
+            vi.setSystemTime(new Date('2026-01-01T00:00:00Z'));
+        });
+
+        afterEach(() => {
+            vi.useRealTimers();
+        });
+
+        it('should set level to 1 and schedule 3 days later on first correct answer', () => {
+            const result = updateCardSRS('test-card-1', true);
+
+            expect(result.level).toBe(1);
+            // 3 * 1 = 3 days
+            const expectedTime = Date.now() + 3 * 24 * 60 * 60 * 1000;
+            expect(result.nextReview).toBe(expectedTime);
+        });
+
+        it('should reset level and schedule 10 mins later on wrong answer', () => {
+            // First, simulate a card at level 2
+            const mockData: SRSData = {
+                'test-card-2': { nextReview: Date.now() - 1000, level: 2 },
+            };
+            localStorageMock.getItem.mockReturnValueOnce(JSON.stringify(mockData));
+
+            const result = updateCardSRS('test-card-2', false);
+
+            expect(result.level).toBe(0);
+            // 10 minutes
+            const expectedTime = Date.now() + 10 * 60 * 1000;
+            expect(result.nextReview).toBe(expectedTime);
+        });
+
+        it('should increase interval with higher levels', () => {
+            // Card at level 2
+            const mockData: SRSData = {
+                'test-card-3': { nextReview: Date.now() - 1000, level: 2 },
+            };
+            localStorageMock.getItem.mockReturnValueOnce(JSON.stringify(mockData));
+
+            const result = updateCardSRS('test-card-3', true);
+
+            expect(result.level).toBe(3);
+            // 3 * 3 = 9 days
+            const expectedTime = Date.now() + 9 * 24 * 60 * 60 * 1000;
+            expect(result.nextReview).toBe(expectedTime);
+        });
+    });
+
+    describe('getSRSStats', () => {
+        beforeEach(() => {
+            vi.useFakeTimers();
+            vi.setSystemTime(new Date('2026-01-01T00:00:00Z'));
+        });
+
+        afterEach(() => {
+            vi.useRealTimers();
+        });
+
+        it('should calculate dueCount correctly', () => {
+            // Initial state: no SRS data, all cards are "new" and thus due
+            const initialStats = getSRSStats();
+            expect(initialStats.totalCards).toBeGreaterThan(0);
+            expect(initialStats.dueCount).toBe(initialStats.totalCards);
+            expect(initialStats.reviewedCount).toBe(0);
+
+            // Mock some SRS data
+            // Card '1' (from 'greetings') reviewed and due in future (not due now)
+            // Card '2' (from 'greetings') reviewed and due in past (due now)
+            const futureTime = Date.now() + 100000;
+            const pastTime = Date.now() - 100000;
+
+            const mockData: SRSData = {
+                '1': { nextReview: futureTime, level: 1 }, // Not Due
+                '2': { nextReview: pastTime, level: 1 }    // Due
+            };
+
+            // We use localStorageMock to inject data because getSRSStats calls loadSRS()
+            localStorageMock.getItem.mockReturnValue(JSON.stringify(mockData));
+            // Reset cache to force reload
+            _resetCache();
+
+            const stats = getSRSStats();
+
+            // Reviewed count should be 2
+            expect(stats.reviewedCount).toBe(2);
+
+            // Due count should be totalCards - 1 (since '1' is not due, but '2' is due, and all others are new/due)
+            expect(stats.dueCount).toBe(stats.totalCards - 1);
+        });
+    });
+});

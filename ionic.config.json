@@ -1,0 +1,7 @@
+{
+  "name": "cantonese-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
