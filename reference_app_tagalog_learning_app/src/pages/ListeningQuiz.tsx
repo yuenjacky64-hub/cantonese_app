@@ -1,0 +1,354 @@
+import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { IonPage, IonContent, IonIcon, IonButton } from '@ionic/react';
+import {
+    homeOutline,
+    refreshOutline,
+    checkmarkCircle,
+    closeCircle,
+    volumeHighOutline,
+    earOutline
+} from 'ionicons/icons';
+import { useTranslation } from 'react-i18next';
+import CommonHeader from '../components/CommonHeader';
+import { lessons } from '../data/lessons';
+import { getRandomElements, shuffleArray } from '../utils/array';
+import { fetchTTS } from '../utils/tts';
+import './ListeningQuiz.css';
+
+// Get all words from lessons for the quiz (computed once)
+const ALL_WORDS = (() => {
+    const words: { tagalog: string; english: string }[] = [];
+    lessons.forEach(lesson => {
+        lesson.cards.forEach(card => {
+            // Only include single words or short phrases (max 3 words)
+            if (card.tagalog.split(' ').length <= 3) {
+                words.push({ tagalog: card.tagalog, english: card.english });
+            }
+        });
+    });
+    return words;
+})();
+
+interface QuizQuestion {
+    word: { tagalog: string; english: string };
+    options: { tagalog: string; english: string }[];
+}
+
+const QUESTIONS_PER_GAME = 10;
+
+// Module-level cache for audio map promise to persist across remounts and prevent redundant fetches
+let cachedAudioMapPromise: Promise<Record<string, { normal: string }> | null> | null = null;
+
+const getAudioMap = () => {
+    if (!cachedAudioMapPromise) {
+        cachedAudioMapPromise = fetch(`${import.meta.env.BASE_URL}audio/audio-map.json`)
+            .then(response => {
+                if (!response.ok) throw new Error('Failed to fetch audio map');
+                return response.json();
+            })
+            .catch(e => {
+                console.log('Audio map fetch failed:', e);
+                return null;
+            });
+    }
+    return cachedAudioMapPromise;
+};
+
+const ListeningQuiz: React.FC = () => {
+    const { t } = useTranslation();
+    const audioRef = useRef<HTMLAudioElement | null>(null);
+
+    const [questions, setQuestions] = useState<QuizQuestion[]>([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [score, setScore] = useState(0);
+    const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+    const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+    const [gameOver, setGameOver] = useState(false);
+    const [isPlaying, setIsPlaying] = useState(false);
+    const [hasPlayed, setHasPlayed] = useState(false);
+
+    // Preload audio map
+    useEffect(() => {
+        getAudioMap();
+    }, []);
+
+    // Generate questions
+    const generateQuestions = useCallback((): QuizQuestion[] => {
+        const selectedWords = getRandomElements(ALL_WORDS, QUESTIONS_PER_GAME);
+
+        return selectedWords.map(word => {
+            const usedTags = new Set<string>([word.tagalog]);
+            const wrongAnswers = getRandomElements(
+                ALL_WORDS,
+                3,
+                (candidate) => {
+                    if (usedTags.has(candidate.tagalog)) return true;
+                    usedTags.add(candidate.tagalog);
+                    return false;
+                }
+            );
+
+            // Combine with correct answer and shuffle
+            const options = shuffleArray([word, ...wrongAnswers]);
+
+            return { word, options };
+        });
+    }, []);
+
+    // Initialize game
+    const initGame = useCallback(() => {
+        const newQuestions = generateQuestions();
+        setQuestions(newQuestions);
+        setCurrentIndex(0);
+        setScore(0);
+        setSelectedAnswer(null);
+        setIsCorrect(null);
+        setGameOver(false);
+        setHasPlayed(false);
+    }, [generateQuestions]);
+
+    useEffect(() => {
+        initGame();
+    }, [initGame]);
+
+    const currentQuestion = questions[currentIndex];
+
+    // Play audio for the current word
+    const playAudio = async () => {
+        if (!currentQuestion || isPlaying) return;
+
+        setIsPlaying(true);
+        setHasPlayed(true);
+
+        const text = currentQuestion.word.tagalog;
+
+        // Try local audio first
+        try {
+            const audioMap = await getAudioMap();
+            const audioPath = audioMap ? audioMap[text]?.normal : null;
+
+            if (audioPath) {
+                const fullPath = `${import.meta.env.BASE_URL}${audioPath}`;
+
+                if (audioRef.current) {
+                    audioRef.current.src = fullPath;
+                    audioRef.current.onended = () => setIsPlaying(false);
+                    audioRef.current.onerror = () => {
+                        console.log('Local audio failed, trying Cloud TTS');
+                        playCloudTTS(text);
+                    };
+                    await audioRef.current.play();
+                    return;
+                }
+            } else {
+                console.log('No local audio found, trying Cloud TTS');
+            }
+        } catch (e) {
+            console.log('Audio map fetch failed:', e);
+        }
+
+        // Fallback to Google Cloud TTS
+        playCloudTTS(text);
+    };
+
+    // Google Cloud TTS API fallback
+    const playCloudTTS = async (text: string) => {
+        try {
+            const audioContent = await fetchTTS({
+                text,
+                languageCode: 'fil-PH',
+                voiceName: 'fil-PH-Standard-A',
+            });
+
+            if (audioContent) {
+                const audio = new Audio(`data:audio/mp3;base64,${audioContent}`);
+                audio.onended = () => setIsPlaying(false);
+                audio.onerror = () => setIsPlaying(false);
+                audio.play();
+                return;
+            }
+        } catch (error) {
+            console.error('Cloud TTS failed:', error);
+        }
+        setIsPlaying(false);
+    };
+
+    // Auto-play on question change
+    useEffect(() => {
+        if (currentQuestion && !gameOver) {
+            // Small delay before auto-playing
+            const timer = setTimeout(() => {
+                playAudio();
+            }, 500);
+            return () => clearTimeout(timer);
+        }
+    }, [currentIndex, questions]);
+
+    const handleAnswer = (answer: string) => {
+        if (selectedAnswer !== null || !hasPlayed) return;
+
+        setSelectedAnswer(answer);
+        const correct = answer === currentQuestion.word.tagalog;
+        setIsCorrect(correct);
+
+        if (correct) {
+            setScore(prev => prev + 1);
+        }
+
+        // Move to next question after delay
+        setTimeout(() => {
+            if (currentIndex + 1 >= QUESTIONS_PER_GAME) {
+                setGameOver(true);
+            } else {
+                setCurrentIndex(prev => prev + 1);
+                setSelectedAnswer(null);
+                setIsCorrect(null);
+                setHasPlayed(false);
+            }
+        }, 2000);
+    };
+
+    const getScoreEmoji = () => {
+        const percentage = (score / QUESTIONS_PER_GAME) * 100;
+        if (percentage === 100) return '🏆';
+        if (percentage >= 80) return '🌟';
+        if (percentage >= 60) return '😊';
+        if (percentage >= 40) return '💪';
+        return '📚';
+    };
+
+    const getScoreMessage = () => {
+        const percentage = (score / QUESTIONS_PER_GAME) * 100;
+        if (percentage === 100) return t('listening.perfect');
+        if (percentage >= 80) return t('listening.excellent');
+        if (percentage >= 60) return t('listening.good');
+        if (percentage >= 40) return t('listening.keepLearning');
+        return t('listening.tryAgain');
+    };
+
+    if (!currentQuestion && !gameOver) {
+        return null;
+    }
+
+    return (
+        <IonPage>
+            <CommonHeader title={t('listening.title')} showBackButton defaultHref="/home" />
+            <audio ref={audioRef} />
+
+            <IonContent className="listening-game-content">
+                {!gameOver ? (
+                    <div className="listening-game-container">
+                        {/* Progress Bar */}
+                        <div className="listening-progress-bar">
+                            <div
+                                className="listening-progress-fill"
+                                style={{ transform: `scaleX(${((currentIndex + 1) / QUESTIONS_PER_GAME)})` }}
+                            />
+                        </div>
+
+                        {/* Stats Row */}
+                        <div className="listening-stats-row">
+                            <div className="listening-stat">
+                                <span className="stat-label">{t('listening.question')}</span>
+                                <span className="stat-value">{currentIndex + 1}/{QUESTIONS_PER_GAME}</span>
+                            </div>
+                            <div className="listening-stat">
+                                <span className="stat-label">{t('listening.score')}</span>
+                                <span className="stat-value">{score}</span>
+                            </div>
+                        </div>
+
+                        {/* Audio Player Card */}
+                        <div className="audio-player-card">
+                            <button
+                                className={`play-audio-btn ${isPlaying ? 'playing' : ''}`}
+                                onClick={playAudio}
+                                disabled={isPlaying}
+                            >
+                                <IonIcon icon={isPlaying ? earOutline : volumeHighOutline} />
+                            </button>
+                            <p className="audio-hint">
+                                {hasPlayed ? t('listening.tapAgain') : t('listening.tapToListen')}
+                            </p>
+                        </div>
+
+                        {/* Answer Options */}
+                        <div className="listening-options-grid">
+                            {currentQuestion.options.map((option, idx) => {
+                                let optionClass = 'listening-option';
+                                if (selectedAnswer !== null) {
+                                    if (option.tagalog === currentQuestion.word.tagalog) {
+                                        optionClass += ' correct';
+                                    } else if (option.tagalog === selectedAnswer && !isCorrect) {
+                                        optionClass += ' wrong';
+                                    } else {
+                                        optionClass += ' faded';
+                                    }
+                                }
+                                if (!hasPlayed) {
+                                    optionClass += ' disabled';
+                                }
+
+                                return (
+                                    <button
+                                        key={idx}
+                                        className={optionClass}
+                                        onClick={() => handleAnswer(option.tagalog)}
+                                        disabled={selectedAnswer !== null || !hasPlayed}
+                                    >
+                                        <span className="option-tagalog">{option.tagalog}</span>
+                                        <span className="option-english">{option.english}</span>
+                                        {selectedAnswer !== null && option.tagalog === currentQuestion.word.tagalog && (
+                                            <IonIcon icon={checkmarkCircle} className="result-icon correct" />
+                                        )}
+                                        {selectedAnswer === option.tagalog && !isCorrect && (
+                                            <IonIcon icon={closeCircle} className="result-icon wrong" />
+                                        )}
+                                    </button>
+                                );
+                            })}
+                        </div>
+
+                        {/* Answer Feedback */}
+                        {selectedAnswer !== null && (
+                            <div className={`listening-feedback ${isCorrect ? 'correct' : 'wrong'}`}>
+                                <span className="feedback-emoji">{isCorrect ? '✅' : '❌'}</span>
+                                <span className="feedback-text">
+                                    {isCorrect ? t('listening.correct') : `${t('listening.wrong')} ${currentQuestion.word.tagalog}`}
+                                </span>
+                            </div>
+                        )}
+                    </div>
+                ) : (
+                    /* Game Over Screen */
+                    <div className="listening-game-over">
+                        <div className="game-over-card">
+                            <div className="score-emoji">{getScoreEmoji()}</div>
+                            <h2 className="score-title">{getScoreMessage()}</h2>
+
+                            <div className="final-score">
+                                <div className="score-circle">
+                                    <span className="score-number">{score}</span>
+                                    <span className="score-total">/ {QUESTIONS_PER_GAME}</span>
+                                </div>
+                            </div>
+
+                            <div className="game-over-actions">
+                                <IonButton expand="block" onClick={initGame} className="play-again-btn">
+                                    <IonIcon icon={refreshOutline} slot="start" />
+                                    {t('listening.playAgain')}
+                                </IonButton>
+                                <IonButton expand="block" fill="outline" routerLink="/home" className="home-btn">
+                                    <IonIcon icon={homeOutline} slot="start" />
+                                    {t('common.backToHome')}
+                                </IonButton>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </IonContent>
+        </IonPage>
+    );
+};
+
+export default ListeningQuiz;
