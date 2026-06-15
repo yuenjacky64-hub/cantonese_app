@@ -34,6 +34,7 @@ const buildInfo = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/cantonese_app/',
   define: {
     __BUILD_INFO__: JSON.stringify(buildInfo)
   },
