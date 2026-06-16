@@ -31,12 +31,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: '1',
-        cantonese: 'Kumusta?',
+        cantonese: 'Nei hou?',
         english: 'How are you?',
         zhTW: '你好嗎？',
         zhCN: '你好吗？',
         example: {
-          cantonese: 'Kumusta ka na?',
+          cantonese: 'Nei hou ma?',
           english: 'How are you now?',
           zhTW: '你現在好嗎？',
           zhCN: '你现在好吗？'
@@ -44,12 +44,12 @@ export const lessons: Category[] = [
       },
       {
         id: '2',
-        cantonese: 'Mabuti',
+        cantonese: 'Hou',
         english: 'Fine / Good',
         zhTW: '很好',
         zhCN: '很好',
         example: {
-          cantonese: 'Mabuti naman ako.',
+          cantonese: 'Ngo hou hou.',
           english: 'I am fine.',
           zhTW: '我很好。',
           zhCN: '我很好。'
@@ -57,12 +57,12 @@ export const lessons: Category[] = [
       },
       {
         id: '3',
-        cantonese: 'Salamat',
+        cantonese: 'Mgoi / Do ze',
         english: 'Thank you',
         zhTW: '謝謝',
         zhCN: '谢谢',
         example: {
-          cantonese: 'Maraming salamat sa tulong.',
+          cantonese: 'Do ze nei ge bong mong.',
           english: 'Many thanks for the help.',
           zhTW: '非常感謝你的幫忙。',
           zhCN: '非常感谢你的帮忙。'
@@ -70,12 +70,12 @@ export const lessons: Category[] = [
       },
       {
         id: '4',
-        cantonese: 'Walang anuman',
+        cantonese: 'Mh sai hak hei',
         english: 'You\'re welcome',
         zhTW: '不客氣',
         zhCN: '不客气',
         example: {
-          cantonese: 'Walang anuman, kaibigan.',
+          cantonese: 'bat1 haak3 hei3, pang4 jau5.',
           english: 'You are welcome, friend.',
           zhTW: '不客氣，朋友。',
           zhCN: '不客气，朋友。'
@@ -83,12 +83,12 @@ export const lessons: Category[] = [
       },
       {
         id: '5',
-        cantonese: 'Magandang umaga',
+        cantonese: 'Jou san',
         english: 'Good morning',
         zhTW: '早安',
         zhCN: '早安',
         example: {
-          cantonese: 'Magandang umaga sa inyong lahat.',
+          cantonese: 'daai6 gaa1 zou2 on1.',
           english: 'Good morning to all of you.',
           zhTW: '大家早安。',
           zhCN: '大家早安。'
@@ -96,12 +96,12 @@ export const lessons: Category[] = [
       },
       {
         id: '6',
-        cantonese: 'Magandang hapon',
+        cantonese: 'ng5 on1',
         english: 'Good afternoon',
         zhTW: '午安',
         zhCN: '午安',
         example: {
-          cantonese: 'Magandang hapon po.',
+          cantonese: 'ng5 on1 (lai5 maau6).',
           english: 'Good afternoon (polite).',
           zhTW: '午安（禮貌）。',
           zhCN: '午安（礼貌）。'
@@ -109,12 +109,12 @@ export const lessons: Category[] = [
       },
       {
         id: '7',
-        cantonese: 'Magandang gabi',
+        cantonese: 'maan5 on1',
         english: 'Good evening',
         zhTW: '晚安',
         zhCN: '晚安',
         example: {
-          cantonese: 'Magandang gabi, lola.',
+          cantonese: 'maan5 on1, naai4 naai2.',
           english: 'Good evening, grandma.',
           zhTW: '晚安，奶奶。',
           zhCN: '晚安，奶奶。'
@@ -122,12 +122,12 @@ export const lessons: Category[] = [
       },
       {
         id: '8',
-        cantonese: 'Magandang tanghali',
+        cantonese: 'ng5 on1 (zung1 ng5)',
         english: 'Good noon',
         zhTW: '午安 (中午)',
         zhCN: '午安 (中午)',
         example: {
-          cantonese: 'Magandang tanghali sa inyo.',
+          cantonese: 'zuk1 nei5 mun4 zung1 ng5 jyu6 faai3.',
           english: 'Good noon to you.',
           zhTW: '祝你們中午愉快。',
           zhCN: '祝你们中午愉快。'
@@ -135,12 +135,12 @@ export const lessons: Category[] = [
       },
       {
         id: '9',
-        cantonese: 'Magandang araw',
+        cantonese: 'mei5 hou2 dik1 jat1 tin1',
         english: 'Good day',
         zhTW: '美好的一天',
         zhCN: '美好的一天',
         example: {
-          cantonese: 'Magandang araw po.',
+          cantonese: 'zuk1 nei5 jau5 mei5 hou2 dik1 jat1 tin1.',
           english: 'Good day (polite).',
           zhTW: '祝您有美好的一天。',
           zhCN: '祝您有美好的一天。'
@@ -148,12 +148,12 @@ export const lessons: Category[] = [
       },
       {
         id: '10',
-        cantonese: 'Paalam',
+        cantonese: 'zoi3 gin3',
         english: 'Goodbye',
         zhTW: '再見',
         zhCN: '再见',
         example: {
-          cantonese: 'Paalam, hanggang sa muli.',
+          cantonese: 'zoi3 gin3, haa6 ci3 gin3.',
           english: 'Goodbye, until next time.',
           zhTW: '再見，下次見。',
           zhCN: '再见，下次见。'
@@ -161,12 +161,12 @@ export const lessons: Category[] = [
       },
       {
         id: '11',
-        cantonese: 'Tao po',
+        cantonese: 'jau5 jan4 zoi6 maa1?',
         english: 'Is anybody home? / Knock knock',
         zhTW: '有人在嗎？',
         zhCN: '有人在吗？',
         example: {
-          cantonese: 'Tao po! May tao ba dyan?',
+          cantonese: 'jau5 jan4 zoi6 maa1? naa5 leoi5 jau5 jan4 maa1?',
           english: 'Hello! Is anybody there?',
           zhTW: '有人在嗎？那裡有人嗎？',
           zhCN: '有人在吗？那里有人吗？'
@@ -174,12 +174,12 @@ export const lessons: Category[] = [
       },
       {
         id: '12',
-        cantonese: 'Tuloy po kayo',
+        cantonese: 'ceng2 zeon3',
         english: 'Please come in',
         zhTW: '請進',
         zhCN: '请进',
         example: {
-          cantonese: 'Tuloy po kayo sa aming bahay.',
+          cantonese: 'ceng2 zeon3 loi4 ngo5 mun4 gaa1.',
           english: 'Please come in to our house.',
           zhTW: '請進來我們家。',
           zhCN: '请进来我们家。'
@@ -187,12 +187,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'g13',
-        cantonese: 'Ingat',
+        cantonese: 'siu2 sam1 / bou2 zung6',
         english: 'Take care',
         zhTW: '小心 / 保重',
         zhCN: '小心 / 保重',
         example: {
-          cantonese: 'Ingat ka sa paglalakbay.',
+          cantonese: 'leoi5 tou4 siu2 sam1.',
           english: 'Take care on your journey.',
           zhTW: '旅途小心。',
           zhCN: '旅途小心。'
@@ -200,12 +200,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'g14',
-        cantonese: 'Mabuhay',
+        cantonese: 'maan6 seoi3 / fun1 jing4',
         english: 'Long live / Welcome',
         zhTW: '萬歲 / 歡迎',
         zhCN: '万岁 / 欢迎',
         example: {
-          cantonese: 'Mabuhay ang Pilipinas!',
+          cantonese: 'fei1 leot6 ban1 maan6 seoi3!',
           english: 'Long live the Hong Kong!',
           zhTW: '菲律賓萬歲！',
           zhCN: '菲律宾万岁！'
@@ -213,12 +213,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'g15',
-        cantonese: 'Pasensya na',
+        cantonese: 'deoi3 bat1 hei2 / pou5 hip3',
         english: 'Sorry / Excuse me',
         zhTW: '對不起 / 抱歉',
         zhCN: '对不起 / 抱歉',
         example: {
-          cantonese: 'Pasensya na po, late ako.',
+          cantonese: 'deoi3 bat1 hei2, ngo5 ci4 dou3 liu5.',
           english: 'Sorry, I am late.',
           zhTW: '對不起，我遲到了。',
           zhCN: '对不起，我迟到了。'
@@ -226,12 +226,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'g16',
-        cantonese: 'Oo / Hindi',
+        cantonese: 'si6 / bat1 si6',
         english: 'Yes / No',
         zhTW: '是 / 不是',
         zhCN: '是 / 不是',
         example: {
-          cantonese: 'Oo, pupunta ako. Hindi siya kasama.',
+          cantonese: 'si6 dik1, ngo5 wui5 heoi3. taa1 / taa1 bat1 loi4.',
           english: 'Yes, I will go. He/she is not coming.',
           zhTW: '是的，我會去。他/她不來。',
           zhCN: '是的，我会去。他/她不来。'
@@ -239,12 +239,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'g17',
-        cantonese: 'Sige',
+        cantonese: 'hou2 dik1 / ho2 ji5',
         english: 'Okay / Alright / Go ahead',
         zhTW: '好的 / 可以',
         zhCN: '好的 / 可以',
         example: {
-          cantonese: 'Sige, kita tayo mamaya.',
+          cantonese: 'hou2 dik1, doi6 wui6 gin3.',
           english: 'Alright, see you later.',
           zhTW: '好的，待會見。',
           zhCN: '好的，待会见。'
@@ -252,12 +252,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'g18',
-        cantonese: 'Sandali lang',
+        cantonese: 'saau2 dang2 jat1 haa5',
         english: 'Just a moment',
         zhTW: '稍等一下',
         zhCN: '稍等一下',
         example: {
-          cantonese: 'Sandali lang po, tatawag ako.',
+          cantonese: 'ceng2 saau2 dang2, ngo5 daa2 go3 din6 waa2.',
           english: 'Just a moment, I will call.',
           zhTW: '請稍等，我打個電話。',
           zhCN: '请稍等，我打个电话。'
@@ -265,12 +265,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'g19',
-        cantonese: 'Maligayang bati',
+        cantonese: 'gung1 hei2 / zuk1 ho6',
         english: 'Congratulations / Happy greetings',
         zhTW: '恭喜 / 祝賀',
         zhCN: '恭喜 / 祝贺',
         example: {
-          cantonese: 'Maligayang bati sa iyong kaarawan!',
+          cantonese: 'zuk1 nei5 saang1 jat6 faai3 lok6!',
           english: 'Happy birthday to you!',
           zhTW: '祝你生日快樂！',
           zhCN: '祝你生日快乐！'
@@ -278,12 +278,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'g20',
-        cantonese: 'Hanggang sa muli',
+        cantonese: 'hau6 wui6 jau5 kei4',
         english: 'Until we meet again',
         zhTW: '後會有期',
         zhCN: '后会有期',
         example: {
-          cantonese: 'Paalam na, hanggang sa muli.',
+          cantonese: 'zoi3 gin3, hau6 wui6 jau5 kei4.',
           english: 'Goodbye, until we meet again.',
           zhTW: '再見，後會有期。',
           zhCN: '再见，后会有期。'
@@ -300,12 +300,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'n1',
-        cantonese: 'Isa',
+        cantonese: 'jat1',
         english: 'One',
         zhTW: '一',
         zhCN: '一',
         example: {
-          cantonese: 'Isa lang ang kailangan ko.',
+          cantonese: 'ngo5 zi2 seoi1 jiu3 jat1 go3.',
           english: 'I only need one.',
           zhTW: '我只需要一個。',
           zhCN: '我只需要一个。'
@@ -313,12 +313,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n2',
-        cantonese: 'Dalawa',
+        cantonese: 'ji6',
         english: 'Two',
         zhTW: '二',
         zhCN: '二',
         example: {
-          cantonese: 'Dalawa ang anak nila.',
+          cantonese: 'taa1 mun4 jau5 loeng5 go3 haai4 zi2.',
           english: 'They have two children.',
           zhTW: '他們有兩個孩子。',
           zhCN: '他们有两个孩子。'
@@ -326,12 +326,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n3',
-        cantonese: 'Tatlo',
+        cantonese: 'saam1',
         english: 'Three',
         zhTW: '三',
         zhCN: '三',
         example: {
-          cantonese: 'Tatlo kami sa grupo.',
+          cantonese: 'ngo5 mun4 zou2 leoi5 jau5 saam1 go3 jan4.',
           english: 'There are three of us in the group.',
           zhTW: '我們組裡有三個人。',
           zhCN: '我们组里有三个人。'
@@ -339,12 +339,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n4',
-        cantonese: 'Apat',
+        cantonese: 'sei3',
         english: 'Four',
         zhTW: '四',
         zhCN: '四',
         example: {
-          cantonese: 'May apat na gulong ang kotse.',
+          cantonese: 'hei3 ce1 jau5 sei3 go3 leon4 zi2.',
           english: 'The car has four wheels.',
           zhTW: '汽車有四個輪子。',
           zhCN: '汽车有四个轮子。'
@@ -352,12 +352,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n5',
-        cantonese: 'Lima',
+        cantonese: 'ng5',
         english: 'Five',
         zhTW: '五',
         zhCN: '五',
         example: {
-          cantonese: 'Alas-singko na ng hapon.',
+          cantonese: 'ji5 ging1 si6 haa6 ng5 ng5 dim2 liu5.',
           english: 'It is already five in the afternoon.',
           zhTW: '已經是下午五點了。',
           zhCN: '已经是下午五点了。'
@@ -365,12 +365,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n6',
-        cantonese: 'Anim',
+        cantonese: 'luk6',
         english: 'Six',
         zhTW: '六',
         zhCN: '六',
         example: {
-          cantonese: 'Anim na buwan na.',
+          cantonese: 'ji5 ging1 luk6 go3 jyut6 liu5.',
           english: 'It has been six months.',
           zhTW: '已經六個月了。',
           zhCN: '已经六个月了。'
@@ -378,12 +378,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n7',
-        cantonese: 'Pito',
+        cantonese: 'cat1',
         english: 'Seven',
         zhTW: '七',
         zhCN: '七',
         example: {
-          cantonese: 'Pito ang araw sa isang linggo.',
+          cantonese: 'jat1 zau1 jau5 cat1 tin1.',
           english: 'There are seven days in a week.',
           zhTW: '一週有七天。',
           zhCN: '一周有七天。'
@@ -391,12 +391,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n8',
-        cantonese: 'Walo',
+        cantonese: 'baat3',
         english: 'Eight',
         zhTW: '八',
         zhCN: '八',
         example: {
-          cantonese: 'Walo kaming magkakapatid.',
+          cantonese: 'ngo5 mun4 jau5 baat3 go3 hing1 dai6 zi2 mui2.',
           english: 'We are eight siblings.',
           zhTW: '我們有八個兄弟姊妹。',
           zhCN: '我们有八个兄弟姐妹。'
@@ -404,12 +404,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n9',
-        cantonese: 'Siyam',
+        cantonese: 'gau2',
         english: 'Nine',
         zhTW: '九',
         zhCN: '九',
         example: {
-          cantonese: 'Siyam na taong gulang siya.',
+          cantonese: 'taa1 / taa1 gau2 seoi3.',
           english: 'He/She is nine years old.',
           zhTW: '他/她九歲。',
           zhCN: '他/她九岁。'
@@ -417,12 +417,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n10',
-        cantonese: 'Sampu',
+        cantonese: 'sap6',
         english: 'Ten',
         zhTW: '十',
         zhCN: '十',
         example: {
-          cantonese: 'Sampu ang daliri ko.',
+          cantonese: 'ngo5 jau5 sap6 go3 sau2 zi2.',
           english: 'I have ten fingers.',
           zhTW: '我有十個手指。',
           zhCN: '我有十个手指。'
@@ -430,12 +430,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n11',
-        cantonese: 'Labing-isa',
+        cantonese: 'sap6 jat1',
         english: 'Eleven',
         zhTW: '十一',
         zhCN: '十一',
         example: {
-          cantonese: 'Labing-isa ang manlalaro.',
+          cantonese: 'jau5 sap6 jat1 ming4 kau4 jyun4.',
           english: 'There are eleven players.',
           zhTW: '有十一名球員。',
           zhCN: '有十一名球员。'
@@ -443,12 +443,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n12',
-        cantonese: 'Labindalawa',
+        cantonese: 'sap6 ji6',
         english: 'Twelve',
         zhTW: '十二',
         zhCN: '十二',
         example: {
-          cantonese: 'Labindalawa ang itlog sa tray.',
+          cantonese: 'tok3 pun2 leoi5 jau5 sap6 ji6 go3 gai1 daan2.',
           english: 'There are twelve eggs in the tray.',
           zhTW: '托盤裡有十二個雞蛋。',
           zhCN: '托盘里有十二个鸡蛋。'
@@ -456,12 +456,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n13',
-        cantonese: 'Labintatlo',
+        cantonese: 'sap6 saam1',
         english: 'Thirteen',
         zhTW: '十三',
         zhCN: '十三',
         example: {
-          cantonese: 'Labintatlo ang paborito niyang numero.',
+          cantonese: 'sap6 saam1 si6 taa1 / taa1 zeoi3 hei2 fun1 dik1 sou3 zi6.',
           english: 'Thirteen is his/her favorite number.',
           zhTW: '十三是他/她最喜歡的數字。',
           zhCN: '十三是他/她最喜欢的数字。'
@@ -469,12 +469,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n14',
-        cantonese: 'Labing-apat',
+        cantonese: 'sap6 sei3',
         english: 'Fourteen',
         zhTW: '十四',
         zhCN: '十四',
         example: {
-          cantonese: 'Labing-apat na araw na ang nakalipas.',
+          cantonese: 'ji5 ging1 gwo3 heoi3 sap6 sei3 tin1 liu5.',
           english: 'Fourteen days have passed.',
           zhTW: '已經過去十四天了。',
           zhCN: '已经过去十四天了。'
@@ -482,12 +482,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n15',
-        cantonese: 'Labinlima',
+        cantonese: 'sap6 ng5',
         english: 'Fifteen',
         zhTW: '十五',
         zhCN: '十五',
         example: {
-          cantonese: 'Labinlima kami sa klase.',
+          cantonese: 'ngo5 mun4 baan1 jau5 sap6 ng5 go3 jan4.',
           english: 'We are fifteen in the class.',
           zhTW: '我們班有十五個人。',
           zhCN: '我们班有十五个人。'
@@ -495,12 +495,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n16',
-        cantonese: 'Labing-anim',
+        cantonese: 'sap6 luk6',
         english: 'Sixteen',
         zhTW: '十六',
         zhCN: '十六',
         example: {
-          cantonese: 'Labing-anim na taong gulang na siya.',
+          cantonese: 'taa1 / taa1 sap6 luk6 seoi3 liu5.',
           english: 'He/She is sixteen years old.',
           zhTW: '他/她十六歲了。',
           zhCN: '他/她十六岁了。'
@@ -508,12 +508,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n17',
-        cantonese: 'Labimpito',
+        cantonese: 'sap6 cat1',
         english: 'Seventeen',
         zhTW: '十七',
         zhCN: '十七',
         example: {
-          cantonese: 'Labimpito ang bilang ng mga ibon.',
+          cantonese: 'niu5 dik1 sou3 loeng6 si6 sap6 cat1 zek3.',
           english: 'The number of birds is seventeen.',
           zhTW: '鳥的數量是十七隻。',
           zhCN: '鸟的数量是十七只。'
@@ -521,12 +521,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n18',
-        cantonese: 'Labingwalo',
+        cantonese: 'sap6 baat3',
         english: 'Eighteen',
         zhTW: '十八',
         zhCN: '十八',
         example: {
-          cantonese: 'Labingwalo ang bisita.',
+          cantonese: 'jau5 sap6 baat3 wai6 haak3 jan4.',
           english: 'There are eighteen guests.',
           zhTW: '有十八位客人。',
           zhCN: '有十八位客人。'
@@ -534,12 +534,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n19',
-        cantonese: 'Labinsiyam',
+        cantonese: 'sap6 gau2',
         english: 'Nineteen',
         zhTW: '十九',
         zhCN: '十九',
         example: {
-          cantonese: 'Labinsiyam na piso lang.',
+          cantonese: 'zi2 jiu3 sap6 gau2 pei1 sok3.',
           english: 'Only nineteen pesos.',
           zhTW: '只要十九披索。',
           zhCN: '只要十九披索。'
@@ -547,12 +547,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n20',
-        cantonese: 'Dalawampu',
+        cantonese: 'ji6 sap6',
         english: 'Twenty',
         zhTW: '二十',
         zhCN: '二十',
         example: {
-          cantonese: 'Dalawampu ang estudyante.',
+          cantonese: 'jau5 ji6 sap6 ming4 hok6 saang1.',
           english: 'There are twenty students.',
           zhTW: '有二十名學生。',
           zhCN: '有二十名学生。'
@@ -560,12 +560,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n30',
-        cantonese: 'Tatlumpu',
+        cantonese: 'saam1 sap6',
         english: 'Thirty',
         zhTW: '三十',
         zhCN: '三十',
         example: {
-          cantonese: 'Tatlumpu ang araw sa Setyembre.',
+          cantonese: 'gau2 jyut6 jau5 saam1 sap6 tin1.',
           english: 'There are thirty days in September.',
           zhTW: '九月有三十天。',
           zhCN: '九月有三十天。'
@@ -573,12 +573,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n40',
-        cantonese: 'Apatnapu',
+        cantonese: 'sei3 sap6',
         english: 'Forty',
         zhTW: '四十',
         zhCN: '四十',
         example: {
-          cantonese: 'Apatnapu na siya.',
+          cantonese: 'taa1 / taa1 ji5 ging1 sei3 sap6 seoi3 liu5.',
           english: 'He/She is forty already.',
           zhTW: '他/她已經四十歲了。',
           zhCN: '他/她已经四十岁了。'
@@ -586,12 +586,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n50',
-        cantonese: 'Limampu',
+        cantonese: 'ng5 sap6',
         english: 'Fifty',
         zhTW: '五十',
         zhCN: '五十',
         example: {
-          cantonese: 'Limampu ang kalahati ng sandaan.',
+          cantonese: 'ng5 sap6 si6 jat1 baak3 dik1 jat1 bun3.',
           english: 'Fifty is half of one hundred.',
           zhTW: '五十是一百的一半。',
           zhCN: '五十是一百的一半。'
@@ -599,12 +599,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n100',
-        cantonese: 'Sandaan',
+        cantonese: 'jat1 baak3',
         english: 'One Hundred',
         zhTW: '一百',
         zhCN: '一百',
         example: {
-          cantonese: 'Sandaang porsyento.',
+          cantonese: 'baak3 fan6 zi1 baak3.',
           english: 'One hundred percent.',
           zhTW: '百分之百。',
           zhCN: '百分之百。'
@@ -612,12 +612,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'n1000',
-        cantonese: 'Isang Libo',
+        cantonese: 'jat1 cin1',
         english: 'One Thousand',
         zhTW: '一千',
         zhCN: '一千',
         example: {
-          cantonese: 'Isang libo ang bayad.',
+          cantonese: 'fai3 jung6 si6 jat1 cin1.',
           english: 'The payment is one thousand.',
           zhTW: '費用是一千。',
           zhCN: '费用是一千。'
@@ -634,12 +634,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'dm1',
-        cantonese: 'Lunes',
+        cantonese: 'sing1 kei4 jat1',
         english: 'Monday',
         zhTW: '星期一',
         zhCN: '星期一',
         example: {
-          cantonese: 'Sa Lunes tayo magkikita.',
+          cantonese: 'ngo5 mun4 sing1 kei4 jat1 gin3.',
           english: 'We will meet on Monday.',
           zhTW: '我們星期一見。',
           zhCN: '我们星期一见。'
@@ -647,12 +647,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm2',
-        cantonese: 'Martes',
+        cantonese: 'sing1 kei4 ji6',
         english: 'Tuesday',
         zhTW: '星期二',
         zhCN: '星期二',
         example: {
-          cantonese: 'Martes ngayon.',
+          cantonese: 'gam1 tin1 si6 sing1 kei4 ji6.',
           english: 'Today is Tuesday.',
           zhTW: '今天是星期二。',
           zhCN: '今天是星期二。'
@@ -660,12 +660,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm3',
-        cantonese: 'Miyerkules',
+        cantonese: 'sing1 kei4 saam1',
         english: 'Wednesday',
         zhTW: '星期三',
         zhCN: '星期三',
         example: {
-          cantonese: 'Walang pasok sa Miyerkules.',
+          cantonese: 'sing1 kei4 saam1 bat1 jung6 soeng5 fo3.',
           english: 'There is no class on Wednesday.',
           zhTW: '星期三不用上課。',
           zhCN: '星期三不用上课。'
@@ -673,12 +673,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm4',
-        cantonese: 'Huwebes',
+        cantonese: 'sing1 kei4 sei3',
         english: 'Thursday',
         zhTW: '星期四',
         zhCN: '星期四',
         example: {
-          cantonese: 'Aalis siya sa Huwebes.',
+          cantonese: 'taa1 / taa1 sing1 kei4 sei3 lei4 hoi1.',
           english: 'He/She is leaving on Thursday.',
           zhTW: '他/她星期四離開。',
           zhCN: '他/她星期四离开。'
@@ -686,12 +686,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm5',
-        cantonese: 'Biyernes',
+        cantonese: 'sing1 kei4 ng5',
         english: 'Friday',
         zhTW: '星期五',
         zhCN: '星期五',
         example: {
-          cantonese: 'Masaya ang Biyernes.',
+          cantonese: 'sing1 kei4 ng5 han2 faai3 lok6.',
           english: 'Friday is fun.',
           zhTW: '星期五很快樂。',
           zhCN: '星期五很快乐。'
@@ -699,12 +699,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm6',
-        cantonese: 'Sabado',
+        cantonese: 'sing1 kei4 luk6',
         english: 'Saturday',
         zhTW: '星期六',
         zhCN: '星期六',
         example: {
-          cantonese: 'Magpapahinga ako sa Sabado.',
+          cantonese: 'ngo5 sing1 kei4 luk6 jiu3 jau1 sik1.',
           english: 'I will rest on Saturday.',
           zhTW: '我星期六要休息。',
           zhCN: '我星期六要休息。'
@@ -712,12 +712,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm7',
-        cantonese: 'Linggo',
+        cantonese: 'sing1 kei4 jat6 / sing1 kei4',
         english: 'Sunday / Week',
         zhTW: '星期日 / 星期',
         zhCN: '星期日 / 星期',
         example: {
-          cantonese: 'Simbang gabi tuwing Linggo.',
+          cantonese: 'mui5 go3 sing1 kei4 jat6 heoi3 gaau3 tong2.',
           english: 'Night mass every Sunday.',
           zhTW: '每個星期日去教堂。',
           zhCN: '每个星期日去教堂。'
@@ -725,12 +725,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm8',
-        cantonese: 'Enero',
+        cantonese: 'jat1 jyut6',
         english: 'January',
         zhTW: '一月',
         zhCN: '一月',
         example: {
-          cantonese: 'Enero ang unang buwan.',
+          cantonese: 'jat1 jyut6 si6 dai6 jat1 go3 jyut6.',
           english: 'January is the first month.',
           zhTW: '一月是第一個月。',
           zhCN: '一月是第一个月。'
@@ -738,12 +738,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm9',
-        cantonese: 'Pebrero',
+        cantonese: 'ji6 jyut6',
         english: 'February',
         zhTW: '二月',
         zhCN: '二月',
         example: {
-          cantonese: 'Maikli ang buwan ng Pebrero.',
+          cantonese: 'ji6 jyut6 han2 dyun2.',
           english: 'The month of February is short.',
           zhTW: '二月很短。',
           zhCN: '二月很短。'
@@ -751,12 +751,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm10',
-        cantonese: 'Marso',
+        cantonese: 'saam1 jyut6',
         english: 'March',
         zhTW: '三月',
         zhCN: '三月',
         example: {
-          cantonese: 'Mainit sa Marso.',
+          cantonese: 'saam1 jyut6 han2 jit6.',
           english: 'It is hot in March.',
           zhTW: '三月很熱。',
           zhCN: '三月很热。'
@@ -764,12 +764,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm11',
-        cantonese: 'Abril',
+        cantonese: 'sei3 jyut6',
         english: 'April',
         zhTW: '四月',
         zhCN: '四月',
         example: {
-          cantonese: 'Abril ang kaarawan niya.',
+          cantonese: 'taa1 / taa1 dik1 saang1 jat6 zoi6 sei3 jyut6.',
           english: 'His/Her birthday is in April.',
           zhTW: '他/她的生日在四月。',
           zhCN: '他/她的生日在四月。'
@@ -777,12 +777,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm12',
-        cantonese: 'Mayo',
+        cantonese: 'ng5 jyut6',
         english: 'May',
         zhTW: '五月',
         zhCN: '五月',
         example: {
-          cantonese: 'Maraming piyesta sa Mayo.',
+          cantonese: 'ng5 jyut6 jau5 han2 do1 zit3 jat6.',
           english: 'There are many festivals in May.',
           zhTW: '五月有很多節日。',
           zhCN: '五月有很多节日。'
@@ -790,12 +790,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm13',
-        cantonese: 'Hunyo',
+        cantonese: 'luk6 jyut6',
         english: 'June',
         zhTW: '六月',
         zhCN: '六月',
         example: {
-          cantonese: 'Balik eskwela sa Hunyo.',
+          cantonese: 'luk6 jyut6 hoi1 hok6.',
           english: 'Back to school in June.',
           zhTW: '六月開學。',
           zhCN: '六月开学。'
@@ -803,12 +803,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm14',
-        cantonese: 'Hulyo',
+        cantonese: 'cat1 jyut6',
         english: 'July',
         zhTW: '七月',
         zhCN: '七月',
         example: {
-          cantonese: 'Maulan ang Hulyo.',
+          cantonese: 'cat1 jyut6 do1 jyu5.',
           english: 'July is rainy.',
           zhTW: '七月多雨。',
           zhCN: '七月多雨。'
@@ -816,12 +816,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm15',
-        cantonese: 'Agosto',
+        cantonese: 'baat3 jyut6',
         english: 'August',
         zhTW: '八月',
         zhCN: '八月',
         example: {
-          cantonese: 'Buwan ng Wika ang Agosto.',
+          cantonese: 'baat3 jyut6 si6 jyu5 man4 jyut6.',
           english: 'August is the Month of Language.',
           zhTW: '八月是語文月。',
           zhCN: '八月是语文月。'
@@ -829,12 +829,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm16',
-        cantonese: 'Setyembre',
+        cantonese: 'gau2 jyut6',
         english: 'September',
         zhTW: '九月',
         zhCN: '九月',
         example: {
-          cantonese: 'Magsisimula ang Pasko sa Setyembre.',
+          cantonese: 'sing3 daan3 zit3 cung4 gau2 jyut6 hoi1 ci2.',
           english: 'Christmas starts in September.',
           zhTW: '聖誕節從九月開始。',
           zhCN: '圣诞节从九月开始。'
@@ -842,12 +842,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm17',
-        cantonese: 'Oktubre',
+        cantonese: 'sap6 jyut6',
         english: 'October',
         zhTW: '十月',
         zhCN: '十月',
         example: {
-          cantonese: 'Malamig na sa Oktubre.',
+          cantonese: 'sap6 jyut6 hoi1 ci2 bin3 laang5 liu5.',
           english: 'It is getting cold in October.',
           zhTW: '十月開始變冷了。',
           zhCN: '十月开始变冷了。'
@@ -855,12 +855,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm18',
-        cantonese: 'Nobyembre',
+        cantonese: 'sap6 jat1 jyut6',
         english: 'November',
         zhTW: '十一月',
         zhCN: '十一月',
         example: {
-          cantonese: 'Araw ng mga Patay sa Nobyembre.',
+          cantonese: 'maan6 sing3 zit3 zoi6 sap6 jat1 jyut6.',
           english: 'Day of the Dead is in November.',
           zhTW: '萬聖節在十一月。',
           zhCN: '万圣节在十一月。'
@@ -868,12 +868,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm19',
-        cantonese: 'Disyembre',
+        cantonese: 'sap6 ji6 jyut6',
         english: 'December',
         zhTW: '十二月',
         zhCN: '十二月',
         example: {
-          cantonese: 'Malamig ang simoy ng hangin sa Disyembre.',
+          cantonese: 'sap6 ji6 jyut6 dik1 mei4 fung1 han2 laang5.',
           english: 'The breeze is cold in December.',
           zhTW: '十二月的微風很冷。',
           zhCN: '十二月的微风很冷。'
@@ -881,12 +881,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm20',
-        cantonese: 'Araw',
+        cantonese: 'tin1 / jat6 / taai3 joeng4',
         english: 'Day / Sun',
         zhTW: '天 / 日 / 太陽',
         zhCN: '天 / 日 / 太阳',
         example: {
-          cantonese: 'Magandang araw!',
+          cantonese: 'mei5 hou2 dik1 jat1 tin1!',
           english: 'Good day!',
           zhTW: '美好的一天！',
           zhCN: '美好的一天！'
@@ -894,12 +894,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm21',
-        cantonese: 'Buwan',
+        cantonese: 'jyut6 / jyut6 loeng6',
         english: 'Month / Moon',
         zhTW: '月 / 月亮',
         zhCN: '月 / 月亮',
         example: {
-          cantonese: 'Isang buwan na ang nakalipas.',
+          cantonese: 'jat1 go3 jyut6 gwo3 heoi3 liu5.',
           english: 'One month has passed.',
           zhTW: '一個月過去了。',
           zhCN: '一个月过去了。'
@@ -907,12 +907,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dm22',
-        cantonese: 'Taon',
+        cantonese: 'nin4',
         english: 'Year',
         zhTW: '年',
         zhCN: '年',
         example: {
-          cantonese: 'Bagong taon, bagong pag-asa.',
+          cantonese: 'san1 nin4 san1 hei1 mong6.',
           english: 'New year, new hope.',
           zhTW: '新年新希望。',
           zhCN: '新年新希望。'
@@ -929,12 +929,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'c1',
-        cantonese: 'Opo / Oo',
+        cantonese: 'si6',
         english: 'Yes',
         zhTW: '是',
         zhCN: '是',
         example: {
-          cantonese: 'Opo, naiintindihan ko.',
+          cantonese: 'si6 dik1, ngo5 ming4 baak6 liu5 (lai5 maau6).',
           english: 'Yes, I understand (polite).',
           zhTW: '是的，我明白了（禮貌）。',
           zhCN: '是的，我明白了（礼貌）。'
@@ -942,12 +942,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'c2',
-        cantonese: 'Hindi',
+        cantonese: 'bat1',
         english: 'No',
         zhTW: '不',
         zhCN: '不',
         example: {
-          cantonese: 'Hindi ko alam.',
+          cantonese: 'ngo5 bat1 zi1 dou3.',
           english: 'I do not know.',
           zhTW: '我不知道。',
           zhCN: '我不知道。'
@@ -955,12 +955,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'c3',
-        cantonese: 'Ano ito?',
+        cantonese: 'ze5 si6 sam6 mo1?',
         english: 'What is this?',
         zhTW: '這是什麼？',
         zhCN: '这是什么？',
         example: {
-          cantonese: 'Ano ito? Masarap ba?',
+          cantonese: 'ze5 si6 sam6 mo1? hou2 hek3 maa1?',
           english: 'What is this? Is it delicious?',
           zhTW: '這是什麼？好吃嗎？',
           zhCN: '这是什么？好吃吗？'
@@ -968,12 +968,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'c4',
-        cantonese: 'Magkano ito?',
+        cantonese: 'ze5 go3 do1 siu2 cin2?',
         english: 'How much is this?',
         zhTW: '這個多少錢？',
         zhCN: '这个多少钱？',
         example: {
-          cantonese: 'Magkano ito? Mura lang ba?',
+          cantonese: 'ze5 go3 do1 siu2 cin2? pin4 ji2 maa1?',
           english: 'How much is this? Is it cheap?',
           zhTW: '這個多少錢？便宜嗎？',
           zhCN: '这个多少钱？便宜吗？'
@@ -981,12 +981,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'c5',
-        cantonese: 'Masarap',
+        cantonese: 'hou2 hek3',
         english: 'Delicious',
         zhTW: '好吃',
         zhCN: '好吃',
         example: {
-          cantonese: 'Masarap ang luto ni Nanay.',
+          cantonese: 'maa4 maa1 zou6 dik1 coi3 han2 hou2 hek3.',
           english: 'Mom\'s cooking is delicious.',
           zhTW: '媽媽做的菜很好吃。',
           zhCN: '妈妈做的菜很好吃。'
@@ -1003,12 +1003,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'f1',
-        cantonese: 'Tatay',
+        cantonese: 'fu6 can1',
         english: 'Father',
         zhTW: '父親',
         zhCN: '父亲',
         example: {
-          cantonese: 'Nasa trabaho ang tatay.',
+          cantonese: 'fu6 can1 zoi6 gung1 zok3.',
           english: 'Father is at work.',
           zhTW: '父親在工作。',
           zhCN: '父亲在工作。'
@@ -1016,12 +1016,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'f2',
-        cantonese: 'Nanay',
+        cantonese: 'mou5 can1',
         english: 'Mother',
         zhTW: '母親',
         zhCN: '母亲',
         example: {
-          cantonese: 'Nagluluto si Nanay.',
+          cantonese: 'mou5 can1 zing3 zoi6 zou6 faan6.',
           english: 'Mother is cooking.',
           zhTW: '母親正在做飯。',
           zhCN: '母亲正在做饭。'
@@ -1029,12 +1029,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'f3',
-        cantonese: 'Kapatid',
+        cantonese: 'hing1 dai6 zi2 mui2',
         english: 'Sibling',
         zhTW: '兄弟姊妹',
         zhCN: '兄弟姐妹',
         example: {
-          cantonese: 'Ilan ang kapatid mo?',
+          cantonese: 'nei5 jau5 gei2 go3 hing1 dai6 zi2 mui2?',
           english: 'How many siblings do you have?',
           zhTW: '你有幾個兄弟姊妹？',
           zhCN: '你有几个兄弟姐妹？'
@@ -1042,12 +1042,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'f4',
-        cantonese: 'Kuya',
+        cantonese: 'go4 go1',
         english: 'Older Brother',
         zhTW: '哥哥',
         zhCN: '哥哥',
         example: {
-          cantonese: 'Si Kuya ang nag-aalaga sa akin.',
+          cantonese: 'go4 go1 ziu3 gu3 ngo5.',
           english: 'Older brother takes care of me.',
           zhTW: '哥哥照顧我。',
           zhCN: '哥哥照顾我。'
@@ -1055,12 +1055,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'f5',
-        cantonese: 'Ate',
+        cantonese: 'zi2 zi2',
         english: 'Older Sister',
         zhTW: '姊姊',
         zhCN: '姐姐',
         example: {
-          cantonese: 'Mabait ang ate ko.',
+          cantonese: 'ngo5 dik1 zi2 zi2 han2 sin6 loeng4.',
           english: 'My older sister is kind.',
           zhTW: '我的姊姊很善良。',
           zhCN: '我的姐姐很善良。'
@@ -1068,12 +1068,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'f6',
-        cantonese: 'Lolo',
+        cantonese: 'zou2 fu6 / ngoi6 zou2 fu6',
         english: 'Grandfather',
         zhTW: '祖父 / 外祖父',
         zhCN: '祖父 / 外祖父',
         example: {
-          cantonese: 'Mahal ko ang aking lolo.',
+          cantonese: 'ngo5 oi3 ngo5 dik1 zou2 fu6.',
           english: 'I love my grandfather.',
           zhTW: '我愛我的祖父。',
           zhCN: '我爱我的祖父。'
@@ -1081,12 +1081,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'f7',
-        cantonese: 'Lola',
+        cantonese: 'zou2 mou5 / ngoi6 zou2 mou5',
         english: 'Grandmother',
         zhTW: '祖母 / 外祖母',
         zhCN: '祖母 / 外祖母',
         example: {
-          cantonese: 'Nagluluto si Lola ng masarap na pagkain.',
+          cantonese: 'naai4 naai2 zing3 zoi6 zou6 mei5 mei6 dik1 sik6 mat6.',
           english: 'Grandma is cooking delicious food.',
           zhTW: '奶奶正在做美味的食物。',
           zhCN: '奶奶正在做美味的食物。'
@@ -1094,12 +1094,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'f8',
-        cantonese: 'Tito',
+        cantonese: 'suk1 suk1 / baak3 baak3 / kau5 kau5',
         english: 'Uncle',
         zhTW: '叔叔 / 伯伯 / 舅舅',
         zhCN: '叔叔 / 伯伯 / 舅舅',
         example: {
-          cantonese: 'Nasa abroad ang tito ko.',
+          cantonese: 'ngo5 dik1 suk1 suk1 zoi6 gwok3 ngoi6.',
           english: 'My uncle is abroad.',
           zhTW: '我的叔叔在國外。',
           zhCN: '我的叔叔在国外。'
@@ -1107,12 +1107,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'f9',
-        cantonese: 'Tita',
+        cantonese: 'aa3 ji1 / gu1 gu1 / sam2 sam2',
         english: 'Aunt',
         zhTW: '阿姨 / 姑姑 / 嬸嬸',
         zhCN: '阿姨 / 姑姑 / 婶婶',
         example: {
-          cantonese: 'Binigyan ako ng regalo ni Tita.',
+          cantonese: 'aa3 ji1 kap1 liu5 ngo5 jat1 fan6 lai5 mat6.',
           english: 'Auntie gave me a gift.',
           zhTW: '阿姨給了我一份禮物。',
           zhCN: '阿姨给了我一份礼物。'
@@ -1120,12 +1120,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'f10',
-        cantonese: 'Pinsan',
+        cantonese: 'tong4 biu2 hing1 dai6 zi2 mui2',
         english: 'Cousin',
         zhTW: '堂表兄弟姊妹',
         zhCN: '堂表兄弟姐妹',
         example: {
-          cantonese: 'Kalaro ko ang aking pinsan.',
+          cantonese: 'ngo5 zing3 zoi6 wo4 ngo5 dik1 tong4 biu2 hing1 dai6 zi2 mui2 waan2.',
           english: 'I am playing with my cousin.',
           zhTW: '我正在和我的堂表兄弟姊妹玩。',
           zhCN: '我正在和我的堂表兄弟姐妹玩。'
@@ -1133,12 +1133,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'f11',
-        cantonese: 'Anak',
+        cantonese: 'haai4 zi2 / ji4 zi2 / neoi5 ji4',
         english: 'Child / Son / Daughter',
         zhTW: '孩子 / 兒子 / 女兒',
         zhCN: '孩子 / 儿子 / 女儿',
         example: {
-          cantonese: 'Mabait ang anak nila.',
+          cantonese: 'taa1 mun4 dik1 haai4 zi2 han2 gwaai1.',
           english: 'Their child is kind.',
           zhTW: '他們的孩子很乖。',
           zhCN: '他们的孩子很乖。'
@@ -1146,12 +1146,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'f12',
-        cantonese: 'Asawa',
+        cantonese: 'pui3 ngau5 (zoeng6 fu1 / cai1 zi2)',
         english: 'Spouse (Husband/Wife)',
         zhTW: '配偶 (丈夫/妻子)',
         zhCN: '配偶 (丈夫/妻子)',
         example: {
-          cantonese: 'Mahal niya ang kanyang asawa.',
+          cantonese: 'taa1 / taa1 oi3 taa1 / taa1 dik1 pui3 ngau5.',
           english: 'He/She loves his/her spouse.',
           zhTW: '他/她愛他/她的配偶。',
           zhCN: '他/她爱他/她的配偶。'
@@ -1168,12 +1168,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'col1',
-        cantonese: 'Pula',
+        cantonese: 'hung4 sik1',
         english: 'Red',
         zhTW: '紅色',
         zhCN: '红色',
         example: {
-          cantonese: 'Pula ang paborito kong kulay.',
+          cantonese: 'hung4 sik1 si6 ngo5 zeoi3 hei2 fun1 dik1 ngaan4 sik1.',
           english: 'Red is my favorite color.',
           zhTW: '紅色是我最喜歡的顏色。',
           zhCN: '红色是我最喜欢的颜色。'
@@ -1181,12 +1181,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'col2',
-        cantonese: 'Asul',
+        cantonese: 'laam4 sik1',
         english: 'Blue',
         zhTW: '藍色',
         zhCN: '蓝色',
         example: {
-          cantonese: 'Ang langit ay asul.',
+          cantonese: 'tin1 hung1 si6 laam4 sik1 dik1.',
           english: 'The sky is blue.',
           zhTW: '天空是藍色的。',
           zhCN: '天空是蓝色的。'
@@ -1194,12 +1194,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'col3',
-        cantonese: 'Dilaw',
+        cantonese: 'wong4 sik1',
         english: 'Yellow',
         zhTW: '黃色',
         zhCN: '黄色',
         example: {
-          cantonese: 'Dilaw ang araw.',
+          cantonese: 'taai3 joeng4 si6 wong4 sik1 dik1.',
           english: 'The sun is yellow.',
           zhTW: '太陽是黃色的。',
           zhCN: '太阳是黄色的。'
@@ -1207,12 +1207,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'col4',
-        cantonese: 'Puti',
+        cantonese: 'baak6 sik1',
         english: 'White',
         zhTW: '白色',
         zhCN: '白色',
         example: {
-          cantonese: 'Puti ang damit niya.',
+          cantonese: 'taa1 / taa1 dik1 ji1 fuk6 si6 baak6 sik1 dik1.',
           english: 'His/Her clothes are white.',
           zhTW: '他/她的衣服是白色的。',
           zhCN: '他/她的衣服是白色的。'
@@ -1220,12 +1220,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'col5',
-        cantonese: 'Itim',
+        cantonese: 'hak1 sik1',
         english: 'Black',
         zhTW: '黑色',
         zhCN: '黑色',
         example: {
-          cantonese: 'Itim ang pusa.',
+          cantonese: 'naa5 zek3 maau1 si6 hak1 sik1 dik1.',
           english: 'The cat is black.',
           zhTW: '那隻貓是黑色的。',
           zhCN: '那只猫是黑色的。'
@@ -1233,12 +1233,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'col6',
-        cantonese: 'Luntian / Berde',
+        cantonese: 'luk6 sik1',
         english: 'Green',
         zhTW: '綠色',
         zhCN: '绿色',
         example: {
-          cantonese: 'Luntian ang mga dahon.',
+          cantonese: 'jip6 zi2 si6 luk6 sik1 dik1.',
           english: 'The leaves are green.',
           zhTW: '葉子是綠色的。',
           zhCN: '叶子是绿色的。'
@@ -1246,12 +1246,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'col7',
-        cantonese: 'Kahel',
+        cantonese: 'gwat1 sik1',
         english: 'Orange',
         zhTW: '橘色',
         zhCN: '橘色',
         example: {
-          cantonese: 'Masarap ang prutas na kahel.',
+          cantonese: 'gwat1 zi2 han2 hou2 hek3.',
           english: 'The orange fruit is delicious.',
           zhTW: '橘子很好吃。',
           zhCN: '橘子很好吃。'
@@ -1259,12 +1259,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'col8',
-        cantonese: 'Lila',
+        cantonese: 'zi2 sik1',
         english: 'Purple',
         zhTW: '紫色',
         zhCN: '紫色',
         example: {
-          cantonese: 'Lila ang bulaklak na ito.',
+          cantonese: 'ze5 do2 faa1 si6 zi2 sik1 dik1.',
           english: 'This flower is purple.',
           zhTW: '這朵花是紫色的。',
           zhCN: '这朵花是紫色的。'
@@ -1272,12 +1272,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'col9',
-        cantonese: 'Kayumanggi',
+        cantonese: 'zung1 sik1',
         english: 'Brown',
         zhTW: '棕色',
         zhCN: '棕色',
         example: {
-          cantonese: 'Kayumanggi ang balat ng Pilipino.',
+          cantonese: 'fei1 leot6 ban1 jan4 dik1 pei4 fu1 si6 zung1 sik1 dik1.',
           english: 'Filipinos have brown skin.',
           zhTW: '菲律賓人的皮膚是棕色的。',
           zhCN: '菲律宾人的皮肤是棕色的。'
@@ -1285,12 +1285,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'col10',
-        cantonese: 'Rosas',
+        cantonese: 'fan2 hung4 sik1',
         english: 'Pink',
         zhTW: '粉紅色',
         zhCN: '粉红色',
         example: {
-          cantonese: 'Gusto niya ng kulay rosas.',
+          cantonese: 'taa1 hei2 fun1 fan2 hung4 sik1.',
           english: 'She likes the color pink.',
           zhTW: '她喜歡粉紅色。',
           zhCN: '她喜欢粉红色。'
@@ -1298,12 +1298,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'col11',
-        cantonese: 'Abo / Kulay-abo',
+        cantonese: 'fui1 sik1',
         english: 'Gray',
         zhTW: '灰色',
         zhCN: '灰色',
         example: {
-          cantonese: 'Kulay-abo ang ulap.',
+          cantonese: 'wan4 si6 fui1 sik1 dik1.',
           english: 'The clouds are gray.',
           zhTW: '雲是灰色的。',
           zhCN: '云是灰色的。'
@@ -1320,12 +1320,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'fd1',
-        cantonese: 'Kanin',
+        cantonese: 'mai5 faan6',
         english: 'Rice',
         zhTW: '米飯',
         zhCN: '米饭',
         example: {
-          cantonese: 'Gusto ko ng kanin.',
+          cantonese: 'ngo5 soeng2 jiu3 mai5 faan6.',
           english: 'I want rice.',
           zhTW: '我想要米飯。',
           zhCN: '我想要米饭。'
@@ -1333,12 +1333,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'fd2',
-        cantonese: 'Tubig',
+        cantonese: 'seoi2',
         english: 'Water',
         zhTW: '水',
         zhCN: '水',
         example: {
-          cantonese: 'Uminom ka ng tubig.',
+          cantonese: 'hot3 seoi2.',
           english: 'Drink water.',
           zhTW: '喝水。',
           zhCN: '喝水。'
@@ -1346,12 +1346,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'fd3',
-        cantonese: 'Tinapay',
+        cantonese: 'min6 baau1',
         english: 'Bread',
         zhTW: '麵包',
         zhCN: '面包',
         example: {
-          cantonese: 'Bumili ako ng tinapay.',
+          cantonese: 'ngo5 maai5 liu5 min6 baau1.',
           english: 'I bought bread.',
           zhTW: '我買了麵包。',
           zhCN: '我买了面包。'
@@ -1359,12 +1359,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'fd4',
-        cantonese: 'Manok',
+        cantonese: 'gai1 juk6',
         english: 'Chicken',
         zhTW: '雞肉',
         zhCN: '鸡肉',
         example: {
-          cantonese: 'Pritong manok ang ulam.',
+          cantonese: 'coi3 ngaau4 si6 zaa3 gai1.',
           english: 'Fried chicken is the dish.',
           zhTW: '菜餚是炸雞。',
           zhCN: '菜肴是炸鸡。'
@@ -1372,12 +1372,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'fd5',
-        cantonese: 'Isda',
+        cantonese: 'jyu4',
         english: 'Fish',
         zhTW: '魚',
         zhCN: '鱼',
         example: {
-          cantonese: 'Sariwa ang isda.',
+          cantonese: 'ze5 jyu4 han2 san1 sin1.',
           english: 'The fish is fresh.',
           zhTW: '這魚很新鮮。',
           zhCN: '这鱼很新鲜。'
@@ -1394,12 +1394,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'pro1',
-        cantonese: 'Ako',
+        cantonese: 'ngo5',
         english: 'I',
         zhTW: '我',
         zhCN: '我',
         example: {
-          cantonese: 'Ako ay Pilipino.',
+          cantonese: 'ngo5 si6 fei1 leot6 ban1 jan4.',
           english: 'I am Filipino.',
           zhTW: '我是菲律賓人。',
           zhCN: '我是菲律宾人。'
@@ -1407,12 +1407,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'pro2',
-        cantonese: 'Ikaw / Ka',
+        cantonese: 'nei5',
         english: 'You',
         zhTW: '你',
         zhCN: '你',
         example: {
-          cantonese: 'Ikaw ba yan?',
+          cantonese: 'si6 nei5 maa1?',
           english: 'Is that you?',
           zhTW: '是你嗎？',
           zhCN: '是你吗？'
@@ -1420,12 +1420,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'pro3',
-        cantonese: 'Siya',
+        cantonese: 'taa1 / taa1',
         english: 'He / She',
         zhTW: '他 / 她',
         zhCN: '他 / 她',
         example: {
-          cantonese: 'Siya ang kaibigan ko.',
+          cantonese: 'taa1 / taa1 si6 ngo5 dik1 pang4 jau5.',
           english: 'He/She is my friend.',
           zhTW: '他/她是我的朋友。',
           zhCN: '他/她是我的朋友。'
@@ -1433,12 +1433,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'pro4',
-        cantonese: 'Ko',
+        cantonese: 'ngo5 dik1',
         english: 'My / by Me',
         zhTW: '我的',
         zhCN: '我的',
         example: {
-          cantonese: 'Gusto ko ito.',
+          cantonese: 'ngo5 hei2 fun1 ze5 go3.',
           english: 'I like this (This is liked by me).',
           zhTW: '我喜歡這個。',
           zhCN: '我喜欢这个。'
@@ -1446,12 +1446,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'pro5',
-        cantonese: 'Mo',
+        cantonese: 'nei5 dik1',
         english: 'Your / by You',
         zhTW: '你的',
         zhCN: '你的',
         example: {
-          cantonese: 'Ano ang pangalan mo?',
+          cantonese: 'nei5 giu3 sam6 mo1 ming4 zi6?',
           english: 'What is your name?',
           zhTW: '你叫什麼名字？',
           zhCN: '你叫什么名字？'
@@ -1459,12 +1459,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'pro6',
-        cantonese: 'Niya',
+        cantonese: 'taa1 dik1 / taa1 dik1',
         english: 'His / Her / by Him',
         zhTW: '他的 / 她的',
         zhCN: '他的 / 她的',
         example: {
-          cantonese: 'Kain niya ito.',
+          cantonese: 'ze5 si6 taa1 / taa1 hek3 dik1.',
           english: 'This is what he/she ate.',
           zhTW: '这是他/她吃的。',
           zhCN: '这是他/她吃的。'
@@ -1472,12 +1472,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'pro7',
-        cantonese: 'Sa akin',
+        cantonese: 'deoi3 ngo5 loi4 syut3 / kap1 ngo5',
         english: 'To me',
         zhTW: '對我來說 / 給我',
         zhCN: '对我来说 / 给我',
         example: {
-          cantonese: 'Ibigay mo sa akin.',
+          cantonese: 'baa2 taa1 kap1 ngo5.',
           english: 'Give it to me.',
           zhTW: '把它給我。',
           zhCN: '把它给我。'
@@ -1485,12 +1485,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'pro8',
-        cantonese: 'Sa iyo',
+        cantonese: 'deoi3 nei5 loi4 syut3 / kap1 nei5',
         english: 'To you',
         zhTW: '對你來說 / 給你',
         zhCN: '对你来说 / 给你',
         example: {
-          cantonese: 'Para sa iyo ito.',
+          cantonese: 'ze5 si6 kap1 nei5 dik1.',
           english: 'This is for you.',
           zhTW: '這是給你的。',
           zhCN: '这是给你的。'
@@ -1507,12 +1507,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'pv1',
-        cantonese: 'Gusto',
+        cantonese: 'soeng2 jiu3 / hei2 fun1',
         english: 'Want / Like',
         zhTW: '想要 / 喜歡',
         zhCN: '想要 / 喜欢',
         example: {
-          cantonese: 'Gusto ko ng kape.',
+          cantonese: 'ngo5 soeng2 jiu3 gaa3 fe1.',
           english: 'I want coffee.',
           zhTW: '我想要咖啡。',
           zhCN: '我想要咖啡。'
@@ -1520,12 +1520,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'pv2',
-        cantonese: 'Ayaw',
+        cantonese: 'bat1 soeng2 jiu3 / bat1 hei2 fun1',
         english: 'Don\'t want',
         zhTW: '不想要 / 不喜歡',
         zhCN: '不想要 / 不喜欢',
         example: {
-          cantonese: 'Ayaw ko nito.',
+          cantonese: 'ngo5 bat1 soeng2 jiu3 ze5 go3.',
           english: 'I don\'t want this.',
           zhTW: '我不想要這個。',
           zhCN: '我不想要这个。'
@@ -1533,12 +1533,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'pv3',
-        cantonese: 'Kailangan',
+        cantonese: 'seoi1 jiu3',
         english: 'Need',
         zhTW: '需要',
         zhCN: '需要',
         example: {
-          cantonese: 'Kailangan ko ng tulong.',
+          cantonese: 'ngo5 seoi1 jiu3 bong1 zo6.',
           english: 'I need help.',
           zhTW: '我需要幫助。',
           zhCN: '我需要帮助。'
@@ -1546,12 +1546,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'pv4',
-        cantonese: 'Pwede',
+        cantonese: 'ho2 ji5',
         english: 'Can / Allowed',
         zhTW: '可以',
         zhCN: '可以',
         example: {
-          cantonese: 'Pwede ba?',
+          cantonese: 'ho2 ji5 maa1?',
           english: 'Is it allowed?',
           zhTW: '可以嗎？',
           zhCN: '可以吗？'
@@ -1568,12 +1568,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'qw1',
-        cantonese: 'Ano',
+        cantonese: 'sam6 mo1',
         english: 'What',
         zhTW: '什麼',
         zhCN: '什么',
         example: {
-          cantonese: 'Ano ang gusto mo?',
+          cantonese: 'nei5 soeng2 jiu3 sam6 mo1?',
           english: 'What do you want?',
           zhTW: '你想要什麼？',
           zhCN: '你想要什么？'
@@ -1581,12 +1581,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'qw2',
-        cantonese: 'Sino',
+        cantonese: 'seoi4',
         english: 'Who',
         zhTW: '誰',
         zhCN: '谁',
         example: {
-          cantonese: 'Sino siya?',
+          cantonese: 'taa1 / taa1 si6 seoi4?',
           english: 'Who is he/she?',
           zhTW: '他/她是誰？',
           zhCN: '他/她是谁？'
@@ -1594,12 +1594,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'qw3',
-        cantonese: 'Saan',
+        cantonese: 'naa5 leoi5',
         english: 'Where',
         zhTW: '哪裡',
         zhCN: '哪里',
         example: {
-          cantonese: 'Saan ka pupunta?',
+          cantonese: 'nei5 jiu3 heoi3 naa5 leoi5?',
           english: 'Where are you going?',
           zhTW: '你要去哪裡？',
           zhCN: '你要去哪里？'
@@ -1607,12 +1607,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'qw4',
-        cantonese: 'Kailan',
+        cantonese: 'sam6 mo1 si4 hau6',
         english: 'When',
         zhTW: '什麼時候',
         zhCN: '什么时候',
         example: {
-          cantonese: 'Kailan ang kaarawan mo?',
+          cantonese: 'nei5 dik1 saang1 jat6 si6 sam6 mo1 si4 hau6?',
           english: 'When is your birthday?',
           zhTW: '你的生日是什麼時候？',
           zhCN: '你的生日是什么时候？'
@@ -1620,12 +1620,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'qw5',
-        cantonese: 'Paano',
+        cantonese: 'zam2 mo1',
         english: 'How',
         zhTW: '怎麼',
         zhCN: '怎么',
         example: {
-          cantonese: 'Paano pumunta doon?',
+          cantonese: 'zam2 mo1 heoi3 naa5 leoi5?',
           english: 'How to go there?',
           zhTW: '怎麼去那裡？',
           zhCN: '怎么去那里？'
@@ -1633,12 +1633,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'qw6',
-        cantonese: 'Bakit',
+        cantonese: 'wai6 sam6 mo1',
         english: 'Why',
         zhTW: '為什麼',
         zhCN: '为什么',
         example: {
-          cantonese: 'Bakit ka malungkot?',
+          cantonese: 'nei5 wai6 sam6 mo1 naan4 gwo3?',
           english: 'Why are you sad?',
           zhTW: '你為什麼難過？',
           zhCN: '你为什么难过？'
@@ -1646,12 +1646,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'qw7',
-        cantonese: 'Nasaan',
+        cantonese: '... zoi6 naa5 leoi5?',
         english: 'Where is (object/person)?',
         zhTW: '...在哪裡？',
         zhCN: '...在哪里？',
         example: {
-          cantonese: 'Nasaan ang susi?',
+          cantonese: 'joek6 si4 zoi6 naa5 leoi5?',
           english: 'Where is the key?',
           zhTW: '鑰匙在哪裡？',
           zhCN: '钥匙在哪里？'
@@ -1668,12 +1668,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'con1',
-        cantonese: 'Pero',
+        cantonese: 'daan6 si6',
         english: 'But',
         zhTW: '但是',
         zhCN: '但是',
         example: {
-          cantonese: 'Gusto ko, pero wala akong pera.',
+          cantonese: 'ngo5 soeng2, daan6 si6 ngo5 mut6 cin2.',
           english: 'I want to, but I have no money.',
           zhTW: '我想，但是我沒錢。',
           zhCN: '我想，但是我没钱。'
@@ -1681,12 +1681,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'con2',
-        cantonese: 'Kasi',
+        cantonese: 'jan1 wai6',
         english: 'Because',
         zhTW: '因為',
         zhCN: '因为',
         example: {
-          cantonese: 'Kumain ako kasi gutom ako.',
+          cantonese: 'ngo5 hek3 liu5, jan1 wai6 ngo5 ngo6 liu5.',
           english: 'I ate because I was hungry.',
           zhTW: '我吃了，因為我餓了。',
           zhCN: '我吃了，因为我饿了。'
@@ -1694,12 +1694,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'con3',
-        cantonese: 'Dahil',
+        cantonese: 'jau4 jyu1',
         english: 'Because of',
         zhTW: '由於',
         zhCN: '由于',
         example: {
-          cantonese: 'Masaya ako dahil sa iyo.',
+          cantonese: 'jan1 wai6 nei5, ngo5 han2 faai3 lok6.',
           english: 'I am happy because of you.',
           zhTW: '因為你，我很快樂。',
           zhCN: '因为你，我很快乐。'
@@ -1707,12 +1707,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'con4',
-        cantonese: 'Kung',
+        cantonese: 'jyu4 gwo2',
         english: 'If',
         zhTW: '如果',
         zhCN: '如果',
         example: {
-          cantonese: 'Kung aalis ka, sasama ako.',
+          cantonese: 'jyu4 gwo2 nei5 jiu3 zau2, ngo5 wui5 gan1 nei5 jat1 hei2.',
           english: 'If you leave, I will come with you.',
           zhTW: '如果你要走，我會跟你一起。',
           zhCN: '如果你要走，我会跟你一起。'
@@ -1720,12 +1720,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'con5',
-        cantonese: 'Kaya',
+        cantonese: 'so2 ji5',
         english: 'That\'s why / So',
         zhTW: '所以',
         zhCN: '所以',
         example: {
-          cantonese: 'Umuulan, kaya hindi ako lumabas.',
+          cantonese: 'haa6 jyu5 liu5, so2 ji5 ngo5 mut6 ceot1 mun4.',
           english: 'It was raining, so I didn\'t go out.',
           zhTW: '下雨了，所以我沒出門。',
           zhCN: '下雨了，所以我没出门。'
@@ -1733,12 +1733,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'con6',
-        cantonese: 'Pala',
+        cantonese: 'jyun4 loi4',
         english: 'Oh, actually / realization',
         zhTW: '原來',
         zhCN: '原来',
         example: {
-          cantonese: 'Ikaw pala!',
+          cantonese: 'jyun4 loi4 si6 nei5!',
           english: 'Oh, it\'s you!',
           zhTW: '原來是你！',
           zhCN: '原来是你！'
@@ -1755,12 +1755,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'dem1',
-        cantonese: 'Ito',
+        cantonese: 'ze5 go3 (gan6)',
         english: 'This (near me)',
         zhTW: '這個 (近)',
         zhCN: '这个 (近)',
         example: {
-          cantonese: 'Ito ang bahay ko.',
+          cantonese: 'ze5 si6 ngo5 dik1 fong4 zi2.',
           english: 'This is my house.',
           zhTW: '這是我的房子。',
           zhCN: '这是我的房子。'
@@ -1768,12 +1768,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dem2',
-        cantonese: 'Iyan',
+        cantonese: 'naa5 go3 (zung1)',
         english: 'That (near you)',
         zhTW: '那個 (中)',
         zhCN: '那个 (中)',
         example: {
-          cantonese: 'Iyan ba ang libro mo?',
+          cantonese: 'naa5 si6 nei5 dik1 syu1 maa1?',
           english: 'Is that your book?',
           zhTW: '那是你的書嗎？',
           zhCN: '那是你的书吗？'
@@ -1781,12 +1781,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dem3',
-        cantonese: 'Iyon',
+        cantonese: 'naa5 go3 (jyun5)',
         english: 'That (far from both)',
         zhTW: '那個 (遠)',
         zhCN: '那个 (远)',
         example: {
-          cantonese: 'Iyon ang bundok.',
+          cantonese: 'naa5 si6 saan1.',
           english: 'That is the mountain.',
           zhTW: '那是山。',
           zhCN: '那是山。'
@@ -1794,12 +1794,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dem4',
-        cantonese: 'Dito',
+        cantonese: 'ze2 leoi5 (gan6)',
         english: 'Here (near me)',
         zhTW: '這裡 (近)',
         zhCN: '这里 (近)',
         example: {
-          cantonese: 'Dito ako nakatira.',
+          cantonese: 'ngo5 zyu6 zoi6 ze2 leoi5.',
           english: 'I live here.',
           zhTW: '我住在這裡。',
           zhCN: '我住在这里。'
@@ -1807,12 +1807,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dem5',
-        cantonese: 'Diyan',
+        cantonese: 'naa5 leoi5 (zung1)',
         english: 'There (near you)',
         zhTW: '那裡 (中)',
         zhCN: '那里 (中)',
         example: {
-          cantonese: 'Ilagay mo diyan.',
+          cantonese: 'baa2 taa1 fong3 zoi6 naa5 leoi5.',
           english: 'Put it there.',
           zhTW: '把它放在那裡。',
           zhCN: '把它放在那里。'
@@ -1820,12 +1820,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dem6',
-        cantonese: 'Doon',
+        cantonese: 'naa5 leoi5 (jyun5)',
         english: 'Over there (far from both)',
         zhTW: '那裡 (遠)',
         zhCN: '那里 (远)',
         example: {
-          cantonese: 'Pumunta tayo doon.',
+          cantonese: 'ngo5 mun4 heoi3 naa5 leoi5 baa6.',
           english: 'Let\'s go there.',
           zhTW: '我們去那裡吧。',
           zhCN: '我们去那里吧。'
@@ -1842,12 +1842,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'ep1',
-        cantonese: 'May / Meron',
+        cantonese: 'jau5',
         english: 'There is / I have',
         zhTW: '有',
         zhCN: '有',
         example: {
-          cantonese: 'May tubig ba?',
+          cantonese: 'jau5 seoi2 maa1?',
           english: 'Is there water?',
           zhTW: '有水嗎？',
           zhCN: '有水吗？'
@@ -1855,12 +1855,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ep2',
-        cantonese: 'Wala',
+        cantonese: 'mut6 jau5',
         english: 'None / I don\'t have',
         zhTW: '沒有',
         zhCN: '没有',
         example: {
-          cantonese: 'Walang tubig.',
+          cantonese: 'mut6 jau5 seoi2.',
           english: 'No water.',
           zhTW: '沒有水。',
           zhCN: '没有水。'
@@ -1868,12 +1868,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ep3',
-        cantonese: 'Meron ako',
+        cantonese: 'ngo5 jau5',
         english: 'I have (it)',
         zhTW: '我有',
         zhCN: '我有',
         example: {
-          cantonese: 'Meron akong pera.',
+          cantonese: 'ngo5 jau5 cin2.',
           english: 'I have money.',
           zhTW: '我有錢。',
           zhCN: '我有钱。'
@@ -1881,12 +1881,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ep4',
-        cantonese: 'Wala ako',
+        cantonese: 'ngo5 mut6 jau5',
         english: 'I don\'t have (it)',
         zhTW: '我沒有',
         zhCN: '我没有',
         example: {
-          cantonese: 'Wala akong oras.',
+          cantonese: 'ngo5 mut6 jau5 si4 gaan3.',
           english: 'I don\'t have time.',
           zhTW: '我沒有時間。',
           zhCN: '我没有时间。'
@@ -1903,12 +1903,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'neg1',
-        cantonese: 'Hindi',
+        cantonese: 'bat1 (jing4 jung4 ci4 / dung6 ci4)',
         english: 'Not',
         zhTW: '不 (形容詞/動詞)',
         zhCN: '不 (形容词/动词)',
         example: {
-          cantonese: 'Hindi masarap.',
+          cantonese: 'bat1 hou2 hek3.',
           english: 'Not delicious.',
           zhTW: '不好吃。',
           zhCN: '不好吃。'
@@ -1916,12 +1916,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'neg2',
-        cantonese: 'Wala',
+        cantonese: 'mut6 jau5 / bat1 zoi6',
         english: 'None / Absent',
         zhTW: '沒有 / 不在',
         zhCN: '没有 / 不在',
         example: {
-          cantonese: 'Wala si Mark.',
+          cantonese: 'maa5 hak1 bat1 zoi6 ze2 leoi5.',
           english: 'Mark is not here.',
           zhTW: '馬克不在這裡。',
           zhCN: '马克不在这里。'
@@ -1929,12 +1929,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'neg3',
-        cantonese: 'Huwag',
+        cantonese: 'bat1 jiu3 (ming6 ling6)',
         english: 'Don\'t',
         zhTW: '不要 (命令)',
         zhCN: '不要 (命令)',
         example: {
-          cantonese: 'Huwag kang maingay.',
+          cantonese: 'bat1 jiu3 caau2.',
           english: 'Don\'t be noisy.',
           zhTW: '不要吵。',
           zhCN: '不要吵。'
@@ -1951,12 +1951,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'enc1',
-        cantonese: 'Na',
+        cantonese: 'ji5 ging1',
         english: 'Already / Now',
         zhTW: '已經',
         zhCN: '已经',
         example: {
-          cantonese: 'Tapos na.',
+          cantonese: 'ji5 ging1 jyun4 sing4 liu5.',
           english: 'Finished already.',
           zhTW: '已經完成了。',
           zhCN: '已经完成了。'
@@ -1964,12 +1964,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'enc2',
-        cantonese: 'Pa',
+        cantonese: 'waan4 / zoi3',
         english: 'Still / Yet / More',
         zhTW: '還 / 再',
         zhCN: '还 / 再',
         example: {
-          cantonese: 'Isa pa.',
+          cantonese: 'zoi3 loi4 jat1 go3.',
           english: 'One more.',
           zhTW: '再來一個。',
           zhCN: '再来一个。'
@@ -1977,12 +1977,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'enc3',
-        cantonese: 'Lang',
+        cantonese: 'zi2 si6 / zi2 jau5',
         english: 'Just / Only',
         zhTW: '只是 / 只有',
         zhCN: '只是 / 只有',
         example: {
-          cantonese: 'Ako lang.',
+          cantonese: 'zi2 jau5 ngo5.',
           english: 'Just me.',
           zhTW: '只有我。',
           zhCN: '只有我。'
@@ -1990,12 +1990,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'enc4',
-        cantonese: 'Din / Rin',
+        cantonese: 'jaa5',
         english: 'Also / Too',
         zhTW: '也',
         zhCN: '也',
         example: {
-          cantonese: 'Ako rin.',
+          cantonese: 'ngo5 jaa5 si6.',
           english: 'Me too.',
           zhTW: '我也是。',
           zhCN: '我也是。'
@@ -2003,12 +2003,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'enc5',
-        cantonese: 'Naman',
+        cantonese: 'ne1 / ceng2',
         english: 'On the other hand / Please',
         zhTW: '呢 / 請',
         zhCN: '呢 / 请',
         example: {
-          cantonese: 'Ikaw naman.',
+          cantonese: 'wun6 nei5 liu5 / nei5 ne1?',
           english: 'Your turn / How about you?',
           zhTW: '換你了 / 你呢？',
           zhCN: '换你了 / 你呢？'
@@ -2025,12 +2025,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'rm1',
-        cantonese: 'Po',
+        cantonese: 'nei5 (ging3 jyu5)',
         english: 'Sir / Ma\'am (Respect particle)',
         zhTW: '您 (敬語)',
         zhCN: '您 (敬语)',
         example: {
-          cantonese: 'Salamat po.',
+          cantonese: 'ze6 ze6 nei5.',
           english: 'Thank you (polite).',
           zhTW: '謝謝您。',
           zhCN: '谢谢您。'
@@ -2038,12 +2038,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'rm2',
-        cantonese: 'Opo',
+        cantonese: 'si6 (ging3 jyu5)',
         english: 'Yes (Respectful)',
         zhTW: '是 (敬語)',
         zhCN: '是 (敬语)',
         example: {
-          cantonese: 'Opo, nanay.',
+          cantonese: 'si6 dik1, maa4 maa1.',
           english: 'Yes, mom.',
           zhTW: '是的，媽媽。',
           zhCN: '是的，妈妈。'
@@ -2051,12 +2051,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'rm3',
-        cantonese: 'Hindi po',
+        cantonese: 'bat1 (ging3 jyu5)',
         english: 'No (Respectful)',
         zhTW: '不 (敬語)',
         zhCN: '不 (敬语)',
         example: {
-          cantonese: 'Hindi po ako kumain.',
+          cantonese: 'ngo5 mut6 jau5 hek3 (lai5 maau6).',
           english: 'I did not eat (polite).',
           zhTW: '我沒有吃 (禮貌)。',
           zhCN: '我没有吃 (礼貌)。'
@@ -2073,12 +2073,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'lnk1',
-        cantonese: '-ng',
+        cantonese: 'lin4 zip3 ci4 (mou5 jam1 hau6)',
         english: 'Linker (after vowel)',
         zhTW: '連接詞 (母音後)',
         zhCN: '连接词 (元音后)',
         example: {
-          cantonese: 'Bagong taon.',
+          cantonese: 'san1 nin4.',
           english: 'New year.',
           zhTW: '新年。',
           zhCN: '新年。'
@@ -2086,12 +2086,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'lnk2',
-        cantonese: '-g',
+        cantonese: 'lin4 zip3 ci4 (Wifi hau6)',
         english: 'Linker (after n)',
         zhTW: '連接詞 (n後)',
         zhCN: '连接词 (n后)',
         example: {
-          cantonese: 'Ulang malakas.',
+          cantonese: 'daai6 jyu5.',
           english: 'Strong rain.',
           zhTW: '大雨。',
           zhCN: '大雨。'
@@ -2099,12 +2099,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'lnk3',
-        cantonese: 'Na',
+        cantonese: 'lin4 zip3 ci4 (zi2 jam1 hau6)',
         english: 'Linker (after consonant)',
         zhTW: '連接詞 (子音後)',
         zhCN: '连接词 (辅音后)',
         example: {
-          cantonese: 'Masarap na pagkain.',
+          cantonese: 'hou2 hek3 dik1 sik6 mat6.',
           english: 'Delicious food.',
           zhTW: '好吃的食物。',
           zhCN: '好吃的食物。'
@@ -2121,12 +2121,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'loc1',
-        cantonese: 'Nasa',
+        cantonese: 'zoi6',
         english: 'Located at/on/in',
         zhTW: '在',
         zhCN: '在',
         example: {
-          cantonese: 'Ang libro ay nasa mesa.',
+          cantonese: 'syu1 zoi6 coek3 zi2 soeng6.',
           english: 'The book is on the table.',
           zhTW: '書在桌子上。',
           zhCN: '书在桌子上。'
@@ -2134,12 +2134,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'loc2',
-        cantonese: 'Nasaan',
+        cantonese: 'zoi6 naa5 leoi5?',
         english: 'Where is (it)?',
         zhTW: '在哪裡？',
         zhCN: '在哪里？',
         example: {
-          cantonese: 'Nasaan ang susi?',
+          cantonese: 'joek6 si4 zoi6 naa5 leoi5?',
           english: 'Where is the key?',
           zhTW: '鑰匙在哪裡？',
           zhCN: '钥匙在哪里？'
@@ -2147,12 +2147,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'loc3',
-        cantonese: 'Nasa akin',
+        cantonese: 'zoi6 ngo5 ze2 leoi5',
         english: 'It is with me',
         zhTW: '在我這裡',
         zhCN: '在我这里',
         example: {
-          cantonese: 'Nasa akin ang pera.',
+          cantonese: 'cin2 zoi6 ngo5 ze2 leoi5.',
           english: 'The money is with me.',
           zhTW: '錢在我這裡。',
           zhCN: '钱在我这里。'
@@ -2160,12 +2160,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'loc4',
-        cantonese: 'Nasa labas',
+        cantonese: 'zoi6 ngoi6 min6',
         english: 'It is outside',
         zhTW: '在外面',
         zhCN: '在外面',
         example: {
-          cantonese: 'Nasa labas si Tatay.',
+          cantonese: 'baa4 baa1 zoi6 ngoi6 min6.',
           english: 'Father is outside.',
           zhTW: '爸爸在外面。',
           zhCN: '爸爸在外面。'
@@ -2173,12 +2173,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'loc5',
-        cantonese: 'Nasa loob',
+        cantonese: 'zoi6 leoi5 min6',
         english: 'It is inside',
         zhTW: '在裡面',
         zhCN: '在里面',
         example: {
-          cantonese: 'Nasa loob ng bahay.',
+          cantonese: 'zoi6 fong4 zi2 leoi5.',
           english: 'Inside the house.',
           zhTW: '在房子裡。',
           zhCN: '在房子里。'
@@ -2195,12 +2195,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'ns1',
-        cantonese: 'Uno',
+        cantonese: 'jat1 (si4 gaan3 / gam1 cin4)',
         english: 'One (Time/Money)',
         zhTW: '一 (時間/金錢)',
         zhCN: '一 (时间/金钱)',
         example: {
-          cantonese: 'Ala-una na.',
+          cantonese: 'jat1 dim2 liu5.',
           english: 'It\'s one o\'clock.',
           zhTW: '一點了。',
           zhCN: '一点了。'
@@ -2208,12 +2208,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ns2',
-        cantonese: 'Dos',
+        cantonese: 'ji6 (si4 gaan3 / gam1 cin4)',
         english: 'Two (Time/Money)',
         zhTW: '二 (時間/金錢)',
         zhCN: '二 (时间/金钱)',
         example: {
-          cantonese: 'Dos pesos lang.',
+          cantonese: 'zi2 jiu3 loeng5 pei1 sok3.',
           english: 'Only two pesos.',
           zhTW: '只要兩披索。',
           zhCN: '只要两披索。'
@@ -2221,12 +2221,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ns3',
-        cantonese: 'Tres',
+        cantonese: 'saam1 (si4 gaan3 / gam1 cin4)',
         english: 'Three (Time/Money)',
         zhTW: '三 (時間/金錢)',
         zhCN: '三 (时间/金钱)',
         example: {
-          cantonese: 'Alas-tres ng hapon.',
+          cantonese: 'haa6 ng5 saam1 dim2.',
           english: 'Three in the afternoon.',
           zhTW: '下午三點。',
           zhCN: '下午三点。'
@@ -2234,12 +2234,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ns4',
-        cantonese: 'Alas-dose',
+        cantonese: 'sap6 ji6 dim2',
         english: 'Twelve o\'clock',
         zhTW: '十二點',
         zhCN: '十二点',
         example: {
-          cantonese: 'Kumain tayo ng alas-dose.',
+          cantonese: 'ngo5 mun4 sap6 ji6 dim2 jaak3 faan6 baa6.',
           english: 'Let\'s eat at twelve.',
           zhTW: '我們十二點吃飯吧。',
           zhCN: '我们十二点吃饭吧。'
@@ -2247,12 +2247,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ns5',
-        cantonese: 'Bente',
+        cantonese: 'ji6 sap6',
         english: 'Twenty',
         zhTW: '二十',
         zhCN: '二十',
         example: {
-          cantonese: 'Bente pesos ito.',
+          cantonese: 'ze5 si6 ji6 sap6 pei1 sok3.',
           english: 'This is twenty pesos.',
           zhTW: '這是二十披索。',
           zhCN: '这是二十披索。'
@@ -2260,12 +2260,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ns6',
-        cantonese: 'Singkwenta',
+        cantonese: 'ng5 sap6',
         english: 'Fifty',
         zhTW: '五十',
         zhCN: '五十',
         example: {
-          cantonese: 'Singkwenta anyos na siya.',
+          cantonese: 'taa1 / taa1 ji5 ging1 ng5 sap6 seoi3 liu5.',
           english: 'He/She is fifty years old.',
           zhTW: '他/她已經五十歲了。',
           zhCN: '他/她已经五十岁了。'
@@ -2282,12 +2282,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'ss1',
-        cantonese: 'Kumusta?',
+        cantonese: 'Nei hou?',
         english: 'How are you?',
         zhTW: '你好嗎？',
         zhCN: '你好吗？',
         example: {
-          cantonese: 'Kumusta ka, kaibigan?',
+          cantonese: 'nei5 hou2 maa1, pang4 jau5?',
           english: 'How are you, friend?',
           zhTW: '你好嗎，朋友？',
           zhCN: '你好吗，朋友？'
@@ -2295,12 +2295,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ss2',
-        cantonese: 'Ayos lang',
+        cantonese: 'ngo5 han2 hou2 / mut6 si6',
         english: 'I\'m okay / It\'s fine',
         zhTW: '我很好 / 沒事',
         zhCN: '我很好 / 没事',
         example: {
-          cantonese: 'Ayos lang ako.',
+          cantonese: 'ngo5 han2 hou2.',
           english: 'I\'m okay.',
           zhTW: '我很好。',
           zhCN: '我很好。'
@@ -2308,12 +2308,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ss3',
-        cantonese: 'Ingat',
+        cantonese: 'bou2 zung6 / zoi3 gin3',
         english: 'Take care / Goodbye',
         zhTW: '保重 / 再見',
         zhCN: '保重 / 再见',
         example: {
-          cantonese: 'Ingat ka palagi.',
+          cantonese: 'ceng2 bou2 zung6.',
           english: 'Take care always.',
           zhTW: '請保重。',
           zhCN: '请保重。'
@@ -2321,12 +2321,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ss4',
-        cantonese: 'Sige',
+        cantonese: 'hou2 dik1 / gai3 zuk6 / zoi3 gin3',
         english: 'Okay / Go ahead / Bye',
         zhTW: '好的 / 繼續 / 再見',
         zhCN: '好的 / 继续 / 再见',
         example: {
-          cantonese: 'Sige, aalis na ako.',
+          cantonese: 'hou2 dik1, ngo5 jiu3 zau2 liu5.',
           english: 'Okay, I\'m leaving now.',
           zhTW: '好的，我要走了。',
           zhCN: '好的，我要走了。'
@@ -2334,12 +2334,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ss5',
-        cantonese: 'Pasensya na',
+        cantonese: 'pou5 hip3',
         english: 'Sorry',
         zhTW: '抱歉',
         zhCN: '抱歉',
         example: {
-          cantonese: 'Pasensya na sa abala.',
+          cantonese: 'pou5 hip3 daa2 jiu2 liu5.',
           english: 'Sorry for the disturbance.',
           zhTW: '抱歉打擾了。',
           zhCN: '抱歉打扰了。'
@@ -2356,12 +2356,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'trans1',
-        cantonese: 'Bayad po',
+        cantonese: 'ze5 si6 ce1 fai3',
         english: 'Here is my payment',
         zhTW: '這是車費',
         zhCN: '这是车费',
         example: {
-          cantonese: 'Bayad po sa umaga.',
+          cantonese: 'ze5 si6 zou2 soeng6 dik1 ce1 fai3.',
           english: 'Here is my payment (morning).',
           zhTW: '這是早上的車費。',
           zhCN: '这是早上的车费。'
@@ -2369,12 +2369,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'trans2',
-        cantonese: 'Para',
+        cantonese: 'ting4 ce1',
         english: 'Stop / Pull over',
         zhTW: '停車',
         zhCN: '停车',
         example: {
-          cantonese: 'Para po sa tabi.',
+          cantonese: 'ceng2 zoi6 lou6 bin1 ting4.',
           english: 'Please stop at the side.',
           zhTW: '請在路邊停。',
           zhCN: '请在路边停。'
@@ -2382,12 +2382,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'trans3',
-        cantonese: 'Sa tabi lang',
+        cantonese: 'zau6 zoi6 pong4 bin1',
         english: 'Just at the side',
         zhTW: '就在旁邊',
         zhCN: '就在旁边',
         example: {
-          cantonese: 'Bababa ako sa tabi lang.',
+          cantonese: 'ngo5 zau6 zoi6 pong4 bin1 haa6 ce1.',
           english: 'I will get off just at the side.',
           zhTW: '我就在旁邊下車。',
           zhCN: '我就在旁边下车。'
@@ -2395,12 +2395,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'trans4',
-        cantonese: 'Sukli',
+        cantonese: 'zaau2 ling4',
         english: 'Change / Coins back',
         zhTW: '找零',
         zhCN: '找零',
         example: {
-          cantonese: 'Abot po ng sukli.',
+          cantonese: 'ceng2 dai6 jat1 haa5 zaau2 ling4.',
           english: 'Please pass the change.',
           zhTW: '請遞一下找零。',
           zhCN: '请递一下找零。'
@@ -2408,12 +2408,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'trans5',
-        cantonese: 'Kaliwa',
+        cantonese: 'zo2',
         english: 'Left',
         zhTW: '左',
         zhCN: '左',
         example: {
-          cantonese: 'Kumaliwa ka sa kanto.',
+          cantonese: 'zoi6 lou6 hau2 zo2 zyun2.',
           english: 'Turn left at the corner.',
           zhTW: '在路口左轉。',
           zhCN: '在路口左转。'
@@ -2421,12 +2421,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'trans6',
-        cantonese: 'Kanan',
+        cantonese: 'jau6',
         english: 'Right',
         zhTW: '右',
         zhCN: '右',
         example: {
-          cantonese: 'Kumanan ka pagkatapos.',
+          cantonese: 'jin4 hau6 jau6 zyun2.',
           english: 'Turn right afterwards.',
           zhTW: '然後右轉。',
           zhCN: '然后右转。'
@@ -2434,12 +2434,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'trans7',
-        cantonese: 'Diretso',
+        cantonese: 'zik6 zau2',
         english: 'Straight',
         zhTW: '直走',
         zhCN: '直走',
         example: {
-          cantonese: 'Diretso lang ang daan.',
+          cantonese: 'ze5 tiu4 lou6 si6 zik6 dik1.',
           english: 'The road is just straight.',
           zhTW: '這條路是直的。',
           zhCN: '这条路是直的。'
@@ -2456,12 +2456,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'time1',
-        cantonese: 'Ngayon',
+        cantonese: 'jin6 zoi6 / gam1 tin1',
         english: 'Now / Today',
         zhTW: '現在 / 今天',
         zhCN: '现在 / 今天',
         example: {
-          cantonese: 'Aalis ako ngayon.',
+          cantonese: 'ngo5 jin6 zoi6 jiu3 zau2 liu5.',
           english: 'I am leaving now.',
           zhTW: '我現在要走了。',
           zhCN: '我现在要走了。'
@@ -2469,12 +2469,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'time2',
-        cantonese: 'Bukas',
+        cantonese: 'ming4 tin1',
         english: 'Tomorrow',
         zhTW: '明天',
         zhCN: '明天',
         example: {
-          cantonese: 'Bukas na lang.',
+          cantonese: 'ming4 tin1 zoi3 syut3 baa6.',
           english: 'Let\'s just do it tomorrow.',
           zhTW: '明天再說吧。',
           zhCN: '明天再说吧。'
@@ -2482,12 +2482,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'time3',
-        cantonese: 'Kahapon',
+        cantonese: 'zok3 tin1',
         english: 'Yesterday',
         zhTW: '昨天',
         zhCN: '昨天',
         example: {
-          cantonese: 'Dumating siya kahapon.',
+          cantonese: 'taa1 / taa1 zok3 tin1 dou3 liu5.',
           english: 'He/She arrived yesterday.',
           zhTW: '他/她昨天到了。',
           zhCN: '他/她昨天到了。'
@@ -2495,12 +2495,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'time4',
-        cantonese: 'Mamaya',
+        cantonese: 'saau2 hau6',
         english: 'Later',
         zhTW: '稍後',
         zhCN: '稍后',
         example: {
-          cantonese: 'Mamaya na ako kakain.',
+          cantonese: 'ngo5 maan5 dim2 zoi3 hek3.',
           english: 'I will eat later.',
           zhTW: '我晚點再吃。',
           zhCN: '我晚点再吃。'
@@ -2508,12 +2508,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'time5',
-        cantonese: 'Kanina',
+        cantonese: 'gong1 coi4',
         english: 'Earlier',
         zhTW: '剛才',
         zhCN: '刚才',
         example: {
-          cantonese: 'Nakita ko siya kanina.',
+          cantonese: 'ngo5 gong1 coi4 hon3 dou3 taa1 / taa1 liu5.',
           english: 'I saw him/her earlier.',
           zhTW: '我剛才看到他/她了。',
           zhCN: '我刚才看到他/她了。'
@@ -2521,12 +2521,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'time6',
-        cantonese: 'Agad',
+        cantonese: 'laap6 hak1',
         english: 'Immediately',
         zhTW: '立刻',
         zhCN: '立刻',
         example: {
-          cantonese: 'Tumawag ka agad.',
+          cantonese: 'laap6 hak1 daa2 din6 waa2.',
           english: 'Call immediately.',
           zhTW: '立刻打電話。',
           zhCN: '立刻打电话。'
@@ -2543,12 +2543,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'adj1',
-        cantonese: 'Malaki',
+        cantonese: 'daai6',
         english: 'Big',
         zhTW: '大',
         zhCN: '大',
         example: {
-          cantonese: 'Malaki ang bahay.',
+          cantonese: 'fong4 zi2 han2 daai6.',
           english: 'The house is big.',
           zhTW: '房子很大。',
           zhCN: '房子很大。'
@@ -2556,12 +2556,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'adj2',
-        cantonese: 'Maliit',
+        cantonese: 'siu2',
         english: 'Small',
         zhTW: '小',
         zhCN: '小',
         example: {
-          cantonese: 'Maliit lang ang aso.',
+          cantonese: 'naa5 zek3 gau2 han2 siu2.',
           english: 'The dog is small.',
           zhTW: '那隻狗很小。',
           zhCN: '那只狗很小。'
@@ -2569,12 +2569,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'adj3',
-        cantonese: 'Mainit',
+        cantonese: 'jit6',
         english: 'Hot',
         zhTW: '熱',
         zhCN: '热',
         example: {
-          cantonese: 'Mainit ang kape.',
+          cantonese: 'gaa3 fe1 han2 jit6.',
           english: 'The coffee is hot.',
           zhTW: '咖啡很熱。',
           zhCN: '咖啡很热。'
@@ -2582,12 +2582,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'adj4',
-        cantonese: 'Malamig',
+        cantonese: 'laang5',
         english: 'Cold',
         zhTW: '冷',
         zhCN: '冷',
         example: {
-          cantonese: 'Malamig ang panahon.',
+          cantonese: 'tin1 hei3 han2 laang5.',
           english: 'The weather is cold.',
           zhTW: '天氣很冷。',
           zhCN: '天气很冷。'
@@ -2595,12 +2595,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'adj5',
-        cantonese: 'Mura',
+        cantonese: 'pin4 ji2',
         english: 'Cheap',
         zhTW: '便宜',
         zhCN: '便宜',
         example: {
-          cantonese: 'Mura ang bilihin dito.',
+          cantonese: 'ze2 leoi5 dik1 dung1 sai1 han2 pin4 ji2.',
           english: 'Goods are cheap here.',
           zhTW: '這裡的東西很便宜。',
           zhCN: '这里的东西很便宜。'
@@ -2608,12 +2608,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'adj6',
-        cantonese: 'Mahal',
+        cantonese: 'gwai3',
         english: 'Expensive',
         zhTW: '貴',
         zhCN: '贵',
         example: {
-          cantonese: 'Mahal ang kotse.',
+          cantonese: 'ze5 loeng6 ce1 han2 gwai3.',
           english: 'The car is expensive.',
           zhTW: '這輛車很貴。',
           zhCN: '这辆车很贵。'
@@ -2621,12 +2621,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'adj7',
-        cantonese: 'Masarap',
+        cantonese: 'hou2 hek3',
         english: 'Delicious',
         zhTW: '好吃',
         zhCN: '好吃',
         example: {
-          cantonese: 'Masarap ang luto mo.',
+          cantonese: 'nei5 zou6 dik1 coi3 han2 hou2 hek3.',
           english: 'Your cooking is delicious.',
           zhTW: '你做的菜很好吃。',
           zhCN: '你做的菜很好吃。'
@@ -2634,12 +2634,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'adj8',
-        cantonese: 'Hindi masarap',
+        cantonese: 'bat1 hou2 hek3',
         english: 'Not delicious',
         zhTW: '不好吃',
         zhCN: '不好吃',
         example: {
-          cantonese: 'Hindi masarap ang ulam.',
+          cantonese: 'ze5 dou6 coi3 bat1 hou2 hek3.',
           english: 'The dish is not delicious.',
           zhTW: '這道菜不好吃。',
           zhCN: '这道菜不好吃。'
@@ -2647,12 +2647,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'adj9',
-        cantonese: 'Pagod',
+        cantonese: 'leoi6',
         english: 'Tired',
         zhTW: '累',
         zhCN: '累',
         example: {
-          cantonese: 'Pagod ako galing trabaho.',
+          cantonese: 'ngo5 haa6 baan1 hau6 han2 leoi6.',
           english: 'I am tired from work.',
           zhTW: '我下班後很累。',
           zhCN: '我下班后很累。'
@@ -2669,12 +2669,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'mon1',
-        cantonese: 'Magkano?',
+        cantonese: 'do1 siu2 cin2?',
         english: 'How much?',
         zhTW: '多少錢？',
         zhCN: '多少钱？',
         example: {
-          cantonese: 'Magkano ito?',
+          cantonese: 'ze5 go3 do1 siu2 cin2?',
           english: 'How much is this?',
           zhTW: '這個多少錢？',
           zhCN: '这个多少钱？'
@@ -2682,12 +2682,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'mon2',
-        cantonese: 'Tawad',
+        cantonese: 'zit3 kau3 / saat3 gaa3',
         english: 'Discount / Haggle',
         zhTW: '折扣 / 殺價',
         zhCN: '折扣 / 杀价',
         example: {
-          cantonese: 'Wala bang tawad?',
+          cantonese: 'mut6 jau5 zit3 kau3 maa1?',
           english: 'No discount?',
           zhTW: '沒有折扣嗎？',
           zhCN: '没有折扣吗？'
@@ -2695,12 +2695,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'mon3',
-        cantonese: 'Mahal',
+        cantonese: 'gwai3',
         english: 'Expensive',
         zhTW: '貴',
         zhCN: '贵',
         example: {
-          cantonese: 'Masyadong mahal.',
+          cantonese: 'taai3 gwai3 liu5.',
           english: 'Too expensive.',
           zhTW: '太貴了。',
           zhCN: '太贵了。'
@@ -2708,12 +2708,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'mon4',
-        cantonese: 'Mura',
+        cantonese: 'pin4 ji2',
         english: 'Cheap',
         zhTW: '便宜',
         zhCN: '便宜',
         example: {
-          cantonese: 'Doon ay mura.',
+          cantonese: 'naa5 leoi5 han2 pin4 ji2.',
           english: 'It is cheap there.',
           zhTW: '那裡很便宜。',
           zhCN: '那里很便宜。'
@@ -2721,12 +2721,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'mon5',
-        cantonese: 'Barya',
+        cantonese: 'ling4 cin4',
         english: 'Loose change / Coins',
         zhTW: '零錢',
         zhCN: '零钱',
         example: {
-          cantonese: 'Wala akong barya.',
+          cantonese: 'ngo5 mut6 jau5 ling4 cin4.',
           english: 'I don\'t have loose change.',
           zhTW: '我沒有零錢。',
           zhCN: '我没有零钱。'
@@ -2734,12 +2734,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'mon6',
-        cantonese: 'Cash / G-Cash',
+        cantonese: 'jin6 gam1 / din6 zi2 cin4 baau1',
         english: 'Cash / Digital Wallet',
         zhTW: '現金 / 電子錢包',
         zhCN: '现金 / 电子钱包',
         example: {
-          cantonese: 'Pwede ba ang G-Cash?',
+          cantonese: 'ho2 ji5 jung6 G-Cash maa1?',
           english: 'Is G-Cash accepted?',
           zhTW: '可以用 G-Cash 嗎？',
           zhCN: '可以用 G-Cash 吗？'
@@ -2756,12 +2756,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'din1',
-        cantonese: 'Pahingi',
+        cantonese: 'ceng2 kap1 ngo5',
         english: 'Please give me / Can I have',
         zhTW: '請給我',
         zhCN: '请给我',
         example: {
-          cantonese: 'Pahingi ng tubig.',
+          cantonese: 'ceng2 kap1 ngo5 seoi2.',
           english: 'Water please.',
           zhTW: '請給我水。',
           zhCN: '请给我水。'
@@ -2769,12 +2769,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'din2',
-        cantonese: 'Isa pa',
+        cantonese: 'zoi3 loi4 jat1 go3',
         english: 'One more',
         zhTW: '再來一個',
         zhCN: '再来一个',
         example: {
-          cantonese: 'Isa pa pong kanin.',
+          cantonese: 'ceng2 zoi3 loi4 jat1 fan6 faan6.',
           english: 'One more rice please.',
           zhTW: '請再來一份飯。',
           zhCN: '请再来一份饭。'
@@ -2782,12 +2782,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'din3',
-        cantonese: 'Busog',
+        cantonese: 'baau2',
         english: 'Full',
         zhTW: '飽',
         zhCN: '饱',
         example: {
-          cantonese: 'Busog na ako.',
+          cantonese: 'ngo5 ji5 ging1 baau2 liu5.',
           english: 'I am full already.',
           zhTW: '我已經飽了。',
           zhCN: '我已经饱了。'
@@ -2795,12 +2795,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'din4',
-        cantonese: 'Gutom',
+        cantonese: 'ngo6',
         english: 'Hungry',
         zhTW: '餓',
         zhCN: '饿',
         example: {
-          cantonese: 'Gutom na ako.',
+          cantonese: 'ngo5 ji5 ging1 ngo6 liu5.',
           english: 'I am hungry already.',
           zhTW: '我已經餓了。',
           zhCN: '我已经饿了。'
@@ -2808,12 +2808,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'din5',
-        cantonese: 'Bill out',
+        cantonese: 'maai5 daan1',
         english: 'Can I have the check?',
         zhTW: '買單',
         zhCN: '买单',
         example: {
-          cantonese: 'Bill out na po.',
+          cantonese: 'ceng2 maai5 daan1.',
           english: 'Check please.',
           zhTW: '請買單。',
           zhCN: '请买单。'
@@ -2821,12 +2821,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'din6',
-        cantonese: 'Take out / Dine in',
+        cantonese: 'ngoi6 daai3 / noi6 jung6',
         english: 'To go / Eat here',
         zhTW: '外帶 / 內用',
         zhCN: '外带 / 内用',
         example: {
-          cantonese: 'Take out po.',
+          cantonese: 'ceng2 ngoi6 daai3.',
           english: 'To go please.',
           zhTW: '請外帶。',
           zhCN: '请外带。'
@@ -2843,12 +2843,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'hlt1',
-        cantonese: 'Tulong',
+        cantonese: 'bong1 mong4 / gau3 meng6',
         english: 'Help',
         zhTW: '幫忙 / 救命',
         zhCN: '帮忙 / 救命',
         example: {
-          cantonese: 'Tulong! Tulungan mo ako.',
+          cantonese: 'gau3 meng6! bong1 bong1 ngo5.',
           english: 'Help! Help me.',
           zhTW: '救命！幫幫我。',
           zhCN: '救命！帮帮我。'
@@ -2856,12 +2856,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hlt2',
-        cantonese: 'Masakit',
+        cantonese: 'tung3',
         english: 'Painful',
         zhTW: '痛',
         zhCN: '痛',
         example: {
-          cantonese: 'Masakit ang ulo ko.',
+          cantonese: 'ngo5 tau4 tung3.',
           english: 'My head hurts.',
           zhTW: '我頭痛。',
           zhCN: '我头痛。'
@@ -2869,12 +2869,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hlt3',
-        cantonese: 'Gamot',
+        cantonese: 'joek6',
         english: 'Medicine',
         zhTW: '藥',
         zhCN: '药',
         example: {
-          cantonese: 'Kailangan ko ng gamot.',
+          cantonese: 'ngo5 seoi1 jiu3 joek6.',
           english: 'I need medicine.',
           zhTW: '我需要藥。',
           zhCN: '我需要药。'
@@ -2882,12 +2882,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hlt4',
-        cantonese: 'Ulo',
+        cantonese: 'tau4',
         english: 'Head',
         zhTW: '頭',
         zhCN: '头',
         example: {
-          cantonese: 'Masakit ang ulo.',
+          cantonese: 'tau4 tung3.',
           english: 'Head is painful.',
           zhTW: '頭痛。',
           zhCN: '头痛。'
@@ -2895,12 +2895,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hlt5',
-        cantonese: 'Tiyan',
+        cantonese: 'tou5 zi2',
         english: 'Stomach',
         zhTW: '肚子',
         zhCN: '肚子',
         example: {
-          cantonese: 'Masakit ang tiyan ko.',
+          cantonese: 'ngo5 tou5 zi2 tung3.',
           english: 'My stomach hurts.',
           zhTW: '我肚子痛。',
           zhCN: '我肚子痛。'
@@ -2908,12 +2908,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hlt6',
-        cantonese: 'Lagnat',
+        cantonese: 'faat3 siu1',
         english: 'Fever',
         zhTW: '發燒',
         zhCN: '发烧',
         example: {
-          cantonese: 'May lagnat ang bata.',
+          cantonese: 'haai4 zi2 faat3 siu1 liu5.',
           english: 'The child has a fever.',
           zhTW: '孩子發燒了。',
           zhCN: '孩子发烧了。'
@@ -2921,12 +2921,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hlt7',
-        cantonese: 'Ospital',
+        cantonese: 'ji1 jyun2',
         english: 'Hospital',
         zhTW: '醫院',
         zhCN: '医院',
         example: {
-          cantonese: 'Dalhin sa ospital.',
+          cantonese: 'sung3 dou3 ji1 jyun2.',
           english: 'Bring to the hospital.',
           zhTW: '送到醫院。',
           zhCN: '送到医院。'
@@ -2943,12 +2943,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'fam1',
-        cantonese: 'Ilang taon ka na?',
+        cantonese: 'nei5 gei2 seoi3 liu5?',
         english: 'How old are you?',
         zhTW: '你幾歲了？',
         zhCN: '你几岁了？',
         example: {
-          cantonese: 'Ilang taon ka na ngayon?',
+          cantonese: 'nei5 jin6 zoi6 gei2 seoi3 liu5?',
           english: 'How old are you now?',
           zhTW: '你現在幾歲了？',
           zhCN: '你现在几岁了？'
@@ -2956,12 +2956,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'fam2',
-        cantonese: 'Binata / Dalaga',
+        cantonese: 'daan1 san1 naam4 zi2 / daan1 san1 neoi5 zi2',
         english: 'Single Man / Single Woman',
         zhTW: '單身男子 / 單身女子',
         zhCN: '单身男子 / 单身女子',
         example: {
-          cantonese: 'Siya ay dalaga pa.',
+          cantonese: 'taa1 waan4 si6 daan1 san1.',
           english: 'She is still single.',
           zhTW: '她還是單身。',
           zhCN: '她还是单身。'
@@ -2969,12 +2969,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'fam3',
-        cantonese: 'May asawa',
+        cantonese: 'ji5 fan1',
         english: 'Married / Have a spouse',
         zhTW: '已婚',
         zhCN: '已婚',
         example: {
-          cantonese: 'May asawa na ako.',
+          cantonese: 'ngo5 ji5 ging1 git3 fan1 liu5.',
           english: 'I am already married.',
           zhTW: '我已經結婚了。',
           zhCN: '我已经结婚了。'
@@ -2982,12 +2982,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'fam4',
-        cantonese: 'Kapatid',
+        cantonese: 'hing1 dai6 zi2 mui2',
         english: 'Sibling',
         zhTW: '兄弟姊妹',
         zhCN: '兄弟姐妹',
         example: {
-          cantonese: 'Ilan ang kapatid mo?',
+          cantonese: 'nei5 jau5 gei2 go3 hing1 dai6 zi2 mui2?',
           english: 'How many siblings do you have?',
           zhTW: '你有幾個兄弟姊妹？',
           zhCN: '你有几个兄弟姐妹？'
@@ -2995,12 +2995,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'fam5',
-        cantonese: 'Anak',
+        cantonese: 'haai4 zi2',
         english: 'Child',
         zhTW: '孩子',
         zhCN: '孩子',
         example: {
-          cantonese: 'Mahal ko ang aking anak.',
+          cantonese: 'ngo5 oi3 ngo5 dik1 haai4 zi2.',
           english: 'I love my child.',
           zhTW: '我愛我的孩子。',
           zhCN: '我爱我的孩子。'
@@ -3008,12 +3008,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'fam6',
-        cantonese: 'Taga-saan ka?',
+        cantonese: 'nei5 si6 naa5 leoi5 jan4?',
         english: 'Where are you from?',
         zhTW: '你是哪裡人？',
         zhCN: '你是哪里人？',
         example: {
-          cantonese: 'Taga-saan ka sa Pilipinas?',
+          cantonese: 'nei5 zoi6 fei1 leot6 ban1 naa5 leoi5?',
           english: 'Where are you from in the Hong Kong?',
           zhTW: '你在菲律賓哪裡？',
           zhCN: '你在菲律宾哪里？'
@@ -3030,12 +3030,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'house1',
-        cantonese: 'Sira',
+        cantonese: 'waai6 liu5',
         english: 'Broken',
         zhTW: '壞了',
         zhCN: '坏了',
         example: {
-          cantonese: 'Sira ang aircon.',
+          cantonese: 'laang5 hei3 waai6 liu5.',
           english: 'The aircon is broken.',
           zhTW: '冷氣壞了。',
           zhCN: '冷气坏了。'
@@ -3043,12 +3043,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'house2',
-        cantonese: 'Bukas',
+        cantonese: 'hoi1',
         english: 'Open / On',
         zhTW: '開',
         zhCN: '开',
         example: {
-          cantonese: 'Bukas ang ilaw.',
+          cantonese: 'dang1 hoi1 zoek6.',
           english: 'The light is on.',
           zhTW: '燈開著。',
           zhCN: '灯开着。'
@@ -3056,12 +3056,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'house3',
-        cantonese: 'Sarado',
+        cantonese: 'gwaan1',
         english: 'Closed / Off',
         zhTW: '關',
         zhCN: '关',
         example: {
-          cantonese: 'Sarado ang pinto.',
+          cantonese: 'mun4 gwaan1 zoek6.',
           english: 'The door is closed.',
           zhTW: '門關著。',
           zhCN: '门关着。'
@@ -3069,12 +3069,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'house4',
-        cantonese: 'Ilaw',
+        cantonese: 'dang1',
         english: 'Light',
         zhTW: '燈',
         zhCN: '灯',
         example: {
-          cantonese: 'Pakibukas ang ilaw.',
+          cantonese: 'ceng2 hoi1 dang1.',
           english: 'Please turn on the light.',
           zhTW: '請開燈。',
           zhCN: '请开灯。'
@@ -3082,12 +3082,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'house5',
-        cantonese: 'Tubig',
+        cantonese: 'seoi2',
         english: 'Water / Tap',
         zhTW: '水',
         zhCN: '水',
         example: {
-          cantonese: 'Walang tubig sa gripo.',
+          cantonese: 'seoi2 lung4 tau4 mei6 seoi2.',
           english: 'No water from the tap.',
           zhTW: '水龍頭沒水。',
           zhCN: '水龙头没水。'
@@ -3095,12 +3095,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'house6',
-        cantonese: 'Kuryente',
+        cantonese: 'din6',
         english: 'Electricity / Power',
         zhTW: '電',
         zhCN: '电',
         example: {
-          cantonese: 'Walang kuryente ngayon.',
+          cantonese: 'jin6 zoi6 ting4 din6.',
           english: 'No electricity now (Brownout).',
           zhTW: '現在停電。',
           zhCN: '现在停电。'
@@ -3117,12 +3117,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'hyg1',
-        cantonese: 'Nasaan ang C.R.?',
+        cantonese: 'ci3 so2 zoi6 naa5 leoi5?',
         english: 'Where is the bathroom?',
         zhTW: '廁所在哪裡？',
         zhCN: '厕所在哪里？',
         example: {
-          cantonese: 'Excuse me, nasaan ang C.R.?',
+          cantonese: 'bat1 hou2 ji3 si1, ceng2 man6 ci3 so2 zoi6 naa5 leoi5?',
           english: 'Excuse me, where is the bathroom?',
           zhTW: '不好意思，請問廁所在哪裡？',
           zhCN: '不好意思，请问厕所在哪里？'
@@ -3130,12 +3130,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hyg2',
-        cantonese: 'May tissue?',
+        cantonese: 'jau5 wai6 sang1 zi2 maa1?',
         english: 'Is there toilet paper?',
         zhTW: '有衛生紙嗎？',
         zhCN: '有卫生纸吗？',
         example: {
-          cantonese: 'May tissue ba sa loob?',
+          cantonese: 'leoi5 min6 jau5 wai6 sang1 zi2 maa1?',
           english: 'Is there toilet paper inside?',
           zhTW: '裡面有衛生紙嗎？',
           zhCN: '里面有卫生纸吗？'
@@ -3143,12 +3143,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hyg3',
-        cantonese: 'Mabaho',
+        cantonese: 'cau3',
         english: 'Smelly / Stinky',
         zhTW: '臭',
         zhCN: '臭',
         example: {
-          cantonese: 'Mabaho ang basura.',
+          cantonese: 'laap6 saap3 han2 cau3.',
           english: 'The trash is smelly.',
           zhTW: '垃圾很臭。',
           zhCN: '垃圾很臭。'
@@ -3156,12 +3156,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hyg4',
-        cantonese: 'Mabango',
+        cantonese: 'hoeng1',
         english: 'Fragrant / Smells good',
         zhTW: '香',
         zhCN: '香',
         example: {
-          cantonese: 'Mabango ang bulaklak.',
+          cantonese: 'ze5 do2 faa1 han2 hoeng1.',
           english: 'The flower smells good.',
           zhTW: '這朵花很香。',
           zhCN: '这朵花很香。'
@@ -3169,12 +3169,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hyg5',
-        cantonese: 'Madumi',
+        cantonese: 'zong1',
         english: 'Dirty',
         zhTW: '髒',
         zhCN: '脏',
         example: {
-          cantonese: 'Madumi ang sahig.',
+          cantonese: 'dei6 baan2 han2 zong1.',
           english: 'The floor is dirty.',
           zhTW: '地板很髒。',
           zhCN: '地板很脏。'
@@ -3182,12 +3182,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hyg6',
-        cantonese: 'Malinis',
+        cantonese: 'gon1 zeng6',
         english: 'Clean',
         zhTW: '乾淨',
         zhCN: '干净',
         example: {
-          cantonese: 'Malinis na ang kwarto.',
+          cantonese: 'fong4 gaan1 ji5 ging1 gon1 zeng6 liu5.',
           english: 'The room is already clean.',
           zhTW: '房間已經乾淨了。',
           zhCN: '房间已经干净了。'
@@ -3204,12 +3204,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'dig1',
-        cantonese: 'Pa-load po',
+        cantonese: 'ngo5 soeng2 cyu5 zik6 din6 waa2 fai3',
         english: 'I would like to buy phone credits',
         zhTW: '我想儲值電話費',
         zhCN: '我想充值电话费',
         example: {
-          cantonese: 'Pa-load po ng 50 pesos.',
+          cantonese: 'ceng2 bong1 ngo5 cyu5 zik6 Wifi pei1 sok3.',
           english: 'I would like to buy 50 pesos load.',
           zhTW: '請幫我儲值 50 披索。',
           zhCN: '请帮我充值 50 披索。'
@@ -3217,12 +3217,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dig2',
-        cantonese: 'Walang signal',
+        cantonese: 'mut6 jau5 seon3 hou6',
         english: 'No signal',
         zhTW: '沒有訊號',
         zhCN: '没有信号',
         example: {
-          cantonese: 'Walang signal dito sa bundok.',
+          cantonese: 'saan1 soeng6 ze2 leoi5 mut6 jau5 seon3 hou6.',
           english: 'There is no signal here in the mountain.',
           zhTW: '山上這裡沒有訊號。',
           zhCN: '山上这里没有信号。'
@@ -3230,12 +3230,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dig3',
-        cantonese: 'Lowbat',
+        cantonese: 'mut6 din6 liu5',
         english: 'Low battery',
         zhTW: '沒電了',
         zhCN: '没电了',
         example: {
-          cantonese: 'Lowbat na ako.',
+          cantonese: 'ngo5 sau2 gei1 faai3 mut6 din6 liu5.',
           english: 'My battery is low.',
           zhTW: '我手機快沒電了。',
           zhCN: '我手机快没电了。'
@@ -3243,12 +3243,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dig4',
-        cantonese: 'Charger',
+        cantonese: 'cung1 din6 hei3',
         english: 'Charger',
         zhTW: '充電器',
         zhCN: '充电器',
         example: {
-          cantonese: 'May charger ka bang dala?',
+          cantonese: 'nei5 jau5 daai3 cung1 din6 hei3 maa1?',
           english: 'Do you have a charger with you?',
           zhTW: '你有帶充電器嗎？',
           zhCN: '你有带充电器吗？'
@@ -3256,12 +3256,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dig5',
-        cantonese: 'Password',
+        cantonese: 'mat6 maa5',
         english: 'Password',
         zhTW: '密碼',
         zhCN: '密码',
         example: {
-          cantonese: 'Anong password ng wifi?',
+          cantonese: 'Wifi mat6 maa5 si6 do1 siu2?',
           english: 'What is the wifi password?',
           zhTW: 'Wifi 密碼是多少？',
           zhCN: 'Wifi 密码是多少？'
@@ -3278,12 +3278,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'wth1',
-        cantonese: 'Sobrang init!',
+        cantonese: 'taai3 jit6 liu5!',
         english: 'It\'s too hot!',
         zhTW: '太熱了！',
         zhCN: '太热了！',
         example: {
-          cantonese: 'Sobrang init ngayon sa labas.',
+          cantonese: 'gam1 tin1 ngoi6 min6 taai3 jit6 liu5.',
           english: 'It\'s too hot outside today.',
           zhTW: '今天外面太熱了。',
           zhCN: '今天外面太热了。'
@@ -3291,12 +3291,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'wth2',
-        cantonese: 'Umuulan',
+        cantonese: 'haa6 jyu5 liu5',
         english: 'It is raining',
         zhTW: '下雨了',
         zhCN: '下雨了',
         example: {
-          cantonese: 'Umuulan nang malakas.',
+          cantonese: 'jyu5 haa6 dak1 han2 daai6.',
           english: 'It is raining hard.',
           zhTW: '雨下得很大。',
           zhCN: '雨下得很大。'
@@ -3304,12 +3304,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'wth3',
-        cantonese: 'Bagyo',
+        cantonese: 'toi4 fung1 / fung1 bou6',
         english: 'Typhoon / Storm',
         zhTW: '颱風 / 風暴',
         zhCN: '台风 / 风暴',
         example: {
-          cantonese: 'May bagyo ba bukas?',
+          cantonese: 'ming4 tin1 jau5 toi4 fung1 maa1?',
           english: 'Is there a storm tomorrow?',
           zhTW: '明天有颱風嗎？',
           zhCN: '明天有台风吗？'
@@ -3317,12 +3317,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'wth4',
-        cantonese: 'Baha',
+        cantonese: 'jim1 seoi2',
         english: 'Flood',
         zhTW: '淹水',
         zhCN: '淹水',
         example: {
-          cantonese: 'Baha sa kalsada.',
+          cantonese: 'maa5 lou6 jim1 seoi2 liu5.',
           english: 'The street is flooded.',
           zhTW: '馬路淹水了。',
           zhCN: '马路淹水了。'
@@ -3330,12 +3330,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'wth5',
-        cantonese: 'Payong',
+        cantonese: 'jyu5 saan3',
         english: 'Umbrella',
         zhTW: '雨傘',
         zhCN: '雨伞',
         example: {
-          cantonese: 'Dadalhin ko ang payong ko.',
+          cantonese: 'ngo5 wui5 daai3 ngo5 dik1 jyu5 saan3.',
           english: 'I will bring my umbrella.',
           zhTW: '我會帶我的雨傘。',
           zhCN: '我会带我的雨伞。'
@@ -3352,12 +3352,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'nav1',
-        cantonese: 'Kanto',
+        cantonese: 'lou6 hau2 / zyun3 gok3',
         english: 'Corner',
         zhTW: '路口 / 轉角',
         zhCN: '路口 / 转角',
         example: {
-          cantonese: 'Sa kanto lang po.',
+          cantonese: 'zau6 zoi6 lou6 hau2.',
           english: 'Just at the corner.',
           zhTW: '就在路口。',
           zhCN: '就在路口。'
@@ -3365,12 +3365,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'nav2',
-        cantonese: 'Harap',
+        cantonese: 'cin4 min6',
         english: 'Front',
         zhTW: '前面',
         zhCN: '前面',
         example: {
-          cantonese: 'Sa harap ng Jollibee.',
+          cantonese: 'zoi6 Wifi cin4 min6.',
           english: 'In front of Jollibee.',
           zhTW: '在 Jollibee 前面。',
           zhCN: '在 Jollibee 前面。'
@@ -3378,12 +3378,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'nav3',
-        cantonese: 'Likod',
+        cantonese: 'hau6 min6',
         english: 'Back / Behind',
         zhTW: '後面',
         zhCN: '后面',
         example: {
-          cantonese: 'Sa likod ng bahay.',
+          cantonese: 'zoi6 fong4 zi2 hau6 min6.',
           english: 'Behind the house.',
           zhTW: '在房子後面。',
           zhCN: '在房子后面。'
@@ -3391,12 +3391,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'nav4',
-        cantonese: 'Tulay',
+        cantonese: 'kiu4',
         english: 'Bridge',
         zhTW: '橋',
         zhCN: '桥',
         example: {
-          cantonese: 'Tatawid tayo sa tulay.',
+          cantonese: 'ngo5 mun4 wui5 gwo3 kiu2.',
           english: 'We will cross the bridge.',
           zhTW: '我們會過橋。',
           zhCN: '我们会过桥。'
@@ -3404,12 +3404,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'nav5',
-        cantonese: 'Tawiran',
+        cantonese: 'baan1 maa5 sin3 / tin1 kiu4',
         english: 'Crosswalk / Overpass',
         zhTW: '斑馬線 / 天橋',
         zhCN: '斑马线 / 天桥',
         example: {
-          cantonese: 'Gamitin ang tawiran.',
+          cantonese: 'si2 jung6 baan1 maa5 sin3 / tin1 kiu4.',
           english: 'Use the crosswalk/overpass.',
           zhTW: '使用斑馬線/天橋。',
           zhCN: '使用斑马线/天桥。'
@@ -3417,12 +3417,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'nav6',
-        cantonese: 'Simbahan',
+        cantonese: 'gaau3 tong2',
         english: 'Church',
         zhTW: '教堂',
         zhCN: '教堂',
         example: {
-          cantonese: 'Malapit sa simbahan.',
+          cantonese: 'kaau3 gan6 gaau3 tong2.',
           english: 'Near the church.',
           zhTW: '靠近教堂。',
           zhCN: '靠近教堂。'
@@ -3439,12 +3439,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'emo1',
-        cantonese: 'Masaya',
+        cantonese: 'faai3 lok6',
         english: 'Happy',
         zhTW: '快樂',
         zhCN: '快乐',
         example: {
-          cantonese: 'Masaya ako ngayon.',
+          cantonese: 'ngo5 gam1 tin1 han2 faai3 lok6.',
           english: 'I am happy today.',
           zhTW: '我今天很快樂。',
           zhCN: '我今天很快乐。'
@@ -3452,12 +3452,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'emo2',
-        cantonese: 'Malungkot',
+        cantonese: 'naan4 gwo3',
         english: 'Sad',
         zhTW: '難過',
         zhCN: '难过',
         example: {
-          cantonese: 'Bakit ka malungkot?',
+          cantonese: 'nei5 wai6 sam6 mo1 naan4 gwo3?',
           english: 'Why are you sad?',
           zhTW: '你為什麼難過？',
           zhCN: '你为什么难过？'
@@ -3465,12 +3465,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'emo3',
-        cantonese: 'Galit',
+        cantonese: 'sang1 hei3',
         english: 'Angry',
         zhTW: '生氣',
         zhCN: '生气',
         example: {
-          cantonese: 'Huwag kang galit.',
+          cantonese: 'bat1 jiu3 sang1 hei3.',
           english: 'Don\'t be angry.',
           zhTW: '不要生氣。',
           zhCN: '不要生气。'
@@ -3478,12 +3478,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'emo4',
-        cantonese: 'Nagugutom',
+        cantonese: 'ngo6',
         english: 'Hungry',
         zhTW: '餓',
         zhCN: '饿',
         example: {
-          cantonese: 'Nagugutom na ako.',
+          cantonese: 'ngo5 ngo6 liu5.',
           english: 'I am getting hungry.',
           zhTW: '我餓了。',
           zhCN: '我饿了。'
@@ -3491,12 +3491,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'emo5',
-        cantonese: 'Inaantok',
+        cantonese: 'soeng2 seoi6',
         english: 'Sleepy',
         zhTW: '想睡',
         zhCN: '想睡',
         example: {
-          cantonese: 'Inaantok ako sa klase.',
+          cantonese: 'ngo5 soeng5 fo3 soeng2 seoi6 gaau3.',
           english: 'I am sleepy in class.',
           zhTW: '我上課想睡覺。',
           zhCN: '我上课想睡觉。'
@@ -3504,12 +3504,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'emo6',
-        cantonese: 'Kilig',
+        cantonese: 'sam1 dung6',
         english: 'Romantic excitement',
         zhTW: '心動',
         zhCN: '心动',
         example: {
-          cantonese: 'Kinikilig ako sa kanila.',
+          cantonese: 'ngo5 deoi3 taa1 mun4 gam2 dou3 sam1 dung6.',
           english: 'I feel romantic excitement for them.',
           zhTW: '我對他們感到心動。',
           zhCN: '我对他们感到心动。'
@@ -3526,12 +3526,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'tag1',
-        cantonese: 'Talaga?',
+        cantonese: 'zan1 dik1 maa1?',
         english: 'Really?',
         zhTW: '真的嗎？',
         zhCN: '真的吗？',
         example: {
-          cantonese: 'Talaga? Hindi nga?',
+          cantonese: 'zan1 dik1 maa1? bat1 si6 baa6?',
           english: 'Really? Is that so?',
           zhTW: '真的嗎？不是吧？',
           zhCN: '真的吗？不是吧？'
@@ -3539,12 +3539,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'tag2',
-        cantonese: 'Grabe',
+        cantonese: 'waa1 / taai3 kwaa1 zoeng1',
         english: 'Wow / Extreme',
         zhTW: '哇 / 太誇張',
         zhCN: '哇 / 太夸张',
         example: {
-          cantonese: 'Grabe ang init!',
+          cantonese: 'jit6 dak1 taai3 kwaa1 zoeng1 liu5!',
           english: 'The heat is extreme!',
           zhTW: '熱得太誇張了！',
           zhCN: '热得太夸张了！'
@@ -3552,12 +3552,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'tag3',
-        cantonese: 'Siguro',
+        cantonese: 'jaa5 heoi2',
         english: 'Maybe',
         zhTW: '也許',
         zhCN: '也许',
         example: {
-          cantonese: 'Siguro darating siya.',
+          cantonese: 'jaa5 heoi2 taa1 / taa1 wui5 loi4.',
           english: 'Maybe he/she will arrive.',
           zhTW: '也許他/她會來。',
           zhCN: '也许他/她会来。'
@@ -3565,12 +3565,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'tag4',
-        cantonese: 'Basta',
+        cantonese: 'zi2 jiu3 / faan2 zing3',
         english: 'Just because / As long as',
         zhTW: '只要 / 反正',
         zhCN: '只要 / 反正',
         example: {
-          cantonese: 'Basta ikaw, okay lang.',
+          cantonese: 'zi2 jiu3 si6 nei5, zau6 ho2 ji5.',
           english: 'As long as it\'s you, it\'s okay.',
           zhTW: '只要是你，就可以。',
           zhCN: '只要是你，就可以。'
@@ -3578,12 +3578,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'tag5',
-        cantonese: 'Sayang',
+        cantonese: 'ho2 sik1 / long6 fai3',
         english: 'What a waste / pity',
         zhTW: '可惜 / 浪費',
         zhCN: '可惜 / 浪费',
         example: {
-          cantonese: 'Sayang ang pagkain.',
+          cantonese: 'sik6 mat6 long6 fai3 liu5.',
           english: 'The food is wasted.',
           zhTW: '食物浪費了。',
           zhCN: '食物浪费了。'
@@ -3600,12 +3600,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'plan1',
-        cantonese: 'Tara!',
+        cantonese: 'zau2 baa6!',
         english: 'Let\'s go!',
         zhTW: '走吧！',
         zhCN: '走吧！',
         example: {
-          cantonese: 'Tara na sa mall.',
+          cantonese: 'ngo5 mun4 heoi3 kau3 mat6 zung1 sam1 baa6.',
           english: 'Let\'s go to the mall now.',
           zhTW: '我們去購物中心吧。',
           zhCN: '我们去购物中心吧。'
@@ -3613,12 +3613,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'plan2',
-        cantonese: 'Sama ka?',
+        cantonese: 'nei5 jiu3 jat1 hei2 loi4 maa1?',
         english: 'Are you coming with us?',
         zhTW: '你要一起來嗎？',
         zhCN: '你要一起来吗？',
         example: {
-          cantonese: 'Kakain kami, sama ka?',
+          cantonese: 'ngo5 mun4 jiu3 heoi3 jaak3 faan6, nei5 jiu3 jat1 hei2 maa1?',
           english: 'We are going to eat, are you coming?',
           zhTW: '我們要去吃飯，你要一起嗎？',
           zhCN: '我们要去吃饭，你要一起吗？'
@@ -3626,12 +3626,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'plan3',
-        cantonese: 'Libre kita',
+        cantonese: 'ngo5 ceng2 haak3',
         english: 'My treat / I\'ll pay for you',
         zhTW: '我請客',
         zhCN: '我请客',
         example: {
-          cantonese: 'Tara, libre kita ng kape.',
+          cantonese: 'zau2 baa6, ngo5 ceng2 nei5 hot3 gaa3 fe1.',
           english: 'Let\'s go, I\'ll treat you to coffee.',
           zhTW: '走吧，我請你喝咖啡。',
           zhCN: '走吧，我请你喝咖啡。'
@@ -3639,12 +3639,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'plan4',
-        cantonese: 'KKB (Kanya-Kanyang Bayad)',
+        cantonese: 'gok3 fu6 gok3 dik1',
         english: 'Dutch Treat / Split the bill',
         zhTW: '各付各的',
         zhCN: '各付各的',
         example: {
-          cantonese: 'KKB tayo ha?',
+          cantonese: 'ngo5 mun4 gok3 fu6 gok3 dik1, hou2 maa1?',
           english: 'We split the bill, okay?',
           zhTW: '我們各付各的，好嗎？',
           zhCN: '我们各付各的，好吗？'
@@ -3652,12 +3652,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'plan5',
-        cantonese: 'Anong ganap?',
+        cantonese: 'jau5 sam6 mo1 gai3 waak6? / faat3 sang1 sam6 mo1 si6?',
         english: 'What\'s the plan? / What\'s happening?',
         zhTW: '有什麼計畫？ / 發生什麼事？',
         zhCN: '有什么计划？ / 发生什么事？',
         example: {
-          cantonese: 'Anong ganap mamaya?',
+          cantonese: 'doi6 wui5 jau5 sam6 mo1 gai3 waak6?',
           english: 'What\'s the plan later?',
           zhTW: '待會有什麼計畫？',
           zhCN: '待会有什么计划？'
@@ -3674,12 +3674,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'bol1',
-        cantonese: 'Ang ganda mo naman',
+        cantonese: 'nei5 zan1 piu3 loeng6',
         english: 'You are so beautiful',
         zhTW: '你真漂亮',
         zhCN: '你真漂亮',
         example: {
-          cantonese: 'Ang ganda mo naman ngayon.',
+          cantonese: 'nei5 gam1 tin1 zan1 piu3 loeng6.',
           english: 'You are so beautiful today.',
           zhTW: '你今天真漂亮。',
           zhCN: '你今天真漂亮。'
@@ -3687,12 +3687,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bol2',
-        cantonese: 'Pogi',
+        cantonese: 'seoi3',
         english: 'Handsome',
         zhTW: '帥',
         zhCN: '帅',
         example: {
-          cantonese: 'Ang pogi mo talaga.',
+          cantonese: 'nei5 zan1 dik1 han2 seoi3.',
           english: 'You are really handsome.',
           zhTW: '你真的很帥。',
           zhCN: '你真的很帅。'
@@ -3700,12 +3700,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bol3',
-        cantonese: 'Bagay sa iyo',
+        cantonese: 'han2 sik1 hap6 nei5',
         english: 'That suits/fits you well',
         zhTW: '很適合你',
         zhCN: '很适合你',
         example: {
-          cantonese: 'Bagay sa iyo ang damit.',
+          cantonese: 'ze5 gin6 ji1 fuk6 han2 sik1 hap6 nei5.',
           english: 'The dress suits you well.',
           zhTW: '這件衣服很適合你。',
           zhCN: '这件衣服很适合你。'
@@ -3713,12 +3713,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bol4',
-        cantonese: 'Bolero',
+        cantonese: 'tim4 jin4 mat6 jyu5 dik1 jan4',
         english: 'Flatterer / Smooth talker',
         zhTW: '甜言蜜語的人',
         zhCN: '甜言蜜语的人',
         example: {
-          cantonese: 'Huwag kang maniwala, bolero yan.',
+          cantonese: 'bit6 soeng1 seon3 taa1, taa1 han2 wui5 tim4 jin4 mat6 jyu5.',
           english: 'Don\'t believe him, he\'s a smooth talker.',
           zhTW: '別相信他，他很會甜言蜜語。',
           zhCN: '别相信他，他很会甜言蜜语。'
@@ -3726,12 +3726,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bol5',
-        cantonese: 'Naks!',
+        cantonese: 'waa1! / hou2 lei6 hoi6!',
         english: 'Wow! / Impressive!',
         zhTW: '哇！/ 好厲害！',
         zhCN: '哇！/ 好厉害！',
         example: {
-          cantonese: 'Naks! Ang galing mo.',
+          cantonese: 'waa1! nei5 zan1 paang5.',
           english: 'Wow! You are so good.',
           zhTW: '哇！你真棒。',
           zhCN: '哇！你真棒。'
@@ -3748,12 +3748,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'ewan1',
-        cantonese: 'Sa tingin ko...',
+        cantonese: 'ngo5 gok3 dak1... / zoi6 ngo5 hon3 loi4...',
         english: 'I think... / In my opinion...',
         zhTW: '我覺得... / 在我看來...',
         zhCN: '我觉得... / 在我看来...',
         example: {
-          cantonese: 'Sa tingin ko tama ka.',
+          cantonese: 'ngo5 gok3 dak1 nei5 si6 deoi3 dik1.',
           english: 'I think you are right.',
           zhTW: '我覺得你是對的。',
           zhCN: '我觉得你是对的。'
@@ -3761,12 +3761,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ewan2',
-        cantonese: 'Ewan ko',
+        cantonese: 'ngo5 bat1 zi1 dou3',
         english: 'I don\'t know',
         zhTW: '我不知道',
         zhCN: '我不知道',
         example: {
-          cantonese: 'Ewan ko kung nasaan siya.',
+          cantonese: 'ngo5 bat1 zi1 dou3 taa1 / taa1 zoi6 naa5 leoi5.',
           english: 'I don\'t know where he/she is.',
           zhTW: '我不知道他/她在哪裡。',
           zhCN: '我不知道他/她在哪裡。'
@@ -3774,12 +3774,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ewan3',
-        cantonese: 'Bahala na',
+        cantonese: 'ceoi4 bin2 laa1 / ting3 tin1 jau4 ming6',
         english: 'Come what may / I\'ll leave it to fate',
         zhTW: '隨便啦 / 聽天由命',
         zhCN: '随便啦 / 听天由命',
         example: {
-          cantonese: 'Bahala na si Batman.',
+          cantonese: 'gaau1 kap1 ming6 wan6 baa6 (pin1 fuk1 hap6).',
           english: 'Leave it to fate (Batman).',
           zhTW: '交給命運吧（蝙蝠俠）。',
           zhCN: '交给命运吧（蝙蝠侠）。'
@@ -3787,12 +3787,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ewan4',
-        cantonese: 'Depende',
+        cantonese: 'hon3 cing4 fong3',
         english: 'It depends',
         zhTW: '看情況',
         zhCN: '看情况',
         example: {
-          cantonese: 'Depende sa panahon.',
+          cantonese: 'hon3 tin1 hei3 ji4 ding6.',
           english: 'It depends on the weather.',
           zhTW: '看天氣而定。',
           zhCN: '看天气而定。'
@@ -3800,12 +3800,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ewan5',
-        cantonese: 'Sigurado ka?',
+        cantonese: 'nei5 kok3 ding6 maa1?',
         english: 'Are you sure?',
         zhTW: '你確定嗎？',
         zhCN: '你确定吗？',
         example: {
-          cantonese: 'Sigurado ka ba sa sagot mo?',
+          cantonese: 'nei5 kok3 ding6 nei5 dik1 daap3 on3 maa1?',
           english: 'Are you sure about your answer?',
           zhTW: '你確定你的答案嗎？',
           zhCN: '你确定你的答案吗？'
@@ -3822,12 +3822,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'hob1',
-        cantonese: 'Mahilig ka ba sa...?',
+        cantonese: 'nei5 hei2 fun1... maa1?',
         english: 'Are you fond of...? / Do you like...?',
         zhTW: '你喜歡...嗎？',
         zhCN: '你喜欢...吗？',
         example: {
-          cantonese: 'Mahilig ka ba sa Karaoke?',
+          cantonese: 'nei5 hei2 fun1 kaa1 laai1 Wifi maa1?',
           english: 'Do you like Karaoke?',
           zhTW: '你喜歡卡拉OK嗎？',
           zhCN: '你喜欢卡拉OK吗？'
@@ -3835,12 +3835,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hob2',
-        cantonese: 'Anong gusto mong gawin?',
+        cantonese: 'nei5 soeng2 zou6 sam6 mo1?',
         english: 'What do you want to do?',
         zhTW: '你想做什麼？',
         zhCN: '你想做什么？',
         example: {
-          cantonese: 'Anong gusto mong gawin bukas?',
+          cantonese: 'nei5 ming4 tin1 soeng2 zou6 sam6 mo1?',
           english: 'What do you want to do tomorrow?',
           zhTW: '你明天想做什麼？',
           zhCN: '你明天想做什么？'
@@ -3848,12 +3848,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hob3',
-        cantonese: 'Mag-travel',
+        cantonese: 'leoi5 hang4',
         english: 'To travel',
         zhTW: '旅行',
         zhCN: '旅行',
         example: {
-          cantonese: 'Gusto kong mag-travel sa Palawan.',
+          cantonese: 'ngo5 soeng2 heoi3 baa1 laai1 mong6 leoi5 hang4.',
           english: 'I want to travel to Palawan.',
           zhTW: '我想去巴拉望旅行。',
           zhCN: '我想去巴拉望旅行。'
@@ -3861,12 +3861,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hob4',
-        cantonese: 'Manood ng Netflix/Sine',
+        cantonese: 'hon3 Netflix/ din6 jing2',
         english: 'Watch Netflix/Movies',
         zhTW: '看 Netflix/電影',
         zhCN: '看 Netflix/电影',
         example: {
-          cantonese: 'Manood tayo ng sine.',
+          cantonese: 'ngo5 mun4 heoi3 hon3 din6 jing2 baa6.',
           english: 'Let\'s watch a movie.',
           zhTW: '我們去看電影吧。',
           zhCN: '我们去看电影吧。'
@@ -3874,12 +3874,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hob5',
-        cantonese: 'Kumain',
+        cantonese: 'hek3',
         english: 'Eat',
         zhTW: '吃',
         zhCN: '吃',
         example: {
-          cantonese: 'Mahilig akong kumain.',
+          cantonese: 'ngo5 hei2 fun1 hek3.',
           english: 'I love to eat.',
           zhTW: '我喜歡吃。',
           zhCN: '我喜欢吃。'
@@ -3896,12 +3896,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'slang1',
-        cantonese: 'Charot',
+        cantonese: 'hoi1 waan4 siu3 dik1!',
         english: 'Just kidding!',
         zhTW: '開玩笑的！',
         zhCN: '开玩笑的！',
         example: {
-          cantonese: 'Ang ganda ko, charot!',
+          cantonese: 'ngo5 zan1 piu3 loeng6, hoi1 waan4 siu3 dik1!',
           english: 'I\'m beautiful, just kidding!',
           zhTW: '我真漂亮，開玩笑的！',
           zhCN: '我真漂亮，开玩笑的！'
@@ -3909,12 +3909,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'slang2',
-        cantonese: 'Chika',
+        cantonese: 'baat3 gwaa3 / gu3 si6',
         english: 'Gossip / Story',
         zhTW: '八卦 / 故事',
         zhCN: '八卦 / 故事',
         example: {
-          cantonese: 'Anong chika ngayon?',
+          cantonese: 'zeoi3 gan6 jau5 sam6 mo1 baat3 gwaa3?',
           english: 'What\'s the latest gossip?',
           zhTW: '最近有什麼八卦？',
           zhCN: '最近有什么八卦？'
@@ -3922,12 +3922,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'slang3',
-        cantonese: 'Lodi',
+        cantonese: 'ngau5 zoeng6',
         english: 'Idol / Someone you admire',
         zhTW: '偶像',
         zhCN: '偶像',
         example: {
-          cantonese: 'Ikaw ang lodi ko.',
+          cantonese: 'nei5 si6 ngo5 dik1 ngau5 zoeng6.',
           english: 'You are my idol.',
           zhTW: '你是我的偶像。',
           zhCN: '你是我的偶像。'
@@ -3935,12 +3935,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'slang4',
-        cantonese: 'Petmalu',
+        cantonese: 'lei6 hoi6 / maang5',
         english: 'Amazing / Extreme',
         zhTW: '厲害 / 猛',
         zhCN: '厉害 / 猛',
         example: {
-          cantonese: 'Petmalu ang sayaw mo.',
+          cantonese: 'nei5 tiu3 mou5 han2 lei6 hoi6.',
           english: 'Your dancing is amazing.',
           zhTW: '你跳舞很厲害。',
           zhCN: '你跳舞很厉害。'
@@ -3948,12 +3948,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'slang5',
-        cantonese: 'Bes / Mars / Pards',
+        cantonese: 'gwai1 mat6 / hing1 dai6',
         english: 'Friend / Bestie terms',
         zhTW: '閨蜜 / 兄弟',
         zhCN: '闺蜜 / 兄弟',
         example: {
-          cantonese: 'Kamusta ka na bes?',
+          cantonese: 'nei5 hou2 maa1, gwai1 mat6?',
           english: 'How are you bestie?',
           zhTW: '你好嗎，閨蜜？',
           zhCN: '你好吗，闺蜜？'
@@ -3970,12 +3970,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'work1',
-        cantonese: 'Anong trabaho mo?',
+        cantonese: 'nei5 dik1 gung1 zok3 si6 sam6 mo1?',
         english: 'What is your job?',
         zhTW: '你的工作是什麼？',
         zhCN: '你的工作是什么？',
         example: {
-          cantonese: 'Anong trabaho mo sa Maynila?',
+          cantonese: 'nei5 zoi6 maa5 nei4 laai1 zou6 sam6 mo1 gung1 zok3?',
           english: 'What is your job in Manila?',
           zhTW: '你在馬尼拉做什麼工作？',
           zhCN: '你在马尼拉做什么工作？'
@@ -3983,12 +3983,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'work2',
-        cantonese: 'Estudyante',
+        cantonese: 'hok6 saang1',
         english: 'Student',
         zhTW: '學生',
         zhCN: '学生',
         example: {
-          cantonese: 'Estudyante pa lang ako.',
+          cantonese: 'ngo5 waan4 zi2 si6 go3 hok6 saang1.',
           english: 'I am just a student.',
           zhTW: '我還只是個學生。',
           zhCN: '我还只是个学生。'
@@ -3996,12 +3996,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'work3',
-        cantonese: 'Opisina',
+        cantonese: 'baan6 gung1 sat1',
         english: 'Office',
         zhTW: '辦公室',
         zhCN: '办公室',
         example: {
-          cantonese: 'Nasa opisina ako ngayon.',
+          cantonese: 'ngo5 jin6 zoi6 zoi6 baan6 gung1 sat1.',
           english: 'I am at the office now.',
           zhTW: '我現在在辦公室。',
           zhCN: '我现在在办公室。'
@@ -4009,12 +4009,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'work4',
-        cantonese: 'Pagod',
+        cantonese: 'leoi6',
         english: 'Tired',
         zhTW: '累',
         zhCN: '累',
         example: {
-          cantonese: 'Pagod ako sa work.',
+          cantonese: 'ngo5 gung1 zok3 han2 leoi6.',
           english: 'I\'m tired from work.',
           zhTW: '我工作很累。',
           zhCN: '我工作很累。'
@@ -4022,12 +4022,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'work5',
-        cantonese: 'Bakasyon',
+        cantonese: 'gaa3 kei4 / dou6 gaa3',
         english: 'Vacation',
         zhTW: '假期 / 度假',
         zhCN: '假期 / 度假',
         example: {
-          cantonese: 'Kailangan ko ng bakasyon.',
+          cantonese: 'ngo5 seoi1 jiu3 jau1 gaa3.',
           english: 'I need a vacation.',
           zhTW: '我需要休假。',
           zhCN: '我需要休假。'
@@ -4044,12 +4044,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'luv1',
-        cantonese: 'Crush kita',
+        cantonese: 'ngo5 am3 lyun2 nei5',
         english: 'I have a crush on you',
         zhTW: '我暗戀你',
         zhCN: '我暗恋你',
         example: {
-          cantonese: 'Alam mo ba, crush kita?',
+          cantonese: 'nei5 zi1 dou3 maa1, ngo5 am3 lyun2 nei5?',
           english: 'Do you know, I have a crush on you?',
           zhTW: '你知道嗎，我暗戀你？',
           zhCN: '你知道吗，我暗恋你？'
@@ -4057,12 +4057,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'luv2',
-        cantonese: 'Kilig',
+        cantonese: 'sam1 dung6 / siu2 luk6 lyun6 zong6',
         english: 'Romantic excitement / butterflies',
         zhTW: '心動 / 小鹿亂撞',
         zhCN: '心动 / 小鹿乱撞',
         example: {
-          cantonese: 'Kinikilig ako sa iyo.',
+          cantonese: 'jan1 wai6 nei5, ngo5 gam2 dou3 sam1 dung6.',
           english: 'I\'m feeling giddy because of you.',
           zhTW: '因為你，我感到心動。',
           zhCN: '因为你，我感到心动。'
@@ -4070,12 +4070,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'luv3',
-        cantonese: 'Miss na kita',
+        cantonese: 'ngo5 soeng2 nei5 liu5',
         english: 'I miss you already',
         zhTW: '我想你了',
         zhCN: '我想你了',
         example: {
-          cantonese: 'Umuwi ka na, miss na kita.',
+          cantonese: 'faai3 wui4 gaa1 baa6, ngo5 soeng2 nei5 liu5.',
           english: 'Come home now, I miss you.',
           zhTW: '快回家吧，我想你了。',
           zhCN: '快回家吧，我想你了。'
@@ -4083,12 +4083,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'luv4',
-        cantonese: 'Single ka ba?',
+        cantonese: 'nei5 daan1 san1 maa1?',
         english: 'Are you single?',
         zhTW: '你單身嗎？',
         zhCN: '你单身吗？',
         example: {
-          cantonese: 'Single ka ba o may boyfriend na?',
+          cantonese: 'nei5 daan1 san1 waan4 si6 jau5 naam4 pang4 jau5 liu5?',
           english: 'Are you single or do you have a boyfriend?',
           zhTW: '你單身還是有男朋友了？',
           zhCN: '你单身还是有男朋友了？'
@@ -4096,12 +4096,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'luv5',
-        cantonese: 'Date tayo?',
+        cantonese: 'ngo5 mun4 heoi3 joek3 wui6 baa6?',
         english: 'Let\'s go on a date?',
         zhTW: '我們去約會吧？',
         zhCN: '我们去约会吧？',
         example: {
-          cantonese: 'Pwede ba, date tayo bukas?',
+          cantonese: 'ho2 ji5 maa1, ngo5 mun4 ming4 tin1 heoi3 joek3 wui6?',
           english: 'Is it okay, let\'s go on a date tomorrow?',
           zhTW: '可以嗎，我們明天去約會？',
           zhCN: '可以吗，我们明天去约会？'
@@ -4118,12 +4118,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'confl1',
-        cantonese: 'Nagtatampo ka ba?',
+        cantonese: 'nei5 zoi6 saang1 mun6 hei3 maa1?',
         english: 'Are you sulking/upset with me?',
         zhTW: '你在生悶氣嗎？',
         zhCN: '你在生闷气吗？',
         example: {
-          cantonese: 'Bakit tahimik ka? Nagtatampo ka ba?',
+          cantonese: 'wai6 sam6 mo1 nei5 ze2 mo1 on1 zing6? nei5 zoi6 saang1 mun6 hei3 maa1?',
           english: 'Why are you quiet? Are you sulking?',
           zhTW: '為什麼你這麼安靜？你在生悶氣嗎？',
           zhCN: '为什么你这么安静？你在生闷气吗？'
@@ -4131,12 +4131,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'confl2',
-        cantonese: 'Galit ka ba?',
+        cantonese: 'nei5 sang1 hei3 liu5 maa1?',
         english: 'Are you angry?',
         zhTW: '你生氣了嗎？',
         zhCN: '你生气了吗？',
         example: {
-          cantonese: 'Galit ka ba sa akin?',
+          cantonese: 'nei5 zoi6 saang1 ngo5 dik1 hei3 maa1?',
           english: 'Are you angry with me?',
           zhTW: '你在生我的氣嗎？',
           zhCN: '你在生我的气吗？'
@@ -4144,12 +4144,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'confl3',
-        cantonese: 'Bati na tayo',
+        cantonese: 'ngo5 mun4 wo4 hou2 baa6',
         english: 'Let\'s make up / Let\'s be friends again',
         zhTW: '我們和好吧',
         zhCN: '我们和好吧',
         example: {
-          cantonese: 'Sige na, bati na tayo.',
+          cantonese: 'hou2 liu5 laa1, ngo5 mun4 wo4 hou2 baa6.',
           english: 'Come on, let\'s make up.',
           zhTW: '好了啦，我們和好吧。',
           zhCN: '好了啦，我们和好吧。'
@@ -4157,12 +4157,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'confl4',
-        cantonese: 'Sorry na',
+        cantonese: 'deoi3 bat1 hei2 laa1',
         english: 'I\'m sorry / Come on, forgive me',
         zhTW: '對不起啦',
         zhCN: '对不起啦',
         example: {
-          cantonese: 'Sorry na, hindi ko sinasadya.',
+          cantonese: 'deoi3 bat1 hei2 laa1, ngo5 bat1 si6 gu3 ji3 dik1.',
           english: 'I\'m sorry, I didn\'t mean it.',
           zhTW: '對不起啦，我不是故意的。',
           zhCN: '对不起啦，我不是故意的。'
@@ -4170,12 +4170,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'confl5',
-        cantonese: 'Lambing',
+        cantonese: 'saat3 giu1 / hung3',
         english: 'Affection / Coaxing',
         zhTW: '撒嬌 / 哄',
         zhCN: '撒娇 / 哄',
         example: {
-          cantonese: 'Kunting lambing lang, okay na siya.',
+          cantonese: 'zi2 jiu3 saau2 mei4 hung3 jat1 haa5, taa1 / taa1 zau6 wui5 hou2 liu5.',
           english: 'Just a little coaxing, he/she will be okay.',
           zhTW: '只要稍微哄一下，他/她就會好了。',
           zhCN: '只要稍微哄一下，他/她就会好了。'
@@ -4192,12 +4192,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'drink1',
-        cantonese: 'Tagay!',
+        cantonese: 'gon1 bui1! / wun6 nei5 hot3 liu5',
         english: 'Cheers! / Your turn to drink',
         zhTW: '乾杯！/ 換你喝了',
         zhCN: '干杯！/ 换你喝了',
         example: {
-          cantonese: 'Tagay na! Ikaw na ang iinom.',
+          cantonese: 'gon1 bui1! wun6 nei5 hot3 liu5.',
           english: 'Cheers! It\'s your turn to drink.',
           zhTW: '乾杯！換你喝了。',
           zhCN: '干杯！换你喝了。'
@@ -4205,12 +4205,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'drink2',
-        cantonese: 'Pulutan',
+        cantonese: 'haa6 zau2 coi3',
         english: 'Food eaten while drinking',
         zhTW: '下酒菜',
         zhCN: '下酒菜',
         example: {
-          cantonese: 'Masarap ang sisig bilang pulutan.',
+          cantonese: 'Wifi han2 hou2 hek3, sik1 hap6 dong1 haa6 zau2 coi3.',
           english: 'Sisig is delicious as food for drinking.',
           zhTW: 'Sisig 很好吃，適合當下酒菜。',
           zhCN: 'Sisig 很好吃，适合当下酒菜。'
@@ -4218,12 +4218,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'drink3',
-        cantonese: 'Lasing na ako',
+        cantonese: 'ngo5 zeoi3 liu5',
         english: 'I\'m drunk already',
         zhTW: '我醉了',
         zhCN: '我醉了',
         example: {
-          cantonese: 'Tama na, lasing na ako.',
+          cantonese: 'gau3 liu5, ngo5 ji5 ging1 zeoi3 liu5.',
           english: 'Enough, I\'m drunk already.',
           zhTW: '夠了，我已經醉了。',
           zhCN: '够了，我已经醉了。'
@@ -4231,12 +4231,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'drink4',
-        cantonese: 'Konti lang',
+        cantonese: 'jat1 dim2 dim2 zau6 hou2',
         english: 'Just a little bit',
         zhTW: '一點點就好',
         zhCN: '一点点就好',
         example: {
-          cantonese: 'Pahingi ng beer, konti lang.',
+          cantonese: 'kap1 ngo5 jat1 dim2 be1 zau2, jat1 dim2 dim2 zau6 hou2.',
           english: 'Give me beer, just a little bit.',
           zhTW: '給我一點啤酒，一點點就好。',
           zhCN: '给我一点啤酒，一点点就好。'
@@ -4244,12 +4244,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'drink5',
-        cantonese: 'Maligayang Bati!',
+        cantonese: 'saang1 jat6 faai3 lok6! / zuk1 ho6!',
         english: 'Happy Birthday / Greetings!',
         zhTW: '生日快樂！/ 祝賀！',
         zhCN: '生日快乐！/ 祝贺！',
         example: {
-          cantonese: 'Maligayang bati sa iyong kaarawan!',
+          cantonese: 'zuk1 nei5 saang1 jat6 faai3 lok6!',
           english: 'Happy greetings on your birthday!',
           zhTW: '祝你生日快樂！',
           zhCN: '祝你生日快乐！'
@@ -4266,12 +4266,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'story1',
-        cantonese: 'Alam mo ba...',
+        cantonese: 'nei5 zi1 dou3 maa1...',
         english: 'Do you know... / Guess what...',
         zhTW: '你知道嗎...',
         zhCN: '你知道吗...',
         example: {
-          cantonese: 'Alam mo ba ang nangyari kahapon?',
+          cantonese: 'nei5 zi1 dou3 zok3 tin1 faat3 sang1 liu5 sam6 mo1 si6 maa1?',
           english: 'Do you know what happened yesterday?',
           zhTW: '你知道昨天發生了什麼事嗎？',
           zhCN: '你知道昨天发生了什么事吗？'
@@ -4279,12 +4279,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'story2',
-        cantonese: 'Tapos...',
+        cantonese: 'jin4 hau6...',
         english: 'And then...',
         zhTW: '然後...',
         zhCN: '然后...',
         example: {
-          cantonese: 'Kumain kami, tapos nanood ng sine.',
+          cantonese: 'ngo5 mun4 hek3 liu5 faan6, jin4 hau6 hon3 liu5 din6 jing2.',
           english: 'We ate, and then watched a movie.',
           zhTW: '我們吃了飯，然後看了電影。',
           zhCN: '我们吃了饭，然后看了电影。'
@@ -4292,12 +4292,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'story3',
-        cantonese: 'Bigla...',
+        cantonese: 'dat6 jin4...',
         english: 'Suddenly...',
         zhTW: '突然...',
         zhCN: '突然...',
         example: {
-          cantonese: 'Bigla siyang umalis.',
+          cantonese: 'taa1 / taa1 dat6 jin4 lei4 hoi1 liu5.',
           english: 'He/She suddenly left.',
           zhTW: '他/她突然離開了。',
           zhCN: '他/她突然离开了。'
@@ -4305,12 +4305,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'story4',
-        cantonese: 'Punyeta',
+        cantonese: 'goi1 sei2! (cou1 zuk6)',
         english: 'Damn it! (Vulgar)',
         zhTW: '該死！(粗俗)',
         zhCN: '该死！(粗俗)',
         example: {
-          cantonese: 'Punyeta! Nakalimutan ko ang susi.',
+          cantonese: 'goi1 sei2! ngo5 mong4 liu5 joek6 si4.',
           english: 'Damn it! I forgot the key.',
           zhTW: '該死！我忘了鑰匙。',
           zhCN: '该死！我忘了钥匙。'
@@ -4318,12 +4318,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'story5',
-        cantonese: 'Di nga?',
+        cantonese: 'zan1 dik1 maa1? / bat1 wui5 baa6?',
         english: 'For real? / No way?',
         zhTW: '真的嗎？ / 不會吧？',
         zhCN: '真的吗？ / 不会吧？',
         example: {
-          cantonese: 'Nanalo siya? Di nga?',
+          cantonese: 'taa1 / taa1 jeng4 liu5? zan1 dik1 maa1?',
           english: 'He/She won? For real?',
           zhTW: '他/她贏了？真的嗎？',
           zhCN: '他/她赢了？真的吗？'
@@ -4340,12 +4340,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'ani1',
-        cantonese: 'Aso',
+        cantonese: 'gau2',
         english: 'Dog',
         zhTW: '狗',
         zhCN: '狗',
         example: {
-          cantonese: 'Mabait ang aso.',
+          cantonese: 'gau2 gau2 han2 gwaai1.',
           english: 'The dog is kind.',
           zhTW: '狗狗很乖。',
           zhCN: '狗狗很乖。'
@@ -4353,12 +4353,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ani2',
-        cantonese: 'Pusa',
+        cantonese: 'maau1',
         english: 'Cat',
         zhTW: '貓',
         zhCN: '猫',
         example: {
-          cantonese: 'Natutulog ang pusa.',
+          cantonese: 'maau1 zoi6 seoi6 gaau3.',
           english: 'The cat is sleeping.',
           zhTW: '貓在睡覺。',
           zhCN: '猫在睡觉。'
@@ -4366,12 +4366,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ani3',
-        cantonese: 'Ibon',
+        cantonese: 'niu5',
         english: 'Bird',
         zhTW: '鳥',
         zhCN: '鸟',
         example: {
-          cantonese: 'Lumilipad ang ibon.',
+          cantonese: 'niu5 zoi6 fei1.',
           english: 'The bird is flying.',
           zhTW: '鳥在飛。',
           zhCN: '鸟在飞。'
@@ -4379,12 +4379,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ani4',
-        cantonese: 'Baboy',
+        cantonese: 'zyu1',
         english: 'Pig',
         zhTW: '豬',
         zhCN: '猪',
         example: {
-          cantonese: 'Mataba ang baboy.',
+          cantonese: 'zyu1 han2 bun6.',
           english: 'The pig is fat.',
           zhTW: '豬很胖。',
           zhCN: '猪很胖。'
@@ -4392,12 +4392,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ani5',
-        cantonese: 'Baka',
+        cantonese: 'ngau4',
         english: 'Cow',
         zhTW: '牛',
         zhCN: '牛',
         example: {
-          cantonese: 'Kumakain ng damo ang baka.',
+          cantonese: 'ngau4 zoi6 hek3 cou2.',
           english: 'The cow is eating grass.',
           zhTW: '牛在吃草。',
           zhCN: '牛在吃草。'
@@ -4405,12 +4405,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ani6',
-        cantonese: 'Kalabaw',
+        cantonese: 'seoi2 ngau4',
         english: 'Carabao / Water Buffalo',
         zhTW: '水牛',
         zhCN: '水牛',
         example: {
-          cantonese: 'Ang kalabaw ay masipag.',
+          cantonese: 'seoi2 ngau4 han2 kan4 lou4.',
           english: 'The carabao is hardworking.',
           zhTW: '水牛很勤勞。',
           zhCN: '水牛很勤劳。'
@@ -4418,12 +4418,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ani7',
-        cantonese: 'Ahas',
+        cantonese: 'se4',
         english: 'Snake',
         zhTW: '蛇',
         zhCN: '蛇',
         example: {
-          cantonese: 'Nakakatakot ang ahas.',
+          cantonese: 'se4 han2 ho2 paa3.',
           english: 'The snake is scary.',
           zhTW: '蛇很可怕。',
           zhCN: '蛇很可怕。'
@@ -4431,12 +4431,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ani8',
-        cantonese: 'Daga',
+        cantonese: 'lou5 syu2',
         english: 'Mouse / Rat',
         zhTW: '老鼠',
         zhCN: '老鼠',
         example: {
-          cantonese: 'Mabilis tumakbo ang daga.',
+          cantonese: 'lou5 syu2 paau2 dak1 han2 faai3.',
           english: 'The mouse runs fast.',
           zhTW: '老鼠跑得很快。',
           zhCN: '老鼠跑得很快。'
@@ -4444,12 +4444,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ani9',
-        cantonese: 'Lamok',
+        cantonese: 'man1 zi2',
         english: 'Mosquito',
         zhTW: '蚊子',
         zhCN: '蚊子',
         example: {
-          cantonese: 'Maraming lamok kagabi.',
+          cantonese: 'zok6 maan5 jau5 han2 do1 man1 zi2.',
           english: 'There were many mosquitoes last night.',
           zhTW: '昨晚有很多蚊子。',
           zhCN: '昨晚有很多蚊子。'
@@ -4457,12 +4457,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ani10',
-        cantonese: 'Ipis',
+        cantonese: 'zoeng1 long4',
         english: 'Cockroach',
         zhTW: '蟑螂',
         zhCN: '蟑螂',
         example: {
-          cantonese: 'Patayin mo ang ipis.',
+          cantonese: 'baa2 zoeng1 long4 daa2 sei1.',
           english: 'Kill the cockroach.',
           zhTW: '把蟑螂打死。',
           zhCN: '把蟑螂打死。'
@@ -4470,12 +4470,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ani11',
-        cantonese: 'Unggoy',
+        cantonese: 'hau4 zi2',
         english: 'Monkey',
         zhTW: '猴子',
         zhCN: '猴子',
         example: {
-          cantonese: 'Makulit ang unggoy.',
+          cantonese: 'hau4 zi2 han2 tiu4 pei4.',
           english: 'The monkey is naughty.',
           zhTW: '猴子很調皮。',
           zhCN: '猴子很调皮。'
@@ -4483,12 +4483,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'ani12',
-        cantonese: 'Kambing',
+        cantonese: 'saan1 joeng4',
         english: 'Goat',
         zhTW: '山羊',
         zhCN: '山羊',
         example: {
-          cantonese: 'May kambing sa bukid.',
+          cantonese: 'tin4 leoi5 jau5 saan1 joeng4.',
           english: 'There is a goat in the farm.',
           zhTW: '田裡有山羊。',
           zhCN: '田里有山羊。'
@@ -4505,12 +4505,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'bp1',
-        cantonese: 'Ulo',
+        cantonese: 'tau4',
         english: 'Head',
         zhTW: '頭',
         zhCN: '头',
         example: {
-          cantonese: 'Masakit ang ulo ko.',
+          cantonese: 'ngo5 dik1 tau4 han2 tung3.',
           english: 'My head hurts.',
           zhTW: '我的頭很痛。',
           zhCN: '我的头很痛。'
@@ -4518,12 +4518,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bp2',
-        cantonese: 'Mata',
+        cantonese: 'ngaan5 zing1',
         english: 'Eye',
         zhTW: '眼睛',
         zhCN: '眼睛',
         example: {
-          cantonese: 'Pikit ang iyong mga mata.',
+          cantonese: 'bai3 soeng5 nei5 dik1 ngaan5 zing1.',
           english: 'Close your eyes.',
           zhTW: '閉上你的眼睛。',
           zhCN: '闭上你的眼睛。'
@@ -4531,12 +4531,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bp3',
-        cantonese: 'Ilong',
+        cantonese: 'bei6 zi2',
         english: 'Nose',
         zhTW: '鼻子',
         zhCN: '鼻子',
         example: {
-          cantonese: 'Matangos ang kanyang ilong.',
+          cantonese: 'taa1 / taa1 dik1 bei6 zi2 han2 ting5.',
           english: 'His/her nose is pointed.',
           zhTW: '他/她的鼻子很挺。',
           zhCN: '他/她的鼻子很挺。'
@@ -4544,12 +4544,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bp4',
-        cantonese: 'Bibig',
+        cantonese: 'zeoi2 baa1',
         english: 'Mouth',
         zhTW: '嘴巴',
         zhCN: '嘴巴',
         example: {
-          cantonese: 'Bukas ang kanyang bibig.',
+          cantonese: 'taa1 / taa1 dik1 zeoi2 baa1 zoeng1 hoi1 zoek6.',
           english: 'His/her mouth is open.',
           zhTW: '他/她的嘴巴張開著。',
           zhCN: '他/她的嘴巴张开着。'
@@ -4557,12 +4557,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bp5',
-        cantonese: 'Tainga',
+        cantonese: 'ji5 do2',
         english: 'Ear',
         zhTW: '耳朵',
         zhCN: '耳朵',
         example: {
-          cantonese: 'Malaki ang kanyang tainga.',
+          cantonese: 'taa1 / taa1 dik1 ji5 do2 han2 daai6.',
           english: 'His/her ears are big.',
           zhTW: '他/她的耳朵很大。',
           zhCN: '他/她的耳朵很大。'
@@ -4570,12 +4570,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bp6',
-        cantonese: 'Buhok',
+        cantonese: 'tau4 faat3',
         english: 'Hair',
         zhTW: '頭髮',
         zhCN: '头发',
         example: {
-          cantonese: 'Mahaba ang kanyang buhok.',
+          cantonese: 'taa1 dik1 tau4 faat3 han2 coeng4.',
           english: 'Her hair is long.',
           zhTW: '她的頭髮很長。',
           zhCN: '她的头发很长。'
@@ -4583,12 +4583,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bp7',
-        cantonese: 'Kamay',
+        cantonese: 'sau2',
         english: 'Hand',
         zhTW: '手',
         zhCN: '手',
         example: {
-          cantonese: 'Hugasan mo ang iyong kamay.',
+          cantonese: 'sai2 sai2 nei5 dik1 sau2.',
           english: 'Wash your hands.',
           zhTW: '洗洗你的手。',
           zhCN: '洗洗你的手。'
@@ -4596,12 +4596,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bp8',
-        cantonese: 'Paa',
+        cantonese: 'goek3',
         english: 'Foot',
         zhTW: '腳',
         zhCN: '脚',
         example: {
-          cantonese: 'Malaki ang aking paa.',
+          cantonese: 'ngo5 dik1 goek3 han2 daai6.',
           english: 'My feet are big.',
           zhTW: '我的腳很大。',
           zhCN: '我的脚很大。'
@@ -4609,12 +4609,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bp9',
-        cantonese: 'Balikat',
+        cantonese: 'gin1 bong2',
         english: 'Shoulder',
         zhTW: '肩膀',
         zhCN: '肩膀',
         example: {
-          cantonese: 'Masakit ang aking balikat.',
+          cantonese: 'ngo5 dik1 gin1 bong2 tung3.',
           english: 'My shoulder hurts.',
           zhTW: '我的肩膀痛。',
           zhCN: '我的肩膀痛。'
@@ -4622,12 +4622,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bp10',
-        cantonese: 'Tiyan',
+        cantonese: 'tou5 zi2',
         english: 'Stomach',
         zhTW: '肚子',
         zhCN: '肚子',
         example: {
-          cantonese: 'Gutom na ang aking tiyan.',
+          cantonese: 'ngo5 dik1 tou5 zi2 ngo6 liu5.',
           english: 'My stomach is hungry.',
           zhTW: '我的肚子餓了。',
           zhCN: '我的肚子饿了。'
@@ -4644,12 +4644,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'idm1',
-        cantonese: 'Butas ang bulsa',
+        cantonese: 'mut6 cin2 / po3 caan2 (hau2 doi6 po3 dung6)',
         english: 'No money / Broke (Hole in the pocket)',
         zhTW: '沒錢 / 破產 (口袋破洞)',
         zhCN: '没钱 / 破产 (口袋破洞)',
         example: {
-          cantonese: 'Butas ang bulsa ko ngayon.',
+          cantonese: 'ngo5 jin6 zoi6 san1 mou4 fan1 man4.',
           english: 'I have no money right now.',
           zhTW: '我現在身無分文。',
           zhCN: '我现在身无分文。'
@@ -4657,12 +4657,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'idm2',
-        cantonese: 'Itaga sa bato',
+        cantonese: 'gei3 zyu6 ngo5 dik1 waa6 / tit3 baan2 deng1 deng1',
         english: 'Mark my words (Cast in stone)',
         zhTW: '記住我的話 / 鐵板釘釘',
         zhCN: '记住我的话 / 铁板钉钉',
         example: {
-          cantonese: 'Itaga mo sa bato, babalik ako.',
+          cantonese: 'gei3 zyu6 ngo5 dik1 waa6, ngo5 wui5 wui4 loi4 dik1.',
           english: 'Mark my words, I will return.',
           zhTW: '記住我的話，我會回來的。',
           zhCN: '记住我的话，我会回来的。'
@@ -4670,12 +4670,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'idm3',
-        cantonese: 'Matalim ang dila',
+        cantonese: 'syut3 waa6 haak1 bok6 / duk6 sit3',
         english: 'Sharp-tongued / Speaks harshly',
         zhTW: '說話刻薄 / 毒舌',
         zhCN: '说话刻薄 / 毒舌',
         example: {
-          cantonese: 'Matalim ang dila ng kapitbahay namin.',
+          cantonese: 'ngo5 mun4 leon4 geoi1 syut3 waa6 han2 haak1 bok6.',
           english: 'Our neighbor is sharp-tongued.',
           zhTW: '我們鄰居說話很刻薄。',
           zhCN: '我们邻居说话很刻薄。'
@@ -4683,12 +4683,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'idm4',
-        cantonese: 'Ningas kugon',
+        cantonese: 'saam1 fan1 zung1 jit6 dou6',
         english: 'Diligent only at the beginning',
         zhTW: '三分鐘熱度',
         zhCN: '三分钟热度',
         example: {
-          cantonese: 'Huwag maging ningas kugon sa pag-aaral.',
+          cantonese: 'hok6 zaap6 bat1 jiu3 zi2 jau5 saam1 fan1 zung1 jit6 dou6.',
           english: 'Do not be diligent only at the beginning in your studies.',
           zhTW: '學習不要只有三分鐘熱度。',
           zhCN: '学习不要只有三分钟热度。'
@@ -4696,12 +4696,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'idm5',
-        cantonese: 'Isang kahig, isang tuka',
+        cantonese: 'min5 koeng5 wu4 hau2 / zaan6 jat1 tin1 hek3 jat1 tin1',
         english: 'Living hand-to-mouth / Surviving day by day',
         zhTW: '勉強糊口 / 賺一天吃一天',
         zhCN: '勉强糊口 / 赚一天吃一天',
         example: {
-          cantonese: 'Sila ay isang kahig, isang tuka.',
+          cantonese: 'taa1 mun4 gwo3 zoek6 min5 koeng5 wu4 hau2 dik1 sang1 wut6.',
           english: 'They are living hand-to-mouth.',
           zhTW: '他們過著勉強糊口的生活。',
           zhCN: '他们过着勉强糊口的生活。'
@@ -4709,12 +4709,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'idm6',
-        cantonese: 'Kayod kalabaw',
+        cantonese: 'ping3 ming6 gung1 zok3 / zoeng6 ngau4 jat1 joeng6 gung1 zok3',
         english: 'Hardworking (Working like a carabao)',
         zhTW: '拼命工作 / 像牛一樣工作',
         zhCN: '拼命工作 / 像牛一样工作',
         example: {
-          cantonese: 'Kayod kalabaw siya para sa pamilya.',
+          cantonese: 'taa1 / taa1 wai6 liu5 gaa1 ting4 ping3 ming6 gung1 zok3.',
           english: 'He/She works very hard for the family.',
           zhTW: '他/她為了家庭拼命工作。',
           zhCN: '他/她为了家庭拼命工作。'
@@ -4722,12 +4722,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'idm7',
-        cantonese: 'Magaan ang dugo',
+        cantonese: 'jung4 ji6 soeng1 cyu3 / tou2 jan4 hei2 fun1',
         english: 'Easy to get along with (Light blood)',
         zhTW: '容易相處 / 討人喜歡',
         zhCN: '容易相处 / 讨人喜欢',
         example: {
-          cantonese: 'Magaan ang dugo ko sa kanya.',
+          cantonese: 'ngo5 han2 jung4 ji6 wo4 taa1 / taa1 soeng1 cyu3.',
           english: 'I easily get along with him/her.',
           zhTW: '我很容易和他/她相處。',
           zhCN: '我很容易和他/她相处。'
@@ -4735,12 +4735,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'idm8',
-        cantonese: 'Ilaw ng tahanan',
+        cantonese: 'mou5 can1 (gaa1 ting4 zi1 gwong1)',
         english: 'Mother (Light of the home)',
         zhTW: '母親 (家庭之光)',
         zhCN: '母亲 (家庭之光)',
         example: {
-          cantonese: 'Mahal natin ang ilaw ng tahanan.',
+          cantonese: 'ngo5 mun4 oi3 gaa1 ting4 dik1 mou5 can1.',
           english: 'We love the mother of the home.',
           zhTW: '我們愛家庭的母親。',
           zhCN: '我们爱家庭的母亲。'
@@ -4748,12 +4748,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'idm9',
-        cantonese: 'Haligi ng tahanan',
+        cantonese: 'fu6 can1 (gaa1 ting4 dik1 zi1 cyu5)',
         english: 'Father (Pillar of the home)',
         zhTW: '父親 (家庭的支柱)',
         zhCN: '父亲 (家庭的支柱)',
         example: {
-          cantonese: 'Masipag ang haligi ng tahanan.',
+          cantonese: 'fu6 can1 han2 kan4 lou4.',
           english: 'The father is hardworking.',
           zhTW: '父親很勤勞。',
           zhCN: '父亲很勤劳。'
@@ -4761,12 +4761,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'idm10',
-        cantonese: 'Balat-sibuyas',
+        cantonese: 'man5 gam2 / bo1 lei1 sam1 (joeng4 cung1 pei4)',
         english: 'Sensitive / Easily hurt (Onion-skinned)',
         zhTW: '敏感 / 玻璃心 (洋蔥皮)',
         zhCN: '敏感 / 玻璃心 (洋葱皮)',
         example: {
-          cantonese: 'Balat-sibuyas ang kaibigan ko.',
+          cantonese: 'ngo5 dik1 pang4 jau5 han2 man5 gam2.',
           english: 'My friend is very sensitive.',
           zhTW: '我的朋友很敏感。',
           zhCN: '我的朋友很敏感。'
@@ -4774,12 +4774,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'idm11',
-        cantonese: 'Makati ang kamay',
+        cantonese: 'siu2 tau1 / jung4 ji6 tau1 dung1 sai1 (sau2 joeng5)',
         english: 'Thief / Prone to stealing (Itchy hands)',
         zhTW: '小偷 / 容易偷東西 (手癢)',
         zhCN: '小偷 / 容易偷东西 (手痒)',
         example: {
-          cantonese: 'Mag-ingat, makati ang kamay niya.',
+          cantonese: 'siu2 sam1, taa1 / taa1 wui5 tau1 dung1 sai1.',
           english: 'Be careful, he/she is a thief.',
           zhTW: '小心，他/她會偷東西。',
           zhCN: '小心，他/她会偷东西。'
@@ -4787,12 +4787,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'idm12',
-        cantonese: 'Taingang-kawali',
+        cantonese: 'zong1 lung4 zok3 aa2 (wo1 ji5 do2)',
         english: 'Pretending not to hear (Wok ears)',
         zhTW: '裝聾作啞 (鍋耳朵)',
         zhCN: '装聋作哑 (锅耳朵)',
         example: {
-          cantonese: 'Huwag kang mag-taingang-kawali.',
+          cantonese: 'bat1 jiu3 zong1 lung4 zok3 aa2.',
           english: 'Do not pretend not to hear.',
           zhTW: '不要裝聾作啞。',
           zhCN: '不要装聋作哑。'
@@ -4800,12 +4800,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'idm13',
-        cantonese: 'Kapag pumuti ang uwak',
+        cantonese: 'bat1 ho2 nang4 faat3 sang1 dik1 si6 (dong1 wu1 aa1 bin3 baak6)',
         english: 'When pigs fly / Highly unlikely (When the crow turns white)',
         zhTW: '不可能發生的事 (當烏鴉變白)',
         zhCN: '不可能发生的事 (当乌鸦变白)',
         example: {
-          cantonese: 'Babayaran kita kapag pumuti ang uwak.',
+          cantonese: 'dang2 taai3 joeng4 cung4 sai1 bin1 ceot1 loi4 ngo5 zoi3 waan4 nei5 cin2.',
           english: 'I will pay you when pigs fly.',
           zhTW: '等太陽從西邊出來我再還你錢。',
           zhCN: '等太阳从西边出来我再还你钱。'
@@ -4813,12 +4813,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'idm14',
-        cantonese: 'Bukas ang palad',
+        cantonese: 'hong2 koi3 / lok6 jyu1 zo6 jan4 (zoeng1 hoi1 sau2 zoeng2)',
         english: 'Generous (Open-palmed)',
         zhTW: '慷慨 / 樂於助人 (張開手掌)',
         zhCN: '慷慨 / 乐于助人 (张开手掌)',
         example: {
-          cantonese: 'Bukas ang palad niya sa mga mahihirap.',
+          cantonese: 'taa1 / taa1 deoi3 kung4 jan4 han2 hong2 koi3.',
           english: 'He/She is generous to the poor.',
           zhTW: '他/她對窮人很慷慨。',
           zhCN: '他/她对穷人很慷慨。'
@@ -4826,12 +4826,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'idm15',
-        cantonese: 'Makapal ang mukha',
+        cantonese: 'hau5 ngaan4 mou4 ci2 (lim5 pei4 hau5)',
         english: 'Shameless (Thick-faced)',
         zhTW: '厚顏無恥 (臉皮厚)',
         zhCN: '厚颜无耻 (脸皮厚)',
         example: {
-          cantonese: 'Makapal ang mukha niyang umutang ulit.',
+          cantonese: 'taa1 / taa1 jau6 loi4 ze3 cin2, zan1 si6 hau5 ngaan4 mou4 ci2.',
           english: 'He/She is shameless to borrow money again.',
           zhTW: '他/她又來借錢，真是厚顏無恥。',
           zhCN: '他/她又来借钱，真是厚颜无耻。'
@@ -4848,12 +4848,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'htl1',
-        cantonese: 'Saan ang hotel?',
+        cantonese: 'zau2 dim3 zoi6 naa5 leoi5?',
         english: 'Where is the hotel?',
         zhTW: '酒店在哪裡？',
         zhCN: '酒店在哪里？',
         example: {
-          cantonese: 'Saan po ang hotel?',
+          cantonese: 'ceng2 man6 zau2 dim3 zoi6 naa5 leoi5?',
           english: 'Where is the hotel (polite)?',
           zhTW: '請問酒店在哪裡？',
           zhCN: '请问酒店在哪里？'
@@ -4861,12 +4861,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'htl2',
-        cantonese: 'Kukunin ko',
+        cantonese: 'ngo5 jiu3 ze5 go3',
         english: 'I will take it',
         zhTW: '我要這個',
         zhCN: '我要这个',
         example: {
-          cantonese: 'Sige, kukunin ko.',
+          cantonese: 'hou2 dik1, ngo5 jiu3 ze5 go3.',
           english: 'OK, I\'ll take it.',
           zhTW: '好的，我要這個。',
           zhCN: '好的，我要这个。'
@@ -4874,12 +4874,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'htl3',
-        cantonese: 'Mananatili ako',
+        cantonese: 'ngo5 zoeng1 ting4 lau4',
         english: 'I will stay',
         zhTW: '我將停留',
         zhCN: '我将停留',
         example: {
-          cantonese: 'Mananatili ako ng dalawang gabi.',
+          cantonese: 'ngo5 wui5 zyu6 loeng5 go3 maan5 soeng6.',
           english: 'I will stay for two nights.',
           zhTW: '我會住兩個晚上。',
           zhCN: '我会住两个晚上。'
@@ -4887,12 +4887,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'htl4',
-        cantonese: 'May safe ba?',
+        cantonese: 'jau5 bou2 him2 soeng1 maa1?',
         english: 'Do you have a safe?',
         zhTW: '有保險箱嗎？',
         zhCN: '有保险箱吗？',
         example: {
-          cantonese: 'Meron po ba kayong safe?',
+          cantonese: 'ceng2 man6 nei5 mun4 jau5 bou2 him2 soeng1 maa1?',
           english: 'Do you have a safe (polite)?',
           zhTW: '請問你們有保險箱嗎？',
           zhCN: '请问你们有保险箱吗？'
@@ -4900,12 +4900,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'htl5',
-        cantonese: 'Kasama ba ang almusal?',
+        cantonese: 'baau1 ham4 zou2 caan1 maa1?',
         english: 'Is breakfast included?',
         zhTW: '包含早餐嗎？',
         zhCN: '包含早餐吗？',
         example: {
-          cantonese: 'Kasama po ba ang almusal?',
+          cantonese: 'ceng2 man6 baau1 ham4 zou2 caan1 maa1?',
           english: 'Is breakfast included (polite)?',
           zhTW: '請問包含早餐嗎？',
           zhCN: '请问包含早餐吗？'
@@ -4913,12 +4913,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'htl6',
-        cantonese: 'Pakilinisan ang kwarto',
+        cantonese: 'ceng2 daa2 sou3 fong4 gaan1',
         english: 'Please clean the room',
         zhTW: '請打掃房間',
         zhCN: '请打扫房间',
         example: {
-          cantonese: 'Pakilinisan po ang aking kwarto.',
+          cantonese: 'ceng2 daa2 sou3 ngo5 dik1 fong4 gaan1.',
           english: 'Please clean my room.',
           zhTW: '請打掃我的房間。',
           zhCN: '请打扫我的房间。'
@@ -4935,12 +4935,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'air1',
-        cantonese: 'Paliparan',
+        cantonese: 'gei1 coeng4',
         english: 'Airport',
         zhTW: '機場',
         zhCN: '机场',
         example: {
-          cantonese: 'Saan ang paliparan?',
+          cantonese: 'gei1 coeng4 zoi6 naa5 leoi5?',
           english: 'Where is the airport?',
           zhTW: '機場在哪裡？',
           zhCN: '机场在哪里？'
@@ -4948,12 +4948,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'air2',
-        cantonese: 'Eroplano',
+        cantonese: 'fei1 gei1',
         english: 'Airplane',
         zhTW: '飛機',
         zhCN: '飞机',
         example: {
-          cantonese: 'Malaki ang eroplano.',
+          cantonese: 'fei1 gei1 han2 daai6.',
           english: 'The airplane is big.',
           zhTW: '飛機很大。',
           zhCN: '飞机很大。'
@@ -4961,12 +4961,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'air3',
-        cantonese: 'Bagahe',
+        cantonese: 'hang4 lei5',
         english: 'Luggage / Baggage',
         zhTW: '行李',
         zhCN: '行李',
         example: {
-          cantonese: 'Ito ang aking bagahe.',
+          cantonese: 'ze5 si6 ngo5 dik1 hang4 lei5.',
           english: 'This is my luggage.',
           zhTW: '這是我的行李。',
           zhCN: '这是我的行李。'
@@ -4974,12 +4974,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'air4',
-        cantonese: 'Tiket',
+        cantonese: 'gei1 piu3 / piu3',
         english: 'Ticket',
         zhTW: '機票 / 票',
         zhCN: '机票 / 票',
         example: {
-          cantonese: 'Nasaan ang iyong tiket?',
+          cantonese: 'nei5 dik1 gei1 piu3 zoi6 naa5 leoi5?',
           english: 'Where is your ticket?',
           zhTW: '你的機票在哪裡？',
           zhCN: '你的机票在哪里？'
@@ -4987,12 +4987,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'air5',
-        cantonese: 'Pasaporte',
+        cantonese: 'wu6 ziu3',
         english: 'Passport',
         zhTW: '護照',
         zhCN: '护照',
         example: {
-          cantonese: 'Kailangan ko ang pasaporte mo.',
+          cantonese: 'ngo5 seoi1 jiu3 nei5 dik1 wu6 ziu3.',
           english: 'I need your passport.',
           zhTW: '我需要你的護照。',
           zhCN: '我需要你的护照。'
@@ -5009,12 +5009,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'dir1',
-        cantonese: 'Paano pumunta sa...?',
+        cantonese: 'zam2 mo1 heoi3...?',
         english: 'How to go to...?',
         zhTW: '怎麼去...？',
         zhCN: '怎么去...？',
         example: {
-          cantonese: 'Paano pumunta sa hotel?',
+          cantonese: 'zam2 mo1 heoi3 zau2 dim3?',
           english: 'How to go to the hotel?',
           zhTW: '怎麼去酒店？',
           zhCN: '怎么去酒店？'
@@ -5022,12 +5022,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dir2',
-        cantonese: 'Malayo ba?',
+        cantonese: 'jyun5 maa1?',
         english: 'Is it far?',
         zhTW: '遠嗎？',
         zhCN: '远吗？',
         example: {
-          cantonese: 'Malayo ba ang paliparan?',
+          cantonese: 'gei1 coeng4 jyun5 maa1?',
           english: 'Is the airport far?',
           zhTW: '機場遠嗎？',
           zhCN: '机场远吗？'
@@ -5035,12 +5035,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dir3',
-        cantonese: 'Malapit lang',
+        cantonese: 'han2 gan6',
         english: 'It is near',
         zhTW: '很近',
         zhCN: '很近',
         example: {
-          cantonese: 'Malapit lang ang mall.',
+          cantonese: 'kau3 mat6 zung1 sam1 han2 gan6.',
           english: 'The mall is near.',
           zhTW: '購物中心很近。',
           zhCN: '购物中心很近。'
@@ -5048,12 +5048,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dir4',
-        cantonese: 'Lumiko',
+        cantonese: 'zyun3 waan1',
         english: 'Turn',
         zhTW: '轉彎',
         zhCN: '转弯',
         example: {
-          cantonese: 'Lumiko sa kanan.',
+          cantonese: 'hoeng3 jau6 zyun2.',
           english: 'Turn right.',
           zhTW: '向右轉。',
           zhCN: '向右转。'
@@ -5061,12 +5061,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'dir5',
-        cantonese: 'Diretso lang',
+        cantonese: 'zik6 zau2',
         english: 'Just go straight',
         zhTW: '直走',
         zhCN: '直走',
         example: {
-          cantonese: 'Diretso lang po.',
+          cantonese: 'ceng2 zik6 zau2.',
           english: 'Just go straight (polite).',
           zhTW: '請直走。',
           zhCN: '请直走。'
@@ -5083,12 +5083,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'see1',
-        cantonese: 'Mamasyal',
+        cantonese: 'kwaang3 kwaang3 / gun1 gwong1',
         english: 'To stroll / Sightsee',
         zhTW: '逛逛 / 觀光',
         zhCN: '逛逛 / 观光',
         example: {
-          cantonese: 'Gusto kong mamasyal.',
+          cantonese: 'ngo5 soeng2 heoi3 kwaang3 kwaang3.',
           english: 'I want to stroll/sightsee.',
           zhTW: '我想去逛逛。',
           zhCN: '我想去逛逛。'
@@ -5096,12 +5096,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'see2',
-        cantonese: 'Maganda',
+        cantonese: 'mei5 lai6',
         english: 'Beautiful',
         zhTW: '美麗',
         zhCN: '美丽',
         example: {
-          cantonese: 'Maganda ang tanawin.',
+          cantonese: 'fung1 ging2 han2 mei5.',
           english: 'The view is beautiful.',
           zhTW: '風景很美。',
           zhCN: '风景很美。'
@@ -5109,12 +5109,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'see3',
-        cantonese: 'Litrato',
+        cantonese: 'ziu3 pin2',
         english: 'Photo / Picture',
         zhTW: '照片',
         zhCN: '照片',
         example: {
-          cantonese: 'Pwede bang kumuha ng litrato?',
+          cantonese: 'ho2 ji5 paak3 ziu3 maa1?',
           english: 'Can I take a picture?',
           zhTW: '可以拍照嗎？',
           zhCN: '可以拍照吗？'
@@ -5122,12 +5122,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'see4',
-        cantonese: 'Bukas',
+        cantonese: 'hoi1 fong3 / jing4 jip6',
         english: 'Open',
         zhTW: '開放 / 營業',
         zhCN: '开放 / 营业',
         example: {
-          cantonese: 'Bukas ba ang museo?',
+          cantonese: 'bok3 mat6 gun2 jau5 hoi1 fong3 maa1?',
           english: 'Is the museum open?',
           zhTW: '博物館有開放嗎？',
           zhCN: '博物馆有开放吗？'
@@ -5135,12 +5135,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'see5',
-        cantonese: 'Sarado',
+        cantonese: 'gwaan1 bai3 / jau1 sik1',
         english: 'Closed',
         zhTW: '關閉 / 休息',
         zhCN: '关闭 / 休息',
         example: {
-          cantonese: 'Sarado na sila.',
+          cantonese: 'taa1 mun4 ji5 ging1 jau1 sik1 liu5.',
           english: 'They are already closed.',
           zhTW: '他們已經休息了。',
           zhCN: '他们已经休息了。'
@@ -5157,12 +5157,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'imm1',
-        cantonese: 'Pasaporte',
+        cantonese: 'wu6 ziu3',
         english: 'Passport',
         zhTW: '護照',
         zhCN: '护照',
         example: {
-          cantonese: 'Patingin ng pasaporte mo.',
+          cantonese: 'ceng2 ceot1 si6 nei5 dik1 wu6 ziu3.',
           english: 'Let me see your passport.',
           zhTW: '請出示你的護照。',
           zhCN: '请出示你的护照。'
@@ -5170,12 +5170,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'imm2',
-        cantonese: 'Bisa',
+        cantonese: 'cim1 zing3',
         english: 'Visa',
         zhTW: '簽證',
         zhCN: '签证',
         example: {
-          cantonese: 'Kailangan mo ba ng bisa?',
+          cantonese: 'nei5 seoi1 jiu3 cim1 zing3 maa1?',
           english: 'Do you need a visa?',
           zhTW: '你需要簽證嗎？',
           zhCN: '你需要签证吗？'
@@ -5183,12 +5183,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'imm3',
-        cantonese: 'Turista',
+        cantonese: 'jau4 haak3',
         english: 'Tourist',
         zhTW: '遊客',
         zhCN: '游客',
         example: {
-          cantonese: 'Turista lang ako dito.',
+          cantonese: 'ngo5 zi2 si6 ze2 leoi5 dik1 jau4 haak3.',
           english: 'I am just a tourist here.',
           zhTW: '我只是這裡的遊客。',
           zhCN: '我只是这里的游客。'
@@ -5196,12 +5196,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'imm4',
-        cantonese: 'Deklarasyon',
+        cantonese: 'san1 bou3',
         english: 'Declaration',
         zhTW: '申報',
         zhCN: '申报',
         example: {
-          cantonese: 'Mayroon ka bang deklarasyon?',
+          cantonese: 'nei5 jau5 seoi1 jiu3 san1 bou3 dik1 maa1?',
           english: 'Do you have anything to declare?',
           zhTW: '你有需要申報的嗎？',
           zhCN: '你有需要申报的吗？'
@@ -5209,12 +5209,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'imm5',
-        cantonese: 'Matagal',
+        cantonese: 'han2 gau2 / ting4 lau4 si4 gaan3',
         english: 'Long time / Duration',
         zhTW: '很久 / 停留時間',
         zhCN: '很久 / 停留时间',
         example: {
-          cantonese: 'Gaano katagal ka dito?',
+          cantonese: 'nei5 wui5 zoi6 ze2 leoi5 ting4 lau4 do1 gau2?',
           english: 'How long will you stay here?',
           zhTW: '你會在這裡停留多久？',
           zhCN: '你会在这里停留多久？'
@@ -5231,12 +5231,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'bch1',
-        cantonese: 'Dagat',
+        cantonese: 'hoi2 / saa1 taan1',
         english: 'Sea / Ocean / Beach',
         zhTW: '海 / 沙灘',
         zhCN: '海 / 沙滩',
         example: {
-          cantonese: 'Pumunta tayo sa dagat.',
+          cantonese: 'ngo5 mun4 heoi3 hoi2 bin1 baa6.',
           english: 'Let\'s go to the beach.',
           zhTW: '我們去海邊吧。',
           zhCN: '我们去海边吧。'
@@ -5244,12 +5244,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bch2',
-        cantonese: 'Buhangin',
+        cantonese: 'saa1',
         english: 'Sand',
         zhTW: '沙',
         zhCN: '沙',
         example: {
-          cantonese: 'Puti ang buhangin dito.',
+          cantonese: 'ze2 leoi5 dik1 saa1 si6 baak6 sik1 dik1.',
           english: 'The sand here is white.',
           zhTW: '這裡的沙是白色的。',
           zhCN: '这里的沙是白色的。'
@@ -5257,12 +5257,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bch3',
-        cantonese: 'Lumangoy',
+        cantonese: 'jau4 wing6',
         english: 'To swim',
         zhTW: '游泳',
         zhCN: '游泳',
         example: {
-          cantonese: 'Marunong ka bang lumangoy?',
+          cantonese: 'nei5 wui5 jau4 wing6 maa1?',
           english: 'Do you know how to swim?',
           zhTW: '你會游泳嗎？',
           zhCN: '你会游泳吗？'
@@ -5270,12 +5270,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bch4',
-        cantonese: 'Araw',
+        cantonese: 'taai3 joeng4',
         english: 'Sun',
         zhTW: '太陽',
         zhCN: '太阳',
         example: {
-          cantonese: 'Mainit ang araw ngayon.',
+          cantonese: 'gam1 tin1 taai3 joeng4 han2 daai6.',
           english: 'The sun is hot today.',
           zhTW: '今天太陽很大。',
           zhCN: '今天太阳很大。'
@@ -5283,12 +5283,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bch5',
-        cantonese: 'Bangka',
+        cantonese: 'syun4',
         english: 'Boat',
         zhTW: '船',
         zhCN: '船',
         example: {
-          cantonese: 'Sasakay tayo ng bangka.',
+          cantonese: 'ngo5 mun4 wui5 daap3 syun4.',
           english: 'We will ride a boat.',
           zhTW: '我們會搭船。',
           zhCN: '我们会搭船。'
@@ -5305,12 +5305,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'shp1',
-        cantonese: 'Pasalubong',
+        cantonese: 'bun6 sau2 lai5',
         english: 'Souvenir / Gift (brought back)',
         zhTW: '伴手禮',
         zhCN: '伴手礼',
         example: {
-          cantonese: 'Bibili ako ng pasalubong.',
+          cantonese: 'ngo5 jiu3 maai5 bun6 sau2 lai5.',
           english: 'I will buy souvenirs.',
           zhTW: '我要買伴手禮。',
           zhCN: '我要买伴手礼。'
@@ -5318,12 +5318,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'shp2',
-        cantonese: 'Pamilihan',
+        cantonese: 'si5 coeng4',
         english: 'Market',
         zhTW: '市場',
         zhCN: '市场',
         example: {
-          cantonese: 'Pumunta tayo sa pamilihan.',
+          cantonese: 'ngo5 mun4 heoi3 si5 coeng4 baa6.',
           english: 'Let\'s go to the market.',
           zhTW: '我們去市場吧。',
           zhCN: '我们去市场吧。'
@@ -5331,12 +5331,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'shp3',
-        cantonese: 'Bili',
+        cantonese: 'maai5',
         english: 'Buy',
         zhTW: '買',
         zhCN: '买',
         example: {
-          cantonese: 'Gusto kong bumili nito.',
+          cantonese: 'ngo5 soeng2 maai5 ze5 go3.',
           english: 'I want to buy this.',
           zhTW: '我想買這個。',
           zhCN: '我想买这个。'
@@ -5344,12 +5344,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'shp4',
-        cantonese: 'Tawad',
+        cantonese: 'zit3 kau3',
         english: 'Discount',
         zhTW: '折扣',
         zhCN: '折扣',
         example: {
-          cantonese: 'Pwede bang tumawad?',
+          cantonese: 'ho2 ji5 daa2 zit3 maa1?',
           english: 'Can I get a discount?',
           zhTW: '可以打折嗎？',
           zhCN: '可以打折吗？'
@@ -5357,12 +5357,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'shp5',
-        cantonese: 'Sukli',
+        cantonese: 'zaau2 ling4',
         english: 'Change (money)',
         zhTW: '找零',
         zhCN: '找零',
         example: {
-          cantonese: 'Ito ang sukli mo.',
+          cantonese: 'ze5 si6 nei5 dik1 zaau2 ling4.',
           english: 'Here is your change.',
           zhTW: '這是你的找零。',
           zhCN: '这是你的找零。'
@@ -5379,12 +5379,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'bkg1',
-        cantonese: 'Pareserba',
+        cantonese: 'jyu6 ding6',
         english: 'Reservation',
         zhTW: '預訂',
         zhCN: '预订',
         example: {
-          cantonese: 'May pareserba ako.',
+          cantonese: 'ngo5 jau5 jyu6 ding6.',
           english: 'I have a reservation.',
           zhTW: '我有預訂。',
           zhCN: '我有预订。'
@@ -5392,12 +5392,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bkg2',
-        cantonese: 'Pangalan',
+        cantonese: 'ming4 zi6',
         english: 'Name',
         zhTW: '名字',
         zhCN: '名字',
         example: {
-          cantonese: 'Anong pangalan mo?',
+          cantonese: 'nei5 dik1 ming4 zi6 si6 sam6 mo1?',
           english: 'What is your name?',
           zhTW: '你的名字是什麼？',
           zhCN: '你的名字是什么？'
@@ -5405,12 +5405,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bkg3',
-        cantonese: 'Kwarto',
+        cantonese: 'fong4 gaan1',
         english: 'Room',
         zhTW: '房間',
         zhCN: '房间',
         example: {
-          cantonese: 'Gusto ko ng malaking kwarto.',
+          cantonese: 'ngo5 soeng2 jiu3 jat1 gaan1 daai6 fong4 gaan1.',
           english: 'I want a big room.',
           zhTW: '我想要一間大房間。',
           zhCN: '我想要一间大房间。'
@@ -5418,12 +5418,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bkg4',
-        cantonese: 'Bayad',
+        cantonese: 'fu6 fun2',
         english: 'Payment',
         zhTW: '付款',
         zhCN: '付款',
         example: {
-          cantonese: 'Saan ang bayad?',
+          cantonese: 'zoi6 naa5 leoi5 fu6 fun2?',
           english: 'Where is the payment?',
           zhTW: '在哪裡付款？',
           zhCN: '在哪里付款？'
@@ -5431,12 +5431,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'bkg5',
-        cantonese: 'Kanselahin',
+        cantonese: 'ceoi2 siu1',
         english: 'To cancel',
         zhTW: '取消',
         zhCN: '取消',
         example: {
-          cantonese: 'Gusto kong kanselahin ito.',
+          cantonese: 'ngo5 soeng2 ceoi2 siu1 ze5 go3.',
           english: 'I want to cancel this.',
           zhTW: '我想取消這個。',
           zhCN: '我想取消这个。'
@@ -5453,12 +5453,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'cur1',
-        cantonese: 'Palitan',
+        cantonese: 'wui6 leot2 / deoi3 wun6',
         english: 'Exchange rate / Exchange',
         zhTW: '匯率 / 兌換',
         zhCN: '汇率 / 兑换',
         example: {
-          cantonese: 'Saan ang palitan ng pera?',
+          cantonese: 'naa5 leoi5 jau5 wun6 cin2 dik1 dei6 fong1?',
           english: 'Where is the money exchange?',
           zhTW: '哪裡有換錢的地方？',
           zhCN: '哪里有换钱的地方？'
@@ -5466,12 +5466,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'cur2',
-        cantonese: 'Pera',
+        cantonese: 'cin2',
         english: 'Money',
         zhTW: '錢',
         zhCN: '钱',
         example: {
-          cantonese: 'Wala akong pera.',
+          cantonese: 'ngo5 mut6 jau5 cin2.',
           english: 'I don\'t have money.',
           zhTW: '我沒有錢。',
           zhCN: '我没有钱。'
@@ -5479,12 +5479,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'cur3',
-        cantonese: 'Dolyar',
+        cantonese: 'mei5 jyun4',
         english: 'Dollar',
         zhTW: '美元',
         zhCN: '美元',
         example: {
-          cantonese: 'Tumatanggap ba kayo ng dolyar?',
+          cantonese: 'nei5 mun4 sau1 mei5 jyun4 maa1?',
           english: 'Do you accept dollars?',
           zhTW: '你們收美元嗎？',
           zhCN: '你们收美元吗？'
@@ -5492,12 +5492,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'cur4',
-        cantonese: 'Piso',
+        cantonese: 'pei1 sok3 (fei1 leot6 ban1 fo3 bai6)',
         english: 'Peso (Philippine currency)',
         zhTW: '披索 (菲律賓貨幣)',
         zhCN: '披索 (菲律宾货币)',
         example: {
-          cantonese: 'Isang daang piso ito.',
+          cantonese: 'ze5 si6 jat1 baak3 pei1 sok3.',
           english: 'This is one hundred pesos.',
           zhTW: '這是一百披索。',
           zhCN: '这是一百披索。'
@@ -5505,12 +5505,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'cur5',
-        cantonese: 'Barya',
+        cantonese: 'ngaang6 bai6 / ling4 cin4',
         english: 'Coins / Small change',
         zhTW: '硬幣 / 零錢',
         zhCN: '硬币 / 零钱',
         example: {
-          cantonese: 'May barya ka ba?',
+          cantonese: 'nei5 jau5 ling4 cin4 maa1?',
           english: 'Do you have small change?',
           zhTW: '你有零錢嗎？',
           zhCN: '你有零钱吗？'
@@ -5527,12 +5527,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'cloth1',
-        cantonese: 'Damit',
+        cantonese: 'ji1 fuk6',
         english: 'Clothes',
         zhTW: '衣服',
         zhCN: '衣服',
         example: {
-          cantonese: 'Bago ang damit ko.',
+          cantonese: 'ngo5 dik1 ji1 fuk6 si6 san1 dik1.',
           english: 'My clothes are new.',
           zhTW: '我的衣服是新的。',
           zhCN: '我的衣服是新的。'
@@ -5540,12 +5540,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'cloth2',
-        cantonese: 'Sapatos',
+        cantonese: 'haai4 zi2',
         english: 'Shoes',
         zhTW: '鞋子',
         zhCN: '鞋子',
         example: {
-          cantonese: 'Malaki ang sapatos niya.',
+          cantonese: 'taa1 / taa1 dik1 haai4 zi2 han2 daai6.',
           english: 'His/her shoes are big.',
           zhTW: '他/她的鞋子很大。',
           zhCN: '他/她的鞋子很大。'
@@ -5553,12 +5553,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'cloth3',
-        cantonese: 'Sumbrero',
+        cantonese: 'mou2 zi2',
         english: 'Hat',
         zhTW: '帽子',
         zhCN: '帽子',
         example: {
-          cantonese: 'Isuot mo ang sumbrero.',
+          cantonese: 'daai3 soeng6 mou2 zi2.',
           english: 'Wear the hat.',
           zhTW: '戴上帽子。',
           zhCN: '戴上帽子。'
@@ -5566,12 +5566,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'cloth4',
-        cantonese: 'Salamin',
+        cantonese: 'ngaan5 geng2 / geng3 zi2',
         english: 'Glasses / Mirror',
         zhTW: '眼鏡 / 鏡子',
         zhCN: '眼镜 / 镜子',
         example: {
-          cantonese: 'Nasaan ang salamin ko?',
+          cantonese: 'ngo5 dik1 ngaan5 geng2 zoi6 naa5 leoi5?',
           english: 'Where are my glasses?',
           zhTW: '我的眼鏡在哪裡？',
           zhCN: '我的眼镜在哪里？'
@@ -5579,12 +5579,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'cloth5',
-        cantonese: 'Pantalon',
+        cantonese: 'fu3 zi2',
         english: 'Pants',
         zhTW: '褲子',
         zhCN: '裤子',
         example: {
-          cantonese: 'Mahaba ang pantalon.',
+          cantonese: 'fu3 zi2 han2 coeng4.',
           english: 'The pants are long.',
           zhTW: '褲子很長。',
           zhCN: '裤子很长。'
@@ -5601,12 +5601,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'prof1',
-        cantonese: 'Guro',
+        cantonese: 'lou5 si1',
         english: 'Teacher',
         zhTW: '老師',
         zhCN: '老师',
         example: {
-          cantonese: 'Mabait ang aming guro.',
+          cantonese: 'ngo5 mun4 dik1 lou5 si1 han2 hou2.',
           english: 'Our teacher is kind.',
           zhTW: '我們的老師很好。',
           zhCN: '我们的老师很好。'
@@ -5614,12 +5614,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'prof2',
-        cantonese: 'Doktor',
+        cantonese: 'ji1 sang1',
         english: 'Doctor',
         zhTW: '醫生',
         zhCN: '医生',
         example: {
-          cantonese: 'Kailangan ko ng doktor.',
+          cantonese: 'ngo5 seoi1 jiu3 ji1 sang1.',
           english: 'I need a doctor.',
           zhTW: '我需要醫生。',
           zhCN: '我需要医生。'
@@ -5627,12 +5627,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'prof3',
-        cantonese: 'Pulis',
+        cantonese: 'ging2 caat3',
         english: 'Police',
         zhTW: '警察',
         zhCN: '警察',
         example: {
-          cantonese: 'Tumawag ka ng pulis.',
+          cantonese: 'giu3 ging2 caat3.',
           english: 'Call the police.',
           zhTW: '叫警察。',
           zhCN: '叫警察。'
@@ -5640,12 +5640,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'prof4',
-        cantonese: 'Nars',
+        cantonese: 'wu6 si6',
         english: 'Nurse',
         zhTW: '護士',
         zhCN: '护士',
         example: {
-          cantonese: 'Masipag ang nars.',
+          cantonese: 'wu6 si6 han2 kan4 lou4.',
           english: 'The nurse is hardworking.',
           zhTW: '護士很勤勞。',
           zhCN: '护士很勤劳。'
@@ -5653,12 +5653,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'prof5',
-        cantonese: 'Inhinyero',
+        cantonese: 'gung1 cing4 si1',
         english: 'Engineer',
         zhTW: '工程師',
         zhCN: '工程师',
         example: {
-          cantonese: 'Siya ay isang inhinyero.',
+          cantonese: 'taa1 si6 jat1 ming4 gung1 cing4 si1.',
           english: 'He is an engineer.',
           zhTW: '他是一名工程師。',
           zhCN: '他是一名工程师。'
@@ -5675,12 +5675,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'nat1',
-        cantonese: 'Bundok',
+        cantonese: 'saan1',
         english: 'Mountain',
         zhTW: '山',
         zhCN: '山',
         example: {
-          cantonese: 'Mataas ang bundok.',
+          cantonese: 'saan1 han2 gou1.',
           english: 'The mountain is high.',
           zhTW: '山很高。',
           zhCN: '山很高。'
@@ -5688,12 +5688,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'nat2',
-        cantonese: 'Ilog',
+        cantonese: 'ho4 lau4',
         english: 'River',
         zhTW: '河流',
         zhCN: '河流',
         example: {
-          cantonese: 'Malinaw ang ilog.',
+          cantonese: 'ho4 seoi2 han2 cing1 cit3.',
           english: 'The river is clear.',
           zhTW: '河水很清澈。',
           zhCN: '河水很清澈。'
@@ -5701,12 +5701,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'nat3',
-        cantonese: 'Dagat',
+        cantonese: 'hoi2',
         english: 'Sea / Ocean',
         zhTW: '海',
         zhCN: '海',
         example: {
-          cantonese: 'Pumunta tayo sa dagat.',
+          cantonese: 'ngo5 mun4 heoi3 hoi2 bin1 baa6.',
           english: 'Let\'s go to the sea.',
           zhTW: '我們去海邊吧。',
           zhCN: '我们去海边吧。'
@@ -5714,12 +5714,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'nat4',
-        cantonese: 'Puno',
+        cantonese: 'syu6',
         english: 'Tree',
         zhTW: '樹',
         zhCN: '树',
         example: {
-          cantonese: 'Malaki ang puno.',
+          cantonese: 'ze5 fo2 syu6 han2 daai6.',
           english: 'The tree is big.',
           zhTW: '這棵樹很大。',
           zhCN: '这棵树很大。'
@@ -5727,12 +5727,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'nat5',
-        cantonese: 'Bulaklak',
+        cantonese: 'faa1',
         english: 'Flower',
         zhTW: '花',
         zhCN: '花',
         example: {
-          cantonese: 'Mabango ang bulaklak.',
+          cantonese: 'ze5 do2 faa1 han2 hoeng1.',
           english: 'The flower smells good.',
           zhTW: '這朵花很香。',
           zhCN: '这朵花很香。'
@@ -5749,12 +5749,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'hrm1',
-        cantonese: 'Bahay',
+        cantonese: 'fong4 zi2',
         english: 'House',
         zhTW: '房子',
         zhCN: '房子',
         example: {
-          cantonese: 'Ito ang aming bahay.',
+          cantonese: 'ze5 si6 ngo5 mun4 dik1 fong4 zi2.',
           english: 'This is our house.',
           zhTW: '這是我們的房子。',
           zhCN: '这是我们的房子。'
@@ -5762,12 +5762,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hrm2',
-        cantonese: 'Kwarto',
+        cantonese: 'fong4 gaan1 / ngo6 sat1',
         english: 'Room / Bedroom',
         zhTW: '房間 / 臥室',
         zhCN: '房间 / 卧室',
         example: {
-          cantonese: 'Malinis ang kwarto.',
+          cantonese: 'fong4 gaan1 han2 gon1 zeng6.',
           english: 'The room is clean.',
           zhTW: '房間很乾淨。',
           zhCN: '房间很干净。'
@@ -5775,12 +5775,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hrm3',
-        cantonese: 'Kusina',
+        cantonese: 'cyu4 fong2',
         english: 'Kitchen',
         zhTW: '廚房',
         zhCN: '厨房',
         example: {
-          cantonese: 'Nagluluto siya sa kusina.',
+          cantonese: 'taa1 / taa1 zing3 zoi6 cyu4 fong2 zou6 faan6.',
           english: 'He/she is cooking in the kitchen.',
           zhTW: '他/她正在廚房做飯。',
           zhCN: '他/她正在厨房做饭。'
@@ -5788,12 +5788,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hrm4',
-        cantonese: 'Banyo',
+        cantonese: 'juk6 sat1 / ci3 so2',
         english: 'Bathroom',
         zhTW: '浴室 / 廁所',
         zhCN: '浴室 / 厕所',
         example: {
-          cantonese: 'Nasaan ang banyo?',
+          cantonese: 'juk6 sat1 zoi6 naa5 leoi5?',
           english: 'Where is the bathroom?',
           zhTW: '浴室在哪裡？',
           zhCN: '浴室在哪里？'
@@ -5801,12 +5801,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'hrm5',
-        cantonese: 'Sala',
+        cantonese: 'haak3 teng1',
         english: 'Living Room',
         zhTW: '客廳',
         zhCN: '客厅',
         example: {
-          cantonese: 'Nanood kami ng TV sa sala.',
+          cantonese: 'ngo5 mun4 zoi6 haak3 teng1 hon3 din6 si6.',
           english: 'We watched TV in the living room.',
           zhTW: '我們在客廳看電視。',
           zhCN: '我们在客厅看电视。'
@@ -5823,12 +5823,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'act1',
-        cantonese: 'Kain',
+        cantonese: 'hek3',
         english: 'Eat',
         zhTW: '吃',
         zhCN: '吃',
         example: {
-          cantonese: 'Kumain ka na ba?',
+          cantonese: 'nei5 hek3 liu5 maa1?',
           english: 'Have you eaten?',
           zhTW: '你吃了嗎？',
           zhCN: '你吃了吗？'
@@ -5836,12 +5836,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'act2',
-        cantonese: 'Tulog',
+        cantonese: 'seoi6 gaau3',
         english: 'Sleep',
         zhTW: '睡覺',
         zhCN: '睡觉',
         example: {
-          cantonese: 'Gusto ko nang matulog.',
+          cantonese: 'ngo5 jin6 zoi6 soeng2 seoi6 gaau3 liu5.',
           english: 'I want to sleep now.',
           zhTW: '我現在想睡覺了。',
           zhCN: '我现在想睡觉了。'
@@ -5849,12 +5849,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'act3',
-        cantonese: 'Takbo',
+        cantonese: 'paau2',
         english: 'Run',
         zhTW: '跑',
         zhCN: '跑',
         example: {
-          cantonese: 'Tumakbo siya nang mabilis.',
+          cantonese: 'taa1 / taa1 paau2 dak1 han2 faai3.',
           english: 'He/she ran fast.',
           zhTW: '他/她跑得很快。',
           zhCN: '他/她跑得很快。'
@@ -5862,12 +5862,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'act4',
-        cantonese: 'Lakad',
+        cantonese: 'zau2',
         english: 'Walk',
         zhTW: '走',
         zhCN: '走',
         example: {
-          cantonese: 'Maglakad tayo sa parke.',
+          cantonese: 'ngo5 mun4 zoi6 gung1 jyun2 saan3 bou6 baa6.',
           english: 'Let\'s walk in the park.',
           zhTW: '我們在公園散步吧。',
           zhCN: '我们在公园散步吧。'
@@ -5875,12 +5875,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'act5',
-        cantonese: 'Basa',
+        cantonese: 'duk6 / hon3 (syu1)',
         english: 'Read',
         zhTW: '讀 / 看 (書)',
         zhCN: '读 / 看 (书)',
         example: {
-          cantonese: 'Magbasa ka ng libro.',
+          cantonese: 'hon3 syu1 baa6.',
           english: 'Read a book.',
           zhTW: '看書吧。',
           zhCN: '看书吧。'
@@ -5898,12 +5898,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'fr1',
-        cantonese: 'Mansanas',
+        cantonese: 'ping4 gwo2',
         english: 'Apple',
         zhTW: '蘋果',
         zhCN: '苹果',
         example: {
-          cantonese: 'Matamis ang mansanas.',
+          cantonese: 'ping4 gwo2 han2 tim4.',
           english: 'The apple is sweet.',
           zhTW: '蘋果很甜。',
           zhCN: '苹果很甜。'
@@ -5911,12 +5911,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'fr2',
-        cantonese: 'Saging',
+        cantonese: 'hoeng1 ziu1',
         english: 'Banana',
         zhTW: '香蕉',
         zhCN: '香蕉',
         example: {
-          cantonese: 'Kumain siya ng saging.',
+          cantonese: 'taa1 / taa1 hek3 liu5 jat1 gan1 hoeng1 ziu1.',
           english: 'He/She ate a banana.',
           zhTW: '他/她吃了一根香蕉。',
           zhCN: '他/她吃了一根香蕉。'
@@ -5924,12 +5924,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'fr3',
-        cantonese: 'Mangga',
+        cantonese: 'mong1 gwo2',
         english: 'Mango',
         zhTW: '芒果',
         zhCN: '芒果',
         example: {
-          cantonese: 'Paborito ko ang mangga.',
+          cantonese: 'mong1 gwo2 si6 ngo5 dik1 zeoi3 oi3.',
           english: 'Mango is my favorite.',
           zhTW: '芒果是我的最愛。',
           zhCN: '芒果是我的最爱。'
@@ -5937,12 +5937,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'fr4',
-        cantonese: 'Pinya',
+        cantonese: 'fung6 lei4',
         english: 'Pineapple',
         zhTW: '鳳梨',
         zhCN: '菠萝',
         example: {
-          cantonese: 'Maasim ang pinya.',
+          cantonese: 'fung6 lei4 han2 syun1.',
           english: 'The pineapple is sour.',
           zhTW: '鳳梨很酸。',
           zhCN: '菠萝很酸。'
@@ -5950,12 +5950,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'fr5',
-        cantonese: 'Pakwan',
+        cantonese: 'sai1 gwaa1',
         english: 'Watermelon',
         zhTW: '西瓜',
         zhCN: '西瓜',
         example: {
-          cantonese: 'Masarap ang pakwan sa tag-init.',
+          cantonese: 'haa6 tin1 hek3 sai1 gwaa1 han2 hou2 hek3.',
           english: 'Watermelon is delicious in summer.',
           zhTW: '夏天吃西瓜很好吃。',
           zhCN: '夏天吃西瓜很好吃。'
@@ -5972,12 +5972,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'veg1',
-        cantonese: 'Kamatis',
+        cantonese: 'faan1 ke2',
         english: 'Tomato',
         zhTW: '番茄',
         zhCN: '番茄',
         example: {
-          cantonese: 'Pula ang kamatis.',
+          cantonese: 'faan1 ke2 si6 hung4 sik1 dik1.',
           english: 'The tomato is red.',
           zhTW: '番茄是紅色的。',
           zhCN: '番茄是红色的。'
@@ -5985,12 +5985,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'veg2',
-        cantonese: 'Sibuyas',
+        cantonese: 'joeng4 cung1',
         english: 'Onion',
         zhTW: '洋蔥',
         zhCN: '洋葱',
         example: {
-          cantonese: 'Bumili ako ng sibuyas.',
+          cantonese: 'ngo5 maai5 liu5 joeng4 cung1.',
           english: 'I bought onions.',
           zhTW: '我買了洋蔥。',
           zhCN: '我买了洋葱。'
@@ -5998,12 +5998,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'veg3',
-        cantonese: 'Bawang',
+        cantonese: 'daai6 syun3',
         english: 'Garlic',
         zhTW: '大蒜',
         zhCN: '大蒜',
         example: {
-          cantonese: 'Kailangan natin ng bawang.',
+          cantonese: 'ngo5 mun4 seoi1 jiu3 daai6 syun3.',
           english: 'We need garlic.',
           zhTW: '我們需要大蒜。',
           zhCN: '我们需要大蒜。'
@@ -6011,12 +6011,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'veg4',
-        cantonese: 'Patatas',
+        cantonese: 'maa5 ling4 syu4',
         english: 'Potato',
         zhTW: '馬鈴薯',
         zhCN: '土豆',
         example: {
-          cantonese: 'Gusto ko ng pritong patatas.',
+          cantonese: 'ngo5 hei2 fun1 zaa3 maa5 ling4 syu4.',
           english: 'I like fried potatoes.',
           zhTW: '我喜歡炸馬鈴薯。',
           zhCN: '我喜欢炸土豆。'
@@ -6024,12 +6024,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'veg5',
-        cantonese: 'Talong',
+        cantonese: 'ke2 zi2',
         english: 'Eggplant',
         zhTW: '茄子',
         zhCN: '茄子',
         example: {
-          cantonese: 'Masarap ang tortang talong.',
+          cantonese: 'ke2 zi2 zin1 daan2 han2 hou2 hek3.',
           english: 'Eggplant omelet is delicious.',
           zhTW: '茄子煎蛋很好吃。',
           zhCN: '茄子煎蛋很好吃。'
@@ -6046,12 +6046,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'shape1',
-        cantonese: 'Bilog',
+        cantonese: 'jyun4 jing4',
         english: 'Circle / Round',
         zhTW: '圓形',
         zhCN: '圆形',
         example: {
-          cantonese: 'Bilog ang buwan.',
+          cantonese: 'jyut6 loeng6 si6 jyun4 dik1.',
           english: 'The moon is round.',
           zhTW: '月亮是圓的。',
           zhCN: '月亮是圆的。'
@@ -6059,12 +6059,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'shape2',
-        cantonese: 'Parisukat',
+        cantonese: 'zing3 fong1 jing4',
         english: 'Square',
         zhTW: '正方形',
         zhCN: '正方形',
         example: {
-          cantonese: 'Parisukat ang kahon.',
+          cantonese: 'ze5 go3 hap6 zi2 si6 zing3 fong1 jing4 dik1.',
           english: 'The box is square.',
           zhTW: '這個盒子是正方形的。',
           zhCN: '这个盒子是正方形的。'
@@ -6072,12 +6072,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'shape3',
-        cantonese: 'Tatsulok',
+        cantonese: 'saam1 gok3 jing4',
         english: 'Triangle',
         zhTW: '三角形',
         zhCN: '三角形',
         example: {
-          cantonese: 'Tatsulok ang bubong.',
+          cantonese: 'uk1 deng2 si6 saam1 gok3 jing4 dik1.',
           english: 'The roof is triangular.',
           zhTW: '屋頂是三角形的。',
           zhCN: '屋顶是三角形的。'
@@ -6085,12 +6085,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'shape4',
-        cantonese: 'Parihaba',
+        cantonese: 'coeng4 fong1 jing4',
         english: 'Rectangle',
         zhTW: '長方形',
         zhCN: '长方形',
         example: {
-          cantonese: 'Parihaba ang pinto.',
+          cantonese: 'mun4 si6 coeng4 fong1 jing4 dik1.',
           english: 'The door is rectangular.',
           zhTW: '門是長方形的。',
           zhCN: '门是长方形的。'
@@ -6098,12 +6098,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'shape5',
-        cantonese: 'Bituin',
+        cantonese: 'sing1 sing1',
         english: 'Star',
         zhTW: '星星',
         zhCN: '星星',
         example: {
-          cantonese: 'Maraming bituin sa langit.',
+          cantonese: 'tin1 hung1 jau5 han2 do1 sing1 sing1.',
           english: 'There are many stars in the sky.',
           zhTW: '天空有很多星星。',
           zhCN: '天空有很多星星。'
@@ -6120,12 +6120,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'tech1',
-        cantonese: 'Kompyuter',
+        cantonese: 'din6 nou5',
         english: 'Computer',
         zhTW: '電腦',
         zhCN: '电脑',
         example: {
-          cantonese: 'Sira ang kompyuter ko.',
+          cantonese: 'ngo5 dik1 din6 nou5 waai6 liu5.',
           english: 'My computer is broken.',
           zhTW: '我的電腦壞了。',
           zhCN: '我的电脑坏了。'
@@ -6133,12 +6133,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'tech2',
-        cantonese: 'Mensahe',
+        cantonese: 'seon3 sik1',
         english: 'Message',
         zhTW: '訊息',
         zhCN: '信息',
         example: {
-          cantonese: 'May mensahe ka.',
+          cantonese: 'nei5 jau5 jat1 tiu4 seon3 sik1.',
           english: 'You have a message.',
           zhTW: '你有一條訊息。',
           zhCN: '你有一条信息。'
@@ -6146,12 +6146,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'tech3',
-        cantonese: 'Internet',
+        cantonese: 'mong5 zai3 mong5 lou6',
         english: 'Internet',
         zhTW: '網際網路',
         zhCN: '互联网',
         example: {
-          cantonese: 'Mabagal ang internet.',
+          cantonese: 'mong5 lou6 han2 maan6.',
           english: 'The internet is slow.',
           zhTW: '網路很慢。',
           zhCN: '网络很慢。'
@@ -6159,12 +6159,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'tech4',
-        cantonese: 'Teklado',
+        cantonese: 'gin6 pun2',
         english: 'Keyboard',
         zhTW: '鍵盤',
         zhCN: '键盘',
         example: {
-          cantonese: 'Bago ang teklado ko.',
+          cantonese: 'ngo5 dik1 gin6 pun2 si6 san1 dik1.',
           english: 'My keyboard is new.',
           zhTW: '我的鍵盤是新的。',
           zhCN: '我的键盘是新的。'
@@ -6172,12 +6172,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'tech5',
-        cantonese: 'Screen',
+        cantonese: 'jing4 mok6',
         english: 'Screen',
         zhTW: '螢幕',
         zhCN: '屏幕',
         example: {
-          cantonese: 'Malaki ang screen ng TV.',
+          cantonese: 'din6 si6 jing4 mok6 han2 daai6.',
           english: 'The TV screen is big.',
           zhTW: '電視螢幕很大。',
           zhCN: '电视屏幕很大。'
@@ -6194,12 +6194,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'spt1',
-        cantonese: 'Basketbol',
+        cantonese: 'laam4 kau4',
         english: 'Basketball',
         zhTW: '籃球',
         zhCN: '篮球',
         example: {
-          cantonese: 'Naglalaro sila ng basketbol.',
+          cantonese: 'taa1 mun4 zoi6 daa2 laam4 kau4.',
           english: 'They are playing basketball.',
           zhTW: '他們在打籃球。',
           zhCN: '他们在打篮球。'
@@ -6207,12 +6207,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'spt2',
-        cantonese: 'Pagtakbo',
+        cantonese: 'paau2 bou6',
         english: 'Running',
         zhTW: '跑步',
         zhCN: '跑步',
         example: {
-          cantonese: 'Mahilig siya sa pagtakbo.',
+          cantonese: 'taa1 / taa1 hei2 fun1 paau2 bou6.',
           english: 'He/She likes running.',
           zhTW: '他/她喜歡跑步。',
           zhCN: '他/她喜欢跑步。'
@@ -6220,12 +6220,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'spt3',
-        cantonese: 'Paglangoy',
+        cantonese: 'jau4 wing6',
         english: 'Swimming',
         zhTW: '游泳',
         zhCN: '游泳',
         example: {
-          cantonese: 'Gusto ko ng paglangoy.',
+          cantonese: 'ngo5 hei2 fun1 jau4 wing6.',
           english: 'I like swimming.',
           zhTW: '我喜歡游泳。',
           zhCN: '我喜欢游泳。'
@@ -6233,12 +6233,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'spt4',
-        cantonese: 'Bola',
+        cantonese: 'kau4',
         english: 'Ball',
         zhTW: '球',
         zhCN: '球',
         example: {
-          cantonese: 'Ipasa mo ang bola.',
+          cantonese: 'baa2 kau4 cyun4 gwo3 loi4.',
           english: 'Pass the ball.',
           zhTW: '把球傳過來。',
           zhCN: '把球传过来。'
@@ -6246,12 +6246,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'spt5',
-        cantonese: 'Boksing',
+        cantonese: 'kyun4 gik1',
         english: 'Boxing',
         zhTW: '拳擊',
         zhCN: '拳击',
         example: {
-          cantonese: 'Nanood kami ng boksing.',
+          cantonese: 'ngo5 mun4 hon3 liu5 kyun4 gik1 bei2 coi3.',
           english: 'We watched boxing.',
           zhTW: '我們看了拳擊比賽。',
           zhCN: '我们看了拳击比赛。'
@@ -6268,12 +6268,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'prep1',
-        cantonese: 'Sa ibabaw',
+        cantonese: 'zoi6 soeng6 min6',
         english: 'On top / Above',
         zhTW: '在上面',
         zhCN: '在上面',
         example: {
-          cantonese: 'Nasa ibabaw ng mesa.',
+          cantonese: 'zoi6 coek3 zi2 soeng6 min6.',
           english: 'It is on top of the table.',
           zhTW: '在桌子上面。',
           zhCN: '在桌子上面。'
@@ -6281,12 +6281,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'prep2',
-        cantonese: 'Sa ilalim',
+        cantonese: 'zoi6 haa6 min6',
         english: 'Under / Below',
         zhTW: '在下面',
         zhCN: '在下面',
         example: {
-          cantonese: 'Nasa ilalim ng kama.',
+          cantonese: 'zoi6 cong4 dai2 haa6.',
           english: 'It is under the bed.',
           zhTW: '在床底下。',
           zhCN: '在床底下。'
@@ -6294,12 +6294,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'prep3',
-        cantonese: 'Sa loob',
+        cantonese: 'zoi6 leoi5 min6',
         english: 'Inside',
         zhTW: '在裡面',
         zhCN: '在里面',
         example: {
-          cantonese: 'Pumasok ka sa loob.',
+          cantonese: 'zeon3 dou3 leoi5 min6.',
           english: 'Go inside.',
           zhTW: '進到裡面。',
           zhCN: '进到里面。'
@@ -6307,12 +6307,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'prep4',
-        cantonese: 'Sa labas',
+        cantonese: 'zoi6 ngoi6 min6',
         english: 'Outside',
         zhTW: '在外面',
         zhCN: '在外面',
         example: {
-          cantonese: 'Maghintay ka sa labas.',
+          cantonese: 'zoi6 ngoi6 min6 dang2.',
           english: 'Wait outside.',
           zhTW: '在外面等。',
           zhCN: '在外面等。'
@@ -6320,12 +6320,12 @@ export const lessons: Category[] = [
       },
       {
         id: 'prep5',
-        cantonese: 'Sa tabi',
+        cantonese: 'zoi6 pong4 bin1',
         english: 'Beside',
         zhTW: '在旁邊',
         zhCN: '在旁边',
         example: {
-          cantonese: 'Umupo ka sa tabi ko.',
+          cantonese: 'zo6 zoi6 ngo5 pong4 bin1.',
           english: 'Sit beside me.',
           zhTW: '坐在我旁邊。',
           zhCN: '坐在我旁边。'
