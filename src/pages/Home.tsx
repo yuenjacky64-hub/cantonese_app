@@ -54,13 +54,12 @@ const groupIcons: Record<string, string> = {
 
 // Song states
 const songs = [
-  { title: 'Buwan - Juan Karlos', videoId: '7-EWzUDCXYA' },
-  { title: 'Kathang Isip - Ben&Ben', videoId: 'fvVtP6gcSf4' },
-  { title: 'Ang Huling El Bimbo - Eraserheads', videoId: 'fSXTNkXjBDU' },
-  { title: 'Pano - Zack Tabudlo', videoId: 'xizg1-0JmiA' },
-  { title: 'Pasilyo - SunKissed Lola', videoId: 'GOXGbr10i8s' },
-  { title: 'Mundo - IV Of Spades', videoId: 'xKk655CDFn8' },
-  { title: 'Tadhana - Up Dharma Down', videoId: 'TjEbuWP3hjg' },
+  { title: '海闊天空 (Boundless Oceans, Vast Skies) - Beyond', videoId: 'qu_FSptjRic' },
+  { title: '跳舞街 (Dancing Street) - Priscilla Chan', videoId: 'yRUAG688jd0' },
+  { title: '傻女 (Silly Girl) - Priscilla Chan', videoId: 'v-GguTC9pZo' },
+  { title: '海闊天空 (Lyric Video) - Beyond', videoId: 'uM7AREmjmak' },
+  { title: 'Top 10 Cantopop Classics Compilation', videoId: 'L4M1VP3b5NM' },
+  { title: '1h Classic Cantonese Love Songs Compilation', videoId: 'osgR6gqFZUY' }
 ];
 
 interface NewsItem {
