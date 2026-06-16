@@ -31,12 +31,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: '1',
-        cantonese: 'Nei hou?',
+        cantonese: 'nei5 hou2?',
         english: 'How are you?',
         zhTW: '你好嗎？',
         zhCN: '你好吗？',
         example: {
-          cantonese: 'Nei hou ma?',
+          cantonese: 'nei5 hou2 maa1?',
           english: 'How are you now?',
           zhTW: '你現在好嗎？',
           zhCN: '你现在好吗？'
@@ -44,12 +44,12 @@ export const lessons: Category[] = [
       },
       {
         id: '2',
-        cantonese: 'Hou',
+        cantonese: 'hou2',
         english: 'Fine / Good',
         zhTW: '很好',
         zhCN: '很好',
         example: {
-          cantonese: 'Ngo hou hou.',
+          cantonese: 'ngo5 hou2 hou2.',
           english: 'I am fine.',
           zhTW: '我很好。',
           zhCN: '我很好。'
@@ -57,12 +57,12 @@ export const lessons: Category[] = [
       },
       {
         id: '3',
-        cantonese: 'Mgoi / Do ze',
+        cantonese: 'm4 goi1 / do1 ze6',
         english: 'Thank you',
         zhTW: '謝謝',
         zhCN: '谢谢',
         example: {
-          cantonese: 'Do ze nei ge bong mong.',
+          cantonese: 'do1 ze6 nei5 ge3 bong1 mong4.',
           english: 'Many thanks for the help.',
           zhTW: '非常感謝你的幫忙。',
           zhCN: '非常感谢你的帮忙。'
@@ -70,7 +70,7 @@ export const lessons: Category[] = [
       },
       {
         id: '4',
-        cantonese: 'Mh sai hak hei',
+        cantonese: 'm4 sai2 haak3 hei3',
         english: 'You\'re welcome',
         zhTW: '不客氣',
         zhCN: '不客气',
@@ -83,7 +83,7 @@ export const lessons: Category[] = [
       },
       {
         id: '5',
-        cantonese: 'Jou san',
+        cantonese: 'zou2 san4',
         english: 'Good morning',
         zhTW: '早安',
         zhCN: '早安',
@@ -2282,7 +2282,7 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'ss1',
-        cantonese: 'Nei hou?',
+        cantonese: 'nei5 hou2?',
         english: 'How are you?',
         zhTW: '你好嗎？',
         zhCN: '你好吗？',
