@@ -418,7 +418,7 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
             <IonIcon icon={isBookmarkedState ? bookmark : bookmarkOutline} slot="icon-only" color="primary" />
           </IonButton>
           <h2>{displayWord}</h2>
-          <p className="jyutping-hint" style={{ color: 'var(--ion-color-medium)', fontSize: '1.2rem', marginTop: '-10px', marginBottom: '20px' }}>{cantonese}</p>
+          <p className="jyutping-hint">{cantonese}</p>
           <p className="flip-hint">{t('flashcard.tapToSeeTranslation')}</p>
         </div>
 

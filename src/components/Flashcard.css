@@ -76,12 +76,19 @@
 .flashcard-front h2 {
   font-size: 3.8rem;
   font-weight: 800;
-  letter-spacing: -0.05em;
   color: var(--ion-text-color);
   margin: 0;
   text-align: center;
   word-wrap: break-word;
   word-break: break-word;
+}
+
+.jyutping-hint {
+  color: var(--ion-color-medium);
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .flashcard-back h2 {
@@ -96,20 +103,20 @@
 
 @media (max-width: 576px) {
   .flashcard-container {
-    height: 400px;
+    height: 420px;
   }
 
   .flashcard-front,
   .flashcard-back {
-    padding: 40px 20px;
+    padding: 50px 24px;
   }
 
   .flashcard-front h2 {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
 
   .flashcard-back h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 }
 
