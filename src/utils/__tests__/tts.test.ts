@@ -20,7 +20,7 @@ describe('TTS Utility', () => {
             json: () => Promise.resolve({ audioContent: mockAudioContent })
         } as Response);
 
-        const options = { text: 'Kumusta', languageCode: 'yue-HK' };
+        const options = { text: 'Nei hou', languageCode: 'yue-HK' };
         const result = await fetchTTS(options);
 
         expect(result).toBe(mockAudioContent);
@@ -29,7 +29,7 @@ describe('TTS Utility', () => {
             'https://tts-server-479744148035.asia-east1.run.app/tts',
             expect.objectContaining({
                 method: 'POST',
-                body: expect.stringContaining('"text":"Kumusta"')
+                body: expect.stringContaining('"text":"Nei hou"')
             })
         );
     });

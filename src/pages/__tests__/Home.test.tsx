@@ -84,7 +84,7 @@ vi.mock('../../data/lessons', () => {
             group: 'basics',
             groupKey: 'groups.basics',
             cards: [
-                { id: '1', cantonese: 'Kumusta?', english: 'How are you?', zhTW: '', zhCN: '' },
+                { id: '1', cantonese: 'Nei hou?', english: 'How are you?', zhTW: '', zhCN: '' },
                 { id: '2', cantonese: 'Salamat', english: 'Thank you', zhTW: '', zhCN: '' }
             ]
         },
