@@ -394,7 +394,7 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
             <IonButton
               fill="clear"
               className="audio-btn"
-              onClick={(e) => playAudio(e, displayWord, 'yue-HK')}
+              onClick={(e) => playAudio(e, cantonese, 'yue-HK')}
               // Remove disabled={isPlaying} to allow interruption
               title="Normal speed"
             >
@@ -403,7 +403,7 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
             <IonButton
               fill="clear"
               className="slow-audio-btn"
-              onClick={(e) => playSlowAudio(e, displayWord)}
+              onClick={(e) => playSlowAudio(e, cantonese)}
               // Remove disabled={isPlaying}
               title="Slow speed (learner mode)"
             >
@@ -452,7 +452,7 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
                     fill="clear"
                     size="small"
                     className="example-audio-btn"
-                    onClick={(e) => playAudio(e, example.zhTW || example.zhCN || example.cantonese, 'yue-HK')}
+                    onClick={(e) => playAudio(e, example.cantonese, 'yue-HK')}
                     // Remove disabled={isPlaying}
                     title="Normal speed"
                   >

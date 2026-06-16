@@ -66,7 +66,9 @@ describe('Flashcard Component', () => {
 
   it('renders front content initially', () => {
     render(<Flashcard {...defaultProps} />);
-    expect(screen.getByText('Magandang umaga')).toBeInTheDocument();
+    // The front should display the word. Since we added a hint for the pronunciation,
+    // it will be displayed twice: once in the <h2> and once in the <p>. We use getAllByText.
+    expect(screen.getAllByText('Magandang umaga').length).toBeGreaterThan(0);
     expect(screen.getByText('flashcard.tapToSeeTranslation')).toBeInTheDocument();
   });
 
