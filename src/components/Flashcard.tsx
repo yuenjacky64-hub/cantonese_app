@@ -404,6 +404,11 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
   // Get the appropriate Chinese text for the front of the card based on UI language
   const displayWord = i18n.language === 'zh-CN' ? (zhCN || zhTW || cantonese) : (zhTW || zhCN || cantonese);
 
+  // Get the appropriate Chinese text for the example sentence based on UI language
+  const displayExampleText = example
+    ? (i18n.language === 'zh-CN' ? (example.zhCN || example.zhTW || example.cantonese) : (example.zhTW || example.zhCN || example.cantonese))
+    : '';
+
   return (
     <div
       className={`flashcard-container ${isFlipped ? 'flipped' : ''}`}
@@ -467,14 +472,14 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
             <div className="example-sentence">
               <div className="example-cantonese-row">
                 <p className="example-cantonese">
-                  {example.cantonese}
+                  {displayExampleText}
                 </p>
                 <div className="example-audio-group">
                   <IonButton
                     fill="clear"
                     size="small"
                     className="example-audio-btn"
-                    onClick={(e) => playAudio(e, example.zhTW || example.zhCN || example.cantonese, 'yue-HK')}
+                    onClick={(e) => playAudio(e, displayExampleText, 'yue-HK')}
                     // Remove disabled={isPlaying}
                     title="Normal speed"
                   >
@@ -484,7 +489,7 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
                     fill="clear"
                     size="small"
                     className="example-audio-btn"
-                    onClick={(e) => playSlowAudio(e, example.cantonese)}
+                    onClick={(e) => playSlowAudio(e, displayExampleText)}
                     // Remove disabled={isPlaying}
                     title="Slow speed"
                   >
@@ -492,6 +497,9 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
                   </IonButton>
                 </div>
               </div>
+              <p className="example-jyutping">
+                {example.cantonese}
+              </p>
               <p className="example-translation">
                 {translation.example}
               </p>

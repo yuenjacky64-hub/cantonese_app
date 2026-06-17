@@ -10,7 +10,7 @@ import {
 } from '@ionic/react';
 import { settingsOutline, chatbubblesOutline, timeOutline, informationCircleOutline } from 'ionicons/icons';
 import { useTranslation } from 'react-i18next';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import { useTimer } from '../context/TimerContext';
 import './CommonHeader.css';
 
@@ -91,9 +91,9 @@ const CommonHeader: React.FC<CommonHeaderProps> = ({ title, showBackButton = fal
   }, []);
 
   /**
-   * Updates the application theme.
-   * Applies class to body and saves to localStorage.
-   */
+     * Updates the application theme.
+     * Applies class to body and saves to localStorage.
+     */
   const handleThemeChange = (themeId: string) => {
     setCurrentTheme(themeId);
     localStorage.setItem('app-theme', themeId);
@@ -124,16 +124,16 @@ const CommonHeader: React.FC<CommonHeaderProps> = ({ title, showBackButton = fal
             {showBackButton && (
               <IonBackButton defaultHref={defaultHref} text="" style={{ '--color': '#64748b', marginRight: '8px' }} />
             )}
-            <div
+            <Link
+              to="/home"
               className="header-title-container"
-              style={{ marginLeft: showBackButton ? '0px' : '4px', cursor: 'pointer' }}
-              onClick={() => history.push('/home')}
+              style={{ marginLeft: showBackButton ? '0px' : '4px', cursor: 'pointer', textDecoration: 'none', color: 'inherit' }}
             >
               <div style={{ padding: '8px', background: 'var(--glow-indigo)', borderRadius: '10px', display: 'flex', boxShadow: '0 4px 12px var(--glow-indigo-soft)', transform: 'rotate(-3deg)' }}>
                 <IonIcon icon={chatbubblesOutline} style={{ color: 'white', fontSize: '20px' }} />
               </div>
               {title}
-            </div>
+            </Link>
           </IonButtons>
 
           {/* Right Side: Timer, Language, Settings */}

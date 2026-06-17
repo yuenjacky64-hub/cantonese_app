@@ -168,6 +168,13 @@
   margin: 0;
 }
 
+.example-jyutping {
+  font-size: 0.95rem;
+  color: var(--ion-color-medium, #64748b);
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
 .example-translation {
   font-size: 0.95rem;
   color: #64748b;

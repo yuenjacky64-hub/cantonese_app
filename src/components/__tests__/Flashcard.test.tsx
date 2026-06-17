@@ -82,6 +82,7 @@ describe('Flashcard Component', () => {
 
     expect(cardContainer).toHaveClass('flipped');
     expect(screen.getByText('Good morning')).toBeInTheDocument();
+    expect(screen.getByText('祝你早安')).toBeInTheDocument();
     expect(screen.getByText('Magandang umaga sa iyo.')).toBeInTheDocument();
     expect(screen.getByText('Good morning to you.')).toBeInTheDocument();
   });

@@ -10,6 +10,9 @@ vi.mock('react-router-dom', () => ({
   useHistory: () => ({
     push: mockPush,
   }),
+  Link: ({ to, children, onClick, ...props }: any) => (
+    <a href={to} onClick={(e) => { e.preventDefault(); mockPush(to); if (onClick) onClick(e); }} {...props}>{children}</a>
+  ),
 }));
 
 vi.mock('react-i18next', () => ({

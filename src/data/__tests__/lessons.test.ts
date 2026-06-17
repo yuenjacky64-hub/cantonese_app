@@ -84,6 +84,12 @@ describe('Lessons Data Structure', () => {
                         expect(typeof card.example.english).toBe('string');
                         expect(card.example.cantonese.length).toBeGreaterThan(0);
                         expect(card.example.english.length).toBeGreaterThan(0);
+                        expect(card.example.zhTW).toBeDefined();
+                        expect(typeof card.example.zhTW).toBe('string');
+                        expect(card.example.zhTW!.trim().length).toBeGreaterThan(0);
+                        expect(card.example.zhCN).toBeDefined();
+                        expect(typeof card.example.zhCN).toBe('string');
+                        expect(card.example.zhCN!.trim().length).toBeGreaterThan(0);
                     }
                 });
             });
