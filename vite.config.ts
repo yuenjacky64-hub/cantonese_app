@@ -12,7 +12,7 @@ const getGitInfo = () => {
     const hash = execSync('git rev-parse --short HEAD').toString().trim()
     const message = execSync('git log -1 --pretty=%B').toString().trim()
     return { hash, message }
-  } catch (e) {
+  } catch {
     return { hash: 'unknown', message: 'unknown' }
   }
 }
@@ -21,7 +21,7 @@ const getPackageVersion = () => {
   try {
     const packageJson = JSON.parse(readFileSync('./package.json', 'utf-8'))
     return packageJson.version
-  } catch (e) {
+  } catch {
     return 'unknown'
   }
 }
@@ -37,6 +37,16 @@ export default defineConfig({
   base: '/cantonese_app/',
   define: {
     __BUILD_INFO__: JSON.stringify(buildInfo)
+  },
+  server: {
+    proxy: {
+      '/tts-api': {
+        target: 'https://tts-server-479744148035.asia-east1.run.app',
+        changeOrigin: true,
+        secure: true,
+        rewrite: (path) => path.replace(/^\/tts-api/, '')
+      }
+    }
   },
 
   build: {
