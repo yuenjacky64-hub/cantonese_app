@@ -10,6 +10,11 @@ vi.mock('react-i18next', () => ({
   }),
 }));
 
+vi.mock('../../components/CommonHeader', () => ({
+  __esModule: true,
+  default: ({ title }: any) => <header data-testid="common-header">{title}</header>,
+}));
+
 vi.mock('@ionic/react', async (importOriginal) => {
   const actual = await importOriginal<any>();
   return {

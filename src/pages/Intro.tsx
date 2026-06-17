@@ -1,12 +1,7 @@
 import React from 'react';
 import {
   IonContent,
-  IonHeader,
   IonPage,
-  IonTitle,
-  IonToolbar,
-  IonButtons,
-  IonBackButton,
   IonCard,
   IonCardHeader,
   IonCardTitle,
@@ -22,6 +17,7 @@ import {
   chatbubblesOutline
 } from 'ionicons/icons';
 import { useTranslation } from 'react-i18next';
+import CommonHeader from '../components/CommonHeader';
 import './Intro.css';
 
 const Intro: React.FC = () => {
@@ -29,14 +25,7 @@ const Intro: React.FC = () => {
 
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonButtons slot="start">
-            <IonBackButton defaultHref="/home" />
-          </IonButtons>
-          <IonTitle>{t('intro.title')}</IonTitle>
-        </IonToolbar>
-      </IonHeader>
+      <CommonHeader title={t('intro.title')} showBackButton={true} defaultHref="/home" />
 
       <IonContent fullscreen className="intro-container">
         <div className="intro-header">
