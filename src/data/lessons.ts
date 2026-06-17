@@ -31,12 +31,12 @@ export const lessons: Category[] = [
     cards: [
       {
         id: '1',
-        cantonese: 'nei5 hou2?',
+        cantonese: 'nei5 hou2 maa1?',
         english: 'How are you?',
         zhTW: '你好嗎？',
         zhCN: '你好吗？',
         example: {
-          cantonese: 'nei5 hou2 maa1?',
+          cantonese: 'nei5 jin6 zoi6 hou2 maa1?',
           english: 'How are you now?',
           zhTW: '你現在好嗎？',
           zhCN: '你现在好吗？'
@@ -44,7 +44,7 @@ export const lessons: Category[] = [
       },
       {
         id: '2',
-        cantonese: 'hou2',
+        cantonese: 'han2 hou2',
         english: 'Fine / Good',
         zhTW: '很好',
         zhCN: '很好',
@@ -62,7 +62,7 @@ export const lessons: Category[] = [
         zhTW: '謝謝',
         zhCN: '谢谢',
         example: {
-          cantonese: 'do1 ze6 nei5 ge3 bong1 mong4.',
+          cantonese: 'fei1 soeng4 gam2 ze6 nei5 dik1 bong1 mong4.',
           english: 'Many thanks for the help.',
           zhTW: '非常感謝你的幫忙。',
           zhCN: '非常感谢你的帮忙。'
@@ -70,7 +70,7 @@ export const lessons: Category[] = [
       },
       {
         id: '4',
-        cantonese: 'm4 sai2 haak3 hei3',
+        cantonese: 'bat1 haak3 hei3',
         english: 'You\'re welcome',
         zhTW: '不客氣',
         zhCN: '不客气',
@@ -2086,7 +2086,7 @@ export const lessons: Category[] = [
       },
       {
         id: 'lnk2',
-        cantonese: 'lin4 zip3 ci4 (Wifi hau6)',
+        cantonese: 'lin4 zip3 ci4 (n hau6)',
         english: 'Linker (after n)',
         zhTW: '連接詞 (n後)',
         zhCN: '连接词 (n后)',
@@ -2282,7 +2282,7 @@ export const lessons: Category[] = [
     cards: [
       {
         id: 'ss1',
-        cantonese: 'nei5 hou2?',
+        cantonese: 'nei5 hou2 maa1?',
         english: 'How are you?',
         zhTW: '你好嗎？',
         zhCN: '你好吗？',
@@ -3209,7 +3209,7 @@ export const lessons: Category[] = [
         zhTW: '我想儲值電話費',
         zhCN: '我想充值电话费',
         example: {
-          cantonese: 'ceng2 bong1 ngo5 cyu5 zik6 Wifi pei1 sok3.',
+          cantonese: 'ceng2 bong1 ngo5 cyu5 zik6 50 pei1 sok3.',
           english: 'I would like to buy 50 pesos load.',
           zhTW: '請幫我儲值 50 披索。',
           zhCN: '请帮我充值 50 披索。'
@@ -3370,7 +3370,7 @@ export const lessons: Category[] = [
         zhTW: '前面',
         zhCN: '前面',
         example: {
-          cantonese: 'zoi6 Wifi cin4 min6.',
+          cantonese: 'zoi6 Jollibee cin4 min6.',
           english: 'In front of Jollibee.',
           zhTW: '在 Jollibee 前面。',
           zhCN: '在 Jollibee 前面。'
@@ -3827,7 +3827,7 @@ export const lessons: Category[] = [
         zhTW: '你喜歡...嗎？',
         zhCN: '你喜欢...吗？',
         example: {
-          cantonese: 'nei5 hei2 fun1 kaa1 laai1 Wifi maa1?',
+          cantonese: 'nei5 hei2 fun1 kaa1 laai1 OK maa1?',
           english: 'Do you like Karaoke?',
           zhTW: '你喜歡卡拉OK嗎？',
           zhCN: '你喜欢卡拉OK吗？'
@@ -4210,7 +4210,7 @@ export const lessons: Category[] = [
         zhTW: '下酒菜',
         zhCN: '下酒菜',
         example: {
-          cantonese: 'Wifi han2 hou2 hek3, sik1 hap6 dong1 haa6 zau2 coi3.',
+          cantonese: 'Sisig han2 hou2 hek3, sik1 hap6 dong1 haa6 zau2 coi3.',
           english: 'Sisig is delicious as food for drinking.',
           zhTW: 'Sisig 很好吃，適合當下酒菜。',
           zhCN: 'Sisig 很好吃，适合当下酒菜。'
