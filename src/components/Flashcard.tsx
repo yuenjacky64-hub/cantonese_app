@@ -91,7 +91,10 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
    */
   const getAudioInstance = (): HTMLAudioElement => {
     if (!audioRef.current) {
-      audioRef.current = new Audio();
+      const audio = new Audio();
+      // Disable referrer header to prevent Google Translate from blocking audio playback.
+      (audio as HTMLAudioElement & { referrerPolicy: string }).referrerPolicy = 'no-referrer';
+      audioRef.current = audio;
     }
     return audioRef.current;
   };
@@ -204,7 +207,7 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
   const sanitizeFilename = (text: string): string => {
     return text
       .toLowerCase()
-      .replace(/[?!.,;:'"()\/\\]/g, '')
+      .replace(/[?!.,;:'"()/\\]/g, '')
       .replace(/\s+/g, '_')
       .trim();
   };
