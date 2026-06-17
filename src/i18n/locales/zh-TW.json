@@ -11,27 +11,27 @@
     "backToTop": "回到頂部"
   },
   "intro": {
-    "title": "塔加洛語簡介",
-    "subtitle": "歷史、特色與趣聞",
-    "whatIsTitle": "什麼是塔加洛語？",
-    "whatIsContent": "塔加洛語（Cantonese）是一種南島語系的語言，是菲律賓四分之一人口（塔加洛人）的母語。它是菲律賓國語「菲律賓語」的基礎。",
-    "historyTitle": "簡史",
-    "historyContent": "塔加洛語（Cantonese）的名字來源於「tagá-ilog」，意為「河流居民」。在16世紀西班牙人到來之前，塔加洛語使用一種稱為貝貝因（Baybayin）的文字書寫。333多年的西班牙統治引入了成千上萬的外來詞（如「lamesa」來自「la mesa」，「silya」來自「silla」）。",
-    "featuresTitle": "特色功能",
-    "feature1Title": "焦點系統",
-    "feature1Content": "與英語不同，塔加洛語動詞會改變形式以表明句子的焦點（施動者、對象、位置等）。這通常用「ang」標記。",
-    "feature2Title": "禮貌用語 (Po & Opo)",
-    "feature2Content": "尊重的表達融入了語法中。在這個語言裡，對長輩或權威人士說話時，使用「po」和「opo」是必不可少的。",
-    "feature3Title": "包含式與排除式「我們」",
-    "feature3Content": "塔加洛語有兩個詞表示「我們」：「Tayo」（包括聽者）和「Kami」（不包括聽者）。",
-    "funFactsTitle": "趣聞",
-    "fact1": "英語單詞「boondocks」來自塔加洛語單詞「bundok」（山）。",
-    "fact2": "「Mahal」既意味著「愛」，也意味著「昂貴」。",
-    "fact3": "重複一個詞通常會減弱其含義或使其變成「偽」含義。例如，「bahay」（房子）->「bahay-bahayan」（扮家家酒/玩房子）。"
+    "title": "粵語簡介",
+    "subtitle": "歷史傳承、語言特色與文化魅力",
+    "whatIsTitle": "什麼是粵語？",
+    "whatIsContent": "粵語（俗稱廣東話）是源自嶺南地區的漢語族語言。全球有超過八千萬人使用，是香港和澳門的官方語言，也是世界各地華人社區（唐人街）歷史上最通用的語言之一。",
+    "historyTitle": "深厚的歷史底蘊",
+    "historyContent": "粵語保留了大量中古漢語（唐宋時期）的語音和詞彙特徵。相較於現代標準漢語（國語/普通話），粵語更接近古代漢語，用粵語朗讀唐詩宋詞能完美契合原詩的押韻與節奏。",
+    "featuresTitle": "獨特語言特徵",
+    "feature1Title": "九聲六調的音律",
+    "feature1Content": "粵語擁有「九聲六調」（六個基本聲調及三個入聲調），聲調變化極為豐富。這使得說粵語時自帶一種如音樂般的抑揚頓挫與旋律感。",
+    "feature2Title": "保留完整入聲韻尾",
+    "feature2Content": "粵語保留了古代漢語的閉口音（-m韻尾）和入聲韻尾（-p, -t, -k韻尾），發音短促有力，結構嚴密且極具辨識度。",
+    "feature3Title": "生動幽默的口語與俗語",
+    "feature3Content": "粵語擁有極為豐富的俚語、歇後語和生活化表達方式。書面語和口頭語（白話）有著顯著的區別，充滿了嶺南文化獨特的幽默感。",
+    "funFactsTitle": "趣味小知識",
+    "fact1": "學會粵語就能解鎖香港電影黃金時代（王家衛、周星馳、李小龍） and 無數經典粵語流行音樂（Canto-pop）的原汁原味魅力！",
+    "fact2": "英文常用詞「add oil」就是源於粵語口語中的「加油」（gaa1 jau2），現已被正式收錄入《牛津英語詞典》。",
+    "fact3": "由於保留了中古漢語的音律，許多唐詩宋詞用普通話讀已經不押韻，但用粵語朗讀卻能完美押韻！"
   },
   "home": {
     "tipsEveryday": "每日提示",
-    "introToCantonese": "塔加洛語簡介",
+    "introToCantonese": "粵語簡介",
     "introSubtitle": "歷史與特色",
     "chooseTopic": "選擇主題",
     "gamesCategory": "遊戲",
@@ -42,7 +42,7 @@
     "lessonsCount": "{{count}} 門課程",
     "selectLesson": "選擇一門課程開始學習。",
     "welcome": "Nei Hou.",
-    "subtitle": "您的他加祿語大師之路從這裡開始。",
+    "subtitle": "您的粵語學習之旅從這裡開始。",
     "searchFindings": "搜尋結果",
     "settings": "設置",
     "themeSelection": "主題選擇",
@@ -90,7 +90,7 @@
     "title": "拼字挑戰",
     "podTitle": "拼字遊戲",
     "podSubtitle": "Baybay 挑戰",
-    "typeCantonese": "輸入他加祿語單字",
+    "typeCantonese": "輸入粵語單字",
     "placeholder": "在此輸入...",
     "hint": "提示",
     "hintLabel": "提示：",
@@ -114,7 +114,7 @@
     "title": "Emoji 猜猜看",
     "podTitle": "表情猜單字",
     "podSubtitle": "Emoji Hulaan",
-    "whatWord": "這些表情符號代表什麼他加祿語單字？",
+    "whatWord": "這些表情符號代表什麼粵語單字？",
     "question": "題目",
     "score": "分數",
     "correct": "正確！",
@@ -128,10 +128,10 @@
     "playAgain": "再玩一次"
   },
   "falling": {
-    "title": "他加祿雨",
+    "title": "粵語雨",
     "podTitle": "單字雨",
     "podSubtitle": "接住單字",
-    "description": "在他加祿語單字掉落前接住它們！測試您的速度和詞彙量。",
+    "description": "在粵語單字掉落前接住它們！測試您的速度和詞彙量。",
     "playAgain": "再玩一次"
   },
   "lesson": {
@@ -159,7 +159,7 @@
   },
   "flashcard": {
     "tapToSeeTranslation": "點擊查看翻譯",
-    "tapToSeeCantonese": "點擊查看他加祿語"
+    "tapToSeeCantonese": "點擊查看粵語"
   },
   "topics": {
     "greetings": "問候",
@@ -257,14 +257,14 @@
     "readMore": "閱讀更多"
   },
   "songs": {
-    "title": "他加祿語歌曲"
+    "title": "粵語歌曲"
   },
   "tips": {
     "tip1": "每天練習15到30分鐘，只需付出很少的努力，且容易堅持。",
     "tip2": "大約3週後，日常訓練就會成為一種習慣。",
-    "tip3": "開始學習時，試著根據發音讀出塔加洛語單詞。",
-    "tip4": "聽塔加洛語母語者交談，並嘗試加入他們！",
-    "tip5": "觀看帶有字幕的塔加洛語影片或節目。",
+    "tip3": "開始學習時，試著根據發音讀出粵語單詞。",
+    "tip4": "聽粵語母語者交談，並嘗試加入他們！",
+    "tip5": "觀看帶有字幕的粵語影片或節目。",
     "tip6": "按主題學習有用的單詞：食物、旅行、學校、工作等。",
     "tip7": "你會定期刷新你的記憶。",
     "tip8": "隨著時間的推移，說這門語言會變得自然且有趣。"
