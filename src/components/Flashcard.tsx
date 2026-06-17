@@ -262,8 +262,9 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
       }
 
       // 2. Google Translate TTS (Unofficial API) - Often better pronunciation than native browser
+      // IMPORTANT: For Cantonese use `yue` — `zh-TW` returns Mandarin (Taiwan), not Cantonese.
       let googleLang = lang;
-      if (lang === 'yue-HK') googleLang = 'zh-TW'; // 'yue' or 'zh-TW' for Cantonese on Google Translate
+      if (lang === 'yue-HK') googleLang = 'yue';
 
       const audioUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=gtx&tl=${googleLang}&q=${encodeURIComponent(text)}`;
 
@@ -275,23 +276,37 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
       // 3. Web Speech API (Native Browser Support)
       if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(text);
 
-        // Try to find a specific native voice for fallback
+        // For Cantonese: only speak if a real Cantonese voice exists on the device.
+        // Otherwise the browser silently substitutes Mandarin, which is worse than silence.
         if (lang === 'yue-HK') {
           const voices = window.speechSynthesis.getVoices();
-          const nativeVoice = voices.find(v => v.lang === 'yue-HK' || v.name.includes('Cantonese'));
-          if (nativeVoice) utterance.voice = nativeVoice;
+          const nativeVoice = voices.find(v =>
+            v.lang === 'yue-HK' || v.lang === 'zh-HK' || /cantonese|yue/i.test(v.name)
+          );
+          if (!nativeVoice) {
+            console.warn('No Cantonese voice installed on this device — skipping Web Speech fallback to avoid Mandarin substitution.');
+            return;
+          }
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.voice = nativeVoice;
+          utterance.lang = nativeVoice.lang;
+          utterance.rate = 0.9;
+          await new Promise<void>((resolve) => {
+            utterance.onend = () => resolve();
+            utterance.onerror = () => resolve();
+            window.speechSynthesis.speak(utterance);
+          });
+        } else {
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = lang;
+          utterance.rate = 0.9;
+          await new Promise<void>((resolve) => {
+            utterance.onend = () => resolve();
+            utterance.onerror = () => resolve();
+            window.speechSynthesis.speak(utterance);
+          });
         }
-
-        utterance.lang = lang;
-        utterance.rate = 0.9;
-
-        await new Promise<void>((resolve) => {
-          utterance.onend = () => resolve();
-          utterance.onerror = () => resolve();
-          window.speechSynthesis.speak(utterance);
-        });
       }
     } finally {
       if (currentExecutionIdRef.current === executionId) {
@@ -354,17 +369,21 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
       console.warn('Slow TTS failed, falling back to Web Speech API', error);
 
       // 4. Web Speech API (Native Browser Support)
+      // Only speak if a real Cantonese voice exists — otherwise the OS substitutes Mandarin.
       if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(text);
-
-        // Try to find a specific native voice for fallback
         const voices = window.speechSynthesis.getVoices();
-        const nativeVoice = voices.find(v => v.lang === 'yue-HK' || v.name.includes('Cantonese'));
-        if (nativeVoice) utterance.voice = nativeVoice;
-
-        utterance.lang = 'yue-HK';
-        utterance.rate = 0.6; // Slow speed
+        const nativeVoice = voices.find(v =>
+          v.lang === 'yue-HK' || v.lang === 'zh-HK' || /cantonese|yue/i.test(v.name)
+        );
+        if (!nativeVoice) {
+          console.warn('No Cantonese voice installed on this device — skipping Web Speech fallback to avoid Mandarin substitution.');
+          return;
+        }
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.voice = nativeVoice;
+        utterance.lang = nativeVoice.lang;
+        utterance.rate = 0.6;
 
         await new Promise<void>((resolve) => {
           utterance.onend = () => resolve();
