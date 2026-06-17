@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
     IonContent,
     IonPage,
@@ -10,18 +10,9 @@ import { trophyOutline, refreshOutline, helpCircleOutline, checkmarkCircleOutlin
 import { useTranslation } from 'react-i18next';
 import CommonHeader from '../components/CommonHeader';
 import Footer from '../components/Footer';
-import { lessons, Flashcard, allCards } from '../data/lessons';
+import { Flashcard, allCards } from '../data/lessons';
+import { shuffleArray } from '../utils/array';
 import './SpellChallenge.css';
-
-// Shuffle array utility
-const shuffleArray = <T,>(array: T[]): T[] => {
-    const shuffled = [...array];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
-};
 
 const QUESTIONS_PER_ROUND = 8;
 

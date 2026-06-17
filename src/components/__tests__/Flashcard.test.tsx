@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import Flashcard from '../Flashcard';
 import * as bookmarkUtils from '../../utils/bookmarks';
@@ -23,7 +23,7 @@ vi.mock('@ionic/react', async (importOriginal) => {
   const actual = await importOriginal<any>();
   return {
     ...actual,
-    IonIcon: ({ icon, ...props }: any) => <span data-testid="ion-icon" {...props} />,
+    IonIcon: ({ icon: _icon, ...props }: any) => <span data-testid="ion-icon" {...props} />,
     IonButton: ({ children, onClick, ...props }: any) => (
       <button onClick={onClick} {...props} type="button">{children}</button>
     ),

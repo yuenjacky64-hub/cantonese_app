@@ -1,15 +1,15 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import {
     IonContent,
     IonPage,
     IonButton,
     IonIcon,
 } from '@ionic/react';
-import { trophyOutline, refreshOutline, backspaceOutline } from 'ionicons/icons';
+import { trophyOutline, refreshOutline } from 'ionicons/icons';
 import { useTranslation } from 'react-i18next';
 import CommonHeader from '../components/CommonHeader';
 import Footer from '../components/Footer';
-import { lessons, Flashcard } from '../data/lessons';
+import { lessons } from '../data/lessons';
 import { shuffleArray } from '../utils/array';
 import './SentenceBuilder.css';
 
@@ -63,7 +63,7 @@ const SentenceBuilder: React.FC = () => {
         }
     };
 
-    const startGame = () => {
+    const startGame = useCallback(() => {
         const shuffled = shuffleArray(allExampleCards).slice(0, QUESTIONS_PER_ROUND);
 
         const mappedData: SentenceGameData[] = shuffled.map(card => {
@@ -88,7 +88,7 @@ const SentenceBuilder: React.FC = () => {
         setIsGameOver(false);
         setIsCorrect(null);
         setupQuestion(mappedData[0]);
-    };
+    }, [allExampleCards]);
 
     const setupQuestion = (data: SentenceGameData) => {
         // Create word objects with unique IDs since words can repeat
@@ -115,7 +115,7 @@ const SentenceBuilder: React.FC = () => {
         if (allExampleCards.length > 0 && gameData.length === 0) {
             startGame();
         }
-    }, [allExampleCards]);
+    }, [allExampleCards, gameData.length, startGame]);
 
     const handleSelectWord = (wordObj: {id: string, word: string}) => {
         if (isCorrect !== null) return;

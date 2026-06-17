@@ -10,12 +10,10 @@ import {
   bookOutline,
   chevronForwardOutline,
   arrowBackOutline,
-  timeOutline,
   appsOutline,
   createOutline,
   homeOutline,
   peopleOutline,
-  chatbubblesOutline,
   bookmarkOutline,
   informationCircleOutline,
   gameControllerOutline,
@@ -26,7 +24,6 @@ import {
   cloudDownloadOutline,
   flameOutline,
   earOutline,
-  newspaperOutline,
   bulbOutline,
   airplaneOutline
 } from 'ionicons/icons';

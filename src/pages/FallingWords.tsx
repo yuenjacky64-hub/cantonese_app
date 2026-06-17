@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useCallback, useRef } from 'react';
 import {
     IonPage,
     IonContent,
@@ -16,17 +16,9 @@ import {
 } from 'ionicons/icons';
 import { useTranslation } from 'react-i18next';
 import CommonHeader from '../components/CommonHeader';
-import { lessons, Flashcard, allCards as allCardsModuleScope } from '../data/lessons';
+import { Flashcard, allCards as allCardsModuleScope } from '../data/lessons';
+import { shuffleArray } from '../utils/array';
 import './FallingWords.css';
-
-const shuffleArray = <T,>(array: T[]): T[] => {
-    const shuffled = [...array];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
-};
 
 const FallingWords: React.FC = () => {
     const { t, i18n } = useTranslation();
@@ -62,13 +54,12 @@ const FallingWords: React.FC = () => {
     };
 
     const nextRound = useCallback((force = false) => {
-        if (!force && !isPlaying && score === 0 && lives === 3) return;
+        if (!force && !isPlaying) return;
 
         const cards = allCards.current;
         const randomCard = cards[Math.floor(Math.random() * cards.length)];
         setCurrentCard(randomCard);
 
-        // Generate options
         const correctAnswer = getTranslation(randomCard);
         const otherCards = cards.filter(c => c.id !== randomCard.id);
         const wrongAnswers = shuffleArray(otherCards)
@@ -76,24 +67,25 @@ const FallingWords: React.FC = () => {
             .map(c => getTranslation(c));
 
         setOptions(shuffleArray([correctAnswer, ...wrongAnswers]));
-        setWordKey(prev => prev + 1); // Restart animation
+        setWordKey(prev => prev + 1);
 
-        // Increase speed every 5 points
-        if (score > 0 && score % 5 === 0) {
-            setAnimationDuration(prev => Math.max(1500, prev * 0.9));
-        }
-    }, [getTranslation, isPlaying, lives, score]);
+        // Speed up every 5 points (uses functional update to avoid stale score)
+        setScore(currentScore => {
+            if (currentScore > 0 && currentScore % 5 === 0) {
+                setAnimationDuration(prev => Math.max(1500, prev * 0.9));
+            }
+            return currentScore;
+        });
+    }, [getTranslation, isPlaying]);
 
     const handleAnswer = (answer: string) => {
         if (!currentCard || gameOver) return;
 
         const correctAnswer = getTranslation(currentCard);
         if (answer === correctAnswer) {
-            // Correct
             setScore(prev => prev + 1);
             nextRound();
         } else {
-            // Wrong answer
             handleMiss();
         }
     };
@@ -101,16 +93,16 @@ const FallingWords: React.FC = () => {
     const handleMiss = useCallback(() => {
         if (gameOver) return;
 
-        setLives(prev => {
-            const newLives = prev - 1;
-            if (newLives <= 0) {
-                setGameOver(true);
-                setIsPlaying(false);
-            }
-            return newLives;
-        });
+        // Compute next lives synchronously so we can branch on it without
+        // putting side effects inside the state updater (which would
+        // double-fire under React Strict Mode).
+        const newLives = lives - 1;
+        setLives(newLives);
 
-        if (lives > 1) {
+        if (newLives <= 0) {
+            setGameOver(true);
+            setIsPlaying(false);
+        } else {
             nextRound();
         }
     }, [gameOver, lives, nextRound]);

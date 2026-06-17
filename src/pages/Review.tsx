@@ -7,12 +7,11 @@ import {
   IonButton,
   IonIcon,
 } from '@ionic/react';
-import { checkmarkCircleOutline, trophyOutline, closeCircleOutline } from 'ionicons/icons';
+import { checkmarkCircleOutline, closeCircleOutline } from 'ionicons/icons';
 import { useTranslation } from 'react-i18next';
 import Flashcard from '../components/Flashcard';
 import CommonHeader from '../components/CommonHeader';
 import Footer from '../components/Footer';
-import { getSRSStats } from '../utils/srs';
 import { getDueCards, updateCardSRS } from '../utils/srs';
 import { Flashcard as FlashcardType } from '../data/lessons';
 import './Lesson.css'; // Reuse lesson styles

@@ -34,7 +34,7 @@ vi.mock('@ionic/react', async () => {
                 {children}
             </button>
         ),
-        IonIcon: ({ icon }: any) => <span data-testid="ion-icon" />,
+        IonIcon: (_props: any) => <span data-testid="ion-icon" />,
         IonText: ({ children }: any) => <span>{children}</span>,
     };
 });

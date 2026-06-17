@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useRegisterSW } from 'virtual:pwa-register/react';
-import { IonToast, IonButton, IonIcon } from '@ionic/react';
-import { downloadOutline, closeOutline } from 'ionicons/icons';
+import { IonToast } from '@ionic/react';
 import { useTranslation } from 'react-i18next';
 
 const ReloadPrompt: React.FC = () => {

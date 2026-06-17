@@ -12,12 +12,12 @@ const Home = lazy(() => import('./pages/Home'));
 const Lesson = lazy(() => import('./pages/Lesson'));
 const Review = lazy(() => import('./pages/Review'));
 const Intro = lazy(() => import('./pages/Intro'));
-const Game = lazy(() => import('./pages/Game')) as any;
+const Game = lazy(() => import('./pages/Game'));
 const MemoryMatch = lazy(() => import('./pages/MemoryMatch'));
 const SpellChallenge = lazy(() => import('./pages/SpellChallenge'));
-const WordScramble = lazy(() => import('./pages/WordScramble')) as unknown as React.ComponentType<any>;
-const EmojiGuess = lazy(() => import('./pages/EmojiGuess')) as unknown as React.ComponentType<any>;
-const FallingWords = lazy(() => import('./pages/FallingWords')) as unknown as React.ComponentType<any>;
+const WordScramble = lazy(() => import('./pages/WordScramble'));
+const EmojiGuess = lazy(() => import('./pages/EmojiGuess'));
+const FallingWords = lazy(() => import('./pages/FallingWords'));
 const ListeningQuiz = lazy(() => import('./pages/ListeningQuiz'));
 const SentenceBuilder = lazy(() => import('./pages/SentenceBuilder'));
 const TrueFalse = lazy(() => import('./pages/TrueFalse'));
@@ -100,21 +100,21 @@ const App: React.FC = () => {
         <TimerProvider>
           <Suspense fallback={<PageLoader />}>
             {/* Router Outlet for handling navigation */}
-            <IonRouterOutlet>
-              <Route exact path="/home" render={() => <Home />} />
-              <Route exact path="/lesson/:id" render={() => <Lesson />} />
-              <Route exact path="/review" render={() => <Review />} />
-              <Route exact path="/intro" render={() => <Intro />} />
-              <Route exact path="/game" render={() => <Game />} />
-              <Route exact path="/memory" render={() => <MemoryMatch />} />
-              <Route exact path="/spell" render={() => <SpellChallenge />} />
-              <Route exact path="/scramble" render={() => <WordScramble />} />
-              <Route exact path="/emoji" render={() => <EmojiGuess />} />
-              <Route exact path="/falling" render={() => <FallingWords />} />
-              <Route exact path="/listening" render={() => <ListeningQuiz />} />
-              <Route exact path="/sentence" render={() => <SentenceBuilder />} />
-              <Route exact path="/truefalse" render={() => <TrueFalse />} />
-              <Route exact path="/" render={() => <Redirect to="/home" />} />
+            <IonRouterOutlet animated={false}>
+              <Route exact path="/home"><Home /></Route>
+              <Route exact path="/lesson/:id"><Lesson /></Route>
+              <Route exact path="/review"><Review /></Route>
+              <Route exact path="/intro"><Intro /></Route>
+              <Route exact path="/game"><Game /></Route>
+              <Route exact path="/memory"><MemoryMatch /></Route>
+              <Route exact path="/spell"><SpellChallenge /></Route>
+              <Route exact path="/scramble"><WordScramble /></Route>
+              <Route exact path="/emoji"><EmojiGuess /></Route>
+              <Route exact path="/falling"><FallingWords /></Route>
+              <Route exact path="/listening"><ListeningQuiz /></Route>
+              <Route exact path="/sentence"><SentenceBuilder /></Route>
+              <Route exact path="/truefalse"><TrueFalse /></Route>
+              <Route exact path="/"><Redirect to="/home" /></Route>
             </IonRouterOutlet>
           </Suspense>
         </TimerProvider>

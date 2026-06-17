@@ -13,19 +13,23 @@ export interface StreakData {
 const STREAK_KEY = 'daily-streak-data';
 
 /**
- * Get today's date in YYYY-MM-DD format
+ * Format a Date as YYYY-MM-DD using the user's local timezone.
+ * Why: toISOString() returns UTC, which causes streak miscounts for users
+ * whose local day boundary differs from UTC (e.g. evenings in GMT+8).
  */
-const getToday = (): string => {
-    return new Date().toISOString().split('T')[0];
+const formatLocalDate = (d: Date): string => {
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
 };
 
-/**
- * Get yesterday's date in YYYY-MM-DD format
- */
+const getToday = (): string => formatLocalDate(new Date());
+
 const getYesterday = (): string => {
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 1);
-    return yesterday.toISOString().split('T')[0];
+    return formatLocalDate(yesterday);
 };
 
 /**

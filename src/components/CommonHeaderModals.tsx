@@ -6,13 +6,14 @@ import {
   IonRadio
 } from '@ionic/react';
 import { useTranslation } from 'react-i18next';
+import type { i18n as I18n } from 'i18next';
 
 interface CommonHeaderModalsProps {
   showSettings: boolean;
   setShowSettings: (show: boolean) => void;
   showBuildInfo: boolean;
   setShowBuildInfo: (show: boolean) => void;
-  i18n: any;
+  i18n: I18n;
   handleLanguageChange: (langCode: string) => void;
   currentTheme: string;
   handleThemeChange: (themeId: string) => void;

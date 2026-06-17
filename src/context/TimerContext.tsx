@@ -22,6 +22,7 @@ const TimerContext = createContext<TimerContextType>({
  * Hook to access the timer context.
  * @returns {TimerContextType} The current timer state.
  */
+// eslint-disable-next-line react-refresh/only-export-components
 export const useTimer = () => useContext(TimerContext);
 
 /**
