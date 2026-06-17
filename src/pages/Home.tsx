@@ -126,7 +126,7 @@ const Home: React.FC = () => {
     const fetchNews = async () => {
       try {
         setNewsLoading(true);
-        const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://data.gmanetwork.com/gno/rss/news/feed.xml');
+        const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://hongkongfp.com/feed/');
         const data = await response.json();
         if (data.status === 'ok') {
           setNewsItems(data.items.slice(0, 5)); // Get top 5 news items
@@ -462,7 +462,7 @@ const Home: React.FC = () => {
           {/* News Section */}
           {!selectedGroup && !searchText && (
             <div className="category-section fade-in-up" style={{ animationDelay: '0.4s' }}>
-              <h3 className="category-title">{t('news.Hong KongNews')}</h3>
+              <h3 className="category-title">{t('news.hongKongNews')}</h3>
 
               {newsLoading ? (
                 <div className="news-loading">{t('news.loading')}</div>
