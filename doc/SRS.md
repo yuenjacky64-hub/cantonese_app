@@ -55,7 +55,7 @@ Writes to `localStorage` are debounced by 2 seconds. If a user reviews multiple 
 ### Optimized Statistics Calculation
 Calculating the count of due cards is optimized using a mathematical formula instead of iterating over the entire lesson list:
 - **Total Due** = `(Total Cards - Reviewed Cards)` + `(Reviewed Cards that are Due)`
-This approach is significantly faster than a full array traversal, especially when only a small fraction of the total vocabulary has been reviewed.
+This approach is significantly faster than a full array traversal, especially when only a small fraction of the total vocabulary has been reviewed. To prevent redundant calculation overhead when the user navigates between pages, statistics are cached with a Time-To-Live (TTL) of 1 minute (`STATS_CACHE_TTL = 60 * 1000`).
 
 ### Module-level Constants
 The total number of cards is pre-computed at the module scope when the app initializes, further reducing the computational cost of progress tracking.

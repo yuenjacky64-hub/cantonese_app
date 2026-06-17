@@ -28,6 +28,12 @@ Key UI elements, such as the `LanguageButton` in the header, are wrapped in `Rea
 ### Deferred Logic
 Operations that are not critical to the immediate user interaction are deferred using `setTimeout(..., 0)`. For example, updating the SRS state after a card flip is deferred to ensure that the feedback animation remains perfectly smooth.
 
+### Instant Route Transitions
+Route transition animations inside the `IonRouterOutlet` are disabled (`animated={false}`) to eliminate native transition overhead, enabling immediate page shifts and improved responsiveness on low-end devices.
+
+### Audio Lifecycle & Cleanup
+To avoid memory leaks and overlapping audio, pages and hooks that manage audio track playback (like `useTTS`, `ListeningQuiz`, and `Flashcard`) use mutable references (`audioRef`) to control the active `HTMLAudioElement`. They strictly pause and release the source upon component unmounting, route changes, or question transitions.
+
 ### Lazy Loading and Caching
 - **Audio Files**: TTS audio is cached in-memory and fetched only when needed.
 - **Bookmarks**: The bookmark list is cached in memory, with a `storage` event listener for cross-tab synchronization.
