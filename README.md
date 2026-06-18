@@ -73,6 +73,8 @@ npm run dev
 ```
 Open http://localhost:5173 to view it in the browser.
 
+> **Important**: Before building for production, generate audio files first — see [Audio Generation](doc/AUDIO_GENERATION.md).
+
 #### Build
 To build the project for production:
 ```bash
@@ -122,6 +124,7 @@ For more detailed information about the app's internals, please refer to the fol
 - [Spaced Repetition System (SRS)](doc/SRS.md)
 - [Interactive Games](doc/GAMES.md)
 - [Text-to-Speech (TTS) System](doc/TTS.md)
+- [Audio Generation](doc/AUDIO_GENERATION.md)
 - [Performance & Optimizations](doc/PERFORMANCE.md)
 
 ## Performance & Optimizations
