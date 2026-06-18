@@ -138,7 +138,15 @@
   color: #94a3b8;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  margin: 0 0 12px 4px;
+  margin: 0 0 4px 4px; /* Reduced margin bottom to fit subtitle closer */
+}
+
+.category-subtitle {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0 0 16px 4px;
+  line-height: 1.4;
+  font-weight: 500;
 }
 
 /* Games Grid - 3 columns for games */

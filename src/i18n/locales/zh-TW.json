@@ -1,6 +1,6 @@
 {
   "common": {
-    "appTitle": "隨處學他加祿語",
+    "appTitle": "隨處學粵語",
     "close": "關閉",
     "buildInfo": "版本資訊",
     "buildTime": "建置時間",
@@ -62,9 +62,9 @@
     "pinnedSubtitle": "固定詞彙"
   },
   "game": {
-    "title": "單字挑戰",
+    "title": "字詞挑戰",
     "podTitle": "單字遊戲",
-    "podSubtitle": "Salita 挑戰",
+    "podSubtitle": "字詞挑戰",
     "whatDoesThisMean": "這個字是什麼意思？",
     "score": "得分",
     "roundComplete": "本回合完成！",
@@ -78,7 +78,7 @@
   "memory": {
     "title": "記憶配對",
     "podTitle": "記憶遊戲",
-    "podSubtitle": "Alala 配對",
+    "podSubtitle": "記憶配對",
     "moves": "步數",
     "time": "時間",
     "matched": "配對",
@@ -89,7 +89,7 @@
   "spell": {
     "title": "拼字挑戰",
     "podTitle": "拼字遊戲",
-    "podSubtitle": "Baybay 挑戰",
+    "podSubtitle": "拼寫挑戰",
     "typeCantonese": "輸入粵語單字",
     "placeholder": "在此輸入...",
     "hint": "提示",
@@ -100,9 +100,9 @@
     "hints": "使用提示"
   },
   "scramble": {
-    "title": "Halo-Halo",
+    "title": "重組字詞",
     "podTitle": "拼字重組",
-    "podSubtitle": "Halo-Halo",
+    "podSubtitle": "重組字詞",
     "unscramble": "重新排列字母",
     "clear": "清除",
     "shuffle": "重新打亂",
@@ -113,7 +113,7 @@
   "emoji": {
     "title": "Emoji 猜猜看",
     "podTitle": "表情猜單字",
-    "podSubtitle": "Emoji Hulaan",
+    "podSubtitle": "表情符號猜謎",
     "whatWord": "這些表情符號代表什麼粵語單字？",
     "question": "題目",
     "score": "分數",
@@ -180,7 +180,7 @@
     "respect-markers": "敬語標記",
     "linkers": "連接詞 (連字)",
     "locators": "具體位置標記",
-    "numbers-spanish": "數字 (西班牙語)",
+    "numbers-spanish": "時間與金錢數字",
     "social-scripts": "常用社交短語",
     "transportation": "交通 (通勤)",
     "time-scheduling": "時間與日程",
@@ -195,17 +195,17 @@
     "weather": "天氣",
     "city-navigation": "城市導航",
     "emotions-feelings": "情緒與感受",
-    "taglish-fillers": "Chinglish 填充詞 (Conyo 入門包)",
-    "making-plans": "制定計畫 (The \"Tara\" Pack)",
+    "taglish-fillers": "粵語俚語與填充詞",
+    "making-plans": "制定計劃 (Let's Go 包)",
     "compliments-flattery": "讚美與奉承",
     "opinions-uncertainty": "意見與不確定性",
     "hobbies-interests": "興趣愛好",
     "modern-slang": "現代俚語 (The \"Street\" Pack)",
     "work-school": "工作與學校 (自我介紹擴展)",
-    "love-dating": "戀愛與約會 (The \"Kilig\" Pack)",
-    "conflict-reconciliation": "衝突與和解 (The \"Tampo\" Pack)",
-    "drinking-celebrations": "飲酒與慶祝 (The \"Tagay\" Pack)",
-    "storytelling-connectors": "講故事連接詞 (The \"Kwento\" Pack)",
+    "love-dating": "戀愛與約會 (甜蜜包)",
+    "conflict-reconciliation": "衝突與和解 (扭計/撒嬌包)",
+    "drinking-celebrations": "飲酒與慶祝 (飲勝包)",
+    "storytelling-connectors": "講故事連接詞 (故事包)",
     "animals": "動物",
     "body-parts": "身體部位",
     "idioms-proverbs": "成語與諺語",
@@ -231,9 +231,9 @@
     "prepositions": "位置"
   },
   "sentence": {
-    "title": "造句遊戲",
+    "title": "重組句子",
     "podTitle": "造句遊戲",
-    "podSubtitle": "Buo-Salita",
+    "podSubtitle": "重組句子",
     "translateThis": "翻譯這句話：",
     "tapWords": "點擊下方的單詞造句。",
     "check": "檢查答案",
@@ -241,6 +241,41 @@
     "correct": "正確！",
     "incorrect": "不太對喔。",
     "greatJob": "你的文法正在進步！"
+  },
+  "truefalse": {
+    "title": "是非題",
+    "podTitle": "是非題",
+    "podSubtitle": "是非題",
+    "doesItMean": "這個的意思是...",
+    "true": "正確",
+    "false": "錯誤",
+    "correctIs": "正確翻譯是：",
+    "roundComplete": "回合完成！",
+    "greatJob": "做得好！",
+    "finalScore": "得分",
+    "score": "得分",
+    "accuracy": "準確率",
+    "bestStreak": "最佳連續",
+    "playAgain": "再玩一次",
+    "loading": "載入中..."
+  },
+  "listening": {
+    "title": "聽力測驗",
+    "podTitle": "聽力測驗",
+    "podSubtitle": "聽力挑戰",
+    "question": "題目",
+    "score": "分數",
+    "tapToListen": "點擊播放",
+    "tapAgain": "點擊再次播放",
+    "correct": "正確！",
+    "wrong": "錯了！答案是：",
+    "perfect": "完美聽力！",
+    "excellent": "太棒了！",
+    "good": "做得好！",
+    "keepLearning": "繼續學習！",
+    "tryAgain": "再試一次！",
+    "bestStreak": "最佳連續",
+    "playAgain": "再玩一次"
   },
   "groups": {
     "basics": "基礎",
@@ -252,12 +287,14 @@
   "news": {
     "title": "新聞",
     "hongKongNews": "香港新聞",
+    "attribution": "文章來源於香港自由新聞 (Hong Kong Free Press) RSS 訂閱。點擊閱讀完整故事。",
     "loading": "載入中...",
     "error": "無法載入新聞",
     "readMore": "閱讀更多"
   },
   "songs": {
-    "title": "粵語歌曲"
+    "title": "粵語歌曲",
+    "attribution": "嵌入影片精選自 YouTube。版權歸原創作者所有。"
   },
   "tips": {
     "tip1": "每天練習15到30分鐘，只需付出很少的努力，且容易堅持。",
@@ -268,5 +305,15 @@
     "tip6": "按主題學習有用的單詞：食物、旅行、學校、工作等。",
     "tip7": "你會定期刷新你的記憶。",
     "tip8": "隨著時間的推移，說這門語言會變得自然且有趣。"
+  },
+  "footer": {
+    "privacyPolicy": "隱私政策",
+    "termsOfService": "服務條款",
+    "disclaimer": "免責聲明",
+    "disclaimerTitle": "外部內容免責聲明",
+    "disclaimerContent": "本應用程式整合了外部訂閱源和嵌入式媒體播放器（包括 YouTube 和 RSS 訂閱源）以輔助粵語學習。本應用程式不託管、修改或聲稱對任何外部新聞文章、圖片縮圖或影片廣播擁有所有權。所有版權、商標和知識產權均歸其各自所有者所有。如果您是版權所有者並希望從我們的索引中刪除您的內容，請與我們聯繫。",
+    "contact": "聯絡我們",
+    "madeWith": "精心製作",
+    "forLearners": "專為粵語學習者"
   }
 }
