@@ -3725,7 +3725,7 @@ export const lessons: Category[] = [
       },
       {
         "id": "emo9",
-        "cantonese": "嬲",
+        "cantonese": "nau1",
         "english": "Angry",
         "zhTW": "嬲",
         "zhCN": "嬲",
