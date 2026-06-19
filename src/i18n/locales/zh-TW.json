@@ -228,7 +228,11 @@
     "shapes": "形狀",
     "technology": "科技與網路",
     "sports": "運動與活動",
-    "prepositions": "位置"
+    "prepositions": "位置",
+    "slang-internet": "網絡潮語",
+    "wet-market": "街市買餸",
+    "hk-food": "港式美食與飲品",
+    "typhoon-weather": "颱風與天氣警告"
   },
   "sentence": {
     "title": "重組句子",

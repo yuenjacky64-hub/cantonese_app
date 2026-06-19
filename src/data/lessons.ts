@@ -991,6 +991,71 @@ export const lessons: Category[] = [
           "zhTW": "媽媽煮嘅餸好好食。",
           "zhCN": "妈妈煮嘅餸好好食。"
         }
+      },
+      {
+        "id": "c6",
+        "cantonese": "m4 goi1",
+        "english": "Excuse me / Thank you (for services)",
+        "zhTW": "唔該",
+        "zhCN": "唔该",
+        "example": {
+          "cantonese": "m4 goi1, ceoi3 haa3 m4 goi1.",
+          "english": "Excuse me, please let me pass.",
+          "zhTW": "唔該，借過唔該。",
+          "zhCN": "唔该，借过唔该。"
+        }
+      },
+      {
+        "id": "c7",
+        "cantonese": "deoi3 m4 zyu6",
+        "english": "Sorry",
+        "zhTW": "對唔住",
+        "zhCN": "对唔住",
+        "example": {
+          "cantonese": "deoi3 m4 zyu6, ngo5 ci4 dou3 zo2.",
+          "english": "Sorry, I am late.",
+          "zhTW": "對唔住，我遲到咗。",
+          "zhCN": "对唔住，我迟到咗。"
+        }
+      },
+      {
+        "id": "c8",
+        "cantonese": "mou5 man6 tai4",
+        "english": "No problem",
+        "zhTW": "冇問題",
+        "zhCN": "冇问题",
+        "example": {
+          "cantonese": "mou5 man6 tai4, baau1 hai2 ngo5 san1 soeng6.",
+          "english": "No problem, count on me.",
+          "zhTW": "冇問題，包喺我身上。",
+          "zhCN": "冇问题，包喺我身上。"
+        }
+      },
+      {
+        "id": "c9",
+        "cantonese": "hou2 aa3",
+        "english": "Sure / Okay!",
+        "zhTW": "好呀",
+        "zhCN": "好呀",
+        "example": {
+          "cantonese": "hou2 aa3, ting1 jat1 gin3.",
+          "english": "Okay, see you tomorrow!",
+          "zhTW": "好呀，聽日見。",
+          "zhCN": "好呀，听日见。"
+        }
+      },
+      {
+        "id": "c10",
+        "cantonese": "hai6 ne1",
+        "english": "By the way...",
+        "zhTW": "係呢",
+        "zhCN": "系呢",
+        "example": {
+          "cantonese": "hai6 ne1, nei5 sik6 zo2 faan6 mei6?",
+          "english": "By the way, have you eaten yet?",
+          "zhTW": "係呢，你食咗飯未？",
+          "zhCN": "系呢，你食咗饭未？"
+        }
       }
     ]
   },
@@ -1381,6 +1446,71 @@ export const lessons: Category[] = [
           "english": "This fish is very fresh.",
           "zhTW": "呢條魚好新鮮。",
           "zhCN": "呢条鱼好新鲜。"
+        }
+      },
+      {
+        "id": "fd6",
+        "cantonese": "zyu1 juk6",
+        "english": "Pork",
+        "zhTW": "豬肉",
+        "zhCN": "猪肉",
+        "example": {
+          "cantonese": "ngo5 heoi3 maai5 zyu1 juk6.",
+          "english": "I go to buy pork.",
+          "zhTW": "我去買豬肉。",
+          "zhCN": "我去买猪肉。"
+        }
+      },
+      {
+        "id": "fd7",
+        "cantonese": "ngau4 juk6",
+        "english": "Beef",
+        "zhTW": "牛肉",
+        "zhCN": "牛肉",
+        "example": {
+          "cantonese": "ngo5 m4 sik6 ngau4 juk6 ge3.",
+          "english": "I don't eat beef.",
+          "zhTW": "我唔食牛肉嘅。",
+          "zhCN": "我唔食牛肉嘅。"
+        }
+      },
+      {
+        "id": "fd8",
+        "cantonese": "gai1 daan2",
+        "english": "Egg",
+        "zhTW": "雞蛋",
+        "zhCN": "鸡蛋",
+        "example": {
+          "cantonese": "zaau2 caan1 ngo5 sik6 gai1 daan2.",
+          "english": "I eat eggs for breakfast.",
+          "zhTW": "早餐我食雞蛋。",
+          "zhCN": "早餐我食鸡蛋。"
+        }
+      },
+      {
+        "id": "fd9",
+        "cantonese": "coi3",
+        "english": "Vegetables",
+        "zhTW": "菜",
+        "zhCN": "菜",
+        "example": {
+          "cantonese": "sik6 do1 di1 coi3 hou2 di1.",
+          "english": "It's better to eat more vegetables.",
+          "zhTW": "食多啲菜好啲。",
+          "zhCN": "食多啲菜好啲。"
+        }
+      },
+      {
+        "id": "fd10",
+        "cantonese": "saang1 gwo2",
+        "english": "Fruit",
+        "zhTW": "生果",
+        "zhCN": "生果",
+        "example": {
+          "cantonese": "nei5 zui3 oi3 sik6 me1 saang1 gwo2?",
+          "english": "What fruit do you like to eat most?",
+          "zhTW": "你最愛食咩生果？",
+          "zhCN": "你最爱食咩生果？"
         }
       }
     ]
@@ -2443,6 +2573,58 @@ export const lessons: Category[] = [
           "english": "This road is straight.",
           "zhTW": "呢條路係直嘅。",
           "zhCN": "呢条路系直嘅。"
+        }
+      },
+      {
+        "id": "trans8",
+        "cantonese": "dei6 tit3",
+        "english": "MTR / Subway",
+        "zhTW": "地鐵",
+        "zhCN": "地铁",
+        "example": {
+          "cantonese": "ngo5 dei6 daap3 dei6 tit3 heoi3.",
+          "english": "We go by MTR.",
+          "zhTW": "我哋搭地鐵去。",
+          "zhCN": "我哋搭地铁去。"
+        }
+      },
+      {
+        "id": "trans9",
+        "cantonese": "dik1 si2",
+        "english": "Taxi",
+        "zhTW": "的士",
+        "zhCN": "的士",
+        "example": {
+          "cantonese": "daap3 dik1 si2 faai3 di1.",
+          "english": "Taking a taxi is faster.",
+          "zhTW": "搭的士快啲。",
+          "zhCN": "搭的士快啲。"
+        }
+      },
+      {
+        "id": "trans10",
+        "cantonese": "siu2 baa1",
+        "english": "Minibus",
+        "zhTW": "小巴",
+        "zhCN": "小巴",
+        "example": {
+          "cantonese": "daap3 siu2 baa1 jiu3 gyut3 faan1 hang4.",
+          "english": "Taking minibus requires shouting out where to get off.",
+          "zhTW": "搭小巴要叫落車。",
+          "zhCN": "搭小巴要叫落车。"
+        }
+      },
+      {
+        "id": "trans11",
+        "cantonese": "dou6 leon4",
+        "english": "Ferry",
+        "zhTW": "渡輪",
+        "zhCN": "渡轮",
+        "example": {
+          "cantonese": "daap3 tin1 sing1 siu2 leon4 hou2 peng4.",
+          "english": "Taking the Star Ferry is very cheap.",
+          "zhTW": "搭天星小輪好平。",
+          "zhCN": "搭天星小轮好平。"
         }
       }
     ]
@@ -3514,6 +3696,71 @@ export const lessons: Category[] = [
           "zhTW": "我對佢哋有心動嘅感覺。",
           "zhCN": "我对佢哋有心动嘅感觉。"
         }
+      },
+      {
+        "id": "emo7",
+        "cantonese": "hoi1 sam1",
+        "english": "Happy",
+        "zhTW": "開心",
+        "zhCN": "开心",
+        "example": {
+          "cantonese": "kam4 jat1 ngo5 hou2 hoi1 sam1.",
+          "english": "I was very happy yesterday.",
+          "zhTW": "琴日我好開心。",
+          "zhCN": "琴日我好开心。"
+        }
+      },
+      {
+        "id": "emo8",
+        "cantonese": "m4 hoi1 sam1",
+        "english": "Sad / Unhappy",
+        "zhTW": "唔開心",
+        "zhCN": "唔开心",
+        "example": {
+          "cantonese": "nei5 me1 si3 m4 hoi1 sam1 aa3?",
+          "english": "Why are you sad?",
+          "zhTW": "你咩事唔開心呀？",
+          "zhCN": "你咩事唔开心呀？"
+        }
+      },
+      {
+        "id": "emo9",
+        "cantonese": "嬲",
+        "english": "Angry",
+        "zhTW": "嬲",
+        "zhCN": "嬲",
+        "example": {
+          "cantonese": "m4 sai2 nau1 laa1.",
+          "english": "Don't be angry.",
+          "zhTW": "唔使嬲啦。",
+          "zhCN": "唔使嬲啦。"
+        }
+      },
+      {
+        "id": "emo10",
+        "cantonese": "gui6",
+        "english": "Tired",
+        "zhTW": "攰",
+        "zhCN": "攰",
+        "example": {
+          "cantonese": "faan1 jiu3 hoi1 wui6 hou2 gui6 aa3.",
+          "english": "Having meetings at work is so tiring.",
+          "zhTW": "返工開會好攰呀。",
+          "zhCN": "返工开会好攰呀。"
+        }
+      },
+      {
+        "id": "emo11",
+        "cantonese": "geng1",
+        "english": "Scared / Afraid",
+        "zhTW": "驚",
+        "zhCN": "惊",
+        "example": {
+          "cantonese": "ngo5 hou2 geng1 gaap3 zaat6.",
+          "english": "I am very scared of cockroaches.",
+          "zhTW": "我好驚曱甴。",
+          "zhCN": "我好惊曱甴。"
+        }
       }
     ]
   },
@@ -3587,6 +3834,71 @@ export const lessons: Category[] = [
           "english": "The food is wasted.",
           "zhTW": "啲嘢食蹝咗。",
           "zhCN": "啲嘢食蹝咗。"
+        }
+      },
+      {
+        "id": "tag6",
+        "cantonese": "laa1",
+        "english": "final particle for suggestions/requests",
+        "zhTW": "啦",
+        "zhCN": "啦",
+        "example": {
+          "cantonese": "faai3 di1 laa1.",
+          "english": "Hurry up!",
+          "zhTW": "快啲啦。",
+          "zhCN": "快啲啦。"
+        }
+      },
+      {
+        "id": "tag7",
+        "cantonese": "me1",
+        "english": "final particle for doubt or surprise",
+        "zhTW": "咩",
+        "zhCN": "咩",
+        "example": {
+          "cantonese": "hai6 me1? ngo5 m4 seon3 wo3.",
+          "english": "Is that so? I don't believe it.",
+          "zhTW": "係咩？我唔信喎。",
+          "zhCN": "系咩？我唔信喎。"
+        }
+      },
+      {
+        "id": "tag8",
+        "cantonese": "wo3",
+        "english": "final particle indicating surprise or reported info",
+        "zhTW": "喎",
+        "zhCN": "喎",
+        "example": {
+          "cantonese": "keoi5 waa6 ting1 jat1 faan1 hung1 wo3.",
+          "english": "He said he is working tomorrow.",
+          "zhTW": "佢話聽日返工喎。",
+          "zhCN": "佢话听日返工喎。"
+        }
+      },
+      {
+        "id": "tag9",
+        "cantonese": "gaa3",
+        "english": "final particle for asserting a state or questioning",
+        "zhTW": "㗎",
+        "zhCN": "㗎",
+        "example": {
+          "cantonese": "hai6 gaa3, dim1 dou1 hai6 gam2 gaa3.",
+          "english": "Yes, it is always like this.",
+          "zhTW": "係㗎，點都係咁㗎。",
+          "zhCN": "系㗎，点都系咁㗎。"
+        }
+      },
+      {
+        "id": "tag10",
+        "cantonese": "ze1",
+        "english": "final particle meaning 'only' or 'just'",
+        "zhTW": "啫",
+        "zhCN": "啫",
+        "example": {
+          "cantonese": "ngo5 sik6 siu2 siu2 ze1.",
+          "english": "I'm only eating a little bit.",
+          "zhTW": "我食少少啫。",
+          "zhCN": "我食少少啫。"
         }
       }
     ]
@@ -6328,6 +6640,302 @@ export const lessons: Category[] = [
           "english": "Sit beside me.",
           "zhTW": "坐在我旁邊。",
           "zhCN": "坐在我旁边。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "slang-internet",
+    "title": "Slang & Internet Words",
+    "titleKey": "topics.slang-internet",
+    "group": "social",
+    "groupKey": "groups.social",
+    "cards": [
+      {
+        "id": "si1",
+        "cantonese": "hea",
+        "english": "To chill, lounge, or slack off",
+        "zhTW": "Hea (放鬆、消磨時間、打發時間)",
+        "zhCN": "Hea (放松、消磨时间、打发时间)",
+        "example": {
+          "cantonese": "ngo5 gam1 jat1 zi2 soeng2 hai2 uk1 kei2 hea.",
+          "english": "I just want to chill at home today.",
+          "zhTW": "我今日只係想喺屋企hea。",
+          "zhCN": "我今日只系想喺屋企hea。"
+        }
+      },
+      {
+        "id": "si2",
+        "cantonese": "chok",
+        "english": "To strike a cool pose or look handsome",
+        "zhTW": "Chok (擺出帥氣姿勢)",
+        "zhCN": "Chok (摆出戏份、扮帅)",
+        "example": {
+          "cantonese": "m4 sai2 cok1 laa3, ngo5 dei6 zi1 nei5 leng3 zai2 laa3.",
+          "english": "No need to pose, we know you are handsome.",
+          "zhTW": "唔使chok啦，我哋知你靚仔喇。",
+          "zhCN": "唔使chok啦，我哋知你靓仔喇。"
+        }
+      },
+      {
+        "id": "si3",
+        "cantonese": "cim4 seoi2",
+        "english": "To go offline / disappear from contact (literally diving)",
+        "zhTW": "潛水",
+        "zhCN": "潜水",
+        "example": {
+          "cantonese": "keoi5 hai2 go2 pang4 jau5 kwang4 zou2 cim4 seoi2 gam1 gau2.",
+          "english": "He has been offline in that friend group chat for so long.",
+          "zhTW": "佢喺嗰個朋友群組潛水咁耐。",
+          "zhCN": "佢喺嗰个朋友群组潜水咁耐。"
+        }
+      },
+      {
+        "id": "si4",
+        "cantonese": "ceoi1 seoi2",
+        "english": "To chat, gossip, or shoot the breeze (literally blowing water)",
+        "zhTW": "吹水",
+        "zhCN": "吹水",
+        "example": {
+          "cantonese": "ngo5 dei6 dou1 hai6 ceoi1 haa3 seoi2 ze1.",
+          "english": "We are just chatting.",
+          "zhTW": "我哋都係吹下水啫。",
+          "zhCN": "我哋都系吹下水啫。"
+        }
+      },
+      {
+        "id": "si5",
+        "cantonese": "sik6 faa1 sang1",
+        "english": "To watch drama unfold / be a spectator (literally eating peanuts)",
+        "zhTW": "食花生",
+        "zhCN": "食花生",
+        "example": {
+          "cantonese": "ngo5 zi2 hai6 sik6 faa1 sang1 ze1, m4 gwaan1 ngo5 si3.",
+          "english": "I'm just watching the drama, it's none of my business.",
+          "zhTW": "我只係食花生啫，唔關我事。",
+          "zhCN": "我只系食花生啫，唔关我事。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wet-market",
+    "title": "Wet Market & Grocery",
+    "titleKey": "topics.wet-market",
+    "group": "daily_life",
+    "groupKey": "groups.daily_life",
+    "cards": [
+      {
+        "id": "wm1",
+        "cantonese": "maai5 sung3",
+        "english": "To buy groceries / food ingredients",
+        "zhTW": "買餸",
+        "zhCN": "买餸",
+        "example": {
+          "cantonese": "ngo5 dei6 gam1 maan1 heoi3 bin1 dou6 maai5 sung3 aa3?",
+          "english": "Where are we going to buy groceries tonight?",
+          "zhTW": "我哋今晚去邊度買餸呀？",
+          "zhCN": "我哋今晚去边度买餸呀？"
+        }
+      },
+      {
+        "id": "wm2",
+        "cantonese": "gei2 do1 cin2 jat1 gan1?",
+        "english": "How much is it per catty?",
+        "zhTW": "幾多錢一斤？",
+        "zhCN": "几多钱一斤？",
+        "example": {
+          "cantonese": "nei1 di1 coi3 gei2 do1 cin2 jat1 gan1 aa3?",
+          "english": "How much are these vegetables per catty?",
+          "zhTW": "呢啲菜幾多錢一斤呀？",
+          "zhCN": "呢啲菜几多钱一斤呀？"
+        }
+      },
+      {
+        "id": "wm3",
+        "cantonese": "san1 sin1",
+        "english": "Fresh",
+        "zhTW": "新鮮",
+        "zhCN": "新鲜",
+        "example": {
+          "cantonese": "nei1 tiu4 jyu4 hou2 san1 sin1.",
+          "english": "This fish is very fresh.",
+          "zhTW": "呢條魚好新鮮。",
+          "zhCN": "呢条鱼好新鲜。"
+        }
+      },
+      {
+        "id": "wm4",
+        "cantonese": "peng4 di1 laa1",
+        "english": "Make it cheaper / discount please",
+        "zhTW": "平啲啦",
+        "zhCN": "平啲啦",
+        "example": {
+          "cantonese": "lou5 baan2, peng4 di1 laa1, maai5 do1 di1 aa3.",
+          "english": "Boss, make it cheaper, I'll buy more.",
+          "zhTW": "老闆，平啲啦，買多啲呀。",
+          "zhCN": "老板，平啲啦，买多啲呀。"
+        }
+      },
+      {
+        "id": "wm5",
+        "cantonese": "sung3 fo1 cung1",
+        "english": "Give a free green onion (a common wet market request)",
+        "zhTW": "送棵蔥",
+        "zhCN": "送棵葱",
+        "example": {
+          "cantonese": "m4 goi1 sung3 fo1 cung1 laa1.",
+          "english": "Please throw in a green onion for free.",
+          "zhTW": "唔該送棵蔥啦。",
+          "zhCN": "唔该送棵葱啦。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hk-food",
+    "title": "Hong Kong Food & Drinks",
+    "titleKey": "topics.hk-food",
+    "group": "daily_life",
+    "groupKey": "groups.daily_life",
+    "cards": [
+      {
+        "id": "hkf1",
+        "cantonese": "si1 mat6 naai5 caa4",
+        "english": "Hong Kong style milk tea (literally silk stocking milk tea)",
+        "zhTW": "絲襪奶茶",
+        "zhCN": "丝袜奶茶",
+        "example": {
+          "cantonese": "ngo5 soeng2 jam2 dung3 si1 mat6 naai5 caa4.",
+          "english": "I want to drink iced Hong Kong style milk tea.",
+          "zhTW": "我想飲凍絲襪奶茶。",
+          "zhCN": "我想饮冻丝袜奶茶。"
+        }
+      },
+      {
+        "id": "hkf2",
+        "cantonese": "bo1 lo4 jau4",
+        "english": "Pineapple bun with butter",
+        "zhTW": "菠蘿油",
+        "zhCN": "菠萝油",
+        "example": {
+          "cantonese": "nei1 dou6 ge3 bo1 lo4 jau4 hou2 leng3.",
+          "english": "The pineapple bun with butter here is very good.",
+          "zhTW": "呢度嘅菠蘿油好靚。",
+          "zhCN": "呢度嘅菠萝油好靓。"
+        }
+      },
+      {
+        "id": "hkf3",
+        "cantonese": "haa1 gaau2",
+        "english": "Shrimp dumpling (Har Gow)",
+        "zhTW": "蝦餃",
+        "zhCN": "虾饺",
+        "example": {
+          "cantonese": "jam2 caa4 jat1 ding3 jiu3 dim2 haa1 gaau2.",
+          "english": "Going for dim sum must include ordering shrimp dumplings.",
+          "zhTW": "飲茶一定要點蝦餃。",
+          "zhCN": "饮茶一定要点虾饺。"
+        }
+      },
+      {
+        "id": "hkf4",
+        "cantonese": "siu1 maai2",
+        "english": "Siu Mai (steamed dumplings)",
+        "zhTW": "燒賣",
+        "zhCN": "烧卖",
+        "example": {
+          "cantonese": "ngo5 zui3 oi3 sik6 gaai1 bin1 ge3 gaai1 laat6 siu1 maai2.",
+          "english": "I love eating street-side curry siu mai the most.",
+          "zhTW": "我最愛食街邊嘅咖喱燒賣。",
+          "zhCN": "我最爱食街边嘅咖喱烧卖。"
+        }
+      },
+      {
+        "id": "hkf5",
+        "cantonese": "daan6 taat1",
+        "english": "Egg tart",
+        "zhTW": "蛋撻",
+        "zhCN": "蛋挞",
+        "example": {
+          "cantonese": "daan6 taat1 jiu3 sik6 jik6 ngaat3 ngaat3 ge3.",
+          "english": "Egg tarts must be eaten piping hot.",
+          "zhTW": "蛋撻要食熱辣辣嘅。",
+          "zhCN": "蛋挞要食热辣辣嘅。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "typhoon-weather",
+    "title": "Typhoon & Weather Warnings",
+    "titleKey": "topics.typhoon-weather",
+    "group": "travel",
+    "groupKey": "groups.travel",
+    "cards": [
+      {
+        "id": "tw1",
+        "cantonese": "daa2 fung1",
+        "english": "Typhoon hitting / blowing",
+        "zhTW": "打風",
+        "zhCN": "打风",
+        "example": {
+          "cantonese": "ting1 jat1 daa2 fung1 m4 sai2 faan1 hung1 laa3.",
+          "english": "It's a typhoon tomorrow, no need to go to work.",
+          "zhTW": "聽日打風唔使返工喇。",
+          "zhCN": "听日打风唔使返工喇。"
+        }
+      },
+      {
+        "id": "tw2",
+        "cantonese": "baat3 hou6 fung1 kau4",
+        "english": "Typhoon Signal No. 8",
+        "zhTW": "八號風球",
+        "zhCN": "八号风球",
+        "example": {
+          "cantonese": "gwaa3 baat3 hou6 fung1 kau4 laa3, faai3 di1 faan1 uk1 laa1.",
+          "english": "Typhoon Signal No. 8 is hoisted, go home quickly!",
+          "zhTW": "掛八號風球喇，快啲返屋企啦。",
+          "zhCN": "挂八号风球喇，快啲返屋企啦。"
+        }
+      },
+      {
+        "id": "tw3",
+        "cantonese": "lok6 daai6 jyu5",
+        "english": "Raining heavily",
+        "zhTW": "落大雨",
+        "zhCN": "落大雨",
+        "example": {
+          "cantonese": "ngoi6 min6 lok6 gan2 daai6 jyu5, m4 goi1 daai3 ze1.",
+          "english": "It's raining heavily outside, please bring an umbrella.",
+          "zhTW": "外面落緊大雨，唔該帶遮。",
+          "zhCN": "外面落紧大雨，唔该带遮。"
+        }
+      },
+      {
+        "id": "tw4",
+        "cantonese": "sap1 zai6",
+        "english": "Troublesome / Humid & sticky (literally wet block)",
+        "zhTW": "濕滯",
+        "zhCN": "湿滞",
+        "example": {
+          "cantonese": "gam1 jat1 ge3 weather zan1 hai6 sap1 zai6.",
+          "english": "Today's weather is really humid and sticky.",
+          "zhTW": "今日嘅天氣真係濕滯。",
+          "zhCN": "今日嘅天气真系湿滞。"
+        }
+      },
+      {
+        "id": "tw5",
+        "cantonese": "haak1 jyu5",
+        "english": "Black Rainstorm Warning (highest level)",
+        "zhTW": "黑雨",
+        "zhCN": "黑雨",
+        "example": {
+          "cantonese": "haak1 jyu5 gwaa3 gan2, faai3 di1 lau1 hai2 on1 cyun4 ge3 dei6 fong1.",
+          "english": "The Black Rainstorm warning is active, hurry to a safe place.",
+          "zhTW": "黑雨掛緊，快啲留喺安全嘅地方。",
+          "zhCN": "黑雨挂紧，快啲留喺安全嘅地方。"
         }
       }
     ]

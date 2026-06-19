@@ -70,4 +70,4 @@ Games use a custom `getRandomElements` utility in `src/utils/array.ts` to select
 The `WordScramble` game, for example, filters the entire vocabulary for words of specific lengths (3 to 12 characters) only once at the module level. This prevents the game from stuttering when starting a new session.
 
 ### Asset Caching
-The `ListeningQuiz` caches the results of its initial audio-mapping data fetch, ensuring that navigating back and forth from the game doesn't result in repeated network calls.
+The `ListeningQuiz` caches the results of its initial audio-mapping data fetch (sourced from `audio-map.json` — see [Audio Generation](AUDIO_GENERATION.md)), ensuring that navigating back and forth from the game doesn't result in repeated network calls.

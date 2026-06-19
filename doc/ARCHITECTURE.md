@@ -43,7 +43,7 @@ For performance, route transition animations are disabled (`animated={false}`) i
 ## Audio & Text-to-Speech (TTS)
 
 The audio system is centralized in `src/utils/tts.ts` and utilized via the `useTTS` hook. It uses a prioritized fallback chain:
-1. **Local Audio Files**: Pre-bundled static MP3 assets.
+1. **Local Audio Files**: Pre-bundled static MP3 assets. See [Audio Generation](AUDIO_GENERATION.md) for how to generate these files.
 2. **Google Cloud TTS (Serverless)**: Dynamic generation via a custom serverless Cloud Run endpoint using the official Google Cloud TTS API.
 3. **Google Translate TTS**: Lightweight fallback using the public Translate endpoint, passing `tl=yue` for Cantonese synthesis.
 4. **Web Speech API**: Browser-based speech synthesis, which is only triggered if a native Cantonese or Hong Kong voice is installed on the client device (preventing silent fallback to Mandarin).
