@@ -15,6 +15,7 @@ import CommonHeader from '../components/CommonHeader';
 import Footer from '../components/Footer';
 import { getDueCards, updateCardSRS } from '../utils/srs';
 import { getStreakInfo } from '../utils/streak';
+import { recordToneAttempt } from '../utils/toneStats';
 import { Flashcard as FlashcardType } from '../data/lessons';
 import './Lesson.css'; // Reuse lesson styles
 
@@ -93,6 +94,9 @@ const Review: React.FC = () => {
 
         // Update the SRS status (next due date, interval, etc.)
         updateCardSRS(currentCard.id, isCorrect);
+        // Record per-tone accuracy from this card's jyutping so the
+        // "your tones" panel reflects review answers, not just games.
+        recordToneAttempt(currentCard.cantonese, isCorrect);
 
         // Move to next card or finish
         if (currentIndex < dueCards.length - 1) {

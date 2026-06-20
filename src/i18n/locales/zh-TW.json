@@ -310,6 +310,48 @@
     "tip7": "你會定期刷新你的記憶。",
     "tip8": "隨著時間的推移，說這門語言會變得自然且有趣。"
   },
+  "pathways": {
+    "sectionTitle": "學習路徑",
+    "sectionSubtitle": "為不同場景設計嘅學習路線，揀啱你而家嘅需要。",
+    "lessonsLabel": "課程",
+    "firstTrip": {
+      "title": "香港短期旅行",
+      "description": "一週遊覽必備：交通、點餐、付款、觀光。",
+      "estimate": "10 個課程 · 約 1 小時瀏覽"
+    },
+    "firstMonth": {
+      "title": "新移居者首個月",
+      "description": "適應生活：住屋、天氣、街市、日常瑣事、寒暄。",
+      "estimate": "14 個課程 · 共約 3 小時"
+    },
+    "workplace": {
+      "title": "職場粵語",
+      "description": "辦公室用語：開會、敬語、表達意見、安排日程、口頭禪。",
+      "estimate": "9 個課程 · 共約 2 小時"
+    }
+  },
+  "levels": {
+    "1": "入門",
+    "2": "初級",
+    "3": "中級",
+    "4": "進階",
+    "1.short": "A1",
+    "2.short": "A2",
+    "3.short": "B1",
+    "4.short": "B2"
+  },
+  "tones": {
+    "1": "高平",
+    "2": "高升",
+    "3": "中平",
+    "4": "低降",
+    "5": "低升",
+    "6": "低平",
+    "title": "你嘅聲調",
+    "subtitle": "練習中各聲調嘅正確率",
+    "empty": "完成有聲音嘅練習，就會見到你最易混淆嘅聲調。",
+    "attemptsLabel": "{{count}} 次"
+  },
   "footer": {
     "privacyPolicy": "隱私政策",
     "termsOfService": "服務條款",

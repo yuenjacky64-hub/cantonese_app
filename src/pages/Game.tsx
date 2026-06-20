@@ -10,6 +10,7 @@ import { useTranslation } from 'react-i18next';
 import CommonHeader from '../components/CommonHeader';
 import Footer from '../components/Footer';
 import { StreakMark, TrophyMark } from '../components/Marks';
+import { recordToneAttempt } from '../utils/toneStats';
 import { Flashcard, allCards } from '../data/lessons';
 import { shuffleArray, getRandomElements } from '../utils/array';
 import './Game.css';
@@ -86,6 +87,7 @@ const Game: React.FC = () => {
 
         setSelectedAnswer(answer);
         setIsCorrect(correct);
+        recordToneAttempt(currentCard.cantonese, correct);
 
         if (correct) {
             setScore(prev => prev + 1);

@@ -32,14 +32,19 @@ describe('SRS Utility Functions', () => {
             expect(result).toEqual({});
         });
 
-        it('should return parsed data from localStorage', () => {
-            const mockData: SRSData = {
+        it('should migrate legacy { nextReview, level } records on load', () => {
+            // Old schema with only nextReview + level — emulate a user
+            // who upgraded from the pre-SM-2 build.
+            localStorageMock.getItem.mockReturnValueOnce(JSON.stringify({
                 'card-1': { nextReview: 1000, level: 2 },
-            };
-            localStorageMock.getItem.mockReturnValueOnce(JSON.stringify(mockData));
+            }));
 
             const result = loadSRS();
-            expect(result).toEqual(mockData);
+            expect(result['card-1'].level).toBe(2);
+            // Legacy formula was 3 days × level, so 6.
+            expect(result['card-1'].interval).toBe(6);
+            // Ease should default to the SM-2 starting point.
+            expect(result['card-1'].easeFactor).toBeCloseTo(2.5);
         });
 
         it('should return empty object on parse error', () => {
@@ -57,7 +62,7 @@ describe('SRS Utility Functions', () => {
         it('should save data to localStorage', () => {
             vi.useFakeTimers();
             const data: SRSData = {
-                'card-1': { nextReview: 1000, level: 1 },
+                'card-1': { nextReview: 1000, level: 1, interval: 1, easeFactor: 2.5 },
             };
 
             saveSRS(data);
@@ -73,7 +78,7 @@ describe('SRS Utility Functions', () => {
         });
     });
 
-    describe('updateCardSRS', () => {
+    describe('updateCardSRS (SM-2)', () => {
         beforeEach(() => {
             vi.useFakeTimers();
             vi.setSystemTime(new Date('2026-01-01T00:00:00Z'));
@@ -83,43 +88,52 @@ describe('SRS Utility Functions', () => {
             vi.useRealTimers();
         });
 
-        it('should set level to 1 and schedule 3 days later on first correct answer', () => {
+        it('schedules a brand-new card 1 day out on first correct answer', () => {
             const result = updateCardSRS('test-card-1', true);
 
             expect(result.level).toBe(1);
-            // 3 * 1 = 3 days
-            const expectedTime = Date.now() + 3 * 24 * 60 * 60 * 1000;
-            expect(result.nextReview).toBe(expectedTime);
+            expect(result.interval).toBe(1);
+            expect(result.nextReview).toBe(Date.now() + 1 * 24 * 60 * 60 * 1000);
         });
 
-        it('should reset level and schedule 10 mins later on wrong answer', () => {
-            // First, simulate a card at level 2
-            const mockData: SRSData = {
-                'test-card-2': { nextReview: Date.now() - 1000, level: 2 },
-            };
-            localStorageMock.getItem.mockReturnValueOnce(JSON.stringify(mockData));
+        it('schedules a card 3 days out on its second correct answer', () => {
+            updateCardSRS('test-card-2', true); // first → 1 day, reps=1
+            const result = updateCardSRS('test-card-2', true); // second → 3 days, reps=2
 
-            const result = updateCardSRS('test-card-2', false);
+            expect(result.interval).toBe(3);
+            expect(result.nextReview).toBe(Date.now() + 3 * 24 * 60 * 60 * 1000);
+        });
+
+        it('grows the interval by the ease factor on subsequent correct answers', () => {
+            updateCardSRS('test-card-3', true); // 1 day
+            updateCardSRS('test-card-3', true); // 3 days
+            const result = updateCardSRS('test-card-3', true); // ≈ 3 × ease
+
+            // ease started at 2.5 and grew by 0.05 on each of the 3 correct
+            // answers, so it's 2.65 at the moment we compute the third
+            // interval (2.5 + 0.05 + 0.05 + 0.05 = 2.65). 3 × 2.65 = 7.95
+            // → 8 after rounding.
+            expect(result.interval).toBe(8);
+            expect(result.easeFactor).toBeCloseTo(2.65);
+        });
+
+        it('resets to 10 min and drops ease on a wrong answer', () => {
+            updateCardSRS('test-card-4', true);
+            updateCardSRS('test-card-4', true);
+            const result = updateCardSRS('test-card-4', false);
 
             expect(result.level).toBe(0);
-            // 10 minutes
-            const expectedTime = Date.now() + 10 * 60 * 1000;
-            expect(result.nextReview).toBe(expectedTime);
+            expect(result.interval).toBe(0);
+            expect(result.nextReview).toBe(Date.now() + 10 * 60 * 1000);
+            expect(result.lapses).toBe(1);
+            // Ease started 2.5, +0.05 + 0.05 - 0.20 = 2.4
+            expect(result.easeFactor).toBeCloseTo(2.4);
         });
 
-        it('should increase interval with higher levels', () => {
-            // Card at level 2
-            const mockData: SRSData = {
-                'test-card-3': { nextReview: Date.now() - 1000, level: 2 },
-            };
-            localStorageMock.getItem.mockReturnValueOnce(JSON.stringify(mockData));
-
-            const result = updateCardSRS('test-card-3', true);
-
-            expect(result.level).toBe(3);
-            // 3 * 3 = 9 days
-            const expectedTime = Date.now() + 9 * 24 * 60 * 60 * 1000;
-            expect(result.nextReview).toBe(expectedTime);
+        it('floors ease at the minimum after many failures', () => {
+            for (let i = 0; i < 10; i++) updateCardSRS('test-card-5', false);
+            const data = loadSRS();
+            expect(data['test-card-5'].easeFactor).toBeCloseTo(1.3);
         });
     });
 
@@ -147,8 +161,8 @@ describe('SRS Utility Functions', () => {
             const pastTime = Date.now() - 100000;
 
             const mockData: SRSData = {
-                '1': { nextReview: futureTime, level: 1 }, // Not Due
-                '2': { nextReview: pastTime, level: 1 }    // Due
+                '1': { nextReview: futureTime, level: 1, interval: 1, easeFactor: 2.5 }, // Not Due
+                '2': { nextReview: pastTime, level: 1, interval: 1, easeFactor: 2.5 }    // Due
             };
 
             // We use localStorageMock to inject data because getSRSStats calls loadSRS()

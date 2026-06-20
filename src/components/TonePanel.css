@@ -1,0 +1,64 @@
+.tone-panel {
+  background: #ffffff;
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  padding: 18px 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tone-panel__empty {
+  font-size: 0.9rem;
+  color: var(--graphite);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.tone-panel__row {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: end;
+  gap: 6px;
+  min-height: 84px;
+}
+
+.tone-panel__cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.tone-panel__bar {
+  width: 100%;
+  max-width: 32px;
+  border-radius: 4px 4px 0 0;
+  transition: height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tone-panel__label {
+  font-family: var(--font-jyutping);
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.tone-panel__pct {
+  font-family: var(--font-jyutping);
+  font-size: 0.68rem;
+  color: var(--graphite);
+  letter-spacing: 0.04em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tone-panel {
+    background: rgba(26, 28, 37, 0.55);
+    border-color: rgba(250, 247, 241, 0.08);
+  }
+  .tone-panel__empty { color: var(--graphite-soft); }
+}

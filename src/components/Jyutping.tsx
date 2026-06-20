@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import ToneContour from './ToneContour';
 import './Jyutping.css';
 
@@ -50,6 +51,7 @@ export const Jyutping: React.FC<JyutpingProps> = ({
   className,
   size = 'md',
 }) => {
+  const { t } = useTranslation();
   const syllables = useMemo(() => {
     // Preserve the original whitespace structure by splitting on word
     // boundaries that keep separators as their own tokens.
@@ -69,23 +71,35 @@ export const Jyutping: React.FC<JyutpingProps> = ({
       {syllables.map((syl, i) => {
         if (syl.tone === null) {
           // Whitespace or punctuation: render verbatim
-          return <span key={i} className="jyutping__sep">{syl.base}</span>;
+          return <span key={i} className="jyutping__sep" aria-hidden="true">{syl.base}</span>;
         }
+        // Screen readers get "nei, tone 5 low rising" per syllable so
+        // tone information isn't conveyed only through color.
+        const toneName = t(`tones.${syl.tone}`);
+        const srLabel = `${syl.base}, ${t(`levels.tone`, { defaultValue: 'tone' })} ${syl.tone} ${toneName}`;
         return (
-          <span key={i} className="jyutping__syllable">
-            <span className="jyutping__base">{syl.base}</span>
-            <sup
-              className="jyutping__tone"
-              style={{ color: `var(--tone-${syl.tone})` }}
-            >
-              {syl.tone}
-            </sup>
-            {showContour && (
-              <ToneContour tone={syl.tone} size={12} className="jyutping__contour" />
-            )}
-            {syl.trailing && (
-              <span className="jyutping__trailing">{syl.trailing}</span>
-            )}
+          <span key={i} className="jyutping__syllable" role="text">
+            <span aria-hidden="true">
+              <span className="jyutping__base">{syl.base}</span>
+              <sup
+                className="jyutping__tone"
+                style={{ color: `var(--tone-${syl.tone})` }}
+              >
+                {syl.tone}
+              </sup>
+              {showContour && (
+                <ToneContour
+                  tone={syl.tone}
+                  size={12}
+                  className="jyutping__contour"
+                  ariaHidden
+                />
+              )}
+              {syl.trailing && (
+                <span className="jyutping__trailing">{syl.trailing}</span>
+              )}
+            </span>
+            <span className="sr-only">{srLabel}</span>
           </span>
         );
       })}

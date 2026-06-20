@@ -29,7 +29,9 @@ import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Jyutping from '../components/Jyutping';
+import TonePanel from '../components/TonePanel';
 import { lessons, allCards } from '../data/lessons';
+import { pathways } from '../data/pathways';
 import { getSRSStats, getDueCards } from '../utils/srs';
 import { getStreakInfo } from '../utils/streak';
 import CommonHeader from '../components/CommonHeader';
@@ -49,6 +51,28 @@ const groupIcons: Record<string, string> = {
   'groups.social': peopleOutline,
   'groups.grammar': createOutline,
   'groups.travel': airplaneOutline
+};
+
+/**
+ * Tiny inline badge that shows a category's level (A1–B2). Color is
+ * driven by the tone palette so levels feel part of the design system:
+ * L1 → tone-1 (the most-introductory color), L4 → tone-4 (the
+ * "deepest"). Translates to "A1" etc. via i18n.
+ */
+const LevelBadge: React.FC<{ level: 1 | 2 | 3 | 4 }> = ({ level }) => {
+  const { t } = useTranslation();
+  const shortLabel = t(`levels.${level}.short`, { defaultValue: `L${level}` });
+  const fullLabel = t(`levels.${level}`);
+  return (
+    <span
+      className="level-badge"
+      style={{ color: `var(--tone-${level})`, borderColor: `var(--tone-${level})` }}
+      aria-label={fullLabel}
+      title={fullLabel}
+    >
+      {shortLabel}
+    </span>
+  );
 };
 
 // Game list — single source of truth. Each game uses the same item-pod
@@ -347,10 +371,11 @@ const Home: React.FC = () => {
               filteredLessons.map((category, idx) => (
                 <div key={category.id} className="item-pod fade-in-up" style={{ animationDelay: `${idx * 0.05}s` }} onClick={() => history.push(`/lesson/${category.id}`)}>
                   <div className="pod-icon-box"><IonIcon icon={bookOutline} /></div>
-                  <div style={{ flex: 1 }}>
+                  <div style={{ flex: 1, minWidth: 0 }}>
                     <h3>{t(category.titleKey)}</h3>
                     <span>{t('home.cardsCount', { count: category.cards.length })}</span>
                   </div>
+                  {category.level && <LevelBadge level={category.level} />}
                   <IonIcon icon={chevronForwardOutline} style={{ color: 'var(--graphite-soft)' }} />
                 </div>
               ))
@@ -359,10 +384,11 @@ const Home: React.FC = () => {
               groupedLessons[selectedGroup]?.map((category, idx) => (
                 <div key={category.id} className="item-pod fade-in-up" style={{ animationDelay: `${idx * 0.05}s` }} onClick={() => history.push(`/lesson/${category.id}`)}>
                   <div className="pod-icon-box"><IonIcon icon={bookOutline} /></div>
-                  <div style={{ flex: 1 }}>
+                  <div style={{ flex: 1, minWidth: 0 }}>
                     <h3>{t(category.titleKey)}</h3>
                     <span>{t('home.cardsCount', { count: category.cards.length })}</span>
                   </div>
+                  {category.level && <LevelBadge level={category.level} />}
                   <IonIcon icon={chevronForwardOutline} style={{ color: 'var(--graphite-soft)' }} />
                 </div>
               ))
@@ -388,6 +414,48 @@ const Home: React.FC = () => {
             <div className="fade-in-up" style={{ textAlign: 'center', padding: '60px 0', opacity: 0.6 }}>
               <IonIcon icon={bookOutline} style={{ fontSize: '48px', marginBottom: '16px' }} />
               <p style={{ fontWeight: 600 }}>{t('home.noResults')}</p>
+            </div>
+          )}
+
+          {/* Pathways — curated routes through the catalog. Replaces
+              the previous "what should I do first" guess with three
+              concrete situations the user can pick from. */}
+          {!selectedGroup && !searchText && (
+            <div className="category-section fade-in-up">
+              <h3 className="category-title">{t('pathways.sectionTitle')}</h3>
+              <p className="category-subtitle">{t('pathways.sectionSubtitle')}</p>
+              <div className="pod-grid pathways-grid">
+                {pathways.map((pw, idx) => {
+                  const firstCat = pw.categoryIds[0];
+                  return (
+                    <button
+                      type="button"
+                      key={pw.id}
+                      className="pathway-card"
+                      style={{ animationDelay: `${idx * 0.04}s` }}
+                      onClick={() => firstCat && history.push(`/lesson/${firstCat}`)}
+                    >
+                      <div className="pathway-card__head">
+                        <span className="pathway-card__count">{pw.categoryIds.length}</span>
+                        <span className="pathway-card__count-label">{t('pathways.lessonsLabel')}</span>
+                      </div>
+                      <h4 className="pathway-card__title">{t(pw.titleKey)}</h4>
+                      <p className="pathway-card__description">{t(pw.descriptionKey)}</p>
+                      <p className="pathway-card__estimate">{t(pw.estimateKey)}</p>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* Tone diagnostic — "your tones" panel. The single most
+              actionable signal for a Cantonese learner. */}
+          {!selectedGroup && !searchText && (
+            <div className="category-section fade-in-up">
+              <h3 className="category-title">{t('tones.title')}</h3>
+              <p className="category-subtitle">{t('tones.subtitle')}</p>
+              <TonePanel />
             </div>
           )}
 

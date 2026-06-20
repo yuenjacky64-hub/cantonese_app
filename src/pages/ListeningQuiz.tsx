@@ -14,6 +14,7 @@ import { lessons } from '../data/lessons';
 import { getRandomElements, shuffleArray } from '../utils/array';
 import { fetchTTS } from '../utils/tts';
 import { CheckMark, CrossMark, ScoreTierMark } from '../components/Marks';
+import { recordToneAttempt } from '../utils/toneStats';
 import './ListeningQuiz.css';
 
 // Get all words from lessons for the quiz (computed once)
@@ -203,6 +204,7 @@ const ListeningQuiz: React.FC = () => {
         setSelectedAnswer(answer);
         const correct = answer === currentQuestion.word.cantonese;
         setIsCorrect(correct);
+        recordToneAttempt(currentQuestion.word.cantonese, correct);
 
         if (correct) {
             setScore(prev => prev + 1);

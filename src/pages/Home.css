@@ -405,6 +405,103 @@ ion-searchbar.luminous-search {
   }
 }
 
+/* ----- Pathways --------------------------------------------------- */
+
+.pathways-grid {
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+@media (min-width: 640px) {
+  .pathways-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.pathway-card {
+  background: #ffffff;
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  padding: 20px 20px 18px;
+  text-align: left;
+  cursor: pointer;
+  display: grid;
+  gap: 6px;
+  position: relative;
+  color: var(--ink);
+  transition: var(--transition-fast);
+  font-family: inherit;
+}
+
+.pathway-card:hover {
+  border-color: var(--neon-hot);
+  transform: translateY(-2px);
+}
+
+.pathway-card__head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.pathway-card__count {
+  font-family: var(--font-body);
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--neon-hot);
+  line-height: 1;
+}
+
+.pathway-card__count-label {
+  font-family: var(--font-jyutping);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--graphite);
+}
+
+.pathway-card__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--ink);
+}
+
+.pathway-card__description {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--graphite);
+  margin: 0;
+}
+
+.pathway-card__estimate {
+  font-family: var(--font-jyutping);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--graphite-soft);
+  margin: 4px 0 0;
+}
+
+/* ----- Level badge ------------------------------------------------ */
+
+.level-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  background: transparent;
+  font-family: var(--font-jyutping);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-right: 4px;
+  flex-shrink: 0;
+}
+
 /* ----- Animations ------------------------------------------------- */
 
 .fade-in-up {
@@ -554,11 +651,17 @@ ion-searchbar.luminous-search {
   .news-loading,
   .news-error,
   .song-item,
-  .daily-tip {
+  .daily-tip,
+  .pathway-card,
+  .tone-panel {
     background: rgba(26, 28, 37, 0.55);
     border-color: rgba(250, 247, 241, 0.08);
     color: var(--paper);
   }
+
+  .pathway-card,
+  .pathway-card__title { color: var(--paper); }
+  .pathway-card__description { color: var(--graphite-soft); }
 
   .item-pod h3 { color: var(--paper); }
   .item-pod:hover { border-color: var(--neon-hot); }
