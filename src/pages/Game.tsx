@@ -5,10 +5,11 @@ import {
     IonButton,
     IonIcon,
 } from '@ionic/react';
-import { checkmarkCircleOutline, closeCircleOutline, trophyOutline, refreshOutline } from 'ionicons/icons';
+import { checkmarkCircleOutline, closeCircleOutline, refreshOutline } from 'ionicons/icons';
 import { useTranslation } from 'react-i18next';
 import CommonHeader from '../components/CommonHeader';
 import Footer from '../components/Footer';
+import { StreakMark, TrophyMark } from '../components/Marks';
 import { Flashcard, allCards } from '../data/lessons';
 import { shuffleArray, getRandomElements } from '../utils/array';
 import './Game.css';
@@ -115,7 +116,7 @@ const Game: React.FC = () => {
                     <div className="game-over-container fade-in-up">
                         <div className="game-over-card">
                             <div className="trophy-icon">
-                                <IonIcon icon={trophyOutline} />
+                                <TrophyMark size={36} />
                             </div>
                             <h2>{t('game.roundComplete')}</h2>
                             <p className="game-over-subtitle">{t('game.greatJob')}</p>
@@ -131,7 +132,7 @@ const Game: React.FC = () => {
                                 </div>
                                 <div className="score-item">
                                     <div className="score-label">{t('game.bestStreak')}</div>
-                                    <div className="score-value streak">🔥 {bestStreak}</div>
+                                    <div className="score-value streak"><StreakMark /> {bestStreak}</div>
                                 </div>
                             </div>
 
@@ -190,7 +191,7 @@ const Game: React.FC = () => {
                         </div>
                         {streak > 0 && (
                             <div className="stat-item streak-indicator">
-                                <span className="streak-fire">🔥</span>
+                                <StreakMark />
                                 <span className="stat-value">{streak}</span>
                             </div>
                         )}

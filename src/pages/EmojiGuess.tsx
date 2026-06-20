@@ -10,6 +10,7 @@ import {
 import { useTranslation } from 'react-i18next';
 import CommonHeader from '../components/CommonHeader';
 import { shuffleArray } from '../utils/array';
+import { StreakMark, CheckMark, CrossMark, ScoreTierMark } from '../components/Marks';
 import './EmojiGuess.css';
 
 // Emoji quiz data - each item has emojis, correct answer, and wrong options
@@ -149,14 +150,7 @@ const EmojiGuess: React.FC = () => {
         }, 1500);
     };
 
-    const getScoreEmoji = () => {
-        const percentage = (score / QUESTIONS_PER_GAME) * 100;
-        if (percentage === 100) return '🏆';
-        if (percentage >= 80) return '🌟';
-        if (percentage >= 60) return '😊';
-        if (percentage >= 40) return '💪';
-        return '📚';
-    };
+    const scorePercentage = (score / QUESTIONS_PER_GAME) * 100;
 
     const getScoreMessage = () => {
         const percentage = (score / QUESTIONS_PER_GAME) * 100;
@@ -199,7 +193,8 @@ const EmojiGuess: React.FC = () => {
                             {streak >= 2 && (
                                 <div className="emoji-stat streak">
                                     <IonIcon icon={sparklesOutline} />
-                                    <span className="stat-value">{streak}🔥</span>
+                                    <span className="stat-value">{streak}</span>
+                                    <StreakMark size={14} />
                                 </div>
                             )}
                         </div>
@@ -246,7 +241,7 @@ const EmojiGuess: React.FC = () => {
                         {/* Answer Feedback */}
                         {selectedAnswer !== null && (
                             <div className={`emoji-feedback ${isCorrect ? 'correct' : 'wrong'}`}>
-                                <span className="feedback-emoji">{isCorrect ? '✅' : '❌'}</span>
+                                <span className="feedback-emoji">{isCorrect ? <CheckMark size={22} /> : <CrossMark size={22} />}</span>
                                 <span className="feedback-text">
                                     {isCorrect ? t('emoji.correct') : `${t('emoji.wrong')} ${currentQuestion.answer}`}
                                 </span>
@@ -258,7 +253,7 @@ const EmojiGuess: React.FC = () => {
                     /* Game Over Screen */
                     <div className="emoji-game-over">
                         <div className="game-over-card">
-                            <div className="score-emoji">{getScoreEmoji()}</div>
+                            <div className="score-emoji"><ScoreTierMark percentage={scorePercentage} /></div>
                             <h2 className="score-title">{getScoreMessage()}</h2>
 
                             <div className="final-score">
@@ -271,7 +266,8 @@ const EmojiGuess: React.FC = () => {
                             {bestStreak >= 3 && (
                                 <div className="streak-badge">
                                     <IonIcon icon={sparklesOutline} />
-                                    <span>{t('emoji.bestStreak')}: {bestStreak} 🔥</span>
+                                    <span>{t('emoji.bestStreak')}: {bestStreak}</span>
+                                    <StreakMark size={14} />
                                 </div>
                             )}
 

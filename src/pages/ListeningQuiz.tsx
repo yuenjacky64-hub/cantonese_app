@@ -13,6 +13,7 @@ import CommonHeader from '../components/CommonHeader';
 import { lessons } from '../data/lessons';
 import { getRandomElements, shuffleArray } from '../utils/array';
 import { fetchTTS } from '../utils/tts';
+import { CheckMark, CrossMark, ScoreTierMark } from '../components/Marks';
 import './ListeningQuiz.css';
 
 // Get all words from lessons for the quiz (computed once)
@@ -220,14 +221,7 @@ const ListeningQuiz: React.FC = () => {
         }, 2000);
     };
 
-    const getScoreEmoji = () => {
-        const percentage = (score / QUESTIONS_PER_GAME) * 100;
-        if (percentage === 100) return '🏆';
-        if (percentage >= 80) return '🌟';
-        if (percentage >= 60) return '😊';
-        if (percentage >= 40) return '💪';
-        return '📚';
-    };
+    const scorePercentage = (score / QUESTIONS_PER_GAME) * 100;
 
     const getScoreMessage = () => {
         const percentage = (score / QUESTIONS_PER_GAME) * 100;
@@ -330,7 +324,7 @@ const ListeningQuiz: React.FC = () => {
                         {/* Answer Feedback */}
                         {selectedAnswer !== null && (
                             <div className={`listening-feedback ${isCorrect ? 'correct' : 'wrong'}`}>
-                                <span className="feedback-emoji">{isCorrect ? '✅' : '❌'}</span>
+                                <span className="feedback-emoji">{isCorrect ? <CheckMark size={22} /> : <CrossMark size={22} />}</span>
                                 <span className="feedback-text">
                                     {isCorrect ? t('listening.correct') : `${t('listening.wrong')} ${currentQuestion.word.cantonese}`}
                                 </span>
@@ -341,7 +335,7 @@ const ListeningQuiz: React.FC = () => {
                     /* Game Over Screen */
                     <div className="listening-game-over">
                         <div className="game-over-card">
-                            <div className="score-emoji">{getScoreEmoji()}</div>
+                            <div className="score-emoji"><ScoreTierMark percentage={scorePercentage} /></div>
                             <h2 className="score-title">{getScoreMessage()}</h2>
 
                             <div className="final-score">

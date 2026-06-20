@@ -4,6 +4,7 @@ import { volumeHighOutline, volumeLowOutline, bookmarkOutline, bookmark } from '
 import { useTranslation } from 'react-i18next';
 import { isBookmarked, toggleBookmark } from '../utils/bookmarks';
 import { fetchTTS } from '../utils/tts';
+import Jyutping from './Jyutping';
 import './Flashcard.css';
 
 interface Example {
@@ -445,7 +446,9 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
             <IonIcon icon={isBookmarkedState ? bookmark : bookmarkOutline} slot="icon-only" color="primary" />
           </IonButton>
           <h2>{displayWord}</h2>
-          <p className="jyutping-hint">{cantonese}</p>
+          <div className="jyutping-hint">
+            <Jyutping text={cantonese} size="lg" />
+          </div>
           <p className="flip-hint">{t('flashcard.tapToSeeTranslation')}</p>
         </div>
 
@@ -497,9 +500,9 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
                   </IonButton>
                 </div>
               </div>
-              <p className="example-jyutping">
-                {example.cantonese}
-              </p>
+              <div className="example-jyutping">
+                <Jyutping text={example.cantonese} size="sm" showContour={false} />
+              </div>
               <p className="example-translation">
                 {translation.example}
               </p>

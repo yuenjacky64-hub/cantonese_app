@@ -16,7 +16,8 @@ vi.mock('react-i18next', () => ({
       if (key === 'home.cardsCount') return `${options?.count} cards`;
       if (key === 'home.lessonsCount') return `${options?.count} lessons`;
       return key;
-    }
+    },
+    i18n: { language: 'en' }
   })
 }));
 
@@ -68,7 +69,8 @@ vi.mock('../../components/Footer', () => ({
 
 // Mock utils
 vi.mock('../../utils/srs', () => ({
-    getSRSStats: () => ({ dueCount: 5 })
+    getSRSStats: () => ({ dueCount: 5 }),
+    getDueCards: () => []
 }));
 
 vi.mock('../../utils/streak', () => ({
@@ -113,9 +115,10 @@ describe('Home Page', () => {
     it('should render home content', () => {
         render(<Home />);
         expect(screen.getByTestId('common-header')).toHaveTextContent('common.appTitle');
-        // Initial state shows pods
-        expect(screen.getByText('home.welcome')).toBeInTheDocument();
-        expect(screen.getByText('5')).toBeInTheDocument(); // Due count from mock
+        // Hero shows the review-queue label and the due count.
+        expect(screen.getByText('home.reviewDue')).toBeInTheDocument();
+        // Due count appears in the hero (big number) and in the eyebrow label.
+        expect(screen.getAllByText('5').length).toBeGreaterThan(0);
     });
 
     it('should display categories initially (grouped)', () => {
