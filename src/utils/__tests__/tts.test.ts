@@ -25,8 +25,9 @@ describe('TTS Utility', () => {
 
         expect(result).toBe(mockAudioContent);
         expect(fetchSpy).toHaveBeenCalledTimes(1);
+        // Endpoint path; host varies between dev (proxy) and prod.
         expect(fetchSpy).toHaveBeenCalledWith(
-            'https://tts-server-479744148035.asia-east1.run.app/tts',
+            expect.stringMatching(/\/tts$/),
             expect.objectContaining({
                 method: 'POST',
                 body: expect.stringContaining('"text":"Nei hou"')

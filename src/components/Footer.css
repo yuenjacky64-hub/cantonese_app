@@ -136,3 +136,61 @@
         background: rgba(255,255,255,0.05);
     }
 }
+
+/* Disclaimer Modal Styling */
+.disclaimer-modal {
+  --border-radius: 28px 28px 0 0;
+}
+
+.disclaimer-modal .modal-content {
+  padding: 24px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.disclaimer-modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.disclaimer-modal .modal-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--ion-text-color);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.disclaimer-modal .modal-close-btn {
+  --color: #64748b;
+  font-weight: 700;
+  margin: 0;
+}
+
+.disclaimer-modal .modal-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ion-color-step-700);
+}
+
+.disclaimer-modal .disclaimer-card {
+  background: var(--ion-color-step-50, #f8fafc);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+  .disclaimer-modal .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .disclaimer-modal .disclaimer-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+  }
+}

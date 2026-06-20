@@ -5,11 +5,11 @@ import {
     refreshOutline,
     checkmarkCircle,
     closeCircle,
-    trophyOutline,
     sparklesOutline
 } from 'ionicons/icons';
 import { useTranslation } from 'react-i18next';
 import CommonHeader from '../components/CommonHeader';
+import { shuffleArray } from '../utils/array';
 import './EmojiGuess.css';
 
 // Emoji quiz data - each item has emojis, correct answer, and wrong options
@@ -72,16 +72,6 @@ const emojiQuestions: EmojiQuestion[] = [
     { emojis: '👂', answer: 'Yi zai', answerEn: 'Ear', options: ['Yi zai', 'Ngaan', 'Bei go', 'Tau faat'] },
     { emojis: '✋', answer: 'Sau', answerEn: 'Hand', options: ['Sau', 'Goek', 'Sau bei', 'Sau zi'] },
 ];
-
-// Shuffle array helper
-const shuffleArray = <T,>(array: T[]): T[] => {
-    const shuffled = [...array];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
-};
 
 const QUESTIONS_PER_GAME = 10;
 

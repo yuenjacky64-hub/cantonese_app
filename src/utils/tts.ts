@@ -1,5 +1,7 @@
 
-const TTS_API_URL = 'https://tts-server-479744148035.asia-east1.run.app/tts';
+const TTS_API_URL = import.meta.env.DEV
+    ? '/tts-api/tts'
+    : 'https://tts-server-479744148035.asia-east1.run.app/tts';
 
 interface TTSOptions {
     text: string;

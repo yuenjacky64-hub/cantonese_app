@@ -10,6 +10,9 @@ vi.mock('react-router-dom', () => ({
   useHistory: () => ({
     push: mockPush,
   }),
+  Link: ({ to, children, onClick, ...props }: any) => (
+    <a href={to} onClick={(e) => { e.preventDefault(); mockPush(to); if (onClick) onClick(e); }} {...props}>{children}</a>
+  ),
 }));
 
 vi.mock('react-i18next', () => ({
@@ -32,7 +35,7 @@ vi.mock('@ionic/react', async (importOriginal) => {
   const actual = await importOriginal<any>();
   return {
     ...actual,
-    IonIcon: ({ icon, ...props }: any) => <span data-testid="ion-icon" {...props} />,
+    IonIcon: ({ icon: _icon, ...props }: any) => <span data-testid="ion-icon" {...props} />,
     IonBackButton: (props: any) => <button data-testid="ion-back-button" {...props}>Back</button>,
     IonModal: ({ isOpen, children, ...props }: any) => (
       isOpen ? <div data-testid="ion-modal" role="dialog" {...props}>{children}</div> : null
@@ -51,7 +54,7 @@ vi.mock('@ionic/react', async (importOriginal) => {
 });
 
 // Mock Global Build Info
-// @ts-ignore
+// @ts-expect-error — __BUILD_INFO__ is injected by Vite at build time.
 global.__BUILD_INFO__ = {
   version: '1.0.0',
   time: new Date().getTime(),

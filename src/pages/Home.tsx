@@ -10,12 +10,10 @@ import {
   bookOutline,
   chevronForwardOutline,
   arrowBackOutline,
-  timeOutline,
   appsOutline,
   createOutline,
   homeOutline,
   peopleOutline,
-  chatbubblesOutline,
   bookmarkOutline,
   informationCircleOutline,
   gameControllerOutline,
@@ -26,7 +24,6 @@ import {
   cloudDownloadOutline,
   flameOutline,
   earOutline,
-  newspaperOutline,
   bulbOutline,
   airplaneOutline
 } from 'ionicons/icons';
@@ -463,6 +460,7 @@ const Home: React.FC = () => {
           {!selectedGroup && !searchText && (
             <div className="category-section fade-in-up" style={{ animationDelay: '0.4s' }}>
               <h3 className="category-title">{t('news.hongKongNews')}</h3>
+              <p className="category-subtitle">{t('news.attribution')}</p>
 
               {newsLoading ? (
                 <div className="news-loading">{t('news.loading')}</div>
@@ -501,6 +499,7 @@ const Home: React.FC = () => {
           {!selectedGroup && !searchText && (
             <div className="category-section fade-in-up" style={{ animationDelay: '0.5s' }}>
               <h3 className="category-title">{t('songs.title')}</h3>
+              <p className="category-subtitle">{t('songs.attribution')}</p>
               <div className="songs-grid">
                 {songs.map((song, index) => (
                   <div key={index} className="song-item">

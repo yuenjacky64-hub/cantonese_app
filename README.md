@@ -8,6 +8,7 @@ A mobile-friendly application for learning Cantonese, built with Ionic, React, a
   <!-- To add a new lesson, modify src/data/lessons.ts and update translations in src/i18n/locales/ -->
 - **Flashcards**: Interactive flashcards with English, Traditional Chinese, and Simplified Chinese translations.
 - **Interactive Games**:
+  - **Multiple Choice Quiz**: Test your Cantonese-to-translation mapping.
   - **Memory Match**: Match Cantonese words with their translations.
   - **Spell Challenge**: Practice spelling Cantonese words.
   - **Word Scramble**: Unscramble letters to form the correct Cantonese word.
@@ -15,11 +16,13 @@ A mobile-friendly application for learning Cantonese, built with Ionic, React, a
   - **Falling Words**: Catch the correct translation for falling Cantonese words.
   - **Listening Quiz**: Test your listening comprehension with native audio.
   - **Sentence Builder**: Build sentences using provided words to match translations.
+  - **True/False**: Verify whether the displayed translation matches the Cantonese word/phrase.
   <!-- The games are located in src/pages/. They share utility functions from src/utils/array.ts to avoid code duplication. -->
 - **Review Mode**: Practice what you've learned using a Spaced Repetition System (SRS) to optimize retention.
 - **Bookmark System**: Save specific cards to your personal list for focused study.
-- **Study Timer & Daily Streaks**: Track your daily learning progress with a built-in study timer and maintain your learning streak.
-- **Text-to-Speech (TTS)**: Listen to native pronunciations with a multi-layered fallback system and audio caching.
+- **Hong Kong News Feed**: View the latest news headlines from the Hong Kong Free Press directly on the dashboard.
+- **Study Timer & Daily Streaks**: Track your daily learning progress with a built-in study timer and maintain your learning streak. Streaks are calculated using the user's local timezone (not UTC) to prevent boundary mismatch errors.
+- **Text-to-Speech (TTS)**: Listen to native pronunciations with a multi-layered fallback system (Local audio, Google Cloud TTS Serverless, Google Translate TTS with `yue` locale, and Web Speech API with Cantonese voice check) and audio caching.
 - **Customization**:
   - **Themes**: Choose from various color themes (Teal, Blue, etc.).
   - **Text Size**: Adjust the font size for better readability.
@@ -70,6 +73,8 @@ npm run dev
 ```
 Open http://localhost:5173 to view it in the browser.
 
+> **Important**: Before building for production, generate audio files first — see [Audio Generation](doc/AUDIO_GENERATION.md).
+
 #### Build
 To build the project for production:
 ```bash
@@ -119,6 +124,7 @@ For more detailed information about the app's internals, please refer to the fol
 - [Spaced Repetition System (SRS)](doc/SRS.md)
 - [Interactive Games](doc/GAMES.md)
 - [Text-to-Speech (TTS) System](doc/TTS.md)
+- [Audio Generation](doc/AUDIO_GENERATION.md)
 - [Performance & Optimizations](doc/PERFORMANCE.md)
 
 ## Performance & Optimizations

@@ -59,8 +59,8 @@ async function generateAudio(text, filename, speakingRate = 1.0) {
             },
             body: JSON.stringify({
                 text,
-                languageCode: 'fil-PH',
-                voiceName: 'fil-PH-Standard-A',
+                languageCode: 'yue-HK',
+                voiceName: 'yue-HK-Standard-A',
                 speakingRate,
             }),
         });

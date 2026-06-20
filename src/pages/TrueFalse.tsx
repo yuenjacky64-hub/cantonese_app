@@ -5,7 +5,7 @@ import {
     IonButton,
     IonIcon,
 } from '@ionic/react';
-import { checkmarkCircleOutline, closeCircleOutline, trophyOutline, refreshOutline, checkmarkOutline, closeOutline } from 'ionicons/icons';
+import { trophyOutline, refreshOutline, checkmarkOutline, closeOutline } from 'ionicons/icons';
 import { useTranslation } from 'react-i18next';
 import CommonHeader from '../components/CommonHeader';
 import Footer from '../components/Footer';

@@ -46,9 +46,22 @@ A game to practice constructing Cantonese sentences.
 - **How it works**: The app presents an English translation. Users must select the correct Cantonese words from a set of scrambled word tiles to construct the corresponding Cantonese sentence.
 - **Goal**: Successfully build the correct Cantonese sentence by arranging the provided words.
 
+### 8. Multiple Choice Quiz (`Game.tsx`)
+A classic multiple-choice quiz designed to test overall translation accuracy.
+- **How it works**: The app displays a Cantonese word or phrase, and the user must choose the correct English translation from four options.
+- **Goal**: Select the correct translation and build a high answer streak.
+
+### 9. True/False Quiz (`TrueFalse.tsx`)
+A fast-paced translation verification game.
+- **How it works**: The app displays a Cantonese word or phrase and a translation. The user must decide if the translation is correct (True) or incorrect (False).
+- **Goal**: Build and maintain the best streak of correct verification answers.
+
 ## Performance Optimizations
 
 To ensure smooth gameplay, especially in games with many moving parts (like Falling Words) or complex data needs:
+
+### Centralized Shared Utilities
+To avoid code duplication, games import shared utility functions (such as `shuffleArray` and `getRandomElements`) from a centralized location (`src/utils/array.ts`). This keeps game components clean and focused purely on UI rendering and state management.
 
 ### Efficient Sampling
 Games use a custom `getRandomElements` utility in `src/utils/array.ts` to select questions and generate "distractor" options. This algorithm is O(count) instead of O(N), meaning it performs at a constant speed regardless of how many thousands of words are in the database.
@@ -57,4 +70,4 @@ Games use a custom `getRandomElements` utility in `src/utils/array.ts` to select
 The `WordScramble` game, for example, filters the entire vocabulary for words of specific lengths (3 to 12 characters) only once at the module level. This prevents the game from stuttering when starting a new session.
 
 ### Asset Caching
-The `ListeningQuiz` caches the results of its initial audio-mapping data fetch, ensuring that navigate back and forth from the game doesn't result in repeated network calls.
+The `ListeningQuiz` caches the results of its initial audio-mapping data fetch (sourced from `audio-map.json` — see [Audio Generation](AUDIO_GENERATION.md)), ensuring that navigating back and forth from the game doesn't result in repeated network calls.

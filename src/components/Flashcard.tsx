@@ -91,7 +91,10 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
    */
   const getAudioInstance = (): HTMLAudioElement => {
     if (!audioRef.current) {
-      audioRef.current = new Audio();
+      const audio = new Audio();
+      // Disable referrer header to prevent Google Translate from blocking audio playback.
+      (audio as HTMLAudioElement & { referrerPolicy: string }).referrerPolicy = 'no-referrer';
+      audioRef.current = audio;
     }
     return audioRef.current;
   };
@@ -204,7 +207,7 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
   const sanitizeFilename = (text: string): string => {
     return text
       .toLowerCase()
-      .replace(/[?!.,;:'"()\/\\]/g, '')
+      .replace(/[?!.,;:'"()/\\]/g, '')
       .replace(/\s+/g, '_')
       .trim();
   };
@@ -262,8 +265,9 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
       }
 
       // 2. Google Translate TTS (Unofficial API) - Often better pronunciation than native browser
+      // IMPORTANT: For Cantonese use `yue` — `zh-TW` returns Mandarin (Taiwan), not Cantonese.
       let googleLang = lang;
-      if (lang === 'yue-HK') googleLang = 'zh-TW'; // 'yue' or 'zh-TW' for Cantonese on Google Translate
+      if (lang === 'yue-HK') googleLang = 'yue';
 
       const audioUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=gtx&tl=${googleLang}&q=${encodeURIComponent(text)}`;
 
@@ -275,23 +279,37 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
       // 3. Web Speech API (Native Browser Support)
       if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(text);
 
-        // Try to find a specific native voice for fallback
+        // For Cantonese: only speak if a real Cantonese voice exists on the device.
+        // Otherwise the browser silently substitutes Mandarin, which is worse than silence.
         if (lang === 'yue-HK') {
           const voices = window.speechSynthesis.getVoices();
-          const nativeVoice = voices.find(v => v.lang === 'yue-HK' || v.name.includes('Cantonese'));
-          if (nativeVoice) utterance.voice = nativeVoice;
+          const nativeVoice = voices.find(v =>
+            v.lang === 'yue-HK' || v.lang === 'zh-HK' || /cantonese|yue/i.test(v.name)
+          );
+          if (!nativeVoice) {
+            console.warn('No Cantonese voice installed on this device — skipping Web Speech fallback to avoid Mandarin substitution.');
+            return;
+          }
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.voice = nativeVoice;
+          utterance.lang = nativeVoice.lang;
+          utterance.rate = 0.9;
+          await new Promise<void>((resolve) => {
+            utterance.onend = () => resolve();
+            utterance.onerror = () => resolve();
+            window.speechSynthesis.speak(utterance);
+          });
+        } else {
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = lang;
+          utterance.rate = 0.9;
+          await new Promise<void>((resolve) => {
+            utterance.onend = () => resolve();
+            utterance.onerror = () => resolve();
+            window.speechSynthesis.speak(utterance);
+          });
         }
-
-        utterance.lang = lang;
-        utterance.rate = 0.9;
-
-        await new Promise<void>((resolve) => {
-          utterance.onend = () => resolve();
-          utterance.onerror = () => resolve();
-          window.speechSynthesis.speak(utterance);
-        });
       }
     } finally {
       if (currentExecutionIdRef.current === executionId) {
@@ -354,17 +372,21 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
       console.warn('Slow TTS failed, falling back to Web Speech API', error);
 
       // 4. Web Speech API (Native Browser Support)
+      // Only speak if a real Cantonese voice exists — otherwise the OS substitutes Mandarin.
       if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(text);
-
-        // Try to find a specific native voice for fallback
         const voices = window.speechSynthesis.getVoices();
-        const nativeVoice = voices.find(v => v.lang === 'yue-HK' || v.name.includes('Cantonese'));
-        if (nativeVoice) utterance.voice = nativeVoice;
-
-        utterance.lang = 'yue-HK';
-        utterance.rate = 0.6; // Slow speed
+        const nativeVoice = voices.find(v =>
+          v.lang === 'yue-HK' || v.lang === 'zh-HK' || /cantonese|yue/i.test(v.name)
+        );
+        if (!nativeVoice) {
+          console.warn('No Cantonese voice installed on this device — skipping Web Speech fallback to avoid Mandarin substitution.');
+          return;
+        }
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.voice = nativeVoice;
+        utterance.lang = nativeVoice.lang;
+        utterance.rate = 0.6;
 
         await new Promise<void>((resolve) => {
           utterance.onend = () => resolve();
@@ -381,6 +403,11 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
 
   // Get the appropriate Chinese text for the front of the card based on UI language
   const displayWord = i18n.language === 'zh-CN' ? (zhCN || zhTW || cantonese) : (zhTW || zhCN || cantonese);
+
+  // Get the appropriate Chinese text for the example sentence based on UI language
+  const displayExampleText = example
+    ? (i18n.language === 'zh-CN' ? (example.zhCN || example.zhTW || example.cantonese) : (example.zhTW || example.zhCN || example.cantonese))
+    : '';
 
   return (
     <div
@@ -445,14 +472,14 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
             <div className="example-sentence">
               <div className="example-cantonese-row">
                 <p className="example-cantonese">
-                  {example.cantonese}
+                  {displayExampleText}
                 </p>
                 <div className="example-audio-group">
                   <IonButton
                     fill="clear"
                     size="small"
                     className="example-audio-btn"
-                    onClick={(e) => playAudio(e, example.zhTW || example.zhCN || example.cantonese, 'yue-HK')}
+                    onClick={(e) => playAudio(e, displayExampleText, 'yue-HK')}
                     // Remove disabled={isPlaying}
                     title="Normal speed"
                   >
@@ -462,7 +489,7 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
                     fill="clear"
                     size="small"
                     className="example-audio-btn"
-                    onClick={(e) => playSlowAudio(e, example.cantonese)}
+                    onClick={(e) => playSlowAudio(e, displayExampleText)}
                     // Remove disabled={isPlaying}
                     title="Slow speed"
                   >
@@ -470,6 +497,9 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
                   </IonButton>
                 </div>
               </div>
+              <p className="example-jyutping">
+                {example.cantonese}
+              </p>
               <p className="example-translation">
                 {translation.example}
               </p>

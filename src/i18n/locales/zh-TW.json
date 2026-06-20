@@ -1,6 +1,6 @@
 {
   "common": {
-    "appTitle": "隨處學他加祿語",
+    "appTitle": "隨處學粵語",
     "close": "關閉",
     "buildInfo": "版本資訊",
     "buildTime": "建置時間",
@@ -11,27 +11,27 @@
     "backToTop": "回到頂部"
   },
   "intro": {
-    "title": "塔加洛語簡介",
-    "subtitle": "歷史、特色與趣聞",
-    "whatIsTitle": "什麼是塔加洛語？",
-    "whatIsContent": "塔加洛語（Cantonese）是一種南島語系的語言，是菲律賓四分之一人口（塔加洛人）的母語。它是菲律賓國語「菲律賓語」的基礎。",
-    "historyTitle": "簡史",
-    "historyContent": "塔加洛語（Cantonese）的名字來源於「tagá-ilog」，意為「河流居民」。在16世紀西班牙人到來之前，塔加洛語使用一種稱為貝貝因（Baybayin）的文字書寫。333多年的西班牙統治引入了成千上萬的外來詞（如「lamesa」來自「la mesa」，「silya」來自「silla」）。",
-    "featuresTitle": "特色功能",
-    "feature1Title": "焦點系統",
-    "feature1Content": "與英語不同，塔加洛語動詞會改變形式以表明句子的焦點（施動者、對象、位置等）。這通常用「ang」標記。",
-    "feature2Title": "禮貌用語 (Po & Opo)",
-    "feature2Content": "尊重的表達融入了語法中。在這個語言裡，對長輩或權威人士說話時，使用「po」和「opo」是必不可少的。",
-    "feature3Title": "包含式與排除式「我們」",
-    "feature3Content": "塔加洛語有兩個詞表示「我們」：「Tayo」（包括聽者）和「Kami」（不包括聽者）。",
-    "funFactsTitle": "趣聞",
-    "fact1": "英語單詞「boondocks」來自塔加洛語單詞「bundok」（山）。",
-    "fact2": "「Mahal」既意味著「愛」，也意味著「昂貴」。",
-    "fact3": "重複一個詞通常會減弱其含義或使其變成「偽」含義。例如，「bahay」（房子）->「bahay-bahayan」（扮家家酒/玩房子）。"
+    "title": "粵語簡介",
+    "subtitle": "歷史傳承、語言特色與文化魅力",
+    "whatIsTitle": "什麼是粵語？",
+    "whatIsContent": "粵語（俗稱廣東話）是源自嶺南地區的漢語族語言。全球有超過八千萬人使用，是香港和澳門的官方語言，也是世界各地華人社區（唐人街）歷史上最通用的語言之一。",
+    "historyTitle": "深厚的歷史底蘊",
+    "historyContent": "粵語保留了大量中古漢語（唐宋時期）的語音和詞彙特徵。相較於現代標準漢語（國語/普通話），粵語更接近古代漢語，用粵語朗讀唐詩宋詞能完美契合原詩的押韻與節奏。",
+    "featuresTitle": "獨特語言特徵",
+    "feature1Title": "九聲六調的音律",
+    "feature1Content": "粵語擁有「九聲六調」（六個基本聲調及三個入聲調），聲調變化極為豐富。這使得說粵語時自帶一種如音樂般的抑揚頓挫與旋律感。",
+    "feature2Title": "保留完整入聲韻尾",
+    "feature2Content": "粵語保留了古代漢語的閉口音（-m韻尾）和入聲韻尾（-p, -t, -k韻尾），發音短促有力，結構嚴密且極具辨識度。",
+    "feature3Title": "生動幽默的口語與俗語",
+    "feature3Content": "粵語擁有極為豐富的俚語、歇後語和生活化表達方式。書面語和口頭語（白話）有著顯著的區別，充滿了嶺南文化獨特的幽默感。",
+    "funFactsTitle": "趣味小知識",
+    "fact1": "學會粵語就能解鎖香港電影黃金時代（王家衛、周星馳、李小龍） and 無數經典粵語流行音樂（Canto-pop）的原汁原味魅力！",
+    "fact2": "英文常用詞「add oil」就是源於粵語口語中的「加油」（gaa1 jau2），現已被正式收錄入《牛津英語詞典》。",
+    "fact3": "由於保留了中古漢語的音律，許多唐詩宋詞用普通話讀已經不押韻，但用粵語朗讀卻能完美押韻！"
   },
   "home": {
     "tipsEveryday": "每日提示",
-    "introToCantonese": "塔加洛語簡介",
+    "introToCantonese": "粵語簡介",
     "introSubtitle": "歷史與特色",
     "chooseTopic": "選擇主題",
     "gamesCategory": "遊戲",
@@ -42,7 +42,7 @@
     "lessonsCount": "{{count}} 門課程",
     "selectLesson": "選擇一門課程開始學習。",
     "welcome": "Nei Hou.",
-    "subtitle": "您的他加祿語大師之路從這裡開始。",
+    "subtitle": "您的粵語學習之旅從這裡開始。",
     "searchFindings": "搜尋結果",
     "settings": "設置",
     "themeSelection": "主題選擇",
@@ -62,9 +62,9 @@
     "pinnedSubtitle": "固定詞彙"
   },
   "game": {
-    "title": "單字挑戰",
+    "title": "字詞挑戰",
     "podTitle": "單字遊戲",
-    "podSubtitle": "Salita 挑戰",
+    "podSubtitle": "字詞挑戰",
     "whatDoesThisMean": "這個字是什麼意思？",
     "score": "得分",
     "roundComplete": "本回合完成！",
@@ -78,7 +78,7 @@
   "memory": {
     "title": "記憶配對",
     "podTitle": "記憶遊戲",
-    "podSubtitle": "Alala 配對",
+    "podSubtitle": "記憶配對",
     "moves": "步數",
     "time": "時間",
     "matched": "配對",
@@ -89,8 +89,8 @@
   "spell": {
     "title": "拼字挑戰",
     "podTitle": "拼字遊戲",
-    "podSubtitle": "Baybay 挑戰",
-    "typeCantonese": "輸入他加祿語單字",
+    "podSubtitle": "拼寫挑戰",
+    "typeCantonese": "輸入粵語單字",
     "placeholder": "在此輸入...",
     "hint": "提示",
     "hintLabel": "提示：",
@@ -100,9 +100,9 @@
     "hints": "使用提示"
   },
   "scramble": {
-    "title": "Halo-Halo",
+    "title": "重組字詞",
     "podTitle": "拼字重組",
-    "podSubtitle": "Halo-Halo",
+    "podSubtitle": "重組字詞",
     "unscramble": "重新排列字母",
     "clear": "清除",
     "shuffle": "重新打亂",
@@ -113,8 +113,8 @@
   "emoji": {
     "title": "Emoji 猜猜看",
     "podTitle": "表情猜單字",
-    "podSubtitle": "Emoji Hulaan",
-    "whatWord": "這些表情符號代表什麼他加祿語單字？",
+    "podSubtitle": "表情符號猜謎",
+    "whatWord": "這些表情符號代表什麼粵語單字？",
     "question": "題目",
     "score": "分數",
     "correct": "正確！",
@@ -128,10 +128,10 @@
     "playAgain": "再玩一次"
   },
   "falling": {
-    "title": "他加祿雨",
+    "title": "粵語雨",
     "podTitle": "單字雨",
     "podSubtitle": "接住單字",
-    "description": "在他加祿語單字掉落前接住它們！測試您的速度和詞彙量。",
+    "description": "在粵語單字掉落前接住它們！測試您的速度和詞彙量。",
     "playAgain": "再玩一次"
   },
   "lesson": {
@@ -159,7 +159,7 @@
   },
   "flashcard": {
     "tapToSeeTranslation": "點擊查看翻譯",
-    "tapToSeeCantonese": "點擊查看他加祿語"
+    "tapToSeeCantonese": "點擊查看粵語"
   },
   "topics": {
     "greetings": "問候",
@@ -180,7 +180,7 @@
     "respect-markers": "敬語標記",
     "linkers": "連接詞 (連字)",
     "locators": "具體位置標記",
-    "numbers-spanish": "數字 (西班牙語)",
+    "numbers-spanish": "時間與金錢數字",
     "social-scripts": "常用社交短語",
     "transportation": "交通 (通勤)",
     "time-scheduling": "時間與日程",
@@ -195,17 +195,17 @@
     "weather": "天氣",
     "city-navigation": "城市導航",
     "emotions-feelings": "情緒與感受",
-    "taglish-fillers": "Chinglish 填充詞 (Conyo 入門包)",
-    "making-plans": "制定計畫 (The \"Tara\" Pack)",
+    "taglish-fillers": "粵語俚語與填充詞",
+    "making-plans": "制定計劃 (Let's Go 包)",
     "compliments-flattery": "讚美與奉承",
     "opinions-uncertainty": "意見與不確定性",
     "hobbies-interests": "興趣愛好",
     "modern-slang": "現代俚語 (The \"Street\" Pack)",
     "work-school": "工作與學校 (自我介紹擴展)",
-    "love-dating": "戀愛與約會 (The \"Kilig\" Pack)",
-    "conflict-reconciliation": "衝突與和解 (The \"Tampo\" Pack)",
-    "drinking-celebrations": "飲酒與慶祝 (The \"Tagay\" Pack)",
-    "storytelling-connectors": "講故事連接詞 (The \"Kwento\" Pack)",
+    "love-dating": "戀愛與約會 (甜蜜包)",
+    "conflict-reconciliation": "衝突與和解 (扭計/撒嬌包)",
+    "drinking-celebrations": "飲酒與慶祝 (飲勝包)",
+    "storytelling-connectors": "講故事連接詞 (故事包)",
     "animals": "動物",
     "body-parts": "身體部位",
     "idioms-proverbs": "成語與諺語",
@@ -228,12 +228,16 @@
     "shapes": "形狀",
     "technology": "科技與網路",
     "sports": "運動與活動",
-    "prepositions": "位置"
+    "prepositions": "位置",
+    "slang-internet": "網絡潮語",
+    "wet-market": "街市買餸",
+    "hk-food": "港式美食與飲品",
+    "typhoon-weather": "颱風與天氣警告"
   },
   "sentence": {
-    "title": "造句遊戲",
+    "title": "重組句子",
     "podTitle": "造句遊戲",
-    "podSubtitle": "Buo-Salita",
+    "podSubtitle": "重組句子",
     "translateThis": "翻譯這句話：",
     "tapWords": "點擊下方的單詞造句。",
     "check": "檢查答案",
@@ -241,6 +245,41 @@
     "correct": "正確！",
     "incorrect": "不太對喔。",
     "greatJob": "你的文法正在進步！"
+  },
+  "truefalse": {
+    "title": "是非題",
+    "podTitle": "是非題",
+    "podSubtitle": "是非題",
+    "doesItMean": "這個的意思是...",
+    "true": "正確",
+    "false": "錯誤",
+    "correctIs": "正確翻譯是：",
+    "roundComplete": "回合完成！",
+    "greatJob": "做得好！",
+    "finalScore": "得分",
+    "score": "得分",
+    "accuracy": "準確率",
+    "bestStreak": "最佳連續",
+    "playAgain": "再玩一次",
+    "loading": "載入中..."
+  },
+  "listening": {
+    "title": "聽力測驗",
+    "podTitle": "聽力測驗",
+    "podSubtitle": "聽力挑戰",
+    "question": "題目",
+    "score": "分數",
+    "tapToListen": "點擊播放",
+    "tapAgain": "點擊再次播放",
+    "correct": "正確！",
+    "wrong": "錯了！答案是：",
+    "perfect": "完美聽力！",
+    "excellent": "太棒了！",
+    "good": "做得好！",
+    "keepLearning": "繼續學習！",
+    "tryAgain": "再試一次！",
+    "bestStreak": "最佳連續",
+    "playAgain": "再玩一次"
   },
   "groups": {
     "basics": "基礎",
@@ -252,21 +291,33 @@
   "news": {
     "title": "新聞",
     "hongKongNews": "香港新聞",
+    "attribution": "文章來源於香港自由新聞 (Hong Kong Free Press) RSS 訂閱。點擊閱讀完整故事。",
     "loading": "載入中...",
     "error": "無法載入新聞",
     "readMore": "閱讀更多"
   },
   "songs": {
-    "title": "他加祿語歌曲"
+    "title": "粵語歌曲",
+    "attribution": "嵌入影片精選自 YouTube。版權歸原創作者所有。"
   },
   "tips": {
     "tip1": "每天練習15到30分鐘，只需付出很少的努力，且容易堅持。",
     "tip2": "大約3週後，日常訓練就會成為一種習慣。",
-    "tip3": "開始學習時，試著根據發音讀出塔加洛語單詞。",
-    "tip4": "聽塔加洛語母語者交談，並嘗試加入他們！",
-    "tip5": "觀看帶有字幕的塔加洛語影片或節目。",
+    "tip3": "開始學習時，試著根據發音讀出粵語單詞。",
+    "tip4": "聽粵語母語者交談，並嘗試加入他們！",
+    "tip5": "觀看帶有字幕的粵語影片或節目。",
     "tip6": "按主題學習有用的單詞：食物、旅行、學校、工作等。",
     "tip7": "你會定期刷新你的記憶。",
     "tip8": "隨著時間的推移，說這門語言會變得自然且有趣。"
+  },
+  "footer": {
+    "privacyPolicy": "隱私政策",
+    "termsOfService": "服務條款",
+    "disclaimer": "免責聲明",
+    "disclaimerTitle": "外部內容免責聲明",
+    "disclaimerContent": "本應用程式整合了外部訂閱源和嵌入式媒體播放器（包括 YouTube 和 RSS 訂閱源）以輔助粵語學習。本應用程式不託管、修改或聲稱對任何外部新聞文章、圖片縮圖或影片廣播擁有所有權。所有版權、商標和知識產權均歸其各自所有者所有。如果您是版權所有者並希望從我們的索引中刪除您的內容，請與我們聯繫。",
+    "contact": "聯絡我們",
+    "madeWith": "精心製作",
+    "forLearners": "專為粵語學習者"
   }
 }

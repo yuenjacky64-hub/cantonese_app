@@ -10,11 +10,16 @@ vi.mock('react-i18next', () => ({
   }),
 }));
 
+vi.mock('../../components/CommonHeader', () => ({
+  __esModule: true,
+  default: ({ title }: any) => <header data-testid="common-header">{title}</header>,
+}));
+
 vi.mock('@ionic/react', async (importOriginal) => {
   const actual = await importOriginal<any>();
   return {
     ...actual,
-    IonIcon: ({ icon, ...props }: any) => <span data-testid="ion-icon" {...props} />,
+    IonIcon: ({ icon: _icon, ...props }: any) => <span data-testid="ion-icon" {...props} />,
     IonPage: ({ children }: any) => <div>{children}</div>,
     IonHeader: ({ children }: any) => <header>{children}</header>,
     IonToolbar: ({ children }: any) => <div>{children}</div>,

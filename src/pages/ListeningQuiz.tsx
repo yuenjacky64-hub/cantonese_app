@@ -151,7 +151,8 @@ const ListeningQuiz: React.FC = () => {
         playCloudTTS(text);
     };
 
-    // Google Cloud TTS API fallback
+    // Google Cloud TTS API fallback — reuses audioRef so unmount/question-change
+    // cleanup can stop the playback.
     const playCloudTTS = async (text: string) => {
         try {
             const audioContent = await fetchTTS({
@@ -160,11 +161,11 @@ const ListeningQuiz: React.FC = () => {
                 voiceName: 'yue-HK-Standard-A',
             });
 
-            if (audioContent) {
-                const audio = new Audio(`data:audio/mp3;base64,${audioContent}`);
-                audio.onended = () => setIsPlaying(false);
-                audio.onerror = () => setIsPlaying(false);
-                audio.play();
+            if (audioContent && audioRef.current) {
+                audioRef.current.src = `data:audio/mp3;base64,${audioContent}`;
+                audioRef.current.onended = () => setIsPlaying(false);
+                audioRef.current.onerror = () => setIsPlaying(false);
+                await audioRef.current.play();
                 return;
             }
         } catch (error) {
@@ -173,16 +174,27 @@ const ListeningQuiz: React.FC = () => {
         setIsPlaying(false);
     };
 
-    // Auto-play on question change
+    // Auto-play on question change. Pauses any in-flight audio when the question
+    // changes or the component unmounts so navigation doesn't leak playback.
     useEffect(() => {
         if (currentQuestion && !gameOver) {
-            // Small delay before auto-playing
+            // Capture the audio element now; the cleanup may run after the
+            // ref has been reassigned.
+            const audioEl = audioRef.current;
             const timer = setTimeout(() => {
                 playAudio();
             }, 500);
-            return () => clearTimeout(timer);
+            return () => {
+                clearTimeout(timer);
+                if (audioEl) {
+                    audioEl.pause();
+                }
+            };
         }
-    }, [currentIndex, questions]);
+        // playAudio is intentionally omitted — it depends on currentQuestion/isPlaying
+        // which would cause unwanted replays.
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [currentIndex, questions, gameOver]);
 
     const handleAnswer = (answer: string) => {
         if (selectedAnswer !== null || !hasPlayed) return;

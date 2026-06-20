@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import {
     IonContent,
     IonPage,
@@ -9,7 +9,7 @@ import { checkmarkCircleOutline, closeCircleOutline, trophyOutline, refreshOutli
 import { useTranslation } from 'react-i18next';
 import CommonHeader from '../components/CommonHeader';
 import Footer from '../components/Footer';
-import { lessons, Flashcard, allCards } from '../data/lessons';
+import { Flashcard, allCards } from '../data/lessons';
 import { shuffleArray, getRandomElements } from '../utils/array';
 import './Game.css';
 
@@ -29,13 +29,13 @@ const Game: React.FC = () => {
     const [isGameOver, setIsGameOver] = useState(false);
 
     // Get translation based on current language
-    const getTranslation = (card: Flashcard): string => {
+    const getTranslation = useCallback((card: Flashcard): string => {
         switch (i18n.language) {
             case 'zh-TW': return card.zhTW || card.english;
             case 'zh-CN': return card.zhCN || card.english;
             default: return card.english;
         }
-    };
+    }, [i18n.language]);
 
     // Initialize game
     const startGame = () => {
@@ -74,7 +74,7 @@ const Game: React.FC = () => {
         setOptions(allOptions);
         setSelectedAnswer(null);
         setIsCorrect(null);
-    }, [questionIndex, gameCards, i18n.language]);
+    }, [questionIndex, gameCards, getTranslation]);
 
     const handleAnswer = (answer: string) => {
         if (selectedAnswer !== null) return; // Prevent double-clicks

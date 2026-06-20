@@ -6,13 +6,13 @@ import {
   IonToolbar,
   IonButton,
   IonIcon,
+  useIonViewWillEnter,
 } from '@ionic/react';
-import { checkmarkCircleOutline, trophyOutline, closeCircleOutline } from 'ionicons/icons';
+import { checkmarkCircleOutline, closeCircleOutline } from 'ionicons/icons';
 import { useTranslation } from 'react-i18next';
 import Flashcard from '../components/Flashcard';
 import CommonHeader from '../components/CommonHeader';
 import Footer from '../components/Footer';
-import { getSRSStats } from '../utils/srs';
 import { getDueCards, updateCardSRS } from '../utils/srs';
 import { Flashcard as FlashcardType } from '../data/lessons';
 import './Lesson.css'; // Reuse lesson styles
@@ -25,14 +25,14 @@ import './Lesson.css'; // Reuse lesson styles
 const Review: React.FC = () => {
   const { t } = useTranslation();
 
-  // State for cards pending review
-  const [dueCards, setDueCards] = useState<FlashcardType[]>([]);
+  // State for cards pending review, initialized synchronously to prevent initial render flash
+  const [dueCards, setDueCards] = useState<FlashcardType[]>(() => getDueCards());
 
   // Current index in the dueCards array
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Flag to indicate if the review session is complete
-  const [isFinished, setIsFinished] = useState(false);
+  const [isFinished, setIsFinished] = useState(() => getDueCards().length === 0);
 
   // Helper state to force re-render of Flashcard component (to reset flip state)
   const [cardKey, setCardKey] = useState(0);
@@ -40,7 +40,12 @@ const Review: React.FC = () => {
   // State for result animation
   const [feedbackClass, setFeedbackClass] = useState('');
 
-  // Load cards on component mount
+  // Load/refresh cards when entering the view (Ionic lifecycle)
+  useIonViewWillEnter(() => {
+    loadDueCards();
+  });
+
+  // Also keep useEffect for standard React mount lifecycle and test environments
   useEffect(() => {
     loadDueCards();
   }, []);

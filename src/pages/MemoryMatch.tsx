@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import {
     IonContent,
     IonPage,
@@ -9,7 +9,8 @@ import { trophyOutline, refreshOutline, timeOutline } from 'ionicons/icons';
 import { useTranslation } from 'react-i18next';
 import CommonHeader from '../components/CommonHeader';
 import Footer from '../components/Footer';
-import { lessons, Flashcard, allCards } from '../data/lessons';
+import { Flashcard, allCards } from '../data/lessons';
+import { shuffleArray } from '../utils/array';
 import './MemoryMatch.css';
 
 interface MemoryCard {
@@ -20,16 +21,6 @@ interface MemoryCard {
     isFlipped: boolean;
     isMatched: boolean;
 }
-
-// Shuffle array utility
-const shuffleArray = <T,>(array: T[]): T[] => {
-    const shuffled = [...array];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
-};
 
 const PAIRS_COUNT = 6; // 12 cards total (6 pairs)
 
@@ -45,16 +36,16 @@ const MemoryMatch: React.FC = () => {
     const [isProcessing, setIsProcessing] = useState(false);
 
     // Get translation based on current language
-    const getTranslation = (card: Flashcard): string => {
+    const getTranslation = useCallback((card: Flashcard): string => {
         switch (i18n.language) {
             case 'zh-TW': return card.zhTW || card.english;
             case 'zh-CN': return card.zhCN || card.english;
             default: return card.english;
         }
-    };
+    }, [i18n.language]);
 
     // Initialize game
-    const startGame = () => {
+    const startGame = useCallback(() => {
         const selectedCards = shuffleArray(allCards).slice(0, PAIRS_COUNT);
 
         const memoryCards: MemoryCard[] = [];
@@ -86,7 +77,7 @@ const MemoryMatch: React.FC = () => {
         setGameTime(0);
         setIsGameOver(false);
         setIsProcessing(false);
-    };
+    }, [getTranslation]);
 
     // Timer effect
     useEffect(() => {
@@ -101,7 +92,7 @@ const MemoryMatch: React.FC = () => {
     // Initialize on mount
     useEffect(() => {
         startGame();
-    }, []);
+    }, [startGame]);
 
     // Check for match when two cards are flipped
     useEffect(() => {
@@ -144,7 +135,7 @@ const MemoryMatch: React.FC = () => {
                 }, 1000);
             }
         }
-    }, [flippedCards]);
+    }, [flippedCards, cards]);
 
     const handleCardClick = (cardId: string) => {
         if (isProcessing) return;
