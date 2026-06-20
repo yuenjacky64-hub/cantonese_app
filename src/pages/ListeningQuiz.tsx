@@ -301,6 +301,10 @@ const ListeningQuiz: React.FC = () => {
                                     optionClass += ' disabled';
                                 }
 
+                                // Hide jyutping until an answer is selected so the user
+                                // has to actually listen — otherwise reading the romanization
+                                // lets them pass without engaging the audio.
+                                const revealJyutping = selectedAnswer !== null;
                                 return (
                                     <button
                                         key={idx}
@@ -308,7 +312,9 @@ const ListeningQuiz: React.FC = () => {
                                         onClick={() => handleAnswer(option.cantonese)}
                                         disabled={selectedAnswer !== null || !hasPlayed}
                                     >
-                                        <span className="option-cantonese">{option.cantonese}</span>
+                                        {revealJyutping && (
+                                            <span className="option-cantonese">{option.cantonese}</span>
+                                        )}
                                         <span className="option-english">{option.english}</span>
                                         {selectedAnswer !== null && option.cantonese === currentQuestion.word.cantonese && (
                                             <IonIcon icon={checkmarkCircle} className="result-icon correct" />

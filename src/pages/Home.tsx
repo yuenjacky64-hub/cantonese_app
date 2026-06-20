@@ -40,6 +40,9 @@ import './Home.css';
 // Define group order if not searching
 const groupOrder = ['groups.basics', 'groups.daily_life', 'groups.social', 'groups.grammar', 'groups.travel'];
 
+// Keep in sync with the `tips.tipN` keys in src/i18n/locales/*.json.
+const DAILY_TIP_COUNT = 8;
+
 // Icon map for groups
 const groupIcons: Record<string, string> = {
   'groups.basics': appsOutline,
@@ -113,8 +116,7 @@ const Home: React.FC = () => {
 
   // Effect to set daily tip
   React.useEffect(() => {
-    // There are 8 tips
-    const randomTipIndex = Math.floor(Math.random() * 8) + 1;
+    const randomTipIndex = Math.floor(Math.random() * DAILY_TIP_COUNT) + 1;
     setDailyTip(`tips.tip${randomTipIndex}`);
   }, []);
 

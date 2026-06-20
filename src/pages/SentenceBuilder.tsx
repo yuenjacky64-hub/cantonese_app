@@ -136,9 +136,10 @@ const SentenceBuilder: React.FC = () => {
 
         const currentData = gameData[questionIndex];
 
-        // Compare purely by letters/numbers to avoid punctuation issues
-        const userSentence = selectedWords.map(w => cleanWord(w.word)).join('');
-        const correctSentence = currentData.words.map(w => cleanWord(w)).join('');
+        // Compare cleaned tokens with a space separator so adjacent duplicate words
+        // can't be swapped (e.g. "hou2 hou2") without changing the joined string.
+        const userSentence = selectedWords.map(w => cleanWord(w.word)).join(' ');
+        const correctSentence = currentData.words.map(w => cleanWord(w)).join(' ');
 
         const correct = userSentence === correctSentence;
         setIsCorrect(correct);

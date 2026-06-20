@@ -14,6 +14,7 @@ import Flashcard from '../components/Flashcard';
 import CommonHeader from '../components/CommonHeader';
 import Footer from '../components/Footer';
 import { getDueCards, updateCardSRS } from '../utils/srs';
+import { getStreakInfo } from '../utils/streak';
 import { Flashcard as FlashcardType } from '../data/lessons';
 import './Lesson.css'; // Reuse lesson styles
 
@@ -30,6 +31,9 @@ const Review: React.FC = () => {
 
   // Current index in the dueCards array
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Number of correct answers this session, used for the final accuracy stat.
+  const [correctCount, setCorrectCount] = useState(0);
 
   // Flag to indicate if the review session is complete
   const [isFinished, setIsFinished] = useState(() => getDueCards().length === 0);
@@ -59,6 +63,7 @@ const Review: React.FC = () => {
     // For now, just load them as returned by getDueCards.
     setDueCards(cards);
     setCurrentIndex(0);
+    setCorrectCount(0);
     setIsFinished(cards.length === 0);
   };
 
@@ -72,6 +77,10 @@ const Review: React.FC = () => {
 
     // Trigger feedback animation
     setFeedbackClass(isCorrect ? 'success-pop' : 'shake');
+
+    if (isCorrect) {
+      setCorrectCount(prev => prev + 1);
+    }
 
     // Clear animation after it finishes
     setTimeout(() => {
@@ -100,6 +109,10 @@ const Review: React.FC = () => {
 
   // Render "All Done" screen if finished or no cards due
   if (isFinished || !currentCard) {
+    const reviewedCount = dueCards.length === 0 ? 0 : currentIndex + (feedbackClass ? 0 : 1);
+    const totalAnswered = isFinished ? dueCards.length : reviewedCount;
+    const accuracyPct = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
+    const currentStreak = getStreakInfo().streak;
     return (
       <IonPage>
         <CommonHeader title={t('review.title')} showBackButton={true} defaultHref="/home" />
@@ -116,11 +129,11 @@ const Review: React.FC = () => {
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '40px' }}>
                 <div style={{ background: 'white', padding: '24px', borderRadius: '20px', border: 'var(--pod-border)', boxShadow: 'var(--luminous-shadow)' }}>
                   <div style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '8px', letterSpacing: '0.1em' }}>{t('review.accuracy')}</div>
-                  <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--glow-indigo)' }}>100%</div>
+                  <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--glow-indigo)' }}>{accuracyPct}%</div>
                 </div>
                 <div style={{ background: 'white', padding: '24px', borderRadius: '20px', border: 'var(--pod-border)', boxShadow: 'var(--luminous-shadow)' }}>
                   <div style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '8px', letterSpacing: '0.1em' }}>{t('review.streak')}</div>
-                  <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--glow-rose)' }}>+5d</div>
+                  <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--glow-rose)' }}>{currentStreak}d</div>
                 </div>
               </div>
 

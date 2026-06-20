@@ -10,7 +10,7 @@ import {
 } from '@ionic/react';
 import { settingsOutline, chatbubblesOutline, timeOutline, informationCircleOutline } from 'ionicons/icons';
 import { useTranslation } from 'react-i18next';
-import { useHistory, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useTimer } from '../context/TimerContext';
 import './CommonHeader.css';
 
@@ -74,7 +74,6 @@ const LanguageButton = React.memo(({ lang, isActive, onClick }: { lang: typeof l
 const CommonHeader: React.FC<CommonHeaderProps> = ({ title, showBackButton = false, defaultHref = '/' }) => {
   const { t, i18n } = useTranslation();
   const { formattedTime } = useTimer();
-  const history = useHistory();
 
   // State for controlling modals
   const [showBuildInfo, setShowBuildInfo] = useState(false);

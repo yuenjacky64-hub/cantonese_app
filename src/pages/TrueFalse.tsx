@@ -48,14 +48,21 @@ const TrueFalse: React.FC = () => {
 
         const generatedQuestions = shuffled.map(card => {
             const isTrue = Math.random() > 0.5;
-            let displayedTranslation = '';
+            const correctTranslation = getTranslation(card);
+            let displayedTranslation = correctTranslation;
 
-            if (isTrue) {
-                displayedTranslation = getTranslation(card);
-            } else {
-                // Pick a random translation from another card
-                const wrongCard = getRandomElements(allCards, 1, c => c.id === card.id)[0];
-                displayedTranslation = getTranslation(wrongCard);
+            if (!isTrue) {
+                // Exclude any card whose translation equals the correct one — multiple cards
+                // share meanings (e.g. "Yes / Right"), so filtering by id alone could
+                // pick a "wrong" card whose translation matches and silently mark the user wrong.
+                const wrongCard = getRandomElements(
+                    allCards,
+                    1,
+                    c => c.id === card.id || getTranslation(c) === correctTranslation
+                )[0];
+                if (wrongCard) {
+                    displayedTranslation = getTranslation(wrongCard);
+                }
             }
 
             return {
