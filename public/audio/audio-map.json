@@ -1,0 +1,3726 @@
+{
+  "nei5 hou2 maa1?": {
+    "normal": "/audio/nei5_hou2_maa1.mp3",
+    "slow": "/audio/nei5_hou2_maa1_slow.mp3"
+  },
+  "nei5 ji4 gaa1 hou2 maa1?": {
+    "normal": "/audio/nei5_ji4_gaa1_hou2_maa1.mp3",
+    "slow": "/audio/nei5_ji4_gaa1_hou2_maa1_slow.mp3"
+  },
+  "gei2 hou2 / hou2 hou2": {
+    "normal": "/audio/gei2_hou2_hou2_hou2.mp3",
+    "slow": "/audio/gei2_hou2_hou2_hou2_slow.mp3"
+  },
+  "ngo5 gei2 hou2.": {
+    "normal": "/audio/ngo5_gei2_hou2.mp3",
+    "slow": "/audio/ngo5_gei2_hou2_slow.mp3"
+  },
+  "m4 goi1 / do1 ze6": {
+    "normal": "/audio/m4_goi1_do1_ze6.mp3",
+    "slow": "/audio/m4_goi1_do1_ze6_slow.mp3"
+  },
+  "do1 ze6 nei5 ge3 bong1 mong4.": {
+    "normal": "/audio/do1_ze6_nei5_ge3_bong1_mong4.mp3",
+    "slow": "/audio/do1_ze6_nei5_ge3_bong1_mong4_slow.mp3"
+  },
+  "m4 sai2 haak3 hei3": {
+    "normal": "/audio/m4_sai2_haak3_hei3.mp3",
+    "slow": "/audio/m4_sai2_haak3_hei3_slow.mp3"
+  },
+  "m4 sai2 haak3 hei3, pang4 jau5.": {
+    "normal": "/audio/m4_sai2_haak3_hei3_pang4_jau5.mp3",
+    "slow": "/audio/m4_sai2_haak3_hei3_pang4_jau5_slow.mp3"
+  },
+  "zou2 san4": {
+    "normal": "/audio/zou2_san4.mp3",
+    "slow": "/audio/zou2_san4_slow.mp3"
+  },
+  "daai6 gaa1 zou2 san4.": {
+    "normal": "/audio/daai6_gaa1_zou2_san4.mp3",
+    "slow": "/audio/daai6_gaa1_zou2_san4_slow.mp3"
+  },
+  "ng5 on1": {
+    "normal": "/audio/ng5_on1.mp3",
+    "slow": "/audio/ng5_on1_slow.mp3"
+  },
+  "zuk1 nei5 haa6 ng5 jyu6 faai3.": {
+    "normal": "/audio/zuk1_nei5_haa6_ng5_jyu6_faai3.mp3",
+    "slow": "/audio/zuk1_nei5_haa6_ng5_jyu6_faai3_slow.mp3"
+  },
+  "maan5 on1": {
+    "normal": "/audio/maan5_on1.mp3",
+    "slow": "/audio/maan5_on1_slow.mp3"
+  },
+  "maa4 maa4, maan5 on1.": {
+    "normal": "/audio/maa4_maa4_maan5_on1.mp3",
+    "slow": "/audio/maa4_maa4_maan5_on1_slow.mp3"
+  },
+  "ng5 on1 (zung1 ng5)": {
+    "normal": "/audio/ng5_on1_zung1_ng5.mp3",
+    "slow": "/audio/ng5_on1_zung1_ng5_slow.mp3"
+  },
+  "zuk1 nei5 dei6 zung1 ng5 jyu6 faai3.": {
+    "normal": "/audio/zuk1_nei5_dei6_zung1_ng5_jyu6_faai3.mp3",
+    "slow": "/audio/zuk1_nei5_dei6_zung1_ng5_jyu6_faai3_slow.mp3"
+  },
+  "mei5 hou2 ge3 jat1 tin1": {
+    "normal": "/audio/mei5_hou2_ge3_jat1_tin1.mp3",
+    "slow": "/audio/mei5_hou2_ge3_jat1_tin1_slow.mp3"
+  },
+  "zuk1 nei5 jau5 mei5 hou2 ge3 jat1 tin1.": {
+    "normal": "/audio/zuk1_nei5_jau5_mei5_hou2_ge3_jat1_tin1.mp3",
+    "slow": "/audio/zuk1_nei5_jau5_mei5_hou2_ge3_jat1_tin1_slow.mp3"
+  },
+  "zoi3 gin3 / baai1 baai1": {
+    "normal": "/audio/zoi3_gin3_baai1_baai1.mp3",
+    "slow": "/audio/zoi3_gin3_baai1_baai1_slow.mp3"
+  },
+  "baai1 baai1, haa6 ci3 gin3.": {
+    "normal": "/audio/baai1_baai1_haa6_ci3_gin3.mp3",
+    "slow": "/audio/baai1_baai1_haa6_ci3_gin3_slow.mp3"
+  },
+  "jau5 mou5 jan4 hai2 dou6 aa3?": {
+    "normal": "/audio/jau5_mou5_jan4_hai2_dou6_aa3.mp3",
+    "slow": "/audio/jau5_mou5_jan4_hai2_dou6_aa3_slow.mp3"
+  },
+  "jau5 mou5 jan4 hai2 dou6 aa3? go2 dou6 jau5 mou5 jan4 aa3?": {
+    "normal": "/audio/jau5_mou5_jan4_hai2_dou6_aa3_go2_dou6_jau5_mou5_jan4_aa3.mp3",
+    "slow": "/audio/jau5_mou5_jan4_hai2_dou6_aa3_go2_dou6_jau5_mou5_jan4_aa3_slow.mp3"
+  },
+  "ceng2 zeon3 / m4 goi1 jap6 lai4": {
+    "normal": "/audio/ceng2_zeon3_m4_goi1_jap6_lai4.mp3",
+    "slow": "/audio/ceng2_zeon3_m4_goi1_jap6_lai4_slow.mp3"
+  },
+  "m4 goi1 jap6 lai4 ngo5 dei6 uk1 kei2.": {
+    "normal": "/audio/m4_goi1_jap6_lai4_ngo5_dei6_uk1_kei2.mp3",
+    "slow": "/audio/m4_goi1_jap6_lai4_ngo5_dei6_uk1_kei2_slow.mp3"
+  },
+  "siu2 sam1 / bou2 zung6": {
+    "normal": "/audio/siu2_sam1_bou2_zung6.mp3",
+    "slow": "/audio/siu2_sam1_bou2_zung6_slow.mp3"
+  },
+  "lou6 soeng6 siu2 sam1.": {
+    "normal": "/audio/lou6_soeng6_siu2_sam1.mp3",
+    "slow": "/audio/lou6_soeng6_siu2_sam1_slow.mp3"
+  },
+  "fun1 jing4": {
+    "normal": "/audio/fun1_jing4.mp3",
+    "slow": "/audio/fun1_jing4_slow.mp3"
+  },
+  "fun1 jing4 lai4 dou3 hoeng1 gong2!": {
+    "normal": "/audio/fun1_jing4_lai4_dou3_hoeng1_gong2.mp3",
+    "slow": "/audio/fun1_jing4_lai4_dou3_hoeng1_gong2_slow.mp3"
+  },
+  "deoi3 m4 zyu6 / m4 hou2 ji3 si1": {
+    "normal": "/audio/deoi3_m4_zyu6_m4_hou2_ji3_si1.mp3",
+    "slow": "/audio/deoi3_m4_zyu6_m4_hou2_ji3_si1_slow.mp3"
+  },
+  "m4 hou2 ji3 si1, ngo5 ci4 dou3 zo2.": {
+    "normal": "/audio/m4_hou2_ji3_si1_ngo5_ci4_dou3_zo2.mp3",
+    "slow": "/audio/m4_hou2_ji3_si1_ngo5_ci4_dou3_zo2_slow.mp3"
+  },
+  "hai6 / m4 hai6": {
+    "normal": "/audio/hai6_m4_hai6.mp3",
+    "slow": "/audio/hai6_m4_hai6_slow.mp3"
+  },
+  "hai6 aa3, ngo5 wui5 heoi3. keoi5 m4 lai4.": {
+    "normal": "/audio/hai6_aa3_ngo5_wui5_heoi3_keoi5_m4_lai4.mp3",
+    "slow": "/audio/hai6_aa3_ngo5_wui5_heoi3_keoi5_m4_lai4_slow.mp3"
+  },
+  "hou2 aa3 / ho2 ji5": {
+    "normal": "/audio/hou2_aa3_ho2_ji5.mp3",
+    "slow": "/audio/hou2_aa3_ho2_ji5_slow.mp3"
+  },
+  "hou2 aa3, dang2 zan6 gin3.": {
+    "normal": "/audio/hou2_aa3_dang2_zan6_gin3.mp3",
+    "slow": "/audio/hou2_aa3_dang2_zan6_gin3_slow.mp3"
+  },
+  "dang2 jat1 zan6 / dang2 dang2": {
+    "normal": "/audio/dang2_jat1_zan6_dang2_dang2.mp3",
+    "slow": "/audio/dang2_jat1_zan6_dang2_dang2_slow.mp3"
+  },
+  "m4 goi1 dang2 jat1 zan6, ngo5 daa2 go3 din6 waa2.": {
+    "normal": "/audio/m4_goi1_dang2_jat1_zan6_ngo5_daa2_go3_din6_waa2.mp3",
+    "slow": "/audio/m4_goi1_dang2_jat1_zan6_ngo5_daa2_go3_din6_waa2_slow.mp3"
+  },
+  "gung1 hei2": {
+    "normal": "/audio/gung1_hei2.mp3",
+    "slow": "/audio/gung1_hei2_slow.mp3"
+  },
+  "zuk1 nei5 sang1 jat6 faai3 lok6!": {
+    "normal": "/audio/zuk1_nei5_sang1_jat6_faai3_lok6.mp3",
+    "slow": "/audio/zuk1_nei5_sang1_jat6_faai3_lok6_slow.mp3"
+  },
+  "hau6 wui6 jau5 kei4": {
+    "normal": "/audio/hau6_wui6_jau5_kei4.mp3",
+    "slow": "/audio/hau6_wui6_jau5_kei4_slow.mp3"
+  },
+  "baai1 baai1, hau6 wui6 jau5 kei4.": {
+    "normal": "/audio/baai1_baai1_hau6_wui6_jau5_kei4.mp3",
+    "slow": "/audio/baai1_baai1_hau6_wui6_jau5_kei4_slow.mp3"
+  },
+  "jat1": {
+    "normal": "/audio/jat1.mp3",
+    "slow": "/audio/jat1_slow.mp3"
+  },
+  "ngo5 zi2 seoi1 jiu3 jat1 go3.": {
+    "normal": "/audio/ngo5_zi2_seoi1_jiu3_jat1_go3.mp3",
+    "slow": "/audio/ngo5_zi2_seoi1_jiu3_jat1_go3_slow.mp3"
+  },
+  "ji6": {
+    "normal": "/audio/ji6.mp3",
+    "slow": "/audio/ji6_slow.mp3"
+  },
+  "keoi5 dei6 jau5 loeng5 go3 siu2 pang4 jau5.": {
+    "normal": "/audio/keoi5_dei6_jau5_loeng5_go3_siu2_pang4_jau5.mp3",
+    "slow": "/audio/keoi5_dei6_jau5_loeng5_go3_siu2_pang4_jau5_slow.mp3"
+  },
+  "saam1": {
+    "normal": "/audio/saam1.mp3",
+    "slow": "/audio/saam1_slow.mp3"
+  },
+  "ngo5 dei6 zou2 jau5 saam1 go3 jan4.": {
+    "normal": "/audio/ngo5_dei6_zou2_jau5_saam1_go3_jan4.mp3",
+    "slow": "/audio/ngo5_dei6_zou2_jau5_saam1_go3_jan4_slow.mp3"
+  },
+  "sei3": {
+    "normal": "/audio/sei3.mp3",
+    "slow": "/audio/sei3_slow.mp3"
+  },
+  "hei3 ce1 jau5 sei3 go3 leon4 zi2.": {
+    "normal": "/audio/hei3_ce1_jau5_sei3_go3_leon4_zi2.mp3",
+    "slow": "/audio/hei3_ce1_jau5_sei3_go3_leon4_zi2_slow.mp3"
+  },
+  "ng5": {
+    "normal": "/audio/ng5.mp3",
+    "slow": "/audio/ng5_slow.mp3"
+  },
+  "ji5 ging1 hai6 haa6 zau3 ng5 dim2 laa1.": {
+    "normal": "/audio/ji5_ging1_hai6_haa6_zau3_ng5_dim2_laa1.mp3",
+    "slow": "/audio/ji5_ging1_hai6_haa6_zau3_ng5_dim2_laa1_slow.mp3"
+  },
+  "luk6": {
+    "normal": "/audio/luk6.mp3",
+    "slow": "/audio/luk6_slow.mp3"
+  },
+  "ji5 ging1 luk6 go3 jyut6 liu5.": {
+    "normal": "/audio/ji5_ging1_luk6_go3_jyut6_liu5.mp3",
+    "slow": "/audio/ji5_ging1_luk6_go3_jyut6_liu5_slow.mp3"
+  },
+  "cat1": {
+    "normal": "/audio/cat1.mp3",
+    "slow": "/audio/cat1_slow.mp3"
+  },
+  "jat1 zau1 jau5 cat1 tin1.": {
+    "normal": "/audio/jat1_zau1_jau5_cat1_tin1.mp3",
+    "slow": "/audio/jat1_zau1_jau5_cat1_tin1_slow.mp3"
+  },
+  "baat3": {
+    "normal": "/audio/baat3.mp3",
+    "slow": "/audio/baat3_slow.mp3"
+  },
+  "ngo5 dei6 jau5 baat3 go3 hing1 dai6 zi2 mui2.": {
+    "normal": "/audio/ngo5_dei6_jau5_baat3_go3_hing1_dai6_zi2_mui2.mp3",
+    "slow": "/audio/ngo5_dei6_jau5_baat3_go3_hing1_dai6_zi2_mui2_slow.mp3"
+  },
+  "gau2": {
+    "normal": "/audio/gau2.mp3",
+    "slow": "/audio/gau2_slow.mp3"
+  },
+  "keoi5 gau2 seoi3.": {
+    "normal": "/audio/keoi5_gau2_seoi3.mp3",
+    "slow": "/audio/keoi5_gau2_seoi3_slow.mp3"
+  },
+  "sap6": {
+    "normal": "/audio/sap6.mp3",
+    "slow": "/audio/sap6_slow.mp3"
+  },
+  "ngo5 jau5 sap6 go3 sau2 zi2.": {
+    "normal": "/audio/ngo5_jau5_sap6_go3_sau2_zi2.mp3",
+    "slow": "/audio/ngo5_jau5_sap6_go3_sau2_zi2_slow.mp3"
+  },
+  "sap6 jat1": {
+    "normal": "/audio/sap6_jat1.mp3",
+    "slow": "/audio/sap6_jat1_slow.mp3"
+  },
+  "jau5 sap6 jat1 ming4 kau4 jyun4.": {
+    "normal": "/audio/jau5_sap6_jat1_ming4_kau4_jyun4.mp3",
+    "slow": "/audio/jau5_sap6_jat1_ming4_kau4_jyun4_slow.mp3"
+  },
+  "sap6 ji6": {
+    "normal": "/audio/sap6_ji6.mp3",
+    "slow": "/audio/sap6_ji6_slow.mp3"
+  },
+  "tok3 pun2 leoi5 jau5 sap6 ji6 go3 gai1 daan2.": {
+    "normal": "/audio/tok3_pun2_leoi5_jau5_sap6_ji6_go3_gai1_daan2.mp3",
+    "slow": "/audio/tok3_pun2_leoi5_jau5_sap6_ji6_go3_gai1_daan2_slow.mp3"
+  },
+  "sap6 saam1": {
+    "normal": "/audio/sap6_saam1.mp3",
+    "slow": "/audio/sap6_saam1_slow.mp3"
+  },
+  "sap6 saam1 hai6 keoi5 zeoi3 zung1 ji3 ge3 sou3 zi6.": {
+    "normal": "/audio/sap6_saam1_hai6_keoi5_zeoi3_zung1_ji3_ge3_sou3_zi6.mp3",
+    "slow": "/audio/sap6_saam1_hai6_keoi5_zeoi3_zung1_ji3_ge3_sou3_zi6_slow.mp3"
+  },
+  "sap6 sei3": {
+    "normal": "/audio/sap6_sei3.mp3",
+    "slow": "/audio/sap6_sei3_slow.mp3"
+  },
+  "ji5 ging1 gwo3 heoi3 sap6 sei3 tin1 liu5.": {
+    "normal": "/audio/ji5_ging1_gwo3_heoi3_sap6_sei3_tin1_liu5.mp3",
+    "slow": "/audio/ji5_ging1_gwo3_heoi3_sap6_sei3_tin1_liu5_slow.mp3"
+  },
+  "sap6 ng5": {
+    "normal": "/audio/sap6_ng5.mp3",
+    "slow": "/audio/sap6_ng5_slow.mp3"
+  },
+  "ngo5 dei6 baan1 jau5 sap6 ng5 go3 jan4.": {
+    "normal": "/audio/ngo5_dei6_baan1_jau5_sap6_ng5_go3_jan4.mp3",
+    "slow": "/audio/ngo5_dei6_baan1_jau5_sap6_ng5_go3_jan4_slow.mp3"
+  },
+  "sap6 luk6": {
+    "normal": "/audio/sap6_luk6.mp3",
+    "slow": "/audio/sap6_luk6_slow.mp3"
+  },
+  "keoi5 sap6 luk6 seoi3 laa1.": {
+    "normal": "/audio/keoi5_sap6_luk6_seoi3_laa1.mp3",
+    "slow": "/audio/keoi5_sap6_luk6_seoi3_laa1_slow.mp3"
+  },
+  "sap6 cat1": {
+    "normal": "/audio/sap6_cat1.mp3",
+    "slow": "/audio/sap6_cat1_slow.mp3"
+  },
+  "zoek3 zai2 ge3 sou3 loeng6 hai6 sap6 cat1 zek3.": {
+    "normal": "/audio/zoek3_zai2_ge3_sou3_loeng6_hai6_sap6_cat1_zek3.mp3",
+    "slow": "/audio/zoek3_zai2_ge3_sou3_loeng6_hai6_sap6_cat1_zek3_slow.mp3"
+  },
+  "sap6 baat3": {
+    "normal": "/audio/sap6_baat3.mp3",
+    "slow": "/audio/sap6_baat3_slow.mp3"
+  },
+  "jau5 sap6 baat3 wai6 haak3 jan4.": {
+    "normal": "/audio/jau5_sap6_baat3_wai6_haak3_jan4.mp3",
+    "slow": "/audio/jau5_sap6_baat3_wai6_haak3_jan4_slow.mp3"
+  },
+  "sap6 gau2": {
+    "normal": "/audio/sap6_gau2.mp3",
+    "slow": "/audio/sap6_gau2_slow.mp3"
+  },
+  "zi2 jiu3 sap6 gau2 man1.": {
+    "normal": "/audio/zi2_jiu3_sap6_gau2_man1.mp3",
+    "slow": "/audio/zi2_jiu3_sap6_gau2_man1_slow.mp3"
+  },
+  "ji6 sap6": {
+    "normal": "/audio/ji6_sap6.mp3",
+    "slow": "/audio/ji6_sap6_slow.mp3"
+  },
+  "jau5 ji6 sap6 ming4 hok6 saang1.": {
+    "normal": "/audio/jau5_ji6_sap6_ming4_hok6_saang1.mp3",
+    "slow": "/audio/jau5_ji6_sap6_ming4_hok6_saang1_slow.mp3"
+  },
+  "saam1 sap6": {
+    "normal": "/audio/saam1_sap6.mp3",
+    "slow": "/audio/saam1_sap6_slow.mp3"
+  },
+  "gau2 jyut6 jau5 saam1 sap6 tin1.": {
+    "normal": "/audio/gau2_jyut6_jau5_saam1_sap6_tin1.mp3",
+    "slow": "/audio/gau2_jyut6_jau5_saam1_sap6_tin1_slow.mp3"
+  },
+  "sei3 sap6": {
+    "normal": "/audio/sei3_sap6.mp3",
+    "slow": "/audio/sei3_sap6_slow.mp3"
+  },
+  "keoi5 ji5 ging1 sei3 sap6 seoi3 laa1.": {
+    "normal": "/audio/keoi5_ji5_ging1_sei3_sap6_seoi3_laa1.mp3",
+    "slow": "/audio/keoi5_ji5_ging1_sei3_sap6_seoi3_laa1_slow.mp3"
+  },
+  "ng5 sap6": {
+    "normal": "/audio/ng5_sap6.mp3",
+    "slow": "/audio/ng5_sap6_slow.mp3"
+  },
+  "ng5 sap6 hai6 jat1 baak3 ge3 jat1 bun3.": {
+    "normal": "/audio/ng5_sap6_hai6_jat1_baak3_ge3_jat1_bun3.mp3",
+    "slow": "/audio/ng5_sap6_hai6_jat1_baak3_ge3_jat1_bun3_slow.mp3"
+  },
+  "jat1 baak3": {
+    "normal": "/audio/jat1_baak3.mp3",
+    "slow": "/audio/jat1_baak3_slow.mp3"
+  },
+  "baak3 fan6 zi1 baak3.": {
+    "normal": "/audio/baak3_fan6_zi1_baak3.mp3",
+    "slow": "/audio/baak3_fan6_zi1_baak3_slow.mp3"
+  },
+  "jat1 cin1": {
+    "normal": "/audio/jat1_cin1.mp3",
+    "slow": "/audio/jat1_cin1_slow.mp3"
+  },
+  "fai3 jung6 hai6 jat1 cin1.": {
+    "normal": "/audio/fai3_jung6_hai6_jat1_cin1.mp3",
+    "slow": "/audio/fai3_jung6_hai6_jat1_cin1_slow.mp3"
+  },
+  "sing1 kei4 jat1": {
+    "normal": "/audio/sing1_kei4_jat1.mp3",
+    "slow": "/audio/sing1_kei4_jat1_slow.mp3"
+  },
+  "ngo5 dei6 sing1 kei4 jat1 gin3.": {
+    "normal": "/audio/ngo5_dei6_sing1_kei4_jat1_gin3.mp3",
+    "slow": "/audio/ngo5_dei6_sing1_kei4_jat1_gin3_slow.mp3"
+  },
+  "sing1 kei4 ji6": {
+    "normal": "/audio/sing1_kei4_ji6.mp3",
+    "slow": "/audio/sing1_kei4_ji6_slow.mp3"
+  },
+  "gam1 jat6 hai6 sing1 kei4 ji6.": {
+    "normal": "/audio/gam1_jat6_hai6_sing1_kei4_ji6.mp3",
+    "slow": "/audio/gam1_jat6_hai6_sing1_kei4_ji6_slow.mp3"
+  },
+  "sing1 kei4 saam1": {
+    "normal": "/audio/sing1_kei4_saam1.mp3",
+    "slow": "/audio/sing1_kei4_saam1_slow.mp3"
+  },
+  "sing1 kei4 saam1 m4 sai2 soeng5 tong4.": {
+    "normal": "/audio/sing1_kei4_saam1_m4_sai2_soeng5_tong4.mp3",
+    "slow": "/audio/sing1_kei4_saam1_m4_sai2_soeng5_tong4_slow.mp3"
+  },
+  "sing1 kei4 sei3": {
+    "normal": "/audio/sing1_kei4_sei3.mp3",
+    "slow": "/audio/sing1_kei4_sei3_slow.mp3"
+  },
+  "keoi5 sing1 kei4 sei3 lei4 hoi1.": {
+    "normal": "/audio/keoi5_sing1_kei4_sei3_lei4_hoi1.mp3",
+    "slow": "/audio/keoi5_sing1_kei4_sei3_lei4_hoi1_slow.mp3"
+  },
+  "sing1 kei4 ng5": {
+    "normal": "/audio/sing1_kei4_ng5.mp3",
+    "slow": "/audio/sing1_kei4_ng5_slow.mp3"
+  },
+  "sing1 kei4 ng5 han2 faai3 lok6.": {
+    "normal": "/audio/sing1_kei4_ng5_han2_faai3_lok6.mp3",
+    "slow": "/audio/sing1_kei4_ng5_han2_faai3_lok6_slow.mp3"
+  },
+  "sing1 kei4 luk6": {
+    "normal": "/audio/sing1_kei4_luk6.mp3",
+    "slow": "/audio/sing1_kei4_luk6_slow.mp3"
+  },
+  "ngo5 sing1 kei4 luk6 jiu3 jau1 sik1.": {
+    "normal": "/audio/ngo5_sing1_kei4_luk6_jiu3_jau1_sik1.mp3",
+    "slow": "/audio/ngo5_sing1_kei4_luk6_jiu3_jau1_sik1_slow.mp3"
+  },
+  "sing1 kei4 jat6 / sing1 kei4": {
+    "normal": "/audio/sing1_kei4_jat6_sing1_kei4.mp3",
+    "slow": "/audio/sing1_kei4_jat6_sing1_kei4_slow.mp3"
+  },
+  "mui5 go3 sing1 kei4 jat6 heoi3 gaau3 tong2.": {
+    "normal": "/audio/mui5_go3_sing1_kei4_jat6_heoi3_gaau3_tong2.mp3",
+    "slow": "/audio/mui5_go3_sing1_kei4_jat6_heoi3_gaau3_tong2_slow.mp3"
+  },
+  "jat1 jyut6": {
+    "normal": "/audio/jat1_jyut6.mp3",
+    "slow": "/audio/jat1_jyut6_slow.mp3"
+  },
+  "jat1 jyut6 hai6 dai6 jat1 go3 jyut6.": {
+    "normal": "/audio/jat1_jyut6_hai6_dai6_jat1_go3_jyut6.mp3",
+    "slow": "/audio/jat1_jyut6_hai6_dai6_jat1_go3_jyut6_slow.mp3"
+  },
+  "ji6 jyut6": {
+    "normal": "/audio/ji6_jyut6.mp3",
+    "slow": "/audio/ji6_jyut6_slow.mp3"
+  },
+  "ji6 jyut6 han2 dyun2.": {
+    "normal": "/audio/ji6_jyut6_han2_dyun2.mp3",
+    "slow": "/audio/ji6_jyut6_han2_dyun2_slow.mp3"
+  },
+  "saam1 jyut6": {
+    "normal": "/audio/saam1_jyut6.mp3",
+    "slow": "/audio/saam1_jyut6_slow.mp3"
+  },
+  "saam1 jyut6 han2 jit6.": {
+    "normal": "/audio/saam1_jyut6_han2_jit6.mp3",
+    "slow": "/audio/saam1_jyut6_han2_jit6_slow.mp3"
+  },
+  "sei3 jyut6": {
+    "normal": "/audio/sei3_jyut6.mp3",
+    "slow": "/audio/sei3_jyut6_slow.mp3"
+  },
+  "keoi5 ge3 sang1 jat6 hai2 sei3 jyut6.": {
+    "normal": "/audio/keoi5_ge3_sang1_jat6_hai2_sei3_jyut6.mp3",
+    "slow": "/audio/keoi5_ge3_sang1_jat6_hai2_sei3_jyut6_slow.mp3"
+  },
+  "ng5 jyut6": {
+    "normal": "/audio/ng5_jyut6.mp3",
+    "slow": "/audio/ng5_jyut6_slow.mp3"
+  },
+  "ng5 jyut6 jau5 han2 do1 zit3 jat6.": {
+    "normal": "/audio/ng5_jyut6_jau5_han2_do1_zit3_jat6.mp3",
+    "slow": "/audio/ng5_jyut6_jau5_han2_do1_zit3_jat6_slow.mp3"
+  },
+  "luk6 jyut6": {
+    "normal": "/audio/luk6_jyut6.mp3",
+    "slow": "/audio/luk6_jyut6_slow.mp3"
+  },
+  "luk6 jyut6 hoi1 hok6.": {
+    "normal": "/audio/luk6_jyut6_hoi1_hok6.mp3",
+    "slow": "/audio/luk6_jyut6_hoi1_hok6_slow.mp3"
+  },
+  "cat1 jyut6": {
+    "normal": "/audio/cat1_jyut6.mp3",
+    "slow": "/audio/cat1_jyut6_slow.mp3"
+  },
+  "cat1 jyut6 do1 jyu5.": {
+    "normal": "/audio/cat1_jyut6_do1_jyu5.mp3",
+    "slow": "/audio/cat1_jyut6_do1_jyu5_slow.mp3"
+  },
+  "baat3 jyut6": {
+    "normal": "/audio/baat3_jyut6.mp3",
+    "slow": "/audio/baat3_jyut6_slow.mp3"
+  },
+  "baat3 jyut6 hai6 jyu5 man4 jyut6.": {
+    "normal": "/audio/baat3_jyut6_hai6_jyu5_man4_jyut6.mp3",
+    "slow": "/audio/baat3_jyut6_hai6_jyu5_man4_jyut6_slow.mp3"
+  },
+  "gau2 jyut6": {
+    "normal": "/audio/gau2_jyut6.mp3",
+    "slow": "/audio/gau2_jyut6_slow.mp3"
+  },
+  "sing3 daan3 zit3 cung4 gau2 jyut6 hoi1 ci2.": {
+    "normal": "/audio/sing3_daan3_zit3_cung4_gau2_jyut6_hoi1_ci2.mp3",
+    "slow": "/audio/sing3_daan3_zit3_cung4_gau2_jyut6_hoi1_ci2_slow.mp3"
+  },
+  "sap6 jyut6": {
+    "normal": "/audio/sap6_jyut6.mp3",
+    "slow": "/audio/sap6_jyut6_slow.mp3"
+  },
+  "sap6 jyut6 hoi1 ci2 bin3 laang5 liu5.": {
+    "normal": "/audio/sap6_jyut6_hoi1_ci2_bin3_laang5_liu5.mp3",
+    "slow": "/audio/sap6_jyut6_hoi1_ci2_bin3_laang5_liu5_slow.mp3"
+  },
+  "sap6 jat1 jyut6": {
+    "normal": "/audio/sap6_jat1_jyut6.mp3",
+    "slow": "/audio/sap6_jat1_jyut6_slow.mp3"
+  },
+  "maan6 sing3 zit3 zoi6 sap6 jat1 jyut6.": {
+    "normal": "/audio/maan6_sing3_zit3_zoi6_sap6_jat1_jyut6.mp3",
+    "slow": "/audio/maan6_sing3_zit3_zoi6_sap6_jat1_jyut6_slow.mp3"
+  },
+  "sap6 ji6 jyut6": {
+    "normal": "/audio/sap6_ji6_jyut6.mp3",
+    "slow": "/audio/sap6_ji6_jyut6_slow.mp3"
+  },
+  "sap6 ji6 jyut6 ge3 mei4 fung1 hou2 dung3.": {
+    "normal": "/audio/sap6_ji6_jyut6_ge3_mei4_fung1_hou2_dung3.mp3",
+    "slow": "/audio/sap6_ji6_jyut6_ge3_mei4_fung1_hou2_dung3_slow.mp3"
+  },
+  "tin1 / jat6 / taai3 joeng4": {
+    "normal": "/audio/tin1_jat6_taai3_joeng4.mp3",
+    "slow": "/audio/tin1_jat6_taai3_joeng4_slow.mp3"
+  },
+  "jyut6 / jyut6 loeng6": {
+    "normal": "/audio/jyut6_jyut6_loeng6.mp3",
+    "slow": "/audio/jyut6_jyut6_loeng6_slow.mp3"
+  },
+  "jat1 go3 jyut6 gwo3 heoi3 liu5.": {
+    "normal": "/audio/jat1_go3_jyut6_gwo3_heoi3_liu5.mp3",
+    "slow": "/audio/jat1_go3_jyut6_gwo3_heoi3_liu5_slow.mp3"
+  },
+  "nin4": {
+    "normal": "/audio/nin4.mp3",
+    "slow": "/audio/nin4_slow.mp3"
+  },
+  "san1 nin4 san1 hei1 mong6.": {
+    "normal": "/audio/san1_nin4_san1_hei1_mong6.mp3",
+    "slow": "/audio/san1_nin4_san1_hei1_mong6_slow.mp3"
+  },
+  "hai6": {
+    "normal": "/audio/hai6.mp3",
+    "slow": "/audio/hai6_slow.mp3"
+  },
+  "hai6 aa3, ngo5 ming4 baak6 laa1.": {
+    "normal": "/audio/hai6_aa3_ngo5_ming4_baak6_laa1.mp3",
+    "slow": "/audio/hai6_aa3_ngo5_ming4_baak6_laa1_slow.mp3"
+  },
+  "m4": {
+    "normal": "/audio/m4.mp3",
+    "slow": "/audio/m4_slow.mp3"
+  },
+  "ngo5 m4 zi1 dou3.": {
+    "normal": "/audio/ngo5_m4_zi1_dou3.mp3",
+    "slow": "/audio/ngo5_m4_zi1_dou3_slow.mp3"
+  },
+  "nei1 go3 hai6 mat1 je5? / nei1 go3 hai6 me1?": {
+    "normal": "/audio/nei1_go3_hai6_mat1_je5_nei1_go3_hai6_me1.mp3",
+    "slow": "/audio/nei1_go3_hai6_mat1_je5_nei1_go3_hai6_me1_slow.mp3"
+  },
+  "nei1 go3 hai6 me1? hou2 m4 hou2 sik6 aa3?": {
+    "normal": "/audio/nei1_go3_hai6_me1_hou2_m4_hou2_sik6_aa3.mp3",
+    "slow": "/audio/nei1_go3_hai6_me1_hou2_m4_hou2_sik6_aa3_slow.mp3"
+  },
+  "nei1 go3 gei2 do1 cin2?": {
+    "normal": "/audio/nei1_go3_gei2_do1_cin2.mp3",
+    "slow": "/audio/nei1_go3_gei2_do1_cin2_slow.mp3"
+  },
+  "nei1 go3 gei2 do1 cin2? peng4 m4 peng4 aa3?": {
+    "normal": "/audio/nei1_go3_gei2_do1_cin2_peng4_m4_peng4_aa3.mp3",
+    "slow": "/audio/nei1_go3_gei2_do1_cin2_peng4_m4_peng4_aa3_slow.mp3"
+  },
+  "hou2 sik6": {
+    "normal": "/audio/hou2_sik6.mp3",
+    "slow": "/audio/hou2_sik6_slow.mp3"
+  },
+  "maa1 maa1 zyu2 ge3 sung3 hou2 hou2 sik6.": {
+    "normal": "/audio/maa1_maa1_zyu2_ge3_sung3_hou2_hou2_sik6.mp3",
+    "slow": "/audio/maa1_maa1_zyu2_ge3_sung3_hou2_hou2_sik6_slow.mp3"
+  },
+  "m4 goi1": {
+    "normal": "/audio/m4_goi1.mp3",
+    "slow": "/audio/m4_goi1_slow.mp3"
+  },
+  "m4 goi1, ceoi3 haa3 m4 goi1.": {
+    "normal": "/audio/m4_goi1_ceoi3_haa3_m4_goi1.mp3",
+    "slow": "/audio/m4_goi1_ceoi3_haa3_m4_goi1_slow.mp3"
+  },
+  "deoi3 m4 zyu6": {
+    "normal": "/audio/deoi3_m4_zyu6.mp3",
+    "slow": "/audio/deoi3_m4_zyu6_slow.mp3"
+  },
+  "deoi3 m4 zyu6, ngo5 ci4 dou3 zo2.": {
+    "normal": "/audio/deoi3_m4_zyu6_ngo5_ci4_dou3_zo2.mp3",
+    "slow": "/audio/deoi3_m4_zyu6_ngo5_ci4_dou3_zo2_slow.mp3"
+  },
+  "mou5 man6 tai4": {
+    "normal": "/audio/mou5_man6_tai4.mp3",
+    "slow": "/audio/mou5_man6_tai4_slow.mp3"
+  },
+  "mou5 man6 tai4, baau1 hai2 ngo5 san1 soeng6.": {
+    "normal": "/audio/mou5_man6_tai4_baau1_hai2_ngo5_san1_soeng6.mp3",
+    "slow": "/audio/mou5_man6_tai4_baau1_hai2_ngo5_san1_soeng6_slow.mp3"
+  },
+  "hou2 aa3": {
+    "normal": "/audio/hou2_aa3.mp3",
+    "slow": "/audio/hou2_aa3_slow.mp3"
+  },
+  "hou2 aa3, ting1 jat1 gin3.": {
+    "normal": "/audio/hou2_aa3_ting1_jat1_gin3.mp3",
+    "slow": "/audio/hou2_aa3_ting1_jat1_gin3_slow.mp3"
+  },
+  "hai6 ne1": {
+    "normal": "/audio/hai6_ne1.mp3",
+    "slow": "/audio/hai6_ne1_slow.mp3"
+  },
+  "hai6 ne1, nei5 sik6 zo2 faan6 mei6?": {
+    "normal": "/audio/hai6_ne1_nei5_sik6_zo2_faan6_mei6.mp3",
+    "slow": "/audio/hai6_ne1_nei5_sik6_zo2_faan6_mei6_slow.mp3"
+  },
+  "fu6 can1": {
+    "normal": "/audio/fu6_can1.mp3",
+    "slow": "/audio/fu6_can1_slow.mp3"
+  },
+  "fu6 can1 zoi6 gung1 zok3.": {
+    "normal": "/audio/fu6_can1_zoi6_gung1_zok3.mp3",
+    "slow": "/audio/fu6_can1_zoi6_gung1_zok3_slow.mp3"
+  },
+  "mou5 can1": {
+    "normal": "/audio/mou5_can1.mp3",
+    "slow": "/audio/mou5_can1_slow.mp3"
+  },
+  "mou5 can1 zing3 zoi6 zou6 faan6.": {
+    "normal": "/audio/mou5_can1_zing3_zoi6_zou6_faan6.mp3",
+    "slow": "/audio/mou5_can1_zing3_zoi6_zou6_faan6_slow.mp3"
+  },
+  "hing1 dai6 zi2 mui2": {
+    "normal": "/audio/hing1_dai6_zi2_mui2.mp3",
+    "slow": "/audio/hing1_dai6_zi2_mui2_slow.mp3"
+  },
+  "nei5 jau5 gei2 go3 hing1 dai6 zi2 mui2?": {
+    "normal": "/audio/nei5_jau5_gei2_go3_hing1_dai6_zi2_mui2.mp3",
+    "slow": "/audio/nei5_jau5_gei2_go3_hing1_dai6_zi2_mui2_slow.mp3"
+  },
+  "go4 go1": {
+    "normal": "/audio/go4_go1.mp3",
+    "slow": "/audio/go4_go1_slow.mp3"
+  },
+  "go4 go1 ziu3 gu3 ngo5.": {
+    "normal": "/audio/go4_go1_ziu3_gu3_ngo5.mp3",
+    "slow": "/audio/go4_go1_ziu3_gu3_ngo5_slow.mp3"
+  },
+  "gaa1 ze1": {
+    "normal": "/audio/gaa1_ze1.mp3",
+    "slow": "/audio/gaa1_ze1_slow.mp3"
+  },
+  "ngo5 go3 gaa1 ze1 hou2 sin6 loeng4.": {
+    "normal": "/audio/ngo5_go3_gaa1_ze1_hou2_sin6_loeng4.mp3",
+    "slow": "/audio/ngo5_go3_gaa1_ze1_hou2_sin6_loeng4_slow.mp3"
+  },
+  "je4 je2": {
+    "normal": "/audio/je4_je2.mp3",
+    "slow": "/audio/je4_je2_slow.mp3"
+  },
+  "ngo5 hou2 oi3 ngo5 je4 je2.": {
+    "normal": "/audio/ngo5_hou2_oi3_ngo5_je4_je2.mp3",
+    "slow": "/audio/ngo5_hou2_oi3_ngo5_je4_je2_slow.mp3"
+  },
+  "maa4 maa4": {
+    "normal": "/audio/maa4_maa4.mp3",
+    "slow": "/audio/maa4_maa4_slow.mp3"
+  },
+  "maa4 maa4 zyu2 gan2 hou2 je5 sik6.": {
+    "normal": "/audio/maa4_maa4_zyu2_gan2_hou2_je5_sik6.mp3",
+    "slow": "/audio/maa4_maa4_zyu2_gan2_hou2_je5_sik6_slow.mp3"
+  },
+  "a3 suk1 / kau5 fu2": {
+    "normal": "/audio/a3_suk1_kau5_fu2.mp3",
+    "slow": "/audio/a3_suk1_kau5_fu2_slow.mp3"
+  },
+  "ngo5 a3 suk1 hai2 ngoi6 gwok3.": {
+    "normal": "/audio/ngo5_a3_suk1_hai2_ngoi6_gwok3.mp3",
+    "slow": "/audio/ngo5_a3_suk1_hai2_ngoi6_gwok3_slow.mp3"
+  },
+  "aa3 ji1 / gu1 gu1 / sam2 sam2": {
+    "normal": "/audio/aa3_ji1_gu1_gu1_sam2_sam2.mp3",
+    "slow": "/audio/aa3_ji1_gu1_gu1_sam2_sam2_slow.mp3"
+  },
+  "aa3 ji1 kap1 liu5 ngo5 jat1 fan6 lai5 mat6.": {
+    "normal": "/audio/aa3_ji1_kap1_liu5_ngo5_jat1_fan6_lai5_mat6.mp3",
+    "slow": "/audio/aa3_ji1_kap1_liu5_ngo5_jat1_fan6_lai5_mat6_slow.mp3"
+  },
+  "tong4 biu2 hing1 dai6 zi2 mui2": {
+    "normal": "/audio/tong4_biu2_hing1_dai6_zi2_mui2.mp3",
+    "slow": "/audio/tong4_biu2_hing1_dai6_zi2_mui2_slow.mp3"
+  },
+  "ngo5 tung4 ngo5 tong4 biu2 hing1 dai6 zi2 mui2 waan2 gan2.": {
+    "normal": "/audio/ngo5_tung4_ngo5_tong4_biu2_hing1_dai6_zi2_mui2_waan2_gan2.mp3",
+    "slow": "/audio/ngo5_tung4_ngo5_tong4_biu2_hing1_dai6_zi2_mui2_waan2_gan2_slow.mp3"
+  },
+  "siu2 pang4 jau5 / zai2 neoi5": {
+    "normal": "/audio/siu2_pang4_jau5_zai2_neoi5.mp3",
+    "slow": "/audio/siu2_pang4_jau5_zai2_neoi5_slow.mp3"
+  },
+  "keoi5 dei6 ge3 siu2 pang4 jau5 hou2 gwaai1.": {
+    "normal": "/audio/keoi5_dei6_ge3_siu2_pang4_jau5_hou2_gwaai1.mp3",
+    "slow": "/audio/keoi5_dei6_ge3_siu2_pang4_jau5_hou2_gwaai1_slow.mp3"
+  },
+  "lou5 gung1 / lou5 po4": {
+    "normal": "/audio/lou5_gung1_lou5_po4.mp3",
+    "slow": "/audio/lou5_gung1_lou5_po4_slow.mp3"
+  },
+  "keoi5 hou2 oi3 keoi5 lou5 gung1.": {
+    "normal": "/audio/keoi5_hou2_oi3_keoi5_lou5_gung1.mp3",
+    "slow": "/audio/keoi5_hou2_oi3_keoi5_lou5_gung1_slow.mp3"
+  },
+  "hung4 sik1": {
+    "normal": "/audio/hung4_sik1.mp3",
+    "slow": "/audio/hung4_sik1_slow.mp3"
+  },
+  "hung4 sik1 hai6 ngo5 zeoi3 zung1 ji3 ge3 ngaan4 sik1.": {
+    "normal": "/audio/hung4_sik1_hai6_ngo5_zeoi3_zung1_ji3_ge3_ngaan4_sik1.mp3",
+    "slow": "/audio/hung4_sik1_hai6_ngo5_zeoi3_zung1_ji3_ge3_ngaan4_sik1_slow.mp3"
+  },
+  "laam4 sik1": {
+    "normal": "/audio/laam4_sik1.mp3",
+    "slow": "/audio/laam4_sik1_slow.mp3"
+  },
+  "tin1 hung1 hai6 laam4 sik1 ge3.": {
+    "normal": "/audio/tin1_hung1_hai6_laam4_sik1_ge3.mp3",
+    "slow": "/audio/tin1_hung1_hai6_laam4_sik1_ge3_slow.mp3"
+  },
+  "wong4 sik1": {
+    "normal": "/audio/wong4_sik1.mp3",
+    "slow": "/audio/wong4_sik1_slow.mp3"
+  },
+  "taai3 joeng4 hai6 wong4 sik1 ge3.": {
+    "normal": "/audio/taai3_joeng4_hai6_wong4_sik1_ge3.mp3",
+    "slow": "/audio/taai3_joeng4_hai6_wong4_sik1_ge3_slow.mp3"
+  },
+  "baak6 sik1": {
+    "normal": "/audio/baak6_sik1.mp3",
+    "slow": "/audio/baak6_sik1_slow.mp3"
+  },
+  "keoi5 ge3 saam1 hai6 baak6 sik1 ge3.": {
+    "normal": "/audio/keoi5_ge3_saam1_hai6_baak6_sik1_ge3.mp3",
+    "slow": "/audio/keoi5_ge3_saam1_hai6_baak6_sik1_ge3_slow.mp3"
+  },
+  "hak1 sik1": {
+    "normal": "/audio/hak1_sik1.mp3",
+    "slow": "/audio/hak1_sik1_slow.mp3"
+  },
+  "go2 zek3 maau1 hai6 hak1 sik1 ge3.": {
+    "normal": "/audio/go2_zek3_maau1_hai6_hak1_sik1_ge3.mp3",
+    "slow": "/audio/go2_zek3_maau1_hai6_hak1_sik1_ge3_slow.mp3"
+  },
+  "luk6 sik1": {
+    "normal": "/audio/luk6_sik1.mp3",
+    "slow": "/audio/luk6_sik1_slow.mp3"
+  },
+  "syu6 jip6 hai6 luk6 sik1 ge3.": {
+    "normal": "/audio/syu6_jip6_hai6_luk6_sik1_ge3.mp3",
+    "slow": "/audio/syu6_jip6_hai6_luk6_sik1_ge3_slow.mp3"
+  },
+  "caang2 sik1": {
+    "normal": "/audio/caang2_sik1.mp3",
+    "slow": "/audio/caang2_sik1_slow.mp3"
+  },
+  "caang2 hou2 hou2 sik6.": {
+    "normal": "/audio/caang2_hou2_hou2_sik6.mp3",
+    "slow": "/audio/caang2_hou2_hou2_sik6_slow.mp3"
+  },
+  "zi2 sik1": {
+    "normal": "/audio/zi2_sik1.mp3",
+    "slow": "/audio/zi2_sik1_slow.mp3"
+  },
+  "nei1 do2 faa1 hai6 zi2 sik1 ge3.": {
+    "normal": "/audio/nei1_do2_faa1_hai6_zi2_sik1_ge3.mp3",
+    "slow": "/audio/nei1_do2_faa1_hai6_zi2_sik1_ge3_slow.mp3"
+  },
+  "fe1 sik1": {
+    "normal": "/audio/fe1_sik1.mp3",
+    "slow": "/audio/fe1_sik1_slow.mp3"
+  },
+  "keoi5 ge3 pei4 fu1 hai6 fe1 sik1 ge3.": {
+    "normal": "/audio/keoi5_ge3_pei4_fu1_hai6_fe1_sik1_ge3.mp3",
+    "slow": "/audio/keoi5_ge3_pei4_fu1_hai6_fe1_sik1_ge3_slow.mp3"
+  },
+  "fan2 hung4 sik1": {
+    "normal": "/audio/fan2_hung4_sik1.mp3",
+    "slow": "/audio/fan2_hung4_sik1_slow.mp3"
+  },
+  "keoi5 zung1 ji3 fan2 hung4 sik1.": {
+    "normal": "/audio/keoi5_zung1_ji3_fan2_hung4_sik1.mp3",
+    "slow": "/audio/keoi5_zung1_ji3_fan2_hung4_sik1_slow.mp3"
+  },
+  "fui1 sik1": {
+    "normal": "/audio/fui1_sik1.mp3",
+    "slow": "/audio/fui1_sik1_slow.mp3"
+  },
+  "di1 wan4 hai6 fui1 sik1 ge3.": {
+    "normal": "/audio/di1_wan4_hai6_fui1_sik1_ge3.mp3",
+    "slow": "/audio/di1_wan4_hai6_fui1_sik1_ge3_slow.mp3"
+  },
+  "mai5 faan6": {
+    "normal": "/audio/mai5_faan6.mp3",
+    "slow": "/audio/mai5_faan6_slow.mp3"
+  },
+  "ngo5 soeng2 jiu3 mai5 faan6.": {
+    "normal": "/audio/ngo5_soeng2_jiu3_mai5_faan6.mp3",
+    "slow": "/audio/ngo5_soeng2_jiu3_mai5_faan6_slow.mp3"
+  },
+  "seoi2": {
+    "normal": "/audio/seoi2.mp3",
+    "slow": "/audio/seoi2_slow.mp3"
+  },
+  "jam2 seoi2.": {
+    "normal": "/audio/jam2_seoi2.mp3",
+    "slow": "/audio/jam2_seoi2_slow.mp3"
+  },
+  "min6 baau1": {
+    "normal": "/audio/min6_baau1.mp3",
+    "slow": "/audio/min6_baau1_slow.mp3"
+  },
+  "ngo5 maai5 liu5 min6 baau1.": {
+    "normal": "/audio/ngo5_maai5_liu5_min6_baau1.mp3",
+    "slow": "/audio/ngo5_maai5_liu5_min6_baau1_slow.mp3"
+  },
+  "gai1 juk6": {
+    "normal": "/audio/gai1_juk6.mp3",
+    "slow": "/audio/gai1_juk6_slow.mp3"
+  },
+  "nei1 dip6 sung3 hai6 zaa3 gai1.": {
+    "normal": "/audio/nei1_dip6_sung3_hai6_zaa3_gai1.mp3",
+    "slow": "/audio/nei1_dip6_sung3_hai6_zaa3_gai1_slow.mp3"
+  },
+  "jyu4": {
+    "normal": "/audio/jyu4.mp3",
+    "slow": "/audio/jyu4_slow.mp3"
+  },
+  "nei1 tiu4 jyu4 hou2 san1 sin1.": {
+    "normal": "/audio/nei1_tiu4_jyu4_hou2_san1_sin1.mp3",
+    "slow": "/audio/nei1_tiu4_jyu4_hou2_san1_sin1_slow.mp3"
+  },
+  "zyu1 juk6": {
+    "normal": "/audio/zyu1_juk6.mp3",
+    "slow": "/audio/zyu1_juk6_slow.mp3"
+  },
+  "ngo5 heoi3 maai5 zyu1 juk6.": {
+    "normal": "/audio/ngo5_heoi3_maai5_zyu1_juk6.mp3",
+    "slow": "/audio/ngo5_heoi3_maai5_zyu1_juk6_slow.mp3"
+  },
+  "ngau4 juk6": {
+    "normal": "/audio/ngau4_juk6.mp3",
+    "slow": "/audio/ngau4_juk6_slow.mp3"
+  },
+  "ngo5 m4 sik6 ngau4 juk6 ge3.": {
+    "normal": "/audio/ngo5_m4_sik6_ngau4_juk6_ge3.mp3",
+    "slow": "/audio/ngo5_m4_sik6_ngau4_juk6_ge3_slow.mp3"
+  },
+  "gai1 daan2": {
+    "normal": "/audio/gai1_daan2.mp3",
+    "slow": "/audio/gai1_daan2_slow.mp3"
+  },
+  "zaau2 caan1 ngo5 sik6 gai1 daan2.": {
+    "normal": "/audio/zaau2_caan1_ngo5_sik6_gai1_daan2.mp3",
+    "slow": "/audio/zaau2_caan1_ngo5_sik6_gai1_daan2_slow.mp3"
+  },
+  "coi3": {
+    "normal": "/audio/coi3.mp3",
+    "slow": "/audio/coi3_slow.mp3"
+  },
+  "sik6 do1 di1 coi3 hou2 di1.": {
+    "normal": "/audio/sik6_do1_di1_coi3_hou2_di1.mp3",
+    "slow": "/audio/sik6_do1_di1_coi3_hou2_di1_slow.mp3"
+  },
+  "saang1 gwo2": {
+    "normal": "/audio/saang1_gwo2.mp3",
+    "slow": "/audio/saang1_gwo2_slow.mp3"
+  },
+  "nei5 zui3 oi3 sik6 me1 saang1 gwo2?": {
+    "normal": "/audio/nei5_zui3_oi3_sik6_me1_saang1_gwo2.mp3",
+    "slow": "/audio/nei5_zui3_oi3_sik6_me1_saang1_gwo2_slow.mp3"
+  },
+  "ngo5": {
+    "normal": "/audio/ngo5.mp3",
+    "slow": "/audio/ngo5_slow.mp3"
+  },
+  "ngo5 hai6 hoeng1 gong2 jan4.": {
+    "normal": "/audio/ngo5_hai6_hoeng1_gong2_jan4.mp3",
+    "slow": "/audio/ngo5_hai6_hoeng1_gong2_jan4_slow.mp3"
+  },
+  "nei5": {
+    "normal": "/audio/nei5.mp3",
+    "slow": "/audio/nei5_slow.mp3"
+  },
+  "hai6 mai6 nei5 aa3?": {
+    "normal": "/audio/hai6_mai6_nei5_aa3.mp3",
+    "slow": "/audio/hai6_mai6_nei5_aa3_slow.mp3"
+  },
+  "keoi5": {
+    "normal": "/audio/keoi5.mp3",
+    "slow": "/audio/keoi5_slow.mp3"
+  },
+  "keoi5 hai6 ngo5 ge3 pang4 jau5.": {
+    "normal": "/audio/keoi5_hai6_ngo5_ge3_pang4_jau5.mp3",
+    "slow": "/audio/keoi5_hai6_ngo5_ge3_pang4_jau5_slow.mp3"
+  },
+  "ngo5 ge3": {
+    "normal": "/audio/ngo5_ge3.mp3",
+    "slow": "/audio/ngo5_ge3_slow.mp3"
+  },
+  "ngo5 zung1 ji3 nei1 go3.": {
+    "normal": "/audio/ngo5_zung1_ji3_nei1_go3.mp3",
+    "slow": "/audio/ngo5_zung1_ji3_nei1_go3_slow.mp3"
+  },
+  "nei5 ge3": {
+    "normal": "/audio/nei5_ge3.mp3",
+    "slow": "/audio/nei5_ge3_slow.mp3"
+  },
+  "nei5 giu3 me1 meng2 aa3?": {
+    "normal": "/audio/nei5_giu3_me1_meng2_aa3.mp3",
+    "slow": "/audio/nei5_giu3_me1_meng2_aa3_slow.mp3"
+  },
+  "keoi5 ge3": {
+    "normal": "/audio/keoi5_ge3.mp3",
+    "slow": "/audio/keoi5_ge3_slow.mp3"
+  },
+  "nei1 go3 hai6 keoi5 sik6 ge3.": {
+    "normal": "/audio/nei1_go3_hai6_keoi5_sik6_ge3.mp3",
+    "slow": "/audio/nei1_go3_hai6_keoi5_sik6_ge3_slow.mp3"
+  },
+  "deoi3 ngo5 loi4 syut3 / kap1 ngo5": {
+    "normal": "/audio/deoi3_ngo5_loi4_syut3_kap1_ngo5.mp3",
+    "slow": "/audio/deoi3_ngo5_loi4_syut3_kap1_ngo5_slow.mp3"
+  },
+  "baa2 taa1 kap1 ngo5.": {
+    "normal": "/audio/baa2_taa1_kap1_ngo5.mp3",
+    "slow": "/audio/baa2_taa1_kap1_ngo5_slow.mp3"
+  },
+  "deoi3 nei5 loi4 syut3 / kap1 nei5": {
+    "normal": "/audio/deoi3_nei5_loi4_syut3_kap1_nei5.mp3",
+    "slow": "/audio/deoi3_nei5_loi4_syut3_kap1_nei5_slow.mp3"
+  },
+  "nei1 go3 hai6 bei2 nei5 ge3.": {
+    "normal": "/audio/nei1_go3_hai6_bei2_nei5_ge3.mp3",
+    "slow": "/audio/nei1_go3_hai6_bei2_nei5_ge3_slow.mp3"
+  },
+  "soeng2 jiu3 / hei2 fun1": {
+    "normal": "/audio/soeng2_jiu3_hei2_fun1.mp3",
+    "slow": "/audio/soeng2_jiu3_hei2_fun1_slow.mp3"
+  },
+  "ngo5 soeng2 jiu3 gaa3 fe1.": {
+    "normal": "/audio/ngo5_soeng2_jiu3_gaa3_fe1.mp3",
+    "slow": "/audio/ngo5_soeng2_jiu3_gaa3_fe1_slow.mp3"
+  },
+  "m4 soeng2 jiu3 / m4 zung1 ji3": {
+    "normal": "/audio/m4_soeng2_jiu3_m4_zung1_ji3.mp3",
+    "slow": "/audio/m4_soeng2_jiu3_m4_zung1_ji3_slow.mp3"
+  },
+  "ngo5 m4 soeng2 jiu3 nei1 go3.": {
+    "normal": "/audio/ngo5_m4_soeng2_jiu3_nei1_go3.mp3",
+    "slow": "/audio/ngo5_m4_soeng2_jiu3_nei1_go3_slow.mp3"
+  },
+  "seoi1 jiu3": {
+    "normal": "/audio/seoi1_jiu3.mp3",
+    "slow": "/audio/seoi1_jiu3_slow.mp3"
+  },
+  "ngo5 seoi1 jiu3 bong1 zo6.": {
+    "normal": "/audio/ngo5_seoi1_jiu3_bong1_zo6.mp3",
+    "slow": "/audio/ngo5_seoi1_jiu3_bong1_zo6_slow.mp3"
+  },
+  "ho2 ji5": {
+    "normal": "/audio/ho2_ji5.mp3",
+    "slow": "/audio/ho2_ji5_slow.mp3"
+  },
+  "dak1 m4 dak1 aa3?": {
+    "normal": "/audio/dak1_m4_dak1_aa3.mp3",
+    "slow": "/audio/dak1_m4_dak1_aa3_slow.mp3"
+  },
+  "mat1 je5 / me1": {
+    "normal": "/audio/mat1_je5_me1.mp3",
+    "slow": "/audio/mat1_je5_me1_slow.mp3"
+  },
+  "nei5 soeng2 jiu3 me1 aa3?": {
+    "normal": "/audio/nei5_soeng2_jiu3_me1_aa3.mp3",
+    "slow": "/audio/nei5_soeng2_jiu3_me1_aa3_slow.mp3"
+  },
+  "bin1 go3": {
+    "normal": "/audio/bin1_go3.mp3",
+    "slow": "/audio/bin1_go3_slow.mp3"
+  },
+  "keoi5 hai6 bin1 go3?": {
+    "normal": "/audio/keoi5_hai6_bin1_go3.mp3",
+    "slow": "/audio/keoi5_hai6_bin1_go3_slow.mp3"
+  },
+  "naa5 leoi5": {
+    "normal": "/audio/naa5_leoi5.mp3",
+    "slow": "/audio/naa5_leoi5_slow.mp3"
+  },
+  "nei5 jiu3 heoi3 naa5 leoi5?": {
+    "normal": "/audio/nei5_jiu3_heoi3_naa5_leoi5.mp3",
+    "slow": "/audio/nei5_jiu3_heoi3_naa5_leoi5_slow.mp3"
+  },
+  "gei2 si4": {
+    "normal": "/audio/gei2_si4.mp3",
+    "slow": "/audio/gei2_si4_slow.mp3"
+  },
+  "nei5 gei2 si4 sang1 jat6 aa3?": {
+    "normal": "/audio/nei5_gei2_si4_sang1_jat6_aa3.mp3",
+    "slow": "/audio/nei5_gei2_si4_sang1_jat6_aa3_slow.mp3"
+  },
+  "dim2 joeng6": {
+    "normal": "/audio/dim2_joeng6.mp3",
+    "slow": "/audio/dim2_joeng6_slow.mp3"
+  },
+  "dim2 joeng6 heoi3 go2 dou6 aa3?": {
+    "normal": "/audio/dim2_joeng6_heoi3_go2_dou6_aa3.mp3",
+    "slow": "/audio/dim2_joeng6_heoi3_go2_dou6_aa3_slow.mp3"
+  },
+  "dim2 gaai2": {
+    "normal": "/audio/dim2_gaai2.mp3",
+    "slow": "/audio/dim2_gaai2_slow.mp3"
+  },
+  "nei5 dim2 gaai2 m4 hoi1 sam1 aa3?": {
+    "normal": "/audio/nei5_dim2_gaai2_m4_hoi1_sam1_aa3.mp3",
+    "slow": "/audio/nei5_dim2_gaai2_m4_hoi1_sam1_aa3_slow.mp3"
+  },
+  "... zoi6 naa5 leoi5?": {
+    "normal": "/audio/_zoi6_naa5_leoi5.mp3",
+    "slow": "/audio/_zoi6_naa5_leoi5_slow.mp3"
+  },
+  "joek6 si4 zoi6 naa5 leoi5?": {
+    "normal": "/audio/joek6_si4_zoi6_naa5_leoi5.mp3",
+    "slow": "/audio/joek6_si4_zoi6_naa5_leoi5_slow.mp3"
+  },
+  "daan6 si6": {
+    "normal": "/audio/daan6_si6.mp3",
+    "slow": "/audio/daan6_si6_slow.mp3"
+  },
+  "ngo5 soeng2, daan6 hai6 ngo5 mou5 cin2.": {
+    "normal": "/audio/ngo5_soeng2_daan6_hai6_ngo5_mou5_cin2.mp3",
+    "slow": "/audio/ngo5_soeng2_daan6_hai6_ngo5_mou5_cin2_slow.mp3"
+  },
+  "jan1 wai6": {
+    "normal": "/audio/jan1_wai6.mp3",
+    "slow": "/audio/jan1_wai6_slow.mp3"
+  },
+  "ngo5 sik6 zo2, jan1 wai6 ngo5 tou5 ngo6 zo2.": {
+    "normal": "/audio/ngo5_sik6_zo2_jan1_wai6_ngo5_tou5_ngo6_zo2.mp3",
+    "slow": "/audio/ngo5_sik6_zo2_jan1_wai6_ngo5_tou5_ngo6_zo2_slow.mp3"
+  },
+  "jau4 jyu1": {
+    "normal": "/audio/jau4_jyu1.mp3",
+    "slow": "/audio/jau4_jyu1_slow.mp3"
+  },
+  "jan1 wai6 nei5, ngo5 han2 faai3 lok6.": {
+    "normal": "/audio/jan1_wai6_nei5_ngo5_han2_faai3_lok6.mp3",
+    "slow": "/audio/jan1_wai6_nei5_ngo5_han2_faai3_lok6_slow.mp3"
+  },
+  "jyu4 gwo2": {
+    "normal": "/audio/jyu4_gwo2.mp3",
+    "slow": "/audio/jyu4_gwo2_slow.mp3"
+  },
+  "jyu4 gwo2 nei5 jiu3 zau2, ngo5 wui5 gan1 nei5 jat1 hei2.": {
+    "normal": "/audio/jyu4_gwo2_nei5_jiu3_zau2_ngo5_wui5_gan1_nei5_jat1_hei2.mp3",
+    "slow": "/audio/jyu4_gwo2_nei5_jiu3_zau2_ngo5_wui5_gan1_nei5_jat1_hei2_slow.mp3"
+  },
+  "so2 ji5": {
+    "normal": "/audio/so2_ji5.mp3",
+    "slow": "/audio/so2_ji5_slow.mp3"
+  },
+  "lok6 jyu5 laa1, so2 ji5 ngo5 mou5 ceot1 mun4.": {
+    "normal": "/audio/lok6_jyu5_laa1_so2_ji5_ngo5_mou5_ceot1_mun4.mp3",
+    "slow": "/audio/lok6_jyu5_laa1_so2_ji5_ngo5_mou5_ceot1_mun4_slow.mp3"
+  },
+  "jyun4 loi4": {
+    "normal": "/audio/jyun4_loi4.mp3",
+    "slow": "/audio/jyun4_loi4_slow.mp3"
+  },
+  "jyun4 loi4 hai6 nei5!": {
+    "normal": "/audio/jyun4_loi4_hai6_nei5.mp3",
+    "slow": "/audio/jyun4_loi4_hai6_nei5_slow.mp3"
+  },
+  "nei1 go3": {
+    "normal": "/audio/nei1_go3.mp3",
+    "slow": "/audio/nei1_go3_slow.mp3"
+  },
+  "nei1 gaan1 hai6 ngo5 ge3 uk1.": {
+    "normal": "/audio/nei1_gaan1_hai6_ngo5_ge3_uk1.mp3",
+    "slow": "/audio/nei1_gaan1_hai6_ngo5_ge3_uk1_slow.mp3"
+  },
+  "go2 go3": {
+    "normal": "/audio/go2_go3.mp3",
+    "slow": "/audio/go2_go3_slow.mp3"
+  },
+  "go2 bun2 hai6 nei5 ge3 syu1 maa3?": {
+    "normal": "/audio/go2_bun2_hai6_nei5_ge3_syu1_maa3.mp3",
+    "slow": "/audio/go2_bun2_hai6_nei5_ge3_syu1_maa3_slow.mp3"
+  },
+  "go2 go3 (jyun5)": {
+    "normal": "/audio/go2_go3_jyun5.mp3",
+    "slow": "/audio/go2_go3_jyun5_slow.mp3"
+  },
+  "go2 dou6 hai6 saan1.": {
+    "normal": "/audio/go2_dou6_hai6_saan1.mp3",
+    "slow": "/audio/go2_dou6_hai6_saan1_slow.mp3"
+  },
+  "nei1 dou6": {
+    "normal": "/audio/nei1_dou6.mp3",
+    "slow": "/audio/nei1_dou6_slow.mp3"
+  },
+  "ngo5 hai2 nei1 dou6 zyu6.": {
+    "normal": "/audio/ngo5_hai2_nei1_dou6_zyu6.mp3",
+    "slow": "/audio/ngo5_hai2_nei1_dou6_zyu6_slow.mp3"
+  },
+  "go2 dou6": {
+    "normal": "/audio/go2_dou6.mp3",
+    "slow": "/audio/go2_dou6_slow.mp3"
+  },
+  "baai2 hai2 go2 dou6 laa1.": {
+    "normal": "/audio/baai2_hai2_go2_dou6_laa1.mp3",
+    "slow": "/audio/baai2_hai2_go2_dou6_laa1_slow.mp3"
+  },
+  "go2 dou6 (jyun5)": {
+    "normal": "/audio/go2_dou6_jyun5.mp3",
+    "slow": "/audio/go2_dou6_jyun5_slow.mp3"
+  },
+  "ngo5 dei6 heoi3 go2 dou6 laa1.": {
+    "normal": "/audio/ngo5_dei6_heoi3_go2_dou6_laa1.mp3",
+    "slow": "/audio/ngo5_dei6_heoi3_go2_dou6_laa1_slow.mp3"
+  },
+  "jau5": {
+    "normal": "/audio/jau5.mp3",
+    "slow": "/audio/jau5_slow.mp3"
+  },
+  "jau5 mou5 seoi2 aa3?": {
+    "normal": "/audio/jau5_mou5_seoi2_aa3.mp3",
+    "slow": "/audio/jau5_mou5_seoi2_aa3_slow.mp3"
+  },
+  "mou5": {
+    "normal": "/audio/mou5.mp3",
+    "slow": "/audio/mou5_slow.mp3"
+  },
+  "mou5 seoi2.": {
+    "normal": "/audio/mou5_seoi2.mp3",
+    "slow": "/audio/mou5_seoi2_slow.mp3"
+  },
+  "ngo5 jau5": {
+    "normal": "/audio/ngo5_jau5.mp3",
+    "slow": "/audio/ngo5_jau5_slow.mp3"
+  },
+  "ngo5 jau5 cin2.": {
+    "normal": "/audio/ngo5_jau5_cin2.mp3",
+    "slow": "/audio/ngo5_jau5_cin2_slow.mp3"
+  },
+  "ngo5 mou5": {
+    "normal": "/audio/ngo5_mou5.mp3",
+    "slow": "/audio/ngo5_mou5_slow.mp3"
+  },
+  "ngo5 mou5 si4 gaan3.": {
+    "normal": "/audio/ngo5_mou5_si4_gaan3.mp3",
+    "slow": "/audio/ngo5_mou5_si4_gaan3_slow.mp3"
+  },
+  "m4 hou2 sik6.": {
+    "normal": "/audio/m4_hou2_sik6.mp3",
+    "slow": "/audio/m4_hou2_sik6_slow.mp3"
+  },
+  "mou5 / m4 hai2 dou6": {
+    "normal": "/audio/mou5_m4_hai2_dou6.mp3",
+    "slow": "/audio/mou5_m4_hai2_dou6_slow.mp3"
+  },
+  "maa5 hak1 m4 hai2 nei1 dou6.": {
+    "normal": "/audio/maa5_hak1_m4_hai2_nei1_dou6.mp3",
+    "slow": "/audio/maa5_hak1_m4_hai2_nei1_dou6_slow.mp3"
+  },
+  "m4 hou2 / bat1 jiu3": {
+    "normal": "/audio/m4_hou2_bat1_jiu3.mp3",
+    "slow": "/audio/m4_hou2_bat1_jiu3_slow.mp3"
+  },
+  "m4 hou2 cou4.": {
+    "normal": "/audio/m4_hou2_cou4.mp3",
+    "slow": "/audio/m4_hou2_cou4_slow.mp3"
+  },
+  "ji5 ging1": {
+    "normal": "/audio/ji5_ging1.mp3",
+    "slow": "/audio/ji5_ging1_slow.mp3"
+  },
+  "ji5 ging1 jyun4 sing4 liu5.": {
+    "normal": "/audio/ji5_ging1_jyun4_sing4_liu5.mp3",
+    "slow": "/audio/ji5_ging1_jyun4_sing4_liu5_slow.mp3"
+  },
+  "waan4 / zoi3": {
+    "normal": "/audio/waan4_zoi3.mp3",
+    "slow": "/audio/waan4_zoi3_slow.mp3"
+  },
+  "zoi3 loi4 jat1 go3.": {
+    "normal": "/audio/zoi3_loi4_jat1_go3.mp3",
+    "slow": "/audio/zoi3_loi4_jat1_go3_slow.mp3"
+  },
+  "zi2 hai6 / zi2 jau5": {
+    "normal": "/audio/zi2_hai6_zi2_jau5.mp3",
+    "slow": "/audio/zi2_hai6_zi2_jau5_slow.mp3"
+  },
+  "dak1 ngo5 jat1 go3.": {
+    "normal": "/audio/dak1_ngo5_jat1_go3.mp3",
+    "slow": "/audio/dak1_ngo5_jat1_go3_slow.mp3"
+  },
+  "jaa5": {
+    "normal": "/audio/jaa5.mp3",
+    "slow": "/audio/jaa5_slow.mp3"
+  },
+  "ngo5 dou1 hai6.": {
+    "normal": "/audio/ngo5_dou1_hai6.mp3",
+    "slow": "/audio/ngo5_dou1_hai6_slow.mp3"
+  },
+  "ne1 / ceng2": {
+    "normal": "/audio/ne1_ceng2.mp3",
+    "slow": "/audio/ne1_ceng2_slow.mp3"
+  },
+  "wun6 nei5 liu5 / nei5 ne1?": {
+    "normal": "/audio/wun6_nei5_liu5_nei5_ne1.mp3",
+    "slow": "/audio/wun6_nei5_liu5_nei5_ne1_slow.mp3"
+  },
+  "nei5 (ging3 jyu5)": {
+    "normal": "/audio/nei5_ging3_jyu5.mp3",
+    "slow": "/audio/nei5_ging3_jyu5_slow.mp3"
+  },
+  "ze6 ze6 nei5.": {
+    "normal": "/audio/ze6_ze6_nei5.mp3",
+    "slow": "/audio/ze6_ze6_nei5_slow.mp3"
+  },
+  "hai6 (lai5 maau6)": {
+    "normal": "/audio/hai6_lai5_maau6.mp3",
+    "slow": "/audio/hai6_lai5_maau6_slow.mp3"
+  },
+  "hai6 aa3, maa1 maa1.": {
+    "normal": "/audio/hai6_aa3_maa1_maa1.mp3",
+    "slow": "/audio/hai6_aa3_maa1_maa1_slow.mp3"
+  },
+  "m4 hai6 (lai5 maau6)": {
+    "normal": "/audio/m4_hai6_lai5_maau6.mp3",
+    "slow": "/audio/m4_hai6_lai5_maau6_slow.mp3"
+  },
+  "ngo5 mei6 sik6 aa3.": {
+    "normal": "/audio/ngo5_mei6_sik6_aa3.mp3",
+    "slow": "/audio/ngo5_mei6_sik6_aa3_slow.mp3"
+  },
+  "lin4 zip3 ci4 (mou5 jam1 hau6)": {
+    "normal": "/audio/lin4_zip3_ci4_mou5_jam1_hau6.mp3",
+    "slow": "/audio/lin4_zip3_ci4_mou5_jam1_hau6_slow.mp3"
+  },
+  "san1 nin4.": {
+    "normal": "/audio/san1_nin4.mp3",
+    "slow": "/audio/san1_nin4_slow.mp3"
+  },
+  "lin4 zip3 ci4 (n hau6)": {
+    "normal": "/audio/lin4_zip3_ci4_n_hau6.mp3",
+    "slow": "/audio/lin4_zip3_ci4_n_hau6_slow.mp3"
+  },
+  "daai6 jyu5.": {
+    "normal": "/audio/daai6_jyu5.mp3",
+    "slow": "/audio/daai6_jyu5_slow.mp3"
+  },
+  "ge3": {
+    "normal": "/audio/ge3.mp3",
+    "slow": "/audio/ge3_slow.mp3"
+  },
+  "hou2 sik6 ge3 je5 sik6.": {
+    "normal": "/audio/hou2_sik6_ge3_je5_sik6.mp3",
+    "slow": "/audio/hou2_sik6_ge3_je5_sik6_slow.mp3"
+  },
+  "zoi6": {
+    "normal": "/audio/zoi6.mp3",
+    "slow": "/audio/zoi6_slow.mp3"
+  },
+  "syu1 zoi6 coek3 zi2 soeng6.": {
+    "normal": "/audio/syu1_zoi6_coek3_zi2_soeng6.mp3",
+    "slow": "/audio/syu1_zoi6_coek3_zi2_soeng6_slow.mp3"
+  },
+  "zoi6 naa5 leoi5?": {
+    "normal": "/audio/zoi6_naa5_leoi5.mp3",
+    "slow": "/audio/zoi6_naa5_leoi5_slow.mp3"
+  },
+  "hai2 ngo5 nei1 dou6": {
+    "normal": "/audio/hai2_ngo5_nei1_dou6.mp3",
+    "slow": "/audio/hai2_ngo5_nei1_dou6_slow.mp3"
+  },
+  "cin2 hai2 ngo5 nei1 dou6.": {
+    "normal": "/audio/cin2_hai2_ngo5_nei1_dou6.mp3",
+    "slow": "/audio/cin2_hai2_ngo5_nei1_dou6_slow.mp3"
+  },
+  "zoi6 ngoi6 min6": {
+    "normal": "/audio/zoi6_ngoi6_min6.mp3",
+    "slow": "/audio/zoi6_ngoi6_min6_slow.mp3"
+  },
+  "baa4 baa1 zoi6 ngoi6 min6.": {
+    "normal": "/audio/baa4_baa1_zoi6_ngoi6_min6.mp3",
+    "slow": "/audio/baa4_baa1_zoi6_ngoi6_min6_slow.mp3"
+  },
+  "zoi6 leoi5 min6": {
+    "normal": "/audio/zoi6_leoi5_min6.mp3",
+    "slow": "/audio/zoi6_leoi5_min6_slow.mp3"
+  },
+  "zoi6 fong4 zi2 leoi5.": {
+    "normal": "/audio/zoi6_fong4_zi2_leoi5.mp3",
+    "slow": "/audio/zoi6_fong4_zi2_leoi5_slow.mp3"
+  },
+  "jat1 (si4 gaan3 / gam1 cin4)": {
+    "normal": "/audio/jat1_si4_gaan3_gam1_cin4.mp3",
+    "slow": "/audio/jat1_si4_gaan3_gam1_cin4_slow.mp3"
+  },
+  "jat1 dim2 liu5.": {
+    "normal": "/audio/jat1_dim2_liu5.mp3",
+    "slow": "/audio/jat1_dim2_liu5_slow.mp3"
+  },
+  "ji6 (si4 gaan3 / gam1 cin4)": {
+    "normal": "/audio/ji6_si4_gaan3_gam1_cin4.mp3",
+    "slow": "/audio/ji6_si4_gaan3_gam1_cin4_slow.mp3"
+  },
+  "zi2 jiu3 loeng5 man1.": {
+    "normal": "/audio/zi2_jiu3_loeng5_man1.mp3",
+    "slow": "/audio/zi2_jiu3_loeng5_man1_slow.mp3"
+  },
+  "saam1 (si4 gaan3 / gam1 cin4)": {
+    "normal": "/audio/saam1_si4_gaan3_gam1_cin4.mp3",
+    "slow": "/audio/saam1_si4_gaan3_gam1_cin4_slow.mp3"
+  },
+  "haa6 ng5 saam1 dim2.": {
+    "normal": "/audio/haa6_ng5_saam1_dim2.mp3",
+    "slow": "/audio/haa6_ng5_saam1_dim2_slow.mp3"
+  },
+  "sap6 ji6 dim2": {
+    "normal": "/audio/sap6_ji6_dim2.mp3",
+    "slow": "/audio/sap6_ji6_dim2_slow.mp3"
+  },
+  "ngo5 dei6 sap6 ji6 dim2 sik6 faan6 laa1.": {
+    "normal": "/audio/ngo5_dei6_sap6_ji6_dim2_sik6_faan6_laa1.mp3",
+    "slow": "/audio/ngo5_dei6_sap6_ji6_dim2_sik6_faan6_laa1_slow.mp3"
+  },
+  "nei1 dou6 hai6 ji6 sap6 man1.": {
+    "normal": "/audio/nei1_dou6_hai6_ji6_sap6_man1.mp3",
+    "slow": "/audio/nei1_dou6_hai6_ji6_sap6_man1_slow.mp3"
+  },
+  "keoi5 ji5 ging1 ng5 sap6 seoi3 laa1.": {
+    "normal": "/audio/keoi5_ji5_ging1_ng5_sap6_seoi3_laa1.mp3",
+    "slow": "/audio/keoi5_ji5_ging1_ng5_sap6_seoi3_laa1_slow.mp3"
+  },
+  "nei5 hou2 / nei5 dim2 aa3": {
+    "normal": "/audio/nei5_hou2_nei5_dim2_aa3.mp3",
+    "slow": "/audio/nei5_hou2_nei5_dim2_aa3_slow.mp3"
+  },
+  "nei5 dim2 aa3, pang4 jau5?": {
+    "normal": "/audio/nei5_dim2_aa3_pang4_jau5.mp3",
+    "slow": "/audio/nei5_dim2_aa3_pang4_jau5_slow.mp3"
+  },
+  "ngo5 gei2 hou2 / mou5 si6": {
+    "normal": "/audio/ngo5_gei2_hou2_mou5_si6.mp3",
+    "slow": "/audio/ngo5_gei2_hou2_mou5_si6_slow.mp3"
+  },
+  "bou2 zung6 / zoi3 gin3": {
+    "normal": "/audio/bou2_zung6_zoi3_gin3.mp3",
+    "slow": "/audio/bou2_zung6_zoi3_gin3_slow.mp3"
+  },
+  "ceng2 bou2 zung6.": {
+    "normal": "/audio/ceng2_bou2_zung6.mp3",
+    "slow": "/audio/ceng2_bou2_zung6_slow.mp3"
+  },
+  "hou2 aa3 / gai3 zuk6 / baai1 baai1": {
+    "normal": "/audio/hou2_aa3_gai3_zuk6_baai1_baai1.mp3",
+    "slow": "/audio/hou2_aa3_gai3_zuk6_baai1_baai1_slow.mp3"
+  },
+  "hou2 aa3, ngo5 zau2 laa1.": {
+    "normal": "/audio/hou2_aa3_ngo5_zau2_laa1.mp3",
+    "slow": "/audio/hou2_aa3_ngo5_zau2_laa1_slow.mp3"
+  },
+  "pou5 hip3": {
+    "normal": "/audio/pou5_hip3.mp3",
+    "slow": "/audio/pou5_hip3_slow.mp3"
+  },
+  "pou5 hip3 daa2 jiu2 liu5.": {
+    "normal": "/audio/pou5_hip3_daa2_jiu2_liu5.mp3",
+    "slow": "/audio/pou5_hip3_daa2_jiu2_liu5_slow.mp3"
+  },
+  "ze5 si6 ce1 fai3": {
+    "normal": "/audio/ze5_si6_ce1_fai3.mp3",
+    "slow": "/audio/ze5_si6_ce1_fai3_slow.mp3"
+  },
+  "nei1 dou6 hai6 gam1 ziu1 ge3 ce1 fai3.": {
+    "normal": "/audio/nei1_dou6_hai6_gam1_ziu1_ge3_ce1_fai3.mp3",
+    "slow": "/audio/nei1_dou6_hai6_gam1_ziu1_ge3_ce1_fai3_slow.mp3"
+  },
+  "ting4 ce1": {
+    "normal": "/audio/ting4_ce1.mp3",
+    "slow": "/audio/ting4_ce1_slow.mp3"
+  },
+  "ceng2 zoi6 lou6 bin1 ting4.": {
+    "normal": "/audio/ceng2_zoi6_lou6_bin1_ting4.mp3",
+    "slow": "/audio/ceng2_zoi6_lou6_bin1_ting4_slow.mp3"
+  },
+  "zau6 zoi6 pong4 bin1": {
+    "normal": "/audio/zau6_zoi6_pong4_bin1.mp3",
+    "slow": "/audio/zau6_zoi6_pong4_bin1_slow.mp3"
+  },
+  "ngo5 zau6 zoi6 pong4 bin1 haa6 ce1.": {
+    "normal": "/audio/ngo5_zau6_zoi6_pong4_bin1_haa6_ce1.mp3",
+    "slow": "/audio/ngo5_zau6_zoi6_pong4_bin1_haa6_ce1_slow.mp3"
+  },
+  "zaau2 ling4": {
+    "normal": "/audio/zaau2_ling4.mp3",
+    "slow": "/audio/zaau2_ling4_slow.mp3"
+  },
+  "ceng2 dai6 jat1 haa5 zaau2 ling4.": {
+    "normal": "/audio/ceng2_dai6_jat1_haa5_zaau2_ling4.mp3",
+    "slow": "/audio/ceng2_dai6_jat1_haa5_zaau2_ling4_slow.mp3"
+  },
+  "zo2": {
+    "normal": "/audio/zo2.mp3",
+    "slow": "/audio/zo2_slow.mp3"
+  },
+  "zoi6 lou6 hau2 zo2 zyun2.": {
+    "normal": "/audio/zoi6_lou6_hau2_zo2_zyun2.mp3",
+    "slow": "/audio/zoi6_lou6_hau2_zo2_zyun2_slow.mp3"
+  },
+  "jau6": {
+    "normal": "/audio/jau6.mp3",
+    "slow": "/audio/jau6_slow.mp3"
+  },
+  "jin4 hau6 jau6 zyun2.": {
+    "normal": "/audio/jin4_hau6_jau6_zyun2.mp3",
+    "slow": "/audio/jin4_hau6_jau6_zyun2_slow.mp3"
+  },
+  "zik6 zau2": {
+    "normal": "/audio/zik6_zau2.mp3",
+    "slow": "/audio/zik6_zau2_slow.mp3"
+  },
+  "nei1 tiu4 lou6 hai6 zik6 ge3.": {
+    "normal": "/audio/nei1_tiu4_lou6_hai6_zik6_ge3.mp3",
+    "slow": "/audio/nei1_tiu4_lou6_hai6_zik6_ge3_slow.mp3"
+  },
+  "dei6 tit3": {
+    "normal": "/audio/dei6_tit3.mp3",
+    "slow": "/audio/dei6_tit3_slow.mp3"
+  },
+  "ngo5 dei6 daap3 dei6 tit3 heoi3.": {
+    "normal": "/audio/ngo5_dei6_daap3_dei6_tit3_heoi3.mp3",
+    "slow": "/audio/ngo5_dei6_daap3_dei6_tit3_heoi3_slow.mp3"
+  },
+  "dik1 si2": {
+    "normal": "/audio/dik1_si2.mp3",
+    "slow": "/audio/dik1_si2_slow.mp3"
+  },
+  "daap3 dik1 si2 faai3 di1.": {
+    "normal": "/audio/daap3_dik1_si2_faai3_di1.mp3",
+    "slow": "/audio/daap3_dik1_si2_faai3_di1_slow.mp3"
+  },
+  "siu2 baa1": {
+    "normal": "/audio/siu2_baa1.mp3",
+    "slow": "/audio/siu2_baa1_slow.mp3"
+  },
+  "daap3 siu2 baa1 jiu3 gyut3 faan1 hang4.": {
+    "normal": "/audio/daap3_siu2_baa1_jiu3_gyut3_faan1_hang4.mp3",
+    "slow": "/audio/daap3_siu2_baa1_jiu3_gyut3_faan1_hang4_slow.mp3"
+  },
+  "dou6 leon4": {
+    "normal": "/audio/dou6_leon4.mp3",
+    "slow": "/audio/dou6_leon4_slow.mp3"
+  },
+  "daap3 tin1 sing1 siu2 leon4 hou2 peng4.": {
+    "normal": "/audio/daap3_tin1_sing1_siu2_leon4_hou2_peng4.mp3",
+    "slow": "/audio/daap3_tin1_sing1_siu2_leon4_hou2_peng4_slow.mp3"
+  },
+  "jin6 zoi6 / gam1 tin1": {
+    "normal": "/audio/jin6_zoi6_gam1_tin1.mp3",
+    "slow": "/audio/jin6_zoi6_gam1_tin1_slow.mp3"
+  },
+  "ngo5 jin6 zoi6 jiu3 zau2 liu5.": {
+    "normal": "/audio/ngo5_jin6_zoi6_jiu3_zau2_liu5.mp3",
+    "slow": "/audio/ngo5_jin6_zoi6_jiu3_zau2_liu5_slow.mp3"
+  },
+  "ming4 tin1": {
+    "normal": "/audio/ming4_tin1.mp3",
+    "slow": "/audio/ming4_tin1_slow.mp3"
+  },
+  "ming4 tin1 zoi3 syut3 baa6.": {
+    "normal": "/audio/ming4_tin1_zoi3_syut3_baa6.mp3",
+    "slow": "/audio/ming4_tin1_zoi3_syut3_baa6_slow.mp3"
+  },
+  "kam4 jat6 / tsam4 jat6": {
+    "normal": "/audio/kam4_jat6_tsam4_jat6.mp3",
+    "slow": "/audio/kam4_jat6_tsam4_jat6_slow.mp3"
+  },
+  "keoi5 kam4 jat6 dou3 zo2 laa1.": {
+    "normal": "/audio/keoi5_kam4_jat6_dou3_zo2_laa1.mp3",
+    "slow": "/audio/keoi5_kam4_jat6_dou3_zo2_laa1_slow.mp3"
+  },
+  "dang2 zan6 / aan3 di1": {
+    "normal": "/audio/dang2_zan6_aan3_di1.mp3",
+    "slow": "/audio/dang2_zan6_aan3_di1_slow.mp3"
+  },
+  "ngo5 aan3 di1先sik6.": {
+    "normal": "/audio/ngo5_aan3_di1先sik6.mp3",
+    "slow": "/audio/ngo5_aan3_di1先sik6_slow.mp3"
+  },
+  "gong1 coi4": {
+    "normal": "/audio/gong1_coi4.mp3",
+    "slow": "/audio/gong1_coi4_slow.mp3"
+  },
+  "ngo5 tau4 sin1 gin3 dou3 keoi5.": {
+    "normal": "/audio/ngo5_tau4_sin1_gin3_dou3_keoi5.mp3",
+    "slow": "/audio/ngo5_tau4_sin1_gin3_dou3_keoi5_slow.mp3"
+  },
+  "laap6 hak1": {
+    "normal": "/audio/laap6_hak1.mp3",
+    "slow": "/audio/laap6_hak1_slow.mp3"
+  },
+  "laap6 hak1 daa2 din6 waa2.": {
+    "normal": "/audio/laap6_hak1_daa2_din6_waa2.mp3",
+    "slow": "/audio/laap6_hak1_daa2_din6_waa2_slow.mp3"
+  },
+  "daai6": {
+    "normal": "/audio/daai6.mp3",
+    "slow": "/audio/daai6_slow.mp3"
+  },
+  "fong4 zi2 han2 daai6.": {
+    "normal": "/audio/fong4_zi2_han2_daai6.mp3",
+    "slow": "/audio/fong4_zi2_han2_daai6_slow.mp3"
+  },
+  "siu2": {
+    "normal": "/audio/siu2.mp3",
+    "slow": "/audio/siu2_slow.mp3"
+  },
+  "go2 zek3 gau2 hou2 sai3.": {
+    "normal": "/audio/go2_zek3_gau2_hou2_sai3.mp3",
+    "slow": "/audio/go2_zek3_gau2_hou2_sai3_slow.mp3"
+  },
+  "jit6": {
+    "normal": "/audio/jit6.mp3",
+    "slow": "/audio/jit6_slow.mp3"
+  },
+  "gaa3 fe1 han2 jit6.": {
+    "normal": "/audio/gaa3_fe1_han2_jit6.mp3",
+    "slow": "/audio/gaa3_fe1_han2_jit6_slow.mp3"
+  },
+  "laang5": {
+    "normal": "/audio/laang5.mp3",
+    "slow": "/audio/laang5_slow.mp3"
+  },
+  "tin1 hei3 han2 laang5.": {
+    "normal": "/audio/tin1_hei3_han2_laang5.mp3",
+    "slow": "/audio/tin1_hei3_han2_laang5_slow.mp3"
+  },
+  "peng4": {
+    "normal": "/audio/peng4.mp3",
+    "slow": "/audio/peng4_slow.mp3"
+  },
+  "nei1 dou6 ge3 je5 hou2 peng4.": {
+    "normal": "/audio/nei1_dou6_ge3_je5_hou2_peng4.mp3",
+    "slow": "/audio/nei1_dou6_ge3_je5_hou2_peng4_slow.mp3"
+  },
+  "gwai3": {
+    "normal": "/audio/gwai3.mp3",
+    "slow": "/audio/gwai3_slow.mp3"
+  },
+  "nei1 bou6 ce1 hou2 gwai3.": {
+    "normal": "/audio/nei1_bou6_ce1_hou2_gwai3.mp3",
+    "slow": "/audio/nei1_bou6_ce1_hou2_gwai3_slow.mp3"
+  },
+  "nei5 zyu2 ge3 sung3 hou2 hou2 sik6.": {
+    "normal": "/audio/nei5_zyu2_ge3_sung3_hou2_hou2_sik6.mp3",
+    "slow": "/audio/nei5_zyu2_ge3_sung3_hou2_hou2_sik6_slow.mp3"
+  },
+  "nei1 dip6 sung3 m4 hou2 sik6.": {
+    "normal": "/audio/nei1_dip6_sung3_m4_hou2_sik6.mp3",
+    "slow": "/audio/nei1_dip6_sung3_m4_hou2_sik6_slow.mp3"
+  },
+  "leoi6": {
+    "normal": "/audio/leoi6.mp3",
+    "slow": "/audio/leoi6_slow.mp3"
+  },
+  "ngo5 haa6 baan1 hau6 han2 leoi6.": {
+    "normal": "/audio/ngo5_haa6_baan1_hau6_han2_leoi6.mp3",
+    "slow": "/audio/ngo5_haa6_baan1_hau6_han2_leoi6_slow.mp3"
+  },
+  "gei2 do1 cin2?": {
+    "normal": "/audio/gei2_do1_cin2.mp3",
+    "slow": "/audio/gei2_do1_cin2_slow.mp3"
+  },
+  "zit3 / gong2 gaa3": {
+    "normal": "/audio/zit3_gong2_gaa3.mp3",
+    "slow": "/audio/zit3_gong2_gaa3_slow.mp3"
+  },
+  "mou5得gong2 gaa3 me1?": {
+    "normal": "/audio/mou5得gong2_gaa3_me1.mp3",
+    "slow": "/audio/mou5得gong2_gaa3_me1_slow.mp3"
+  },
+  "taai3 gwai3 liu5.": {
+    "normal": "/audio/taai3_gwai3_liu5.mp3",
+    "slow": "/audio/taai3_gwai3_liu5_slow.mp3"
+  },
+  "go2 dou6 hou2 peng4.": {
+    "normal": "/audio/go2_dou6_hou2_peng4.mp3",
+    "slow": "/audio/go2_dou6_hou2_peng4_slow.mp3"
+  },
+  "saan2 ngan2 / saan2 zi6": {
+    "normal": "/audio/saan2_ngan2_saan2_zi6.mp3",
+    "slow": "/audio/saan2_ngan2_saan2_zi6_slow.mp3"
+  },
+  "ngo5 mou5 saan2 ngan2.": {
+    "normal": "/audio/ngo5_mou5_saan2_ngan2.mp3",
+    "slow": "/audio/ngo5_mou5_saan2_ngan2_slow.mp3"
+  },
+  "jin6 gam1 / din6 zi2 cin2 baau1": {
+    "normal": "/audio/jin6_gam1_din6_zi2_cin2_baau1.mp3",
+    "slow": "/audio/jin6_gam1_din6_zi2_cin2_baau1_slow.mp3"
+  },
+  "jung6 m4 jung6 dou3 baat3 daat6 tung1 aa3?": {
+    "normal": "/audio/jung6_m4_jung6_dou3_baat3_daat6_tung1_aa3.mp3",
+    "slow": "/audio/jung6_m4_jung6_dou3_baat3_daat6_tung1_aa3_slow.mp3"
+  },
+  "ceng2 kap1 ngo5": {
+    "normal": "/audio/ceng2_kap1_ngo5.mp3",
+    "slow": "/audio/ceng2_kap1_ngo5_slow.mp3"
+  },
+  "ceng2 kap1 ngo5 seoi2.": {
+    "normal": "/audio/ceng2_kap1_ngo5_seoi2.mp3",
+    "slow": "/audio/ceng2_kap1_ngo5_seoi2_slow.mp3"
+  },
+  "ceng2 zoi3 loi4 jat1 fan6 faan6.": {
+    "normal": "/audio/ceng2_zoi3_loi4_jat1_fan6_faan6.mp3",
+    "slow": "/audio/ceng2_zoi3_loi4_jat1_fan6_faan6_slow.mp3"
+  },
+  "baau2": {
+    "normal": "/audio/baau2.mp3",
+    "slow": "/audio/baau2_slow.mp3"
+  },
+  "ngo5 ji5 ging1 baau2 liu5.": {
+    "normal": "/audio/ngo5_ji5_ging1_baau2_liu5.mp3",
+    "slow": "/audio/ngo5_ji5_ging1_baau2_liu5_slow.mp3"
+  },
+  "ngo6": {
+    "normal": "/audio/ngo6.mp3",
+    "slow": "/audio/ngo6_slow.mp3"
+  },
+  "ngo5 ji5 ging1 ngo6 liu5.": {
+    "normal": "/audio/ngo5_ji5_ging1_ngo6_liu5.mp3",
+    "slow": "/audio/ngo5_ji5_ging1_ngo6_liu5_slow.mp3"
+  },
+  "maai5 daan1": {
+    "normal": "/audio/maai5_daan1.mp3",
+    "slow": "/audio/maai5_daan1_slow.mp3"
+  },
+  "ceng2 maai5 daan1.": {
+    "normal": "/audio/ceng2_maai5_daan1.mp3",
+    "slow": "/audio/ceng2_maai5_daan1_slow.mp3"
+  },
+  "ngoi6 daai3 / noi6 jung6": {
+    "normal": "/audio/ngoi6_daai3_noi6_jung6.mp3",
+    "slow": "/audio/ngoi6_daai3_noi6_jung6_slow.mp3"
+  },
+  "ceng2 ngoi6 daai3.": {
+    "normal": "/audio/ceng2_ngoi6_daai3.mp3",
+    "slow": "/audio/ceng2_ngoi6_daai3_slow.mp3"
+  },
+  "bong1 mong4 / gau3 meng6": {
+    "normal": "/audio/bong1_mong4_gau3_meng6.mp3",
+    "slow": "/audio/bong1_mong4_gau3_meng6_slow.mp3"
+  },
+  "gau3 meng6! bong1 bong1 ngo5.": {
+    "normal": "/audio/gau3_meng6_bong1_bong1_ngo5.mp3",
+    "slow": "/audio/gau3_meng6_bong1_bong1_ngo5_slow.mp3"
+  },
+  "tung3": {
+    "normal": "/audio/tung3.mp3",
+    "slow": "/audio/tung3_slow.mp3"
+  },
+  "ngo5 tau4 tung3.": {
+    "normal": "/audio/ngo5_tau4_tung3.mp3",
+    "slow": "/audio/ngo5_tau4_tung3_slow.mp3"
+  },
+  "joek6": {
+    "normal": "/audio/joek6.mp3",
+    "slow": "/audio/joek6_slow.mp3"
+  },
+  "ngo5 seoi1 jiu3 joek6.": {
+    "normal": "/audio/ngo5_seoi1_jiu3_joek6.mp3",
+    "slow": "/audio/ngo5_seoi1_jiu3_joek6_slow.mp3"
+  },
+  "tau4": {
+    "normal": "/audio/tau4.mp3",
+    "slow": "/audio/tau4_slow.mp3"
+  },
+  "tau4 tung3.": {
+    "normal": "/audio/tau4_tung3.mp3",
+    "slow": "/audio/tau4_tung3_slow.mp3"
+  },
+  "tou5 zi2": {
+    "normal": "/audio/tou5_zi2.mp3",
+    "slow": "/audio/tou5_zi2_slow.mp3"
+  },
+  "ngo5 tou5 zi2 tung3.": {
+    "normal": "/audio/ngo5_tou5_zi2_tung3.mp3",
+    "slow": "/audio/ngo5_tou5_zi2_tung3_slow.mp3"
+  },
+  "faat3 siu1": {
+    "normal": "/audio/faat3_siu1.mp3",
+    "slow": "/audio/faat3_siu1_slow.mp3"
+  },
+  "haai4 zi2 faat3 siu1 liu5.": {
+    "normal": "/audio/haai4_zi2_faat3_siu1_liu5.mp3",
+    "slow": "/audio/haai4_zi2_faat3_siu1_liu5_slow.mp3"
+  },
+  "ji1 jyun2": {
+    "normal": "/audio/ji1_jyun2.mp3",
+    "slow": "/audio/ji1_jyun2_slow.mp3"
+  },
+  "sung3 dou3 ji1 jyun2.": {
+    "normal": "/audio/sung3_dou3_ji1_jyun2.mp3",
+    "slow": "/audio/sung3_dou3_ji1_jyun2_slow.mp3"
+  },
+  "nei5 gei2 seoi3 liu5?": {
+    "normal": "/audio/nei5_gei2_seoi3_liu5.mp3",
+    "slow": "/audio/nei5_gei2_seoi3_liu5_slow.mp3"
+  },
+  "nei5 jin6 zoi6 gei2 seoi3 liu5?": {
+    "normal": "/audio/nei5_jin6_zoi6_gei2_seoi3_liu5.mp3",
+    "slow": "/audio/nei5_jin6_zoi6_gei2_seoi3_liu5_slow.mp3"
+  },
+  "daan1 san1 naam4 / daan1 san1 neoi5": {
+    "normal": "/audio/daan1_san1_naam4_daan1_san1_neoi5.mp3",
+    "slow": "/audio/daan1_san1_naam4_daan1_san1_neoi5_slow.mp3"
+  },
+  "keoi5 zung6 hai6 daan1 san1.": {
+    "normal": "/audio/keoi5_zung6_hai6_daan1_san1.mp3",
+    "slow": "/audio/keoi5_zung6_hai6_daan1_san1_slow.mp3"
+  },
+  "ji5 fan1": {
+    "normal": "/audio/ji5_fan1.mp3",
+    "slow": "/audio/ji5_fan1_slow.mp3"
+  },
+  "ngo5 ji5 ging1 git3 fan1 liu5.": {
+    "normal": "/audio/ngo5_ji5_ging1_git3_fan1_liu5.mp3",
+    "slow": "/audio/ngo5_ji5_ging1_git3_fan1_liu5_slow.mp3"
+  },
+  "siu2 pang4 jau5": {
+    "normal": "/audio/siu2_pang4_jau5.mp3",
+    "slow": "/audio/siu2_pang4_jau5_slow.mp3"
+  },
+  "ngo5 hou2 oi3 ngo5 ge3 siu2 pang4 jau5.": {
+    "normal": "/audio/ngo5_hou2_oi3_ngo5_ge3_siu2_pang4_jau5.mp3",
+    "slow": "/audio/ngo5_hou2_oi3_ngo5_ge3_siu2_pang4_jau5_slow.mp3"
+  },
+  "nei5 hai2 bin1 dou6 jan4?": {
+    "normal": "/audio/nei5_hai2_bin1_dou6_jan4.mp3",
+    "slow": "/audio/nei5_hai2_bin1_dou6_jan4_slow.mp3"
+  },
+  "nei5 hai2 hoeng1 gong2 bin1 dou6?": {
+    "normal": "/audio/nei5_hai2_hoeng1_gong2_bin1_dou6.mp3",
+    "slow": "/audio/nei5_hai2_hoeng1_gong2_bin1_dou6_slow.mp3"
+  },
+  "waai6 liu5": {
+    "normal": "/audio/waai6_liu5.mp3",
+    "slow": "/audio/waai6_liu5_slow.mp3"
+  },
+  "laang5 hei3 waai6 liu5.": {
+    "normal": "/audio/laang5_hei3_waai6_liu5.mp3",
+    "slow": "/audio/laang5_hei3_waai6_liu5_slow.mp3"
+  },
+  "hoi1": {
+    "normal": "/audio/hoi1.mp3",
+    "slow": "/audio/hoi1_slow.mp3"
+  },
+  "dang1 hoi1 zoek6.": {
+    "normal": "/audio/dang1_hoi1_zoek6.mp3",
+    "slow": "/audio/dang1_hoi1_zoek6_slow.mp3"
+  },
+  "gwaan1": {
+    "normal": "/audio/gwaan1.mp3",
+    "slow": "/audio/gwaan1_slow.mp3"
+  },
+  "mun4 gwaan1 zoek6.": {
+    "normal": "/audio/mun4_gwaan1_zoek6.mp3",
+    "slow": "/audio/mun4_gwaan1_zoek6_slow.mp3"
+  },
+  "dang1": {
+    "normal": "/audio/dang1.mp3",
+    "slow": "/audio/dang1_slow.mp3"
+  },
+  "ceng2 hoi1 dang1.": {
+    "normal": "/audio/ceng2_hoi1_dang1.mp3",
+    "slow": "/audio/ceng2_hoi1_dang1_slow.mp3"
+  },
+  "seoi2 lung4 tau4 mou5 seoi2.": {
+    "normal": "/audio/seoi2_lung4_tau4_mou5_seoi2.mp3",
+    "slow": "/audio/seoi2_lung4_tau4_mou5_seoi2_slow.mp3"
+  },
+  "din6": {
+    "normal": "/audio/din6.mp3",
+    "slow": "/audio/din6_slow.mp3"
+  },
+  "jin6 zoi6 ting4 din6.": {
+    "normal": "/audio/jin6_zoi6_ting4_din6.mp3",
+    "slow": "/audio/jin6_zoi6_ting4_din6_slow.mp3"
+  },
+  "sai2 sau2 gaan1 hai2 bin1 dou6? / ci3 so2 hai2 bin1 dou6?": {
+    "normal": "/audio/sai2_sau2_gaan1_hai2_bin1_dou6_ci3_so2_hai2_bin1_dou6.mp3",
+    "slow": "/audio/sai2_sau2_gaan1_hai2_bin1_dou6_ci3_so2_hai2_bin1_dou6_slow.mp3"
+  },
+  "m4 hou2 ji3 si1, ceng2 man6 sai2 sau2 gaan1 hai2 bin1 dou6?": {
+    "normal": "/audio/m4_hou2_ji3_si1_ceng2_man6_sai2_sau2_gaan1_hai2_bin1_dou6.mp3",
+    "slow": "/audio/m4_hou2_ji3_si1_ceng2_man6_sai2_sau2_gaan1_hai2_bin1_dou6_slow.mp3"
+  },
+  "jau5 mou5 ci3 zi2 aa3?": {
+    "normal": "/audio/jau5_mou5_ci3_zi2_aa3.mp3",
+    "slow": "/audio/jau5_mou5_ci3_zi2_aa3_slow.mp3"
+  },
+  "leoi5 min6 jau5 mou5 ci3 zi2 aa3?": {
+    "normal": "/audio/leoi5_min6_jau5_mou5_ci3_zi2_aa3.mp3",
+    "slow": "/audio/leoi5_min6_jau5_mou5_ci3_zi2_aa3_slow.mp3"
+  },
+  "cau3": {
+    "normal": "/audio/cau3.mp3",
+    "slow": "/audio/cau3_slow.mp3"
+  },
+  "laap6 saap3 han2 cau3.": {
+    "normal": "/audio/laap6_saap3_han2_cau3.mp3",
+    "slow": "/audio/laap6_saap3_han2_cau3_slow.mp3"
+  },
+  "hoeng1": {
+    "normal": "/audio/hoeng1.mp3",
+    "slow": "/audio/hoeng1_slow.mp3"
+  },
+  "nei1 do2 faa1 hou2 hoeng1.": {
+    "normal": "/audio/nei1_do2_faa1_hou2_hoeng1.mp3",
+    "slow": "/audio/nei1_do2_faa1_hou2_hoeng1_slow.mp3"
+  },
+  "zong1": {
+    "normal": "/audio/zong1.mp3",
+    "slow": "/audio/zong1_slow.mp3"
+  },
+  "dei6 baan2 han2 zong1.": {
+    "normal": "/audio/dei6_baan2_han2_zong1.mp3",
+    "slow": "/audio/dei6_baan2_han2_zong1_slow.mp3"
+  },
+  "gon1 zeng6": {
+    "normal": "/audio/gon1_zeng6.mp3",
+    "slow": "/audio/gon1_zeng6_slow.mp3"
+  },
+  "fong4 gaan1 ji5 ging1 gon1 zeng6 liu5.": {
+    "normal": "/audio/fong4_gaan1_ji5_ging1_gon1_zeng6_liu5.mp3",
+    "slow": "/audio/fong4_gaan1_ji5_ging1_gon1_zeng6_liu5_slow.mp3"
+  },
+  "ngo5 soeng2 maai5 din6 waa2 kaat1": {
+    "normal": "/audio/ngo5_soeng2_maai5_din6_waa2_kaat1.mp3",
+    "slow": "/audio/ngo5_soeng2_maai5_din6_waa2_kaat1_slow.mp3"
+  },
+  "ngo5 soeng2 maai5 ng5 sap6 man1 din6 waa2 kaat1.": {
+    "normal": "/audio/ngo5_soeng2_maai5_ng5_sap6_man1_din6_waa2_kaat1.mp3",
+    "slow": "/audio/ngo5_soeng2_maai5_ng5_sap6_man1_din6_waa2_kaat1_slow.mp3"
+  },
+  "mou5 seon3 hou6": {
+    "normal": "/audio/mou5_seon3_hou6.mp3",
+    "slow": "/audio/mou5_seon3_hou6_slow.mp3"
+  },
+  "saan1 soeng6 nei1 dou6 mou5 seon3 hou6.": {
+    "normal": "/audio/saan1_soeng6_nei1_dou6_mou5_seon3_hou6.mp3",
+    "slow": "/audio/saan1_soeng6_nei1_dou6_mou5_seon3_hou6_slow.mp3"
+  },
+  "mou5 din6": {
+    "normal": "/audio/mou5_din6.mp3",
+    "slow": "/audio/mou5_din6_slow.mp3"
+  },
+  "ngo5 bou6 sau2 gei1 zau6 faai3 mou5 din6 laa1.": {
+    "normal": "/audio/ngo5_bou6_sau2_gei1_zau6_faai3_mou5_din6_laa1.mp3",
+    "slow": "/audio/ngo5_bou6_sau2_gei1_zau6_faai3_mou5_din6_laa1_slow.mp3"
+  },
+  "cung1 din6 hei3 / fo2 ngau4": {
+    "normal": "/audio/cung1_din6_hei3_fo2_ngau4.mp3",
+    "slow": "/audio/cung1_din6_hei3_fo2_ngau4_slow.mp3"
+  },
+  "nei5 daai3 zo2 cung1 din6 hei3 mei6 aa3?": {
+    "normal": "/audio/nei5_daai3_zo2_cung1_din6_hei3_mei6_aa3.mp3",
+    "slow": "/audio/nei5_daai3_zo2_cung1_din6_hei3_mei6_aa3_slow.mp3"
+  },
+  "mat6 maa5": {
+    "normal": "/audio/mat6_maa5.mp3",
+    "slow": "/audio/mat6_maa5_slow.mp3"
+  },
+  "Wifi mat1 maa5 hai6 gei2 do1?": {
+    "normal": "/audio/wifi_mat1_maa5_hai6_gei2_do1.mp3",
+    "slow": "/audio/wifi_mat1_maa5_hai6_gei2_do1_slow.mp3"
+  },
+  "taai3 jit6 liu5!": {
+    "normal": "/audio/taai3_jit6_liu5.mp3",
+    "slow": "/audio/taai3_jit6_liu5_slow.mp3"
+  },
+  "gam1 tin1 ngoi6 min6 taai3 jit6 liu5.": {
+    "normal": "/audio/gam1_tin1_ngoi6_min6_taai3_jit6_liu5.mp3",
+    "slow": "/audio/gam1_tin1_ngoi6_min6_taai3_jit6_liu5_slow.mp3"
+  },
+  "haa6 jyu5 liu5": {
+    "normal": "/audio/haa6_jyu5_liu5.mp3",
+    "slow": "/audio/haa6_jyu5_liu5_slow.mp3"
+  },
+  "jyu5 haa6 dak1 han2 daai6.": {
+    "normal": "/audio/jyu5_haa6_dak1_han2_daai6.mp3",
+    "slow": "/audio/jyu5_haa6_dak1_han2_daai6_slow.mp3"
+  },
+  "toi4 fung1 / fung1 bou6": {
+    "normal": "/audio/toi4_fung1_fung1_bou6.mp3",
+    "slow": "/audio/toi4_fung1_fung1_bou6_slow.mp3"
+  },
+  "ting1 jat6 wui5 m4 wui5 daa2 fung1 aa3?": {
+    "normal": "/audio/ting1_jat6_wui5_m4_wui5_daa2_fung1_aa3.mp3",
+    "slow": "/audio/ting1_jat6_wui5_m4_wui5_daa2_fung1_aa3_slow.mp3"
+  },
+  "jim1 seoi2": {
+    "normal": "/audio/jim1_seoi2.mp3",
+    "slow": "/audio/jim1_seoi2_slow.mp3"
+  },
+  "maa5 lou6 jim1 seoi2 liu5.": {
+    "normal": "/audio/maa5_lou6_jim1_seoi2_liu5.mp3",
+    "slow": "/audio/maa5_lou6_jim1_seoi2_liu5_slow.mp3"
+  },
+  "ze1": {
+    "normal": "/audio/ze1.mp3",
+    "slow": "/audio/ze1_slow.mp3"
+  },
+  "ngo5 wui5 daai3 ngo5 baa2 ze1.": {
+    "normal": "/audio/ngo5_wui5_daai3_ngo5_baa2_ze1.mp3",
+    "slow": "/audio/ngo5_wui5_daai3_ngo5_baa2_ze1_slow.mp3"
+  },
+  "lou6 hau2 / zyun3 gok3": {
+    "normal": "/audio/lou6_hau2_zyun3_gok3.mp3",
+    "slow": "/audio/lou6_hau2_zyun3_gok3_slow.mp3"
+  },
+  "zau6 zoi6 lou6 hau2.": {
+    "normal": "/audio/zau6_zoi6_lou6_hau2.mp3",
+    "slow": "/audio/zau6_zoi6_lou6_hau2_slow.mp3"
+  },
+  "cin4 min6": {
+    "normal": "/audio/cin4_min6.mp3",
+    "slow": "/audio/cin4_min6_slow.mp3"
+  },
+  "zoi6 Jollibee cin4 min6.": {
+    "normal": "/audio/zoi6_jollibee_cin4_min6.mp3",
+    "slow": "/audio/zoi6_jollibee_cin4_min6_slow.mp3"
+  },
+  "hau6 min6": {
+    "normal": "/audio/hau6_min6.mp3",
+    "slow": "/audio/hau6_min6_slow.mp3"
+  },
+  "zoi6 fong4 zi2 hau6 min6.": {
+    "normal": "/audio/zoi6_fong4_zi2_hau6_min6.mp3",
+    "slow": "/audio/zoi6_fong4_zi2_hau6_min6_slow.mp3"
+  },
+  "kiu4": {
+    "normal": "/audio/kiu4.mp3",
+    "slow": "/audio/kiu4_slow.mp3"
+  },
+  "ngo5 dei6 wui5 gwo3 kiu2.": {
+    "normal": "/audio/ngo5_dei6_wui5_gwo3_kiu2.mp3",
+    "slow": "/audio/ngo5_dei6_wui5_gwo3_kiu2_slow.mp3"
+  },
+  "baan1 maa5 sin3 / tin1 kiu4": {
+    "normal": "/audio/baan1_maa5_sin3_tin1_kiu4.mp3",
+    "slow": "/audio/baan1_maa5_sin3_tin1_kiu4_slow.mp3"
+  },
+  "si2 jung6 baan1 maa5 sin3 / tin1 kiu4.": {
+    "normal": "/audio/si2_jung6_baan1_maa5_sin3_tin1_kiu4.mp3",
+    "slow": "/audio/si2_jung6_baan1_maa5_sin3_tin1_kiu4_slow.mp3"
+  },
+  "gaau3 tong2": {
+    "normal": "/audio/gaau3_tong2.mp3",
+    "slow": "/audio/gaau3_tong2_slow.mp3"
+  },
+  "kaau3 gan6 gaau3 tong2.": {
+    "normal": "/audio/kaau3_gan6_gaau3_tong2.mp3",
+    "slow": "/audio/kaau3_gan6_gaau3_tong2_slow.mp3"
+  },
+  "faai3 lok6": {
+    "normal": "/audio/faai3_lok6.mp3",
+    "slow": "/audio/faai3_lok6_slow.mp3"
+  },
+  "ngo5 gam1 tin1 han2 faai3 lok6.": {
+    "normal": "/audio/ngo5_gam1_tin1_han2_faai3_lok6.mp3",
+    "slow": "/audio/ngo5_gam1_tin1_han2_faai3_lok6_slow.mp3"
+  },
+  "m4 hoi1 sam1": {
+    "normal": "/audio/m4_hoi1_sam1.mp3",
+    "slow": "/audio/m4_hoi1_sam1_slow.mp3"
+  },
+  "嬲": {
+    "normal": "/audio/嬲.mp3",
+    "slow": "/audio/嬲_slow.mp3"
+  },
+  "m4 hou2 nau1 laa1.": {
+    "normal": "/audio/m4_hou2_nau1_laa1.mp3",
+    "slow": "/audio/m4_hou2_nau1_laa1_slow.mp3"
+  },
+  "ngo5 ngo6 liu5.": {
+    "normal": "/audio/ngo5_ngo6_liu5.mp3",
+    "slow": "/audio/ngo5_ngo6_liu5_slow.mp3"
+  },
+  "soeng2 seoi6": {
+    "normal": "/audio/soeng2_seoi6.mp3",
+    "slow": "/audio/soeng2_seoi6_slow.mp3"
+  },
+  "ngo5 soeng5 fo3 soeng2 seoi6 gaau3.": {
+    "normal": "/audio/ngo5_soeng5_fo3_soeng2_seoi6_gaau3.mp3",
+    "slow": "/audio/ngo5_soeng5_fo3_soeng2_seoi6_gaau3_slow.mp3"
+  },
+  "sam1 dung6": {
+    "normal": "/audio/sam1_dung6.mp3",
+    "slow": "/audio/sam1_dung6_slow.mp3"
+  },
+  "ngo5 deoi3 keoi5 dei6 jau5 sam1 dung6 ge3 gam2 gok3.": {
+    "normal": "/audio/ngo5_deoi3_keoi5_dei6_jau5_sam1_dung6_ge3_gam2_gok3.mp3",
+    "slow": "/audio/ngo5_deoi3_keoi5_dei6_jau5_sam1_dung6_ge3_gam2_gok3_slow.mp3"
+  },
+  "hoi1 sam1": {
+    "normal": "/audio/hoi1_sam1.mp3",
+    "slow": "/audio/hoi1_sam1_slow.mp3"
+  },
+  "kam4 jat1 ngo5 hou2 hoi1 sam1.": {
+    "normal": "/audio/kam4_jat1_ngo5_hou2_hoi1_sam1.mp3",
+    "slow": "/audio/kam4_jat1_ngo5_hou2_hoi1_sam1_slow.mp3"
+  },
+  "nei5 me1 si3 m4 hoi1 sam1 aa3?": {
+    "normal": "/audio/nei5_me1_si3_m4_hoi1_sam1_aa3.mp3",
+    "slow": "/audio/nei5_me1_si3_m4_hoi1_sam1_aa3_slow.mp3"
+  },
+  "nau1": {
+    "normal": "/audio/nau1.mp3",
+    "slow": "/audio/nau1_slow.mp3"
+  },
+  "m4 sai2 nau1 laa1.": {
+    "normal": "/audio/m4_sai2_nau1_laa1.mp3",
+    "slow": "/audio/m4_sai2_nau1_laa1_slow.mp3"
+  },
+  "gui6": {
+    "normal": "/audio/gui6.mp3",
+    "slow": "/audio/gui6_slow.mp3"
+  },
+  "faan1 jiu3 hoi1 wui6 hou2 gui6 aa3.": {
+    "normal": "/audio/faan1_jiu3_hoi1_wui6_hou2_gui6_aa3.mp3",
+    "slow": "/audio/faan1_jiu3_hoi1_wui6_hou2_gui6_aa3_slow.mp3"
+  },
+  "geng1": {
+    "normal": "/audio/geng1.mp3",
+    "slow": "/audio/geng1_slow.mp3"
+  },
+  "ngo5 hou2 geng1 gaap3 zaat6.": {
+    "normal": "/audio/ngo5_hou2_geng1_gaap3_zaat6.mp3",
+    "slow": "/audio/ngo5_hou2_geng1_gaap3_zaat6_slow.mp3"
+  },
+  "zan1 hai6 gaa3?": {
+    "normal": "/audio/zan1_hai6_gaa3.mp3",
+    "slow": "/audio/zan1_hai6_gaa3_slow.mp3"
+  },
+  "zan1 hai6 gaa3? m4 hai6 aa3 maa3?": {
+    "normal": "/audio/zan1_hai6_gaa3_m4_hai6_aa3_maa3.mp3",
+    "slow": "/audio/zan1_hai6_gaa3_m4_hai6_aa3_maa3_slow.mp3"
+  },
+  "waa1 / taai3 kwaa1 zoeng1": {
+    "normal": "/audio/waa1_taai3_kwaa1_zoeng1.mp3",
+    "slow": "/audio/waa1_taai3_kwaa1_zoeng1_slow.mp3"
+  },
+  "jit6 dak1 taai3 kwaa1 zoeng1 liu5!": {
+    "normal": "/audio/jit6_dak1_taai3_kwaa1_zoeng1_liu5.mp3",
+    "slow": "/audio/jit6_dak1_taai3_kwaa1_zoeng1_liu5_slow.mp3"
+  },
+  "waak6 ze2 / ho2 nang4": {
+    "normal": "/audio/waak6_ze2_ho2_nang4.mp3",
+    "slow": "/audio/waak6_ze2_ho2_nang4_slow.mp3"
+  },
+  "waak6 ze2 keoi5 wui5 lai4.": {
+    "normal": "/audio/waak6_ze2_keoi5_wui5_lai4.mp3",
+    "slow": "/audio/waak6_ze2_keoi5_wui5_lai4_slow.mp3"
+  },
+  "zi2 jiu3": {
+    "normal": "/audio/zi2_jiu3.mp3",
+    "slow": "/audio/zi2_jiu3_slow.mp3"
+  },
+  "zi2 jiu3 hai6 nei5, zau6 dak1 laa1.": {
+    "normal": "/audio/zi2_jiu3_hai6_nei5_zau6_dak1_laa1.mp3",
+    "slow": "/audio/zi2_jiu3_hai6_nei5_zau6_dak1_laa1_slow.mp3"
+  },
+  "ho2 sik1 / long6 fai3": {
+    "normal": "/audio/ho2_sik1_long6_fai3.mp3",
+    "slow": "/audio/ho2_sik1_long6_fai3_slow.mp3"
+  },
+  "di1 je5 sik6 saai1 zo2.": {
+    "normal": "/audio/di1_je5_sik6_saai1_zo2.mp3",
+    "slow": "/audio/di1_je5_sik6_saai1_zo2_slow.mp3"
+  },
+  "laa1": {
+    "normal": "/audio/laa1.mp3",
+    "slow": "/audio/laa1_slow.mp3"
+  },
+  "faai3 di1 laa1.": {
+    "normal": "/audio/faai3_di1_laa1.mp3",
+    "slow": "/audio/faai3_di1_laa1_slow.mp3"
+  },
+  "me1": {
+    "normal": "/audio/me1.mp3",
+    "slow": "/audio/me1_slow.mp3"
+  },
+  "hai6 me1? ngo5 m4 seon3 wo3.": {
+    "normal": "/audio/hai6_me1_ngo5_m4_seon3_wo3.mp3",
+    "slow": "/audio/hai6_me1_ngo5_m4_seon3_wo3_slow.mp3"
+  },
+  "wo3": {
+    "normal": "/audio/wo3.mp3",
+    "slow": "/audio/wo3_slow.mp3"
+  },
+  "keoi5 waa6 ting1 jat1 faan1 hung1 wo3.": {
+    "normal": "/audio/keoi5_waa6_ting1_jat1_faan1_hung1_wo3.mp3",
+    "slow": "/audio/keoi5_waa6_ting1_jat1_faan1_hung1_wo3_slow.mp3"
+  },
+  "gaa3": {
+    "normal": "/audio/gaa3.mp3",
+    "slow": "/audio/gaa3_slow.mp3"
+  },
+  "hai6 gaa3, dim1 dou1 hai6 gam2 gaa3.": {
+    "normal": "/audio/hai6_gaa3_dim1_dou1_hai6_gam2_gaa3.mp3",
+    "slow": "/audio/hai6_gaa3_dim1_dou1_hai6_gam2_gaa3_slow.mp3"
+  },
+  "ngo5 sik6 siu2 siu2 ze1.": {
+    "normal": "/audio/ngo5_sik6_siu2_siu2_ze1.mp3",
+    "slow": "/audio/ngo5_sik6_siu2_siu2_ze1_slow.mp3"
+  },
+  "heoi3 laa1! / zau2 laa1!": {
+    "normal": "/audio/heoi3_laa1_zau2_laa1.mp3",
+    "slow": "/audio/heoi3_laa1_zau2_laa1_slow.mp3"
+  },
+  "ngo5 dei6 heoi3 soeng1 coeng4 laa1.": {
+    "normal": "/audio/ngo5_dei6_heoi3_soeng1_coeng4_laa1.mp3",
+    "slow": "/audio/ngo5_dei6_heoi3_soeng1_coeng4_laa1_slow.mp3"
+  },
+  "nei5 jat1 m4 jat1 hei2 lai4 aa3?": {
+    "normal": "/audio/nei5_jat1_m4_jat1_hei2_lai4_aa3.mp3",
+    "slow": "/audio/nei5_jat1_m4_jat1_hei2_lai4_aa3_slow.mp3"
+  },
+  "ngo5 dei6 heoi3 sik6 faan6, nei5 jat1 m4 jat1 hei2 aa3?": {
+    "normal": "/audio/ngo5_dei6_heoi3_sik6_faan6_nei5_jat1_m4_jat1_hei2_aa3.mp3",
+    "slow": "/audio/ngo5_dei6_heoi3_sik6_faan6_nei5_jat1_m4_jat1_hei2_aa3_slow.mp3"
+  },
+  "ngo5 ceng2": {
+    "normal": "/audio/ngo5_ceng2.mp3",
+    "slow": "/audio/ngo5_ceng2_slow.mp3"
+  },
+  "zau2 laa1, ngo5 ceng2 nei5 jam2 gaa3 fe1.": {
+    "normal": "/audio/zau2_laa1_ngo5_ceng2_nei5_jam2_gaa3_fe1.mp3",
+    "slow": "/audio/zau2_laa1_ngo5_ceng2_nei5_jam2_gaa3_fe1_slow.mp3"
+  },
+  "AA zai3": {
+    "normal": "/audio/aa_zai3.mp3",
+    "slow": "/audio/aa_zai3_slow.mp3"
+  },
+  "ngo5 dei6 AA zai3, hou2 mou5?": {
+    "normal": "/audio/ngo5_dei6_aa_zai3_hou2_mou5.mp3",
+    "slow": "/audio/ngo5_dei6_aa_zai3_hou2_mou5_slow.mp3"
+  },
+  "jau5 me1 gai3 waak6?": {
+    "normal": "/audio/jau5_me1_gai3_waak6.mp3",
+    "slow": "/audio/jau5_me1_gai3_waak6_slow.mp3"
+  },
+  "dang2 zan6 jau5 me1 gai3 waak6?": {
+    "normal": "/audio/dang2_zan6_jau5_me1_gai3_waak6.mp3",
+    "slow": "/audio/dang2_zan6_jau5_me1_gai3_waak6_slow.mp3"
+  },
+  "nei5 zan1 piu3 loeng6": {
+    "normal": "/audio/nei5_zan1_piu3_loeng6.mp3",
+    "slow": "/audio/nei5_zan1_piu3_loeng6_slow.mp3"
+  },
+  "nei5 gam1 tin1 zan1 piu3 loeng6.": {
+    "normal": "/audio/nei5_gam1_tin1_zan1_piu3_loeng6.mp3",
+    "slow": "/audio/nei5_gam1_tin1_zan1_piu3_loeng6_slow.mp3"
+  },
+  "leng3 zai2": {
+    "normal": "/audio/leng3_zai2.mp3",
+    "slow": "/audio/leng3_zai2_slow.mp3"
+  },
+  "nei5 zan1 hai6 hou2 leng3 zai2.": {
+    "normal": "/audio/nei5_zan1_hai6_hou2_leng3_zai2.mp3",
+    "slow": "/audio/nei5_zan1_hai6_hou2_leng3_zai2_slow.mp3"
+  },
+  "hou2 can3 nei5": {
+    "normal": "/audio/hou2_can3_nei5.mp3",
+    "slow": "/audio/hou2_can3_nei5_slow.mp3"
+  },
+  "nei1 gin6 saam1 hou2 can3 nei5.": {
+    "normal": "/audio/nei1_gin6_saam1_hou2_can3_nei5.mp3",
+    "slow": "/audio/nei1_gin6_saam1_hou2_can3_nei5_slow.mp3"
+  },
+  "hau2 tim4 sit6 waat6 ge3 jan4": {
+    "normal": "/audio/hau2_tim4_sit6_waat6_ge3_jan4.mp3",
+    "slow": "/audio/hau2_tim4_sit6_waat6_ge3_jan4_slow.mp3"
+  },
+  "m4 hou2 seon3 keoi5, keoi5 hau2 tim4 sit6 waat6.": {
+    "normal": "/audio/m4_hou2_seon3_keoi5_keoi5_hau2_tim4_sit6_waat6.mp3",
+    "slow": "/audio/m4_hou2_seon3_keoi5_keoi5_hau2_tim4_sit6_waat6_slow.mp3"
+  },
+  "waa1! / hou2 lei6 hoi6!": {
+    "normal": "/audio/waa1_hou2_lei6_hoi6.mp3",
+    "slow": "/audio/waa1_hou2_lei6_hoi6_slow.mp3"
+  },
+  "waa1! nei5 zan1 paang5.": {
+    "normal": "/audio/waa1_nei5_zan1_paang5.mp3",
+    "slow": "/audio/waa1_nei5_zan1_paang5_slow.mp3"
+  },
+  "ngo5 gok3 dak1...": {
+    "normal": "/audio/ngo5_gok3_dak1.mp3",
+    "slow": "/audio/ngo5_gok3_dak1_slow.mp3"
+  },
+  "ngo5 gok3 dak1 nei5 hai6 ngaam1 ge3.": {
+    "normal": "/audio/ngo5_gok3_dak1_nei5_hai6_ngaam1_ge3.mp3",
+    "slow": "/audio/ngo5_gok3_dak1_nei5_hai6_ngaam1_ge3_slow.mp3"
+  },
+  "ngo5 m4 zi1": {
+    "normal": "/audio/ngo5_m4_zi1.mp3",
+    "slow": "/audio/ngo5_m4_zi1_slow.mp3"
+  },
+  "ngo5 m4 zi1 keoi5 hai2 bin1 dou6.": {
+    "normal": "/audio/ngo5_m4_zi1_keoi5_hai2_bin1_dou6.mp3",
+    "slow": "/audio/ngo5_m4_zi1_keoi5_hai2_bin1_dou6_slow.mp3"
+  },
+  "ceoi4 bin2 laa1 / ting3 tin1 jau4 ming6": {
+    "normal": "/audio/ceoi4_bin2_laa1_ting3_tin1_jau4_ming6.mp3",
+    "slow": "/audio/ceoi4_bin2_laa1_ting3_tin1_jau4_ming6_slow.mp3"
+  },
+  "gaau1 kap1 ming6 wan6 baa6 (pin1 fuk1 hap6).": {
+    "normal": "/audio/gaau1_kap1_ming6_wan6_baa6_pin1_fuk1_hap6.mp3",
+    "slow": "/audio/gaau1_kap1_ming6_wan6_baa6_pin1_fuk1_hap6_slow.mp3"
+  },
+  "tai2 cing4 fong3": {
+    "normal": "/audio/tai2_cing4_fong3.mp3",
+    "slow": "/audio/tai2_cing4_fong3_slow.mp3"
+  },
+  "tai2 tin1 hei3 ji4 ding6.": {
+    "normal": "/audio/tai2_tin1_hei3_ji4_ding6.mp3",
+    "slow": "/audio/tai2_tin1_hei3_ji4_ding6_slow.mp3"
+  },
+  "nei5 hang2 ding6? / nei5 hang2 m4 hang2 ding6 aa3?": {
+    "normal": "/audio/nei5_hang2_ding6_nei5_hang2_m4_hang2_ding6_aa3.mp3",
+    "slow": "/audio/nei5_hang2_ding6_nei5_hang2_m4_hang2_ding6_aa3_slow.mp3"
+  },
+  "nei5 hang2 ding6 nei5 ge3 daap3 on3?": {
+    "normal": "/audio/nei5_hang2_ding6_nei5_ge3_daap3_on3.mp3",
+    "slow": "/audio/nei5_hang2_ding6_nei5_ge3_daap3_on3_slow.mp3"
+  },
+  "nei5 zung1 m4 zung1 ji3 ... aa3?": {
+    "normal": "/audio/nei5_zung1_m4_zung1_ji3_aa3.mp3",
+    "slow": "/audio/nei5_zung1_m4_zung1_ji3_aa3_slow.mp3"
+  },
+  "nei5 zung1 m4 zung1 ji3 coeng3 K aa3?": {
+    "normal": "/audio/nei5_zung1_m4_zung1_ji3_coeng3_k_aa3.mp3",
+    "slow": "/audio/nei5_zung1_m4_zung1_ji3_coeng3_k_aa3_slow.mp3"
+  },
+  "nei5 soeng2 zou6 me1 aa3?": {
+    "normal": "/audio/nei5_soeng2_zou6_me1_aa3.mp3",
+    "slow": "/audio/nei5_soeng2_zou6_me1_aa3_slow.mp3"
+  },
+  "nei5 ting1 jat6 soeng2 zou6 me1 aa3?": {
+    "normal": "/audio/nei5_ting1_jat6_soeng2_zou6_me1_aa3.mp3",
+    "slow": "/audio/nei5_ting1_jat6_soeng2_zou6_me1_aa3_slow.mp3"
+  },
+  "leoi5 hang4": {
+    "normal": "/audio/leoi5_hang4.mp3",
+    "slow": "/audio/leoi5_hang4_slow.mp3"
+  },
+  "ngo5 soeng2 heoi3 baa1 laai1 mong6 leoi5 hang4.": {
+    "normal": "/audio/ngo5_soeng2_heoi3_baa1_laai1_mong6_leoi5_hang4.mp3",
+    "slow": "/audio/ngo5_soeng2_heoi3_baa1_laai1_mong6_leoi5_hang4_slow.mp3"
+  },
+  "tai2 Netflix/din6 jing2": {
+    "normal": "/audio/tai2_netflixdin6_jing2.mp3",
+    "slow": "/audio/tai2_netflixdin6_jing2_slow.mp3"
+  },
+  "ngo5 dei6 heoi3 tai2 din6 jing2 laa1.": {
+    "normal": "/audio/ngo5_dei6_heoi3_tai2_din6_jing2_laa1.mp3",
+    "slow": "/audio/ngo5_dei6_heoi3_tai2_din6_jing2_laa1_slow.mp3"
+  },
+  "sik6": {
+    "normal": "/audio/sik6.mp3",
+    "slow": "/audio/sik6_slow.mp3"
+  },
+  "ngo5 zung1 ji3 sik6 je5.": {
+    "normal": "/audio/ngo5_zung1_ji3_sik6_je5.mp3",
+    "slow": "/audio/ngo5_zung1_ji3_sik6_je5_slow.mp3"
+  },
+  "gong2 siu3 zaa3!": {
+    "normal": "/audio/gong2_siu3_zaa3.mp3",
+    "slow": "/audio/gong2_siu3_zaa3_slow.mp3"
+  },
+  "ngo5 zan1 hai6 hou2 leng3, gong2 siu3 zaa3!": {
+    "normal": "/audio/ngo5_zan1_hai6_hou2_leng3_gong2_siu3_zaa3.mp3",
+    "slow": "/audio/ngo5_zan1_hai6_hou2_leng3_gong2_siu3_zaa3_slow.mp3"
+  },
+  "baat3 gwaa3 / gu3 si6": {
+    "normal": "/audio/baat3_gwaa3_gu3_si6.mp3",
+    "slow": "/audio/baat3_gwaa3_gu3_si6_slow.mp3"
+  },
+  "zeoi3 gan6 jau5 me1 baat3 gwaa3 aa3?": {
+    "normal": "/audio/zeoi3_gan6_jau5_me1_baat3_gwaa3_aa3.mp3",
+    "slow": "/audio/zeoi3_gan6_jau5_me1_baat3_gwaa3_aa3_slow.mp3"
+  },
+  "ngau5 zoeng6": {
+    "normal": "/audio/ngau5_zoeng6.mp3",
+    "slow": "/audio/ngau5_zoeng6_slow.mp3"
+  },
+  "nei5 hai6 ngo5 ge3 ngau5 zoeng6.": {
+    "normal": "/audio/nei5_hai6_ngo5_ge3_ngau5_zoeng6.mp3",
+    "slow": "/audio/nei5_hai6_ngo5_ge3_ngau5_zoeng6_slow.mp3"
+  },
+  "lei6 hoi6 / maang5": {
+    "normal": "/audio/lei6_hoi6_maang5.mp3",
+    "slow": "/audio/lei6_hoi6_maang5_slow.mp3"
+  },
+  "nei5 tiu3 mou5 han2 lei6 hoi6.": {
+    "normal": "/audio/nei5_tiu3_mou5_han2_lei6_hoi6.mp3",
+    "slow": "/audio/nei5_tiu3_mou5_han2_lei6_hoi6_slow.mp3"
+  },
+  "gwai1 mat6 / hing1 dai6": {
+    "normal": "/audio/gwai1_mat6_hing1_dai6.mp3",
+    "slow": "/audio/gwai1_mat6_hing1_dai6_slow.mp3"
+  },
+  "nei5 dim2 aa3, gwai1 mat6?": {
+    "normal": "/audio/nei5_dim2_aa3_gwai1_mat6.mp3",
+    "slow": "/audio/nei5_dim2_aa3_gwai1_mat6_slow.mp3"
+  },
+  "nei5 zou6 me1 gung1 zok3 gaa3?": {
+    "normal": "/audio/nei5_zou6_me1_gung1_zok3_gaa3.mp3",
+    "slow": "/audio/nei5_zou6_me1_gung1_zok3_gaa3_slow.mp3"
+  },
+  "nei5 hai2 hoeng1 gong2 zou6 me1 gung1 zok3 gaa3?": {
+    "normal": "/audio/nei5_hai2_hoeng1_gong2_zou6_me1_gung1_zok3_gaa3.mp3",
+    "slow": "/audio/nei5_hai2_hoeng1_gong2_zou6_me1_gung1_zok3_gaa3_slow.mp3"
+  },
+  "hok6 saang1": {
+    "normal": "/audio/hok6_saang1.mp3",
+    "slow": "/audio/hok6_saang1_slow.mp3"
+  },
+  "ngo5 zung6 zi2 hai6 jat1 go3 hok6 saang1.": {
+    "normal": "/audio/ngo5_zung6_zi2_hai6_jat1_go3_hok6_saang1.mp3",
+    "slow": "/audio/ngo5_zung6_zi2_hai6_jat1_go3_hok6_saang1_slow.mp3"
+  },
+  "baan6 gung1 sat1": {
+    "normal": "/audio/baan6_gung1_sat1.mp3",
+    "slow": "/audio/baan6_gung1_sat1_slow.mp3"
+  },
+  "ngo5 jin6 zoi6 zoi6 baan6 gung1 sat1.": {
+    "normal": "/audio/ngo5_jin6_zoi6_zoi6_baan6_gung1_sat1.mp3",
+    "slow": "/audio/ngo5_jin6_zoi6_zoi6_baan6_gung1_sat1_slow.mp3"
+  },
+  "ngo5 gung1 zok3 han2 leoi6.": {
+    "normal": "/audio/ngo5_gung1_zok3_han2_leoi6.mp3",
+    "slow": "/audio/ngo5_gung1_zok3_han2_leoi6_slow.mp3"
+  },
+  "gaa3 kei4 / dou6 gaa3": {
+    "normal": "/audio/gaa3_kei4_dou6_gaa3.mp3",
+    "slow": "/audio/gaa3_kei4_dou6_gaa3_slow.mp3"
+  },
+  "ngo5 seoi1 jiu3 jau1 gaa3.": {
+    "normal": "/audio/ngo5_seoi1_jiu3_jau1_gaa3.mp3",
+    "slow": "/audio/ngo5_seoi1_jiu3_jau1_gaa3_slow.mp3"
+  },
+  "ngo5 am3 lyun2 nei5": {
+    "normal": "/audio/ngo5_am3_lyun2_nei5.mp3",
+    "slow": "/audio/ngo5_am3_lyun2_nei5_slow.mp3"
+  },
+  "nei5 zi1 m4 zi1 aa3, ngo5 am3 lyun2 nei5.": {
+    "normal": "/audio/nei5_zi1_m4_zi1_aa3_ngo5_am3_lyun2_nei5.mp3",
+    "slow": "/audio/nei5_zi1_m4_zi1_aa3_ngo5_am3_lyun2_nei5_slow.mp3"
+  },
+  "sam1 dung6 / siu2 luk6 lyun6 zong6": {
+    "normal": "/audio/sam1_dung6_siu2_luk6_lyun6_zong6.mp3",
+    "slow": "/audio/sam1_dung6_siu2_luk6_lyun6_zong6_slow.mp3"
+  },
+  "jan1 wai6 nei5, ngo5 gam2 dou3 sam1 dung6.": {
+    "normal": "/audio/jan1_wai6_nei5_ngo5_gam2_dou3_sam1_dung6.mp3",
+    "slow": "/audio/jan1_wai6_nei5_ngo5_gam2_dou3_sam1_dung6_slow.mp3"
+  },
+  "ngo5 soeng2 nei5 liu5": {
+    "normal": "/audio/ngo5_soeng2_nei5_liu5.mp3",
+    "slow": "/audio/ngo5_soeng2_nei5_liu5_slow.mp3"
+  },
+  "faai3 wui4 gaa1 baa6, ngo5 soeng2 nei5 liu5.": {
+    "normal": "/audio/faai3_wui4_gaa1_baa6_ngo5_soeng2_nei5_liu5.mp3",
+    "slow": "/audio/faai3_wui4_gaa1_baa6_ngo5_soeng2_nei5_liu5_slow.mp3"
+  },
+  "nei5 hai6 mai6 daan1 san1 aa3?": {
+    "normal": "/audio/nei5_hai6_mai6_daan1_san1_aa3.mp3",
+    "slow": "/audio/nei5_hai6_mai6_daan1_san1_aa3_slow.mp3"
+  },
+  "nei5 daan1 san1 ding6 hai6 jau5 naam4 pang4 jau5 laa1?": {
+    "normal": "/audio/nei5_daan1_san1_ding6_hai6_jau5_naam4_pang4_jau5_laa1.mp3",
+    "slow": "/audio/nei5_daan1_san1_ding6_hai6_jau5_naam4_pang4_jau5_laa1_slow.mp3"
+  },
+  "ngo5 dei6 heoi3 joek3 wui6 laa1?": {
+    "normal": "/audio/ngo5_dei6_heoi3_joek3_wui6_laa1.mp3",
+    "slow": "/audio/ngo5_dei6_heoi3_joek3_wui6_laa1_slow.mp3"
+  },
+  "dak1 m4 dak1 aa3, ngo5 dei6 ting1 jat6 heoi3 joek3 wui6?": {
+    "normal": "/audio/dak1_m4_dak1_aa3_ngo5_dei6_ting1_jat6_heoi3_joek3_wui6.mp3",
+    "slow": "/audio/dak1_m4_dak1_aa3_ngo5_dei6_ting1_jat6_heoi3_joek3_wui6_slow.mp3"
+  },
+  "nei5 hai6 mai6 tung4 ngo5 sang1 mun6 hei3 aa3?": {
+    "normal": "/audio/nei5_hai6_mai6_tung4_ngo5_sang1_mun6_hei3_aa3.mp3",
+    "slow": "/audio/nei5_hai6_mai6_tung4_ngo5_sang1_mun6_hei3_aa3_slow.mp3"
+  },
+  "dim2 gaai2 nei5 gam3 on1 zing6 ge3? nei5 tung4 ngo5 sang1 gan2 mun6 hei3 aa3?": {
+    "normal": "/audio/dim2_gaai2_nei5_gam3_on1_zing6_ge3_nei5_tung4_ngo5_sang1_gan2_mun6_hei3_aa3.mp3",
+    "slow": "/audio/dim2_gaai2_nei5_gam3_on1_zing6_ge3_nei5_tung4_ngo5_sang1_gan2_mun6_hei3_aa3_slow.mp3"
+  },
+  "nei5 hai6 mai6 nau1 aa3?": {
+    "normal": "/audio/nei5_hai6_mai6_nau1_aa3.mp3",
+    "slow": "/audio/nei5_hai6_mai6_nau1_aa3_slow.mp3"
+  },
+  "nei5 hai6 mai6 nau1 ngo5 aa3?": {
+    "normal": "/audio/nei5_hai6_mai6_nau1_ngo5_aa3.mp3",
+    "slow": "/audio/nei5_hai6_mai6_nau1_ngo5_aa3_slow.mp3"
+  },
+  "ngo5 dei6 wo4 hou2 laa1": {
+    "normal": "/audio/ngo5_dei6_wo4_hou2_laa1.mp3",
+    "slow": "/audio/ngo5_dei6_wo4_hou2_laa1_slow.mp3"
+  },
+  "hou2 laa1, ngo5 dei6 wo4 hou2 laa1.": {
+    "normal": "/audio/hou2_laa1_ngo5_dei6_wo4_hou2_laa1.mp3",
+    "slow": "/audio/hou2_laa1_ngo5_dei6_wo4_hou2_laa1_slow.mp3"
+  },
+  "deoi3 m4 zyu6 laa1": {
+    "normal": "/audio/deoi3_m4_zyu6_laa1.mp3",
+    "slow": "/audio/deoi3_m4_zyu6_laa1_slow.mp3"
+  },
+  "deoi3 m4 zyu6 laa1, ngo5 m4 hai6 zyun1 dang1 gaa3.": {
+    "normal": "/audio/deoi3_m4_zyu6_laa1_ngo5_m4_hai6_zyun1_dang1_gaa3.mp3",
+    "slow": "/audio/deoi3_m4_zyu6_laa1_ngo5_m4_hai6_zyun1_dang1_gaa3_slow.mp3"
+  },
+  "saat3 giu1 / hung3": {
+    "normal": "/audio/saat3_giu1_hung3.mp3",
+    "slow": "/audio/saat3_giu1_hung3_slow.mp3"
+  },
+  "zi2 jiu3 saau2 mei4 hung3 haa5, keoi5 zau6 wui5 hou2 faan1.": {
+    "normal": "/audio/zi2_jiu3_saau2_mei4_hung3_haa5_keoi5_zau6_wui5_hou2_faan1.mp3",
+    "slow": "/audio/zi2_jiu3_saau2_mei4_hung3_haa5_keoi5_zau6_wui5_hou2_faan1_slow.mp3"
+  },
+  "jam2 sing3! / leon4 dou3 nei5 jam2 laa1": {
+    "normal": "/audio/jam2_sing3_leon4_dou3_nei5_jam2_laa1.mp3",
+    "slow": "/audio/jam2_sing3_leon4_dou3_nei5_jam2_laa1_slow.mp3"
+  },
+  "haa6 zau2 coi3": {
+    "normal": "/audio/haa6_zau2_coi3.mp3",
+    "slow": "/audio/haa6_zau2_coi3_slow.mp3"
+  },
+  "faa1 sang1 hou2 hou2 sik6, hou2 ngaam1 zou6 haa6 zau2 coi3.": {
+    "normal": "/audio/faa1_sang1_hou2_hou2_sik6_hou2_ngaam1_zou6_haa6_zau2_coi3.mp3",
+    "slow": "/audio/faa1_sang1_hou2_hou2_sik6_hou2_ngaam1_zou6_haa6_zau2_coi3_slow.mp3"
+  },
+  "ngo5 zeoi3 liu5": {
+    "normal": "/audio/ngo5_zeoi3_liu5.mp3",
+    "slow": "/audio/ngo5_zeoi3_liu5_slow.mp3"
+  },
+  "gau3 liu5, ngo5 ji5 ging1 zeoi3 liu5.": {
+    "normal": "/audio/gau3_liu5_ngo5_ji5_ging1_zeoi3_liu5.mp3",
+    "slow": "/audio/gau3_liu5_ngo5_ji5_ging1_zeoi3_liu5_slow.mp3"
+  },
+  "jat1 dim2 dim2 zau6 hou2": {
+    "normal": "/audio/jat1_dim2_dim2_zau6_hou2.mp3",
+    "slow": "/audio/jat1_dim2_dim2_zau6_hou2_slow.mp3"
+  },
+  "kap1 ngo5 jat1 dim2 be1 zau2, jat1 dim2 dim2 zau6 hou2.": {
+    "normal": "/audio/kap1_ngo5_jat1_dim2_be1_zau2_jat1_dim2_dim2_zau6_hou2.mp3",
+    "slow": "/audio/kap1_ngo5_jat1_dim2_be1_zau2_jat1_dim2_dim2_zau6_hou2_slow.mp3"
+  },
+  "saang1 jat6 faai3 lok6! / zuk1 ho6!": {
+    "normal": "/audio/saang1_jat6_faai3_lok6_zuk1_ho6.mp3",
+    "slow": "/audio/saang1_jat6_faai3_lok6_zuk1_ho6_slow.mp3"
+  },
+  "zuk1 nei5 saang1 jat6 faai3 lok6!": {
+    "normal": "/audio/zuk1_nei5_saang1_jat6_faai3_lok6.mp3",
+    "slow": "/audio/zuk1_nei5_saang1_jat6_faai3_lok6_slow.mp3"
+  },
+  "nei5 zi1 m4 zi1 aa3...": {
+    "normal": "/audio/nei5_zi1_m4_zi1_aa3.mp3",
+    "slow": "/audio/nei5_zi1_m4_zi1_aa3_slow.mp3"
+  },
+  "nei5 zi1 m4 zi1 kam4 jat6 faat3 sang1 zo2 me1 si6 aa3?": {
+    "normal": "/audio/nei5_zi1_m4_zi1_kam4_jat6_faat3_sang1_zo2_me1_si6_aa3.mp3",
+    "slow": "/audio/nei5_zi1_m4_zi1_kam4_jat6_faat3_sang1_zo2_me1_si6_aa3_slow.mp3"
+  },
+  "jin4 hau6...": {
+    "normal": "/audio/jin4_hau6.mp3",
+    "slow": "/audio/jin4_hau6_slow.mp3"
+  },
+  "ngo5 dei6 sik6 zo2 faan6, jin4 hau6 tai2 zo2 din6 jing2.": {
+    "normal": "/audio/ngo5_dei6_sik6_zo2_faan6_jin4_hau6_tai2_zo2_din6_jing2.mp3",
+    "slow": "/audio/ngo5_dei6_sik6_zo2_faan6_jin4_hau6_tai2_zo2_din6_jing2_slow.mp3"
+  },
+  "dat6 jin4...": {
+    "normal": "/audio/dat6_jin4.mp3",
+    "slow": "/audio/dat6_jin4_slow.mp3"
+  },
+  "keoi5 dat6 jin4 zau2 zo2 laa1.": {
+    "normal": "/audio/keoi5_dat6_jin4_zau2_zo2_laa1.mp3",
+    "slow": "/audio/keoi5_dat6_jin4_zau2_zo2_laa1_slow.mp3"
+  },
+  "goi1 sei2! (cou1 zuk6)": {
+    "normal": "/audio/goi1_sei2_cou1_zuk6.mp3",
+    "slow": "/audio/goi1_sei2_cou1_zuk6_slow.mp3"
+  },
+  "goi1 sei2! ngo5 mong4 liu5 joek6 si4.": {
+    "normal": "/audio/goi1_sei2_ngo5_mong4_liu5_joek6_si4.mp3",
+    "slow": "/audio/goi1_sei2_ngo5_mong4_liu5_joek6_si4_slow.mp3"
+  },
+  "keoi5 jeng4 zo2? zan1 hai6 gaa3?": {
+    "normal": "/audio/keoi5_jeng4_zo2_zan1_hai6_gaa3.mp3",
+    "slow": "/audio/keoi5_jeng4_zo2_zan1_hai6_gaa3_slow.mp3"
+  },
+  "gau2 gau2 han2 gwaai1.": {
+    "normal": "/audio/gau2_gau2_han2_gwaai1.mp3",
+    "slow": "/audio/gau2_gau2_han2_gwaai1_slow.mp3"
+  },
+  "maau1": {
+    "normal": "/audio/maau1.mp3",
+    "slow": "/audio/maau1_slow.mp3"
+  },
+  "maau1 zoi6 seoi6 gaau3.": {
+    "normal": "/audio/maau1_zoi6_seoi6_gaau3.mp3",
+    "slow": "/audio/maau1_zoi6_seoi6_gaau3_slow.mp3"
+  },
+  "niu5": {
+    "normal": "/audio/niu5.mp3",
+    "slow": "/audio/niu5_slow.mp3"
+  },
+  "niu5 zoi6 fei1.": {
+    "normal": "/audio/niu5_zoi6_fei1.mp3",
+    "slow": "/audio/niu5_zoi6_fei1_slow.mp3"
+  },
+  "zyu1": {
+    "normal": "/audio/zyu1.mp3",
+    "slow": "/audio/zyu1_slow.mp3"
+  },
+  "zyu1 han2 bun6.": {
+    "normal": "/audio/zyu1_han2_bun6.mp3",
+    "slow": "/audio/zyu1_han2_bun6_slow.mp3"
+  },
+  "ngau4": {
+    "normal": "/audio/ngau4.mp3",
+    "slow": "/audio/ngau4_slow.mp3"
+  },
+  "zek3 ngau4 hai2 dou6 sik6 cou2.": {
+    "normal": "/audio/zek3_ngau4_hai2_dou6_sik6_cou2.mp3",
+    "slow": "/audio/zek3_ngau4_hai2_dou6_sik6_cou2_slow.mp3"
+  },
+  "seoi2 ngau4": {
+    "normal": "/audio/seoi2_ngau4.mp3",
+    "slow": "/audio/seoi2_ngau4_slow.mp3"
+  },
+  "seoi2 ngau4 han2 kan4 lou4.": {
+    "normal": "/audio/seoi2_ngau4_han2_kan4_lou4.mp3",
+    "slow": "/audio/seoi2_ngau4_han2_kan4_lou4_slow.mp3"
+  },
+  "se4": {
+    "normal": "/audio/se4.mp3",
+    "slow": "/audio/se4_slow.mp3"
+  },
+  "se4 han2 ho2 paa3.": {
+    "normal": "/audio/se4_han2_ho2_paa3.mp3",
+    "slow": "/audio/se4_han2_ho2_paa3_slow.mp3"
+  },
+  "lou5 syu2": {
+    "normal": "/audio/lou5_syu2.mp3",
+    "slow": "/audio/lou5_syu2_slow.mp3"
+  },
+  "lou5 syu2 paau2 dak1 han2 faai3.": {
+    "normal": "/audio/lou5_syu2_paau2_dak1_han2_faai3.mp3",
+    "slow": "/audio/lou5_syu2_paau2_dak1_han2_faai3_slow.mp3"
+  },
+  "man1 zi2": {
+    "normal": "/audio/man1_zi2.mp3",
+    "slow": "/audio/man1_zi2_slow.mp3"
+  },
+  "zok6 maan5 jau5 han2 do1 man1 zi2.": {
+    "normal": "/audio/zok6_maan5_jau5_han2_do1_man1_zi2.mp3",
+    "slow": "/audio/zok6_maan5_jau5_han2_do1_man1_zi2_slow.mp3"
+  },
+  "zoeng1 long4": {
+    "normal": "/audio/zoeng1_long4.mp3",
+    "slow": "/audio/zoeng1_long4_slow.mp3"
+  },
+  "baa2 zoeng1 long4 daa2 sei1.": {
+    "normal": "/audio/baa2_zoeng1_long4_daa2_sei1.mp3",
+    "slow": "/audio/baa2_zoeng1_long4_daa2_sei1_slow.mp3"
+  },
+  "hau4 zi2": {
+    "normal": "/audio/hau4_zi2.mp3",
+    "slow": "/audio/hau4_zi2_slow.mp3"
+  },
+  "hau4 zi2 han2 tiu4 pei4.": {
+    "normal": "/audio/hau4_zi2_han2_tiu4_pei4.mp3",
+    "slow": "/audio/hau4_zi2_han2_tiu4_pei4_slow.mp3"
+  },
+  "saan1 joeng4": {
+    "normal": "/audio/saan1_joeng4.mp3",
+    "slow": "/audio/saan1_joeng4_slow.mp3"
+  },
+  "tin4 leoi5 jau5 saan1 joeng4.": {
+    "normal": "/audio/tin4_leoi5_jau5_saan1_joeng4.mp3",
+    "slow": "/audio/tin4_leoi5_jau5_saan1_joeng4_slow.mp3"
+  },
+  "ngo5 go3 tau4 hou2 tung3.": {
+    "normal": "/audio/ngo5_go3_tau4_hou2_tung3.mp3",
+    "slow": "/audio/ngo5_go3_tau4_hou2_tung3_slow.mp3"
+  },
+  "ngaan5 zing1": {
+    "normal": "/audio/ngaan5_zing1.mp3",
+    "slow": "/audio/ngaan5_zing1_slow.mp3"
+  },
+  "saan1 maai5 nei5 deoi3 ngaan5.": {
+    "normal": "/audio/saan1_maai5_nei5_deoi3_ngaan5.mp3",
+    "slow": "/audio/saan1_maai5_nei5_deoi3_ngaan5_slow.mp3"
+  },
+  "bei6 zi2": {
+    "normal": "/audio/bei6_zi2.mp3",
+    "slow": "/audio/bei6_zi2_slow.mp3"
+  },
+  "keoi5 go3 bei6 hou2 ting5.": {
+    "normal": "/audio/keoi5_go3_bei6_hou2_ting5.mp3",
+    "slow": "/audio/keoi5_go3_bei6_hou2_ting5_slow.mp3"
+  },
+  "zeoi2 baa1": {
+    "normal": "/audio/zeoi2_baa1.mp3",
+    "slow": "/audio/zeoi2_baa1_slow.mp3"
+  },
+  "keoi5 maak3 daai6 zo2 go3 zeoi2.": {
+    "normal": "/audio/keoi5_maak3_daai6_zo2_go3_zeoi2.mp3",
+    "slow": "/audio/keoi5_maak3_daai6_zo2_go3_zeoi2_slow.mp3"
+  },
+  "ji5 zai2": {
+    "normal": "/audio/ji5_zai2.mp3",
+    "slow": "/audio/ji5_zai2_slow.mp3"
+  },
+  "keoi5 deoi3 ji5 zai2 hou2 daai6.": {
+    "normal": "/audio/keoi5_deoi3_ji5_zai2_hou2_daai6.mp3",
+    "slow": "/audio/keoi5_deoi3_ji5_zai2_hou2_daai6_slow.mp3"
+  },
+  "tau4 faat3": {
+    "normal": "/audio/tau4_faat3.mp3",
+    "slow": "/audio/tau4_faat3_slow.mp3"
+  },
+  "keoi5 di1 tau4 faat3 hou2 coeng4.": {
+    "normal": "/audio/keoi5_di1_tau4_faat3_hou2_coeng4.mp3",
+    "slow": "/audio/keoi5_di1_tau4_faat3_hou2_coeng4_slow.mp3"
+  },
+  "sau2": {
+    "normal": "/audio/sau2.mp3",
+    "slow": "/audio/sau2_slow.mp3"
+  },
+  "sai2 gon1 zing6 nei5 deoi3 sau2.": {
+    "normal": "/audio/sai2_gon1_zing6_nei5_deoi3_sau2.mp3",
+    "slow": "/audio/sai2_gon1_zing6_nei5_deoi3_sau2_slow.mp3"
+  },
+  "goek3": {
+    "normal": "/audio/goek3.mp3",
+    "slow": "/audio/goek3_slow.mp3"
+  },
+  "ngo5 deoi3 goek3 hou2 daai6.": {
+    "normal": "/audio/ngo5_deoi3_goek3_hou2_daai6.mp3",
+    "slow": "/audio/ngo5_deoi3_goek3_hou2_daai6_slow.mp3"
+  },
+  "bok3 tau4": {
+    "normal": "/audio/bok3_tau4.mp3",
+    "slow": "/audio/bok3_tau4_slow.mp3"
+  },
+  "ngo5 bok3 tau4 hou2 tung3.": {
+    "normal": "/audio/ngo5_bok3_tau4_hou2_tung3.mp3",
+    "slow": "/audio/ngo5_bok3_tau4_hou2_tung3_slow.mp3"
+  },
+  "tou5": {
+    "normal": "/audio/tou5.mp3",
+    "slow": "/audio/tou5_slow.mp3"
+  },
+  "ngo5 tou5 ngo6 laa1.": {
+    "normal": "/audio/ngo5_tou5_ngo6_laa1.mp3",
+    "slow": "/audio/ngo5_tou5_ngo6_laa1_slow.mp3"
+  },
+  "mou5 cin2 / po3 caan2": {
+    "normal": "/audio/mou5_cin2_po3_caan2.mp3",
+    "slow": "/audio/mou5_cin2_po3_caan2_slow.mp3"
+  },
+  "ngo5 ji4 gaa1 san1 mou4 fan1 man4.": {
+    "normal": "/audio/ngo5_ji4_gaa1_san1_mou4_fan1_man4.mp3",
+    "slow": "/audio/ngo5_ji4_gaa1_san1_mou4_fan1_man4_slow.mp3"
+  },
+  "gei3 zyu6 ngo5 ge3 waa6 / tit3 baan2 ding1 ding1": {
+    "normal": "/audio/gei3_zyu6_ngo5_ge3_waa6_tit3_baan2_ding1_ding1.mp3",
+    "slow": "/audio/gei3_zyu6_ngo5_ge3_waa6_tit3_baan2_ding1_ding1_slow.mp3"
+  },
+  "gei3 zyu6 ngo5 ge3 waa6, ngo5 wui5 faan1 lai4 gaa3.": {
+    "normal": "/audio/gei3_zyu6_ngo5_ge3_waa6_ngo5_wui5_faan1_lai4_gaa3.mp3",
+    "slow": "/audio/gei3_zyu6_ngo5_ge3_waa6_ngo5_wui5_faan1_lai4_gaa3_slow.mp3"
+  },
+  "syut3 waa6 haak1 bok6 / duk6 sit3": {
+    "normal": "/audio/syut3_waa6_haak1_bok6_duk6_sit3.mp3",
+    "slow": "/audio/syut3_waa6_haak1_bok6_duk6_sit3_slow.mp3"
+  },
+  "ngo5 dei6 gaak3 lei4 leon4 se5 gong2 je5 hou2 haak1 bok6.": {
+    "normal": "/audio/ngo5_dei6_gaak3_lei4_leon4_se5_gong2_je5_hou2_haak1_bok6.mp3",
+    "slow": "/audio/ngo5_dei6_gaak3_lei4_leon4_se5_gong2_je5_hou2_haak1_bok6_slow.mp3"
+  },
+  "saam1 fan1 zung1 jit6 dou6": {
+    "normal": "/audio/saam1_fan1_zung1_jit6_dou6.mp3",
+    "slow": "/audio/saam1_fan1_zung1_jit6_dou6_slow.mp3"
+  },
+  "hok6 zaap6 m4 hou2 zi2 jau5 saam1 fan1 zung1 jit6 dou6.": {
+    "normal": "/audio/hok6_zaap6_m4_hou2_zi2_jau5_saam1_fan1_zung1_jit6_dou6.mp3",
+    "slow": "/audio/hok6_zaap6_m4_hou2_zi2_jau5_saam1_fan1_zung1_jit6_dou6_slow.mp3"
+  },
+  "min5 koeng5 wu4 hau2 / wan2 jat1 jat6 sik6 jat1 jat6": {
+    "normal": "/audio/min5_koeng5_wu4_hau2_wan2_jat1_jat6_sik6_jat1_jat6.mp3",
+    "slow": "/audio/min5_koeng5_wu4_hau2_wan2_jat1_jat6_sik6_jat1_jat6_slow.mp3"
+  },
+  "keoi5 dei6 gwo3 gan2 min5 koeng5 wu4 hau2 ge3 sang1 wut6.": {
+    "normal": "/audio/keoi5_dei6_gwo3_gan2_min5_koeng5_wu4_hau2_ge3_sang1_wut6.mp3",
+    "slow": "/audio/keoi5_dei6_gwo3_gan2_min5_koeng5_wu4_hau2_ge3_sang1_wut6_slow.mp3"
+  },
+  "ping3 ming6 gung1 zok3 / zoeng6 ngau4 jat1 joeng6 gung1 zok3": {
+    "normal": "/audio/ping3_ming6_gung1_zok3_zoeng6_ngau4_jat1_joeng6_gung1_zok3.mp3",
+    "slow": "/audio/ping3_ming6_gung1_zok3_zoeng6_ngau4_jat1_joeng6_gung1_zok3_slow.mp3"
+  },
+  "keoi5 wai6 zo2 gaa1 ting4 ping3 ming6 gung1 zok3.": {
+    "normal": "/audio/keoi5_wai6_zo2_gaa1_ting4_ping3_ming6_gung1_zok3.mp3",
+    "slow": "/audio/keoi5_wai6_zo2_gaa1_ting4_ping3_ming6_gung1_zok3_slow.mp3"
+  },
+  "jung4 ji6 soeng1 cyu3 / tou2 jan4 hei2 fun1": {
+    "normal": "/audio/jung4_ji6_soeng1_cyu3_tou2_jan4_hei2_fun1.mp3",
+    "slow": "/audio/jung4_ji6_soeng1_cyu3_tou2_jan4_hei2_fun1_slow.mp3"
+  },
+  "ngo5 hou2 jung4 ji6 tung4 keoi5 soeng1 cyu3.": {
+    "normal": "/audio/ngo5_hou2_jung4_ji6_tung4_keoi5_soeng1_cyu3.mp3",
+    "slow": "/audio/ngo5_hou2_jung4_ji6_tung4_keoi5_soeng1_cyu3_slow.mp3"
+  },
+  "a3 maa1": {
+    "normal": "/audio/a3_maa1.mp3",
+    "slow": "/audio/a3_maa1_slow.mp3"
+  },
+  "ngo5 dei6 oi3 gaa1 ting4 ge3 maa1 maa1.": {
+    "normal": "/audio/ngo5_dei6_oi3_gaa1_ting4_ge3_maa1_maa1.mp3",
+    "slow": "/audio/ngo5_dei6_oi3_gaa1_ting4_ge3_maa1_maa1_slow.mp3"
+  },
+  "a3 baa1": {
+    "normal": "/audio/a3_baa1.mp3",
+    "slow": "/audio/a3_baa1_slow.mp3"
+  },
+  "a3 baa1 hou2 kan4 lik6.": {
+    "normal": "/audio/a3_baa1_hou2_kan4_lik6.mp3",
+    "slow": "/audio/a3_baa1_hou2_kan4_lik6_slow.mp3"
+  },
+  "man5 gam2 / bo1 lei1 sam1 (joeng4 cung1 pei4)": {
+    "normal": "/audio/man5_gam2_bo1_lei1_sam1_joeng4_cung1_pei4.mp3",
+    "slow": "/audio/man5_gam2_bo1_lei1_sam1_joeng4_cung1_pei4_slow.mp3"
+  },
+  "ngo5 go3 pang4 jau5 hou2 bo1 lei1 sam1.": {
+    "normal": "/audio/ngo5_go3_pang4_jau5_hou2_bo1_lei1_sam1.mp3",
+    "slow": "/audio/ngo5_go3_pang4_jau5_hou2_bo1_lei1_sam1_slow.mp3"
+  },
+  "siu2 tau1 / jung4 ji6 tau1 dung1 sai1 (sau2 joeng5)": {
+    "normal": "/audio/siu2_tau1_jung4_ji6_tau1_dung1_sai1_sau2_joeng5.mp3",
+    "slow": "/audio/siu2_tau1_jung4_ji6_tau1_dung1_sai1_sau2_joeng5_slow.mp3"
+  },
+  "siu2 sam1, keoi5 wui5 tau1 je5.": {
+    "normal": "/audio/siu2_sam1_keoi5_wui5_tau1_je5.mp3",
+    "slow": "/audio/siu2_sam1_keoi5_wui5_tau1_je5_slow.mp3"
+  },
+  "zong1 lung4 zok3 aa2 (wo1 ji5 do2)": {
+    "normal": "/audio/zong1_lung4_zok3_aa2_wo1_ji5_do2.mp3",
+    "slow": "/audio/zong1_lung4_zok3_aa2_wo1_ji5_do2_slow.mp3"
+  },
+  "m4 hou2 baan6 lung4.": {
+    "normal": "/audio/m4_hou2_baan6_lung4.mp3",
+    "slow": "/audio/m4_hou2_baan6_lung4_slow.mp3"
+  },
+  "bat1 ho2 nang4 faat3 sang1 ge3 si4": {
+    "normal": "/audio/bat1_ho2_nang4_faat3_sang1_ge3_si4.mp3",
+    "slow": "/audio/bat1_ho2_nang4_faat3_sang1_ge3_si4_slow.mp3"
+  },
+  "dang2 taai3 joeng4 sai1 bin1 sing1 hei2 ngo5 sin1 waan4 cin2 bei2 nei5.": {
+    "normal": "/audio/dang2_taai3_joeng4_sai1_bin1_sing1_hei2_ngo5_sin1_waan4_cin2_bei2_nei5.mp3",
+    "slow": "/audio/dang2_taai3_joeng4_sai1_bin1_sing1_hei2_ngo5_sin1_waan4_cin2_bei2_nei5_slow.mp3"
+  },
+  "hong2 koi3 / lok6 jyu1 zo6 jan4 (zoeng1 hoi1 sau2 zoeng2)": {
+    "normal": "/audio/hong2_koi3_lok6_jyu1_zo6_jan4_zoeng1_hoi1_sau2_zoeng2.mp3",
+    "slow": "/audio/hong2_koi3_lok6_jyu1_zo6_jan4_zoeng1_hoi1_sau2_zoeng2_slow.mp3"
+  },
+  "keoi5 deoi3 kung4 jan4 hou2 hong2 koi3.": {
+    "normal": "/audio/keoi5_deoi3_kung4_jan4_hou2_hong2_koi3.mp3",
+    "slow": "/audio/keoi5_deoi3_kung4_jan4_hou2_hong2_koi3_slow.mp3"
+  },
+  "hau5 ngaan4 mou4 ci2 (lim5 pei4 hau5)": {
+    "normal": "/audio/hau5_ngaan4_mou4_ci2_lim5_pei4_hau5.mp3",
+    "slow": "/audio/hau5_ngaan4_mou4_ci2_lim5_pei4_hau5_slow.mp3"
+  },
+  "keoi5 jau6 lai4 ze3 cin2, zan1 hai6 lim5 pei4 hau5.": {
+    "normal": "/audio/keoi5_jau6_lai4_ze3_cin2_zan1_hai6_lim5_pei4_hau5.mp3",
+    "slow": "/audio/keoi5_jau6_lai4_ze3_cin2_zan1_hai6_lim5_pei4_hau5_slow.mp3"
+  },
+  "zau2 dim3 zoi6 naa5 leoi5?": {
+    "normal": "/audio/zau2_dim3_zoi6_naa5_leoi5.mp3",
+    "slow": "/audio/zau2_dim3_zoi6_naa5_leoi5_slow.mp3"
+  },
+  "ceng2 man6 zau2 dim3 zoi6 naa5 leoi5?": {
+    "normal": "/audio/ceng2_man6_zau2_dim3_zoi6_naa5_leoi5.mp3",
+    "slow": "/audio/ceng2_man6_zau2_dim3_zoi6_naa5_leoi5_slow.mp3"
+  },
+  "ngo5 jiu3 ze5 go3": {
+    "normal": "/audio/ngo5_jiu3_ze5_go3.mp3",
+    "slow": "/audio/ngo5_jiu3_ze5_go3_slow.mp3"
+  },
+  "hou2 aa3, ngo5 jiu3 nei1 go3.": {
+    "normal": "/audio/hou2_aa3_ngo5_jiu3_nei1_go3.mp3",
+    "slow": "/audio/hou2_aa3_ngo5_jiu3_nei1_go3_slow.mp3"
+  },
+  "ngo5 zoeng1 ting4 lau4": {
+    "normal": "/audio/ngo5_zoeng1_ting4_lau4.mp3",
+    "slow": "/audio/ngo5_zoeng1_ting4_lau4_slow.mp3"
+  },
+  "ngo5 wui5 zyu6 loeng5 go3 maan5 soeng6.": {
+    "normal": "/audio/ngo5_wui5_zyu6_loeng5_go3_maan5_soeng6.mp3",
+    "slow": "/audio/ngo5_wui5_zyu6_loeng5_go3_maan5_soeng6_slow.mp3"
+  },
+  "jau5 mou5 bou2 him2 soeng1 aa3?": {
+    "normal": "/audio/jau5_mou5_bou2_him2_soeng1_aa3.mp3",
+    "slow": "/audio/jau5_mou5_bou2_him2_soeng1_aa3_slow.mp3"
+  },
+  "ceng2 man6 nei5 dei6 jau5 mou5 bou2 him2 soeng1 aa3?": {
+    "normal": "/audio/ceng2_man6_nei5_dei6_jau5_mou5_bou2_him2_soeng1_aa3.mp3",
+    "slow": "/audio/ceng2_man6_nei5_dei6_jau5_mou5_bou2_him2_soeng1_aa3_slow.mp3"
+  },
+  "baau1 m4 baau1 zou2 caan1 aa3?": {
+    "normal": "/audio/baau1_m4_baau1_zou2_caan1_aa3.mp3",
+    "slow": "/audio/baau1_m4_baau1_zou2_caan1_aa3_slow.mp3"
+  },
+  "ceng2 man6 baau1 m4 baau1 zou2 caan1 aa3?": {
+    "normal": "/audio/ceng2_man6_baau1_m4_baau1_zou2_caan1_aa3.mp3",
+    "slow": "/audio/ceng2_man6_baau1_m4_baau1_zou2_caan1_aa3_slow.mp3"
+  },
+  "ceng2 daa2 sou3 fong4 gaan1": {
+    "normal": "/audio/ceng2_daa2_sou3_fong4_gaan1.mp3",
+    "slow": "/audio/ceng2_daa2_sou3_fong4_gaan1_slow.mp3"
+  },
+  "m4 goi1 daa2 sou3 ngo5 gaan1 fong2.": {
+    "normal": "/audio/m4_goi1_daa2_sou3_ngo5_gaan1_fong2.mp3",
+    "slow": "/audio/m4_goi1_daa2_sou3_ngo5_gaan1_fong2_slow.mp3"
+  },
+  "gei1 coeng4": {
+    "normal": "/audio/gei1_coeng4.mp3",
+    "slow": "/audio/gei1_coeng4_slow.mp3"
+  },
+  "gei1 coeng4 zoi6 naa5 leoi5?": {
+    "normal": "/audio/gei1_coeng4_zoi6_naa5_leoi5.mp3",
+    "slow": "/audio/gei1_coeng4_zoi6_naa5_leoi5_slow.mp3"
+  },
+  "fei1 gei1": {
+    "normal": "/audio/fei1_gei1.mp3",
+    "slow": "/audio/fei1_gei1_slow.mp3"
+  },
+  "fei1 gei1 han2 daai6.": {
+    "normal": "/audio/fei1_gei1_han2_daai6.mp3",
+    "slow": "/audio/fei1_gei1_han2_daai6_slow.mp3"
+  },
+  "hang4 lei5": {
+    "normal": "/audio/hang4_lei5.mp3",
+    "slow": "/audio/hang4_lei5_slow.mp3"
+  },
+  "nei1 dou6 hai6 ngo5 ge3 hang4 lei5.": {
+    "normal": "/audio/nei1_dou6_hai6_ngo5_ge3_hang4_lei5.mp3",
+    "slow": "/audio/nei1_dou6_hai6_ngo5_ge3_hang4_lei5_slow.mp3"
+  },
+  "gei1 piu3 / piu3": {
+    "normal": "/audio/gei1_piu3_piu3.mp3",
+    "slow": "/audio/gei1_piu3_piu3_slow.mp3"
+  },
+  "nei5 zoeng1 gei1 piu3 hai2 bin1 aa3?": {
+    "normal": "/audio/nei5_zoeng1_gei1_piu3_hai2_bin1_aa3.mp3",
+    "slow": "/audio/nei5_zoeng1_gei1_piu3_hai2_bin1_aa3_slow.mp3"
+  },
+  "wu6 ziu3": {
+    "normal": "/audio/wu6_ziu3.mp3",
+    "slow": "/audio/wu6_ziu3_slow.mp3"
+  },
+  "ngo5 seoi1 jiu3 nei5 bun2 wu6 ziu3.": {
+    "normal": "/audio/ngo5_seoi1_jiu3_nei5_bun2_wu6_ziu3.mp3",
+    "slow": "/audio/ngo5_seoi1_jiu3_nei5_bun2_wu6_ziu3_slow.mp3"
+  },
+  "dim2 joeng6 heoi3...?": {
+    "normal": "/audio/dim2_joeng6_heoi3.mp3",
+    "slow": "/audio/dim2_joeng6_heoi3_slow.mp3"
+  },
+  "dim2 joeng6 heoi3 zau2 dim3 aa3?": {
+    "normal": "/audio/dim2_joeng6_heoi3_zau2_dim3_aa3.mp3",
+    "slow": "/audio/dim2_joeng6_heoi3_zau2_dim3_aa3_slow.mp3"
+  },
+  "jyun5 m4 jyun5 aa3?": {
+    "normal": "/audio/jyun5_m4_jyun5_aa3.mp3",
+    "slow": "/audio/jyun5_m4_jyun5_aa3_slow.mp3"
+  },
+  "gei1 coeng4 jyun5 m4 jyun5 aa3?": {
+    "normal": "/audio/gei1_coeng4_jyun5_m4_jyun5_aa3.mp3",
+    "slow": "/audio/gei1_coeng4_jyun5_m4_jyun5_aa3_slow.mp3"
+  },
+  "han2 gan6": {
+    "normal": "/audio/han2_gan6.mp3",
+    "slow": "/audio/han2_gan6_slow.mp3"
+  },
+  "kau3 mat6 zung1 sam1 han2 gan6.": {
+    "normal": "/audio/kau3_mat6_zung1_sam1_han2_gan6.mp3",
+    "slow": "/audio/kau3_mat6_zung1_sam1_han2_gan6_slow.mp3"
+  },
+  "zyun3 waan1": {
+    "normal": "/audio/zyun3_waan1.mp3",
+    "slow": "/audio/zyun3_waan1_slow.mp3"
+  },
+  "hoeng3 jau6 zyun2.": {
+    "normal": "/audio/hoeng3_jau6_zyun2.mp3",
+    "slow": "/audio/hoeng3_jau6_zyun2_slow.mp3"
+  },
+  "ceng2 zik6 zau2.": {
+    "normal": "/audio/ceng2_zik6_zau2.mp3",
+    "slow": "/audio/ceng2_zik6_zau2_slow.mp3"
+  },
+  "kwaang3 kwaang3 / gun1 gwong1": {
+    "normal": "/audio/kwaang3_kwaang3_gun1_gwong1.mp3",
+    "slow": "/audio/kwaang3_kwaang3_gun1_gwong1_slow.mp3"
+  },
+  "ngo5 soeng2 heoi3 kwaang3 kwaang3.": {
+    "normal": "/audio/ngo5_soeng2_heoi3_kwaang3_kwaang3.mp3",
+    "slow": "/audio/ngo5_soeng2_heoi3_kwaang3_kwaang3_slow.mp3"
+  },
+  "mei5 lai6": {
+    "normal": "/audio/mei5_lai6.mp3",
+    "slow": "/audio/mei5_lai6_slow.mp3"
+  },
+  "fung1 ging2 han2 mei5.": {
+    "normal": "/audio/fung1_ging2_han2_mei5.mp3",
+    "slow": "/audio/fung1_ging2_han2_mei5_slow.mp3"
+  },
+  "ziu3 pin2": {
+    "normal": "/audio/ziu3_pin2.mp3",
+    "slow": "/audio/ziu3_pin2_slow.mp3"
+  },
+  "ho2 m4 ho2 ji5 jing2 soeng2 aa3?": {
+    "normal": "/audio/ho2_m4_ho2_ji5_jing2_soeng2_aa3.mp3",
+    "slow": "/audio/ho2_m4_ho2_ji5_jing2_soeng2_aa3_slow.mp3"
+  },
+  "hoi1 fong3 / jing4 jip6": {
+    "normal": "/audio/hoi1_fong3_jing4_jip6.mp3",
+    "slow": "/audio/hoi1_fong3_jing4_jip6_slow.mp3"
+  },
+  "bok3 mat6 gun2 hoi1 m4 hoi1 aa3?": {
+    "normal": "/audio/bok3_mat6_gun2_hoi1_m4_hoi1_aa3.mp3",
+    "slow": "/audio/bok3_mat6_gun2_hoi1_m4_hoi1_aa3_slow.mp3"
+  },
+  "gwaan1 bai3 / jau1 sik1": {
+    "normal": "/audio/gwaan1_bai3_jau1_sik1.mp3",
+    "slow": "/audio/gwaan1_bai3_jau1_sik1_slow.mp3"
+  },
+  "keoi5 dei6 ji5 ging1 jau1 sik1 zo2 laa1.": {
+    "normal": "/audio/keoi5_dei6_ji5_ging1_jau1_sik1_zo2_laa1.mp3",
+    "slow": "/audio/keoi5_dei6_ji5_ging1_jau1_sik1_zo2_laa1_slow.mp3"
+  },
+  "m4 goi1 ceot1 si6 nei5 bun2 wu6 ziu3.": {
+    "normal": "/audio/m4_goi1_ceot1_si6_nei5_bun2_wu6_ziu3.mp3",
+    "slow": "/audio/m4_goi1_ceot1_si6_nei5_bun2_wu6_ziu3_slow.mp3"
+  },
+  "nei5 seoi1 m4 seoi1 jiu3 cim1 zing3 aa3?": {
+    "normal": "/audio/nei5_seoi1_m4_seoi1_jiu3_cim1_zing3_aa3.mp3",
+    "slow": "/audio/nei5_seoi1_m4_seoi1_jiu3_cim1_zing3_aa3_slow.mp3"
+  },
+  "jau4 haak3": {
+    "normal": "/audio/jau4_haak3.mp3",
+    "slow": "/audio/jau4_haak3_slow.mp3"
+  },
+  "ngo5 zi2 hai6 nei1 dou6 ge3 jau4 haak3.": {
+    "normal": "/audio/ngo5_zi2_hai6_nei1_dou6_ge3_jau4_haak3.mp3",
+    "slow": "/audio/ngo5_zi2_hai6_nei1_dou6_ge3_jau4_haak3_slow.mp3"
+  },
+  "san1 bou3": {
+    "normal": "/audio/san1_bou3.mp3",
+    "slow": "/audio/san1_bou3_slow.mp3"
+  },
+  "nei5 jau5 mou5 je5 seoi1 jiu3 san1 bou3 aa3?": {
+    "normal": "/audio/nei5_jau5_mou5_je5_seoi1_jiu3_san1_bou3_aa3.mp3",
+    "slow": "/audio/nei5_jau5_mou5_je5_seoi1_jiu3_san1_bou3_aa3_slow.mp3"
+  },
+  "han2 gau2 / ting4 lau4 si4 gaan3": {
+    "normal": "/audio/han2_gau2_ting4_lau4_si4_gaan3.mp3",
+    "slow": "/audio/han2_gau2_ting4_lau4_si4_gaan3_slow.mp3"
+  },
+  "nei5 wui5 hai2 nei1 dou6 lau4 gei2 noi6 aa3?": {
+    "normal": "/audio/nei5_wui5_hai2_nei1_dou6_lau4_gei2_noi6_aa3.mp3",
+    "slow": "/audio/nei5_wui5_hai2_nei1_dou6_lau4_gei2_noi6_aa3_slow.mp3"
+  },
+  "hoi2 / saa1 taan1": {
+    "normal": "/audio/hoi2_saa1_taan1.mp3",
+    "slow": "/audio/hoi2_saa1_taan1_slow.mp3"
+  },
+  "ngo5 dei6 heoi3 hoi2 bin1 laa1.": {
+    "normal": "/audio/ngo5_dei6_heoi3_hoi2_bin1_laa1.mp3",
+    "slow": "/audio/ngo5_dei6_heoi3_hoi2_bin1_laa1_slow.mp3"
+  },
+  "saa1": {
+    "normal": "/audio/saa1.mp3",
+    "slow": "/audio/saa1_slow.mp3"
+  },
+  "nei1 dou6 ge3 saa1 hai6 baak6 sik1 ge3.": {
+    "normal": "/audio/nei1_dou6_ge3_saa1_hai6_baak6_sik1_ge3.mp3",
+    "slow": "/audio/nei1_dou6_ge3_saa1_hai6_baak6_sik1_ge3_slow.mp3"
+  },
+  "jau4 seoi2": {
+    "normal": "/audio/jau4_seoi2.mp3",
+    "slow": "/audio/jau4_seoi2_slow.mp3"
+  },
+  "nei5 sik1 m4 sik1 jau4 seoi2 aa3?": {
+    "normal": "/audio/nei5_sik1_m4_sik1_jau4_seoi2_aa3.mp3",
+    "slow": "/audio/nei5_sik1_m4_sik1_jau4_seoi2_aa3_slow.mp3"
+  },
+  "taai3 joeng4": {
+    "normal": "/audio/taai3_joeng4.mp3",
+    "slow": "/audio/taai3_joeng4_slow.mp3"
+  },
+  "gam1 tin1 taai3 joeng4 han2 daai6.": {
+    "normal": "/audio/gam1_tin1_taai3_joeng4_han2_daai6.mp3",
+    "slow": "/audio/gam1_tin1_taai3_joeng4_han2_daai6_slow.mp3"
+  },
+  "syun4": {
+    "normal": "/audio/syun4.mp3",
+    "slow": "/audio/syun4_slow.mp3"
+  },
+  "ngo5 dei6 wui5 daap3 syun4.": {
+    "normal": "/audio/ngo5_dei6_wui5_daap3_syun4.mp3",
+    "slow": "/audio/ngo5_dei6_wui5_daap3_syun4_slow.mp3"
+  },
+  "bun6 sau2 lai5": {
+    "normal": "/audio/bun6_sau2_lai5.mp3",
+    "slow": "/audio/bun6_sau2_lai5_slow.mp3"
+  },
+  "ngo5 jiu3 maai5 bun6 sau2 lai5.": {
+    "normal": "/audio/ngo5_jiu3_maai5_bun6_sau2_lai5.mp3",
+    "slow": "/audio/ngo5_jiu3_maai5_bun6_sau2_lai5_slow.mp3"
+  },
+  "gaai1 si5 / si5 coeng4": {
+    "normal": "/audio/gaai1_si5_si5_coeng4.mp3",
+    "slow": "/audio/gaai1_si5_si5_coeng4_slow.mp3"
+  },
+  "ngo5 dei6 heoi3 gaai1 si5 laa1.": {
+    "normal": "/audio/ngo5_dei6_heoi3_gaai1_si5_laa1.mp3",
+    "slow": "/audio/ngo5_dei6_heoi3_gaai1_si5_laa1_slow.mp3"
+  },
+  "maai5": {
+    "normal": "/audio/maai5.mp3",
+    "slow": "/audio/maai5_slow.mp3"
+  },
+  "ngo5 soeng2 maai5 nei1 go3.": {
+    "normal": "/audio/ngo5_soeng2_maai5_nei1_go3.mp3",
+    "slow": "/audio/ngo5_soeng2_maai5_nei1_go3_slow.mp3"
+  },
+  "zit3 / gam2 gaa3": {
+    "normal": "/audio/zit3_gam2_gaa3.mp3",
+    "slow": "/audio/zit3_gam2_gaa3_slow.mp3"
+  },
+  "ho2 m4 ho2 ji5 peng4 di1 aa3?": {
+    "normal": "/audio/ho2_m4_ho2_ji5_peng4_di1_aa3.mp3",
+    "slow": "/audio/ho2_m4_ho2_ji5_peng4_di1_aa3_slow.mp3"
+  },
+  "zaau2 cin2": {
+    "normal": "/audio/zaau2_cin2.mp3",
+    "slow": "/audio/zaau2_cin2_slow.mp3"
+  },
+  "nei1 dou6 hai6 zaau2 faan1 bei2 nei5 ge3 cin2.": {
+    "normal": "/audio/nei1_dou6_hai6_zaau2_faan1_bei2_nei5_ge3_cin2.mp3",
+    "slow": "/audio/nei1_dou6_hai6_zaau2_faan1_bei2_nei5_ge3_cin2_slow.mp3"
+  },
+  "jyu6 ding6": {
+    "normal": "/audio/jyu6_ding6.mp3",
+    "slow": "/audio/jyu6_ding6_slow.mp3"
+  },
+  "ngo5 jau5 jyu6 ding6.": {
+    "normal": "/audio/ngo5_jau5_jyu6_ding6.mp3",
+    "slow": "/audio/ngo5_jau5_jyu6_ding6_slow.mp3"
+  },
+  "meng2 / ming4 zi6": {
+    "normal": "/audio/meng2_ming4_zi6.mp3",
+    "slow": "/audio/meng2_ming4_zi6_slow.mp3"
+  },
+  "fong4 gaan1": {
+    "normal": "/audio/fong4_gaan1.mp3",
+    "slow": "/audio/fong4_gaan1_slow.mp3"
+  },
+  "ngo5 soeng2 jiu3 jat1 gaan1 daai6 fong4 gaan1.": {
+    "normal": "/audio/ngo5_soeng2_jiu3_jat1_gaan1_daai6_fong4_gaan1.mp3",
+    "slow": "/audio/ngo5_soeng2_jiu3_jat1_gaan1_daai6_fong4_gaan1_slow.mp3"
+  },
+  "fu6 fun2": {
+    "normal": "/audio/fu6_fun2.mp3",
+    "slow": "/audio/fu6_fun2_slow.mp3"
+  },
+  "zoi6 naa5 leoi5 fu6 fun2?": {
+    "normal": "/audio/zoi6_naa5_leoi5_fu6_fun2.mp3",
+    "slow": "/audio/zoi6_naa5_leoi5_fu6_fun2_slow.mp3"
+  },
+  "ceoi2 siu1": {
+    "normal": "/audio/ceoi2_siu1.mp3",
+    "slow": "/audio/ceoi2_siu1_slow.mp3"
+  },
+  "ngo5 soeng2 ceoi2 siu1 nei1 go3.": {
+    "normal": "/audio/ngo5_soeng2_ceoi2_siu1_nei1_go3.mp3",
+    "slow": "/audio/ngo5_soeng2_ceoi2_siu1_nei1_go3_slow.mp3"
+  },
+  "wui6 leot2 / deoi3 wun6": {
+    "normal": "/audio/wui6_leot2_deoi3_wun6.mp3",
+    "slow": "/audio/wui6_leot2_deoi3_wun6_slow.mp3"
+  },
+  "bin1 dou6 jau5 dak1 wun6 cin2 aa3?": {
+    "normal": "/audio/bin1_dou6_jau5_dak1_wun6_cin2_aa3.mp3",
+    "slow": "/audio/bin1_dou6_jau5_dak1_wun6_cin2_aa3_slow.mp3"
+  },
+  "cin2": {
+    "normal": "/audio/cin2.mp3",
+    "slow": "/audio/cin2_slow.mp3"
+  },
+  "ngo5 mou5 cin2.": {
+    "normal": "/audio/ngo5_mou5_cin2.mp3",
+    "slow": "/audio/ngo5_mou5_cin2_slow.mp3"
+  },
+  "mei5 gam1": {
+    "normal": "/audio/mei5_gam1.mp3",
+    "slow": "/audio/mei5_gam1_slow.mp3"
+  },
+  "nei5 dei6 sau1 m4 sau1 mei5 gam1 aa3?": {
+    "normal": "/audio/nei5_dei6_sau1_m4_sau1_mei5_gam1_aa3.mp3",
+    "slow": "/audio/nei5_dei6_sau1_m4_sau1_mei5_gam1_aa3_slow.mp3"
+  },
+  "hoeng1 gong2 man1": {
+    "normal": "/audio/hoeng1_gong2_man1.mp3",
+    "slow": "/audio/hoeng1_gong2_man1_slow.mp3"
+  },
+  "nei1 dou6 jau5 jat1 baak3 man1.": {
+    "normal": "/audio/nei1_dou6_jau5_jat1_baak3_man1.mp3",
+    "slow": "/audio/nei1_dou6_jau5_jat1_baak3_man1_slow.mp3"
+  },
+  "ngaang6 bai6 / saan2 ngan2": {
+    "normal": "/audio/ngaang6_bai6_saan2_ngan2.mp3",
+    "slow": "/audio/ngaang6_bai6_saan2_ngan2_slow.mp3"
+  },
+  "nei5 jau5 mou5 saan2 ngan2 aa3?": {
+    "normal": "/audio/nei5_jau5_mou5_saan2_ngan2_aa3.mp3",
+    "slow": "/audio/nei5_jau5_mou5_saan2_ngan2_aa3_slow.mp3"
+  },
+  "ngo5 gin6 saam1 hai6 san1 ge3.": {
+    "normal": "/audio/ngo5_gin6_saam1_hai6_san1_ge3.mp3",
+    "slow": "/audio/ngo5_gin6_saam1_hai6_san1_ge3_slow.mp3"
+  },
+  "haai4": {
+    "normal": "/audio/haai4.mp3",
+    "slow": "/audio/haai4_slow.mp3"
+  },
+  "keoi5 deoi3 haai4 hou2 daai6.": {
+    "normal": "/audio/keoi5_deoi3_haai4_hou2_daai6.mp3",
+    "slow": "/audio/keoi5_deoi3_haai4_hou2_daai6_slow.mp3"
+  },
+  "mou2 zi2": {
+    "normal": "/audio/mou2_zi2.mp3",
+    "slow": "/audio/mou2_zi2_slow.mp3"
+  },
+  "daai3 soeng6 mou2 zi2.": {
+    "normal": "/audio/daai3_soeng6_mou2_zi2.mp3",
+    "slow": "/audio/daai3_soeng6_mou2_zi2_slow.mp3"
+  },
+  "ngaan5 geng2 / geng3": {
+    "normal": "/audio/ngaan5_geng2_geng3.mp3",
+    "slow": "/audio/ngaan5_geng2_geng3_slow.mp3"
+  },
+  "ngo5 fu3 ngaan5 geng2 hai2 bin1 aa3?": {
+    "normal": "/audio/ngo5_fu3_ngaan5_geng2_hai2_bin1_aa3.mp3",
+    "slow": "/audio/ngo5_fu3_ngaan5_geng2_hai2_bin1_aa3_slow.mp3"
+  },
+  "fu3 zi2": {
+    "normal": "/audio/fu3_zi2.mp3",
+    "slow": "/audio/fu3_zi2_slow.mp3"
+  },
+  "fu3 zi2 han2 coeng4.": {
+    "normal": "/audio/fu3_zi2_han2_coeng4.mp3",
+    "slow": "/audio/fu3_zi2_han2_coeng4_slow.mp3"
+  },
+  "lou5 si1": {
+    "normal": "/audio/lou5_si1.mp3",
+    "slow": "/audio/lou5_si1_slow.mp3"
+  },
+  "ngo5 dei6 go3 lou5 si1 hou2 hou2.": {
+    "normal": "/audio/ngo5_dei6_go3_lou5_si1_hou2_hou2.mp3",
+    "slow": "/audio/ngo5_dei6_go3_lou5_si1_hou2_hou2_slow.mp3"
+  },
+  "ji1 sang1": {
+    "normal": "/audio/ji1_sang1.mp3",
+    "slow": "/audio/ji1_sang1_slow.mp3"
+  },
+  "ngo5 seoi1 jiu3 ji1 sang1.": {
+    "normal": "/audio/ngo5_seoi1_jiu3_ji1_sang1.mp3",
+    "slow": "/audio/ngo5_seoi1_jiu3_ji1_sang1_slow.mp3"
+  },
+  "ging2 caat3": {
+    "normal": "/audio/ging2_caat3.mp3",
+    "slow": "/audio/ging2_caat3_slow.mp3"
+  },
+  "giu3 ging2 caat3.": {
+    "normal": "/audio/giu3_ging2_caat3.mp3",
+    "slow": "/audio/giu3_ging2_caat3_slow.mp3"
+  },
+  "wu6 si6": {
+    "normal": "/audio/wu6_si6.mp3",
+    "slow": "/audio/wu6_si6_slow.mp3"
+  },
+  "wu6 si6 han2 kan4 lou4.": {
+    "normal": "/audio/wu6_si6_han2_kan4_lou4.mp3",
+    "slow": "/audio/wu6_si6_han2_kan4_lou4_slow.mp3"
+  },
+  "gung1 cing4 si1": {
+    "normal": "/audio/gung1_cing4_si1.mp3",
+    "slow": "/audio/gung1_cing4_si1_slow.mp3"
+  },
+  "keoi5 hai6 jat1 go3 gung1 cing4 si1.": {
+    "normal": "/audio/keoi5_hai6_jat1_go3_gung1_cing4_si1.mp3",
+    "slow": "/audio/keoi5_hai6_jat1_go3_gung1_cing4_si1_slow.mp3"
+  },
+  "saan1": {
+    "normal": "/audio/saan1.mp3",
+    "slow": "/audio/saan1_slow.mp3"
+  },
+  "saan1 han2 gou1.": {
+    "normal": "/audio/saan1_han2_gou1.mp3",
+    "slow": "/audio/saan1_han2_gou1_slow.mp3"
+  },
+  "ho4 lau4": {
+    "normal": "/audio/ho4_lau4.mp3",
+    "slow": "/audio/ho4_lau4_slow.mp3"
+  },
+  "ho4 seoi2 han2 cing1 cit3.": {
+    "normal": "/audio/ho4_seoi2_han2_cing1_cit3.mp3",
+    "slow": "/audio/ho4_seoi2_han2_cing1_cit3_slow.mp3"
+  },
+  "hoi2": {
+    "normal": "/audio/hoi2.mp3",
+    "slow": "/audio/hoi2_slow.mp3"
+  },
+  "syu6": {
+    "normal": "/audio/syu6.mp3",
+    "slow": "/audio/syu6_slow.mp3"
+  },
+  "nei1 fo2 syu6 hou2 daai6.": {
+    "normal": "/audio/nei1_fo2_syu6_hou2_daai6.mp3",
+    "slow": "/audio/nei1_fo2_syu6_hou2_daai6_slow.mp3"
+  },
+  "faa1": {
+    "normal": "/audio/faa1.mp3",
+    "slow": "/audio/faa1_slow.mp3"
+  },
+  "uk1": {
+    "normal": "/audio/uk1.mp3",
+    "slow": "/audio/uk1_slow.mp3"
+  },
+  "nei1 gaan1 hai6 ngo5 dei6 gaan1 uk1.": {
+    "normal": "/audio/nei1_gaan1_hai6_ngo5_dei6_gaan1_uk1.mp3",
+    "slow": "/audio/nei1_gaan1_hai6_ngo5_dei6_gaan1_uk1_slow.mp3"
+  },
+  "fong4 gaan1 / ngo6 sat1": {
+    "normal": "/audio/fong4_gaan1_ngo6_sat1.mp3",
+    "slow": "/audio/fong4_gaan1_ngo6_sat1_slow.mp3"
+  },
+  "fong4 gaan1 han2 gon1 zeng6.": {
+    "normal": "/audio/fong4_gaan1_han2_gon1_zeng6.mp3",
+    "slow": "/audio/fong4_gaan1_han2_gon1_zeng6_slow.mp3"
+  },
+  "cyu4 fong2": {
+    "normal": "/audio/cyu4_fong2.mp3",
+    "slow": "/audio/cyu4_fong2_slow.mp3"
+  },
+  "keoi5 hai2 cyu4 fong2 zyu2 gan2 faan6.": {
+    "normal": "/audio/keoi5_hai2_cyu4_fong2_zyu2_gan2_faan6.mp3",
+    "slow": "/audio/keoi5_hai2_cyu4_fong2_zyu2_gan2_faan6_slow.mp3"
+  },
+  "juk6 sat1 / ci3 so2": {
+    "normal": "/audio/juk6_sat1_ci3_so2.mp3",
+    "slow": "/audio/juk6_sat1_ci3_so2_slow.mp3"
+  },
+  "juk6 sat1 zoi6 naa5 leoi5?": {
+    "normal": "/audio/juk6_sat1_zoi6_naa5_leoi5.mp3",
+    "slow": "/audio/juk6_sat1_zoi6_naa5_leoi5_slow.mp3"
+  },
+  "haak3 teng1": {
+    "normal": "/audio/haak3_teng1.mp3",
+    "slow": "/audio/haak3_teng1_slow.mp3"
+  },
+  "ngo5 dei6 hai2 haak3 teng1 tai2 gan2 din6 si6.": {
+    "normal": "/audio/ngo5_dei6_hai2_haak3_teng1_tai2_gan2_din6_si6.mp3",
+    "slow": "/audio/ngo5_dei6_hai2_haak3_teng1_tai2_gan2_din6_si6_slow.mp3"
+  },
+  "nei5 sik6 zo2 mei6 aa3?": {
+    "normal": "/audio/nei5_sik6_zo2_mei6_aa3.mp3",
+    "slow": "/audio/nei5_sik6_zo2_mei6_aa3_slow.mp3"
+  },
+  "seoi6 gaau3": {
+    "normal": "/audio/seoi6_gaau3.mp3",
+    "slow": "/audio/seoi6_gaau3_slow.mp3"
+  },
+  "ngo5 jin6 zoi6 soeng2 seoi6 gaau3 liu5.": {
+    "normal": "/audio/ngo5_jin6_zoi6_soeng2_seoi6_gaau3_liu5.mp3",
+    "slow": "/audio/ngo5_jin6_zoi6_soeng2_seoi6_gaau3_liu5_slow.mp3"
+  },
+  "paau2": {
+    "normal": "/audio/paau2.mp3",
+    "slow": "/audio/paau2_slow.mp3"
+  },
+  "keoi5 paau2 dak1 hou2 faai3.": {
+    "normal": "/audio/keoi5_paau2_dak1_hou2_faai3.mp3",
+    "slow": "/audio/keoi5_paau2_dak1_hou2_faai3_slow.mp3"
+  },
+  "zau2": {
+    "normal": "/audio/zau2.mp3",
+    "slow": "/audio/zau2_slow.mp3"
+  },
+  "ngo5 dei6 hai2 gung1 jyun2 saan3 haa5 bou6 laa1.": {
+    "normal": "/audio/ngo5_dei6_hai2_gung1_jyun2_saan3_haa5_bou6_laa1.mp3",
+    "slow": "/audio/ngo5_dei6_hai2_gung1_jyun2_saan3_haa5_bou6_laa1_slow.mp3"
+  },
+  "tai2 syu1": {
+    "normal": "/audio/tai2_syu1.mp3",
+    "slow": "/audio/tai2_syu1_slow.mp3"
+  },
+  "tai2 syu1 laa1.": {
+    "normal": "/audio/tai2_syu1_laa1.mp3",
+    "slow": "/audio/tai2_syu1_laa1_slow.mp3"
+  },
+  "ping4 gwo2": {
+    "normal": "/audio/ping4_gwo2.mp3",
+    "slow": "/audio/ping4_gwo2_slow.mp3"
+  },
+  "ping4 gwo2 han2 tim4.": {
+    "normal": "/audio/ping4_gwo2_han2_tim4.mp3",
+    "slow": "/audio/ping4_gwo2_han2_tim4_slow.mp3"
+  },
+  "hoeng1 ziu1": {
+    "normal": "/audio/hoeng1_ziu1.mp3",
+    "slow": "/audio/hoeng1_ziu1_slow.mp3"
+  },
+  "keoi5 sik6 zo2 jat1 tiu4 hoeng1 ziu1.": {
+    "normal": "/audio/keoi5_sik6_zo2_jat1_tiu4_hoeng1_ziu1.mp3",
+    "slow": "/audio/keoi5_sik6_zo2_jat1_tiu4_hoeng1_ziu1_slow.mp3"
+  },
+  "mong1 gwo2": {
+    "normal": "/audio/mong1_gwo2.mp3",
+    "slow": "/audio/mong1_gwo2_slow.mp3"
+  },
+  "mong1 gwo2 hai6 ngo5 ge3 zeoi3 oi3.": {
+    "normal": "/audio/mong1_gwo2_hai6_ngo5_ge3_zeoi3_oi3.mp3",
+    "slow": "/audio/mong1_gwo2_hai6_ngo5_ge3_zeoi3_oi3_slow.mp3"
+  },
+  "fung6 lei4": {
+    "normal": "/audio/fung6_lei4.mp3",
+    "slow": "/audio/fung6_lei4_slow.mp3"
+  },
+  "fung6 lei4 han2 syun1.": {
+    "normal": "/audio/fung6_lei4_han2_syun1.mp3",
+    "slow": "/audio/fung6_lei4_han2_syun1_slow.mp3"
+  },
+  "sai1 gwaa1": {
+    "normal": "/audio/sai1_gwaa1.mp3",
+    "slow": "/audio/sai1_gwaa1_slow.mp3"
+  },
+  "haa6 tin1 sik6 sai1 gwaai1 hou2 hou2 sik6.": {
+    "normal": "/audio/haa6_tin1_sik6_sai1_gwaai1_hou2_hou2_sik6.mp3",
+    "slow": "/audio/haa6_tin1_sik6_sai1_gwaai1_hou2_hou2_sik6_slow.mp3"
+  },
+  "faan1 ke2": {
+    "normal": "/audio/faan1_ke2.mp3",
+    "slow": "/audio/faan1_ke2_slow.mp3"
+  },
+  "faan1 ke2 hai6 hung4 sik1 ge3.": {
+    "normal": "/audio/faan1_ke2_hai6_hung4_sik1_ge3.mp3",
+    "slow": "/audio/faan1_ke2_hai6_hung4_sik1_ge3_slow.mp3"
+  },
+  "joeng4 cung1": {
+    "normal": "/audio/joeng4_cung1.mp3",
+    "slow": "/audio/joeng4_cung1_slow.mp3"
+  },
+  "ngo5 maai5 liu5 joeng4 cung1.": {
+    "normal": "/audio/ngo5_maai5_liu5_joeng4_cung1.mp3",
+    "slow": "/audio/ngo5_maai5_liu5_joeng4_cung1_slow.mp3"
+  },
+  "syun3 tau4": {
+    "normal": "/audio/syun3_tau4.mp3",
+    "slow": "/audio/syun3_tau4_slow.mp3"
+  },
+  "ngo5 dei6 seoi1 jiu3 syun3 tau4.": {
+    "normal": "/audio/ngo5_dei6_seoi1_jiu3_syun3_tau4.mp3",
+    "slow": "/audio/ngo5_dei6_seoi1_jiu3_syun3_tau4_slow.mp3"
+  },
+  "maa5 ling4 syu4": {
+    "normal": "/audio/maa5_ling4_syu4.mp3",
+    "slow": "/audio/maa5_ling4_syu4_slow.mp3"
+  },
+  "ngo5 hei2 fun1 zaa3 maa5 ling4 syu4.": {
+    "normal": "/audio/ngo5_hei2_fun1_zaa3_maa5_ling4_syu4.mp3",
+    "slow": "/audio/ngo5_hei2_fun1_zaa3_maa5_ling4_syu4_slow.mp3"
+  },
+  "ke2 zi2": {
+    "normal": "/audio/ke2_zi2.mp3",
+    "slow": "/audio/ke2_zi2_slow.mp3"
+  },
+  "ke2 zi2 zin1 daan2 hou2 hou2 sik6.": {
+    "normal": "/audio/ke2_zi2_zin1_daan2_hou2_hou2_sik6.mp3",
+    "slow": "/audio/ke2_zi2_zin1_daan2_hou2_hou2_sik6_slow.mp3"
+  },
+  "jyun4 jing4": {
+    "normal": "/audio/jyun4_jing4.mp3",
+    "slow": "/audio/jyun4_jing4_slow.mp3"
+  },
+  "jyut6 loeng6 hai6 jyun4 ge3.": {
+    "normal": "/audio/jyut6_loeng6_hai6_jyun4_ge3.mp3",
+    "slow": "/audio/jyut6_loeng6_hai6_jyun4_ge3_slow.mp3"
+  },
+  "zing3 fong1 jing4": {
+    "normal": "/audio/zing3_fong1_jing4.mp3",
+    "slow": "/audio/zing3_fong1_jing4_slow.mp3"
+  },
+  "nei1 go3 hap6 zi2 hai6 zing3 fong1 jing4 ge3.": {
+    "normal": "/audio/nei1_go3_hap6_zi2_hai6_zing3_fong1_jing4_ge3.mp3",
+    "slow": "/audio/nei1_go3_hap6_zi2_hai6_zing3_fong1_jing4_ge3_slow.mp3"
+  },
+  "saam1 gok3 jing4": {
+    "normal": "/audio/saam1_gok3_jing4.mp3",
+    "slow": "/audio/saam1_gok3_jing4_slow.mp3"
+  },
+  "uk1 deng2 hai6 saam1 gok3 jing4 ge3.": {
+    "normal": "/audio/uk1_deng2_hai6_saam1_gok3_jing4_ge3.mp3",
+    "slow": "/audio/uk1_deng2_hai6_saam1_gok3_jing4_ge3_slow.mp3"
+  },
+  "coeng4 fong1 jing4": {
+    "normal": "/audio/coeng4_fong1_jing4.mp3",
+    "slow": "/audio/coeng4_fong1_jing4_slow.mp3"
+  },
+  "dou6 mun4 hai6 coeng4 fong1 jing4 ge3.": {
+    "normal": "/audio/dou6_mun4_hai6_coeng4_fong1_jing4_ge3.mp3",
+    "slow": "/audio/dou6_mun4_hai6_coeng4_fong1_jing4_ge3_slow.mp3"
+  },
+  "sing1 sing1": {
+    "normal": "/audio/sing1_sing1.mp3",
+    "slow": "/audio/sing1_sing1_slow.mp3"
+  },
+  "tin1 hung1 jau5 han2 do1 sing1 sing1.": {
+    "normal": "/audio/tin1_hung1_jau5_han2_do1_sing1_sing1.mp3",
+    "slow": "/audio/tin1_hung1_jau5_han2_do1_sing1_sing1_slow.mp3"
+  },
+  "din6 nou5": {
+    "normal": "/audio/din6_nou5.mp3",
+    "slow": "/audio/din6_nou5_slow.mp3"
+  },
+  "ngo5 bou6 din6 nou5 waai6 zo2.": {
+    "normal": "/audio/ngo5_bou6_din6_nou5_waai6_zo2.mp3",
+    "slow": "/audio/ngo5_bou6_din6_nou5_waai6_zo2_slow.mp3"
+  },
+  "seon3 sik1": {
+    "normal": "/audio/seon3_sik1.mp3",
+    "slow": "/audio/seon3_sik1_slow.mp3"
+  },
+  "nei5 jau5 jat1 tiu4 seon3 sik1.": {
+    "normal": "/audio/nei5_jau5_jat1_tiu4_seon3_sik1.mp3",
+    "slow": "/audio/nei5_jau5_jat1_tiu4_seon3_sik1_slow.mp3"
+  },
+  "mong5 zai3 mong5 lou6": {
+    "normal": "/audio/mong5_zai3_mong5_lou6.mp3",
+    "slow": "/audio/mong5_zai3_mong5_lou6_slow.mp3"
+  },
+  "mong5 lou6 han2 maan6.": {
+    "normal": "/audio/mong5_lou6_han2_maan6.mp3",
+    "slow": "/audio/mong5_lou6_han2_maan6_slow.mp3"
+  },
+  "gin6 pun2": {
+    "normal": "/audio/gin6_pun2.mp3",
+    "slow": "/audio/gin6_pun2_slow.mp3"
+  },
+  "ngo5 go3 gin6 pun2 hai6 san1 ge3.": {
+    "normal": "/audio/ngo5_go3_gin6_pun2_hai6_san1_ge3.mp3",
+    "slow": "/audio/ngo5_go3_gin6_pun2_hai6_san1_ge3_slow.mp3"
+  },
+  "jing4 mok6": {
+    "normal": "/audio/jing4_mok6.mp3",
+    "slow": "/audio/jing4_mok6_slow.mp3"
+  },
+  "din6 si6 jing4 mok6 han2 daai6.": {
+    "normal": "/audio/din6_si6_jing4_mok6_han2_daai6.mp3",
+    "slow": "/audio/din6_si6_jing4_mok6_han2_daai6_slow.mp3"
+  },
+  "laam4 kau4": {
+    "normal": "/audio/laam4_kau4.mp3",
+    "slow": "/audio/laam4_kau4_slow.mp3"
+  },
+  "keoi5 dei6 daa2 gan2 laam4 kau4.": {
+    "normal": "/audio/keoi5_dei6_daa2_gan2_laam4_kau4.mp3",
+    "slow": "/audio/keoi5_dei6_daa2_gan2_laam4_kau4_slow.mp3"
+  },
+  "paau2 bou6": {
+    "normal": "/audio/paau2_bou6.mp3",
+    "slow": "/audio/paau2_bou6_slow.mp3"
+  },
+  "keoi5 zung1 ji3 paau2 bou6.": {
+    "normal": "/audio/keoi5_zung1_ji3_paau2_bou6.mp3",
+    "slow": "/audio/keoi5_zung1_ji3_paau2_bou6_slow.mp3"
+  },
+  "jau4 wing6": {
+    "normal": "/audio/jau4_wing6.mp3",
+    "slow": "/audio/jau4_wing6_slow.mp3"
+  },
+  "ngo5 hei2 fun1 jau4 wing6.": {
+    "normal": "/audio/ngo5_hei2_fun1_jau4_wing6.mp3",
+    "slow": "/audio/ngo5_hei2_fun1_jau4_wing6_slow.mp3"
+  },
+  "kau4": {
+    "normal": "/audio/kau4.mp3",
+    "slow": "/audio/kau4_slow.mp3"
+  },
+  "baa2 kau4 cyun4 gwo3 loi4.": {
+    "normal": "/audio/baa2_kau4_cyun4_gwo3_loi4.mp3",
+    "slow": "/audio/baa2_kau4_cyun4_gwo3_loi4_slow.mp3"
+  },
+  "kyun4 gik1": {
+    "normal": "/audio/kyun4_gik1.mp3",
+    "slow": "/audio/kyun4_gik1_slow.mp3"
+  },
+  "ngo5 dei6 tai2 zo2 kyun4 gik1 bei2 coi3.": {
+    "normal": "/audio/ngo5_dei6_tai2_zo2_kyun4_gik1_bei2_coi3.mp3",
+    "slow": "/audio/ngo5_dei6_tai2_zo2_kyun4_gik1_bei2_coi3_slow.mp3"
+  },
+  "zoi6 soeng6 min6": {
+    "normal": "/audio/zoi6_soeng6_min6.mp3",
+    "slow": "/audio/zoi6_soeng6_min6_slow.mp3"
+  },
+  "zoi6 coek3 zi2 soeng6 min6.": {
+    "normal": "/audio/zoi6_coek3_zi2_soeng6_min6.mp3",
+    "slow": "/audio/zoi6_coek3_zi2_soeng6_min6_slow.mp3"
+  },
+  "zoi6 haa6 min6": {
+    "normal": "/audio/zoi6_haa6_min6.mp3",
+    "slow": "/audio/zoi6_haa6_min6_slow.mp3"
+  },
+  "zoi6 cong4 dai2 haa6.": {
+    "normal": "/audio/zoi6_cong4_dai2_haa6.mp3",
+    "slow": "/audio/zoi6_cong4_dai2_haa6_slow.mp3"
+  },
+  "zeon3 dou3 leoi5 min6.": {
+    "normal": "/audio/zeon3_dou3_leoi5_min6.mp3",
+    "slow": "/audio/zeon3_dou3_leoi5_min6_slow.mp3"
+  },
+  "zoi6 ngoi6 min6 dang2.": {
+    "normal": "/audio/zoi6_ngoi6_min6_dang2.mp3",
+    "slow": "/audio/zoi6_ngoi6_min6_dang2_slow.mp3"
+  },
+  "zoi6 pong4 bin1": {
+    "normal": "/audio/zoi6_pong4_bin1.mp3",
+    "slow": "/audio/zoi6_pong4_bin1_slow.mp3"
+  },
+  "zo6 zoi6 ngo5 pong4 bin1.": {
+    "normal": "/audio/zo6_zoi6_ngo5_pong4_bin1.mp3",
+    "slow": "/audio/zo6_zoi6_ngo5_pong4_bin1_slow.mp3"
+  },
+  "hea": {
+    "normal": "/audio/hea.mp3",
+    "slow": "/audio/hea_slow.mp3"
+  },
+  "ngo5 gam1 jat1 zi2 soeng2 hai2 uk1 kei2 hea.": {
+    "normal": "/audio/ngo5_gam1_jat1_zi2_soeng2_hai2_uk1_kei2_hea.mp3",
+    "slow": "/audio/ngo5_gam1_jat1_zi2_soeng2_hai2_uk1_kei2_hea_slow.mp3"
+  },
+  "chok": {
+    "normal": "/audio/chok.mp3",
+    "slow": "/audio/chok_slow.mp3"
+  },
+  "m4 sai2 cok1 laa3, ngo5 dei6 zi1 nei5 leng3 zai2 laa3.": {
+    "normal": "/audio/m4_sai2_cok1_laa3_ngo5_dei6_zi1_nei5_leng3_zai2_laa3.mp3",
+    "slow": "/audio/m4_sai2_cok1_laa3_ngo5_dei6_zi1_nei5_leng3_zai2_laa3_slow.mp3"
+  },
+  "cim4 seoi2": {
+    "normal": "/audio/cim4_seoi2.mp3",
+    "slow": "/audio/cim4_seoi2_slow.mp3"
+  },
+  "keoi5 hai2 go2 pang4 jau5 kwang4 zou2 cim4 seoi2 gam1 gau2.": {
+    "normal": "/audio/keoi5_hai2_go2_pang4_jau5_kwang4_zou2_cim4_seoi2_gam1_gau2.mp3",
+    "slow": "/audio/keoi5_hai2_go2_pang4_jau5_kwang4_zou2_cim4_seoi2_gam1_gau2_slow.mp3"
+  },
+  "ceoi1 seoi2": {
+    "normal": "/audio/ceoi1_seoi2.mp3",
+    "slow": "/audio/ceoi1_seoi2_slow.mp3"
+  },
+  "ngo5 dei6 dou1 hai6 ceoi1 haa3 seoi2 ze1.": {
+    "normal": "/audio/ngo5_dei6_dou1_hai6_ceoi1_haa3_seoi2_ze1.mp3",
+    "slow": "/audio/ngo5_dei6_dou1_hai6_ceoi1_haa3_seoi2_ze1_slow.mp3"
+  },
+  "sik6 faa1 sang1": {
+    "normal": "/audio/sik6_faa1_sang1.mp3",
+    "slow": "/audio/sik6_faa1_sang1_slow.mp3"
+  },
+  "ngo5 zi2 hai6 sik6 faa1 sang1 ze1, m4 gwaan1 ngo5 si3.": {
+    "normal": "/audio/ngo5_zi2_hai6_sik6_faa1_sang1_ze1_m4_gwaan1_ngo5_si3.mp3",
+    "slow": "/audio/ngo5_zi2_hai6_sik6_faa1_sang1_ze1_m4_gwaan1_ngo5_si3_slow.mp3"
+  },
+  "maai5 sung3": {
+    "normal": "/audio/maai5_sung3.mp3",
+    "slow": "/audio/maai5_sung3_slow.mp3"
+  },
+  "ngo5 dei6 gam1 maan1 heoi3 bin1 dou6 maai5 sung3 aa3?": {
+    "normal": "/audio/ngo5_dei6_gam1_maan1_heoi3_bin1_dou6_maai5_sung3_aa3.mp3",
+    "slow": "/audio/ngo5_dei6_gam1_maan1_heoi3_bin1_dou6_maai5_sung3_aa3_slow.mp3"
+  },
+  "gei2 do1 cin2 jat1 gan1?": {
+    "normal": "/audio/gei2_do1_cin2_jat1_gan1.mp3",
+    "slow": "/audio/gei2_do1_cin2_jat1_gan1_slow.mp3"
+  },
+  "nei1 di1 coi3 gei2 do1 cin2 jat1 gan1 aa3?": {
+    "normal": "/audio/nei1_di1_coi3_gei2_do1_cin2_jat1_gan1_aa3.mp3",
+    "slow": "/audio/nei1_di1_coi3_gei2_do1_cin2_jat1_gan1_aa3_slow.mp3"
+  },
+  "san1 sin1": {
+    "normal": "/audio/san1_sin1.mp3",
+    "slow": "/audio/san1_sin1_slow.mp3"
+  },
+  "peng4 di1 laa1": {
+    "normal": "/audio/peng4_di1_laa1.mp3",
+    "slow": "/audio/peng4_di1_laa1_slow.mp3"
+  },
+  "lou5 baan2, peng4 di1 laa1, maai5 do1 di1 aa3.": {
+    "normal": "/audio/lou5_baan2_peng4_di1_laa1_maai5_do1_di1_aa3.mp3",
+    "slow": "/audio/lou5_baan2_peng4_di1_laa1_maai5_do1_di1_aa3_slow.mp3"
+  },
+  "sung3 fo1 cung1": {
+    "normal": "/audio/sung3_fo1_cung1.mp3",
+    "slow": "/audio/sung3_fo1_cung1_slow.mp3"
+  },
+  "m4 goi1 sung3 fo1 cung1 laa1.": {
+    "normal": "/audio/m4_goi1_sung3_fo1_cung1_laa1.mp3",
+    "slow": "/audio/m4_goi1_sung3_fo1_cung1_laa1_slow.mp3"
+  },
+  "si1 mat6 naai5 caa4": {
+    "normal": "/audio/si1_mat6_naai5_caa4.mp3",
+    "slow": "/audio/si1_mat6_naai5_caa4_slow.mp3"
+  },
+  "ngo5 soeng2 jam2 dung3 si1 mat6 naai5 caa4.": {
+    "normal": "/audio/ngo5_soeng2_jam2_dung3_si1_mat6_naai5_caa4.mp3",
+    "slow": "/audio/ngo5_soeng2_jam2_dung3_si1_mat6_naai5_caa4_slow.mp3"
+  },
+  "bo1 lo4 jau4": {
+    "normal": "/audio/bo1_lo4_jau4.mp3",
+    "slow": "/audio/bo1_lo4_jau4_slow.mp3"
+  },
+  "nei1 dou6 ge3 bo1 lo4 jau4 hou2 leng3.": {
+    "normal": "/audio/nei1_dou6_ge3_bo1_lo4_jau4_hou2_leng3.mp3",
+    "slow": "/audio/nei1_dou6_ge3_bo1_lo4_jau4_hou2_leng3_slow.mp3"
+  },
+  "haa1 gaau2": {
+    "normal": "/audio/haa1_gaau2.mp3",
+    "slow": "/audio/haa1_gaau2_slow.mp3"
+  },
+  "jam2 caa4 jat1 ding3 jiu3 dim2 haa1 gaau2.": {
+    "normal": "/audio/jam2_caa4_jat1_ding3_jiu3_dim2_haa1_gaau2.mp3",
+    "slow": "/audio/jam2_caa4_jat1_ding3_jiu3_dim2_haa1_gaau2_slow.mp3"
+  },
+  "siu1 maai2": {
+    "normal": "/audio/siu1_maai2.mp3",
+    "slow": "/audio/siu1_maai2_slow.mp3"
+  },
+  "ngo5 zui3 oi3 sik6 gaai1 bin1 ge3 gaai1 laat6 siu1 maai2.": {
+    "normal": "/audio/ngo5_zui3_oi3_sik6_gaai1_bin1_ge3_gaai1_laat6_siu1_maai2.mp3",
+    "slow": "/audio/ngo5_zui3_oi3_sik6_gaai1_bin1_ge3_gaai1_laat6_siu1_maai2_slow.mp3"
+  },
+  "daan6 taat1": {
+    "normal": "/audio/daan6_taat1.mp3",
+    "slow": "/audio/daan6_taat1_slow.mp3"
+  },
+  "daan6 taat1 jiu3 sik6 jik6 ngaat3 ngaat3 ge3.": {
+    "normal": "/audio/daan6_taat1_jiu3_sik6_jik6_ngaat3_ngaat3_ge3.mp3",
+    "slow": "/audio/daan6_taat1_jiu3_sik6_jik6_ngaat3_ngaat3_ge3_slow.mp3"
+  },
+  "daa2 fung1": {
+    "normal": "/audio/daa2_fung1.mp3",
+    "slow": "/audio/daa2_fung1_slow.mp3"
+  },
+  "ting1 jat1 daa2 fung1 m4 sai2 faan1 hung1 laa3.": {
+    "normal": "/audio/ting1_jat1_daa2_fung1_m4_sai2_faan1_hung1_laa3.mp3",
+    "slow": "/audio/ting1_jat1_daa2_fung1_m4_sai2_faan1_hung1_laa3_slow.mp3"
+  },
+  "baat3 hou6 fung1 kau4": {
+    "normal": "/audio/baat3_hou6_fung1_kau4.mp3",
+    "slow": "/audio/baat3_hou6_fung1_kau4_slow.mp3"
+  },
+  "gwaa3 baat3 hou6 fung1 kau4 laa3, faai3 di1 faan1 uk1 laa1.": {
+    "normal": "/audio/gwaa3_baat3_hou6_fung1_kau4_laa3_faai3_di1_faan1_uk1_laa1.mp3",
+    "slow": "/audio/gwaa3_baat3_hou6_fung1_kau4_laa3_faai3_di1_faan1_uk1_laa1_slow.mp3"
+  },
+  "lok6 daai6 jyu5": {
+    "normal": "/audio/lok6_daai6_jyu5.mp3",
+    "slow": "/audio/lok6_daai6_jyu5_slow.mp3"
+  },
+  "ngoi6 min6 lok6 gan2 daai6 jyu5, m4 goi1 daai3 ze1.": {
+    "normal": "/audio/ngoi6_min6_lok6_gan2_daai6_jyu5_m4_goi1_daai3_ze1.mp3",
+    "slow": "/audio/ngoi6_min6_lok6_gan2_daai6_jyu5_m4_goi1_daai3_ze1_slow.mp3"
+  },
+  "sap1 zai6": {
+    "normal": "/audio/sap1_zai6.mp3",
+    "slow": "/audio/sap1_zai6_slow.mp3"
+  },
+  "gam1 jat1 ge3 tin1 hei3 zan1 hai6 sap1 zai6.": {
+    "normal": "/audio/gam1_jat1_ge3_tin1_hei3_zan1_hai6_sap1_zai6.mp3",
+    "slow": "/audio/gam1_jat1_ge3_tin1_hei3_zan1_hai6_sap1_zai6_slow.mp3"
+  },
+  "haak1 jyu5": {
+    "normal": "/audio/haak1_jyu5.mp3",
+    "slow": "/audio/haak1_jyu5_slow.mp3"
+  },
+  "haak1 jyu5 gwaa3 gan2, faai3 di1 lau1 hai2 on1 cyun4 ge3 dei6 fong1.": {
+    "normal": "/audio/haak1_jyu5_gwaa3_gan2_faai3_di1_lau1_hai2_on1_cyun4_ge3_dei6_fong1.mp3",
+    "slow": "/audio/haak1_jyu5_gwaa3_gan2_faai3_di1_lau1_hai2_on1_cyun4_ge3_dei6_fong1_slow.mp3"
+  }
+}

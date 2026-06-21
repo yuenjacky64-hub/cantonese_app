@@ -26,7 +26,7 @@ describe('TTS Utility', () => {
         expect(result).toBe(mockAudioContent);
         expect(fetchSpy).toHaveBeenCalledTimes(1);
         expect(fetchSpy).toHaveBeenCalledWith(
-            'https://tts-server-479744148035.asia-east1.run.app/tts',
+            'https://tts-server-446058742621.asia-east1.run.app/tts',
             expect.objectContaining({
                 method: 'POST',
                 body: expect.stringContaining('"text":"Kumusta"')

@@ -41,7 +41,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/tts-api': {
-        target: 'https://tts-server-479744148035.asia-east1.run.app',
+        target: 'https://tts-server-446058742621.asia-east1.run.app',
         changeOrigin: true,
         secure: true,
         rewrite: (path) => path.replace(/^\/tts-api/, '')
@@ -102,6 +102,32 @@ export default defineConfig({
               expiration: {
                 maxEntries: 200,
                 maxAgeSeconds: 60 * 60 * 24 * 30 // 30 Days
+              }
+            }
+          },
+          {
+            // Cache lesson audio for offline playback. Capacity is sized for the
+            // full corpus (~1900 mp3 files; both normal and slow speeds).
+            urlPattern: /\/audio\/.*\.mp3$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'lesson-audio',
+              expiration: {
+                maxEntries: 2000,
+                maxAgeSeconds: 60 * 60 * 24 * 90 // 90 Days
+              },
+              cacheableResponse: {
+                statuses: [0, 200]
+              }
+            }
+          },
+          {
+            urlPattern: /\/audio\/audio-map\.json$/,
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'audio-map',
+              cacheableResponse: {
+                statuses: [0, 200]
               }
             }
           }

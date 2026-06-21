@@ -1,5 +1,5 @@
 
-const TTS_API_URL = 'https://tts-server-479744148035.asia-east1.run.app/tts';
+const TTS_API_URL = 'https://tts-server-446058742621.asia-east1.run.app/tts';
 
 interface TTSOptions {
     text: string;

@@ -1,9 +1,9 @@
 /**
  * Audio Generation Script
  *
- * This script fetches all Cantonese words from lessons.ts and generates audio files
- * using the Google Cloud TTS serverless API. The audio files are saved as MP3 files
- * in the public/audio directory for offline use.
+ * This script fetches all Cantonese words and example sentences from lessons.json
+ * and generates audio files using the Google Cloud TTS serverless API. The audio
+ * files are saved as MP3 files in the public/audio directory for offline use.
  *
  * Generates both normal speed (1.0x) and slow speed (0.6x) versions.
  *
@@ -17,7 +17,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const TTS_API_URL = 'https://tts-server-479744148035.asia-east1.run.app/tts';
+const TTS_API_URL = 'https://tts-server-446058742621.asia-east1.run.app/tts';
 const OUTPUT_DIR = path.join(__dirname, '..', 'public', 'audio');
 
 // Create output directory if it doesn't exist
@@ -85,21 +85,30 @@ async function generateAudio(text, filename, speakingRate = 1.0) {
 }
 
 /**
- * Parse lessons.ts to extract all Cantonese words
+ * Parse lessons.json to extract all Cantonese words and example sentences
  */
 function extractCantoneseWords() {
-    const lessonsPath = path.join(__dirname, '..', 'src', 'data', 'lessons.ts');
-    const content = fs.readFileSync(lessonsPath, 'utf-8');
+    const lessonsPath = path.join(__dirname, '..', 'src', 'data', 'lessons.json');
+    const content = JSON.parse(fs.readFileSync(lessonsPath, 'utf-8'));
 
-    const words = new Map(); // Use Map to deduplicate
+    const words = new Map();
 
-    // Extract cantonese words from cards
-    const cantoneseMatches = content.matchAll(/cantonese:\s*['"]([^'"]+)['"]/g);
-    for (const match of cantoneseMatches) {
-        const word = match[1];
-        const filename = sanitizeFilename(word);
+    const addWord = (raw) => {
+        if (!raw || typeof raw !== 'string') return;
+        const trimmed = raw.trim();
+        if (!trimmed) return;
+        const filename = sanitizeFilename(trimmed);
         if (filename && !words.has(filename)) {
-            words.set(filename, word);
+            words.set(filename, trimmed);
+        }
+    };
+
+    for (const category of content) {
+        for (const card of category.cards) {
+            addWord(card.cantonese);
+            if (card.example) {
+                addWord(card.example.cantonese);
+            }
         }
     }
 
@@ -153,14 +162,14 @@ async function main() {
     console.log(`   ❌ Failed: ${slowFailed}`);
     console.log(`\n📁 Output: ${OUTPUT_DIR}`);
 
-    // Generate audio map JSON file for the app to use
-    const audioMap = {
-        normal: {},
-        slow: {}
-    };
+    // Generate audio map JSON file for the app to use.
+    // Shape: { [text]: { normal: path, slow: path } } — matches ListeningQuiz lookup.
+    const audioMap = {};
     for (const [filename, text] of words) {
-        audioMap.normal[text] = `/audio/${filename}.mp3`;
-        audioMap.slow[text] = `/audio/${filename}_slow.mp3`;
+        audioMap[text] = {
+            normal: `/audio/${filename}.mp3`,
+            slow: `/audio/${filename}_slow.mp3`,
+        };
     }
 
     const mapPath = path.join(OUTPUT_DIR, 'audio-map.json');

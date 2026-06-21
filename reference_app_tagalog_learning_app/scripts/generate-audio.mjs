@@ -17,7 +17,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const TTS_API_URL = 'https://tts-server-479744148035.asia-east1.run.app/tts';
+const TTS_API_URL = 'https://tts-server-446058742621.asia-east1.run.app/tts';
 const OUTPUT_DIR = path.join(__dirname, '..', 'public', 'audio');
 
 // Create output directory if it doesn't exist

@@ -130,7 +130,8 @@ const ListeningQuiz: React.FC = () => {
             const audioPath = audioMap ? audioMap[text]?.normal : null;
 
             if (audioPath) {
-                const fullPath = `${import.meta.env.BASE_URL}${audioPath}`;
+                const relPath = audioPath.startsWith('/') ? audioPath.slice(1) : audioPath;
+                const fullPath = `${import.meta.env.BASE_URL}${relPath}`;
 
                 if (audioRef.current) {
                     audioRef.current.src = fullPath;

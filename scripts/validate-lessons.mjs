@@ -54,6 +54,9 @@ const LOANWORD_ALLOWLIST = new Set([
   'PM', 'AM', 'am', 'pm',
   // Cantonese slang spelled in romanization without tone digits
   'hea', 'chok', 'chur', 'hai', 'mat', 'sek',
+  // Phonological annotations used inside pedagogical parentheticals,
+  // e.g. "lin4 zip3 ci4 (n hau6)" = "linker (after n-ending syllable)".
+  'n',
 ]);
 // Allow tokens that contain at least one CJK character — these are
 // intentional inline Chinese fragments inside otherwise-jyutping text.

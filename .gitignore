@@ -3,6 +3,7 @@ node_modules/
 dist/
 coverage/
 cypress/
+.claude/
 videos4/
 videos3/
 videos/

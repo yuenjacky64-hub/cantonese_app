@@ -5,7 +5,7 @@ Before building or deploying the app, you must generate the static audio files. 
 ## Prerequisites
 
 - A running Google Cloud TTS serverless endpoint (see `how_to_setup_google_serverless_server_for_tts.txt` in the project root or [TTS.md](TTS.md) for setup instructions).
-- The endpoint URL configured in `scripts/generate-audio.mjs` (default: `https://tts-server-479744148035.asia-east1.run.app/tts`).
+- The endpoint URL configured in `scripts/generate-audio.mjs` (default: `https://tts-server-446058742621.asia-east1.run.app/tts`).
 
 ## Generating Audio Files
 
