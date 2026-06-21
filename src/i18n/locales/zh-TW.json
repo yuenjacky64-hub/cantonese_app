@@ -159,7 +159,15 @@
   },
   "flashcard": {
     "tapToSeeTranslation": "點擊查看翻譯",
-    "tapToSeeCantonese": "點擊查看粵語"
+    "tapToSeeCantonese": "點擊查看粵語",
+    "aria": {
+      "playAudio": "播放發音",
+      "playSlow": "慢速播放發音",
+      "playExample": "播放例句",
+      "playExampleSlow": "慢速播放例句",
+      "bookmarkAdd": "收藏這張卡",
+      "bookmarkRemove": "取消收藏"
+    }
   },
   "topics": {
     "greetings": "問候",
@@ -281,7 +289,10 @@
     "keepLearning": "繼續學習！",
     "tryAgain": "再試一次！",
     "bestStreak": "最佳連續",
-    "playAgain": "再玩一次"
+    "playAgain": "再玩一次",
+    "aria": {
+      "playAudio": "播放音訊提示"
+    }
   },
   "groups": {
     "basics": "基礎",

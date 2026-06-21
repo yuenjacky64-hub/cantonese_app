@@ -52,7 +52,22 @@ export default defineConfig({
   build: {
     sourcemap: true,
     rollupOptions: {
-      output: {}
+      output: {
+        // Vendor chunk splitting: keep heavy framework code in its own
+        // long-cached chunks so app-code changes don't invalidate them.
+        manualChunks(id) {
+          if (!id.includes('node_modules')) return;
+          if (id.includes('@ionic/') || id.includes('ionicons')) return 'ionic';
+          if (id.includes('react-i18next') || id.includes('/i18next')) return 'i18n';
+          if (
+            id.includes('/react/') ||
+            id.includes('/react-dom/') ||
+            id.includes('/react-router') ||
+            id.includes('/scheduler/')
+          ) return 'react';
+          return 'vendor';
+        }
+      }
     }
   },
   plugins: [

@@ -147,7 +147,10 @@
     "good": "Good Job!",
     "keepLearning": "Keep Practicing!",
     "tryAgain": "Try Again!",
-    "playAgain": "Play Again"
+    "playAgain": "Play Again",
+    "aria": {
+      "playAudio": "Play the audio clue"
+    }
   },
   "home": {
     "tipsEveryday": "Tips Everyday",
@@ -209,7 +212,15 @@
   },
   "flashcard": {
     "tapToSeeTranslation": "Tap to see translation",
-    "tapToSeeCantonese": "Tap to see Cantonese"
+    "tapToSeeCantonese": "Tap to see Cantonese",
+    "aria": {
+      "playAudio": "Play pronunciation",
+      "playSlow": "Play pronunciation slowly",
+      "playExample": "Play example sentence",
+      "playExampleSlow": "Play example sentence slowly",
+      "bookmarkAdd": "Bookmark this card",
+      "bookmarkRemove": "Remove bookmark"
+    }
   },
   "topics": {
     "greetings": "Greetings",

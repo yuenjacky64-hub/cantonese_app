@@ -24,7 +24,8 @@ import { dirname, join } from 'node:path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const DATA_PATH = join(__dirname, '..', 'src', 'data', 'lessons.json');
-const I18N_EN_PATH = join(__dirname, '..', 'src', 'i18n', 'locales', 'en.json');
+const I18N_DIR = join(__dirname, '..', 'src', 'i18n', 'locales');
+const I18N_LOCALES = ['en', 'zh-TW', 'zh-CN'];
 
 const ALLOWED_GROUPS = new Set([
   'groups.basics',
@@ -121,7 +122,7 @@ function validateCard(card, catId) {
   }
 }
 
-function validateCategory(cat, allIds, idCategoryMap, enKeys) {
+function validateCategory(cat, allIds, idCategoryMap, localeKeys) {
   const where = `[${cat.id ?? '(no id)'}]`;
   if (!isNonEmptyString(cat.id))      errors.push(`${where}: id missing`);
   if (!isNonEmptyString(cat.titleKey)) errors.push(`${where}: titleKey missing`);
@@ -135,8 +136,12 @@ function validateCategory(cat, allIds, idCategoryMap, enKeys) {
     errors.push(`${where}: level must be 1–4 (got ${cat.level})`);
   }
 
-  if (cat.titleKey && !enKeys.has(cat.titleKey)) {
-    warnings.push(`${where}: titleKey "${cat.titleKey}" has no entry in en.json`);
+  if (cat.titleKey) {
+    for (const [locale, keys] of Object.entries(localeKeys)) {
+      if (!keys.has(cat.titleKey)) {
+        warnings.push(`${where}: titleKey "${cat.titleKey}" has no entry in ${locale}.json`);
+      }
+    }
   }
 
   if (Array.isArray(cat.cards)) {
@@ -179,13 +184,15 @@ function main() {
     process.exit(1);
   }
 
-  let enKeys;
-  try {
-    const enJson = JSON.parse(readFileSync(I18N_EN_PATH, 'utf-8'));
-    enKeys = collectI18nKeys(enJson);
-  } catch (e) {
-    warnings.push(`Could not read ${I18N_EN_PATH}: ${e.message}`);
-    enKeys = new Set();
+  const localeKeys = {};
+  for (const locale of I18N_LOCALES) {
+    const path = join(I18N_DIR, `${locale}.json`);
+    try {
+      localeKeys[locale] = collectI18nKeys(JSON.parse(readFileSync(path, 'utf-8')));
+    } catch (e) {
+      warnings.push(`Could not read ${path}: ${e.message}`);
+      localeKeys[locale] = new Set();
+    }
   }
 
   if (!Array.isArray(data)) {
@@ -202,7 +209,7 @@ function main() {
       errors.push(`duplicate category id "${cat.id}"`);
     }
     if (cat.id) seenCatIds.add(cat.id);
-    validateCategory(cat, allIds, idCategoryMap, enKeys);
+    validateCategory(cat, allIds, idCategoryMap, localeKeys);
   }
 
   // Summary

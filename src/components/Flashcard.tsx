@@ -424,7 +424,8 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
               className="audio-btn"
               onClick={(e) => playAudio(e, displayWord, 'yue-HK')}
               // Remove disabled={isPlaying} to allow interruption
-              title="Normal speed"
+              title={t('flashcard.aria.playAudio')}
+              aria-label={t('flashcard.aria.playAudio')}
             >
               {isPlaying ? <IonSpinner name="dots" color="primary" /> : <IonIcon icon={volumeHighOutline} slot="icon-only" color="primary" />}
             </IonButton>
@@ -433,7 +434,8 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
               className="slow-audio-btn"
               onClick={(e) => playSlowAudio(e, displayWord)}
               // Remove disabled={isPlaying}
-              title="Slow speed (learner mode)"
+              title={t('flashcard.aria.playSlow')}
+              aria-label={t('flashcard.aria.playSlow')}
             >
               <IonIcon icon={volumeLowOutline} slot="icon-only" color="primary" />
             </IonButton>
@@ -442,6 +444,8 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
             fill="clear"
             className="bookmark-btn"
             onClick={handleBookmark}
+            aria-label={t(isBookmarkedState ? 'flashcard.aria.bookmarkRemove' : 'flashcard.aria.bookmarkAdd')}
+            aria-pressed={isBookmarkedState}
           >
             <IonIcon icon={isBookmarkedState ? bookmark : bookmarkOutline} slot="icon-only" color="primary" />
           </IonButton>
@@ -459,6 +463,7 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
             className="audio-btn"
             onClick={(e) => playAudio(e, translation.text, translation.lang)}
             // Remove disabled={isPlaying}
+            aria-label={t('flashcard.aria.playAudio')}
           >
             {isPlaying ? <IonSpinner name="dots" color="light" /> : <IonIcon icon={volumeHighOutline} slot="icon-only" color="light" />}
           </IonButton>
@@ -466,6 +471,8 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
             fill="clear"
             className="bookmark-btn"
             onClick={handleBookmark}
+            aria-label={t(isBookmarkedState ? 'flashcard.aria.bookmarkRemove' : 'flashcard.aria.bookmarkAdd')}
+            aria-pressed={isBookmarkedState}
           >
             <IonIcon icon={isBookmarkedState ? bookmark : bookmarkOutline} slot="icon-only" color="light" />
           </IonButton>
@@ -484,7 +491,8 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
                     className="example-audio-btn"
                     onClick={(e) => playAudio(e, displayExampleText, 'yue-HK')}
                     // Remove disabled={isPlaying}
-                    title="Normal speed"
+                    title={t('flashcard.aria.playExample')}
+                    aria-label={t('flashcard.aria.playExample')}
                   >
                     {isPlaying ? <IonSpinner name="dots" color="medium" /> : <IonIcon icon={volumeHighOutline} color="medium" />}
                   </IonButton>
@@ -494,7 +502,8 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
                     className="example-audio-btn"
                     onClick={(e) => playSlowAudio(e, displayExampleText)}
                     // Remove disabled={isPlaying}
-                    title="Slow speed"
+                    title={t('flashcard.aria.playExampleSlow')}
+                    aria-label={t('flashcard.aria.playExampleSlow')}
                   >
                     <IonIcon icon={volumeLowOutline} color="medium" />
                   </IonButton>

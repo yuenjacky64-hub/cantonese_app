@@ -273,6 +273,7 @@ const ListeningQuiz: React.FC = () => {
                                 className={`play-audio-btn ${isPlaying ? 'playing' : ''}`}
                                 onClick={playAudio}
                                 disabled={isPlaying}
+                                aria-label={t('listening.aria.playAudio')}
                             >
                                 <IonIcon icon={isPlaying ? earOutline : volumeHighOutline} />
                             </button>
