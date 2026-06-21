@@ -52,7 +52,8 @@ describe('Listening Quiz page', () => {
     // Either correct or wrong feedback class is applied
     cy.get('.listening-feedback').should(($el) => {
       const cls = $el.attr('class') || '';
-      expect(cls.includes('correct') || cls.includes('wrong')).to.be.true;
+      const hasOutcomeClass = cls.includes('correct') || cls.includes('wrong');
+      expect(hasOutcomeClass, 'feedback has correct/wrong class').to.equal(true);
     });
   });
 });

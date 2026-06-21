@@ -8,7 +8,6 @@ import {
 } from '@ionic/react';
 import {
   bookOutline,
-  chevronForwardOutline,
   arrowBackOutline,
   appsOutline,
   createOutline,
@@ -30,6 +29,7 @@ import { useHistory } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Jyutping from '../components/Jyutping';
 import TonePanel from '../components/TonePanel';
+import ItemPod from '../components/ItemPod';
 import { lessons, allCards } from '../data/lessons';
 import { pathways } from '../data/pathways';
 import { getSRSStats, getDueCards } from '../utils/srs';
@@ -51,28 +51,6 @@ const groupIcons: Record<string, string> = {
   'groups.social': peopleOutline,
   'groups.grammar': createOutline,
   'groups.travel': airplaneOutline
-};
-
-/**
- * Tiny inline badge that shows a category's level (A1–B2). Color is
- * driven by the tone palette so levels feel part of the design system:
- * L1 → tone-1 (the most-introductory color), L4 → tone-4 (the
- * "deepest"). Translates to "A1" etc. via i18n.
- */
-const LevelBadge: React.FC<{ level: 1 | 2 | 3 | 4 }> = ({ level }) => {
-  const { t } = useTranslation();
-  const shortLabel = t(`levels.${level}.short`, { defaultValue: `L${level}` });
-  const fullLabel = t(`levels.${level}`);
-  return (
-    <span
-      className="level-badge"
-      style={{ color: `var(--tone-${level})`, borderColor: `var(--tone-${level})` }}
-      aria-label={fullLabel}
-      title={fullLabel}
-    >
-      {shortLabel}
-    </span>
-  );
 };
 
 // Game list — single source of truth. Each game uses the same item-pod
@@ -369,42 +347,40 @@ const Home: React.FC = () => {
             {searchText ? (
               /* Search Results */
               filteredLessons.map((category, idx) => (
-                <div key={category.id} className="item-pod fade-in-up" style={{ animationDelay: `${idx * 0.05}s` }} onClick={() => history.push(`/lesson/${category.id}`)}>
-                  <div className="pod-icon-box"><IonIcon icon={bookOutline} /></div>
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <h3>{t(category.titleKey)}</h3>
-                    <span>{t('home.cardsCount', { count: category.cards.length })}</span>
-                  </div>
-                  {category.level && <LevelBadge level={category.level} />}
-                  <IonIcon icon={chevronForwardOutline} style={{ color: 'var(--graphite-soft)' }} />
-                </div>
+                <ItemPod
+                  key={category.id}
+                  icon={bookOutline}
+                  title={t(category.titleKey)}
+                  subtitle={t('home.cardsCount', { count: category.cards.length })}
+                  level={category.level as 1 | 2 | 3 | 4 | undefined}
+                  animationDelay={`${idx * 0.05}s`}
+                  onClick={() => history.push(`/lesson/${category.id}`)}
+                />
               ))
             ) : selectedGroup ? (
               /* Lessons in Selected Category */
               groupedLessons[selectedGroup]?.map((category, idx) => (
-                <div key={category.id} className="item-pod fade-in-up" style={{ animationDelay: `${idx * 0.05}s` }} onClick={() => history.push(`/lesson/${category.id}`)}>
-                  <div className="pod-icon-box"><IonIcon icon={bookOutline} /></div>
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <h3>{t(category.titleKey)}</h3>
-                    <span>{t('home.cardsCount', { count: category.cards.length })}</span>
-                  </div>
-                  {category.level && <LevelBadge level={category.level} />}
-                  <IonIcon icon={chevronForwardOutline} style={{ color: 'var(--graphite-soft)' }} />
-                </div>
+                <ItemPod
+                  key={category.id}
+                  icon={bookOutline}
+                  title={t(category.titleKey)}
+                  subtitle={t('home.cardsCount', { count: category.cards.length })}
+                  level={category.level as 1 | 2 | 3 | 4 | undefined}
+                  animationDelay={`${idx * 0.05}s`}
+                  onClick={() => history.push(`/lesson/${category.id}`)}
+                />
               ))
             ) : (
               /* Root Categories View */
               sortedGroupKeys.map((groupKey, idx) => (
-                <div key={groupKey} className="item-pod fade-in-up" style={{ animationDelay: `${idx * 0.05 + 0.2}s` }} onClick={() => setSelectedGroup(groupKey)}>
-                  <div className="pod-icon-box">
-                    <IonIcon icon={groupIcons[groupKey] || appsOutline} />
-                  </div>
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <h3>{t(groupKey)}</h3>
-                    <span>{t('home.lessonsCount', { count: groupedLessons[groupKey].length })}</span>
-                  </div>
-                  <IonIcon icon={chevronForwardOutline} style={{ color: 'var(--graphite-soft)' }} />
-                </div>
+                <ItemPod
+                  key={groupKey}
+                  icon={groupIcons[groupKey] || appsOutline}
+                  title={t(groupKey)}
+                  subtitle={t('home.lessonsCount', { count: groupedLessons[groupKey].length })}
+                  animationDelay={`${idx * 0.05 + 0.2}s`}
+                  onClick={() => setSelectedGroup(groupKey)}
+                />
               ))
             )}
           </div>
@@ -465,21 +441,15 @@ const Home: React.FC = () => {
               <h3 className="category-title">{t('home.gamesCategory')}</h3>
               <div className="pod-grid games-grid">
                 {GAMES.map((game, idx) => (
-                  <div
+                  <ItemPod
                     key={game.route}
-                    className="item-pod"
-                    style={{ animationDelay: `${idx * 0.04}s` }}
+                    icon={game.icon}
+                    title={t(game.titleKey)}
+                    subtitle={t(game.subtitleKey)}
+                    animationDelay={`${idx * 0.04}s`}
+                    fadeIn={false}
                     onClick={() => history.push(game.route)}
-                  >
-                    <div className="pod-icon-box">
-                      <IonIcon icon={game.icon} />
-                    </div>
-                    <div style={{ flex: 1, minWidth: 0 }}>
-                      <h3>{t(game.titleKey)}</h3>
-                      <span>{t(game.subtitleKey)}</span>
-                    </div>
-                    <IonIcon icon={chevronForwardOutline} style={{ color: 'var(--graphite-soft)' }} />
-                  </div>
+                  />
                 ))}
               </div>
             </div>
