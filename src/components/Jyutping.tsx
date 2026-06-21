@@ -38,10 +38,13 @@ const parseSyllable = (token: string): Syllable => {
   if (!match) {
     return { base: token, tone: null, trailing: '' };
   }
+  // The regex has 3 capture groups, so when match succeeds all three
+  // indices are populated — non-null assertions are safe under
+  // noUncheckedIndexedAccess.
   return {
-    base: match[1],
-    tone: parseInt(match[2], 10),
-    trailing: match[3],
+    base: match[1]!,
+    tone: parseInt(match[2]!, 10),
+    trailing: match[3] ?? '',
   };
 };
 

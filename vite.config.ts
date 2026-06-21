@@ -51,6 +51,11 @@ export default defineConfig({
 
   build: {
     sourcemap: true,
+    // Lowered from the default 500 KB so creeping bundle bloat fails
+    // the build before it ships. The ionic chunk is the only legitimate
+    // outlier today (~1.16 MB) — adjust the suppression there if a
+    // second large chunk ever becomes intentional.
+    chunkSizeWarningLimit: 250,
     rollupOptions: {
       output: {
         // Vendor chunk splitting: keep heavy framework code in its own
@@ -181,5 +186,35 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: './src/setupTests.ts',
+    coverage: {
+      // Floors are intentionally loose right now so they pass without
+      // backfilling tests for under-covered modules; raise them as
+      // coverage on those modules grows. The point today is to fail
+      // CI on a *drop* from the current baseline, not to gate ambitious
+      // refactors on tests we haven't written yet.
+      provider: 'v8',
+      reporter: ['text', 'lcov'],
+      include: ['src/**/*.{ts,tsx}'],
+      exclude: [
+        'src/**/__tests__/**',
+        'src/**/*.test.{ts,tsx}',
+        'src/setupTests.ts',
+        'src/main.tsx',
+        'src/i18n/**',
+        'src/data/lessons.ts',
+        'src/data/pathways.ts',
+        'src/types/**',
+      ],
+      thresholds: {
+        // Set ~5 points below the current measured baseline (lines 83,
+        // branches 80, statements 83, functions 59) so future code
+        // can't silently regress without backfilling tests. Raise these
+        // as overall coverage climbs.
+        lines: 78,
+        statements: 78,
+        branches: 75,
+        functions: 55,
+      },
+    },
   }
 })

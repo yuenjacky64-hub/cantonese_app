@@ -265,9 +265,9 @@ export const getDueCards = (): Flashcard[] => {
   const dueCards: Flashcard[] = [];
 
   for (let i = 0; i < lessons.length; i++) {
-    const category = lessons[i];
+    const category = lessons[i]!;
     for (let j = 0; j < category.cards.length; j++) {
-      const card = category.cards[j];
+      const card = category.cards[j]!;
       const state = srsData[card.id];
       // If no state (New) OR nextReview <= now (Due)
       if (!state || state.nextReview <= now) {
@@ -313,8 +313,9 @@ export const getSRSStats = () => {
   let reviewedDueCount = 0;
   // Use a simple loop for performance over Object.values().filter()
   for (let i = 0; i < reviewedIds.length; i++) {
-    const state = srsData[reviewedIds[i]];
-    if (state.nextReview <= now) {
+    const id = reviewedIds[i]!;
+    const state = srsData[id];
+    if (state && state.nextReview <= now) {
       reviewedDueCount++;
     }
   }

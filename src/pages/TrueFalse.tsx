@@ -93,6 +93,7 @@ const TrueFalse: React.FC = () => {
         if (selectedAnswer !== null) return; // Prevent double-clicks
 
         const currentQuestion = questions[questionIndex];
+        if (!currentQuestion) return;
         const correct = answer === currentQuestion.isActuallyTrue;
 
         setSelectedAnswer(answer);
@@ -182,6 +183,7 @@ const TrueFalse: React.FC = () => {
     }
 
     const currentQuestion = questions[questionIndex];
+    if (!currentQuestion) return null;
 
     return (
         <IonPage>

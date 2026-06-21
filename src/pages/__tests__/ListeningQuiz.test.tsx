@@ -96,6 +96,7 @@ describe('ListeningQuiz Page', () => {
 
         // Find the play button and click it to play audio again
         const playButton = screen.getAllByRole('button')[0]; // The first button should be the play button in the audio card
+        if (!playButton) throw new Error('expected at least one button on listening quiz');
 
         // Simulate clicking play again
         await act(async () => {

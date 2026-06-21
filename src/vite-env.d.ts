@@ -7,3 +7,11 @@ declare const __BUILD_INFO__: {
   hash: string;
   message: string;
 };
+
+interface ImportMetaEnv {
+  readonly VITE_SENTRY_DSN?: string;
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}

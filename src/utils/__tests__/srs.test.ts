@@ -40,11 +40,12 @@ describe('SRS Utility Functions', () => {
             }));
 
             const result = loadSRS();
-            expect(result['card-1'].level).toBe(2);
+            const card = result['card-1']!;
+            expect(card.level).toBe(2);
             // Legacy formula was 3 days × level, so 6.
-            expect(result['card-1'].interval).toBe(6);
+            expect(card.interval).toBe(6);
             // Ease should default to the SM-2 starting point.
-            expect(result['card-1'].easeFactor).toBeCloseTo(2.5);
+            expect(card.easeFactor).toBeCloseTo(2.5);
         });
 
         it('should return empty object on parse error', () => {
@@ -133,7 +134,7 @@ describe('SRS Utility Functions', () => {
         it('floors ease at the minimum after many failures', () => {
             for (let i = 0; i < 10; i++) updateCardSRS('test-card-5', false);
             const data = loadSRS();
-            expect(data['test-card-5'].easeFactor).toBeCloseTo(1.3);
+            expect(data['test-card-5']!.easeFactor).toBeCloseTo(1.3);
         });
     });
 

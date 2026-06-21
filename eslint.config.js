@@ -9,8 +9,8 @@ export default tseslint.config(
     ignores: [
       'dist',
       'dev-dist',
+      'coverage',
       'cypress.config.ts',
-      'reference_app_tagalog_learning_app',
     ],
   },
   {

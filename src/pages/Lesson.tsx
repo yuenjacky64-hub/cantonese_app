@@ -88,8 +88,11 @@ const Lesson: React.FC = () => {
     );
   }
 
-  // Current card data
+  // Current card data. category.cards is guaranteed non-empty above
+  // (we already early-returned on empty bookmarks), and currentIndex
+  // is clamped via next/prev/reset, so this access is in-bounds.
   const currentCard = category.cards[currentIndex];
+  if (!currentCard) return null;
 
   // Navigation state helpers
   const isFirst = currentIndex === 0;

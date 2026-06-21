@@ -1,6 +1,7 @@
 {
   "common": {
     "appTitle": "隨處學粵語",
+    "version": "版本",
     "close": "關閉",
     "buildInfo": "版本資訊",
     "buildTime": "建置時間",
@@ -49,6 +50,9 @@
     "languageSelection": "語言選擇",
     "reviewDue": "複習到期卡片",
     "dueCount": "{{count}} 張卡片待複習",
+    "dailyStreak": "每日連續",
+    "day": "天",
+    "days": "天",
     "themes": {
       "teal": "現代青色 (預設)",
       "navy": "專業海軍藍",
@@ -288,7 +292,6 @@
     "good": "做得好！",
     "keepLearning": "繼續學習！",
     "tryAgain": "再試一次！",
-    "bestStreak": "最佳連續",
     "playAgain": "再玩一次",
     "aria": {
       "playAudio": "播放音訊提示"

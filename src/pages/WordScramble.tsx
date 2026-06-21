@@ -70,6 +70,7 @@ const WordScramble: React.FC = () => {
 
         if (questionIndex < gameCards.length) {
             const currentCard = gameCards[questionIndex];
+            if (!currentCard) return; // length-checked above
             setScrambledLetters(scrambleWord(currentCard.cantonese));
             setSelectedLetters([]);
             setFeedback(null);

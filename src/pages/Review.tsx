@@ -91,6 +91,7 @@ const Review: React.FC = () => {
       // This ensures the UI update for clearing feedback class happens immediately
       setTimeout(() => {
         const currentCard = dueCards[currentIndex];
+        if (!currentCard) return;
 
         // Update the SRS status (next due date, interval, etc.)
         updateCardSRS(currentCard.id, isCorrect);

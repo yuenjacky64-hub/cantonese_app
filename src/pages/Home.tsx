@@ -135,12 +135,15 @@ const Home: React.FC = () => {
   // stable across renders within a day.
   const heroCard = useMemo(() => {
     const due = getDueCards();
-    if (due.length > 0) return due[0];
+    // due[0] is bounds-checked; allCards is non-empty in production
+    // (the lesson dataset has hundreds of entries) so the modulo index
+    // read is safe.
+    if (due.length > 0) return due[0]!;
     const seed = new Date().toISOString().slice(0, 10);
     let h = 0;
     for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) | 0;
     const idx = Math.abs(h) % allCards.length;
-    return allCards[idx];
+    return allCards[idx]!;
   }, []);
 
   const heroChinese = i18n.language === 'zh-CN'
@@ -377,7 +380,7 @@ const Home: React.FC = () => {
                   key={groupKey}
                   icon={groupIcons[groupKey] || appsOutline}
                   title={t(groupKey)}
-                  subtitle={t('home.lessonsCount', { count: groupedLessons[groupKey].length })}
+                  subtitle={t('home.lessonsCount', { count: groupedLessons[groupKey]?.length ?? 0 })}
                   animationDelay={`${idx * 0.05 + 0.2}s`}
                   onClick={() => setSelectedGroup(groupKey)}
                 />

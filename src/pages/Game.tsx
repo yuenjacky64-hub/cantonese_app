@@ -65,6 +65,7 @@ const Game: React.FC = () => {
         }
 
         const currentCard = gameCards[questionIndex];
+        if (!currentCard) return; // bounds-checked above; satisfies noUncheckedIndexedAccess
         const correctAnswer = getTranslation(currentCard);
 
         // Get 3 wrong answers from other cards (O(1) selection)
@@ -82,6 +83,7 @@ const Game: React.FC = () => {
         if (selectedAnswer !== null) return; // Prevent double-clicks
 
         const currentCard = gameCards[questionIndex];
+        if (!currentCard) return;
         const correctAnswer = getTranslation(currentCard);
         const correct = answer === correctAnswer;
 

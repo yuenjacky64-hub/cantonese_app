@@ -93,6 +93,7 @@ describe('Flashcard Component', () => {
     const bookmarkBtns = screen.getAllByRole('button').filter(btn => btn.className.includes('bookmark-btn'));
     // Front and Back both have bookmark buttons
     const frontBookmarkBtn = bookmarkBtns[0];
+    if (!frontBookmarkBtn) throw new Error('expected at least one bookmark button');
 
     fireEvent.click(frontBookmarkBtn);
 
@@ -104,6 +105,7 @@ describe('Flashcard Component', () => {
 
     const audioBtns = screen.getAllByRole('button').filter(btn => btn.className.includes('audio-btn'));
     const frontAudioBtn = audioBtns[0];
+    if (!frontAudioBtn) throw new Error('expected at least one audio button');
 
     fireEvent.click(frontAudioBtn);
 
@@ -117,6 +119,7 @@ describe('Flashcard Component', () => {
 
     const audioBtns = screen.getAllByRole('button').filter(btn => btn.className.includes('audio-btn'));
     const frontAudioBtn = audioBtns[0];
+    if (!frontAudioBtn) throw new Error('expected at least one audio button');
 
     fireEvent.click(frontAudioBtn);
 

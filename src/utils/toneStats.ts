@@ -85,7 +85,7 @@ export const extractTones = (jyutping: string): Tone[] => {
   for (const token of jyutping.split(/\s+/)) {
     if (!token) continue;
     const m = token.match(TONE_DIGIT_RE);
-    if (m) out.push(parseInt(m[2], 10) as Tone);
+    if (m && m[2]) out.push(parseInt(m[2], 10) as Tone);
   }
   return out;
 };

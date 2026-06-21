@@ -1,6 +1,7 @@
 {
   "common": {
     "appTitle": "随处学粤语",
+    "version": "版本",
     "close": "关闭",
     "buildInfo": "版本信息",
     "buildTime": "构建时间",
@@ -49,6 +50,9 @@
     "languageSelection": "语言选择",
     "reviewDue": "复习到期卡片",
     "dueCount": "{{count}} 张卡片待复习",
+    "dailyStreak": "每日连续",
+    "day": "天",
+    "days": "天",
     "themes": {
       "teal": "现代青色 (默认)",
       "navy": "专业海军蓝",
@@ -288,7 +292,6 @@
     "good": "做得好！",
     "keepLearning": "继续学习！",
     "tryAgain": "再试一次！",
-    "bestStreak": "最佳连续",
     "playAgain": "再玩一次",
     "aria": {
       "playAudio": "播放音频提示"
@@ -304,12 +307,24 @@
   "news": {
     "title": "新闻",
     "hongKongNews": "香港新闻",
+    "attribution": "文章来源于香港自由新闻 (Hong Kong Free Press) RSS 订阅。点击阅读完整故事。",
     "loading": "加载中...",
     "error": "无法加载新闻",
     "readMore": "阅读更多"
   },
   "songs": {
-    "title": "粤语歌曲"
+    "title": "粤语歌曲",
+    "attribution": "嵌入视频精选自 YouTube。版权归各自所有者所有。"
+  },
+  "footer": {
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "disclaimer": "免责声明",
+    "disclaimerTitle": "外部内容免责声明",
+    "disclaimerContent": "本应用程序整合了外部订阅源和嵌入式媒体播放器（包括 YouTube 和 RSS 订阅源）以辅助粤语学习。本应用程序不托管、修改或声称对任何外部新闻文章、图片缩图或视频广播拥有所有权。所有版权、商标和知识产权均归其各自所有者所有。如果您是版权所有者并希望从我们的索引中删除您的内容，请与我们联系。",
+    "contact": "联系我们",
+    "madeWith": "精心制作",
+    "forLearners": "专为粤语学习者"
   },
   "tips": {
     "tip1": "每天练习15到30分钟，只需付出很少的努力，且容易坚持。",

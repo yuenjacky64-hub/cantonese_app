@@ -101,7 +101,8 @@ const EmojiGuess: React.FC = () => {
         setStreak(0);
 
         if (shuffledQuestions.length > 0) {
-            setShuffledOptions(shuffleArray(shuffledQuestions[0].options));
+            // Bounds-checked by the length guard above.
+            setShuffledOptions(shuffleArray(shuffledQuestions[0]!.options));
         }
     }, []);
 
@@ -119,7 +120,7 @@ const EmojiGuess: React.FC = () => {
     const currentQuestion = questions[currentIndex];
 
     const handleAnswer = (answer: string) => {
-        if (selectedAnswer !== null) return; // Prevent double-click
+        if (selectedAnswer !== null || !currentQuestion) return; // Prevent double-click
 
         setSelectedAnswer(answer);
         const correct = answer === currentQuestion.answer;
@@ -164,6 +165,10 @@ const EmojiGuess: React.FC = () => {
     if (!currentQuestion && !gameOver) {
         return null;
     }
+    // After the guard, currentQuestion is only undefined when gameOver
+    // is true (and the gameOver branch below doesn't read it). Narrow
+    // the in-game branch's type.
+    const activeQuestion = currentQuestion as NonNullable<typeof currentQuestion>;
 
     return (
         <IonPage>
@@ -201,7 +206,7 @@ const EmojiGuess: React.FC = () => {
 
                         {/* Emoji Display */}
                         <div className="emoji-display-card">
-                            <div className="emoji-display">{currentQuestion.emojis}</div>
+                            <div className="emoji-display">{activeQuestion.emojis}</div>
                             <p className="emoji-hint">{t('emoji.whatWord')}</p>
                         </div>
 
@@ -210,7 +215,7 @@ const EmojiGuess: React.FC = () => {
                             {shuffledOptions.map((option, idx) => {
                                 let optionClass = 'emoji-option';
                                 if (selectedAnswer !== null) {
-                                    if (option === currentQuestion.answer) {
+                                    if (option === activeQuestion.answer) {
                                         optionClass += ' correct';
                                     } else if (option === selectedAnswer && !isCorrect) {
                                         optionClass += ' wrong';
@@ -227,7 +232,7 @@ const EmojiGuess: React.FC = () => {
                                         disabled={selectedAnswer !== null}
                                     >
                                         <span className="option-text">{option}</span>
-                                        {selectedAnswer !== null && option === currentQuestion.answer && (
+                                        {selectedAnswer !== null && option === activeQuestion.answer && (
                                             <IonIcon icon={checkmarkCircle} className="result-icon correct" />
                                         )}
                                         {selectedAnswer === option && !isCorrect && (
@@ -243,9 +248,9 @@ const EmojiGuess: React.FC = () => {
                             <div className={`emoji-feedback ${isCorrect ? 'correct' : 'wrong'}`}>
                                 <span className="feedback-emoji">{isCorrect ? <CheckMark size={22} /> : <CrossMark size={22} />}</span>
                                 <span className="feedback-text">
-                                    {isCorrect ? t('emoji.correct') : `${t('emoji.wrong')} ${currentQuestion.answer}`}
+                                    {isCorrect ? t('emoji.correct') : `${t('emoji.wrong')} ${activeQuestion.answer}`}
                                 </span>
-                                <span className="feedback-translation">({currentQuestion.answerEn})</span>
+                                <span className="feedback-translation">({activeQuestion.answerEn})</span>
                             </div>
                         )}
                     </div>

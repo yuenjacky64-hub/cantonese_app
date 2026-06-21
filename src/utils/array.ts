@@ -6,7 +6,10 @@ export const shuffleArray = <T,>(array: T[]): T[] => {
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        // i > 0 and j ∈ [0, i] by construction, so both indices are
+        // in-bounds — the non-null assertion is safe under
+        // noUncheckedIndexedAccess.
+        [shuffled[i], shuffled[j]] = [shuffled[j]!, shuffled[i]!];
     }
     return shuffled;
 };
@@ -35,7 +38,8 @@ export const getRandomElements = <T,>(
         const idx = Math.floor(Math.random() * array.length);
         if (selectedIndices.has(idx)) continue;
 
-        const item = array[idx];
+        // idx ∈ [0, array.length) so the read is in-bounds.
+        const item = array[idx]!;
         selectedIndices.add(idx);
 
         if (excludePredicate && excludePredicate(item)) continue;
@@ -51,7 +55,8 @@ export const getRandomElements = <T,>(
             const idx = (startIdx + i) % array.length;
             if (selectedIndices.has(idx)) continue;
 
-            const item = array[idx];
+            // idx ∈ [0, array.length) so the read is in-bounds.
+            const item = array[idx]!;
             selectedIndices.add(idx);
 
             if (excludePredicate && excludePredicate(item)) continue;

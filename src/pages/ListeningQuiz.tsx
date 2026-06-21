@@ -200,7 +200,7 @@ const ListeningQuiz: React.FC = () => {
     }, [currentIndex, questions, gameOver]);
 
     const handleAnswer = (answer: string) => {
-        if (selectedAnswer !== null || !hasPlayed) return;
+        if (selectedAnswer !== null || !hasPlayed || !currentQuestion) return;
 
         setSelectedAnswer(answer);
         const correct = answer === currentQuestion.word.cantonese;
@@ -238,6 +238,12 @@ const ListeningQuiz: React.FC = () => {
     if (!currentQuestion && !gameOver) {
         return null;
     }
+    // After the guard above, currentQuestion is only ever undefined
+    // when gameOver is true, in which case the JSX below skips the
+    // branches that read it (see `!gameOver ? ... : gameOverScreen`).
+    // Narrow the type for the active-game branch so subsequent
+    // accesses don't trip noUncheckedIndexedAccess.
+    const activeQuestion = currentQuestion as NonNullable<typeof currentQuestion>;
 
     return (
         <IonPage>
@@ -284,10 +290,10 @@ const ListeningQuiz: React.FC = () => {
 
                         {/* Answer Options */}
                         <div className="listening-options-grid">
-                            {currentQuestion.options.map((option, idx) => {
+                            {activeQuestion.options.map((option, idx) => {
                                 let optionClass = 'listening-option';
                                 if (selectedAnswer !== null) {
-                                    if (option.cantonese === currentQuestion.word.cantonese) {
+                                    if (option.cantonese === activeQuestion.word.cantonese) {
                                         optionClass += ' correct';
                                     } else if (option.cantonese === selectedAnswer && !isCorrect) {
                                         optionClass += ' wrong';
@@ -314,7 +320,7 @@ const ListeningQuiz: React.FC = () => {
                                             <span className="option-cantonese">{option.cantonese}</span>
                                         )}
                                         <span className="option-english">{option.english}</span>
-                                        {selectedAnswer !== null && option.cantonese === currentQuestion.word.cantonese && (
+                                        {selectedAnswer !== null && option.cantonese === activeQuestion.word.cantonese && (
                                             <IonIcon icon={checkmarkCircle} className="result-icon correct" />
                                         )}
                                         {selectedAnswer === option.cantonese && !isCorrect && (
@@ -330,7 +336,7 @@ const ListeningQuiz: React.FC = () => {
                             <div className={`listening-feedback ${isCorrect ? 'correct' : 'wrong'}`}>
                                 <span className="feedback-emoji">{isCorrect ? <CheckMark size={22} /> : <CrossMark size={22} />}</span>
                                 <span className="feedback-text">
-                                    {isCorrect ? t('listening.correct') : `${t('listening.wrong')} ${currentQuestion.word.cantonese}`}
+                                    {isCorrect ? t('listening.correct') : `${t('listening.wrong')} ${activeQuestion.word.cantonese}`}
                                 </span>
                             </div>
                         )}

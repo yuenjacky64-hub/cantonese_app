@@ -30,7 +30,8 @@ const cleanWord = (word: string) => word.replace(/[.,!?]/g, '').toLowerCase();
 const areArraysEqual = (a: {id: string, word: string}[], b: {id: string, word: string}[]) => {
     if (a.length !== b.length) return false;
     for (let i = 0; i < a.length; i++) {
-        if (a[i].id !== b[i].id) return false;
+        // length parity checked above; indices align in both arrays.
+        if (a[i]!.id !== b[i]!.id) return false;
     }
     return true;
 };
@@ -87,7 +88,7 @@ const SentenceBuilder: React.FC = () => {
         setScore(0);
         setIsGameOver(false);
         setIsCorrect(null);
-        setupQuestion(mappedData[0]);
+        if (mappedData[0]) setupQuestion(mappedData[0]);
     }, [allExampleCards]);
 
     const setupQuestion = (data: SentenceGameData) => {
@@ -135,6 +136,7 @@ const SentenceBuilder: React.FC = () => {
         if (selectedWords.length === 0) return;
 
         const currentData = gameData[questionIndex];
+        if (!currentData) return;
 
         // Compare cleaned tokens with a space separator so adjacent duplicate words
         // can't be swapped (e.g. "hou2 hou2") without changing the joined string.
@@ -158,7 +160,8 @@ const SentenceBuilder: React.FC = () => {
         } else {
             const nextIndex = questionIndex + 1;
             setQuestionIndex(nextIndex);
-            setupQuestion(gameData[nextIndex]);
+            const next = gameData[nextIndex];
+            if (next) setupQuestion(next);
         }
     };
 
@@ -166,7 +169,7 @@ const SentenceBuilder: React.FC = () => {
         setIsCorrect(null);
         // Put all words back to available
         const currentData = gameData[questionIndex];
-        setupQuestion(currentData);
+        if (currentData) setupQuestion(currentData);
     };
 
     if (gameData.length === 0) {
@@ -224,6 +227,7 @@ const SentenceBuilder: React.FC = () => {
     }
 
     const currentData = gameData[questionIndex];
+    if (!currentData) return null;
     const targetTranslation = getTranslation(currentData);
     const isComplete = availableWords.length === 0;
 
