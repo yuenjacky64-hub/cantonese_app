@@ -1,6 +1,8 @@
 
 node_modules/
 dist/
+.lhci-public/
+.lighthouseci/
 coverage/
 cypress/videos/
 cypress/screenshots/
