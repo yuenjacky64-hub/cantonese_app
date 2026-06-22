@@ -78,7 +78,7 @@ jobs:
         with:
           build: npm run build
           start: npx vite preview --port 4173
-          wait-on: http://localhost:4173
+          wait-on: http://localhost:4173/cantonese_app/
           wait-on-timeout: 120
 
       - name: Upload Cypress screenshots on failure
