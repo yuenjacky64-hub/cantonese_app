@@ -53,7 +53,7 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "jest-axe": "^10.0.0",
-    "jsdom": "^22.1.0",
+    "jsdom": "^29.1.1",
     "mitata": "^1.0.34",
     "start-server-and-test": "^2.1.5",
     "terser": "^5.4.0",
