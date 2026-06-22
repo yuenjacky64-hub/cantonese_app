@@ -41,8 +41,8 @@ describe('Games — page smoke', () => {
       // bootstrap effects, so give it a generous window.
       cy.get(game.selector, { timeout: 15000 }).should('be.visible');
 
-      // App shell shouldn't crash — IonPage always present.
-      cy.get('ion-page').should('exist');
+      // App shell shouldn't crash — IonPage renders as <div class="ion-page">.
+      cy.get('.ion-page').should('exist');
     });
   }
 });

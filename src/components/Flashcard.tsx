@@ -105,7 +105,7 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
             className="bookmark-btn"
             onClick={handleBookmark}
             aria-label={t(isBookmarkedState ? 'flashcard.aria.bookmarkRemove' : 'flashcard.aria.bookmarkAdd')}
-            aria-pressed={isBookmarkedState}
+            aria-pressed={isBookmarkedState ? 'true' : 'false'}
           >
             <IonIcon icon={isBookmarkedState ? bookmark : bookmarkOutline} slot="icon-only" color="primary" />
           </IonButton>
@@ -132,7 +132,7 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
             className="bookmark-btn"
             onClick={handleBookmark}
             aria-label={t(isBookmarkedState ? 'flashcard.aria.bookmarkRemove' : 'flashcard.aria.bookmarkAdd')}
-            aria-pressed={isBookmarkedState}
+            aria-pressed={isBookmarkedState ? 'true' : 'false'}
           >
             <IonIcon icon={isBookmarkedState ? bookmark : bookmarkOutline} slot="icon-only" color="light" />
           </IonButton>

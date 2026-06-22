@@ -17,10 +17,13 @@ describe('Flashcard / Lesson page', () => {
   });
 
   it('renders the first card with audio + bookmark controls', () => {
+    // Ionic moves aria-* off the <ion-button> host onto the shadow-DOM inner
+    // <button>, so we just assert the controls render here; aria-label content
+    // is asserted in the unit tests (Flashcard.a11y.test.tsx).
     cy.get('.flashcard-container').within(() => {
-      cy.get('.audio-btn').should('have.attr', 'aria-label');
-      cy.get('.slow-audio-btn').should('have.attr', 'aria-label');
-      cy.get('.bookmark-btn').should('have.attr', 'aria-label');
+      cy.get('.audio-btn').should('be.visible');
+      cy.get('.slow-audio-btn').should('be.visible');
+      cy.get('.bookmark-btn').should('be.visible');
     });
     cy.get('.progress-indicator').should('contain.text', '1');
   });
@@ -47,11 +50,15 @@ describe('Flashcard / Lesson page', () => {
 
   it('toggles bookmark state via aria-pressed', () => {
     // Front face bookmark button — read initial pressed state, then toggle.
-    cy.get('.flashcard-front .bookmark-btn')
+    // Ionic moves aria-* onto the shadow-DOM inner <button>, so read it from
+    // there. The button is sometimes overlapped by the header timer pill in
+    // the test viewport — { force: true } bypasses the covered-element check.
+    cy.get('.flashcard-front .bookmark-btn').as('bookmark');
+    cy.get('@bookmark').shadow().find('button')
       .invoke('attr', 'aria-pressed')
       .then((before) => {
-        cy.get('.flashcard-front .bookmark-btn').click();
-        cy.get('.flashcard-front .bookmark-btn')
+        cy.get('@bookmark').click({ force: true });
+        cy.get('@bookmark').shadow().find('button')
           .invoke('attr', 'aria-pressed')
           .should('not.equal', before);
       });

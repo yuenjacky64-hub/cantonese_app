@@ -48,7 +48,11 @@ describe('Listening Quiz page', () => {
   it('shows feedback after picking an answer', () => {
     cy.get('.play-audio-btn').click();
     cy.get('.listening-option').not('.disabled').first().click();
-    cy.get('.listening-feedback').should('be.visible');
+    // The feedback element auto-dismisses after 2s and starts at opacity:0
+    // during its slideUp animation, so we assert existence (presence in DOM
+    // is the user-visible signal) rather than be.visible, which would race
+    // against the animation and the auto-advance.
+    cy.get('.listening-feedback').should('exist');
     // Either correct or wrong feedback class is applied
     cy.get('.listening-feedback').should(($el) => {
       const cls = $el.attr('class') || '';
