@@ -1,206 +1,147 @@
-/* Theme Variables
- * ------------------------------------------------------------------
- * Design system: "Mong Kok at 11pm" — Hong Kong neon vocabulary
- * paired with quiet paper surfaces, plus a tone-aware color system
- * derived from Cantonese's six lexical tones.
- *
- * Bold lives in two places only:
- *   1. The tone palette (--tone-1 .. --tone-6) used for jyutping.
- *   2. One signature accent (--neon-hot) for hero data and CTAs.
- * Everything else is paper, ink, or graphite — so the accents
- * actually mean something when they appear.
- * ------------------------------------------------------------------ */
+/* Theme Variables */
 
 :root {
-  /* Type system — three roles, deliberately distinct. */
-  --font-body: 'Inter Tight', system-ui, -apple-system, sans-serif;
-  --font-display: 'Noto Serif HK', 'Songti SC', 'STKaiti', Georgia, serif;
-  --font-jyutping: 'JetBrains Mono', 'SF Mono', 'IBM Plex Mono', ui-monospace, monospace;
-  --ion-font-family: var(--font-body);
+  /* Luminous Typography - Satoshi / Inter mix */
+  --ion-font-family: 'Inter', system-ui, -apple-system, sans-serif;
 
-  /* Core surface palette */
-  --ink: #0a0a0f;             /* not pure black — slightly cooler */
-  --ink-soft: #1a1c25;
-  --paper: #faf7f1;           /* warm cream, like a receipt that aged well */
-  --paper-edge: #efe8db;
-  --graphite: #475569;
-  --graphite-soft: #94a3b8;
-  --hairline: rgba(10, 10, 15, 0.08);
+  /* Luminous Surface Palette (Premium Depth) */
+  --ion-background-color: #ffffff;
+  --ion-text-color: #030712;
+  /* Slate 950 */
 
-  /* Neon accents — borrowed from HK signage. Used SPARINGLY. */
-  --neon-hot: #e6166e;        /* hero accent: signature CTA + active state */
-  --neon-hot-glow: rgba(230, 22, 110, 0.18);
-  --neon-ice: #0095b3;        /* data accent: numbers, badges */
-  --neon-ice-glow: rgba(0, 149, 179, 0.16);
-  --sodium: #c97c00;          /* warm signal: streaks, attention */
-  --jade: #137d57;            /* correct / positive state */
-  --plum: #6b21a8;            /* secondary cool */
+  /* Living Glow Tokens */
+  --glow-indigo: #5c5fe6;
+  --glow-indigo-soft: rgba(92, 95, 230, 0.15);
+  --glow-rose: #f43f5e;
+  --glow-rose-soft: rgba(244, 63, 94, 0.15);
+  --glow-amber: #f59e0b;
+  --glow-amber-soft: rgba(245, 158, 11, 0.15);
 
-  /* Tone palette — one hue per Cantonese tone (high level → low level).
-   * Calibrated for legibility on cream-paper backgrounds. */
-  --tone-1: #c70b5d;          /* high level   ˥˥ */
-  --tone-2: #0095b3;          /* high rising  ˧˥ */
-  --tone-3: #c97c00;          /* mid level    ˧˧ */
-  --tone-4: #6b21a8;          /* low falling  ˨˩ */
-  --tone-5: #137d57;          /* low rising   ˨˧ */
-  --tone-6: #475569;          /* low level    ˨˨ */
-
-  /* Background + foreground roles for Ionic */
-  --ion-background-color: var(--paper);
-  --ion-text-color: var(--ink);
-
-  /* Backwards-compatible aliases — existing components reference
-   * these names. Repointing them recolors the whole app at once. */
-  --glow-indigo: var(--neon-hot);
-  --glow-indigo-soft: var(--neon-hot-glow);
-  --glow-rose: var(--neon-ice);
-  --glow-rose-soft: var(--neon-ice-glow);
-  --glow-amber: var(--sodium);
-  --glow-amber-soft: rgba(201, 124, 0, 0.16);
-
-  /* Surface design — flatter, more print-like */
-  --pod-radius: 14px;
+  /* Luminous Surface Design */
+  --pod-radius: 16px;
   --pod-bg: #ffffff;
-  --pod-border: 1px solid var(--hairline);
-  --luminous-shadow: 0 1px 0 var(--paper-edge), 0 12px 32px -18px rgba(10, 10, 15, 0.18);
+  --pod-border: 1px solid rgba(0, 0, 0, 0.04);
+  --luminous-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05), 0 8px 30px -10px rgba(92, 95, 230, 0.05);
 
-  /* Motion */
+  /* Haptic Motion */
   --transition-haptic: 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
-  --transition-fast: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* Glass surfaces — kept for the few places that already use them */
-  --glass-luminous: rgba(255, 255, 255, 0.72);
+  /* Glassmorphism Evolution */
+  --glass-luminous: rgba(255, 255, 255, 0.7);
   --glass-blur: blur(12px);
   --glass-border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-/* Body defaults: paper background, ink text, and stable font features
- * so the mono jyutping uses true tabular figures. */
-html, body {
-  background-color: var(--paper);
-  color: var(--ink);
-  font-family: var(--font-body);
-  font-feature-settings: 'cv11', 'ss01';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Named themes — each one shifts which neon hue is the active accent.
- * Keeps the existing four-theme picker working, but each theme is now
- * a different signature color from the HK palette, not a different
- * palette entirely. */
-
-/* DEFAULT: NEON HOT (the original "open" sign pink-red) */
+/* THEME: LUMINOUS INDIGO (Default) */
 :root,
 body.theme-teal {
-  --theme-accent: var(--neon-hot);
-  --theme-accent-soft: var(--neon-hot-glow);
-  --ion-color-primary: #c70b5d;
-  --ion-color-primary-rgb: 199, 11, 93;
+  --ion-color-primary: #5c5fe6;
+  --ion-color-primary-rgb: 92, 95, 230;
   --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-shade: #a30a4d;
-  --ion-color-primary-tint: #e6166e;
+  --ion-color-primary-shade: #4f46e5;
+  --ion-color-primary-tint: #818cf8;
 
-  --ion-color-secondary: #0095b3;
-  --ion-color-secondary-rgb: 0, 149, 179;
+  --ion-color-secondary: #0ea5e9;
+  --ion-color-secondary-rgb: 14, 165, 233;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
-  --ion-color-secondary-shade: #00788f;
-  --ion-color-secondary-tint: #00b4d6;
+  --ion-color-secondary-shade: #0284c7;
+  --ion-color-secondary-tint: #38bdf8;
 
-  --ion-color-tertiary: #6b21a8;
-  --ion-color-tertiary-rgb: 107, 33, 168;
+  --ion-color-tertiary: #8b5cf6;
+  --ion-color-tertiary-rgb: 139, 92, 246;
   --ion-color-tertiary-contrast: #ffffff;
   --ion-color-tertiary-contrast-rgb: 255, 255, 255;
-  --ion-color-tertiary-shade: #581786;
-  --ion-color-tertiary-tint: #7e3ac1;
+  --ion-color-tertiary-shade: #7c3aed;
+  --ion-color-tertiary-tint: #a78bfa;
 }
 
-/* NEON ICE (cool cyan — like a tram-route sign) */
+/* 2. CORPORATE NAVY */
 body.theme-navy {
-  --theme-accent: var(--neon-ice);
-  --theme-accent-soft: var(--neon-ice-glow);
-  --ion-color-primary: #0095b3;
-  --ion-color-primary-rgb: 0, 149, 179;
+  --ion-color-primary: #1e293b;
+  /* Slate 800 */
+  --ion-color-primary-rgb: 30, 41, 59;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #00788f;
-  --ion-color-primary-tint: #00b4d6;
+  --ion-color-primary-shade: #0f172a;
+  --ion-color-primary-tint: #334155;
 
-  --ion-color-secondary: #475569;
-  --ion-color-secondary-rgb: 71, 85, 105;
+  --ion-color-secondary: #64748b;
+  --ion-color-secondary-rgb: 100, 116, 139;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
-  --ion-color-secondary-shade: #344050;
-  --ion-color-secondary-tint: #64748b;
+  --ion-color-secondary-shade: #58667a;
+  --ion-color-secondary-tint: #748297;
 
-  --ion-color-tertiary: #6b21a8;
-  --ion-color-tertiary-rgb: 107, 33, 168;
+  --ion-color-tertiary: #3b82f6;
+  --ion-color-tertiary-rgb: 59, 130, 246;
   --ion-color-tertiary-contrast: #ffffff;
   --ion-color-tertiary-contrast-rgb: 255, 255, 255;
-  --ion-color-tertiary-shade: #581786;
-  --ion-color-tertiary-tint: #7e3ac1;
+  --ion-color-tertiary-shade: #3472d9;
+  --ion-color-tertiary-tint: #4f8ef7;
 
-  --glow-indigo: var(--neon-ice);
-  --glow-indigo-soft: var(--neon-ice-glow);
+  /* Override Glow Tokens */
+  --glow-indigo: #1e293b;
+  --glow-indigo-soft: rgba(30, 41, 59, 0.15);
 }
 
-/* PLUM (Cantonese-opera mask purple) */
+/* 3. MODERN EMERALD (Purple Theme) */
 body.theme-purple {
-  --theme-accent: var(--plum);
-  --theme-accent-soft: rgba(107, 33, 168, 0.16);
-  --ion-color-primary: #6b21a8;
-  --ion-color-primary-rgb: 107, 33, 168;
+  --ion-color-primary: #7e22ce;
+  /* Purple 700 */
+  --ion-color-primary-rgb: 126, 34, 206;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #581786;
-  --ion-color-primary-tint: #7e3ac1;
+  --ion-color-primary-shade: #6b21a8;
+  --ion-color-primary-tint: #9333ea;
 
-  --ion-color-secondary: #c70b5d;
-  --ion-color-secondary-rgb: 199, 11, 93;
+  --ion-color-secondary: #db2777;
+  --ion-color-secondary-rgb: 219, 39, 119;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
-  --ion-color-secondary-shade: #a30a4d;
-  --ion-color-secondary-tint: #e6166e;
+  --ion-color-secondary-shade: #c12269;
+  --ion-color-secondary-tint: #df3d85;
 
-  --ion-color-tertiary: #0095b3;
-  --ion-color-tertiary-rgb: 0, 149, 179;
+  --ion-color-tertiary: #4338ca;
+  --ion-color-tertiary-rgb: 67, 56, 202;
   --ion-color-tertiary-contrast: #ffffff;
   --ion-color-tertiary-contrast-rgb: 255, 255, 255;
-  --ion-color-tertiary-shade: #00788f;
-  --ion-color-tertiary-tint: #00b4d6;
+  --ion-color-tertiary-shade: #3b31b2;
+  --ion-color-tertiary-tint: #564cd0;
 
-  --glow-indigo: var(--plum);
-  --glow-indigo-soft: rgba(107, 33, 168, 0.16);
+  /* Override Glow Tokens */
+  --glow-indigo: #7e22ce;
+  --glow-indigo-soft: rgba(126, 34, 206, 0.15);
 }
 
-/* JADE (traditional Chinese green) */
+/* 4. SOPHISTICATED SLATE (Green Theme) */
 body.theme-green {
-  --theme-accent: var(--jade);
-  --theme-accent-soft: rgba(19, 125, 87, 0.16);
-  --ion-color-primary: #137d57;
-  --ion-color-primary-rgb: 19, 125, 87;
+  --ion-color-primary: #15803d;
+  /* Green 700 */
+  --ion-color-primary-rgb: 21, 128, 61;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #0f6648;
-  --ion-color-primary-tint: #2c9772;
+  --ion-color-primary-shade: #166534;
+  --ion-color-primary-tint: #16a34a;
 
-  --ion-color-secondary: #c97c00;
-  --ion-color-secondary-rgb: 201, 124, 0;
+  --ion-color-secondary: #854d0e;
+  --ion-color-secondary-rgb: 133, 77, 14;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
-  --ion-color-secondary-shade: #a86600;
-  --ion-color-secondary-tint: #dd8d1a;
+  --ion-color-secondary-shade: #75440c;
+  --ion-color-secondary-tint: #915f26;
 
-  --ion-color-tertiary: #6b21a8;
-  --ion-color-tertiary-rgb: 107, 33, 168;
+  --ion-color-tertiary: #14b8a6;
+  --ion-color-tertiary-rgb: 20, 184, 166;
   --ion-color-tertiary-contrast: #ffffff;
   --ion-color-tertiary-contrast-rgb: 255, 255, 255;
-  --ion-color-tertiary-shade: #581786;
-  --ion-color-tertiary-tint: #7e3ac1;
+  --ion-color-tertiary-shade: #12a292;
+  --ion-color-tertiary-tint: #2bbfaf;
 
-  --glow-indigo: var(--jade);
-  --glow-indigo-soft: rgba(19, 125, 87, 0.16);
+  /* Override Glow Tokens */
+  --glow-indigo: #15803d;
+  --glow-indigo-soft: rgba(21, 128, 61, 0.15);
 }
 
 /* Common Success/Warning/Danger/Medium/Light/Dark */
@@ -248,67 +189,40 @@ body.theme-green {
   --ion-color-light-tint: #f4f5f7;
 }
 
-/* Dark Mode (System)
- * Full ink-and-neon look — this is where the palette really sings.
- * On dark backgrounds we can use the bright neons at full saturation
- * because the surrounding ink absorbs the glow. */
+/* Dark Mode (System) */
 @media (prefers-color-scheme: dark) {
 
+  /* Luminous Learning - Dark Mode (Deep Nebula) */
   :root,
   body.theme-teal {
-    /* Page is ink, text is paper */
-    --ion-background-color: var(--ink);
-    --ion-text-color: var(--paper);
+    --ion-background-color: #030712;
+    /* Deep Space */
+    --ion-text-color: #f9fafb;
 
-    /* Re-tune tones for dark backgrounds: more saturated, brighter */
-    --tone-1: #ff2e88;
-    --tone-2: #00e1ff;
-    --tone-3: #ffc857;
-    --tone-4: #a78bfa;
-    --tone-5: #4ade80;
-    --tone-6: #cbd5e1;
+    --pod-bg: rgba(17, 24, 39, 0.6);
+    --pod-border: 1px solid rgba(255, 255, 255, 0.06);
+    --luminous-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(92, 95, 230, 0.1);
 
-    /* Bright accents */
-    --neon-hot: #ff2e88;
-    --neon-hot-glow: rgba(255, 46, 136, 0.28);
-    --neon-ice: #00e1ff;
-    --neon-ice-glow: rgba(0, 225, 255, 0.24);
-    --sodium: #ffc857;
-    --jade: #4ade80;
-    --plum: #a78bfa;
+    --glass-luminous: rgba(17, 24, 39, 0.4);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.08);
 
-    /* Hairlines on dark are warm-paper at very low alpha */
-    --hairline: rgba(250, 247, 241, 0.10);
-    --graphite: #cbd5e1;
-    --graphite-soft: #64748b;
+    --ion-color-primary: #2dd4bf;
+    --ion-color-primary-rgb: 45, 212, 191;
+    --ion-color-primary-contrast: #000000;
+    --ion-color-primary-contrast-rgb: 0, 0, 0;
+    --ion-color-primary-shade: #28bba8;
+    --ion-color-primary-tint: #42d8c5;
 
-    --pod-bg: rgba(26, 28, 37, 0.7);
-    --pod-border: 1px solid var(--hairline);
-    --luminous-shadow: 0 1px 0 rgba(255, 255, 255, 0.04), 0 18px 50px -20px rgba(255, 46, 136, 0.18);
+    --ion-color-secondary: #94a3b8;
+    --ion-color-secondary-rgb: 148, 163, 184;
+    --ion-color-secondary-contrast: #000000;
+    --ion-color-secondary-contrast-rgb: 0, 0, 0;
+    --ion-color-secondary-shade: #828fa2;
+    --ion-color-secondary-tint: #9facbf;
 
-    --glass-luminous: rgba(26, 28, 37, 0.55);
-    --glass-border: 1px solid rgba(250, 247, 241, 0.08);
-
-    --ion-color-primary: #ff2e88;
-    --ion-color-primary-rgb: 255, 46, 136;
-    --ion-color-primary-contrast: #0a0a0f;
-    --ion-color-primary-contrast-rgb: 10, 10, 15;
-    --ion-color-primary-shade: #e6166e;
-    --ion-color-primary-tint: #ff5ba5;
-
-    --ion-color-secondary: #00e1ff;
-    --ion-color-secondary-rgb: 0, 225, 255;
-    --ion-color-secondary-contrast: #0a0a0f;
-    --ion-color-secondary-contrast-rgb: 10, 10, 15;
-    --ion-color-secondary-shade: #00bcd4;
-    --ion-color-secondary-tint: #4ce9ff;
-
-    --theme-accent: var(--neon-hot);
-    --theme-accent-soft: var(--neon-hot-glow);
-    --glow-indigo: var(--neon-hot);
-    --glow-indigo-soft: var(--neon-hot-glow);
-    --glow-rose: var(--neon-ice);
-    --glow-rose-soft: var(--neon-ice-glow);
+    /* Override Glow Tokens (Teal in Dark Mode is actually #2dd4bf) */
+    --glow-indigo: #2dd4bf;
+    --glow-indigo-soft: rgba(45, 212, 191, 0.15);
   }
 
   /* Navy Dark */

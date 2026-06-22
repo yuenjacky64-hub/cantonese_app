@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import {
   IonContent,
   IonPage,
@@ -8,31 +8,30 @@ import {
 } from '@ionic/react';
 import {
   bookOutline,
+  chevronForwardOutline,
   arrowBackOutline,
   appsOutline,
   createOutline,
   homeOutline,
   peopleOutline,
+  bookmarkOutline,
+  informationCircleOutline,
   gameControllerOutline,
   gridOutline,
   pencilOutline,
   shuffleOutline,
   happyOutline,
   cloudDownloadOutline,
+  flameOutline,
   earOutline,
   bulbOutline,
-  airplaneOutline,
-  arrowForwardOutline
+  airplaneOutline
 } from 'ionicons/icons';
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
 import Footer from '../components/Footer';
-import Jyutping from '../components/Jyutping';
-import TonePanel from '../components/TonePanel';
-import ItemPod from '../components/ItemPod';
-import { lessons, allCards } from '../data/lessons';
-import { pathways } from '../data/pathways';
-import { getSRSStats, getDueCards } from '../utils/srs';
+import { lessons } from '../data/lessons';
+import { getSRSStats } from '../utils/srs';
 import { getStreakInfo } from '../utils/streak';
 import CommonHeader from '../components/CommonHeader';
 import { textOutline } from 'ionicons/icons';
@@ -52,21 +51,6 @@ const groupIcons: Record<string, string> = {
   'groups.grammar': createOutline,
   'groups.travel': airplaneOutline
 };
-
-// Game list — single source of truth. Each game uses the same item-pod
-// template as categories. No per-game gradient: the games are siblings,
-// not nine separate brand statements.
-const GAMES: { route: string; icon: string; titleKey: string; subtitleKey: string }[] = [
-  { route: '/game',       icon: gameControllerOutline, titleKey: 'game.podTitle',       subtitleKey: 'game.podSubtitle' },
-  { route: '/memory',     icon: gridOutline,           titleKey: 'memory.podTitle',     subtitleKey: 'memory.podSubtitle' },
-  { route: '/spell',      icon: pencilOutline,         titleKey: 'spell.podTitle',      subtitleKey: 'spell.podSubtitle' },
-  { route: '/scramble',   icon: shuffleOutline,        titleKey: 'scramble.podTitle',   subtitleKey: 'scramble.podSubtitle' },
-  { route: '/emoji',      icon: happyOutline,          titleKey: 'emoji.podTitle',      subtitleKey: 'emoji.podSubtitle' },
-  { route: '/falling',    icon: cloudDownloadOutline,  titleKey: 'falling.podTitle',    subtitleKey: 'falling.podSubtitle' },
-  { route: '/listening',  icon: earOutline,            titleKey: 'listening.podTitle',  subtitleKey: 'listening.podSubtitle' },
-  { route: '/sentence',   icon: textOutline,           titleKey: 'sentence.podTitle',   subtitleKey: 'sentence.podSubtitle' },
-  { route: '/truefalse',  icon: bulbOutline,           titleKey: 'truefalse.podTitle',  subtitleKey: 'truefalse.podSubtitle' },
-];
 
 // Song states
 const songs = [
@@ -92,7 +76,7 @@ interface NewsItem {
  */
 const Home: React.FC = () => {
   // i18n hook for translation
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const history = useHistory();
 
   // State for search input text
@@ -129,26 +113,6 @@ const Home: React.FC = () => {
     setDueCount(stats.dueCount);
     setStreakInfo(getStreakInfo());
   }, []);
-
-  // Pick one card to display in the hero — the first due card if any,
-  // otherwise a deterministic-per-day random card so the hero stays
-  // stable across renders within a day.
-  const heroCard = useMemo(() => {
-    const due = getDueCards();
-    // due[0] is bounds-checked; allCards is non-empty in production
-    // (the lesson dataset has hundreds of entries) so the modulo index
-    // read is safe.
-    if (due.length > 0) return due[0]!;
-    const seed = new Date().toISOString().slice(0, 10);
-    let h = 0;
-    for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) | 0;
-    const idx = Math.abs(h) % allCards.length;
-    return allCards[idx]!;
-  }, []);
-
-  const heroChinese = i18n.language === 'zh-CN'
-    ? (heroCard.zhCN || heroCard.zhTW || heroCard.cantonese)
-    : (heroCard.zhTW || heroCard.zhCN || heroCard.cantonese);
 
   // Effect to set daily tip
   React.useEffect(() => {
@@ -234,85 +198,76 @@ const Home: React.FC = () => {
       <CommonHeader title={t('common.appTitle')} />
 
       <IonContent fullscreen className="home-container">
-        {/* INK HERO — the page's thesis: the actual next card to review,
-            typeset as the app's display language. */}
+        {/* Ambient Immersive Header */}
         {!selectedGroup && !searchText && (
-          <>
-            <section className="home-hero fade-in-up" aria-label="Review queue">
-              <p className="home-hero__eyebrow">{t('home.reviewDue')}</p>
-
-              <div className="home-hero__queue">
-                <h1 className="home-hero__queue-count">
-                  <em>{dueCount}</em>
-                </h1>
-                <p className="home-hero__queue-label">
-                  {dueCount === 1
-                    ? t('home.dueCount', { count: dueCount })
-                    : t('home.dueCount', { count: dueCount })}
-                </p>
-              </div>
-
-              <div className="home-hero__divider">tonight you're learning</div>
-
-              <div className="home-hero__sample">
-                <p className="home-hero__sample-chinese">{heroChinese}</p>
-                <div className="home-hero__sample-jyutping">
-                  <Jyutping text={heroCard.cantonese} size="lg" />
-                </div>
-                <p className="home-hero__sample-english">{heroCard.english}</p>
-              </div>
-
-              <IonButton
-                className="home-hero__cta"
-                onClick={() => history.push('/review')}
-                expand="block"
-              >
-                {dueCount > 0 ? t('review.title') : t('home.reviewDue')}
-                <IonIcon icon={arrowForwardOutline} slot="end" />
-              </IonButton>
-            </section>
-
+          <div className="ambient-header fade-in-up">
+            <h1>{t('home.welcome')}</h1>
+            <p>{t('home.subtitle')}</p>
             {dailyTip && (
-              <div className="daily-tip fade-in-up">
+              <div className="daily-tip">
                 <div className="daily-tip-icon">
                   <IonIcon icon={bulbOutline} />
                 </div>
                 <div className="daily-tip-content">
-                  <strong>{t('home.tipsEveryday')}</strong>
+                  <strong>{t('home.tipsEveryday')}:</strong>
                   <p>{t(dailyTip)}</p>
                 </div>
               </div>
             )}
-
-            {/* Utility chip row — quiet rest-of-app navigation */}
-            <div className="utility-row fade-in-up">
-              <button
-                type="button"
-                className="utility-chip"
-                onClick={() => history.push('/lesson/bookmarks')}
-              >
-                <span className="utility-chip__label">{t('bookmarks.title')}</span>
-                <span className="utility-chip__value">{t('bookmarks.pinnedSubtitle')}</span>
-              </button>
-              <button
-                type="button"
-                className="utility-chip"
-                onClick={() => history.push('/intro')}
-              >
-                <span className="utility-chip__label">{t('home.introToCantonese')}</span>
-                <span className="utility-chip__value">{t('home.introSubtitle')}</span>
-              </button>
-              <div className={`utility-chip utility-chip--streak ${streakInfo.isActiveToday ? 'is-active' : ''}`}>
-                <span className="utility-chip__label">{t('home.dailyStreak')}</span>
-                <span className="utility-chip__value">
-                  {streakInfo.streak} {streakInfo.streak === 1 ? t('home.day') : t('home.days')}
-                </span>
-              </div>
-            </div>
-          </>
+          </div>
         )}
 
-        <div className={`pod-dashboard ${(selectedGroup || searchText) ? 'no-ambient-header' : ''}`}>{/* unchanged rest below */}
+        <div className={`pod-dashboard ${(selectedGroup || searchText) ? 'no-ambient-header' : ''}`}>
+          {/* Primary Actions Grid - Review, Bookmarks, Intro */}
+          {!selectedGroup && !searchText && (
+            <div className="primary-grid fade-in-up">
+              {/* Review Pod */}
+              <div className="learning-pod pod-hero" onClick={() => history.push('/review')}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div>
+                    <div className="pod-label">{t('home.reviewDue')}</div>
+                    <h2 className="pod-value">{t('home.dueCount', { count: dueCount })}</h2>
+                  </div>
+                  <IonIcon icon={chevronForwardOutline} style={{ fontSize: '24px', color: 'white' }} />
+                </div>
+              </div>
+
+              {/* Bookmarks Pod */}
+              <div className="learning-pod pod-bookmarks" onClick={() => history.push('/lesson/bookmarks')}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div>
+                    <div className="pod-label">{t('bookmarks.title')}</div>
+                    <h2 className="pod-value">{t('bookmarks.pinnedSubtitle')}</h2>
+                  </div>
+                  <IonIcon icon={bookmarkOutline} style={{ fontSize: '24px', color: 'white' }} />
+                </div>
+              </div>
+
+              {/* Intro Pod */}
+              <div className="learning-pod pod-intro" style={{ background: 'linear-gradient(135deg, #845ec2 0%, #d65db1 100%)' }} onClick={() => history.push('/intro')}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div>
+                    <div className="pod-label">{t('home.introToCantonese')}</div>
+                    <h2 className="pod-value">{t('home.introSubtitle')}</h2>
+                  </div>
+                  <IonIcon icon={informationCircleOutline} style={{ fontSize: '24px', color: 'white' }} />
+                </div>
+              </div>
+
+              {/* Daily Streak Pod */}
+              <div className="learning-pod pod-streak" style={{ background: streakInfo.streak > 0 ? 'linear-gradient(135deg, #f97316 0%, #ef4444 100%)' : 'linear-gradient(135deg, #94a3b8 0%, #64748b 100%)' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div>
+                    <div className="pod-label">{t('home.dailyStreak')}</div>
+                    <h2 className="pod-value">
+                      {streakInfo.streak} {streakInfo.streak === 1 ? t('home.day') : t('home.days')} {streakInfo.isActiveToday && '✓'}
+                    </h2>
+                  </div>
+                  <IonIcon icon={flameOutline} style={{ fontSize: '24px', color: 'white' }} />
+                </div>
+              </div>
+            </div>
+          )}
 
 
           {/* Search Pod - Luminous Interaction */}
@@ -350,40 +305,40 @@ const Home: React.FC = () => {
             {searchText ? (
               /* Search Results */
               filteredLessons.map((category, idx) => (
-                <ItemPod
-                  key={category.id}
-                  icon={bookOutline}
-                  title={t(category.titleKey)}
-                  subtitle={t('home.cardsCount', { count: category.cards.length })}
-                  level={category.level as 1 | 2 | 3 | 4 | undefined}
-                  animationDelay={`${idx * 0.05}s`}
-                  onClick={() => history.push(`/lesson/${category.id}`)}
-                />
+                <div key={category.id} className="item-pod fade-in-up" style={{ animationDelay: `${idx * 0.05}s` }} onClick={() => history.push(`/lesson/${category.id}`)}>
+                  <div className="pod-icon-box"><IonIcon icon={bookOutline} /></div>
+                  <div style={{ flex: 1 }}>
+                    <h3>{t(category.titleKey)}</h3>
+                    <span>{t('home.cardsCount', { count: category.cards.length })}</span>
+                  </div>
+                  <IonIcon icon={chevronForwardOutline} style={{ color: '#cbd5e1' }} />
+                </div>
               ))
             ) : selectedGroup ? (
               /* Lessons in Selected Category */
               groupedLessons[selectedGroup]?.map((category, idx) => (
-                <ItemPod
-                  key={category.id}
-                  icon={bookOutline}
-                  title={t(category.titleKey)}
-                  subtitle={t('home.cardsCount', { count: category.cards.length })}
-                  level={category.level as 1 | 2 | 3 | 4 | undefined}
-                  animationDelay={`${idx * 0.05}s`}
-                  onClick={() => history.push(`/lesson/${category.id}`)}
-                />
+                <div key={category.id} className="item-pod fade-in-up" style={{ animationDelay: `${idx * 0.05}s` }} onClick={() => history.push(`/lesson/${category.id}`)}>
+                  <div className="pod-icon-box"><IonIcon icon={bookOutline} /></div>
+                  <div style={{ flex: 1 }}>
+                    <h3>{t(category.titleKey)}</h3>
+                    <span>{t('home.cardsCount', { count: category.cards.length })}</span>
+                  </div>
+                  <IonIcon icon={chevronForwardOutline} style={{ color: '#cbd5e1' }} />
+                </div>
               ))
             ) : (
               /* Root Categories View */
               sortedGroupKeys.map((groupKey, idx) => (
-                <ItemPod
-                  key={groupKey}
-                  icon={groupIcons[groupKey] || appsOutline}
-                  title={t(groupKey)}
-                  subtitle={t('home.lessonsCount', { count: groupedLessons[groupKey]?.length ?? 0 })}
-                  animationDelay={`${idx * 0.05 + 0.2}s`}
-                  onClick={() => setSelectedGroup(groupKey)}
-                />
+                <div key={groupKey} className="item-pod fade-in-up" style={{ animationDelay: `${idx * 0.05 + 0.2}s` }} onClick={() => setSelectedGroup(groupKey)}>
+                  <div className="pod-icon-box" style={{ background: 'var(--glow-indigo-soft)', color: 'var(--glow-indigo)' }}>
+                    <IonIcon icon={groupIcons[groupKey] || appsOutline} />
+                  </div>
+                  <div style={{ flex: 1 }}>
+                    <h3>{t(groupKey)}</h3>
+                    <span>{t('home.lessonsCount', { count: groupedLessons[groupKey]?.length || 0 })}</span>
+                  </div>
+                  <IonIcon icon={chevronForwardOutline} style={{ color: '#cbd5e1' }} />
+                </div>
               ))
             )}
           </div>
@@ -396,64 +351,109 @@ const Home: React.FC = () => {
             </div>
           )}
 
-          {/* Pathways — curated routes through the catalog. Replaces
-              the previous "what should I do first" guess with three
-              concrete situations the user can pick from. */}
+          {/* Games Category Section - Moved to bottom */}
           {!selectedGroup && !searchText && (
-            <div className="category-section fade-in-up">
-              <h3 className="category-title">{t('pathways.sectionTitle')}</h3>
-              <p className="category-subtitle">{t('pathways.sectionSubtitle')}</p>
-              <div className="pod-grid pathways-grid">
-                {pathways.map((pw, idx) => {
-                  const firstCat = pw.categoryIds[0];
-                  return (
-                    <button
-                      type="button"
-                      key={pw.id}
-                      className="pathway-card"
-                      style={{ animationDelay: `${idx * 0.04}s` }}
-                      onClick={() => firstCat && history.push(`/lesson/${firstCat}`)}
-                    >
-                      <div className="pathway-card__head">
-                        <span className="pathway-card__count">{pw.categoryIds.length}</span>
-                        <span className="pathway-card__count-label">{t('pathways.lessonsLabel')}</span>
-                      </div>
-                      <h4 className="pathway-card__title">{t(pw.titleKey)}</h4>
-                      <p className="pathway-card__description">{t(pw.descriptionKey)}</p>
-                      <p className="pathway-card__estimate">{t(pw.estimateKey)}</p>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
-          {/* Tone diagnostic — "your tones" panel. The single most
-              actionable signal for a Cantonese learner. */}
-          {!selectedGroup && !searchText && (
-            <div className="category-section fade-in-up">
-              <h3 className="category-title">{t('tones.title')}</h3>
-              <p className="category-subtitle">{t('tones.subtitle')}</p>
-              <TonePanel />
-            </div>
-          )}
-
-          {/* Games — flat list, same item-pod template as categories. */}
-          {!selectedGroup && !searchText && (
-            <div className="category-section fade-in-up">
+            <div className="category-section fade-in-up" style={{ animationDelay: '0.3s' }}>
               <h3 className="category-title">{t('home.gamesCategory')}</h3>
-              <div className="pod-grid games-grid">
-                {GAMES.map((game, idx) => (
-                  <ItemPod
-                    key={game.route}
-                    icon={game.icon}
-                    title={t(game.titleKey)}
-                    subtitle={t(game.subtitleKey)}
-                    animationDelay={`${idx * 0.04}s`}
-                    fadeIn={false}
-                    onClick={() => history.push(game.route)}
-                  />
-                ))}
+              <div className="games-grid">
+                {/* Salita Challenge */}
+                <div className="learning-pod pod-game" style={{ background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)' }} onClick={() => history.push('/game')}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div>
+                      <div className="pod-label">{t('game.podTitle')}</div>
+                      <h2 className="pod-value">{t('game.podSubtitle')}</h2>
+                    </div>
+                    <IonIcon icon={gameControllerOutline} style={{ fontSize: '24px', color: 'white' }} />
+                  </div>
+                </div>
+
+                {/* Memory Match */}
+                <div className="learning-pod pod-memory" style={{ background: 'linear-gradient(135deg, #f43f5e 0%, #ec4899 100%)' }} onClick={() => history.push('/memory')}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div>
+                      <div className="pod-label">{t('memory.podTitle')}</div>
+                      <h2 className="pod-value">{t('memory.podSubtitle')}</h2>
+                    </div>
+                    <IonIcon icon={gridOutline} style={{ fontSize: '24px', color: 'white' }} />
+                  </div>
+                </div>
+
+                {/* Spell Challenge */}
+                <div className="learning-pod pod-spell" style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%)' }} onClick={() => history.push('/spell')}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div>
+                      <div className="pod-label">{t('spell.podTitle')}</div>
+                      <h2 className="pod-value">{t('spell.podSubtitle')}</h2>
+                    </div>
+                    <IonIcon icon={pencilOutline} style={{ fontSize: '24px', color: 'white' }} />
+                  </div>
+                </div>
+
+                {/* Word Scramble */}
+                <div className="learning-pod pod-scramble" style={{ background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)' }} onClick={() => history.push('/scramble')}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div>
+                      <div className="pod-label">{t('scramble.podTitle')}</div>
+                      <h2 className="pod-value">{t('scramble.podSubtitle')}</h2>
+                    </div>
+                    <IonIcon icon={shuffleOutline} style={{ fontSize: '24px', color: 'white' }} />
+                  </div>
+                </div>
+
+                {/* Emoji Hulaan */}
+                <div className="learning-pod pod-emoji" style={{ background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)' }} onClick={() => history.push('/emoji')}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div>
+                      <div className="pod-label">{t('emoji.podTitle')}</div>
+                      <h2 className="pod-value">{t('emoji.podSubtitle')}</h2>
+                    </div>
+                    <IonIcon icon={happyOutline} style={{ fontSize: '24px', color: 'white' }} />
+                  </div>
+                </div>
+
+                {/* Falling Words */}
+                <div className="learning-pod pod-falling" style={{ background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)' }} onClick={() => history.push('/falling')}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div>
+                      <div className="pod-label">{t('falling.podTitle')}</div>
+                      <h2 className="pod-value">{t('falling.podSubtitle')}</h2>
+                    </div>
+                    <IonIcon icon={cloudDownloadOutline} style={{ fontSize: '24px', color: 'white' }} />
+                  </div>
+                </div>
+
+                {/* Listening Quiz */}
+                <div className="learning-pod pod-listening" style={{ background: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)' }} onClick={() => history.push('/listening')}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div>
+                      <div className="pod-label">{t('listening.podTitle')}</div>
+                      <h2 className="pod-value">{t('listening.podSubtitle')}</h2>
+                    </div>
+                    <IonIcon icon={earOutline} style={{ fontSize: '24px', color: 'white' }} />
+                  </div>
+                </div>
+
+                {/* Sentence Builder */}
+                <div className="learning-pod pod-sentence" style={{ background: 'linear-gradient(135deg, #d946ef 0%, #c026d3 100%)' }} onClick={() => history.push('/sentence')}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div>
+                      <div className="pod-label">{t('sentence.podTitle')}</div>
+                      <h2 className="pod-value">{t('sentence.podSubtitle')}</h2>
+                    </div>
+                    <IonIcon icon={textOutline} style={{ fontSize: '24px', color: 'white' }} />
+                  </div>
+                </div>
+
+                {/* True or False */}
+                <div className="learning-pod pod-truefalse" style={{ background: 'linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%)' }} onClick={() => history.push('/truefalse')}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div>
+                      <div className="pod-label">{t('truefalse.podTitle')}</div>
+                      <h2 className="pod-value">{t('truefalse.podSubtitle')}</h2>
+                    </div>
+                    <IonIcon icon={bulbOutline} style={{ fontSize: '24px', color: 'white' }} />
+                  </div>
+                </div>
               </div>
             </div>
           )}
