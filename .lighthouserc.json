@@ -1,7 +1,7 @@
 {
   "ci": {
     "collect": {
-      "staticDistDir": "./dist",
+      "staticDistDir": "./.lhci-public",
       "url": ["http://localhost/cantonese_app/index.html"],
       "numberOfRuns": 3,
       "settings": {

@@ -24,6 +24,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Stage build under base path
+        run: |
+          mkdir -p .lhci-public/cantonese_app
+          cp -r dist/. .lhci-public/cantonese_app/
+
       - name: Run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.13.x
