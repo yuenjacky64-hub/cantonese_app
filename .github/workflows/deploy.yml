@@ -74,7 +74,7 @@ jobs:
       # Use the Cypress action so binary download is cached and any
       # crash dumps / videos / screenshots are uploaded on failure.
       - name: Cypress run
-        uses: cypress-io/github-action@v6
+        uses: cypress-io/github-action@v7
         with:
           build: npm run build
           start: npx vite preview --port 4173
