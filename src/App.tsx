@@ -1,6 +1,7 @@
 import React, { useEffect, Suspense, lazy } from 'react';
-import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
-import { IonApp, IonSpinner, setupIonicReact } from '@ionic/react';
+import { Route, Redirect } from 'react-router-dom';
+import { IonApp, IonRouterOutlet, IonSpinner, setupIonicReact } from '@ionic/react';
+import { IonReactHashRouter } from '@ionic/react-router';
 import ReloadPrompt from './components/ReloadPrompt';
 import { TimerProvider } from './context/TimerContext';
 
@@ -58,30 +59,28 @@ const App: React.FC = () => {
   return (
     <IonApp>
       <ReloadPrompt />
-      <HashRouter>
+      <IonReactHashRouter>
         <TimerProvider>
           <Suspense fallback={<PageLoader />}>
-            <div id="app-router">
-              <Switch>
-                <Route path="/home" component={Home} />
-                <Route path="/lesson/:id" component={Lesson} />
-                <Route path="/review" component={Review} />
-                <Route path="/intro" component={Intro} />
-                <Route path="/game" component={Game} />
-                <Route path="/memory" component={MemoryMatch} />
-                <Route path="/spell" component={SpellChallenge} />
-                <Route path="/scramble" component={WordScramble} />
-                <Route path="/emoji" component={EmojiGuess } />
-                <Route path="/falling" component={FallingWords} />
-                <Route path="/listening" component={ListeningQuiz} />
-                <Route path="/sentence" component={SentenceBuilder} />
-                <Route path="/truefalse" component={TrueFalse} />
-                <Route exact path="/" render={() => <Redirect to="/home" />} />
-              </Switch>
-            </div>
+            <IonRouterOutlet id="app-router">
+              <Route path="/home" component={Home} />
+              <Route path="/lesson/:id" component={Lesson} />
+              <Route path="/review" component={Review} />
+              <Route path="/intro" component={Intro} />
+              <Route path="/game" component={Game} />
+              <Route path="/memory" component={MemoryMatch} />
+              <Route path="/spell" component={SpellChallenge} />
+              <Route path="/scramble" component={WordScramble} />
+              <Route path="/emoji" component={EmojiGuess } />
+              <Route path="/falling" component={FallingWords} />
+              <Route path="/listening" component={ListeningQuiz} />
+              <Route path="/sentence" component={SentenceBuilder} />
+              <Route path="/truefalse" component={TrueFalse} />
+              <Route exact path="/" render={() => <Redirect to="/home" />} />
+            </IonRouterOutlet>
           </Suspense>
         </TimerProvider>
-      </HashRouter>
+      </IonReactHashRouter>
     </IonApp>
   );
 };
