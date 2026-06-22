@@ -1,14 +1,40 @@
 import { lessons, Flashcard } from '../data/lessons';
 
 /**
- * Interface representing the state of a single card in the SRS system.
+ * State per card. We use a modified SM-2 (Anki-style) scheduler with
+ * binary feedback:
+ *
+ *   - `interval` is the gap (in days) used to schedule the next review.
+ *   - `easeFactor` is a multiplier that grows on correct answers and
+ *     shrinks on wrong ones. Bounded to [1.3, 2.8].
+ *   - `level` is preserved for backwards-compat with legacy state and
+ *     surfaced in stats; new code should prefer `interval`.
+ *
+ * Legacy state ({ nextReview, level }) is migrated transparently on
+ * first load — see `migrateLegacyState`.
  */
 export interface SRSState {
-  /** Timestamp (in milliseconds) when the card is next due for review. */
   nextReview: number;
-  /** The current proficiency level of the card. Higher means known better. */
   level: number;
+  interval: number;     // days
+  easeFactor: number;   // multiplier
+  /** Total times this card has been reviewed. */
+  reps?: number;
+  /** Times this card has been forgotten. Used to surface "leech" cards. */
+  lapses?: number;
 }
+
+// SM-2 tunables — picked to feel like Anki defaults but slightly gentler
+// (Anki uses 2.5/0.15/0.20, but with binary feedback we want correct
+// answers to advance a little faster to compensate for no "easy" grade).
+const EASE_DEFAULT = 2.5;
+const EASE_MIN = 1.3;
+const EASE_MAX = 2.8;
+const EASE_DELTA_CORRECT = 0.05;
+const EASE_DELTA_WRONG = -0.20;
+const RELEARN_INTERVAL_MIN = 10; // minutes after a wrong answer
+const FIRST_CORRECT_INTERVAL_DAYS = 1;
+const SECOND_CORRECT_INTERVAL_DAYS = 3;
 
 /**
  * Dictionary mapping card IDs to their SRS state.
@@ -84,6 +110,27 @@ if (typeof document !== 'undefined') {
 }
 
 /**
+ * Migrate a legacy { nextReview, level } record into the SM-2 shape.
+ * Idempotent — if the record already has interval/easeFactor it's
+ * returned unchanged. Called lazily on every load.
+ */
+const migrateLegacyState = (raw: Partial<SRSState>): SRSState => {
+  if (typeof raw.interval === 'number' && typeof raw.easeFactor === 'number') {
+    return raw as SRSState;
+  }
+  const level = typeof raw.level === 'number' ? raw.level : 0;
+  // Map old level → interval using the old formula (3 days × level),
+  // so existing users don't see their queue suddenly explode or compress.
+  const interval = level > 0 ? Math.max(1, 3 * level) : 0;
+  return {
+    nextReview: typeof raw.nextReview === 'number' ? raw.nextReview : 0,
+    level,
+    interval,
+    easeFactor: EASE_DEFAULT,
+  };
+};
+
+/**
  * Loads the SRS data from local storage.
  * Uses an in-memory cache to avoid frequent JSON parsing.
  * @returns {SRSData} The loaded SRS data or an empty object if not found or error.
@@ -94,10 +141,15 @@ export const loadSRS = (): SRSData => {
   }
   try {
     const data = localStorage.getItem(STORAGE_KEY);
-    srsCache = data ? JSON.parse(data) : {};
+    const parsed = (data ? JSON.parse(data) : {}) as Record<string, Partial<SRSState>>;
+    const migrated: SRSData = {};
+    for (const [cardId, state] of Object.entries(parsed)) {
+      migrated[cardId] = migrateLegacyState(state);
+    }
+    srsCache = migrated;
     // Invalidate stats cache when data is reloaded
     statsCache = null;
-    return srsCache as SRSData;
+    return srsCache;
   } catch (e) {
     console.error('Failed to load SRS data', e);
     return {};
@@ -125,47 +177,74 @@ export const saveSRS = (data: SRSData) => {
   }, 2000);
 };
 
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
+
 /**
- * Updates the SRS state for a specific card based on the user's result.
+ * SM-2 (Anki-style) scheduler with binary feedback.
  *
- * Algorithm:
- * - If Correct:
- *   - Level increases by 1.
- *   - Next review is scheduled for (3 * Level) days from now.
- * - If Incorrect:
- *   - Level resets to 0.
- *   - Next review is scheduled for 10 minutes from now.
+ * On a correct answer:
+ *   - reps += 1
+ *   - first correct: interval = 1 day; second: 3 days; thereafter:
+ *     interval = previousInterval × easeFactor (rounded).
+ *   - easeFactor inches up by EASE_DELTA_CORRECT, capped at EASE_MAX.
  *
- * @param {string} cardId - The unique identifier of the flashcard.
- * @param {boolean} isCorrect - Whether the user answered correctly.
- * @returns {SRSState} The updated state of the card.
+ * On a wrong answer:
+ *   - interval is reset; the card returns to the queue in
+ *     RELEARN_INTERVAL_MIN minutes for re-learning.
+ *   - easeFactor drops by EASE_DELTA_WRONG, floored at EASE_MIN — so
+ *     leech cards naturally show up more often without ever
+ *     disappearing into "you'll see this again in 60 days" purgatory.
+ *   - lapses += 1.
+ *
+ * `level` is kept in sync (++ on correct, 0 on wrong) so any UI that
+ * still surfaces "level" reads sensibly.
  */
 export const updateCardSRS = (cardId: string, isCorrect: boolean): SRSState => {
   const data = loadSRS();
-  const current = data[cardId] || { nextReview: 0, level: 0 };
+  const current: SRSState = data[cardId] ?? {
+    nextReview: 0,
+    level: 0,
+    interval: 0,
+    easeFactor: EASE_DEFAULT,
+    reps: 0,
+    lapses: 0,
+  };
 
+  const reps = (current.reps ?? 0);
+  const lapses = (current.lapses ?? 0);
   let nextReview: number;
   let level: number;
+  let interval: number;
+  let easeFactor: number;
+  let nextReps: number;
+  let nextLapses: number;
 
   if (isCorrect) {
-    // Increment level
+    nextReps = reps + 1;
+    nextLapses = lapses;
+    easeFactor = Math.min(EASE_MAX, current.easeFactor + EASE_DELTA_CORRECT);
+    if (nextReps === 1) interval = FIRST_CORRECT_INTERVAL_DAYS;
+    else if (nextReps === 2) interval = SECOND_CORRECT_INTERVAL_DAYS;
+    else interval = Math.max(1, Math.round(current.interval * easeFactor));
+    nextReview = Date.now() + interval * MS_PER_DAY;
     level = current.level + 1;
-
-    // Calculate review interval: 3 days * level
-    // Example: Level 1 = 3 days, Level 2 = 6 days, etc.
-    const daysToAdd = 3 * level;
-    nextReview = Date.now() + daysToAdd * 24 * 60 * 60 * 1000;
-    console.log(`[Debug] SRS Update for ${cardId}: Correct. Level: ${level}, Next review in ${daysToAdd} days`);
   } else {
-    // Reset level on failure
+    nextReps = reps;
+    nextLapses = lapses + 1;
+    easeFactor = Math.max(EASE_MIN, current.easeFactor + EASE_DELTA_WRONG);
+    interval = 0;
+    nextReview = Date.now() + RELEARN_INTERVAL_MIN * 60 * 1000;
     level = 0;
-
-    // Show again shortly (10 minutes)
-    nextReview = Date.now() + 10 * 60 * 1000;
-    console.log(`[Debug] SRS Update for ${cardId}: Incorrect. Reset level. Next review in 10 minutes`);
   }
 
-  const newState = { nextReview, level };
+  const newState: SRSState = {
+    nextReview,
+    level,
+    interval,
+    easeFactor,
+    reps: nextReps,
+    lapses: nextLapses,
+  };
   data[cardId] = newState;
   saveSRS(data);
   return newState;
@@ -186,9 +265,9 @@ export const getDueCards = (): Flashcard[] => {
   const dueCards: Flashcard[] = [];
 
   for (let i = 0; i < lessons.length; i++) {
-    const category = lessons[i];
+    const category = lessons[i]!;
     for (let j = 0; j < category.cards.length; j++) {
-      const card = category.cards[j];
+      const card = category.cards[j]!;
       const state = srsData[card.id];
       // If no state (New) OR nextReview <= now (Due)
       if (!state || state.nextReview <= now) {
@@ -234,8 +313,9 @@ export const getSRSStats = () => {
   let reviewedDueCount = 0;
   // Use a simple loop for performance over Object.values().filter()
   for (let i = 0; i < reviewedIds.length; i++) {
-    const state = srsData[reviewedIds[i]];
-    if (state.nextReview <= now) {
+    const id = reviewedIds[i]!;
+    const state = srsData[id];
+    if (state && state.nextReview <= now) {
       reviewedDueCount++;
     }
   }

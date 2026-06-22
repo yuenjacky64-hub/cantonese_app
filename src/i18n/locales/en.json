@@ -147,7 +147,10 @@
     "good": "Good Job!",
     "keepLearning": "Keep Practicing!",
     "tryAgain": "Try Again!",
-    "playAgain": "Play Again"
+    "playAgain": "Play Again",
+    "aria": {
+      "playAudio": "Play the audio clue"
+    }
   },
   "home": {
     "tipsEveryday": "Tips Everyday",
@@ -209,7 +212,15 @@
   },
   "flashcard": {
     "tapToSeeTranslation": "Tap to see translation",
-    "tapToSeeCantonese": "Tap to see Cantonese"
+    "tapToSeeCantonese": "Tap to see Cantonese",
+    "aria": {
+      "playAudio": "Play pronunciation",
+      "playSlow": "Play pronunciation slowly",
+      "playExample": "Play example sentence",
+      "playExampleSlow": "Play example sentence slowly",
+      "bookmarkAdd": "Bookmark this card",
+      "bookmarkRemove": "Remove bookmark"
+    }
   },
   "topics": {
     "greetings": "Greetings",
@@ -246,6 +257,8 @@
     "city-navigation": "City Navigation",
     "emotions-feelings": "Emotions & Feelings",
     "taglish-fillers": "Cantonese Slang & Fillers",
+    "cantonese-fillers": "Cantonese Slang & Fillers",
+    "numbers-time-money": "Numbers (Time & Money)",
     "making-plans": "Making Plans (Let's Go Pack)",
     "compliments-flattery": "Compliments & Flattery",
     "opinions-uncertainty": "Opinions & Uncertainty",
@@ -312,6 +325,48 @@
     "tip6": "Learn useful words by theme: food, travel, school, work, and more.",
     "tip7": "You regularly refresh your memory.",
     "tip8": "Speaking the language becomes natural and fun as time passes."
+  },
+  "pathways": {
+    "sectionTitle": "Pathways",
+    "sectionSubtitle": "Curated routes through the catalog — pick the one that matches your situation.",
+    "lessonsLabel": "lessons",
+    "firstTrip": {
+      "title": "First trip to Hong Kong",
+      "description": "The essentials for a one-week visit — getting around, ordering, paying, sightseeing.",
+      "estimate": "10 lessons · ~1 hour to skim"
+    },
+    "firstMonth": {
+      "title": "First month as a resident",
+      "description": "Settling in: housing, weather, the wet market, daily errands, small talk.",
+      "estimate": "14 lessons · ~3 hours total"
+    },
+    "workplace": {
+      "title": "Workplace Cantonese",
+      "description": "Office-ready vocabulary: meetings, polite forms, opinions, scheduling, fillers.",
+      "estimate": "9 lessons · ~2 hours total"
+    }
+  },
+  "levels": {
+    "1": "Beginner",
+    "2": "Tourist",
+    "3": "Resident",
+    "4": "Fluent",
+    "1.short": "A1",
+    "2.short": "A2",
+    "3.short": "B1",
+    "4.short": "B2"
+  },
+  "tones": {
+    "1": "high level",
+    "2": "high rising",
+    "3": "mid level",
+    "4": "low falling",
+    "5": "low rising",
+    "6": "low level",
+    "title": "Your tones",
+    "subtitle": "Per-tone accuracy across reviews and games",
+    "empty": "Play any game with audio to start tracking which tones you confuse.",
+    "attemptsLabel": "{{count}} attempts"
   },
   "footer": {
     "privacyPolicy": "Privacy Policy",

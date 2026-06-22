@@ -5,10 +5,12 @@ import {
     IonButton,
     IonIcon,
 } from '@ionic/react';
-import { trophyOutline, refreshOutline, checkmarkOutline, closeOutline } from 'ionicons/icons';
+import { refreshOutline, checkmarkOutline, closeOutline } from 'ionicons/icons';
 import { useTranslation } from 'react-i18next';
 import CommonHeader from '../components/CommonHeader';
 import Footer from '../components/Footer';
+import { StreakMark, TrophyMark } from '../components/Marks';
+import { recordToneAttempt } from '../utils/toneStats';
 import { Flashcard, allCards } from '../data/lessons';
 import { shuffleArray, getRandomElements } from '../utils/array';
 import './TrueFalse.css';
@@ -48,14 +50,21 @@ const TrueFalse: React.FC = () => {
 
         const generatedQuestions = shuffled.map(card => {
             const isTrue = Math.random() > 0.5;
-            let displayedTranslation = '';
+            const correctTranslation = getTranslation(card);
+            let displayedTranslation = correctTranslation;
 
-            if (isTrue) {
-                displayedTranslation = getTranslation(card);
-            } else {
-                // Pick a random translation from another card
-                const wrongCard = getRandomElements(allCards, 1, c => c.id === card.id)[0];
-                displayedTranslation = getTranslation(wrongCard);
+            if (!isTrue) {
+                // Exclude any card whose translation equals the correct one — multiple cards
+                // share meanings (e.g. "Yes / Right"), so filtering by id alone could
+                // pick a "wrong" card whose translation matches and silently mark the user wrong.
+                const wrongCard = getRandomElements(
+                    allCards,
+                    1,
+                    c => c.id === card.id || getTranslation(c) === correctTranslation
+                )[0];
+                if (wrongCard) {
+                    displayedTranslation = getTranslation(wrongCard);
+                }
             }
 
             return {
@@ -84,10 +93,12 @@ const TrueFalse: React.FC = () => {
         if (selectedAnswer !== null) return; // Prevent double-clicks
 
         const currentQuestion = questions[questionIndex];
+        if (!currentQuestion) return;
         const correct = answer === currentQuestion.isActuallyTrue;
 
         setSelectedAnswer(answer);
         setIsCorrect(correct);
+        recordToneAttempt(currentQuestion.card.cantonese, correct);
 
         if (correct) {
             setScore(prev => prev + 1);
@@ -122,7 +133,7 @@ const TrueFalse: React.FC = () => {
                     <div className="game-over-container fade-in-up">
                         <div className="game-over-card">
                             <div className="trophy-icon">
-                                <IonIcon icon={trophyOutline} />
+                                <TrophyMark size={36} />
                             </div>
                             <h2>{t('truefalse.roundComplete')}</h2>
                             <p className="game-over-subtitle">{t('truefalse.greatJob')}</p>
@@ -138,7 +149,7 @@ const TrueFalse: React.FC = () => {
                                 </div>
                                 <div className="score-item">
                                     <div className="score-label">{t('truefalse.bestStreak')}</div>
-                                    <div className="score-value streak">🔥 {bestStreak}</div>
+                                    <div className="score-value streak"><StreakMark /> {bestStreak}</div>
                                 </div>
                             </div>
 
@@ -172,6 +183,7 @@ const TrueFalse: React.FC = () => {
     }
 
     const currentQuestion = questions[questionIndex];
+    if (!currentQuestion) return null;
 
     return (
         <IonPage>
@@ -199,7 +211,7 @@ const TrueFalse: React.FC = () => {
                         </div>
                         {streak > 0 && (
                             <div className="stat-item streak-indicator">
-                                <span className="streak-fire">🔥</span>
+                                <StreakMark />
                                 <span className="stat-value">{streak}</span>
                             </div>
                         )}

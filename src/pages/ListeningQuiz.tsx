@@ -13,6 +13,8 @@ import CommonHeader from '../components/CommonHeader';
 import { lessons } from '../data/lessons';
 import { getRandomElements, shuffleArray } from '../utils/array';
 import { fetchTTS } from '../utils/tts';
+import { CheckMark, CrossMark, ScoreTierMark } from '../components/Marks';
+import { recordToneAttempt } from '../utils/toneStats';
 import './ListeningQuiz.css';
 
 // Get all words from lessons for the quiz (computed once)
@@ -128,7 +130,8 @@ const ListeningQuiz: React.FC = () => {
             const audioPath = audioMap ? audioMap[text]?.normal : null;
 
             if (audioPath) {
-                const fullPath = `${import.meta.env.BASE_URL}${audioPath}`;
+                const relPath = audioPath.startsWith('/') ? audioPath.slice(1) : audioPath;
+                const fullPath = `${import.meta.env.BASE_URL}${relPath}`;
 
                 if (audioRef.current) {
                     audioRef.current.src = fullPath;
@@ -197,11 +200,12 @@ const ListeningQuiz: React.FC = () => {
     }, [currentIndex, questions, gameOver]);
 
     const handleAnswer = (answer: string) => {
-        if (selectedAnswer !== null || !hasPlayed) return;
+        if (selectedAnswer !== null || !hasPlayed || !currentQuestion) return;
 
         setSelectedAnswer(answer);
         const correct = answer === currentQuestion.word.cantonese;
         setIsCorrect(correct);
+        recordToneAttempt(currentQuestion.word.cantonese, correct);
 
         if (correct) {
             setScore(prev => prev + 1);
@@ -220,14 +224,7 @@ const ListeningQuiz: React.FC = () => {
         }, 2000);
     };
 
-    const getScoreEmoji = () => {
-        const percentage = (score / QUESTIONS_PER_GAME) * 100;
-        if (percentage === 100) return '🏆';
-        if (percentage >= 80) return '🌟';
-        if (percentage >= 60) return '😊';
-        if (percentage >= 40) return '💪';
-        return '📚';
-    };
+    const scorePercentage = (score / QUESTIONS_PER_GAME) * 100;
 
     const getScoreMessage = () => {
         const percentage = (score / QUESTIONS_PER_GAME) * 100;
@@ -241,6 +238,12 @@ const ListeningQuiz: React.FC = () => {
     if (!currentQuestion && !gameOver) {
         return null;
     }
+    // After the guard above, currentQuestion is only ever undefined
+    // when gameOver is true, in which case the JSX below skips the
+    // branches that read it (see `!gameOver ? ... : gameOverScreen`).
+    // Narrow the type for the active-game branch so subsequent
+    // accesses don't trip noUncheckedIndexedAccess.
+    const activeQuestion = currentQuestion as NonNullable<typeof currentQuestion>;
 
     return (
         <IonPage>
@@ -276,6 +279,7 @@ const ListeningQuiz: React.FC = () => {
                                 className={`play-audio-btn ${isPlaying ? 'playing' : ''}`}
                                 onClick={playAudio}
                                 disabled={isPlaying}
+                                aria-label={t('listening.aria.playAudio')}
                             >
                                 <IonIcon icon={isPlaying ? earOutline : volumeHighOutline} />
                             </button>
@@ -286,10 +290,10 @@ const ListeningQuiz: React.FC = () => {
 
                         {/* Answer Options */}
                         <div className="listening-options-grid">
-                            {currentQuestion.options.map((option, idx) => {
+                            {activeQuestion.options.map((option, idx) => {
                                 let optionClass = 'listening-option';
                                 if (selectedAnswer !== null) {
-                                    if (option.cantonese === currentQuestion.word.cantonese) {
+                                    if (option.cantonese === activeQuestion.word.cantonese) {
                                         optionClass += ' correct';
                                     } else if (option.cantonese === selectedAnswer && !isCorrect) {
                                         optionClass += ' wrong';
@@ -301,6 +305,10 @@ const ListeningQuiz: React.FC = () => {
                                     optionClass += ' disabled';
                                 }
 
+                                // Hide jyutping until an answer is selected so the user
+                                // has to actually listen — otherwise reading the romanization
+                                // lets them pass without engaging the audio.
+                                const revealJyutping = selectedAnswer !== null;
                                 return (
                                     <button
                                         key={idx}
@@ -308,9 +316,11 @@ const ListeningQuiz: React.FC = () => {
                                         onClick={() => handleAnswer(option.cantonese)}
                                         disabled={selectedAnswer !== null || !hasPlayed}
                                     >
-                                        <span className="option-cantonese">{option.cantonese}</span>
+                                        {revealJyutping && (
+                                            <span className="option-cantonese">{option.cantonese}</span>
+                                        )}
                                         <span className="option-english">{option.english}</span>
-                                        {selectedAnswer !== null && option.cantonese === currentQuestion.word.cantonese && (
+                                        {selectedAnswer !== null && option.cantonese === activeQuestion.word.cantonese && (
                                             <IonIcon icon={checkmarkCircle} className="result-icon correct" />
                                         )}
                                         {selectedAnswer === option.cantonese && !isCorrect && (
@@ -324,9 +334,9 @@ const ListeningQuiz: React.FC = () => {
                         {/* Answer Feedback */}
                         {selectedAnswer !== null && (
                             <div className={`listening-feedback ${isCorrect ? 'correct' : 'wrong'}`}>
-                                <span className="feedback-emoji">{isCorrect ? '✅' : '❌'}</span>
+                                <span className="feedback-emoji">{isCorrect ? <CheckMark size={22} /> : <CrossMark size={22} />}</span>
                                 <span className="feedback-text">
-                                    {isCorrect ? t('listening.correct') : `${t('listening.wrong')} ${currentQuestion.word.cantonese}`}
+                                    {isCorrect ? t('listening.correct') : `${t('listening.wrong')} ${activeQuestion.word.cantonese}`}
                                 </span>
                             </div>
                         )}
@@ -335,7 +345,7 @@ const ListeningQuiz: React.FC = () => {
                     /* Game Over Screen */
                     <div className="listening-game-over">
                         <div className="game-over-card">
-                            <div className="score-emoji">{getScoreEmoji()}</div>
+                            <div className="score-emoji"><ScoreTierMark percentage={scorePercentage} /></div>
                             <h2 className="score-title">{getScoreMessage()}</h2>
 
                             <div className="final-score">

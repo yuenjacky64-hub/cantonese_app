@@ -2,7 +2,10 @@
 node_modules/
 dist/
 coverage/
-cypress/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+.claude/
 videos4/
 videos3/
 videos/

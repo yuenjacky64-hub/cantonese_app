@@ -61,6 +61,10 @@ vi.mock('../../utils/srs', () => ({
     getSRSStats: vi.fn(() => ({ totalCards: 10, reviewedCount: 5, dueCount: 2 }))
 }));
 
+vi.mock('../../utils/streak', () => ({
+    getStreakInfo: vi.fn(() => ({ streak: 0, isActiveToday: false, longestStreak: 0, totalDays: 0 }))
+}));
+
 describe('Review Page', () => {
     beforeEach(() => {
         vi.clearAllMocks();

@@ -12,9 +12,10 @@
 
 .language-switcher-container {
   display: flex;
-  background: rgba(0, 0, 0, 0.04);
-  padding: 4px;
-  border-radius: 14px;
+  background: transparent;
+  border: 1px solid var(--hairline);
+  padding: 3px;
+  border-radius: 999px;
   margin-right: 10px;
 }
 
@@ -22,10 +23,11 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 1.15rem;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
   font-weight: 800;
-  color: var(--ion-text-color);
-  letter-spacing: -0.04em;
+  color: var(--ink);
+  letter-spacing: -0.03em;
 }
 
 @media (max-width: 576px) {

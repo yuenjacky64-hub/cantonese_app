@@ -1,0 +1,53 @@
+version: 2
+updates:
+  # Group npm package updates into weekly PRs by ecosystem so we don't
+  # drown in single-package noise. Security updates still file their
+  # own PRs immediately.
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    groups:
+      ionic:
+        patterns:
+          - "@ionic/*"
+          - "@capacitor/*"
+          - "ionicons"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "react-router*"
+          - "@types/react"
+          - "@types/react-dom"
+      i18n:
+        patterns:
+          - "i18next*"
+          - "react-i18next"
+      vite:
+        patterns:
+          - "vite"
+          - "vite-*"
+          - "@vitejs/*"
+      testing:
+        patterns:
+          - "vitest"
+          - "@vitest/*"
+          - "@testing-library/*"
+          - "cypress"
+          - "jest-axe"
+      types:
+        patterns:
+          - "@types/*"
+        exclude-patterns:
+          - "@types/react"
+          - "@types/react-dom"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 3

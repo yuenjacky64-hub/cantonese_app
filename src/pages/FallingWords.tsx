@@ -57,7 +57,9 @@ const FallingWords: React.FC = () => {
         if (!force && !isPlaying) return;
 
         const cards = allCards.current;
-        const randomCard = cards[Math.floor(Math.random() * cards.length)];
+        if (cards.length === 0) return;
+        // length checked above; the index is always in-bounds.
+        const randomCard = cards[Math.floor(Math.random() * cards.length)]!;
         setCurrentCard(randomCard);
 
         const correctAnswer = getTranslation(randomCard);

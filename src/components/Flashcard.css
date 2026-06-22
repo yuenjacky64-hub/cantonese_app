@@ -11,28 +11,21 @@
   position: relative;
 }
 
-/* Ambient Focus Room Glow */
+/* The ambient glow was a SaaS holdover. Replaced with a single
+ * static neon "watermark" stroke that frames the card. */
 .flashcard-container::before {
   content: '';
   position: absolute;
-  width: 140%;
-  height: 140%;
-  background: radial-gradient(circle at center, var(--glow-indigo-soft), transparent 60%);
+  inset: -8px;
+  background:
+    linear-gradient(180deg, transparent, var(--neon-hot-glow) 40%, transparent),
+    linear-gradient(180deg, transparent, var(--neon-ice-glow) 60%, transparent);
+  background-size: 1px 100%, 1px 100%;
+  background-repeat: no-repeat;
+  background-position: 8px 0, calc(100% - 8px) 0;
   z-index: -1;
-  filter: blur(40px);
-  animation: ambientPulse 8s ease-in-out infinite alternate;
-}
-
-@keyframes ambientPulse {
-  from {
-    opacity: 0.4;
-    transform: scale(1);
-  }
-
-  to {
-    opacity: 0.7;
-    transform: scale(1.1);
-  }
+  pointer-events: none;
+  opacity: 0.55;
 }
 
 .flashcard-inner {
@@ -53,11 +46,10 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05), inset 0 0 20px rgba(92, 95, 230, 0.02);
-  border-radius: 24px;
+  background: #ffffff;
+  border: 1px solid var(--hairline);
+  box-shadow: var(--luminous-shadow);
+  border-radius: 18px;
   padding: 60px 40px;
   display: flex;
   flex-direction: column;
@@ -70,35 +62,59 @@
 
 .flashcard-back {
   transform: rotateY(180deg);
+  background: var(--ink);
+  color: var(--paper);
+  border-color: transparent;
 }
 
-/* Hero Typography */
+/* Front: Chinese display, in Noto Serif HK */
 .flashcard-front h2 {
-  font-size: 3.8rem;
-  font-weight: 800;
-  color: var(--ion-text-color);
-  margin: 0;
-  text-align: center;
-  word-wrap: break-word;
-  word-break: break-word;
-}
-
-.jyutping-hint {
-  color: var(--ion-color-medium);
-  font-size: 1.2rem;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.flashcard-back h2 {
-  font-size: 2.5rem;
+  font-family: var(--font-display);
+  font-size: 4.2rem;
   font-weight: 700;
-  color: var(--glow-indigo);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--ink);
   margin: 0;
   text-align: center;
   word-wrap: break-word;
   word-break: break-word;
+}
+
+/* Jyutping row directly below the Chinese */
+.jyutping-hint {
+  margin: 18px 0 4px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+/* Back: the English translation */
+.flashcard-back h2 {
+  font-family: var(--font-body);
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--paper);
+  margin: 0;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+/* The numeric corner mark — a tiny dossier-style id at top-left of
+ * the back of the card. Picks up the signature neon. */
+.flashcard-back::before {
+  content: 'CARD';
+  position: absolute;
+  top: 24px;
+  left: 28px;
+  font-family: var(--font-jyutping);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--neon-hot);
+  text-transform: uppercase;
+  opacity: 0.85;
 }
 
 @media (max-width: 576px) {
@@ -122,21 +138,26 @@
 
 .flip-hint {
   position: absolute;
-  bottom: 40px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: #94a3b8;
+  bottom: 36px;
+  font-family: var(--font-jyutping);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--graphite-soft);
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.22em;
 }
 
-/* Immersive Details */
+.flashcard-back .flip-hint {
+  color: rgba(250, 247, 241, 0.5);
+}
+
+/* Example sentence block: lives at the bottom of the back of the card. */
 .example-sentence {
-  margin-top: 48px;
-  padding: 24px;
-  background: rgba(92, 95, 230, 0.03);
-  border-radius: 16px;
-  border: 1px solid rgba(92, 95, 230, 0.1);
+  margin-top: 36px;
+  padding: 20px 24px;
+  background: rgba(250, 247, 241, 0.08);
+  border-left: 2px solid var(--neon-hot);
+  border-radius: 4px;
   width: 100%;
 }
 
@@ -148,9 +169,10 @@
 }
 
 .example-cantonese {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--ion-text-color);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--paper);
   margin-bottom: 4px;
   display: block;
   flex: 1;
@@ -169,89 +191,113 @@
 }
 
 .example-jyutping {
-  font-size: 0.95rem;
-  color: var(--ion-color-medium, #64748b);
-  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: rgba(250, 247, 241, 0.75);
+  margin: 8px 0 6px;
   font-weight: 500;
 }
 
 .example-translation {
-  font-size: 0.95rem;
-  color: #64748b;
+  font-size: 0.92rem;
+  color: rgba(250, 247, 241, 0.6);
   font-weight: 500;
 }
 
-/* Control Glass Islands */
+/* Control row — flat utility group, no glass */
 .audio-btn-group {
   position: absolute;
-  top: 32px;
+  top: 28px;
   left: 24px;
   display: flex;
-  gap: 4px;
-  background: rgba(248, 250, 252, 0.9);
-  border-radius: 14px;
-  padding: 4px;
+  gap: 2px;
+  background: transparent;
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  padding: 2px;
 }
 
 .audio-btn,
 .slow-audio-btn {
   --background: transparent;
-  --color: #64748b;
-  --border-radius: 10px;
+  --color: var(--graphite);
+  --border-radius: 999px;
   height: 36px;
   width: 36px;
   --padding-start: 0;
   --padding-end: 0;
   margin: 0;
-  transition: var(--transition-haptic);
+  transition: var(--transition-fast);
 }
 
 .audio-btn:hover,
 .slow-audio-btn:hover {
-  --background: var(--glow-indigo);
-  --color: white;
-  transform: scale(1.1);
+  --background: var(--neon-hot);
+  --color: #ffffff;
+}
+
+.flashcard-back .audio-btn,
+.flashcard-back .slow-audio-btn {
+  --color: var(--paper);
+}
+
+.flashcard-back .audio-btn-group {
+  border-color: rgba(250, 247, 241, 0.18);
 }
 
 .bookmark-btn {
   position: absolute;
-  top: 32px;
-  --background: rgba(248, 250, 252, 0.8);
-  --color: #64748b;
-  --border-radius: 12px;
-  height: 44px;
-  width: 44px;
+  top: 28px;
+  right: 28px;
+  --background: transparent;
+  --color: var(--graphite);
+  --border-radius: 999px;
+  height: 40px;
+  width: 40px;
   --padding-start: 0;
   --padding-end: 0;
   margin: 0;
-  transition: var(--transition-haptic);
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  transition: var(--transition-fast);
 }
 
 .bookmark-btn:hover {
-  --background: var(--glow-indigo);
-  --color: white;
-  transform: scale(1.1);
+  --color: var(--neon-hot);
+  border-color: var(--neon-hot);
 }
 
-.bookmark-btn {
-  right: 32px;
+.flashcard-back .bookmark-btn {
+  --color: var(--paper);
+  border-color: rgba(250, 247, 241, 0.18);
 }
 
 .playing-icon {
-  color: white;
+  color: var(--neon-hot);
 }
 
-/* Dark Mode Nebula */
+/* Dark Mode — front becomes ink too, hairlines invert */
 @media (prefers-color-scheme: dark) {
 
-  .flashcard-front,
-  .flashcard-back {
-    background: rgba(17, 24, 39, 0.8);
-    border-color: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+  .flashcard-front {
+    background: var(--ink-soft);
+    border-color: rgba(250, 247, 241, 0.08);
   }
 
-  .example-sentence {
-    background: rgba(255, 255, 255, 0.02);
+  .flashcard-front h2 {
+    color: var(--paper);
+  }
+
+  .flashcard-front .audio-btn,
+  .flashcard-front .slow-audio-btn {
+    --color: var(--paper);
+  }
+
+  .flashcard-front .audio-btn-group,
+  .flashcard-front .bookmark-btn {
+    border-color: rgba(250, 247, 241, 0.16);
+  }
+
+  .flashcard-front .bookmark-btn {
+    --color: var(--paper);
   }
 }

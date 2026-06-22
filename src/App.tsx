@@ -82,12 +82,15 @@ const PageLoader: React.FC = () => (
  */
 const App: React.FC = () => {
 
-  // Initialize theme from local storage on app start
+  // Initialize theme from local storage on app start.
+  // Only mutate the body class if it actually changed — under React StrictMode
+  // this effect runs twice in dev, and a blind assignment would clobber any
+  // class set by another script in between.
   useEffect(() => {
-    console.log('[Debug] App initializing...');
     const savedTheme = localStorage.getItem('app-theme') || 'theme-teal';
-    console.log(`[Debug] Loading saved theme: ${savedTheme}`);
-    document.body.className = savedTheme;
+    if (document.body.className !== savedTheme) {
+      document.body.className = savedTheme;
+    }
   }, []);
 
   return (

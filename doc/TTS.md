@@ -32,7 +32,7 @@ Playback methods and custom hooks track the execution via React refs. When the u
 
 ## Setting Up the Google Cloud TTS Server
 
-To maintain the dynamic TTS generation, you can deploy a serverless endpoint using Google Cloud Run. Detailed instructions and the core logic (Node.js/Express) are provided in `how_to_setup_google_serverless_server_for_tts.txt` in the project root.
+To maintain the dynamic TTS generation, you can deploy a serverless endpoint using Google Cloud Run. Detailed instructions and the core logic (Node.js/Express) are provided in [TTS_SERVER_SETUP.md](TTS_SERVER_SETUP.md).
 
 ### Summary of Deployment Steps:
 1. Enable `texttospeech.googleapis.com` and `run.googleapis.com` in your Google Cloud Project.
