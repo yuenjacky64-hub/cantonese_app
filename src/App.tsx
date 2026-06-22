@@ -1,5 +1,5 @@
 import React, { useEffect, Suspense, lazy } from 'react';
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { IonApp, IonSpinner, setupIonicReact } from '@ionic/react';
 import ReloadPrompt from './components/ReloadPrompt';
 import { TimerProvider } from './context/TimerContext';
@@ -62,22 +62,22 @@ const App: React.FC = () => {
         <TimerProvider>
           <Suspense fallback={<PageLoader />}>
             <div id="app-router">
-              <Routes>
-                <Route path="/home" element={<Home />} />
-                <Route path="/lesson/:id" element={<Lesson />} />
-                <Route path="/review" element={<Review />} />
-                <Route path="/intro" element={<Intro />} />
-                <Route path="/game" element={<Game />} />
-                <Route path="/memory" element={<MemoryMatch />} />
-                <Route path="/spell" element={<SpellChallenge />} />
-                <Route path="/scramble" element={<WordScramble />} />
-                <Route path="/emoji" element={<EmojiGuess />} />
-                <Route path="/falling" element={<FallingWords />} />
-                <Route path="/listening" element={<ListeningQuiz />} />
-                <Route path="/sentence" element={<SentenceBuilder />} />
-                <Route path="/truefalse" element={<TrueFalse />} />
-                <Route path="/" element={<Navigate to="/home" replace />} />
-              </Routes>
+              <Switch>
+                <Route path="/home" component={Home} />
+                <Route path="/lesson/:id" component={Lesson} />
+                <Route path="/review" component={Review} />
+                <Route path="/intro" component={Intro} />
+                <Route path="/game" component={Game} />
+                <Route path="/memory" component={MemoryMatch} />
+                <Route path="/spell" component={SpellChallenge} />
+                <Route path="/scramble" component={WordScramble} />
+                <Route path="/emoji" component={EmojiGuess } />
+                <Route path="/falling" component={FallingWords} />
+                <Route path="/listening" component={ListeningQuiz} />
+                <Route path="/sentence" component={SentenceBuilder} />
+                <Route path="/truefalse" component={TrueFalse} />
+                <Route exact path="/" render={() => <Redirect to="/home" />} />
+              </Switch>
             </div>
           </Suspense>
         </TimerProvider>
