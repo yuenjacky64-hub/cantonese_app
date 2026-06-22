@@ -1,13 +1,10 @@
 import React, { useEffect, Suspense, lazy } from 'react';
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, IonSpinner, setupIonicReact } from '@ionic/react';
-import { IonReactHashRouter } from '@ionic/react-router';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { IonApp, IonSpinner, setupIonicReact } from '@ionic/react';
 import ReloadPrompt from './components/ReloadPrompt';
 import { TimerProvider } from './context/TimerContext';
 
-/* Lazy-loaded page components for code splitting optimization.
- * This ensures that the initial bundle size is smaller and pages are loaded only when needed.
- */
+/* Lazy-loaded page components */
 const Home = lazy(() => import('./pages/Home'));
 const Lesson = lazy(() => import('./pages/Lesson'));
 const Review = lazy(() => import('./pages/Review'));
@@ -22,42 +19,22 @@ const ListeningQuiz = lazy(() => import('./pages/ListeningQuiz'));
 const SentenceBuilder = lazy(() => import('./pages/SentenceBuilder'));
 const TrueFalse = lazy(() => import('./pages/TrueFalse'));
 
-/* Core CSS required for Ionic components to work properly */
+/* Ionic CSS */
 import '@ionic/react/css/core.css';
-
-/* Basic CSS for apps built with Ionic */
 import '@ionic/react/css/normalize.css';
 import '@ionic/react/css/structure.css';
 import '@ionic/react/css/typography.css';
-
-/* Optional CSS utils that can be commented out */
 import '@ionic/react/css/padding.css';
 import '@ionic/react/css/float-elements.css';
 import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
-
-/**
- * Ionic Dark Mode
- * -----------------------------------------------------
- * For more info, please see:
- * https://ionicframework.com/docs/theming/dark-mode
- */
-
-/* import '@ionic/react/css/palettes/dark.always.css'; */
-/* import '@ionic/react/css/palettes/dark.class.css'; */
 import '@ionic/react/css/palettes/dark.system.css';
-
-/* Theme variables */
 import './theme/variables.css';
 
 setupIonicReact();
 
-/**
- * Loading Component for Suspense fallback
- * Shows a centered spinner while lazy components are loading
- */
 const PageLoader: React.FC = () => (
   <div style={{
     display: 'flex',
@@ -70,22 +47,7 @@ const PageLoader: React.FC = () => (
   </div>
 );
 
-/**
- * Main Application Component.
- *
- * Sets up:
- * - Routing (HashRouter)
- * - Global Providers (TimerProvider)
- * - Theme Initialization
- * - PWA Reload Prompt
- * - Suspense for lazy loading
- */
 const App: React.FC = () => {
-
-  // Initialize theme from local storage on app start.
-  // Only mutate the body class if it actually changed — under React StrictMode
-  // this effect runs twice in dev, and a blind assignment would clobber any
-  // class set by another script in between.
   useEffect(() => {
     const savedTheme = localStorage.getItem('app-theme') || 'theme-teal';
     if (document.body.className !== savedTheme) {
@@ -95,33 +57,31 @@ const App: React.FC = () => {
 
   return (
     <IonApp>
-      {/* PWA Update Prompt */}
       <ReloadPrompt />
-
-      <IonReactHashRouter>
-        {/* Timer Provider tracks study time across routes */}
+      <HashRouter>
         <TimerProvider>
           <Suspense fallback={<PageLoader />}>
-            {/* Router Outlet for handling navigation */}
-            <IonRouterOutlet animated={false}>
-              <Route exact path="/home"><Home /></Route>
-              <Route exact path="/lesson/:id"><Lesson /></Route>
-              <Route exact path="/review"><Review /></Route>
-              <Route exact path="/intro"><Intro /></Route>
-              <Route exact path="/game"><Game /></Route>
-              <Route exact path="/memory"><MemoryMatch /></Route>
-              <Route exact path="/spell"><SpellChallenge /></Route>
-              <Route exact path="/scramble"><WordScramble /></Route>
-              <Route exact path="/emoji"><EmojiGuess /></Route>
-              <Route exact path="/falling"><FallingWords /></Route>
-              <Route exact path="/listening"><ListeningQuiz /></Route>
-              <Route exact path="/sentence"><SentenceBuilder /></Route>
-              <Route exact path="/truefalse"><TrueFalse /></Route>
-              <Route exact path="/"><Redirect to="/home" /></Route>
-            </IonRouterOutlet>
+            <div id="app-router">
+              <Routes>
+                <Route path="/home" element={<Home />} />
+                <Route path="/lesson/:id" element={<Lesson />} />
+                <Route path="/review" element={<Review />} />
+                <Route path="/intro" element={<Intro />} />
+                <Route path="/game" element={<Game />} />
+                <Route path="/memory" element={<MemoryMatch />} />
+                <Route path="/spell" element={<SpellChallenge />} />
+                <Route path="/scramble" element={<WordScramble />} />
+                <Route path="/emoji" element={<EmojiGuess />} />
+                <Route path="/falling" element={<FallingWords />} />
+                <Route path="/listening" element={<ListeningQuiz />} />
+                <Route path="/sentence" element={<SentenceBuilder />} />
+                <Route path="/truefalse" element={<TrueFalse />} />
+                <Route path="/" element={<Navigate to="/home" replace />} />
+              </Routes>
+            </div>
           </Suspense>
         </TimerProvider>
-      </IonReactHashRouter>
+      </HashRouter>
     </IonApp>
   );
 };
