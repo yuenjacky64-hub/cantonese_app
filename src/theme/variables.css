@@ -3,11 +3,40 @@
 :root {
   /* Luminous Typography - Satoshi / Inter mix */
   --ion-font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-jyutping: 'JetBrains Mono', 'SF Mono', 'IBM Plex Mono', ui-monospace, monospace;
 
   /* Luminous Surface Palette (Premium Depth) */
   --ion-background-color: #ffffff;
   --ion-text-color: #030712;
   /* Slate 950 */
+
+  /* Core surface tokens — used by Flashcard, CommonHeader, Marks, etc. */
+  --ink: #030712;
+  --ink-soft: #1e293b;
+  --paper: #ffffff;
+  --paper-edge: #f3f4f6;
+  --graphite: #475569;
+  --graphite-soft: #94a3b8;
+  --hairline: rgba(0, 0, 0, 0.06);
+
+  /* Accent tokens (HK-neon vocabulary, repointed to the Luminous indigo) */
+  --neon-hot: #5c5fe6;
+  --neon-hot-glow: rgba(92, 95, 230, 0.18);
+  --neon-ice: #0ea5e9;
+  --neon-ice-glow: rgba(14, 165, 233, 0.16);
+  --sodium: #f59e0b;
+  --jade: #10b981;
+  --plum: #8b5cf6;
+
+  /* Tone palette — one hue per Cantonese tone, calibrated for white surfaces. */
+  --tone-1: #dc2626;
+  --tone-2: #2563eb;
+  --tone-3: #ca8a04;
+  --tone-4: #7c3aed;
+  --tone-5: #059669;
+  --tone-6: #475569;
 
   /* Living Glow Tokens */
   --glow-indigo: #5c5fe6;
@@ -198,6 +227,21 @@ body.theme-green {
     --ion-background-color: #030712;
     /* Deep Space */
     --ion-text-color: #f9fafb;
+
+    /* Dark-mode hairlines and graphite — ink/paper keep their semantic
+     * meaning ("the dark color" / "the light color") so components that
+     * read them as fixed surface tokens continue to work. */
+    --hairline: rgba(255, 255, 255, 0.08);
+    --graphite: #cbd5e1;
+    --graphite-soft: #94a3b8;
+
+    /* Brighter tones for the dark backdrop */
+    --tone-1: #f87171;
+    --tone-2: #60a5fa;
+    --tone-3: #fbbf24;
+    --tone-4: #c084fc;
+    --tone-5: #34d399;
+    --tone-6: #cbd5e1;
 
     --pod-bg: rgba(17, 24, 39, 0.6);
     --pod-border: 1px solid rgba(255, 255, 255, 0.06);
