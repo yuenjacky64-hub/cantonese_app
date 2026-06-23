@@ -19,22 +19,22 @@
   --ion-font-family: var(--font-body);
 
   /* Core surface palette */
-  --ink: #0a0a0f;             /* not pure black — slightly cooler */
-  --ink-soft: #1a1c25;
-  --paper: #faf7f1;           /* warm cream, like a receipt that aged well */
-  --paper-edge: #efe8db;
+  --ink: #030712;             /* not pure black — slightly cooler */
+  --ink-soft: #1f2937;
+  --paper: #ffffff;           /* warm cream, like a receipt that aged well */
+  --paper-edge: #f3f4f6;
   --graphite: #475569;
   --graphite-soft: #94a3b8;
-  --hairline: rgba(10, 10, 15, 0.08);
+  --hairline: rgba(0, 0, 0, 0.04);
 
   /* Neon accents — borrowed from HK signage. Used SPARINGLY. */
-  --neon-hot: #e6166e;        /* hero accent: signature CTA + active state */
-  --neon-hot-glow: rgba(230, 22, 110, 0.18);
-  --neon-ice: #0095b3;        /* data accent: numbers, badges */
-  --neon-ice-glow: rgba(0, 149, 179, 0.16);
-  --sodium: #c97c00;          /* warm signal: streaks, attention */
-  --jade: #137d57;            /* correct / positive state */
-  --plum: #6b21a8;            /* secondary cool */
+  --neon-hot: #f43f5e;        /* hero accent: signature CTA + active state */
+  --neon-hot-glow: rgba(244, 63, 94, 0.15);
+  --neon-ice: #5c5fe6;        /* data accent: numbers, badges */
+  --neon-ice-glow: rgba(92, 95, 230, 0.15);
+  --sodium: #f59e0b;          /* warm signal: streaks, attention */
+  --jade: #10b981;            /* correct / positive state */
+  --plum: #8b5cf6;            /* secondary cool */
 
   /* Tone palette — one hue per Cantonese tone (high level → low level).
    * Calibrated for legibility on cream-paper backgrounds. */
@@ -269,7 +269,7 @@ body.theme-green {
     --tone-6: #cbd5e1;
 
     /* Bright accents */
-    --neon-hot: #ff2e88;
+    --neon-hot: #f43f5e;
     --neon-hot-glow: rgba(255, 46, 136, 0.28);
     --neon-ice: #00e1ff;
     --neon-ice-glow: rgba(0, 225, 255, 0.24);
