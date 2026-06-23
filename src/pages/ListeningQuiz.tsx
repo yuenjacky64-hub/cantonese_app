@@ -10,7 +10,7 @@ import {
 } from 'ionicons/icons';
 import { useTranslation } from 'react-i18next';
 import CommonHeader from '../components/CommonHeader';
-import { lessons } from '../data/lessons';
+import { allCards } from '../data/lessons';
 import { getRandomElements, shuffleArray } from '../utils/array';
 import { fetchTTS } from '../utils/tts';
 import { CheckMark, CrossMark, ScoreTierMark } from '../components/Marks';
@@ -20,14 +20,23 @@ import './ListeningQuiz.css';
 // Get all words from lessons for the quiz (computed once)
 const ALL_WORDS = (() => {
     const words: { cantonese: string; english: string }[] = [];
-    lessons.forEach(lesson => {
-        lesson.cards.forEach(card => {
+    for (let i = 0; i < allCards.length; i++) {
+        const card = allCards[i];
+        if (card) {
+            const text = card.cantonese;
+            let spaces = 0;
+            for (let j = 0; j < text.length; j++) {
+                if (text[j] === ' ') {
+                    spaces++;
+                    if (spaces === 3) break;
+                }
+            }
             // Only include single words or short phrases (max 3 words)
-            if (card.cantonese.split(' ').length <= 3) {
+            if (spaces < 3) {
                 words.push({ cantonese: card.cantonese, english: card.english });
             }
-        });
-    });
+        }
+    }
     return words;
 })();
 
