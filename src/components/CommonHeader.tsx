@@ -128,8 +128,8 @@ const CommonHeader: React.FC<CommonHeaderProps> = ({ title, showBackButton = fal
               className="header-title-container"
               style={{ marginLeft: showBackButton ? '0px' : '4px', cursor: 'pointer', textDecoration: 'none', color: 'inherit' }}
             >
-              <div style={{ padding: '8px', background: 'var(--ink)', borderRadius: '10px', display: 'flex', boxShadow: '0 2px 0 var(--neon-hot)', transform: 'rotate(-2deg)' }}>
-                <IonIcon icon={chatbubblesOutline} style={{ color: 'var(--paper)', fontSize: '20px' }} />
+              <div style={{ padding: '8px', background: 'var(--glow-indigo)', borderRadius: '10px', display: 'flex', boxShadow: '0 4px 12px var(--glow-indigo-soft)', transform: 'rotate(-3deg)' }}>
+                <IonIcon icon={chatbubblesOutline} style={{ color: 'white', fontSize: '20px' }} />
               </div>
               {title}
             </Link>

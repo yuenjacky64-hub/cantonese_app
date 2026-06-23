@@ -125,7 +125,7 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
             // Remove disabled={isPlaying}
             aria-label={t('flashcard.aria.playAudio')}
           >
-            {isPlaying ? <IonSpinner name="dots" color="light" /> : <IonIcon icon={volumeHighOutline} slot="icon-only" color="light" />}
+            {isPlaying ? <IonSpinner name="dots" color="primary" /> : <IonIcon icon={volumeHighOutline} slot="icon-only" color="primary" />}
           </IonButton>
           <IonButton
             fill="clear"
@@ -134,7 +134,7 @@ const Flashcard: React.FC<FlashcardProps> = ({ id, cantonese, english, zhTW, zhC
             aria-label={t(isBookmarkedState ? 'flashcard.aria.bookmarkRemove' : 'flashcard.aria.bookmarkAdd')}
             aria-pressed={isBookmarkedState ? 'true' : 'false'}
           >
-            <IonIcon icon={isBookmarkedState ? bookmark : bookmarkOutline} slot="icon-only" color="light" />
+            <IonIcon icon={isBookmarkedState ? bookmark : bookmarkOutline} slot="icon-only" color="primary" />
           </IonButton>
           <h2>{translation.text}</h2>
 
