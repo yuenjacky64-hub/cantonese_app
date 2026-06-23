@@ -63,7 +63,7 @@ export const useAudioPlayback = (): UseAudioPlaybackReturn => {
     return audioRef.current;
   };
 
-  const playAudioFromSrc = (src: string): Promise<void> => {
+  const playAudioFromSrc = (src: string, playbackRate = 1.0): Promise<void> => {
     if (currentAudioResolver.current) {
       currentAudioResolver.current();
       currentAudioResolver.current = null;
@@ -79,6 +79,7 @@ export const useAudioPlayback = (): UseAudioPlaybackReturn => {
       audio.oncanplaythrough = null;
 
       audio.src = src;
+      audio.playbackRate = playbackRate;
 
       audio.onended = () => {
         if (currentAudioResolver.current === resolve) {
@@ -108,7 +109,7 @@ export const useAudioPlayback = (): UseAudioPlaybackReturn => {
   };
 
   // Local files sometimes need `oncanplaythrough` before play() is safe.
-  const playLocalAudio = (src: string): Promise<void> => {
+  const playLocalAudio = (src: string, playbackRate = 1.0): Promise<void> => {
     if (currentAudioResolver.current) {
       currentAudioResolver.current();
       currentAudioResolver.current = null;
@@ -124,6 +125,7 @@ export const useAudioPlayback = (): UseAudioPlaybackReturn => {
       audio.oncanplaythrough = null;
 
       audio.src = src;
+      audio.playbackRate = playbackRate;
 
       audio.onended = () => {
         if (currentAudioResolver.current === resolve) {
@@ -246,33 +248,37 @@ export const useAudioPlayback = (): UseAudioPlaybackReturn => {
     setIsPlaying(true);
 
     try {
-      // 1. Local pre-generated slow MP3
+      // The TTS server currently ignores `speakingRate`, so slow playback
+      // is achieved client-side via HTMLAudioElement.playbackRate. Same
+      // audio sources as the normal path; only the rate differs.
+      const SLOW_RATE = 0.6;
+
+      // 1. Local pre-generated normal MP3 played at 0.6x
       try {
         const filename = sanitizeFilename(text);
         const basePath = import.meta.env.BASE_URL || '/';
-        const audioPath = `${basePath}audio/${filename}_slow.mp3`;
-        await playLocalAudio(audioPath);
+        const audioPath = `${basePath}audio/${filename}.mp3`;
+        await playLocalAudio(audioPath, SLOW_RATE);
         return;
       } catch (e) {
         if (e !== 'Interrupted') {
-          console.warn('Local slow audio not found, trying online TTS', e);
+          console.warn('Local audio not found, trying online TTS', e);
         }
       }
 
-      // 2. Cloud TTS with speakingRate 0.6
+      // 2. Cloud TTS played at 0.6x
       try {
         const audioContent = await fetchTTS({
           text,
           languageCode: 'yue-HK',
           voiceName: 'yue-HK-Standard-A',
-          speakingRate: 0.6,
         });
         if (audioContent) {
-          await playAudioFromSrc(`data:audio/mp3;base64,${audioContent}`);
+          await playAudioFromSrc(`data:audio/mp3;base64,${audioContent}`, SLOW_RATE);
           return;
         }
       } catch (e) {
-        console.warn('Google Cloud Slow TTS Serverless failed, falling back', e);
+        console.warn('Google Cloud TTS Serverless failed, falling back', e);
       }
 
       // 3. Google Translate TTS doesn't support rate control; skip to

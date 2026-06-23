@@ -5,7 +5,8 @@
  * and generates audio files using the Google Cloud TTS serverless API. The audio
  * files are saved as MP3 files in the public/audio directory for offline use.
  *
- * Generates both normal speed (1.0x) and slow speed (0.6x) versions.
+ * Slow playback is handled client-side via HTMLAudioElement.playbackRate, so no
+ * separate slow audio files are generated.
  *
  * Usage: node scripts/generate-audio.mjs
  */
@@ -40,15 +41,13 @@ function sanitizeFilename(text) {
  * Fetch audio from TTS API and save to file
  * @param {string} text - Text to convert to speech
  * @param {string} filename - Output filename (without extension)
- * @param {number} speakingRate - Speaking rate (1.0 = normal, 0.6 = slow)
  */
-async function generateAudio(text, filename, speakingRate = 1.0) {
-    const suffix = speakingRate < 1.0 ? '_slow' : '';
-    const filePath = path.join(OUTPUT_DIR, `${filename}${suffix}.mp3`);
+async function generateAudio(text, filename) {
+    const filePath = path.join(OUTPUT_DIR, `${filename}.mp3`);
 
     // Skip if file already exists
     if (fs.existsSync(filePath)) {
-        return { status: 'skipped', filename: `${filename}${suffix}` };
+        return { status: 'skipped', filename };
     }
 
     try {
@@ -61,7 +60,6 @@ async function generateAudio(text, filename, speakingRate = 1.0) {
                 text,
                 languageCode: 'yue-HK',
                 voiceName: 'yue-HK-Standard-A',
-                speakingRate,
             }),
         });
 
@@ -75,12 +73,12 @@ async function generateAudio(text, filename, speakingRate = 1.0) {
             // Decode base64 and save to file
             const audioBuffer = Buffer.from(data.audioContent, 'base64');
             fs.writeFileSync(filePath, audioBuffer);
-            console.log(`✅ Generated: ${filename}${suffix} (${speakingRate}x)`);
-            return { status: 'success', filename: `${filename}${suffix}` };
+            console.log(`✅ Generated: ${filename}`);
+            return { status: 'success', filename };
         }
     } catch (error) {
-        console.error(`❌ Failed: ${filename}${suffix} - ${error.message}`);
-        return { status: 'failed', filename: `${filename}${suffix}` };
+        console.error(`❌ Failed: ${filename} - ${error.message}`);
+        return { status: 'failed', filename };
     }
 }
 
@@ -119,56 +117,39 @@ function extractCantoneseWords() {
  * Main function
  */
 async function main() {
-    console.log('🎙️  Cantonese Audio Generator (Normal + Slow)');
+    console.log('🎙️  Cantonese Audio Generator');
     console.log('==========================================\n');
 
     // Extract all Cantonese words
     const words = extractCantoneseWords();
     console.log(`📚 Found ${words.size} unique Cantonese words/phrases`);
-    console.log(`📦 Will generate ${words.size * 2} audio files (normal + slow)\n`);
+    console.log(`📦 Will generate ${words.size} audio files\n`);
 
     let normalSuccess = 0, normalSkipped = 0, normalFailed = 0;
-    let slowSuccess = 0, slowSkipped = 0, slowFailed = 0;
 
     // Process words one at a time to avoid rate limiting
     for (const [filename, text] of words) {
-        // Generate normal speed (1.0x)
-        const normalResult = await generateAudio(text, filename, 1.0);
+        const normalResult = await generateAudio(text, filename);
         if (normalResult.status === 'success') normalSuccess++;
         else if (normalResult.status === 'skipped') normalSkipped++;
         else normalFailed++;
 
         // Small delay to avoid rate limiting
         await new Promise(resolve => setTimeout(resolve, 150));
-
-        // Generate slow speed (0.6x)
-        const slowResult = await generateAudio(text, filename, 0.6);
-        if (slowResult.status === 'success') slowSuccess++;
-        else if (slowResult.status === 'skipped') slowSkipped++;
-        else slowFailed++;
-
-        // Small delay to avoid rate limiting
-        await new Promise(resolve => setTimeout(resolve, 150));
     }
 
     console.log('\n==========================================');
-    console.log('📢 Normal Speed (1.0x):');
     console.log(`   ✅ Generated: ${normalSuccess}`);
     console.log(`   ⏭️  Skipped: ${normalSkipped}`);
     console.log(`   ❌ Failed: ${normalFailed}`);
-    console.log('\n🐢 Slow Speed (0.6x):');
-    console.log(`   ✅ Generated: ${slowSuccess}`);
-    console.log(`   ⏭️  Skipped: ${slowSkipped}`);
-    console.log(`   ❌ Failed: ${slowFailed}`);
     console.log(`\n📁 Output: ${OUTPUT_DIR}`);
 
     // Generate audio map JSON file for the app to use.
-    // Shape: { [text]: { normal: path, slow: path } } — matches ListeningQuiz lookup.
+    // Shape: { [text]: { normal: path } } — matches ListeningQuiz lookup.
     const audioMap = {};
     for (const [filename, text] of words) {
         audioMap[text] = {
             normal: `/audio/${filename}.mp3`,
-            slow: `/audio/${filename}_slow.mp3`,
         };
     }
 
