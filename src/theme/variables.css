@@ -1,25 +1,25 @@
-﻿/* Theme Variables
+/* Theme Variables
  * ------------------------------------------------------------------
- * Design system: "Mong Kok at 11pm" ΓÇö Hong Kong neon vocabulary
+ * Design system: "Mong Kok at 11pm" — Hong Kong neon vocabulary
  * paired with quiet paper surfaces, plus a tone-aware color system
  * derived from Cantonese's six lexical tones.
  *
  * Bold lives in two places only:
  *   1. The tone palette (--tone-1 .. --tone-6) used for jyutping.
  *   2. One signature accent (--neon-hot) for hero data and CTAs.
- * Everything else is paper, ink, or graphite ΓÇö so the accents
+ * Everything else is paper, ink, or graphite — so the accents
  * actually mean something when they appear.
  * ------------------------------------------------------------------ */
 
 :root {
-  /* Type system ΓÇö three roles, deliberately distinct. */
+  /* Type system — three roles, deliberately distinct. */
   --font-body: 'Inter Tight', system-ui, -apple-system, sans-serif;
   --font-display: 'Noto Serif HK', 'Songti SC', 'STKaiti', Georgia, serif;
   --font-jyutping: 'JetBrains Mono', 'SF Mono', 'IBM Plex Mono', ui-monospace, monospace;
   --ion-font-family: var(--font-body);
 
   /* Core surface palette */
-  --ink: #0a0a0f;             /* not pure black ΓÇö slightly cooler */
+  --ink: #0a0a0f;             /* not pure black — slightly cooler */
   --ink-soft: #1a1c25;
   --paper: #faf7f1;           /* warm cream, like a receipt that aged well */
   --paper-edge: #efe8db;
@@ -27,7 +27,7 @@
   --graphite-soft: #94a3b8;
   --hairline: rgba(10, 10, 15, 0.08);
 
-  /* Neon accents ΓÇö borrowed from HK signage. Used SPARINGLY. */
+  /* Neon accents — borrowed from HK signage. Used SPARINGLY. */
   --neon-hot: #e6166e;        /* hero accent: signature CTA + active state */
   --neon-hot-glow: rgba(230, 22, 110, 0.18);
   --neon-ice: #0095b3;        /* data accent: numbers, badges */
@@ -36,20 +36,20 @@
   --jade: #137d57;            /* correct / positive state */
   --plum: #6b21a8;            /* secondary cool */
 
-  /* Tone palette ΓÇö one hue per Cantonese tone (high level ΓåÆ low level).
+  /* Tone palette — one hue per Cantonese tone (high level → low level).
    * Calibrated for legibility on cream-paper backgrounds. */
-  --tone-1: #c70b5d;          /* high level   ╦Ñ╦Ñ */
-  --tone-2: #0095b3;          /* high rising  ╦º╦Ñ */
-  --tone-3: #c97c00;          /* mid level    ╦º╦º */
-  --tone-4: #6b21a8;          /* low falling  ╦¿╦⌐ */
-  --tone-5: #137d57;          /* low rising   ╦¿╦º */
-  --tone-6: #475569;          /* low level    ╦¿╦¿ */
+  --tone-1: #c70b5d;          /* high level   ˥˥ */
+  --tone-2: #0095b3;          /* high rising  ˧˥ */
+  --tone-3: #c97c00;          /* mid level    ˧˧ */
+  --tone-4: #6b21a8;          /* low falling  ˨˩ */
+  --tone-5: #137d57;          /* low rising   ˨˧ */
+  --tone-6: #475569;          /* low level    ˨˨ */
 
   /* Background + foreground roles for Ionic */
   --ion-background-color: var(--paper);
   --ion-text-color: var(--ink);
 
-  /* Backwards-compatible aliases ΓÇö existing components reference
+  /* Backwards-compatible aliases — existing components reference
    * these names. Repointing them recolors the whole app at once. */
   --glow-indigo: var(--neon-hot);
   --glow-indigo-soft: var(--neon-hot-glow);
@@ -58,7 +58,7 @@
   --glow-amber: var(--sodium);
   --glow-amber-soft: rgba(201, 124, 0, 0.16);
 
-  /* Surface design ΓÇö flatter, more print-like */
+  /* Surface design — flatter, more print-like */
   --pod-radius: 14px;
   --pod-bg: #ffffff;
   --pod-border: 1px solid var(--hairline);
@@ -68,7 +68,7 @@
   --transition-haptic: 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
   --transition-fast: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* Glass surfaces ΓÇö kept for the few places that already use them */
+  /* Glass surfaces — kept for the few places that already use them */
   --glass-luminous: rgba(255, 255, 255, 0.72);
   --glass-blur: blur(12px);
   --glass-border: 1px solid rgba(255, 255, 255, 0.4);
@@ -85,7 +85,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Named themes ΓÇö each one shifts which neon hue is the active accent.
+/* Named themes — each one shifts which neon hue is the active accent.
  * Keeps the existing four-theme picker working, but each theme is now
  * a different signature color from the HK palette, not a different
  * palette entirely. */
@@ -116,7 +116,7 @@ body.theme-teal {
   --ion-color-tertiary-tint: #7e3ac1;
 }
 
-/* NEON ICE (cool cyan ΓÇö like a tram-route sign) */
+/* NEON ICE (cool cyan — like a tram-route sign) */
 body.theme-navy {
   --theme-accent: var(--neon-ice);
   --theme-accent-soft: var(--neon-ice-glow);
@@ -249,7 +249,7 @@ body.theme-green {
 }
 
 /* Dark Mode (System)
- * Full ink-and-neon look ΓÇö this is where the palette really sings.
+ * Full ink-and-neon look — this is where the palette really sings.
  * On dark backgrounds we can use the bright neons at full saturation
  * because the surrounding ink absorbs the glow. */
 @media (prefers-color-scheme: dark) {
