@@ -4,7 +4,8 @@ import {
   IonPage,
   IonIcon,
   IonSearchbar,
-  IonButton
+  IonButton,
+  useIonRouter
 } from '@ionic/react';
 import {
   bookOutline,
@@ -28,7 +29,6 @@ import {
   airplaneOutline
 } from 'ionicons/icons';
 import { useTranslation } from 'react-i18next';
-import { useHistory } from 'react-router-dom';
 import Footer from '../components/Footer';
 import { lessons } from '../data/lessons';
 import { getSRSStats } from '../utils/srs';
@@ -77,7 +77,11 @@ interface NewsItem {
 const Home: React.FC = () => {
   // i18n hook for translation
   const { t } = useTranslation();
-  const history = useHistory();
+  // Navigate via Ionic's router with no direction so the pod taps go
+  // straight to the destination instead of running a slide transition
+  // (which made Home briefly flash as it animated out).
+  const ionRouter = useIonRouter();
+  const goTo = (path: string) => ionRouter.push(path, 'none', 'replace');
 
   // State for search input text
   const [searchText, setSearchText] = useState('');
@@ -222,7 +226,7 @@ const Home: React.FC = () => {
           {!selectedGroup && !searchText && (
             <div className="primary-grid fade-in-up">
               {/* Review Pod */}
-              <div className="learning-pod pod-hero" onClick={() => history.push('/review')}>
+              <div className="learning-pod pod-hero" onClick={() => goTo('/review')}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <div>
                     <div className="pod-label">{t('home.reviewDue')}</div>
@@ -233,7 +237,7 @@ const Home: React.FC = () => {
               </div>
 
               {/* Bookmarks Pod */}
-              <div className="learning-pod pod-bookmarks" onClick={() => history.push('/lesson/bookmarks')}>
+              <div className="learning-pod pod-bookmarks" onClick={() => goTo('/lesson/bookmarks')}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <div>
                     <div className="pod-label">{t('bookmarks.title')}</div>
@@ -244,7 +248,7 @@ const Home: React.FC = () => {
               </div>
 
               {/* Intro Pod */}
-              <div className="learning-pod pod-intro" style={{ background: 'linear-gradient(135deg, #845ec2 0%, #d65db1 100%)' }} onClick={() => history.push('/intro')}>
+              <div className="learning-pod pod-intro" style={{ background: 'linear-gradient(135deg, #845ec2 0%, #d65db1 100%)' }} onClick={() => goTo('/intro')}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <div>
                     <div className="pod-label">{t('home.introToCantonese')}</div>
@@ -305,7 +309,7 @@ const Home: React.FC = () => {
             {searchText ? (
               /* Search Results */
               filteredLessons.map((category, idx) => (
-                <div key={category.id} className="item-pod fade-in-up" style={{ animationDelay: `${idx * 0.05}s` }} onClick={() => history.push(`/lesson/${category.id}`)}>
+                <div key={category.id} className="item-pod fade-in-up" style={{ animationDelay: `${idx * 0.05}s` }} onClick={() => goTo(`/lesson/${category.id}`)}>
                   <div className="pod-icon-box"><IonIcon icon={bookOutline} /></div>
                   <div style={{ flex: 1 }}>
                     <h3>{t(category.titleKey)}</h3>
@@ -317,7 +321,7 @@ const Home: React.FC = () => {
             ) : selectedGroup ? (
               /* Lessons in Selected Category */
               groupedLessons[selectedGroup]?.map((category, idx) => (
-                <div key={category.id} className="item-pod fade-in-up" style={{ animationDelay: `${idx * 0.05}s` }} onClick={() => history.push(`/lesson/${category.id}`)}>
+                <div key={category.id} className="item-pod fade-in-up" style={{ animationDelay: `${idx * 0.05}s` }} onClick={() => goTo(`/lesson/${category.id}`)}>
                   <div className="pod-icon-box"><IonIcon icon={bookOutline} /></div>
                   <div style={{ flex: 1 }}>
                     <h3>{t(category.titleKey)}</h3>
@@ -357,7 +361,7 @@ const Home: React.FC = () => {
               <h3 className="category-title">{t('home.gamesCategory')}</h3>
               <div className="games-grid">
                 {/* Salita Challenge */}
-                <div className="learning-pod pod-game" style={{ background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)' }} onClick={() => history.push('/game')}>
+                <div className="learning-pod pod-game" style={{ background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)' }} onClick={() => goTo('/game')}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <div>
                       <div className="pod-label">{t('game.podTitle')}</div>
@@ -368,7 +372,7 @@ const Home: React.FC = () => {
                 </div>
 
                 {/* Memory Match */}
-                <div className="learning-pod pod-memory" style={{ background: 'linear-gradient(135deg, #f43f5e 0%, #ec4899 100%)' }} onClick={() => history.push('/memory')}>
+                <div className="learning-pod pod-memory" style={{ background: 'linear-gradient(135deg, #f43f5e 0%, #ec4899 100%)' }} onClick={() => goTo('/memory')}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <div>
                       <div className="pod-label">{t('memory.podTitle')}</div>
@@ -379,7 +383,7 @@ const Home: React.FC = () => {
                 </div>
 
                 {/* Spell Challenge */}
-                <div className="learning-pod pod-spell" style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%)' }} onClick={() => history.push('/spell')}>
+                <div className="learning-pod pod-spell" style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%)' }} onClick={() => goTo('/spell')}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <div>
                       <div className="pod-label">{t('spell.podTitle')}</div>
@@ -390,7 +394,7 @@ const Home: React.FC = () => {
                 </div>
 
                 {/* Word Scramble */}
-                <div className="learning-pod pod-scramble" style={{ background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)' }} onClick={() => history.push('/scramble')}>
+                <div className="learning-pod pod-scramble" style={{ background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)' }} onClick={() => goTo('/scramble')}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <div>
                       <div className="pod-label">{t('scramble.podTitle')}</div>
@@ -401,7 +405,7 @@ const Home: React.FC = () => {
                 </div>
 
                 {/* Emoji Hulaan */}
-                <div className="learning-pod pod-emoji" style={{ background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)' }} onClick={() => history.push('/emoji')}>
+                <div className="learning-pod pod-emoji" style={{ background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)' }} onClick={() => goTo('/emoji')}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <div>
                       <div className="pod-label">{t('emoji.podTitle')}</div>
@@ -412,7 +416,7 @@ const Home: React.FC = () => {
                 </div>
 
                 {/* Falling Words */}
-                <div className="learning-pod pod-falling" style={{ background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)' }} onClick={() => history.push('/falling')}>
+                <div className="learning-pod pod-falling" style={{ background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)' }} onClick={() => goTo('/falling')}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <div>
                       <div className="pod-label">{t('falling.podTitle')}</div>
@@ -423,7 +427,7 @@ const Home: React.FC = () => {
                 </div>
 
                 {/* Listening Quiz */}
-                <div className="learning-pod pod-listening" style={{ background: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)' }} onClick={() => history.push('/listening')}>
+                <div className="learning-pod pod-listening" style={{ background: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)' }} onClick={() => goTo('/listening')}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <div>
                       <div className="pod-label">{t('listening.podTitle')}</div>
@@ -434,7 +438,7 @@ const Home: React.FC = () => {
                 </div>
 
                 {/* Sentence Builder */}
-                <div className="learning-pod pod-sentence" style={{ background: 'linear-gradient(135deg, #d946ef 0%, #c026d3 100%)' }} onClick={() => history.push('/sentence')}>
+                <div className="learning-pod pod-sentence" style={{ background: 'linear-gradient(135deg, #d946ef 0%, #c026d3 100%)' }} onClick={() => goTo('/sentence')}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <div>
                       <div className="pod-label">{t('sentence.podTitle')}</div>
@@ -445,7 +449,7 @@ const Home: React.FC = () => {
                 </div>
 
                 {/* True or False */}
-                <div className="learning-pod pod-truefalse" style={{ background: 'linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%)' }} onClick={() => history.push('/truefalse')}>
+                <div className="learning-pod pod-truefalse" style={{ background: 'linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%)' }} onClick={() => goTo('/truefalse')}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <div>
                       <div className="pod-label">{t('truefalse.podTitle')}</div>

@@ -5,9 +5,6 @@ import React from 'react';
 import Home from '../Home';
 
 // Mock dependencies
-vi.mock('react-router-dom', () => ({
-  useHistory: () => ({ push: vi.fn() }),
-}));
 
 vi.mock('react-i18next', () => ({
   useTranslation: () => ({
@@ -25,6 +22,7 @@ vi.mock('@ionic/react', async () => {
     const actual = await vi.importActual<any>('@ionic/react');
     return {
         ...actual,
+        useIonRouter: () => ({ push: vi.fn(), back: vi.fn(), canGoBack: () => false, routeInfo: {} }),
         IonPage: ({ children }: { children: React.ReactNode }) => <div data-testid="ion-page">{children}</div>,
         IonContent: ({ children }: { children: React.ReactNode }) => <div data-testid="ion-content">{children}</div>,
         IonHeader: ({ children }: { children: React.ReactNode }) => <div data-testid="ion-header">{children}</div>,
