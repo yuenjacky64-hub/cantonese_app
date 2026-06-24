@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- Node.js 18+
+- Node.js 20 or higher
 - Google Cloud CLI (`gcloud`)
 - A Google Cloud project with billing enabled
 
@@ -116,7 +116,7 @@ app.listen(PORT, () => {
 ### `Dockerfile`
 
 ```dockerfile
-FROM node:18-slim
+FROM node:20-slim
 
 WORKDIR /app
 COPY package*.json ./

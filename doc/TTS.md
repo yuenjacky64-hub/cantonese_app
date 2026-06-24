@@ -15,7 +15,7 @@ The app implements a prioritized fallback mechanism to ensure audio is always av
 1. **Local Audio Files**: The system first checks for pre-bundled static MP3 files (e.g., for common phrases or high-frequency words) under the app's base asset directory. See [Audio Generation](AUDIO_GENERATION.md) for how to generate these files.
 2. **Google Cloud TTS (Serverless)**: If no pre-recorded file exists, the app makes a request to a custom, serverless Cloud Run endpoint that generates audio on-the-fly using Google Cloud's high-quality Text-to-Speech API.
 3. **Google Translate TTS**: As a lightweight online fallback, the system fetches Cantonese synthesis using the public Translate TTS endpoint, passing the Cantonese-specific `tl=yue` parameter (rather than Mandarin `zh-TW`).
-4. **Web Speech API**: As a final resort, the system utilizes the device's native `SpeechSynthesis` capabilities. To prevent incorrect Mandarin synthesis, this fallback is skipped unless a native Cantonese voice (e.g., `yue-HK`, `zh-HK`, or a voice name containing "Cantonese" or "yue") is actively installed on the user's system.
+4. **Web Speech API**: As a final resort, the system utilizes the device's native `SpeechSynthesis` capabilities. To prevent incorrect Mandarin synthesis, this fallback is skipped unless a native Cantonese voice (strictly `yue-HK`, or a voice name containing "Cantonese" or "yue") is actively installed on the user's system.
 
 ## Performance and Caching
 
