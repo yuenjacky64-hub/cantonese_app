@@ -128,7 +128,6 @@ export const checkStreak = (): StreakData => {
 
     // Streak is broken (more than 1 day has passed)
     if (data.lastActiveDate && data.lastActiveDate !== today && data.lastActiveDate !== yesterday) {
-        console.log('[Debug] Streak broken, resetting to 0');
         data.currentStreak = 0;
         saveStreakData(data);
     }
