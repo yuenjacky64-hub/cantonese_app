@@ -17,7 +17,8 @@ const localStorageMock = (() => {
 Object.defineProperty(global, 'localStorage', { value: localStorageMock });
 
 // Import after mocking
-import { loadSRS, saveSRS, updateCardSRS, SRSData, _resetCache, getSRSStats } from '../srs';
+import { loadSRS, saveSRS, updateCardSRS, SRSData, _resetCache, getSRSStats, getDueCards } from '../srs';
+import { lessons } from '../../data/lessons';
 
 describe('SRS Utility Functions', () => {
     beforeEach(() => {
@@ -138,6 +139,75 @@ describe('SRS Utility Functions', () => {
         });
     });
 
+    describe('getDueCards', () => {
+        beforeEach(() => {
+            vi.useFakeTimers();
+            vi.setSystemTime(new Date('2026-01-01T00:00:00Z'));
+        });
+
+        afterEach(() => {
+            vi.useRealTimers();
+        });
+
+        it('should return all cards when there is no SRS data (all new)', () => {
+            const dueCards = getDueCards();
+            const totalCards = lessons.reduce((acc, cat) => acc + cat.cards.length, 0);
+
+            // By default, no cards have SRS state, so all are considered due (new)
+            expect(dueCards.length).toBe(totalCards);
+            expect(dueCards.length).toBeGreaterThan(0);
+        });
+
+        it('should return only past-due and new cards, filtering out future-scheduled cards', () => {
+            const now = Date.now();
+            const futureTime = now + 100000;
+            const pastTime = now - 100000;
+
+            const card1Id = lessons[0]!.cards[0]!.id;
+            const card2Id = lessons[0]!.cards[1]!.id;
+
+            const mockData: SRSData = {
+                [card1Id]: { nextReview: futureTime, level: 1, interval: 1, easeFactor: 2.5 }, // Future (not due)
+                [card2Id]: { nextReview: pastTime, level: 1, interval: 1, easeFactor: 2.5 }    // Past (due)
+            };
+
+            localStorageMock.getItem.mockReturnValueOnce(JSON.stringify(mockData));
+            _resetCache();
+
+            const dueCards = getDueCards();
+            const totalCards = lessons.reduce((acc, cat) => acc + cat.cards.length, 0);
+
+            // Expected: totalCards - 1 (since only card1Id is not due, card2Id is past due, and the rest are new/due)
+            expect(dueCards.length).toBe(totalCards - 1);
+
+            // Verify card1Id is NOT in the due cards list
+            expect(dueCards.find(c => c.id === card1Id)).toBeUndefined();
+
+            // Verify card2Id IS in the due cards list
+            expect(dueCards.find(c => c.id === card2Id)).toBeDefined();
+        });
+
+        it('should return empty array if all cards are reviewed and scheduled for the future', () => {
+            const now = Date.now();
+            const futureTime = now + 100000;
+            const mockData: SRSData = {};
+
+            // Mark all cards as reviewed and scheduled for the future
+            lessons.forEach(category => {
+                category.cards.forEach(card => {
+                    mockData[card.id] = { nextReview: futureTime, level: 1, interval: 1, easeFactor: 2.5 };
+                });
+            });
+
+            localStorageMock.getItem.mockReturnValueOnce(JSON.stringify(mockData));
+            _resetCache();
+
+            const dueCards = getDueCards();
+            expect(dueCards.length).toBe(0);
+            expect(dueCards).toEqual([]);
+        });
+    });
+
     describe('getSRSStats', () => {
         beforeEach(() => {
             vi.useFakeTimers();
@@ -167,7 +237,7 @@ describe('SRS Utility Functions', () => {
             };
 
             // We use localStorageMock to inject data because getSRSStats calls loadSRS()
-            localStorageMock.getItem.mockReturnValue(JSON.stringify(mockData));
+            localStorageMock.getItem.mockReturnValueOnce(JSON.stringify(mockData));
             // Reset cache to force reload
             _resetCache();
 
