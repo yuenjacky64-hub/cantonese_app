@@ -1,7 +1,7 @@
 2️⃣ Prerequisites (one-time)
 Install tools
 
-Node.js 18+
+Node.js 20+
 
 Docker
 
@@ -54,13 +54,13 @@ const client = new textToSpeech.TextToSpeechClient();
 
 app.post("/tts", async (req, res) => {
   try {
-    const { text, languageCode = "fil-PH", voiceName } = req.body;
+    const { text, languageCode = "yue-HK", voiceName } = req.body;
 
     const request = {
       input: { text },
       voice: {
         languageCode,
-        name: voiceName || "fil-PH-Standard-A",
+        name: voiceName || "yue-HK-Standard-A",
       },
       audioConfig: {
         audioEncoding: "MP3",
@@ -99,7 +99,7 @@ app.listen(PORT, () => {
 
 Dockerfile
 
-FROM node:18-slim
+FROM node:20-slim
 
 WORKDIR /app
 COPY package*.json ./
@@ -163,7 +163,7 @@ Test the API
   <h2>Google Cloud Text-to-Speech Test</h2>
 
   <textarea id="text">
-Kumusta! Ito ay isang pagsubok ng Google Text to Speech.
+你好！這是一個 Google 文字轉語音的測試。 (nei5 hou2! ze5 si6 jat1 go3 Google man4 zi6 zyun2 jyu5 jam1 dik1 caak1 si3.)
   </textarea>
 
   <br />
@@ -187,8 +187,8 @@ Kumusta! Ito ay isang pagsubok ng Google Text to Speech.
             },
             body: JSON.stringify({
               text: document.getElementById("text").value,
-              languageCode: "fil-PH",
-              voiceName: "fil-PH-Standard-A"
+              languageCode: "yue-HK",
+              voiceName: "yue-HK-Standard-A"
             })
           }
         );

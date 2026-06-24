@@ -36,7 +36,7 @@ User-specific data (SRS progress, bookmarks, settings, streaks) is persisted in 
 
 ## Routing
 
-The app uses `react-router-dom` v5 integrated with Ionic (`IonReactHashRouter`). A hash-based routing strategy is employed to ensure maximum compatibility across web servers and native mobile platforms without complex server configuration.
+The app uses `@ionic/react-router` integrated with React Router. Specifically, it utilizes `IonReactHashRouter` to employ a hash-based routing strategy. This ensures maximum compatibility across web servers and native mobile platforms without complex server configuration, and provides proper integration and view stack management with Ionic components like `IonBackButton`.
 
 For performance, route transition animations are disabled (`animated={false}`) inside `IonRouterOutlet` to ensure instant navigation. Furthermore, routes are rendered using direct React children nested in `<Route>` (rather than the `render` prop) to guarantee component instances are preserved correctly during state changes.
 
