@@ -53,6 +53,41 @@ describe('Streak Utils', () => {
     });
   });
 
+  describe('saveStreakData', () => {
+    it('should save data to localStorage', () => {
+      const data = {
+        currentStreak: 3,
+        longestStreak: 5,
+        lastActiveDate: '2023-10-15',
+        totalDaysLearned: 10
+      };
+
+      streakUtils.saveStreakData(data);
+
+      const stored = localStorage.getItem(STREAK_KEY);
+      expect(stored).toBe(JSON.stringify(data));
+    });
+
+    it('should catch errors and log to console if saving fails', () => {
+      const data = {
+        currentStreak: 3,
+        longestStreak: 5,
+        lastActiveDate: '2023-10-15',
+        totalDaysLearned: 10
+      };
+
+      // Mock setItem to throw an error
+      const error = new Error('localStorage error');
+      vi.spyOn(Storage.prototype, 'setItem').mockImplementationOnce(() => {
+        throw error;
+      });
+
+      streakUtils.saveStreakData(data);
+
+      expect(console.error).toHaveBeenCalledWith('Failed to save streak data', error);
+    });
+  });
+
   describe('recordActivity', () => {
     it('should start a new streak if no previous data', () => {
       const data = streakUtils.recordActivity();
