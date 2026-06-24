@@ -69,7 +69,6 @@ export const isBookmarked = (cardId: string): boolean => {
  * @param {string} cardId - The ID of the card to bookmark.
  */
 export const addBookmark = (cardId: string): void => {
-  console.log(`[Debug] Adding bookmark for card: ${cardId}`);
   // Always get fresh data to avoid race conditions with other tabs
   const bookmarks = getFreshBookmarks();
 
@@ -89,7 +88,6 @@ export const addBookmark = (cardId: string): void => {
  * @param {string} cardId - The ID of the card to remove.
  */
 export const removeBookmark = (cardId: string): void => {
-  console.log(`[Debug] Removing bookmark for card: ${cardId}`);
   // Always get fresh data to avoid race conditions with other tabs
   const bookmarks = getFreshBookmarks();
 
