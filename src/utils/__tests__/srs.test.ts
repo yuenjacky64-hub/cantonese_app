@@ -17,7 +17,7 @@ const localStorageMock = (() => {
 Object.defineProperty(global, 'localStorage', { value: localStorageMock });
 
 // Import after mocking
-import { loadSRS, saveSRS, updateCardSRS, SRSData, _resetCache, getSRSStats } from '../srs';
+import { loadSRS, saveSRS, updateCardSRS, SRSData, _resetCache, getSRSStats, flushSave } from '../srs';
 
 describe('SRS Utility Functions', () => {
     beforeEach(() => {
@@ -76,6 +76,73 @@ describe('SRS Utility Functions', () => {
                 JSON.stringify(data)
             );
             vi.useRealTimers();
+        });
+    });
+
+    describe('flushSave', () => {
+        beforeEach(() => {
+            vi.useFakeTimers();
+        });
+
+        afterEach(() => {
+            vi.useRealTimers();
+        });
+
+        it('should clear saveTimeout', () => {
+            const data: SRSData = {
+                'card-1': { nextReview: 1000, level: 1, interval: 1, easeFactor: 2.5 },
+            };
+            saveSRS(data); // This sets saveTimeout
+
+            flushSave();
+
+            // Advance timers to ensure no delayed save happens
+            vi.advanceTimersByTime(2000);
+
+            // We expect the direct call to flushSave from above to be the only save
+            expect(localStorageMock.setItem).toHaveBeenCalledTimes(1);
+        });
+
+        it('should save data to localStorage and clear isDirty flag when isDirty is true', () => {
+            const data: SRSData = {
+                'card-1': { nextReview: 1000, level: 1, interval: 1, easeFactor: 2.5 },
+            };
+            saveSRS(data); // Sets isDirty = true and assigns srsCache = data
+
+            localStorageMock.setItem.mockClear();
+
+            flushSave();
+
+            expect(localStorageMock.setItem).toHaveBeenCalledWith('srs-data', JSON.stringify(data));
+        });
+
+        it('should not save to localStorage if isDirty is false', () => {
+            const data: SRSData = {
+                'card-1': { nextReview: 1000, level: 1, interval: 1, easeFactor: 2.5 },
+            };
+            saveSRS(data);
+            flushSave(); // After this, isDirty is false
+
+            localStorageMock.setItem.mockClear();
+            flushSave(); // Should not call setItem because isDirty is false
+            expect(localStorageMock.setItem).not.toHaveBeenCalled();
+        });
+
+        it('should catch and log error if localStorage.setItem throws', () => {
+            const data: SRSData = {
+                'card-1': { nextReview: 1000, level: 1, interval: 1, easeFactor: 2.5 },
+            };
+            saveSRS(data);
+
+            const consoleSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
+            localStorageMock.setItem.mockImplementationOnce(() => {
+                throw new Error('Quota exceeded');
+            });
+
+            flushSave();
+
+            expect(consoleSpy).toHaveBeenCalledWith('Failed to save SRS data', expect.any(Error));
+            consoleSpy.mockRestore();
         });
     });
 
