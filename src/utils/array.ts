@@ -1,11 +1,20 @@
 /**
+ * Returns a cryptographically secure random number between 0 (inclusive) and 1 (exclusive).
+ */
+const getSecureRandom = (): number => {
+    const array = new Uint32Array(1);
+    crypto.getRandomValues(array);
+    return array[0]! / (0xffffffff + 1);
+};
+
+/**
  * Shuffles an array in place using the Fisher-Yates algorithm.
  * Returns a new shuffled array.
  */
 export const shuffleArray = <T,>(array: T[]): T[] => {
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
+        const j = Math.floor(getSecureRandom() * (i + 1));
         // i > 0 and j ∈ [0, i] by construction, so both indices are
         // in-bounds — the non-null assertion is safe under
         // noUncheckedIndexedAccess.
@@ -35,7 +44,7 @@ export const getRandomElements = <T,>(
 
     while (result.length < count && attempts < maxAttempts && selectedIndices.size < array.length) {
         attempts++;
-        const idx = Math.floor(Math.random() * array.length);
+        const idx = Math.floor(getSecureRandom() * array.length);
         if (selectedIndices.has(idx)) continue;
 
         // idx ∈ [0, array.length) so the read is in-bounds.
@@ -50,7 +59,7 @@ export const getRandomElements = <T,>(
     // Fallback path: Single-pass lazy scan (O(N))
     // If random probing didn't find enough elements (e.g., small dataset or many exclusions)
     if (result.length < count && selectedIndices.size < array.length) {
-        const startIdx = Math.floor(Math.random() * array.length);
+        const startIdx = Math.floor(getSecureRandom() * array.length);
         for (let i = 0; i < array.length && result.length < count; i++) {
             const idx = (startIdx + i) % array.length;
             if (selectedIndices.has(idx)) continue;
