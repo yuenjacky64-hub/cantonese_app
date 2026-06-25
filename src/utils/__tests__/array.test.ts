@@ -3,10 +3,10 @@ import { shuffleArray, getRandomElements } from '../array';
 
 describe('Array Utilities', () => {
     describe('shuffleArray', () => {
-        let mathRandomSpy: MockInstance;
+        let cryptoRandomSpy: MockInstance;
 
         beforeEach(() => {
-            mathRandomSpy = vi.spyOn(Math, 'random');
+            cryptoRandomSpy = vi.spyOn(crypto, 'getRandomValues');
         });
 
         afterEach(() => {
@@ -43,27 +43,30 @@ describe('Array Utilities', () => {
             expect(shuffleArray([42])).toEqual([42]);
         });
 
-        it('should shuffle deterministically based on Math.random', () => {
-            // Mock Math.random to always return 0.5
-            // With [1, 2, 3, 4] and Math.random() = 0.5:
+        it('should shuffle deterministically based on crypto.getRandomValues', () => {
+            // Mock crypto.getRandomValues to always return equivalent of 0.5
+            // With [1, 2, 3, 4] and getSecureRandom() = 0.5:
             // i=3 (val 4): j = Math.floor(0.5 * 4) = 2. Swap index 3 and 2. -> [1, 2, 4, 3]
             // i=2 (val 4): j = Math.floor(0.5 * 3) = 1. Swap index 2 and 1. -> [1, 4, 2, 3]
             // i=1 (val 4): j = Math.floor(0.5 * 2) = 1. Swap index 1 and 1. -> [1, 4, 2, 3]
-            mathRandomSpy.mockReturnValue(0.5);
+            cryptoRandomSpy.mockImplementation((arr: any) => {
+                arr[0] = Math.floor(0.5 * (0xffffffff + 1));
+                return arr;
+            });
 
             const original = [1, 2, 3, 4];
             const shuffled = shuffleArray(original);
 
             expect(shuffled).toEqual([1, 4, 2, 3]);
-            expect(mathRandomSpy).toHaveBeenCalledTimes(3);
+            expect(cryptoRandomSpy).toHaveBeenCalledTimes(3);
         });
     });
 
     describe('getRandomElements', () => {
-        let mathRandomSpy: MockInstance;
+        let cryptoRandomSpy: MockInstance;
 
         beforeEach(() => {
-            mathRandomSpy = vi.spyOn(Math, 'random');
+            cryptoRandomSpy = vi.spyOn(crypto, 'getRandomValues');
         });
 
         afterEach(() => {
@@ -114,10 +117,13 @@ describe('Array Utilities', () => {
         it('should use fallback path if random probing fails to find enough elements', () => {
             const array = [1, 2, 3, 4, 5];
 
-            // Make Math.random always return 0, which targets index 0.
+            // Make getSecureRandom always return 0, which targets index 0.
             // Fast path will try maxAttempts (20*3=60) times on index 0.
             // After hitting attempts limit, fallback path (linear scan) will pick the rest.
-            mathRandomSpy.mockReturnValue(0);
+            cryptoRandomSpy.mockImplementation((arr: any) => {
+                arr[0] = 0;
+                return arr;
+            });
 
             // We want 3 elements, but we exclude the 1st one (index 0, value 1)
             // Fast path will fail completely.
@@ -133,7 +139,7 @@ describe('Array Utilities', () => {
             expect(result).toEqual([2, 3, 4]);
 
             // Verify it attempted fast path and triggered fallback
-            expect(mathRandomSpy).toHaveBeenCalled();
+            expect(cryptoRandomSpy).toHaveBeenCalled();
         });
 
         it('should return fewer elements if not enough match the predicate', () => {
