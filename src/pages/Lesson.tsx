@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import {
   IonContent,
   IonPage,
@@ -48,18 +48,6 @@ const Lesson: React.FC = () => {
 
   // State to track the index of the current card being displayed
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    if (category) {
-      console.log(`[Debug] Lesson loaded: ${category.title} (${category.id})`);
-    }
-  }, [category]);
-
-  useEffect(() => {
-    if (category && category.cards[currentIndex]) {
-      console.log(`[Debug] Displaying card: ${category.cards[currentIndex].id} (Index: ${currentIndex})`);
-    }
-  }, [category, currentIndex]);
 
   // If category is invalid, show an error message
   if (!category || (category.id === 'bookmarks' && category.cards.length === 0)) {

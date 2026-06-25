@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useRegisterSW } from 'virtual:pwa-register/react';
 import { IonToast } from '@ionic/react';
 import { useTranslation } from 'react-i18next';
@@ -8,24 +8,11 @@ const ReloadPrompt: React.FC = () => {
   const {
     needRefresh: [needRefresh, setNeedRefresh],
     updateServiceWorker,
-  } = useRegisterSW({
-    onRegistered(r) {
-      console.log('SW Registered: ' + r);
-    },
-    onRegisterError(error) {
-      console.log('SW registration error', error);
-    },
-  });
+  } = useRegisterSW();
 
   const close = () => {
     setNeedRefresh(false);
   };
-
-  useEffect(() => {
-    if (needRefresh) {
-      console.log('New content available, show reload prompt');
-    }
-  }, [needRefresh]);
 
   return (
     <IonToast

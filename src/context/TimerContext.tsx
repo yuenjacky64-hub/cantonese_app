@@ -50,10 +50,8 @@ export const TimerProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     if (savedDate === today && savedSeconds) {
       // Restore today's progress
       setSeconds(parseInt(savedSeconds, 10));
-      console.log(`[Debug] Timer restored. Seconds: ${savedSeconds}`);
     } else {
       // Reset if date is different or no date saved (New Day)
-      console.log('[Debug] Timer reset for new day or first run');
       setSeconds(0);
       localStorage.setItem('app-timer-seconds', '0');
       localStorage.setItem('app-timer-date', today);
@@ -92,14 +90,12 @@ export const TimerProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
       // Start the timer if not already running
       if (!intervalRef.current) {
-        console.log('[Debug] Timer started');
         intervalRef.current = setInterval(() => {
           setSeconds(prev => {
             const currentToday = new Date().toDateString();
 
             // Check if day has changed while the app was running
             if (currentToday !== lastDateRef.current) {
-              console.log('[Debug] New day detected during timer run, resetting');
               lastDateRef.current = currentToday;
               localStorage.setItem('app-timer-date', currentToday);
               // Reset timer for the new day, start at 1s
@@ -118,7 +114,6 @@ export const TimerProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     } else {
       // Stop the timer if on a non-learning route
       if (intervalRef.current) {
-        console.log('[Debug] Timer stopped');
         clearInterval(intervalRef.current);
         intervalRef.current = null;
       }
