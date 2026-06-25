@@ -49,7 +49,6 @@ const getAudioMap = () => {
                 return response.json();
             })
             .catch(e => {
-                console.log('Audio map fetch failed:', e);
                 return null;
             });
     }
@@ -137,17 +136,16 @@ const ListeningQuiz: React.FC = () => {
                     audioRef.current.src = fullPath;
                     audioRef.current.onended = () => setIsPlaying(false);
                     audioRef.current.onerror = () => {
-                        console.log('Local audio failed, trying Cloud TTS');
                         playCloudTTS(text);
                     };
                     await audioRef.current.play();
                     return;
                 }
             } else {
-                console.log('No local audio found, trying Cloud TTS');
+                // No local audio found, trying Cloud TTS
             }
         } catch (e) {
-            console.log('Audio map fetch failed:', e);
+            // Audio map fetch failed, fallback to Cloud TTS
         }
 
         // Fallback to Google Cloud TTS
